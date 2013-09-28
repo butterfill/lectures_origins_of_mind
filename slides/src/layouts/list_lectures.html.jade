@@ -1,0 +1,168 @@
+- var scripts = getBlock('scripts')
+- var styles = getBlock('styles')
+
+//- jQuery
+- scripts.add(["/vendor/jquery.min.js"])
+//- scripts.add(["//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"])
+
+//- Bootstrap
+- scripts.add(["/vendor/twitter-bootstrap/js/bootstrap.min.js"])
+- styles.add(["/vendor/twitter-bootstrap/css/bootstrap.min.css","/vendor/twitter-bootstrap/css/bootstrap-responsive.min.css"])
+- styles.add(["/vendor/twitter-bootstrap/css/bootstrap-label.css"])
+- styles.add(["/vendor/twitter-bootstrap/css/bootstrap-docs.css"])
+
+//- Other Scripts
+- scripts.add(["/vendor/log.js","/vendor/modernizr.min.js"])
+- scripts.add(["/vendor/waypoints.min.js"])
+
+
+
+//- User
+- styles.add(["/styles/listing.css"])
+- scripts.add(["/scripts/listing.js"])
+
+html
+  head
+    // (c) copyright 2013 Stephen A. Butterfill
+    //- Meta
+    meta(charset="utf-8")
+    meta(http-equiv="content-type", content="text/html; charset=utf-8")
+
+    //-
+      Use the .htaccess and remove these lines to avoid edge case issues.
+      More info: h5bp.com/i/378
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+
+    //- Our site title and description
+    title= getPreparedTitle()
+    meta(name="description", content=getPreparedDescription())
+    meta(name="keywords", content=getPreparedKeywords())
+    meta(name="author", content=site.author || '')
+
+    //- Output DocPad produced meta elements
+    != getBlock('meta').toHTML()
+
+    //- Mobile viewport optimized: h5bp.com/viewport
+    meta(name="viewport", content="width=device-width")
+
+    //- Icons
+    //- disabled
+      //- link(rel="shortcut icon", href="ico/favicon.ico")
+      //- link(rel="apple-touch-icon-precomposed", sizes="144x144", href="ico/apple-touch-icon-144-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", sizes="114x114", href="ico/apple-touch-icon-114-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", sizes="72x72", href="ico/apple-touch-icon-72-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", href="ico/apple-touch-icon-57-precomposed.png")
+
+    //- fonts
+    link(href='http://fonts.googleapis.com/css?family=Raleway',rel='stylesheet',type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Shadows+Into+Light',rel='stylesheet',type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Droid+Serif',rel='stylesheet',type='text/css')
+
+
+
+    //- Shims: IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+
+    //- Styles
+    != styles.toHTML()
+    
+
+  body
+    .container
+
+
+include ../../fragments/slide_mixins
+
+html
+  body()
+
+    //- The page header 
+    .row(style="border:1px;border-bottom-color:black;border-bottom-style:dashed;padding-bottom:1em;margin-bottom:2em")
+      .span3
+        h1.glow(style="margin-bottom:0;font-family:'Shadows Into Light', cursive;")
+          a(href="http://butterfill.com") Stephen
+        h1.glow(style="margin-bottom:0;margin-top:-0.4em;margin-left:.7em;font-family:'Shadows Into Light', cursive;")
+          a(href="http://butterfill.com")  Butterfill
+        h1(style="margin-top:-1.3em;margin-left:4em;font-size:100%;font-family:'Shadows Into Light', cursive;")
+          a.glow-white(href='mailto:s.butterfill@warwick.ac.uk')
+            | s.butterfill@warwick.ac.uk
+      .span9
+        h4 My lectures on logic at the University of Warwick.  
+          br
+          | Module codes: PH126, PH133
+          br
+          | Outlines, handouts and exercises for lectures not yet given are likely to change.  Please email me about errors.
+
+    .row
+      //- the menu
+      #sidebar.span3.bs-docs-sidebar
+        ul.nav.nav-list.bs-docs-sidenav(data-spy="affix",data-offset-top="100",style="margin-top:0;")
+          li
+            a(href='#practical_info')
+              i.icon-chevron-right
+              | Practical Info
+          li
+            a(href='#extras')
+              i.icon-chevron-right
+              | Extras
+          //- now create a menu item for each lecture
+          each lecture in getCollection(document.the_collection).toJSON()
+            li
+              a(href='##{lecture.basename}')
+                i.icon-chevron-right
+                | #{lecture.title}
+          //- keep menu in place
+
+      //- main content: lecture outlines &c
+      .span9
+        #practical_info
+          .page-header(style='margin-top:-1em')
+            h2 Practical Info
+          p For timings, past exam papers, permission to the take module as an unusual option and everything else, please see:
+          ul
+            li
+              a(target='_blank',href="http://www2.warwick.ac.uk/fac/soc/philosophy/undergraduate/modules/ph126/2012_13/") Logic I (PH126)
+            li
+              a(target='_blank',href="http://www2.warwick.ac.uk/fac/soc/philosophy/undergraduate/modules/ph133/2012_13term3/") Introduction to Philosophy (PH133)
+        
+        #extras
+          .page-header
+            h2 Extras
+          ul
+            li
+              a(target='_blank',href='/handouts/rules_of_thumb.pdf') Rules of Thumb handout [pdf]
+
+        //- now do a section for each lecture
+        each lecture in getCollection(document.the_collection).toJSON()
+          div(id='#{lecture.basename}')
+            .page-header
+              h2 #{lecture.title}
+            if lecture.lecture_date
+              p Date given: #{moment(lecture.lecture_date).format('dddd Do MMMM YYYY')}
+            p 
+              a(href='#{lecture.url}',target='_blank') slides
+              |  , 
+              a(href='/handouts/#{lecture.basename}.handout.pdf',target='_blank') handout [pdf]
+
+            if lecture.units
+              - each unit_num in lecture.units
+                - unit = get_unit(unit_num)
+                h3
+                  a(href="#{unit.url}") #{unit.title}
+                  |  (#{unit_num})
+                if unit.tags
+                  p(style="text-align:right;margin:0;padding:0;margin-top:-1.5em;") 
+                    each t in unit.tags
+                      span.label.label-info #{t}
+                      | 
+                p #{unit.description}
+                if unit.book && unit.book.length > 0 
+                  p Reading:  §#{unit.book.join(', §')}
+                if unit.exercises && unit.exercises.length > 0 
+                  p Exercises: #{unit.exercises.join(', ')}
+                if unit.exercises_fast && unit.exercises_fast.length > 0
+                  p Fast exercises: #{unit.exercises_fast.join(', ')}
+    
+    //- Scripts
+    != scripts.toHTML()
