@@ -1,0 +1,225 @@
+---
+layout: 'deck_unit'
+title: "Inbetween mindless behaviour and thought"
+tags: []
+description: "Why does the question about the origins of knowledge require philosophical inquiry?"
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/slide_mixins
+
+
+// doesn't appear on a slide
+.handout
+  span ‘We have many vocabularies for describing nature when we regard it as 
+  span.highlight1 mindless
+  span , and we have a mentalistic vocabulary for describing 
+  span.highlight1 thought and intentional action
+  span ; what we lack is a way of describing 
+  span.highlight1 what is in between
+  span ’ 
+  span \citep[p.\ 11]{Davidson:1999ju}
+
+mixin davidson_inbetween()
+  p
+    span ‘if you want to describe what is going on in the head of the child when it has a few words which it utters in appropriate situations, you will fail for lack of the right sort of words of your own.
+  p
+    span ‘We have many vocabularies for describing nature when we regard it as 
+    span.highlight1 mindless
+    span , and we have a mentalistic vocabulary for describing 
+    span.highlight1 thought and intentional action
+    span ; what we lack is a way of describing 
+    span.highlight1 what is in between
+    span ’
+  p.right
+    span (Davidson 1999, p. 11)
+  mixin invert('.highlight1')
+
+section.slide
+  .photobox-bottom-right
+    img.photo-right(src='/img/davidson.gif')
+  .words: .container_12: .grid_12
+    .notes The question is how humans come to know about objects, words, thoughts and other things.
+    .notes In pursuing this question we have to consider minds where the knowledge is neither clearly present nor obviously absent. 
+    .notes This is challenging because both commonsense and theoretical tools for describing minds are generally designed for characterising fully developed adults.
+    mixin davidson_inbetween()
+
+section.slide
+  .words
+    .middle
+      .handout \textit{Object permanence}
+      p Object permanence: 
+      p.handout.ctd.show the ability to know things about, or represent, objects you aren't currently perceiving. 
+
+section.slide
+  .words
+    .middle.center
+      p the ‘paradox of early permanence’ (Moore & Meltzoff 1998)
+
+mixin slide_object_permenance(no_steps)
+  p When can infants first 
+    span.highlight1 know
+      span.step4.remove-me  (or represent) 
+    span  
+    span things about objects they aren't perceiving?
+  div(class="#{no_steps ? '' : 'nodim slide'}")
+    p.em-above
+      span.highlight1 searching
+      span : not before 8 months
+    p.right (Moore & Meltzoff 2008)
+  div(class="#{no_steps ? '' : 'nodim slide'}")
+    p.em-above
+      span.highlight1 distinguishing
+      span  
+      span impossible scenes: 4.5 months or earlier
+    p.right (Baillargeon et al 1987)
+    
+section.slide#object_permanence
+  .notes The problem of describing ‘what is in between' (as Davidson puts it) is nicely illustrated by this question.
+  .words: .container_12: .grid_12
+    mixin slide_object_permenance()
+
+section.slide
+  .words: .container_12: .grid_12
+    img(src='/img/baillargeon_1987_fig1.png')
+    p.right source: Baillargeon et al (1987, figure 1)
+    .notes These are the test events from Baillargeon's study.
+    //.notes 'The habituation event was exactly the same as the impossible event, except that the yellow box was absent.' (Baillargeon et al 1985, 200)
+
+section.slide
+  .words: .container_12: .grid_12
+    img(src='/img/baillargeon_1987_fig2.png',height="500")
+    p.right source: Baillargeon et al (1987, figure 2)
+  
+section.slide
+  .words: .container_12: .grid_12
+    mixin slide_object_permenance(true)
+    .notes So the problem is that we seem to have conflicting answers to the question: one set of evidence says early, the other late.
+    .notes Resolving the apparent conflict requires responding to an instance of Davidson's challenge and finding ways of describing phenomena in between mindless ignorance of unseen objects and adult-like knowledge of objects.  
+    .notes In what follows we will repeatedly encounter challenges of this form.
+    mixin words-bkg('.highlight1','pink')
+    .notes At this point you might object.  The question is about knowledge.  But does either searching or distinguishing really provide evidence of knowing?
+    .slide.nodim
+      p.em-above talk about objects: much later
+      .notes You might insist that only abilities to talk about objects manifest evidence of knowledge.
+      .notes It is a good question whether searching or distinguishing manifests knowledge.
+      .notes We'll return to this point later.
+    mixin unremove('.step4')
+    .notes First note that we can duck this hard issue by changing from talk about knowledge to talk about representation.
+    .notes Searching and distinguishing certainly seem to show that infants are representing objects they can't see.
+    .notes Second note that whether or not the things manifested in searching and distinguishing are knowledge proper, they are surely things that matter for explaining how knowledge is eventually acquired.
+
+section.slide#iceberg
+  .words: .container_12: .grid_12
+    .notes The conflict is put nicely by Charles & Riverea.
+    .notes Note that we haven't yet come across violation-of-expectation experiments: I'll explain that notion later
+    p ‘
+      span.highlight1 violation-of-expectation experiments
+      span , using looking-time measures, suggested that infants have object permanence in occlusion conditions;
+    p ‘but simplified-search studies confirm that infants fail to reach towards occluded objects, suggesting that infants do not have object permanence in occlusion conditions.
+    mixin words-bkg('.highlight1','red')
+    .slide
+      .notes The problem that we see here generalises to other cases.
+      p ‘This discrepancy, however, is only the 
+        span.bkg-words-highlight-yellow tip of the iceberg
+        span .
+      p ‘Results of studies attempting to measure infants’ cognitive abilities using reaching measures often contradict results gained while using looking-time measures.’
+      p.right Charles & Rivera (2009, p. 994)
+      .handout ‘violation-of-expectation experiments, using looking-time measures, suggested that infants have object permanence in occlusion conditions; but simplified-search studies confirm that infants fail to reach towards occluded objects, suggesting that infants do not have object permanence in occlusion conditions. This discrepancy, however, is only the tip of the iceberg. Results of studies attempting to measure infants’ cognitive abilities using reaching measures often contradict results gained while using looking-time measures.’ \citep[p.\ 994]{charles:2009_object}
+
+
+section.slide
+  .notes So let's return to Davidson's point about what is in between mindless behaviour and thought.
+  .words: .container_12: .grid_12
+    .kludge
+      mixin davidson_inbetween()
+    //mixin blur('span:not(.highlight1)')
+    .notes The paradox of early permanence provides us with a challenge of exactly this sort.
+    .notes At least some of infants' abilities to represent objects they can't see don't involve knowledge or thought proper, but are neither entirely mindless.  They do involve representation of some kind. 
+
+section.slide
+  .notes Hood and colleagues make a related point.
+  .words: .container_12: .grid_12
+    .middle
+      p.handout.show
+        span.blur1 ‘there are 
+        span.noblur many separable systems of mental representations 
+        span.blur1 ... and 
+        span.noblur thus many different kinds of knowledge. 
+        span.blur1 ... the task ... is to contribute to the enterprise of finding the distinct systems of mental representation and to understand their development and integration’
+        span.handout \citep[p.\ 1522]{Hood:2000bf}.
+      p.right.blur1 (Hood et al 2000, p.\ 1522)
+      mixin blur('.blur1')
+      .notes We should be cautious about the inferenc from separable systems to kinds of knowledge.  (Think about modularity.)
+
+
+section.slide
+  .notes To sum up so far, the question for this course is, How do humans come to know  about---and to knowingly manipulate---objects, causes, words, numbers, colours, actions and minds?
+  .notes I've been suggesting we can't answer it simply by appealing to nativism, empiricism or other grand myths.
+  .notes Instead we need to focus on the particular mechanisms that are involved in different cases.
+  .notes But then you might wonder, What philosophical questions arise here?  Isn't this a narrowly pscyhological---and therefore scientific---issue?
+  .notes The answer is no because thinking about how humans come to know things requires us to meet Davidson's challenge, to understand things that are neither mindless nor thought or knowledge but somewhere in between.
+  .notes As Hood suggests in the quote I just showed you, this might involve rethinking what knowledge is.
+  .words: .container_12: .grid_12
+    .middle.center
+      p summary
+
+mixin simple_theory_of_the_mind(no_steps)
+  p the simple theory of the mind
+  div(class="#{no_steps ? '' : 'nodim slide'}")
+    ol
+      li.em-above What do minds have in common?  The power of representation.
+      li For each possible thought content and thinker, the thinker either has or hasn't a representation with that content.
+      li Thinkers' actions are causally explained by their representations.
+    .notes What the findings about infants' representations of objects they can't see show is this:
+    .notes we must reject the simple theory of the mind.
+
+section.slide#simple_theory_of_the_mind
+  .notes Let me put this another way ...
+  .words: .container_12: .grid_12
+    mixin simple_theory_of_the_mind()
+
+section.slide
+  .notes Recall the apparently contradictory pattern of findings.
+  .notes The findings are apparently contradictory only if we accept the simple theory of the mind.
+  .words: .container_12: .grid_12
+    mixin slide_object_permenance(true)
+
+section.slide
+  .notes So we must reject the simple theory.
+  .notes Of course this doesn't follow just from the data I've mentioned so far.
+  .notes But in these lectures we'll see the same sort of contradiction coming up in different domains, not just knowledge of objects but also number, colour, agency and others.
+  .notes Now it's easy to say that the simple theory of the mind must be rejected.
+  .notes But what are we to replace it with?
+  .words: .container_12: .grid_12
+    mixin simple_theory_of_the_mind(true)
+
+
+
+
+
+  
+section.slide
+  .words: .container_12: .grid_12
+    p *todo* add examples from Spelke and Hespos 2001 pp 326-7
+    p ‘when five-month-old infants observe first a single object that is occluded by a moving screen and then a second object that joins the first behind  he screen, they subsequently look longer when the screen is lowered to reveal one object (an unexpected outcome to adults, but one that is superficially familiar since only one object ever was visible in the scene at any given time) than when it is lowered to reveal two objects (Wynn, 1992)’
+    p ‘when 2.5 month-old infants observe an object hidden either inside or behind a container and then see the object again when the container is moved to the side, they react differently depending on how the object is hidden (Hespos and Baillargeon, 2001a).’
+    p \citep[pp.\ 326--7]{Spelke:2001pg}
+    
+    
+section.slide
+  .words: .container_12: .grid_12
+    p *todo* add example of \citep{wang:2004_young}
+    p  ‘In two experiments, 4-month-old infants were tested in VOE tasks with test trials only. The infants still gave evidence that they could represent and reason about hidden objects: they were surprised, as indicated by greater attention, when a wide object became fully hidden behind a narrow occluder (Experiment 1) or inside a narrow container (Experiment 2). These and control results demonstrate that young infants can succeed at VOE tasks involving hidden objects even when given no habituation or familiarization trials.’
+    
+    
+    
+section.slide
+  .words: .container_12: .grid_12
+    p *todo* must mention \citep{mccurry:2009_beyond}
+    p ‘when task demands are minimal (successful performance requires only a direct reach through the fringe) young infants search reliably for hidden objects.’

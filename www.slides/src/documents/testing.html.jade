@@ -1,0 +1,392 @@
+---
+layout: 'default'
+title: 'Testing'
+weburl: ''
+---
+
+include ../../fragments/slide_mixins
+
+
+.deck-container
+  #title-slide.slide
+    img.bkg(src='')
+    .spacer &nbsp;
+    .title-block: .title-container
+        h1.title1 Logic I (PH126)
+        h1.title2 #{document.title}
+        h3.email s.butterfill@warwick.ac.uk
+    if document.weburl
+      .words
+        span(style="position:relative;top:250px;left:450px;").white-box.big.center #{document.weburl}
+
+
+  .slide#test_steps
+    .words
+      .container_12: .grid_12
+        p.step2.hide above
+        p middle
+        p.step3.hide below
+        mixin steps(3)
+
+  .slide#test_mid_steps
+    .words
+      .container_12: .grid_12
+        p.step5.hide five
+        p.step4.hide four
+        p.step2.hide two
+        p one -- should see four five and then two three
+        p.step3.hide three
+        mixin steps(4,5)
+        mixin steps(2,3)
+
+  .slide
+    .words
+      .container_12: .grid_12
+        table.truth-table
+          tr
+            td A
+            td B
+            td.result-col A ∨ B
+          tr
+            td T
+            td T
+            td.result-col T
+            td.comment.hide <--- ‘surely this is illogical’
+          tr
+            td T
+            td F
+            td.result-col
+              span.error F
+              span.correct.hide T
+          tr
+            td F
+            td T
+            td.result-col 
+              span.error F
+              span.correct.hide T
+          tr
+            td F
+            td F
+            td.result-col F
+
+
+  .slide
+    .words
+      .container_12: .grid_12
+        p test truth table mxin
+        mixin truth-table(['A ∨ B','¬A'],[['T','T','T','F'],['F','F','T','T']])
+        .slide.anim-addclass(data-what=".truth-table .row-3 .highlight-hook", data-class="bkg-grey-row")
+
+ 
+  .slide
+    .words
+      div.middle.center
+        p This is how to put stuff in the middle.
+        p It can span multiple lines.
+        p And contain nested paragraphs.
+
+  .slide
+    .words
+      .container_12
+        .grid_6
+          p left column
+        .grid_6
+          p right column
+
+
+  .slide
+    img.bkg(src='/img/bkg/duckling.jpeg')
+    .middle
+      .container_12
+        .grid_4
+          .center.bkg-black-33
+            h1(style="text-align: center") Trans Bkg Box 
+            p S0.11
+            p 3-5pm on Wednesdays
+  
+  .slide
+    div.white-box(style="width:230px;position:absolute;top:20px;left:500px;")
+      p(style="padding: 0 0.3em;") An argument is 
+        strong logically valid 
+        | just if there's no possible situation in which the premises are true and the conclusion false.
+    .slide
+      div.white-box(style="width:230px;position:absolute;top:350px;left:500px;")
+        p(style="padding: 0 0.3em;") An argument is 
+          strong sound  
+          | just if it is logically valid and all its premises are true.
+
+
+  .slide#right-half-white
+    .words: .container_12: .grid_6
+      p left half of the slide for a 
+        span.invert nice 
+        | layout. 
+      p won't go onto the right half
+    .right-half-white
+      .words
+        .container_12: .grid_6
+          p test text here on the 
+            span.noinvert right hand 
+            | side
+    .clear
+    .container_12.em-above
+      .grid_4.prefix_4
+        p This should cut across the border between the black and white halves
+
+  .slide#left-half-white
+    .left-half-white
+    .words
+      .container_12
+        .grid_6.invert
+          p left half of the slide for a nice layout
+          p won't go onto the right half
+        .grid_6
+          p can put text on the right hand side like this too (easier design?)
+      .clear
+      .container_12.em-above
+        .grid_6
+          p text can be inverted too
+        .grid_6
+          p.invert text can be inverted too
+
+  .slide#white-bottom-half
+    .bottom-third-white
+      .test text in white bkg?
+    .words
+      .container_12: .grid_12
+        p normal text
+      .container_12
+        .grid_6
+          p unaffected by the white bottom part
+        .grid_6
+          p normal text can continue above
+      
+    .words.invert(style="position:absolute; top:350px;")
+      .container_12
+        .grid_6
+          p test on white added later
+        .grid_6
+          p seems to work even with columns
+    
+      
+
+  .slide#connect_slide
+    .words
+      .container_12: .grid_12
+        p test connectors
+        p
+          span#origin2.white-box from here (2)
+        p (gap)
+        p
+          span#dest2.white-box  to here (2)
+        p (gap)
+      .container_12#jcont
+        .grid_2
+        .grid_2.skip_3
+          span#origin from here
+        .grid_2.skip_3
+          span#dest to here
+        
+    script(src="/vendor/jquery.min.js")
+    script.
+      $(document).ready(function(){
+        $('#connect_slide').bind('deck.becameCurrent', function(ev, direction){
+          
+          //- be sure to disable scale before adding connectors, otherwise positioning is off
+          $.deck('disableScale')
+          
+          jsPlumb.connect({
+            source : $('#origin2'),
+            target : $('#dest2'),
+            anchors : ["RightMiddle","RightMiddle"],
+            container: $('#connect_slide')
+          });
+
+          jsPlumb.connect({
+            source : $('#origin'),
+            target : $('#dest'),
+            endpoint : ["Dot", {radius:3}],
+            anchors : ["TopCenter","BottomCenter"],
+            overlays : [
+              // ["PlainArrow", {length:50, width:20, location:0.95}]
+            ],
+            container: $('#connect_slide')
+          });
+
+          //- re-enable scale afer adding connectors
+          $.deck('enableScale')
+          
+        });
+      });
+
+  .slide#connect-anim-slide
+    .words
+      .container_12: .grid_12
+        p test connectors with deck.anim plugin
+        p.em-above
+          span#origin-b2.white-box from here (2)
+        p.em-above
+          span#dest-b2.white-box  to here (2)
+        .slide.anim-connect(data-from='#origin-b2', data-to='#dest-b2', data-from-anchor="LeftMiddle",data-color="hotpink")
+
+  .slide#connect-anim-mixin-slide
+    .words
+      .container_12: .grid_12
+        p test connectors with mixin that uses deck.anim plugin
+        p.em-above from here  
+          span#origin-c (1)
+        p.em-above to here  
+          span#dest-c (2)
+        mixin connect({from:'#origin-c', to:'#dest-c', fromAnchor:'BottomCenter', color:'turquoise'})
+
+          
+
+
+  //- proofs: manual proofs (testing)
+  
+
+  .slide#fitch1
+    .words
+      table.fitch-proof
+        tr
+          td 
+          td 1.
+          td.source  P ∧ Q
+          td
+        tr
+          td.last-premise
+          td 2.
+          td Q ∧ R
+        tr
+          td
+            span.bkg-grey-row &#8203;
+          td 3.
+          td P
+          td ∧Elim:
+            span.target 1
+        tr
+          td
+          td 4.
+          td R
+          td ∧Elim: 2
+        tr
+          td
+          td 5.
+          td P ∧ R
+          td ∧Intro: 3,4
+    script(src="/vendor/jquery.min.js")
+    script.
+      $(document).ready(function(){
+        $('#fitch1').bind('deck.becameCurrent', function(ev, direction){
+          
+          //- be sure to disable scale before adding connectors, otherwise positioning is off
+          $.deck('disableScale')
+          
+          console.log('connecting bits of proof together')
+          jsPlumb.connect({
+            source : $('#fitch1 .source'),
+            target : $('#fitch1 .target'),
+            anchors : ["RightMiddle","RightMiddle"],
+            container: $('#fitch1')
+          });
+
+          //- re-enable scale afer adding connectors
+          $.deck('enableScale')
+          
+        });
+      });
+
+
+
+
+
+  .slide
+    .words
+      table.fitch-proof
+        tr
+          td 
+          td 1.
+          td  P ∧ Q
+          td
+        tr
+          td.last-premise
+          td 2.
+          td Q ∧ R
+        tr
+          td
+          td(colspan=3) 
+            table.fitch-proof
+              tr
+                td.last-premise
+                td 3.
+                td Q ∧ R
+              tr
+                td
+                  span.bkg-grey-row &#8203;
+                td 4.
+                td P
+                td ∧Elim: 1
+              tr
+                td
+                td 5.
+                td R
+                td ∧Elim: 2
+              tr
+                td
+                td 6.
+                td P ∧ R
+                td ∧Intro: 3,4
+        tr
+          td
+          td 7.
+          td R
+          td ∧Elim: 2
+        tr
+          td
+          td 8.
+          td P ∧ R
+          td ∧Intro: 3,4
+
+ 
+
+  
+
+  // simple example, with highlights
+  .slide#proof_slide1
+    .words
+      - var prf1 = {premises:['P ∧ Q', 'Q ∧ R'], lines:[['P','∧Elim', [1]],['R', '∧Elim',[2]]]}
+      #firstproof
+        mixin fitch_proof(prf1)
+      
+      //- highlight bits of the proof
+      mixin highlight_row(3)
+      mixin anim_end()
+      
+      //- highlight bits of the proof and draw a connector linking them
+      #fitch1_high
+        mixin unhighlight_row(3)
+        mixin highlight_citation(3,1)
+        mixin highlight_cited_sentence(1)
+        mixin connect({from:'#firstproof .fitch-proof .row-1 .sentence', to:'#firstproof .fitch-proof .row-3 .citation-1', color:'yellow'})
+
+      mixin unhighlight_citation(3,1)
+      mixin unhighlight_cited_sentence(1)
+      mixin highlight_row(4)
+      mixin anim_end()
+
+  // lots of proofs on a page, with subproofs
+  .slide
+    .words
+      - var prf = {premises:['P ∧ Q', 'Q ∧ R'], lines:[['P','∧Elim', [1]],['R', '∧Elim',[2]]]}
+      - var short_prf = {premises:['P'],lines:[['P','∧Elim', [1]]]}
+      - var nested_prf = {premises:['P'],lines:[short_prf,['P','∧Elim', [1]]]}
+      - var prf2 = {premises:['P ∧ Q', 'Q ∧ R'], lines:[['P','∧Elim', [1]],short_prf,nested_prf,['R', '∧Elim',[2]]]}
+      .container_12
+        .grid_6
+          mixin fitch_proof(prf)
+        .grid_6
+          mixin fitch_proof(prf2)
+
+
+          
+    a.deck-permalink(href='.', title='Permalink to this slide') #
