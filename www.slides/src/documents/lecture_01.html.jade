@@ -1,5 +1,5 @@
 ---
-layout: 'default'
+layout: 'default2'
 title: 'Lecture 01'
 weburl: ''
 units: []
@@ -9,124 +9,86 @@ include ../../fragments/slide_mixins
 
 - var images = get_images('bees')
 
-.deck-notes
-  .deck-notes-container
+mixin title_slide({document:document, images:images})
 
-.deck-handout
-  .deck-handout-container
-
-.deck-container
-
-  mixin title_slide({document:document, images:images})
-
-  // the question
-  mixin insert_unit({unit:'001', title_slide:false, images:images})
-
-  // myths to mechanisms
-  mixin insert_unit({unit:'021', title_slide:true, images:images})
-
-  //inbetween mindless behaviour and thought (object permanence)
-  mixin insert_unit({unit:'031', title_slide:true, images:images})
-
-
-
-  section.slide
-    .words: .container_12: .grid_12
-      .middle
-        p.center so what are we going to do in this module?
-      .notes We're going to try to understand how humans come to know about things by examining what developmental psychology tells us about the acquisition of knowledge.
-      .notes This turns out to be a partly philosophical project because understanding the apparently conflicting evidence requires us to re-think notions like knowledge and representation.
-      .notes In practice, this means looking carefully, and in detail, at the scientific evidence.
-      .notes If you want to know how minds work, you have to start with the evidence.
-
-
-  mixin section({title:'Admin', images:images})
-  section.slide
-    .words: .container_12: .grid_12
-      p lectures
-      p.slide seminars
-      p.slide seminar groups
-      p.slide seminar tasks
-      p.slide unassessed essay
-  
-
-  //-
-    two breakthroughs
-    mixin section({title:'Two Breakthroughs', images:images})
-  
-    section.slide
-      .words: .container_12
-        .grid_5
-          p.center core knowledge
-        .right-half-white
-          .grid_5.prefix_1
-            .words
-              p.center social interaction
-
-
-
-  //-
-    core knowledge
-    - brief characterisation from the rediscovery word document
-      - also mention:
-        - signature limits,
-        - present in infants, persists in adults; present in non-human animals
-        - can be overcome
-    - core knowledge poses a problem: it ain't knowledge
-    - use the Haith quote: “no concept causes more problems in discussions of infant cognition than that of representation.” (Haith 1998)
-      - also Dennett don't know what we mean by representation
-
-
-  // social interaction
-  mixin insert_unit({unit:'061', title_slide:true, images:images})
-  
-
-  //-
-    bringing core knowledge and social interaction together
-    - a hypothesis
-      - without core knowledge, can't make sense of early forms of social interaction
-      - without social interaction, can't explain the transition from core knowledge to knowledge proper
-
-
-  //-
-    background units needed
-    // representation 
-    mixin insert_unit({unit:'071', title_slide:true, images:images})
-
-    // methods:
-      - habituation
-      - violation of expectations
-      - EEG
-
-
-  //-
-    // more on object permanence
-    mixin insert_unit({unit:'041', title_slide:true, images:images})
-
-  //-
-    spelke on principles of object perception
-    use espp unperceived objects : this is about inference 
-    the principles:
-      cohesion—“two surface points lie on the same object only if the points are linked by a path of connected surface points”
-      boundedness—“two surface points lie on distinct objects only if no path of connected surface points links them … the boundedness principle implies that … two distinct objects cannot interpenetrate.”
-      rigidity—“objects are interpreted as moving rigidly if such an interpretation exists”
-      no action at a distance—“separated objects are interpreted as moving independently of one another if such an interpretation exists”
-
-
-
+// the question
+mixin insert_unit({unit:'001', title_slide:false, images:images, handout:true})
  
+// myths to mechanisms
+mixin insert_unit({unit:'021', title_slide:true, images:images})
 
-  //mixin section({title:'*todo*', images:images})
-  //
-  //section.slide
-  //  .words: .container_12: .grid_12
-  //    p *todo*
-  //    ol
-  //      li What is representation? Dretske  [Not sure where this should go]
-  //      li nb: representation matters for the view about language acquisition.
-  //        span If Fodor on representation then the Bloom private language view looks more plausible.
-  //      li Core knowledge (first breakthrough) [use Spelke on principles of object perception]
-  //      li Social Interaction (second breakthrough)---use the stuff on word learning from Chapter_02
+//inbetween mindless behaviour and thought (object permanence)
+mixin insert_unit({unit:'031', title_slide:true, images:images})
+
+
+
+
+mixin section({title:'Admin', images:images, handout:false})
+section.slide
+  .words: .container_12: .grid_12
+    p.dimafter lectures
+    p.slide seminars
+    p.slide seminar groups
+    p.slide seminar tasks
+    p.slide unassessed essay
+    p.slide first seminar task
+
+
+//- two breakthroughs
+mixin insert_unit({unit:'051', title_slide:true, images:images, handout:false})
+
+// first breakthrough: social interaction
+mixin insert_unit({unit:'061', title_slide:true, images:images})
+
+// second breakthrough: core knowledge
+mixin insert_unit({unit:'071', title_slide:true, images:images})
+
+// bringing core knowledge and social interaction together
+mixin insert_unit({unit:'081', title_slide:true, images:images, handout:false})
+
+
+//-
+  *todo*: development as rediscovery insert?
+
+//- 
+  background units needed
+  // representation 
+  mixin insert_unit({unit:'091', title_slide:true, images:images})
+
+  // methods:
+    - habituation
+    - violation of expectations
+    - EEG
+
+
+//-
+  // more on object permanence
+  mixin insert_unit({unit:'101', title_slide:true, images:images})
+
+//-
+  spelke on principles of object perception
+  use espp unperceived objects : this is about inference 
+  the principles:
+    cohesion—“two surface points lie on the same object only if the points are linked by a path of connected surface points”
+    boundedness—“two surface points lie on distinct objects only if no path of connected surface points links them … the boundedness principle implies that … two distinct objects cannot interpenetrate.”
+    rigidity—“objects are interpreted as moving rigidly if such an interpretation exists”
+    no action at a distance—“separated objects are interpreted as moving independently of one another if such an interpretation exists”
+
+
+
+
+
+//mixin section({title:'*todo*', images:images})
+//
+//section.slide
+//  .words: .container_12: .grid_12
+//    p *todo*
+//    ol
+//      li What is representation? Dretske  [Not sure where this should go]
+//      li nb: representation matters for the view about language acquisition.
+//        span If Fodor on representation then the Bloom private language view looks more plausible.
+//      li Core knowledge (first breakthrough) [use Spelke on principles of object perception]
+//      li Social Interaction (second breakthrough)---use the stuff on word learning from Chapter_02
 
 
 

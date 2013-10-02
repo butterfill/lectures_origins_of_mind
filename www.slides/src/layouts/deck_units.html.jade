@@ -88,20 +88,39 @@ html
   body
     //- Scripts
     != scripts.toHTML()
-    .deck-container
-        //- title slide
-        section(id="#{document.basename}").slide
-            - var low = false
-            if document.title_image
-                img.bkg(src='document.title_image')
-                if document.title_image.indexOf('.low.') != -1
-                    - low = true
-            .spacer &nbsp;
-            .title-block(style="#{low ? 'position:relative; top:425px' : ''}"): .title-container
-                h2.title1 #{document.title}
+    .deck-notes
+      .deck-notes-container
+    
+    .deck-handout
+      .deck-handout-container
 
-        //- the slides
-        != content
+    .deck-container
+
+      section.slide#instructions
+        .words: .container_12: .grid_12
+          .middle
+            p.center Press the right key for the next slide (or swipe left)
+      section.slide
+        .notes You won't believe how many people emailed me to say the slides don't work.
+        .words: .container_12: .grid_12
+          p also ...
+          p Press the left key to go backwards (or swipe right)
+          p Press n to toggle whether notes are shown (no equivalent if you don't have a keyboard)
+          p Press m or double tap to see a menu of slides
+
+      //- title slide
+      section(id="#{document.basename}").slide
+          - var low = false
+          if document.title_image
+              img.bkg(src='document.title_image')
+              if document.title_image.indexOf('.low.') != -1
+                  - low = true
+          .spacer &nbsp;
+          .title-block(style="#{low ? 'position:relative; top:425px' : ''}"): .title-container
+              h2.title1 #{document.title}
+
+      //- the slides
+      != content
     
 
 

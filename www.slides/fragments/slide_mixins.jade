@@ -105,6 +105,8 @@ mixin section(p)
     .spacer &nbsp;
     .title-block(style="#{low ? 'position:relative; top:425px' : ''}"): .title-container
         h2.title1 #{p.unit ? p.unit.title : p.title}
+
+mixin handout(p)
     .handout &nbsp;
     .handout \section{#{p.unit ? p.unit.title : p.title}}
 
@@ -505,4 +507,6 @@ mixin insert_unit(p)
   - d = get_unit(p.unit)
     if p.title_slide
         mixin section({unit:d, images:p.images})
+    if p.handout !== false
+        mixin handout({unit:d})
     mixin render_unit(d)

@@ -85,23 +85,71 @@ section.slide#object_permanence
     mixin slide_object_permenance()
 
 section.slide
+  .notes These are the test events from Experiment 1 of Baillargeon et al's 1987 study.
   .words: .container_12: .grid_12
-    img(src='/img/baillargeon_1987_fig1.png')
+    .img1(style="overflow:hidden;max-width:350px;max-height:200px;")
+      img(src='/img/baillargeon_1987_fig1.png', style="max-width:700px;max-height:527px;")
+    .img2(style="overflow:hidden;max-width:350px;")
+      img(src='/img/baillargeon_1987_fig1.png', style="max-width:700px;")
+    .img3.hide
+      img(src='/img/baillargeon_1987_fig1.png', style="max-width:700px;")
     p.right source: Baillargeon et al (1987, figure 1)
-    .notes These are the test events from Baillargeon's study.
     //.notes 'The habituation event was exactly the same as the impossible event, except that the yellow box was absent.' (Baillargeon et al 1985, 200)
+    mixin showremove('.img2','.img1')
+    mixin showremove('.img3','.img2')
 
+// *todo* display part of the image first (hide the control condition)
 section.slide
+  .notes These are the results from Experiment 1 of Baillargeon et al's 1987 study.
   .words: .container_12: .grid_12
-    img(src='/img/baillargeon_1987_fig2.png',height="500")
+    .img2-1(style="overflow:hidden;max-height:220px;")
+      img(src='/img/baillargeon_1987_fig2.png',height="500")
+    .img2-2.hide(style="overflow:hidden;max-height:250px;")
+      img(src='/img/baillargeon_1987_fig2.png',height="500",style="position:relative;top:-220px;")
     p.right source: Baillargeon et al (1987, figure 2)
+    mixin show('.img2-2')
   
 section.slide
   .words: .container_12: .grid_12
     mixin slide_object_permenance(true)
     .notes So the problem is that we seem to have conflicting answers to the question: one set of evidence says early, the other late.
     .notes Resolving the apparent conflict requires responding to an instance of Davidson's challenge and finding ways of describing phenomena in between mindless ignorance of unseen objects and adult-like knowledge of objects.  
-    .notes In what follows we will repeatedly encounter challenges of this form.
+
+section.slide
+  .photobox-bottom-right
+    img.photo-right(src='/img/davidson.gif')
+  .notes So let's return to Davidson's point about what is in between mindless behaviour and thought.
+  .words: .container_12: .grid_12
+    mixin davidson_inbetween()
+    //mixin blur('span:not(.highlight1)')
+    .notes The paradox of early permanence provides us with a challenge of exactly this sort.
+    .notes At least some of infants' abilities to represent objects they can't see don't involve knowledge or thought proper, but are neither entirely mindless.  They do involve representation of some kind.
+    .notes And this is why, despite scientific advances in understanding how humans come to know things, there is still work for philosophers.
+
+
+section.slide
+  .notes Hood and colleagues make a related point.
+  .words: .container_12: .grid_12
+    .middle
+      p.handout.show
+        span.blur1 ‘there are 
+        span.noblur many separable systems of mental representations 
+        span.blur1 ... and 
+        span.noblur thus many different kinds of 
+          span.highlight2 knowledge. 
+        span.blur1 ... the task ... is to contribute to the enterprise of finding the distinct systems of mental representation and to understand their development and integration’
+        span.handout \citep[p.\ 1522]{Hood:2000bf}.
+      p.right.blur1 (Hood et al 2000, p.\ 1522)
+      mixin blur('.blur1')
+      .notes This quote raises two issues
+      .notes First, we should be cautious about the inference from separable systems to kinds of knowledge.  (Think about modularity.)
+      mixin invert('.highlight2')
+      .notes Second, come to think of it, shouldn't we be cautious here in talking about knowledge at all?
+      .notes To see why, return one more time to the conflicting evidence about object permanence.
+
+section.slide
+  .words: .container_12: .grid_12
+    mixin slide_object_permenance(true)
     mixin words-bkg('.highlight1','pink')
     .notes At this point you might object.  The question is about knowledge.  But does either searching or distinguishing really provide evidence of knowing?
     .slide.nodim
@@ -114,48 +162,29 @@ section.slide
     .notes Searching and distinguishing certainly seem to show that infants are representing objects they can't see.
     .notes Second note that whether or not the things manifested in searching and distinguishing are knowledge proper, they are surely things that matter for explaining how knowledge is eventually acquired.
 
+
+
 section.slide#iceberg
   .words: .container_12: .grid_12
-    .notes The conflict is put nicely by Charles & Riverea.
-    .notes Note that we haven't yet come across violation-of-expectation experiments: I'll explain that notion later
+    .notes Charles & Riverea note the conflict we have just been discussing.
+    .notes Now you might think this conflict is just an isolated case.
+    .notes Is the whole course going to be about infants' representations of objects?  Not at all ...
+    .handout ‘violation-of-expectation experiments, using looking-time measures, suggested that infants have object permanence in occlusion conditions; but simplified-search studies confirm that infants fail to reach towards occluded objects, suggesting that infants do not have object permanence in occlusion conditions. This discrepancy, however, is only the tip of the iceberg. Results of studies attempting to measure infants’ cognitive abilities using reaching measures often contradict results gained while using looking-time measures.’ \citep[p.\ 994]{charles:2009_object}
     p ‘
       span.highlight1 violation-of-expectation experiments
       span , using looking-time measures, suggested that infants have object permanence in occlusion conditions;
     p ‘but simplified-search studies confirm that infants fail to reach towards occluded objects, suggesting that infants do not have object permanence in occlusion conditions.
     mixin words-bkg('.highlight1','red')
+    .notes (Note that they mention violation-of-expectation experiments: we haven't yet come across violation-of-expectation experiments: I'll explain that notion later.)
+    mixin words-bkg-remove('.highlight1','red')
     .slide
       .notes The problem that we see here generalises to other cases.
+      .notes In what follows we will repeatedly encounter challenges of this form.
       p ‘This discrepancy, however, is only the 
         span.bkg-words-highlight-yellow tip of the iceberg
         span .
       p ‘Results of studies attempting to measure infants’ cognitive abilities using reaching measures often contradict results gained while using looking-time measures.’
       p.right Charles & Rivera (2009, p. 994)
-      .handout ‘violation-of-expectation experiments, using looking-time measures, suggested that infants have object permanence in occlusion conditions; but simplified-search studies confirm that infants fail to reach towards occluded objects, suggesting that infants do not have object permanence in occlusion conditions. This discrepancy, however, is only the tip of the iceberg. Results of studies attempting to measure infants’ cognitive abilities using reaching measures often contradict results gained while using looking-time measures.’ \citep[p.\ 994]{charles:2009_object}
-
-
-section.slide
-  .notes So let's return to Davidson's point about what is in between mindless behaviour and thought.
-  .words: .container_12: .grid_12
-    .kludge
-      mixin davidson_inbetween()
-    //mixin blur('span:not(.highlight1)')
-    .notes The paradox of early permanence provides us with a challenge of exactly this sort.
-    .notes At least some of infants' abilities to represent objects they can't see don't involve knowledge or thought proper, but are neither entirely mindless.  They do involve representation of some kind. 
-
-section.slide
-  .notes Hood and colleagues make a related point.
-  .words: .container_12: .grid_12
-    .middle
-      p.handout.show
-        span.blur1 ‘there are 
-        span.noblur many separable systems of mental representations 
-        span.blur1 ... and 
-        span.noblur thus many different kinds of knowledge. 
-        span.blur1 ... the task ... is to contribute to the enterprise of finding the distinct systems of mental representation and to understand their development and integration’
-        span.handout \citep[p.\ 1522]{Hood:2000bf}.
-      p.right.blur1 (Hood et al 2000, p.\ 1522)
-      mixin blur('.blur1')
-      .notes We should be cautious about the inferenc from separable systems to kinds of knowledge.  (Think about modularity.)
 
 
 section.slide
@@ -169,18 +198,37 @@ section.slide
     .middle.center
       p summary
 
+
+section.slide
+  .notes I hope I've given you a flavour of the approach we're going to take.
+  .notes Good philosophy of mind has always been driven by scientific findings about the mind.
+  .notes John Locke, David Hume as well as more recent philosophers like Jerry Fodor and Andy Clark all start with a deep understanding of the science of the mind.
+  .notes But there is a difference.
+  .notes Locke, Fodor and the rest are working on the big picture, trying to make explicit general features of the conceptual framework which scientists have more or less implicitly adopted.
+  .notes By contrast, what I want us to do in this course is to look at specific problems that arise from the evidence,
+  .notes and to provide philosophical tools for tackling this problem.
+  .notes So you might say that whereas John Locke was trying to be the architect, we're trying more modestly to build the tools.
+  .notes Now this might sound too modest to be interesting.
+  .notes But, as we'll see, it turns out that attention to the details will give us new perspectives on some key philosophical issues about the nature of knowledge, perception and action.
+  .words: .container_12: .grid_12
+    .middle.center
+      p the approach
+  
+
+
 mixin simple_theory_of_the_mind(no_steps)
   p the simple theory of the mind
   div(class="#{no_steps ? '' : 'nodim slide'}")
     ol
       li.em-above What do minds have in common?  The power of representation.
-      li For each possible thought content and thinker, the thinker either has or hasn't a representation with that content.
-      li Thinkers' actions are causally explained by their representations.
+      li For each possible thought content and thinker, the thinker either has or hasn’t a representation with that content.
+      li Thinkers’ actions are causally explained by their representations.
     .notes What the findings about infants' representations of objects they can't see show is this:
     .notes we must reject the simple theory of the mind.
 
 section.slide#simple_theory_of_the_mind
-  .notes Let me put this another way ...
+  .notes To illustrate how the modest approach of the tool maker might give us new perspectives on some key philosophical issues, 
+  .notes consider how the conflicting evidence about object permanence bears on the nature of minds quite generally.
   .words: .container_12: .grid_12
     mixin simple_theory_of_the_mind()
 
@@ -199,27 +247,49 @@ section.slide
   .words: .container_12: .grid_12
     mixin simple_theory_of_the_mind(true)
 
+section.slide#intentional_stance
+  .notes We can make a similar point about Dennett's intentional stance.
+  .notes The intentional stance is a theory about the nature of mental states like beliefs.
+  .words: .container_12: .grid_12
+    p Dennett’s Intentional Stance
+    .slide.nodim
+      .notes There are two key components to the intentional stance.
+      .notes The first component is a strategy.
+      p (a) The strategy
+      .handout \textbf{Dennett’s Intentional Stance}
+      .handout (a) \textit{The strategy} ‘Here is how it works: first you decide to treat the object whose behavior is to be predicted as a rational agent; then you figure out what beliefs that agent ought to have, given its place in the world and its purpose.   Then you figure out what desires it ought to have, on the same considerations, and finally your predict that this rational agent will act to further its goals in the light of its beliefs.  A little practical reasoning from the chosen set of beliefs and desires will in many---but not in all---instances yield a decision about what the agent ought to do; that is what you predict the agent will do.’
+      .handout.ctd \citep[p.\ 17]{Dennett:1987sf}
+      p ‘Here is how it works: [...] you figure out what beliefs that agent ought to have, given its place in the world and its purpose.   [...] finally you predict that this rational agent will act to further its goals in the light of its beliefs.’
+      p.right Dennett (1987, p. 17)
+    .slide
+      .notes The second component is a claim about what it is to have a belief.
+      p (b) The metaphysics
+      p ‘any object [...] whose behavior is well predicted by this strategy is in the fullest sense of the word a believer.  
+        span.slide.nodim What it is to be a true believer is to be [...] a system whose behavior is 
+          span.highlight1 reliably and voluminously predictable
+          span  via the intentional strategy.’
+      p.right Dennett (1987, p. 15)
+      .handout (b) \textit{The metaphysics} ‘any object---or as I shall say, any system---whose behavior is well predicted by this strategy is in the fullest sense of the word a believer.  What it is to be a true believer is to be an intentional system, a system whose behavior is reliably and voluminously predictable via the intentional strategy.’
+      .handout.ctd \citep[p.\ 15]{Dennett:1987sf}
+      .notes Now Dennett points out that his strategy works well for clams and thermostats.
+      .notes But what about the infants?
+      .notes If we consider just their pattern of looking times, it seems that the strategy does apply.
+      .notes But if we consider their reaching behaviour, it seems that the strategy does not apply.
+      .notes I think this reveals a deep problem for the strategy.
+      .notes As with the simple theory of the mind, the Intentional Stance rests on the background assumption that individuals either have a particular beilef or else they do not have it.
+      .notes But real minds are not so simple.
+      mixin invert('.highlight1')
+      .notes You might object that this is unfair to Dennett and that the Intentional Stance provides a clear verdict on infants because they are not ‘reliably and voluminously predictable’.
+      .notes But since he himself thinks the view applies to clams and theromstats, their simple behaviours must be sufficient for them to be ‘reliably and voluminously predictable’.
+      .notes And in that case, so are infants looking times.  
 
 
-
-
-  
 section.slide
   .words: .container_12: .grid_12
-    p *todo* add examples from Spelke and Hespos 2001 pp 326-7
-    p ‘when five-month-old infants observe first a single object that is occluded by a moving screen and then a second object that joins the first behind  he screen, they subsequently look longer when the screen is lowered to reveal one object (an unexpected outcome to adults, but one that is superficially familiar since only one object ever was visible in the scene at any given time) than when it is lowered to reveal two objects (Wynn, 1992)’
-    p ‘when 2.5 month-old infants observe an object hidden either inside or behind a container and then see the object again when the container is moved to the side, they react differently depending on how the object is hidden (Hespos and Baillargeon, 2001a).’
-    p \citep[pp.\ 326--7]{Spelke:2001pg}
-    
-    
-section.slide
-  .words: .container_12: .grid_12
-    p *todo* add example of \citep{wang:2004_young}
-    p  ‘In two experiments, 4-month-old infants were tested in VOE tasks with test trials only. The infants still gave evidence that they could represent and reason about hidden objects: they were surprised, as indicated by greater attention, when a wide object became fully hidden behind a narrow occluder (Experiment 1) or inside a narrow container (Experiment 2). These and control results demonstrate that young infants can succeed at VOE tasks involving hidden objects even when given no habituation or familiarization trials.’
-    
-    
-    
-section.slide
-  .words: .container_12: .grid_12
-    p *todo* must mention \citep{mccurry:2009_beyond}
-    p ‘when task demands are minimal (successful performance requires only a direct reach through the fringe) young infants search reliably for hidden objects.’
+    .middle
+      p.center so what are we going to do in this module?
+    .notes We're going to try to understand how humans come to know about things by examining what developmental psychology tells us about the acquisition of knowledge.
+    .notes This turns out to be a partly philosophical project because understanding the apparently conflicting evidence requires us to re-think notions like knowledge and representation.
+    .notes In practice, this means looking carefully, and in detail, at the scientific evidence.
+    .notes If you want to know how minds work, you have to start with the evidence.
+

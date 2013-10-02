@@ -64,7 +64,37 @@ var inject = function(){
 		inject();
 	}
 })();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/log.js"></script><script defer="defer"  src="/vendor/modernizr.min.js"></script><script defer="defer"  src="/vendor/deck.js/deck.core.js"></script><script defer="defer"  src="/vendor/deck.js/deck.menu.js"></script><script defer="defer"  src="/vendor/deck.js/deck.hash.js"></script><script defer="defer"  src="/vendor/deck.js/deck.status.js"></script><script defer="defer"  src="/vendor/deck.js/deck.notes.js"></script><script defer="defer"  src="/vendor/deck.js/deck.fit.js"></script><script defer="defer"  src="/vendor/deck.js/deck.step.js"></script><script defer="defer"  src="/vendor/deck.js/deck.events.js"></script><script defer="defer"  src="/vendor/deck.js/deck.anim.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/vendor/jquery.fittext.js"></script><script defer="defer"  src="/scripts/script.js"></script>
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
     <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <div class="notes">You won't believe how many people emailed me to say the slides don't work.</div>
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (no equivalent if you don't have a keyboard)</p>
+              <p>Press m or double tap to see a menu of slides</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="unit_061" class="slide">
         <div class="spacer">&nbsp;</div>
         <div style="" class="title-block">
@@ -76,10 +106,49 @@ var inject = function(){
 <!-- create title slide for a lecture-->
 <!-- param p contains document and images (an array of images to use)-->
 <!-- param p contains p.unit and p.images (an array of images)-->
-<section class="slide">
+<section id="bold_conjecture" class="slide">
+  <div class="notes">Here is a bold conjecture about how humans come to know things.</div>
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
+        <div class="middle">
+          <div class="handout">\subsection{A Conjecture}</div>
+          <p class="handout show">‘humans acquire knowledge at a pace far outstripping that found in any other species. Recent evidence indicates that interpersonal understanding—in particular, skill at inferring others’ intentions—plays a pivotal role in this achievement.’</p>
+          <div class="handout ctd">\citep[p.\ 40]{Baldwin:2000qq}</div>
+          <p class="right">(Baldwin 2000, p. 40)</p>
+          <!-- not on slides:-->
+          <div class="handout">‘functions traditionally considered hallmarks of individual cognition originated through the need to interact with others ...\ perception, action, and cognition are grounded in social interaction.’</div>
+          <!-- p.right (Knoblich & Sebanz 2006, p. 103)-->
+          <div class="handout ctd">\citep[p.\ 103]{Knoblich:2006bn}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="vygostky_hyp" class="slide">
+  <div class="notes">The challenge, of course, is to say *how* social interaction enables humans to come to know things.</div>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="middle">
+          <div class="handout">Vygotskian Intelligence Hypothesis:</div>
+          <p class="handout ctd show">‘the unique aspects of human cognition ... were driven by, or even constituted by, social co-operation.’</p>
+          <div class="handout ctd">\citep[p.\ 1]{Moll:2007gu}</div>
+          <p class="right">(Moll & Tomasello 2007, p. 1)</p>
+          <!-- not on slides:-->
+          <div class="handout">‘human cognitive abilities ... [are] built upon social interaction’</div>
+          <div class="handout ctd">\citep{sinigaglia:2008_roots} %*page</div>
+          <!-- p.right (Sinigaglia &Sparaci 2008)-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">.
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="handout">\subsection{How do children acquire words?}</div>
         <p>Take infant a few weeks away from acquiring her first words. </p>
         <p>What does she contribute to her own cognitive development and what do those around her contribute?</p>
         <div class="slide">
@@ -143,7 +212,11 @@ var inject = function(){
   </div>
 </section>
 <section class="slide">
-  <div class="notes">Both pictures miss social interaction.<span>On one picture the infant is an outsider who might as well be observing those around her through a telescope.</span><span>On the other picture the child is a blank to be shaped by those around her.</span><span>There is no meaningful interaction between the infant and adults around her; or, if there is, it makes no difference to her development.</span><span>One of two breakthrough discoveries is that infants are equipped for social interaction, as we'll see.</span></div>
+  <div class="notes">Both pictures miss social interaction.</div>
+  <div class="notes">On one picture the infant is an outsider who might as well be observing those around her through a telescope.</div>
+  <div class="notes">On the other picture the child is a blank to be shaped by those around her.</div>
+  <div class="notes">There is no meaningful interaction between the infant and adults around her; or, if there is, it makes no difference to her development.</div>
+  <div class="notes">But could there be a role for social interaction in learning the meanings of words?</div>
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
@@ -155,11 +228,65 @@ var inject = function(){
   </div>
 </section>
 <section class="slide">
+  <div class="notes handout">Children acquiring language create their own words before they learn to use those of the adults around them.</div>
+  <div class="handout">‘Some children are so impatient that they coin their own demonstrative pronoun.  For instance, at the age of about 12 months, Max would point to different objects and say “doh?,” some¬times with the intent that we do something with the objects, such as bring them to him, and sometimes just wanting us to appreciate their existence’</div>
+  <div class="handout ctd">(\citealp[p.\ 122]{Bloom:2000qz}; see further \citealp{Clark:1981bi,Clark:1982hj}).</div>
+  <div class="notes handout">Even where children have mastered a lexical convention, they will readily violate it in their own utterances in order to get a point across.</div>
+  <div class="handout">‘From the time they first use words until they are about two or two-and-a-half, children noticeably and systematically overextend words.  For example, one child used the word “apple” to refer to balls of soap, a rubber-ball, a ball-lamp, a tomato, cherries, peaches, strawberries, an orange, a pear, an onion, and round biscuits’</div>
+  <div class="handout ctd">\citep[p.\ 35]{Clark:1993bv}</div>
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <div class="middle center">
-          <p>children create words</p>
+        <p class="nodim">children create <span class="hide step2">and creatively adapt </span><span>words </span><span class="slide nodim">before <span><span class="slide">(and after)  </span></span><span>learning those of the adults around them</span></span>
+          <div data-what=".step2" data-class="hide" class="slide anim-continue anim-removeclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        </p>
+        <div class="slide em-above">
+          <p>INVESTIGATOR:	what is that called?</p>
+          <p>SHEM:			dat's uh vam.</p>
+          <p>INVESTIGATOR:	a vam?</p>
+          <p>SHEM:			yeah.</p>
+          <p>INVESTIGATOR:	why is it called a vam?</p>
+          <p>SHE:				it vams all duh room ups all the water up ...</p>
+          <p class="right">source: Eve Clark's CHILDES data</p>
+          <p class="right">(Clark 1982; MacWhinney 2000)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="notes handout">Children with no experience of others' languages can create their own languages.</div>
+  <div class="handout ctd">\citep{Kegl:1999es,Senghas:2001zm,Goldin-Meadow:2003pj}</div>
+  <div class="notes">We know this from studies of profoundly deaf children brought up in purely oral environments and therefore without experience of language (Goldin-Meadow 2003; Kegl, Senghas and Coppola 1999; Senghas and Coppola 2001).</div>
+  <div class="notes">Individually or in groups these children invent their own signed languages.</div>
+  <div class="notes">These languages are not as rich as those of children with experience of other people's languages but they have all of the essential features of language including lexicons and syntax (Goldin-Meadow 2002, 2003).</div>
+  <div class="notes">The children invent gesture forms for words which they use with the same meanings in different contexts, they adopt standard orderings for combining words into sentences, and they use sentences in constructing narratives about past, present, future and hypothetical events.  Thus one profoundly deaf child, Qing, describes how swordfish can poke a person so that she dies, and how they have long, straight noses and can swim (Goldin-Meadow 2003: 170).  </div>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="middle">
+          <p class="center">Children with no experience of others' languages can create their own languages.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="notes">I started this section by contrasting two views on lexical acquisition, the shipwreck survivor view and the lab rat view.</div>
+  <div class="notes">We've seen that neither is the whole truth because children learn in part through a process of creation.</div>
+  <div class="notes">Why is this interesting?</div>
+  <div class="notes">The creative activity is a rational, goal-directed activity; so it's not merely training.</div>
+  <div class="notes">The creative activity does not obviously involve mapping words onto concepts, or even having the concepts.</div>
+  <div class="notes">(After all, the child might try out a pattern of use that others see as appropriate for a concept before the child actually has that concept.)</div>
+  <div class="notes">And this creativity with words involves social interaction: the aim is coordination between two or more individuals.</div>
+  <div class="notes">So: language acquisition is neither merely a matter of training, nor merely a matter of reasoning about the meanings of words.</div>
+  <div class="notes">Rather, it involves social interaction from the first utterances of words.</div>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="middle">
+          <p class="center">conclusions</p>
         </div>
       </div>
     </div>

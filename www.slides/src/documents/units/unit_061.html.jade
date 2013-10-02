@@ -14,8 +14,37 @@ exercises_fast: []
 include ../../../fragments/slide_mixins
 
 
-section.slide
+section.slide#bold_conjecture
+  .notes Here is a bold conjecture about how humans come to know things.
   .words: .container_12: .grid_12
+    .middle
+      .handout \subsection{A Conjecture}
+      p.handout.show ‘humans acquire knowledge at a pace far outstripping that found in any other species. Recent evidence indicates that interpersonal understanding—in particular, skill at inferring others’ intentions—plays a pivotal role in this achievement.’
+      .handout.ctd \citep[p.\ 40]{Baldwin:2000qq}
+      p.right (Baldwin 2000, p. 40)
+      // not on slides:
+      .handout ‘functions traditionally considered hallmarks of individual cognition originated through the need to interact with others ...\ perception, action, and cognition are grounded in social interaction.’
+      // p.right (Knoblich & Sebanz 2006, p. 103)
+      .handout.ctd \citep[p.\ 103]{Knoblich:2006bn}
+
+section.slide#vygostky_hyp
+  .notes The challenge, of course, is to say *how* social interaction enables humans to come to know things.
+  .words: .container_12: .grid_12
+    .middle
+      .handout Vygotskian Intelligence Hypothesis:
+      p.handout.ctd.show ‘the unique aspects of human cognition ... were driven by, or even constituted by, social co-operation.’
+      .handout.ctd \citep[p.\ 1]{Moll:2007gu}
+      p.right (Moll & Tomasello 2007, p. 1)
+      // not on slides:
+      .handout ‘human cognitive abilities ... [are] built upon social interaction’
+      .handout.ctd \citep{sinigaglia:2008_roots} %*page
+      // p.right (Sinigaglia &Sparaci 2008)
+
+
+section.slide
+  .
+  .words: .container_12: .grid_12
+    .handout \subsection{How do children acquire words?}
     p Take infant a few weeks away from acquiring her first words. 
     p What does she contribute to her own cognitive development and what do those around her contribute?
     .slide
@@ -58,17 +87,63 @@ section.slide
 
 section.slide
   .notes Both pictures miss social interaction.
-    span On one picture the infant is an outsider who might as well be observing those around her through a telescope.
-    span On the other picture the child is a blank to be shaped by those around her.
-    span There is no meaningful interaction between the infant and adults around her; or, if there is, it makes no difference to her development.
-    span One of two breakthrough discoveries is that infants are equipped for social interaction, as we'll see.
+  .notes On one picture the infant is an outsider who might as well be observing those around her through a telescope.
+  .notes On the other picture the child is a blank to be shaped by those around her.
+  .notes There is no meaningful interaction between the infant and adults around her; or, if there is, it makes no difference to her development.
+  .notes But could there be a role for social interaction in learning the meanings of words?
   .words: .container_12: .grid_12
     .middle.center
       p social interaction
 
 section.slide
+  .notes.handout Children acquiring language create their own words before they learn to use those of the adults around them.
+  .handout ‘Some children are so impatient that they coin their own demonstrative pronoun.  For instance, at the age of about 12 months, Max would point to different objects and say “doh?,” some¬times with the intent that we do something with the objects, such as bring them to him, and sometimes just wanting us to appreciate their existence’
+  .handout.ctd (\citealp[p.\ 122]{Bloom:2000qz}; see further \citealp{Clark:1981bi,Clark:1982hj}).
+  .notes.handout Even where children have mastered a lexical convention, they will readily violate it in their own utterances in order to get a point across.
+  .handout ‘From the time they first use words until they are about two or two-and-a-half, children noticeably and systematically overextend words.  For example, one child used the word “apple” to refer to balls of soap, a rubber-ball, a ball-lamp, a tomato, cherries, peaches, strawberries, an orange, a pear, an onion, and round biscuits’
+  .handout.ctd \citep[p.\ 35]{Clark:1993bv}
   .words: .container_12: .grid_12
-    .middle.center
-      p children create words
+    p.nodim children create 
+      span.hide.step2 and creatively adapt 
+      span words 
+      span.slide.nodim before 
+        span
+          span.slide (and after)  
+        span learning those of the adults around them
+      mixin show('.step2')
+    .slide.em-above
+      p INVESTIGATOR:	what is that called?
+      p SHEM:			dat's uh vam.
+      p INVESTIGATOR:	a vam?
+      p SHEM:			yeah.
+      p INVESTIGATOR:	why is it called a vam?
+      p SHE:				it vams all duh room ups all the water up ...
+      p.right source: Eve Clark's CHILDES data
+      p.right (Clark 1982; MacWhinney 2000)
 
-//- *here: *todo* lexical innovation
+
+section.slide
+  .notes.handout Children with no experience of others' languages can create their own languages.
+  .handout.ctd \citep{Kegl:1999es,Senghas:2001zm,Goldin-Meadow:2003pj}
+  .notes We know this from studies of profoundly deaf children brought up in purely oral environments and therefore without experience of language (Goldin-Meadow 2003; Kegl, Senghas and Coppola 1999; Senghas and Coppola 2001).
+  .notes Individually or in groups these children invent their own signed languages.
+  .notes These languages are not as rich as those of children with experience of other people's languages but they have all of the essential features of language including lexicons and syntax (Goldin-Meadow 2002, 2003).
+  .notes The children invent gesture forms for words which they use with the same meanings in different contexts, they adopt standard orderings for combining words into sentences, and they use sentences in constructing narratives about past, present, future and hypothetical events.  Thus one profoundly deaf child, Qing, describes how swordfish can poke a person so that she dies, and how they have long, straight noses and can swim (Goldin-Meadow 2003: 170).  
+  .words: .container_12: .grid_12
+    .middle
+      p.center Children with no experience of others' languages can create their own languages.
+
+section.slide
+  .notes I started this section by contrasting two views on lexical acquisition, the shipwreck survivor view and the lab rat view.
+  .notes We've seen that neither is the whole truth because children learn in part through a process of creation.
+  .notes Why is this interesting?
+  .notes The creative activity is a rational, goal-directed activity; so it's not merely training.
+  .notes The creative activity does not obviously involve mapping words onto concepts, or even having the concepts.
+  .notes (After all, the child might try out a pattern of use that others see as appropriate for a concept before the child actually has that concept.)
+  .notes And this creativity with words involves social interaction: the aim is coordination between two or more individuals.
+  .notes So: language acquisition is neither merely a matter of training, nor merely a matter of reasoning about the meanings of words.
+  .notes Rather, it involves social interaction from the first utterances of words.
+  .words: .container_12: .grid_12
+    .middle
+      p.center conclusions
+  

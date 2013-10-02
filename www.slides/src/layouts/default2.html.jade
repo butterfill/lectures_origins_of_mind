@@ -5,6 +5,9 @@
 - scripts.add(["/vendor/jquery.min.js"])
 - scripts.add(["/vendor/jquery.crSplineBkg.js"])
 
+//- socket.io
+//- scripts.add(["http://rtbk.dyndns.tv/socket.io/socket.io.js"])
+
 //- Other Scripts
 - scripts.add(["/vendor/log.js","/vendor/modernizr.min.js"])
 
@@ -89,14 +92,28 @@ html
   body
     //- Scripts
     != scripts.toHTML()
-    section.slide#instructions
-      .words: .container_12: .grid_12
-        p Press the right key for the next slide (or swipe left)
-        p Press the left key to go backwards (or swipe right)
-        p Press n to display notes (no equivalent if you don't have a keyboard)
-        p Press m or double tap to see a menu of slides
-
-    != content
+        
+    .deck-notes
+      .deck-notes-container
+    
+    .deck-handout
+      .deck-handout-container
+    
+    .deck-container
+      
+      section.slide#instructions
+        .words: .container_12: .grid_12
+          .middle
+            p.center Press the right key for the next slide (or swipe left)
+      section.slide
+        .notes You won't believe how many people emailed me to say the slides don't work.
+        .words: .container_12: .grid_12
+          p also ...
+          p Press the left key to go backwards (or swipe right)
+          p Press n to toggle whether notes are shown (no equivalent if you don't have a keyboard)
+          p Press m or double tap to see a menu of slides
+  
+      != content
     
 
 
