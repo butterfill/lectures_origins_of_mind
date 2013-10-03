@@ -15,30 +15,172 @@ include ../../../fragments/slide_mixins
 
   
 section.slide
+  .notes Earlier I explained that there is evidence that infants represent unseen objects from around four months.
+  .notes At that point I mentioned just one experiment, Baillargeon's drawbridge study.
+  .notes But there is a wide range of evidence all pointing in the same direction.
+  .notes Here we'll look at just one more experiment.
+  .words: .container_12: .grid_12
+      p object permanence again
+      .slide
+        p ‘young infants’ physical world, like adults’, includes both visible and hidden objects’
+        p.right (Wang et al 2004, p. 194)
+      
+section.slide
+  .notes Here is another way of demonstrating object permanence.
+  .notes The subjects were 4 month old infants.
+  .notes They were shown a large object disappearing inside a small conatiner, or behind a narrow screen.
+  .words: .container_12: .grid_12
+    .img071-1(style="overflow:hidden;max-height:210px;")
+      img(src='/img/wang_2004_fig1a.png', style='max-width:700px')
+    .img071-2.hide.step2(style="overflow:hidden;max-height:250px;")
+      img(src='/img/wang_2004_fig1a.png',style="max-width:700px;position:relative;top:-210px;")
+    p.right Wang et al (2004, figure 1)
+    mixin show('.step2')
+
+section.slide  
+  .notes The experiment was very simple.
+  .notes All the experimenters did was measure how long infants looked in at the two events.
+  .notes Infants looked longer at the narrow-occulder event.
+  .words: .container_12: .grid_12
+    .img071-3(style="overflow:hidden;max-width:280px;")
+      img(src='/img/wang_2004_fig2a.png', style='max-width:496px')
+
+section.slide
+  .notes There was also a control condition.
+  .notes In the control condition, infants saw a small rather than a large object.
+  .words: .container_12: .grid_12
+    p Control condition
+    img(src='/img/wang_2004_fig1b.png')
+    p.right Wang et al (2004, figure 1)
+
+section.slide
+  .notes Here's the experimental condition again for comparison.
+  .words: .container_12: .grid_12
+    p Experimental condition
+    img(src='/img/wang_2004_fig1a.png')
+    p.right Wang et al (2004, figure 1)
+  
+section.slide
+  .notes And here's the control condition again.
+  .words: .container_12: .grid_12
+    p Control condition
+    img(src='/img/wang_2004_fig1b.png')
+    p.right Wang et al (2004, figure 1)
+
+section.slide  
+  .notes As you can see, there was a difference in looking times only in the experimental condition.
+  .words: .container_12: .grid_12
+    img(src='/img/wang_2004_fig2a.png', style='max-width:496px')
+    .notes This experiment is interesting because it doesn't use habituation, as Baillargeon's earlier drawbridge experiment did.
+    
+section.slide
+  .notes How should we interpret these results?
+  .words: .container_12: .grid_12
+    .handout Interpreting violation-of-expectation experiments: 
+    .handout ‘evidence that infants look reliably longer at the unexpected than at the expected event is taken to indicate that they (1) possess the expectation under investigation; (2) detect the violation in the unexpected event; and (3) are surprised by this violation. The term surprise is used here simply as a short-hand descriptor, to denote a state of heightened attention or interest caused by an expectation violation.’
+    .handout.ctd \citep[p.\ 168]{wang:2004_young}
+    p ‘evidence that infants look reliably longer at the unexpected than at the expected event is taken to indicate that they
+    p ‘(1) possess the expectation under investigation; 
+    p ‘(2) detect the violation in the unexpected event; and 
+    p ‘(3) are 
+      span.highlight1 surprised 
+      span by this violation.’ 
+    p.em-above.step2.hide ‘The term surprise is used here simply as a short-hand descriptor, to denote a state of heightened attention or interest caused by an expectation violation.’
+    p.right (Wang et al 2004, p. 168)
+    mixin invert('.highlight1')
+    mixin show('.step2')
+
+
+mixin why_is_it_core_knowledge()
   .words: .container_12: .grid_12
     .middle
-      p.center core knowledge
+      div#testing1
+        p.center.invert.step2(style='font-size:200px;left:40px;position:relative;') ?
+        p.center(style='position:relative;top:-220px;') core 
+          em knowledge
+        //mixin show('.step2')
 
-  //-
-    Illustrate with Gergely Csibra on goal directed action?
-    Or should it be Spelke on the principles of object perception?
-    How are representations of objects acquired?
-      Perception of objects rests on knowledge of “four principles—cohesion, boundedness, rigidity, and no action at a distance—that reflect basic constraints on the motions of physical bodies”  (Spelke 1990: 30-1) 
-      We acquire representations of unperceived objects by applying the principles to what we see and drawing inferences about which objects there are. 
-      So infants who pass violation-of-expectation tasks can:
-       formulate rules or hypotheses;
-       revise and elaborate these hypotheses; and
-       regard events as anomalous or surprising.
+section.slide
+  .notes Why is it core knowledge?
+  .kludge
+    mixin why_is_it_core_knowledge()
+    .notes Part of the answer is that it controlls intelligent behaviours like looking.
+    .notes Use of the term ‘knowledge’ is also supposed to contrast with perception.
+    .notes But we can go deeper by considering a theory about object perception.
 
 
-  //-
-    071
-    core knowledge
-    - brief characterisation from the rediscovery word document
-      - also mention:
-        - signature limits,
-        - present in infants, persists in adults; present in non-human animals
-        - can be overcome
-    - core knowledge poses a problem: it ain't knowledge
-    - use the Haith quote: “no concept causes more problems in discussions of infant cognition than that of representation.” (Haith 1998)
-      - also Dennett don't know what we mean by representation
+
+section.slide
+  .notes How do infants or adults discern where one object begins and another ends?
+  .notes The way they are ordinarily arranged in space, so that one occludes parts of another, prevents us from doing this in any simple way.
+  img.bkg(src='/img/DSC_1028.JPG')
+
+section.slide
+  .notes Spelke proposes that our ability to identify objects depends on core knowledge of some principles (Spelke 1990).
+  .notes Why is it core knowledge?
+  .words: .container_12: .grid_12
+    p Principles of Object Perception
+    .handout \subsection{Principles of Object Perception \citep{Spelke:1990jn}}
+    ul.handout.show
+      li cohesion
+        span.step2.hide —‘two surface points lie on the same object only if the points are linked by a path of connected surface points’
+        .handout &nbsp;
+      li boundedness
+        span.step3.hide —‘two surface points lie on distinct objects only if no path of connected surface points links them’
+        // … the boundedness principle implies that … two distinct objects cannot interpenetrate.’
+        .handout &nbsp;
+      li rigidity
+        span.step4.hide —‘objects are interpreted as moving rigidly if such an interpretation exists’
+        .handout &nbsp;
+      li no action at a distance
+        span.step5.hide —‘separated objects are interpreted as moving independently of one another if such an interpretation exists’
+        .handout &nbsp;
+    p.right (Spelke 1990)
+    mixin steps(2,5)
+
+
+section.slide
+  .notes How do these principles enable us to discern when one object ends and another begins?
+  .words: .container_12: .grid_12
+    ol.nodim
+      li Perception of objects rests on knowledge of ‘four principles—cohesion, boundedness, rigidity, and no action at a distance—that reflect basic constraints on the motions of physical bodies’  (Spelke 1990: 30-1)
+      li We acquire representations of unperceived objects by applying the principles to what we see and drawing inferences about which objects there are. 
+      li.slide So infants who pass violation-of-expectation tasks can:
+        ul
+          li formulate rules or hypotheses;
+          li revise and elaborate these hypotheses; and
+          li regard events as anomalous or surprising.
+
+section.slide
+  mixin why_is_it_core_knowledge()
+  .notes So I was asking why infants' representations of unseen objects should move us to say that they have core knowledge of objects.
+  .notes Part of the answer was just that these representations guide intelligent behaviour and are not straightforwardly perceptual.
+  .notes But Spelke's theory of object perception offers a deeper account.
+  .notes The representations of objects are based on inference, or an inference-like process, which relies on approximately true principles.
+
+
+
+
+//-
+  Illustrate with Gergely Csibra on goal directed action?
+  Or should it be Spelke on the principles of object perception?
+  How are representations of objects acquired?
+    Perception of objects rests on knowledge of “four principles—cohesion, boundedness, rigidity, and no action at a distance—that reflect basic constraints on the motions of physical bodies”  (Spelke 1990: 30-1) 
+    We acquire representations of unperceived objects by applying the principles to what we see and drawing inferences about which objects there are. 
+    So infants who pass violation-of-expectation tasks can:
+     formulate rules or hypotheses;
+     revise and elaborate these hypotheses; and
+     regard events as anomalous or surprising.
+
+
+//-
+  071
+  core knowledge
+  - brief characterisation from the rediscovery word document
+    - also mention:
+      - signature limits,
+      - present in infants, persists in adults; present in non-human animals
+      - can be overcome
+  - core knowledge poses a problem: it ain't knowledge
+  - use the Haith quote: “no concept causes more problems in discussions of infant cognition than that of representation.” (Haith 1998)
+    - also Dennett don't know what we mean by representation
