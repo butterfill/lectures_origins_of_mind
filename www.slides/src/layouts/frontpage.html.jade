@@ -12,7 +12,6 @@
 - scripts.add(["/vendor/log.js","/vendor/modernizr.min.js"])
 
 //- User
-- styles.add(["/styles/style2.css"])
 - scripts.add(["/scripts/script.js"])
 
 doctype 5
@@ -54,12 +53,12 @@ html(lang="en")
     // Styles
     != styles.toHTML()
 
-  body
+  body(style="padding-top: 15px;")
 
     .container
       section#content.content!= content
       hr
-      footer
+      footer(style="padding-bottom: 30px;")
         div(style="font-style:italic; font-size: 12px") Last updated at #{site.date}
 
     // Scripts

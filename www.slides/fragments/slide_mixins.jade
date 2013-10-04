@@ -62,6 +62,9 @@ mixin render_unit(unit)
 // create title slide for a lecture
 // param p contains document and images (an array of images to use)
 mixin title_slide(p)
+  .notes.notes-header-tex \title {Origins of Mind: Lecture Notes \\ #{p.document.title}}
+  .notes.notes-header-tex &nbsp;
+  .notes.notes-header-tex \maketitle
   #title-slide.slide
     - var img = p.images.first()
     - var _ = p.images.next(); //avoid re-using first image 
@@ -89,6 +92,7 @@ mixin title_slide(p)
     .handout &nbsp;
     .handout \iemail %<s.butterfill@warwick.ac.uk>
     .handout \end{center}
+
 
 
 
@@ -509,4 +513,6 @@ mixin insert_unit(p)
         mixin section({unit:d, images:p.images})
     if p.handout !== false
         mixin handout({unit:d})
+    .notes.notes-header-tex &nbsp;
+    .notes.notes-header-tex \section{#{d.title}}
     mixin render_unit(d)

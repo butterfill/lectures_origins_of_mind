@@ -67,7 +67,9 @@ only toggle the notes panel for this cloned window.
 	to the deck container.
 	*/
     $[deck]('extend', 'showNotes', function() {
-        $("."+$[deck]('getOptions').classes.notes).show();
+        $notesEl = $("."+$[deck]('getOptions').classes.notes);
+		$notesEl.show();
+		$('.notes-header-tex', $notesEl).hide();
 		$('.deck-container').css({left:150});
     });
     
@@ -77,9 +79,17 @@ only toggle the notes panel for this cloned window.
 		$notesEl.addClass('notes-export');
 		//show all notes
 		$('.notes', $notesEl).show();
-		$('.divider, .notes-header', $notesEl).show();
+		$('.notes-header-tex', $notesEl).show();
+		$('.notes-header', $notesEl).hide();
+		//$('.divider, .notes-header', $notesEl).show();
 		//hide the slides completely
 		$('.deck-container').hide();
+		//escape the notes for tex
+		//nb: destructive - removes inner html elements!
+		$('.notes').each(function(idx,el){
+			var esc=$(el).text().replace(/&/g,'\\&');
+			$(el).text(esc);
+		});
     });
 
     $[deck]('extend', 'showHandoutExport', function() {
@@ -105,6 +115,13 @@ only toggle the notes panel for this cloned window.
 		$notesEl.hide();
 		$notesEl.removeClass('notes-export');
 		$('.deck-container').show();
+		//unescape the notes for tex
+		//nb: destructive - removes inner html elements!
+		$('.notes').each(function(idx,el){
+			var esc=$(el).text().replace(/\\&/g,'&');
+			$(el).text(esc);
+		});
+		
     });
 
     $[deck]('extend', 'hideHandoutExport', function() {
@@ -132,7 +149,7 @@ only toggle the notes panel for this cloned window.
 
     /*
         jQuery.deck('Init')
-        */
+    */
     $d.bind('deck.init', function() {
         var opts = $[deck]('getOptions');
         var container = $[deck]('getContainer');
@@ -152,6 +169,7 @@ only toggle the notes panel for this cloned window.
                 e.preventDefault();
             }
         });
+		
 		/* copy the notes into the special notes element */
 		var $notesContainer = $("."+$[deck]('getOptions').classes.notesContainer);
 		var $notes = $('.deck-container .notes');
@@ -174,14 +192,20 @@ only toggle the notes panel for this cloned window.
 			if( last_slide_id != -1 && last_slide_id != slide_id ) {
 				$notesContainer.append('<div class="divider for-'+last_slide_id+'">--------</div>')
 			}
-			if( last_slide_id != slide_id ) {
+			if( last_slide_id != -1 && last_slide_id != slide_id ) {
 				$notesContainer.append('<div class="notes-header for-'+slide_id+'">Notes for '+slide_id+':</div>');
+				$notesContainer.append('<div class="notes-header-tex for-'+slide_id+'">&nbsp;</div>');
+				$notesContainer.append('<div class="notes-header-tex for-'+slide_id+'">&nbsp;</div>');
+				//tex requires that we esacpe _ characters
+				var tex_slide_id = (slide_id+'').replace(/_/g,'\\_');
+				$notesContainer.append('<div class="notes-header-tex for-'+slide_id+'">\\subsection{'+tex_slide_id+'}</div>');
 			}
-			$notesContainer.append('<div class="notes for-'+slide_id+'">'+$note.html()+'</div>');
+			//insert note preserving classes
+			var cls = $note.attr('class') + (" for-"+slide_id);
+			$notesContainer.append('<div class="'+cls+'">'+$note.html()+'</div>');
 			last_slide_id = slide_id;
 		});
-
-		
+				
 		/* copy the handout elements into the special handout element */
 		var $handoutContainer = $("."+$[deck]('getOptions').classes.handoutContainer);
 
@@ -217,13 +241,16 @@ only toggle the notes panel for this cloned window.
 		
 		
     })
-    .bind('deck.change', function(e, from, to) {
+    
+	.bind('deck.change', function(e, from, to) {
+		//show notes for current slide
         var slideTo = $[deck]('getSlide', to);
 		var $notesContainer = $("."+$[deck]('getOptions').classes.notesContainer);
 		$('.notes', $notesContainer).hide();
-		$('.divider, .notes-header', $notesContainer).hide();
+		$('.divider, .notes-header, .notes-header-tex', $notesContainer).hide();
 		var slide_id = $(slideTo).attr('id');
-		var $notes = $('.for-'+slide_id, $notesContainer);
+		var $notes = $('.for-'+slide_id, $notesContainer).not('.notes-header-tex');
 		$notes.show();
     });
+
 })(jQuery, 'deck');

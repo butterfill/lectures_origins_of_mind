@@ -1,6 +1,7 @@
 /*
  * presentation style for steve presentations
  * based on deck.js neon style.
+ * assumes 800px wide design width
  */
 html {
   overflow: hidden;
@@ -38,8 +39,21 @@ html {
   text-shadow: 0 0 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000, 0 0 5px #000, 0 0 5px #000;
 }
 .deck-container .blur-text {
-  color: rgba(255,255,255,0.2);
-  text-shadow: 0 0 5px #fff;
+  -webkit-animation-name: anim_blur;
+  -moz-animation-name: anim_blur;
+  -o-animation-name: anim_blur;
+  -ms-animation-name: anim_blur;
+  animation-name: anim_blur;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 .deck-container .blur-text .invert {
   color: rgba(0,0,0,0.2);
@@ -115,6 +129,27 @@ div.container_12 {
   margin-left: 40px;
   margin-right: 40px;
   width: 720px;
+}
+/**
+ * modifications to what happens when the slide changes
+ */
+.deck-before .vanish:not(.deck-current) {
+  overflow: hidden;
+  -webkit-animation-name: anim_vanish;
+  -moz-animation-name: anim_vanish;
+  -o-animation-name: anim_vanish;
+  -ms-animation-name: anim_vanish;
+  animation-name: anim_vanish;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 /**
  * layout
@@ -1072,4 +1107,179 @@ table.fitch-proof td.last-premise {
 .deck-container .under-huge-glow {
   padding-top: 0;
   margin-top: -1em;
+}
+@-moz-keyframes anim_blur {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 0px #fff;
+  }
+
+  100% {
+    color: rgba(255,255,255,0.2);
+    text-shadow: 0 0 5px #fff;
+  }
+}
+@-webkit-keyframes anim_blur {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 0px #fff;
+  }
+
+  100% {
+    color: rgba(255,255,255,0.2);
+    text-shadow: 0 0 5px #fff;
+  }
+}
+@-o-keyframes anim_blur {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 0px #fff;
+  }
+
+  100% {
+    color: rgba(255,255,255,0.2);
+    text-shadow: 0 0 5px #fff;
+  }
+}
+@-ms-keyframes anim_blur {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 0px #fff;
+  }
+
+  100% {
+    color: rgba(255,255,255,0.2);
+    text-shadow: 0 0 5px #fff;
+  }
+}
+@keyframes anim_blur {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 0px #fff;
+  }
+
+  100% {
+    color: rgba(255,255,255,0.2);
+    text-shadow: 0 0 5px #fff;
+  }
+}
+@-moz-keyframes anim_vanish {
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    max-height: 400px;
+    max-width: 800px;
+  }
+
+  50% {
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+  }
+
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    max-height: 0;
+    max-width: 0;
+    font-size: 0;
+  }
+}
+@-webkit-keyframes anim_vanish {
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    max-height: 400px;
+    max-width: 800px;
+  }
+
+  50% {
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+  }
+
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    max-height: 0;
+    max-width: 0;
+    font-size: 0;
+  }
+}
+@-o-keyframes anim_vanish {
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    max-height: 400px;
+    max-width: 800px;
+  }
+
+  50% {
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+  }
+
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    max-height: 0;
+    max-width: 0;
+    font-size: 0;
+  }
+}
+@-ms-keyframes anim_vanish {
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    max-height: 400px;
+    max-width: 800px;
+  }
+
+  50% {
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+  }
+
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    max-height: 0;
+    max-width: 0;
+    font-size: 0;
+  }
+}
+@keyframes anim_vanish {
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    max-height: 400px;
+    max-width: 800px;
+  }
+
+  50% {
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+  }
+
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    max-height: 0;
+    max-width: 0;
+    font-size: 0;
+  }
 }

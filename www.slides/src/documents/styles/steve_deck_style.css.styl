@@ -1,6 +1,7 @@
 /*
  * presentation style for steve presentations
  * based on deck.js neon style.
+ * assumes 800px wide design width
  */
 @import nib
 
@@ -51,20 +52,32 @@ invert_text()
 
 
 .deck-container
- .blur-text
-  color: rgba(255,255,255,0.2)
-  text-shadow: 0 0 5px rgba(255,255,255,1);
-  .invert
-   color: rgba(0,0,0,0.2)
-   text-shadow: 0 0 5px rgba(0,0,0,1);
-  .white-box
-   background-color rgba(125, 125, 125,1)
-   border none
-   box-shadow 0 0 24px 16px rgba(125, 125, 125,1)
-   color: rgba(0,0,0,0.2)
-   text-shadow: 0 0 5px rgba(0,0,0,1);
-  span[class*='bkg-words-']
-   opacity 0.4
+  .blur-text
+    //color: rgba(255,255,255,0.2)
+    //text-shadow: 0 0 5px rgba(255,255,255,1);
+    animation-name anim_blur
+    animation-duration 1s
+    animation-fill-mode: forwards
+    .invert
+      color: rgba(0,0,0,0.2)
+      text-shadow: 0 0 5px rgba(0,0,0,1);
+    .white-box
+      background-color rgba(125, 125, 125,1)
+      border none
+      box-shadow 0 0 24px 16px rgba(125, 125, 125,1)
+      color: rgba(0,0,0,0.2)
+      text-shadow: 0 0 5px rgba(0,0,0,1);
+    span[class*='bkg-words-']
+      opacity 0.4
+
+
+@keyframes anim_blur
+  0%
+    color: rgba(255,255,255,1)
+    text-shadow: 0 0 0px rgba(255,255,255,1);
+  100%
+    color: rgba(255,255,255,0.2)
+    text-shadow: 0 0 5px rgba(255,255,255,1);
 
 /*
 .deck-container
@@ -97,7 +110,7 @@ invert_text()
 /**
  * avoid deck.core.css overwriting our 960 grid css
  */
-div {
+div 
   .grid_1,
   .grid_2,
   .grid_3,
@@ -109,22 +122,44 @@ div {
   .grid_9,
   .grid_10,
   .grid_11,
-  .grid_12 {
+  .grid_12 
     display:inline;
     float: left;
     position: relative;
     margin-left: 10px;
     margin-right: 10px;
-   }
-}
-
 
 // measurements are for 800px design width
-div.container_12 {
- margin-left: 40px
- margin-right: 40px
- width: 720px
-}
+div.container_12 
+  margin-left: 40px
+  margin-right: 40px
+  width: 720px
+
+
+
+/**
+ * modifications to what happens when the slide changes
+ */
+.deck-before .vanish:not(.deck-current)
+  //display none
+  overflow hidden
+  animation-name anim_vanish
+  animation-duration 1s
+  animation-fill-mode: forwards
+
+
+@keyframes anim_vanish
+  0%
+    opacity 1
+    max-height 400px
+    max-width 800px
+  50%
+    opacity 0.4
+  100%
+    opacity 0
+    max-height 0
+    max-width 0
+    font-size 0
 
 
 /**
