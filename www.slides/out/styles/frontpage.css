@@ -1,8 +1,12 @@
-a,
-a:link {
-  cursor: pointer;
+body {
+  font-family: Lato, sans-serif;
 }
-table tfoot th,
-table tbody th {
-  border-top: 1px solid #ddd;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+  font-family: Lato, sans-serif;
 }

@@ -33,7 +33,7 @@ invert_text()
   text-shadow: 0 0 2px white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white, 0 0 5px white, 0 0 5px white
 
 .deck-container
-  font-size: 20pt
+  font-size: 19pt
   padding: 0
   noinvert_text()
 
@@ -49,26 +49,28 @@ invert_text()
 .deck-container .noinvert
   noinvert_text()
 
+blur()
+  animation-name anim_blur
+  animation-duration 1s
+  animation-fill-mode: forwards
+  .invert
+    color: rgba(0,0,0,0.2)
+    text-shadow: 0 0 5px rgba(0,0,0,1);
+  .white-box
+    background-color rgba(125, 125, 125,1)
+    border none
+    box-shadow 0 0 24px 16px rgba(125, 125, 125,1)
+    color: rgba(0,0,0,0.2)
+    text-shadow: 0 0 5px rgba(0,0,0,1);
+  span[class*='bkg-words-']
+    opacity 0.4
 
 
 .deck-container
   .blur-text
     //color: rgba(255,255,255,0.2)
     //text-shadow: 0 0 5px rgba(255,255,255,1);
-    animation-name anim_blur
-    animation-duration 1s
-    animation-fill-mode: forwards
-    .invert
-      color: rgba(0,0,0,0.2)
-      text-shadow: 0 0 5px rgba(0,0,0,1);
-    .white-box
-      background-color rgba(125, 125, 125,1)
-      border none
-      box-shadow 0 0 24px 16px rgba(125, 125, 125,1)
-      color: rgba(0,0,0,0.2)
-      text-shadow: 0 0 5px rgba(0,0,0,1);
-    span[class*='bkg-words-']
-      opacity 0.4
+    blur()
 
 
 @keyframes anim_blur
@@ -140,12 +142,17 @@ div.container_12
 /**
  * modifications to what happens when the slide changes
  */
+// vanish after you have been on the current slide
 .deck-before .vanish:not(.deck-current)
   //display none
   overflow hidden
   animation-name anim_vanish
   animation-duration 1s
   animation-fill-mode: forwards
+
+// blur after you have been on the current slide
+.deck-before .blur-after:not(.deck-current)
+  blur()
 
 
 @keyframes anim_vanish
@@ -160,6 +167,43 @@ div.container_12
     max-height 0
     max-width 0
     font-size 0
+
+.deck-current .fade-in
+  animation FadeIn2 20s
+
+.deck-current
+  .delay-0
+    animation-delay 0
+  .delay-5s
+    animation-delay 5s
+  .delay-10s
+    animation-delay 10s
+  .delay-15s
+    animation-delay 15s
+  .delay-20s
+    animation-delay 20s
+
+@keyframes FadeIn 
+  0% 
+    opacity: 0.1;
+  100% 
+    opacity: 1;
+
+@keyframes FadeIn2
+  0% 
+    opacity: 0.1;
+    text-shadow: 0 0 150px white, 0 0 50px white, 0 0 5px black
+    color black
+  50%
+    color black
+    opacity 0.8
+    text-shadow: 0 0 50px white, 0 0 5px white, 0 0 2px black
+  100%
+    color white
+    opacity: 1;
+    //text-shadow: 0 0 2px black, 1px 1px 2px black, 1px -1px 2px black, -1px 1px 2px black, -1px -1px 2px black
+    text-shadow: 0 0 50px white, 0 0 5px black, 0 0 5px black
+
 
 
 /**
@@ -597,7 +641,7 @@ make-bkg-words('faint-orange', rgba(255,165,0,0.3))
   text-align: left
   color: white
   font-size: 45pt
-  font-weight: bold
+  font-weight: 900
   top: auto
   -webkit-transform: none
   -moz-transform: none
@@ -609,6 +653,7 @@ make-bkg-words('faint-orange', rgba(255,165,0,0.3))
 
 .csstransforms .deck-container h2
   font-size: 30pt
+  font-weight: 300
   border-bottom: none
   margin-bottom: 0
   margin-right: 30pt
@@ -633,6 +678,7 @@ make-bkg-words('faint-orange', rgba(255,165,0,0.3))
 .deck-container .email, .deck-container .slide h3
   margin-top: -0.3em
   font-size: 30pt
+  font-weight 300
   text-shadow: 0 0 2px black, 1px 1px 2px black, 1px -1px 2px black, -1px 1px 2px black, -1px -1px 2px black
 
 /**
@@ -658,3 +704,70 @@ make-bkg-words('faint-orange', rgba(255,165,0,0.3))
   margin-top: -1em
 
 
+/**
+ * speech bubbles
+ * from http://www.ilikepixels.co.uk/drop/bubbler/
+ */
+p.speech-left, p.speech-right
+  position: relative;
+  width: 200px;
+  height: 120px;
+  padding 5px
+  background: #000;
+  border-radius: 10px;
+  border-style solid
+  border-width 2px
+  border-color white
+
+p.speech-left:before
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 24px 15px 0;
+  border-color: #000 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-left: -15px;
+  bottom: -23px;
+  left: 16%;
+
+p.speech-left:after
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 25px 16px 0;
+  border-color: #fff transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+  margin-left: -16px;
+  bottom: -27px;
+  left: 16%;
+
+
+p.speech-right:before
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 24px 15px 0;
+  border-color: #000 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-left: -15px;
+  bottom: -23px;
+  left: 84%;
+
+p.speech-right:after
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 25px 16px 0;
+  border-color: #fff transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+  margin-left: -16px;
+  bottom: -27px;
+  left: 84%;

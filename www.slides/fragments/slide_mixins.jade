@@ -73,10 +73,11 @@ mixin title_slide(p)
     - var low = false
       if img.filename.indexOf('.low.') != -1
         - low = true
-    .title-block(style="#{low ? 'position:relative; top:325px' : ''}"): .title-container
-        h1.title1 Origins of Mind
-        h1.title2 #{p.document.title}
-        h3.email s.butterfill@warwick.ac.uk
+    .fade-in
+      .title-block(style="#{low ? 'position:relative; top:325px' : ''}"): .title-container
+          h1.title1.fade-in Origins of Mind
+          h1.title2.fade-in #{p.document.title}
+          h3.email.fade-in s.butterfill@warwick.ac.uk
     if p.document.weburl
       .words
         span(style="position:relative;top:250px;left:450px;").white-box.big.center #{p.document.weburl}
@@ -130,11 +131,14 @@ mixin connect(p)
   .slide.anim-connect(data-from='#{p.from}', data-to='#{p.to}', data-from-anchor="#{p.fromAnchor||'LeftMiddle'}",data-to-anchor='#{p.toAnchor || "RightMiddle"}',data-color="#{p.color || 'hotpink'}")
 
 
-mixin blur(what)
+mixin blur_(what)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="blur-text")
+
+mixin blur(what)
+  blur_(what)
   mixin anim_end()
 
 mixin unblur(what)
