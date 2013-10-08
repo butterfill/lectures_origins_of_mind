@@ -1,3 +1,6 @@
+/**
+ * modified by Steve Butterfill 2013
+ */
 .deck-container {
   font-family: "Lato", sans-serif;
   font-size: 1.75em;
@@ -80,15 +83,6 @@
   -webkit-box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
   -moz-box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
   box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
-}
-.deck-container > .slide .deck-before, .deck-container > .slide .deck-previous {
-  opacity: 0.4;
-}
-.deck-container > .slide .deck-before:not(.deck-child-current) .deck-before, .deck-container > .slide .deck-before:not(.deck-child-current) .deck-previous, .deck-container > .slide .deck-previous:not(.deck-child-current) .deck-before, .deck-container > .slide .deck-previous:not(.deck-child-current) .deck-previous {
-  opacity: 1;
-}
-.deck-container > .slide .deck-child-current {
-  opacity: 1;
 }
 .deck-container .deck-status {
   font-size: 0.6666em;

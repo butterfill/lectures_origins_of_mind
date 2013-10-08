@@ -108,6 +108,9 @@ var inject = function(){
 <!-- create title slide for a lecture-->
 <!-- param p contains document and images (an array of images to use)-->
 <!-- param p contains p.unit and p.images (an array of images)-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
 <section class="slide">
   <div class="notes">There is a family of questions about the origins of mind that philosophers have been asking since Plato or before.</div>
   <div class="words">
@@ -119,7 +122,7 @@ var inject = function(){
             <p class="blur1 right">(Locke 1689)</p>
           </div>
         </div>
-        <div data-what=".blur1" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <blur_ what="what"></blur_>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         <div class="kludge">
           <div class="step2 hide">
@@ -127,9 +130,9 @@ var inject = function(){
             <p class="blur2 right">(Dewey 1938, p. 12)</p>
           </div>
         </div>
-        <div data-what=".step2" data-class="hide" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div data-what=".blur2" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <blur_ what="what"></blur_>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         <div class="kludge">
           <div class="step3 hide"> 
@@ -137,9 +140,9 @@ var inject = function(){
             <p class="blur3 right">(Fodor 1975, p.\ 198)</p>
           </div>
         </div>
-        <div data-what=".step3" data-class="hide" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=".step3" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div data-what=".blur3" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <blur_ what="what"></blur_>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         <div data-what=".unblur3" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
@@ -150,7 +153,7 @@ var inject = function(){
         <div data-what=" .unblur3" data-class="invert" class="slide anim-continue anim-removeclass"></div>
         <div data-what=" .unblur3" data-class="bkg-words-highlight-white" class="slide anim-continue anim-removeclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div data-what=".unblur3" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <blur_ what="what"></blur_>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
       </div>
     </div>

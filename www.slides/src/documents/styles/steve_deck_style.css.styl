@@ -90,7 +90,20 @@ blur()
 .deck-container
   .italic
     font-style: italic
+  .grey-text
+    color grey
 
+
+
+/**
+ * Allow slides to be recalled by adding a class
+ * the .slide sub-part makes sub-slides visisble
+ */ 
+.deck-before.recall, .deck-previous.recall, .deck-next.recall, .deck-after.recall
+  left 0
+  top 0
+  .slide
+    visibility visible
 
 /**
  * supposed to prevent reduced opacity for previous slide
@@ -142,18 +155,40 @@ div.container_12
 /**
  * modifications to what happens when the slide changes
  */
+// blur after you have been on the current slide
+.deck-before .blur-after:not(.deck-current), .deck-previous .blur-after:not(.deck-current)
+  blur()
+
+// fade out after you have been on the current slide
+.deck-before .fade-after:not(.deck-current), .deck-previous .fade-after:not(.deck-current)
+  animation-name FadeOut
+  animation-duration 1s
+  animation-fill-mode forwards
+
+
+@keyframes FadeOut
+  0%
+    opacity 1
+  100%
+    opacity 0
+
+// move left 70px after you have been on the current slide
+.deck-before .move-left-after:not(.deck-current), .deck-previous .move-left-after:not(.deck-current)
+  animation-name MoveLeft
+  animation-duration 2s
+  animation-fill-mode forwards
+
+@keyframes MoveLeft
+  100%
+    transform translateX(-100px)
+
 // vanish after you have been on the current slide
-.deck-before .vanish:not(.deck-current)
+.deck-before .vanish:not(.deck-current), .deck-previous .vanish:not(.deck-current)
   //display none
   overflow hidden
   animation-name anim_vanish
   animation-duration 1s
   animation-fill-mode: forwards
-
-// blur after you have been on the current slide
-.deck-before .blur-after:not(.deck-current)
-  blur()
-
 
 @keyframes anim_vanish
   0%
@@ -204,6 +239,21 @@ div.container_12
     //text-shadow: 0 0 2px black, 1px 1px 2px black, 1px -1px 2px black, -1px 1px 2px black, -1px -1px 2px black
     text-shadow: 0 0 50px white, 0 0 5px black, 0 0 5px black
 
+.scale-2
+  transform scale(2)
+
+.deck-before .scale-out-after:not(.deck-current)
+  animation AnimScaleOut 3s forwards
+
+.zoom
+  animation Zoom2 3s forwards
+
+@keyframes AnimScaleOut 
+  0%
+    transform scale(2)
+  100%
+    transform scale(1)
+
 
 
 /**
@@ -226,7 +276,11 @@ div.container_12
     right: 0
     top: 300px
     transform: translate3d(0, -50%, 0)
-  
+
+  .bottom
+    position absolute
+    bottom 0px
+
   .indent
     padding-left: 1em
   
@@ -412,18 +466,23 @@ table.fitch-proof
   width: 150px
 
 
-
 /**
- * make part of the screen white (with black text)
+ * used by btm-white, btm-black
  */
-btm-white(height,top) 
-  background-color: white
+btm-X(height,top)
   float: left
   position: absolute
   top: top
   height:height
   width: 800px
   left: 0px
+
+/**
+ * make part of the screen white (with black text)
+ */
+btm-white(height,top) 
+  background-color: white
+  btm-X(height,top)
   invert_text()
   box-shadow: 0px -8px 8px 0 rgba(255,255,255,0.5)
 
@@ -435,6 +494,21 @@ btm-white(height,top)
 
 .deck-container .bottom-third-white
  btm-white 200px, 400px
+
+
+btm-black(height,top)
+  background-color: black
+  btm-X(height,top)
+  box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5)
+
+.deck-container .bottom-black
+  btm-black 225px, 375px
+ 
+.deck-container .bottom-half-black
+  btm-black 300px, 300px
+
+.deck-container .bottom-third-black
+ btm-black 200px, 400px
 
 
 .deck-container .right-half-white
@@ -760,14 +834,33 @@ p.speech-right:before
   left: 84%;
 
 p.speech-right:after
-  content: '';
-  position: absolute;
-  border-style: solid;
-  border-width: 25px 16px 0;
-  border-color: #fff transparent;
+  content: ''
+  position: absolute
+  border-style: solid
+  border-width: 25px 16px 0
+  border-color: #fff transparent
   display: block;
   width: 0;
   z-index: 0;
   margin-left: -16px;
   bottom: -27px;
   left: 84%;
+
+.rotate-1
+  position fixed
+  transform rotate(1deg)
+.rotate--1
+  position fixed
+  transform rotate(-1deg)
+
+
+/**
+ * from http://css-tricks.com/examples/ShapesOfCSS/
+ */
+.space-invader
+  box-shadow: 0 0 0 1em red, 0 1em 0 1em red, -2.5em 1.5em 0 .5em red, 2.5em 1.5em 0 .5em red, -3em -3em 0 0 red, 3em -3em 0 0 red, -2em -2em 0 0 red, 2em -2em 0 0 red, -3em -1em 0 0 red, -2em -1em 0 0 red, 2em -1em 0 0 red, 3em -1em 0 0 red, -4em 0 0 0 red, -3em 0 0 0 red, 3em 0 0 0 red, 4em 0 0 0 red, -5em 1em 0 0 red, -4em 1em 0 0 red, 4em 1em 0 0 red, 5em 1em 0 0 red, -5em 2em 0 0 red, 5em 2em 0 0 red, -5em 3em 0 0 red, -3em 3em 0 0 red, 3em 3em 0 0 red, 5em 3em 0 0 red, -2em 4em 0 0 red, -1em 4em 0 0 red, 1em 4em 0 0 red, 2em 4em 0 0 red;
+  background: red;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  margin: 50px 0 70px 65px;

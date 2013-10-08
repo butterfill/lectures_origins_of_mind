@@ -14,10 +14,40 @@ exercises_fast: []
 include ../../../fragments/slide_mixins
 
 
+
+
+
+
+
 section.slide
-  .notes I can't tell you what categorical perception is.
-  .notes The operational definitions used in psychology are unrevealling.
-  .notes And the ways philosophers define it are wrong or at least depend on unjustified assumptions.
+  .notes Let me start with something quite basic.
+  .notes Here are three patches of colour.
+  .notes The patches are all different colours, but the two leftmost are both the same colour---they are both blue.
+  .notes This sounds contradictory but isn't.
+  .notes In one case we're talking about the particular colours of things; in the other case we're talking about colour category.
+  .notes &nbsp;
+  .notes To claim that there is categorical perception is, very roughly and to a first approximation, to claim that perceptual processes are concerned not only with the particular colours of things but also with categories of colour like blue and red.
+  .notes This is not a definition, only a very rough starting point.
+  .words: .container_12
+    .middle
+      .grid_4
+        mixin colour-box('rgb(51,153,255)', 100)
+        p.center 2.5B
+      .grid_4
+        mixin colour-box('rgb(85,100,255)', 100)
+        p.center 7.5BG
+      .grid_4
+        mixin colour-box('rgb(42,162,42)', 100)
+        p.center 2.5BG
+    //img(src='/img/categorical.png',height='300px')
+
+section.slide
+  .words: .container_12: .grid_12
+    .middle
+      p.center What is categorical perception of colour?
+
+
+section.slide
   .words: .container_12
     .grid_6
       p.speech-left Tell me what categorical perception is!
@@ -30,8 +60,308 @@ section.slide
         p.em-above &nbsp;
         .step2.hide
           p.speech-right(style="height:60px;") I can't.
-    mixin steps(3)
+        p.em-above &nbsp;
+        p.em-above &nbsp;
+        .step4.hide
+          p.speech-right(style="height:120px;width:250px;") by asking, What is categorical perception commonly taken to explain? 
+    mixin step(2)
+    .notes I can't tell you what categorical perception is.
+    .notes The operational definitions used in psychology are unrevealling.
+    .notes And the ways philosophers define it are wrong, or at least depend on unjustified assumptions.
+    mixin step(3)
+    mixin step(4)
     .notes But how can we study it without knowing what it is?
     .notes We have to proceed by seeing what conclusions about it are supported by evidence.
     .notes Then we can work back to infer what it is by asking what it could be if these conclusions are true.
     .notes Put differently, we can start by asking, What is categorical perception commonly taken to explain? 
+
+section.slide
+  .notes At this point we should take nothing for granted and make no assumptions about what sense, if any, categorical perception involves either categories or perception.
+  .notes We  are only asking, What is categorical perception commonly taken to explain?
+  .words: .container_12: .grid_12
+    .middle
+      p.center
+        span.invert ‘
+        span categorical 
+        span perception
+        span.invert ’
+
+
+section.slide
+  .handout
+    .notes What is categorical perception of colour commonly taken to explain?
+    .notes The diagram below represents sequences of three colours.
+    .notes The vertical sequence shows three greens and the uppermost horizontal sequence shows a blue, a purple and a pink.
+    div \begin{center}
+    div \includegraphics[scale=0.3]{daoutis_2006_fig_A1.png}
+    div \end{center}
+    div \begin{center} \citealp{Daoutis:2006ij} figure A1 \end{center}
+  img.bkg(src='/img/slide_cp_22.jpg')
+
+section.slide
+  .handout.notes Each colour differs from its neighbours by the same amount according to a standard measure based on the human eye's abilities to discriminate wavelengths.
+  img.bkg(src='/img/slide_cp_23.jpg')
+
+section.slide
+  .handout
+    .notes Yet the greens are often judged to look quite similar and the blue-pink-purple to look very different \citep[p.\ 12--7]{Roberson:1999rk}.
+    .notes When people are asked to name these colours, they often give the same name to the greens but different names to members of the blue-pink-purple sequence.
+    .notes And people are generally faster and more accurate in discriminating between members of the blue-pink-purple sequence than members of the green sequence 
+      span (faster: \citealp{Bornstein:1984cb}; more accurate: \citealp[p.\ 22--7]{Roberson:1999rk}).
+  img.bkg(src='/img/slide_cp_22.jpg')
+
+section.slide
+  .notes Let me show you how speed an accuracy of discimination are usually measured.
+  .notes This is a 2-alternative forced-choice task (2AFC).
+  img.bkg(src='/img/slide_cp_25.jpg')
+  mixin slides_from_img(['slide_cp_26.jpg','slide_cp_27.jpg'])
+
+
+section.slide
+  .notes So far we've talked about three ways in which the blue-pink-purple sequence differs from the greens.
+  .notes The green sequence also differs from the blue-pink-purple sequence on other measures. 
+  img.bkg(src='/img/slide_cp_22.jpg')
+  img.bkg.slide.fade-in(src='/img/slide_cp_43.jpg')
+    .notes But these results are not confined to just two sequences.
+    .notes There is a way of dividing a colour space into categories that predicts all of these results and more.
+    .notes When the members of a sequence of colours fall into different categories, the colours are said to look very different, they are given different verbal labels, and the subject can discriminate them faster and more accurately than when they don't fall into different categories (all other things being equal).
+    .notes The fact that, for an individual subject, all these effects are predicted by a single way of dividing the colour space into categories is what categorical perception of colour is supposed to explain. 
+  .bottom-third-black
+    .container_12: .grid_12
+      ul
+        li Reports of phenomenal similarity and difference
+        li Linguistic labels
+        li Speed and accuracy of discrimination
+
+  
+section.slide#categorical_perception_df
+  .notes Now we're in a position to say what categorical perception is.
+  .notes A single way of dividing up the colour similarity space into a small finite number of equivalence classes 
+    span enables us to predict a variety of effects including patterns in: reports of phenomenal similarity and difference, the use of linguistic labels, and speed and accuracy of discrimination. 
+  .words: .container_12: .grid_12
+    p There are 
+      span.strong unexpected patterns 
+      span in several phenomena including:
+      ul
+        li Reports of phenomenal similarity and difference
+        li Linguistic labels
+        li Speed and accuracy of discrimination
+        li.hide.step4
+          span.bkg-yellow Pop-out effects
+        li.hide.step5
+          span.bkg-pink Change (odd-ball) detection
+    p.slide.highlight1 A single set of categories enables us to predict all the patterns.
+    mixin row-bkg('.highlight1', 'grey')
+    .notes This is a fact in need of explanation.
+    p.slide.em-above Hypothesis 1: There is a uniform explanation for all the patterns.
+    p.slide.em-above Hypothesis 2: The unexpected patterns all occur because a cognitive process categorises stimlui into these categories.
+    p.slide.em-above Hypothesis 3: This process is a visual process.
+    .notes So what is categorical perception?
+    .notes Categorical perception is the process, whatever it is, that explains the unexpected effects.
+    .notes Now this way of defining categorical perception is not very informative.
+    .notes This is a virtue---categorical perception is something to be discovered, not defined.
+    .notes We might ask, what sort of process is categorical perception?
+    .notes In particular, we might wonder whether and in what sense it is a perceptual process.
+    .notes How can we discover more about categorical perception?
+    .notes One way to do this is to look for further unexpected patterns to be explained.
+    .notes It's just here that pop-out is useful.
+
+    
+      
+
+section.slide
+  .notes Another measure on which the green sequence differs from the blue-pink-purple sequence is pop-out, which is defined operationally in terms of visual search tasks \citep[p.\ 117]{Treisman:1986pm}.
+  .notes First I need to explain what a visual search task is.
+  .notes In visual search tasks tasks, subjects are shown an array of objects and asked to identify the one with a certain property.
+  .notes For example, one might be shown an array of twenty animal pictures and asked to identify the cat.
+  .notes Normally the time it takes subjects to find a target increases linearly as the number of objects in the array increases.
+  .notes But when the target of a visual search is defined in terms of colour and the colours of the distractors are categorically different from the colour of the target, subjects can find the target just as quickly when it is in among 36 distractors as when there are only four distractors \citep[Experiment 1]{Daoutis:2006qk}.
+  .notes This is, the colours pop out.
+  .handout \textbf{pop-out} ‘Such targets pop out of the display, so that the time it takes to find them is independent of the number of distractors’ \citep[p.\ 117]{Treisman:1986pm}.
+  .handout When target and distractors differ in colour category there can be pop-out effects \citep{Daoutis:2006qk}.
+  .words: .middle
+    p.center.fade-after visual search task
+  .slide
+    img.bkg(src='/img/slide_cp_28.jpg')
+  mixin slides_from_img(['slide_cp_29.jpg','slide_cp_30.jpg','slide_cp_31.jpg','slide_cp_32.jpg'])
+
+
+section.slide.anim-continue
+  mixin recall('#categorical_perception_df')
+section.slide
+  mixin show ('.step4', '#categorical_perception_df')
+  .notes Recall that we defined categorical perception in terms of things it could explain.
+  .notes Now we can add pop-out to that list.
+  .notes This gives us more insight into what categorical perception is.
+  .notes In particular, it indicates that categorical perception is a perceptual process.
+  .notes And we can go on finding out more about categorical perception by finding out more about the things it explains.
+  .notes This is why I refused to define it at the start, 
+    span and why you have to start without knowing what categorical perception is.
+  section.slide.anim-continue
+      mixin unrecall('#categorical_perception_df')
+
+section.slide
+  .words: .middle
+    p.center methodological aside
+    .notes Our topic is still categorical perception, but I want to pause here to reflect on how we've defined categorical perception.
+    .notes We should think of core knowledge using the same method.
+    .notes At the outset we don't know what core knowledge is.
+    .notes I just said it's like knowledge in some ways but not knowledge.
+    .notes We'll get a handle on it by looking at what it is commonly supposed to explain.
+    .notes More on this later; now back to categorical perception.
+
+section.slide
+  .notes Among the things categorical perception is commonly taken to explain there are also automatic processes.
+  .notes (This will be important later.)
+  .words: .middle
+    .handout A process is \emph{automatic} just if 
+    p.center automatic process : 
+      span.handout.ctd.show whether it happens is independent of the subject’s task and motivation (to a significant degree)
+
+section.slide
+  .notes For an example of a category effect which is automatic, I need to introduce you to the odd-ball paradigm.
+  .notes In the odd-ball paradigm, you see a series of things that are all the same; and then, unpredictably, you see something different.
+  .notes We can use sensitivity to odd-balls to measure the difference between the two blues and the blue-green pair.
+  .notes This is useful because odd-ball effects can be detected very early in visual processessing, before attention kicks in.
+  .notes They allow us to probe automatic processes.
+  .words
+    .step2.hide
+      .container_12
+        .grid_2
+          mixin colour-box('rgb(51,153,255)', 50)
+          p.center 2.5B
+        .grid_2
+          mixin colour-box('rgb(85,100,255)', 50)
+          p.center 7.5BG
+        .grid_2
+          div(style="border-left: 1px dashed white")
+            mixin colour-box('rgb(42,162,42)', 50)
+            p.center 2.5BG
+    .container_12: .grid_12
+      p.em-above &nbsp;
+      .nodim(style="float:left; margin-right: 20px")
+        mixin colour-ball('rgb(51,153,255)', 50)
+      .slide.nodim(style="float:left; margin-right: 20px")
+        mixin colour-ball('rgb(51,153,255)', 50)
+      .slide.nodim(style="float:left; margin-right: 20px")
+        mixin colour-ball('rgb(51,153,255)', 50)
+      .slide.nodim(style="float:left; margin-right: 20px")
+        mixin colour-ball('rgb(51,153,255)', 50)
+      .slide.nodim(style="float:left; margin-right: 20px")
+        mixin colour-ball('rgb(85,100,255)', 50)
+        p.slide.center odd ball
+      .slide.nodim(style="float:left; margin-right: 20px")
+        mixin colour-ball('rgb(51,153,255)', 50)
+      .slide.nodim 
+        div(style="float:left; margin-right: 20px")
+          mixin colour-ball('rgb(51,153,255)', 50)
+        div(style="float:left; margin-right: 20px")
+          .bottom
+            div ...
+            p &nbsp;
+    .step3.hide 
+      .container_12: .grid_12
+        p.em-above &nbsp;
+        div(style="float:left; margin-right: 20px")
+          mixin colour-ball('rgb(42,162,42)', 50)
+        div(style="float:left; margin-right: 20px")
+          mixin colour-ball('rgb(42,162,42)', 50)
+        div(style="float:left; margin-right: 20px")
+          mixin colour-ball('rgb(42,162,42)', 50)
+        div(style="float:left; margin-right: 20px")
+          mixin colour-ball('rgb(42,162,42)', 50)
+        div(style="float:left; margin-right: 20px")
+          mixin colour-ball('rgb(85,100,255)', 50)
+          p.center odd ball
+        div(style="float:left; margin-right: 20px")
+          mixin colour-ball('rgb(42,162,42)', 50)
+        div(style="float:left; margin-right: 20px")
+          mixin colour-ball('rgb(42,162,42)', 50)
+        div(style="float:left; margin-right: 20px")
+          .bottom
+            div ...
+            p &nbsp;
+    mixin steps(3)
+
+
+section.slide
+  .notes Now suppose we play you an odd ball sequence.
+  .notes We want to know whether an automatic process picks up on the difference.
+  .notes And we want to know whether the automatic process picks up on the difference always or only when a category change is involved.
+  .notes To do this we need to measure an event-related potential called vMMN (which is short for visual mismatch negativity).
+  .words: .container_12: .grid_12
+    .middle
+      .handout.show
+        p vMMN (visual mismatch negativity): an 
+          span.highlight1 event-related potential
+          span   
+          span thought to index pre-attentive change detection in the visual cortex
+      mixin invert('.highlight1')
+      .notes Now I need to explain what an event-related potential is.
+
+section.slide#EEG
+  .words
+    .container_12
+      .grid_6
+        .slide.nodim.scale-2.scale-out-after
+          img(src='/img/EEG_cap.jpg',height='150px')
+        .slide.nodim.scale-2.scale-out-after
+          img(src='/img/eeg_gamma_graph.jpg',height='150px')
+        .slide.nodim.scale-2.scale-out-after
+          .notes An ERP like the vMMN stands to an overall EEG measurement a bit like the number 78 bus does to a collection of atoms.
+          img(src='/img/clifford_2010_fig.png',height='150px')
+      .slide.right-half-white
+        .notes While we're on methods, let's quickly talk about fMRI.
+        .grid_6
+          .words
+            .slide.nodim.scale-2.scale-out-after
+              img(src='/img/mri_scanner.jpg',height='150px')
+            .slide.nodim.scale-2.scale-out-after
+              img(src='/img/fmri_scan.jpg',height='150px')
+            .slide
+              ul
+                li better spatial resolution
+                li limited temporal resolution
+                li subject can't move
+      
+  
+section.slide
+  .notes So now we know what an event-related potential is, let's get back to the vMMN (visual mismatch negativity).
+  .words: .container_12: .grid_12
+    .middle
+      p vMMN (visual mismatch negativity): an 
+        span.highlight1 event-related potential
+        span   
+        span thought to index pre-attentive change detection in the visual cortex
+  
+
+section.slide
+  .notes So let me show you a task that uses this odd-ball effect
+  .notes Fixate on this cross.
+  .notes And when you see the rectangle, press the space bar with both index fingers.
+  .notes That's it.
+  .notes Except that you also see a block of colour on every trial.
+  .notes You're instructed to ignore this block of colour.
+  .notes And generally that's easy because it's always the same colour.
+  .notes But just occasionally it's a different colour.
+  .notes In one condition, the usual and odd-ball colours are the blues.
+  .notes And in the other condition, the usual and odd-ball colours are cross-category, from blue-green.
+  .notes We're interested in whether there's a sign that your brain has detected the change when the odd ball colour occurs.
+  .notes Put roughly, the results show that there is signal of pre-attentive change detection at around 100-200 milliseconds in the left visual field.
+  img.bkg(src='/img/slide_cp_35.jpg')
+  mixin slides_from_img(['slide_cp_36.jpg','slide_cp_37.jpg','slide_cp_38.jpg','slide_cp_40.jpg','slide_cp_41.jpg'])
+
+
+
+section.slide.anim-continue
+  mixin recall('#categorical_perception_df')
+section.slide
+  mixin show ('.step5', '#categorical_perception_df')
+  .notes Recall that we defined categorical perception in terms of things it could explain.
+  .notes Now we can add a further item to that list: odd-ball detection.
+  .notes Again, this gives us more insight into what categorical perception is.
+  .notes In particular, it indicates that categorical perception is an automatic process.
+  .notes It isn't only a matter of how you experience things to be.
+  section.slide.anim-continue
+      mixin unrecall('#categorical_perception_df')
+

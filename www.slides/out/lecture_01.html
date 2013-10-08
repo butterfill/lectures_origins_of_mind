@@ -100,6 +100,9 @@ var inject = function(){
 <!-- create title slide for a lecture-->
 <!-- param p contains document and images (an array of images to use)-->
 <!-- param p contains p.unit and p.images (an array of images)-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
 <div class="notes notes-header-tex">\title {Origins of Mind: Lecture Notes \\ Lecture 01}</div>
 <div class="notes notes-header-tex">&nbsp;</div>
 <div class="notes notes-header-tex">\maketitle</div>
@@ -135,6 +138,9 @@ var inject = function(){
 <!-- create title slide for a lecture-->
 <!-- param p contains document and images (an array of images to use)-->
 <!-- param p contains p.unit and p.images (an array of images)-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
 <section class="slide">
   <div class="notes">There is a family of questions about the origins of mind that philosophers have been asking since Plato or before.</div>
   <div class="words">
@@ -146,7 +152,7 @@ var inject = function(){
             <p class="blur1 right">(Locke 1689)</p>
           </div>
         </div>
-        <div data-what=".blur1" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <blur_ what="what"></blur_>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         <div class="kludge">
           <div class="step2 hide">
@@ -154,9 +160,9 @@ var inject = function(){
             <p class="blur2 right">(Dewey 1938, p. 12)</p>
           </div>
         </div>
-        <div data-what=".step2" data-class="hide" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div data-what=".blur2" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <blur_ what="what"></blur_>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         <div class="kludge">
           <div class="step3 hide"> 
@@ -164,9 +170,9 @@ var inject = function(){
             <p class="blur3 right">(Fodor 1975, p.\ 198)</p>
           </div>
         </div>
-        <div data-what=".step3" data-class="hide" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=".step3" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div data-what=".blur3" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <blur_ what="what"></blur_>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         <div data-what=".unblur3" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
@@ -177,7 +183,7 @@ var inject = function(){
         <div data-what=" .unblur3" data-class="invert" class="slide anim-continue anim-removeclass"></div>
         <div data-what=" .unblur3" data-class="bkg-words-highlight-white" class="slide anim-continue anim-removeclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div data-what=".unblur3" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <blur_ what="what"></blur_>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
       </div>
     </div>
@@ -214,6 +220,9 @@ var inject = function(){
 <!-- create title slide for a lecture-->
 <!-- param p contains document and images (an array of images to use)-->
 <!-- param p contains p.unit and p.images (an array of images)-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
 <section id="myths_to_mechanisms" class="slide">
   <div class="notes">How do humans come to know  about---and to knowingly manipulate---objects, causes, words, numbers, colours, actions and minds?</div>
   <div class="notes">In a beautiful myth, Plato suggests that the answer is recollection. </div>
@@ -281,7 +290,7 @@ var inject = function(){
     </div>
     <div data-what=".linethrough1" data-attr="text-decoration:line-through" class="slide anim-continue anim-attribute"></div>
     <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-    <div data-what=".step2" data-class="hide" class="slide anim-continue anim-removeclass"></div>
+    <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
     <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
     <div class="notes">The claim that we should shift from thinking about myths to mechanisms raises two questions.</div>
     <div class="notes">First, what are the mechanism?</div>
@@ -304,6 +313,9 @@ var inject = function(){
 <!-- create title slide for a lecture-->
 <!-- param p contains document and images (an array of images to use)-->
 <!-- param p contains p.unit and p.images (an array of images)-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
 <!-- doesn't appear on a slide-->
 <div class="handout"><span>‘We have many vocabularies for describing nature when we regard it as </span><span class="highlight1">mindless</span><span>, and we have a mentalistic vocabulary for describing </span><span class="highlight1">thought and intentional action</span><span>; what we lack is a way of describing </span><span class="highlight1">what is in between</span><span>’ </span><span>\citep[p.\ 11]{Davidson:1999ju}</span></div>
 <section class="slide">
@@ -391,7 +403,7 @@ var inject = function(){
         <div style="overflow:hidden;max-height:220px;" class="img2-1"><img src="/img/baillargeon_1987_fig2.png" height="500"/></div>
         <div style="overflow:hidden;max-height:250px;" class="img2-2 hide"><img src="/img/baillargeon_1987_fig2.png" height="500" style="position:relative;top:-220px;"/></div>
         <p class="right">source: Baillargeon et al (1987, figure 2)</p>
-        <div data-what=".img2-2" data-class="hide" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=".img2-2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
       </div>
     </div>
@@ -712,6 +724,9 @@ var inject = function(){
 <!-- create title slide for a lecture-->
 <!-- param p contains document and images (an array of images to use)-->
 <!-- param p contains p.unit and p.images (an array of images)-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
 <section class="slide nodim">
   <div class="words">
     <div class="container_12">
@@ -752,7 +767,7 @@ var inject = function(){
           <div class="notes">Several features distinguish core knowledge from adult-like understanding: its content is unknowable by introspection and judgement-independent; it is specific to quite narrow categories of event and does not grow by means of generalization; it is best understood as a collection of rules rather than a coherent theory; and it has limited application being usually manifest in the control of attention (as measured by dishabituation, gaze, and looking times) and rarely or never manifest in purposive actions such as reaching.</div>
         </div>
       </div>
-      <div data-what=".left_half" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+      <blur_ what="what"></blur_>
       <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
       <div class="right-half-white">
         <div class="grid_5 prefix_1">
@@ -793,6 +808,9 @@ var inject = function(){
 <!-- create title slide for a lecture-->
 <!-- param p contains document and images (an array of images to use)-->
 <!-- param p contains p.unit and p.images (an array of images)-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
 <section id="bold_conjecture" class="slide">
   <div class="notes">Here is a bold conjecture about how humans come to know things.</div>
   <div class="words">
@@ -925,7 +943,7 @@ var inject = function(){
     <div class="container_12">
       <div class="grid_12">
         <p class="nodim">children create <span class="hide step2">and creatively adapt </span><span>words </span><span class="slide nodim">before <span><span class="slide">(and after)  </span></span><span>learning those of the adults around them</span></span>
-          <div data-what=".step2" data-class="hide" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         </p>
         <div class="slide em-above">
@@ -996,6 +1014,9 @@ var inject = function(){
 <!-- create title slide for a lecture-->
 <!-- param p contains document and images (an array of images to use)-->
 <!-- param p contains p.unit and p.images (an array of images)-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
 <section class="slide">
   <div class="notes">Earlier I explained that there is evidence that infants represent unseen objects from around four months.</div>
   <div class="notes">At that point I mentioned just one experiment, Baillargeon's drawbridge study.</div>
@@ -1023,7 +1044,7 @@ var inject = function(){
         <div style="overflow:hidden;max-height:210px;" class="img071-1"><img src="/img/wang_2004_fig1a.png" style="max-width:700px"/></div>
         <div style="overflow:hidden;max-height:250px;" class="img071-2 hide step2"><img src="/img/wang_2004_fig1a.png" style="max-width:700px;position:relative;top:-210px;"/></div>
         <p class="right">Wang et al (2004, figure 1)</p>
-        <div data-what=".step2" data-class="hide" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
       </div>
     </div>
@@ -1102,7 +1123,7 @@ var inject = function(){
         <div data-what=" .highlight1" data-class="invert" class="slide anim-continue anim-addclass"></div>
         <div data-what=" .highlight1" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div data-what=".step2" data-class="hide" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
       </div>
     </div>
@@ -1218,6 +1239,9 @@ var inject = function(){
 <!-- create title slide for a lecture-->
 <!-- param p contains document and images (an array of images to use)-->
 <!-- param p contains p.unit and p.images (an array of images)-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
 <section class="slide">
   <div class="notes">Here's a hypothesis linking core knowledge and social interaction:</div>
   <div class="notes">(a) without core knowledge, we can't make sense of early forms of social interaction;</div>

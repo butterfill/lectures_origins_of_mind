@@ -115,6 +115,17 @@ mixin handout(p)
     .handout &nbsp;
     .handout \section{#{p.unit ? p.unit.title : p.title}}
 
+//- -------------
+//- recall slides (can also preview)
+//- parameter should be a selector for the slide, e.g. #categorical_perception_slide
+//- -------------
+mixin recall(selector)
+  .slide.anim-addclass(data-what="#{selector}",data-class="recall",data-scope=".deck-container")
+
+mixin unrecall(selector)
+  .slide.anim-removeclass(data-what="#{selector}",data-class="recall",data-scope=".deck-container")
+
+
 
 //- -------------
 //- animation: show, hide and steps
@@ -129,7 +140,6 @@ mixin anim_end()
 //- draw a connector between elements
 mixin connect(p)
   .slide.anim-connect(data-from='#{p.from}', data-to='#{p.to}', data-from-anchor="#{p.fromAnchor||'LeftMiddle'}",data-to-anchor='#{p.toAnchor || "RightMiddle"}',data-color="#{p.color || 'hotpink'}")
-
 
 mixin blur_(what)
   if typeof(what)==='string'
@@ -158,11 +168,12 @@ mixin line-through(what)
 
 //- show something(s)
 //- param what is a string or an array of jquery identifiers
-mixin show(what)
+//- param scope (optional) is a seclector that specifies where to look for the what
+mixin show(what,scope)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
-    .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="hide")
+    .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="hide",data-scope="#{scope ? scope : ''}")
   mixin anim_end()
   
 mixin hide(what)
@@ -510,6 +521,18 @@ mixin unhighlight_cited_sentence(row_num)
 
 
 
+// ----------
+// draw things
+// ----------
+mixin colour-box(colour, size)
+  .box(style="background-color:#{colour};width:#{size}px;height:#{size}px;margin-left:auto;margin-right:auto;border:#{size/5}px solid grey;")
+
+mixin colour-ball(colour, size)
+  .box(style="background-color:#{colour};width:#{size}px;height:#{size}px;margin-left:auto;margin-right:auto;border:#{size/5}px solid grey;border-radius:50%;")
+
+
+
+
 
 mixin insert_unit(p)
   - d = get_unit(p.unit)
@@ -520,3 +543,10 @@ mixin insert_unit(p)
     .notes.notes-header-tex &nbsp;
     .notes.notes-header-tex \section{#{d.title}}
     mixin render_unit(d)
+
+
+
+mixin slides_from_img(filenames)
+  each filename in filenames
+    .slide.nodim
+      img.bkg.nodim(src="/img/#{filename}")

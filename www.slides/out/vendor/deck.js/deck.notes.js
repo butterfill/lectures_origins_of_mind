@@ -70,7 +70,7 @@ only toggle the notes panel for this cloned window.
         $notesEl = $("."+$[deck]('getOptions').classes.notes);
 		$notesEl.show();
 		$('.notes-header-tex', $notesEl).hide();
-		$('.deck-container').css({left:150});
+		$('.deck-container').css({transform:'translate(150px)'});
     });
     
     $[deck]('extend', 'showNotesExport', function() {
@@ -107,7 +107,7 @@ only toggle the notes panel for this cloned window.
 	*/
     $[deck]('extend', 'hideNotes', function() {
         $("."+$[deck]('getOptions').classes.notes).hide();
-		$('.deck-container').css({left:0});
+		$('.deck-container').css({transform:'translate(0)'});
     });
 
     $[deck]('extend', 'hideNotesExport', function() {
