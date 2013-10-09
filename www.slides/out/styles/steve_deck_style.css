@@ -1527,47 +1527,47 @@ p.speech-right:after {
 }
 @-moz-keyframes MoveLeft {
   100% {
-    -webkit-transform: translateX(-100px);
-    -moz-transform: translateX(-100px);
-    -o-transform: translateX(-100px);
-    -ms-transform: translateX(-100px);
-    transform: translateX(-100px);
+    -webkit-transform: translateX(-270px);
+    -moz-transform: translateX(-270px);
+    -o-transform: translateX(-270px);
+    -ms-transform: translateX(-270px);
+    transform: translateX(-270px);
   }
 }
 @-webkit-keyframes MoveLeft {
   100% {
-    -webkit-transform: translateX(-100px);
-    -moz-transform: translateX(-100px);
-    -o-transform: translateX(-100px);
-    -ms-transform: translateX(-100px);
-    transform: translateX(-100px);
+    -webkit-transform: translateX(-270px);
+    -moz-transform: translateX(-270px);
+    -o-transform: translateX(-270px);
+    -ms-transform: translateX(-270px);
+    transform: translateX(-270px);
   }
 }
 @-o-keyframes MoveLeft {
   100% {
-    -webkit-transform: translateX(-100px);
-    -moz-transform: translateX(-100px);
-    -o-transform: translateX(-100px);
-    -ms-transform: translateX(-100px);
-    transform: translateX(-100px);
+    -webkit-transform: translateX(-270px);
+    -moz-transform: translateX(-270px);
+    -o-transform: translateX(-270px);
+    -ms-transform: translateX(-270px);
+    transform: translateX(-270px);
   }
 }
 @-ms-keyframes MoveLeft {
   100% {
-    -webkit-transform: translateX(-100px);
-    -moz-transform: translateX(-100px);
-    -o-transform: translateX(-100px);
-    -ms-transform: translateX(-100px);
-    transform: translateX(-100px);
+    -webkit-transform: translateX(-270px);
+    -moz-transform: translateX(-270px);
+    -o-transform: translateX(-270px);
+    -ms-transform: translateX(-270px);
+    transform: translateX(-270px);
   }
 }
 @keyframes MoveLeft {
   100% {
-    -webkit-transform: translateX(-100px);
-    -moz-transform: translateX(-100px);
-    -o-transform: translateX(-100px);
-    -ms-transform: translateX(-100px);
-    transform: translateX(-100px);
+    -webkit-transform: translateX(-270px);
+    -moz-transform: translateX(-270px);
+    -o-transform: translateX(-270px);
+    -ms-transform: translateX(-270px);
+    transform: translateX(-270px);
   }
 }
 @-moz-keyframes anim_vanish {

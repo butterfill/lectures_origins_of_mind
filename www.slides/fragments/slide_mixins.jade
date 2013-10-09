@@ -148,7 +148,7 @@ mixin blur_(what)
     .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="blur-text")
 
 mixin blur(what)
-  blur_(what)
+  mixin blur_(what)
   mixin anim_end()
 
 mixin unblur(what)

@@ -20,31 +20,23 @@ include ../../../fragments/slide_mixins
 
 
 section.slide
-  .notes Let me start with something quite basic.
-  .notes Here are three patches of colour.
-  .notes The patches are all different colours, but the two leftmost are both the same colour---they are both blue.
-  .notes This sounds contradictory but isn't.
-  .notes In one case we're talking about the particular colours of things; in the other case we're talking about colour category.
-  .notes &nbsp;
-  .notes To claim that there is categorical perception is, very roughly and to a first approximation, to claim that perceptual processes are concerned not only with the particular colours of things but also with categories of colour like blue and red.
-  .notes This is not a definition, only a very rough starting point.
-  .words: .container_12
-    .middle
-      .grid_4
-        mixin colour-box('rgb(51,153,255)', 100)
-        p.center 2.5B
-      .grid_4
-        mixin colour-box('rgb(85,100,255)', 100)
-        p.center 7.5BG
-      .grid_4
-        mixin colour-box('rgb(42,162,42)', 100)
-        p.center 2.5BG
-    //img(src='/img/categorical.png',height='300px')
-
-section.slide
   .words: .container_12: .grid_12
-    .middle
-      p.center What is categorical perception of colour?
+    p What is categorical perception of colour?
+    .slide
+      .notes Remember the idea that words like 'blue' pick out colour categories?
+      .notes To claim that there is categorical perception is, very roughly and to a first approximation, to claim that perceptual processes are concerned not only with the particular colours of things but also with categories of colour like blue and red.
+      .notes This is not a definition, only a very rough starting point.
+      .middle
+        .container_12
+          .grid_4
+            mixin colour-box('rgb(51,153,255)', 100)
+            p.center 2.5B
+          .grid_4
+            mixin colour-box('rgb(85,100,255)', 100)
+            p.center 7.5BG
+          .grid_4
+            mixin colour-box('rgb(42,162,42)', 100)
+            p.center 2.5BG
 
 
 section.slide
@@ -214,9 +206,10 @@ section.slide
   .notes Among the things categorical perception is commonly taken to explain there are also automatic processes.
   .notes (This will be important later.)
   .words: .middle
-    .handout A process is \emph{automatic} just if 
-    p.center automatic process : 
-      span.handout.ctd.show whether it happens is independent of the subject’s task and motivation (to a significant degree)
+    .container_12: .grid_12
+      .handout A process is \emph{automatic} just if 
+      p.center automatic process : 
+        span.handout.ctd.show whether it happens is independent of the subject’s task and motivation (to a significant degree)
 
 section.slide
   .notes For an example of a category effect which is automatic, I need to introduce you to the odd-ball paradigm.
@@ -349,7 +342,11 @@ section.slide
   .notes We're interested in whether there's a sign that your brain has detected the change when the odd ball colour occurs.
   .notes Put roughly, the results show that there is signal of pre-attentive change detection at around 100-200 milliseconds in the left visual field.
   img.bkg(src='/img/slide_cp_35.jpg')
-  mixin slides_from_img(['slide_cp_36.jpg','slide_cp_37.jpg','slide_cp_38.jpg','slide_cp_40.jpg','slide_cp_41.jpg'])
+  mixin slides_from_img(['slide_cp_36.jpg','slide_cp_37.jpg','slide_cp_38.jpg','slide_cp_40.jpg'])
+  .slide
+    .notes This is another way of presenting the same finding.
+    .notes The vMMN is a DRN, but not all DRNs are vMMNs (see the paper).
+    img.bkg(src='/img/slide_cp_41.jpg')
 
 
 

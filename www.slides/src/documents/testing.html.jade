@@ -19,6 +19,14 @@ include ../../fragments/slide_mixins
       .words
         span(style="position:relative;top:250px;left:450px;").white-box.big.center #{document.weburl}
 
+  .slide#test_blur
+    .words: .container_12: .grid_12
+      p.blur-text this is already blurred
+      p.blur1 this will be blurred
+      p.highlight1 this will be highlighted
+      mixin blur('.blur1')
+      mixin words-bkg('.highlight1','teal')
+
 
   .slide#test_steps
     .words
