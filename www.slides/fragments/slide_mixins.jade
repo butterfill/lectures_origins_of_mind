@@ -313,7 +313,17 @@ mixin row-bkg(what, color, container)
       .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}", data-class="invert")
   mixin anim_end()
 
+mixin row-bkg-remove_(what, color, container)
+  if typeof(what)==='string'
+    - what = [what]
+  each thing in what
+    .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-#{color}-row")
+    if color=='white'
+      .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}", data-class="invert")
 
+mixin row-bkg-remove(what, color, container)
+  +row-bkg-remove_(what, color, container)
+  +anim_end()
 
 mixin invert(what, container)
   if typeof(what)==='string'

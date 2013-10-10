@@ -19,86 +19,128 @@ include ../../../fragments/slide_mixins
 
 
 section.slide
-  .notes A moment ago I mentioned that infant and adult categorical perception of colour involve different colour categories.
+  .notes Earlier I mentioned that infant and adult categorical perception of colour involve different colour categories.
+  .notes Adults’ perceptual colour categories are shaped by their knowledge of words, whereas infants’ are not.
   .notes This means we should ask, What is the relation between infant and adult categorical perception?
   .notes A natural hypothesis is that they are one and the same, so that the infant categories transform into the adult ones.
+  .notes This natural hypothesis turns out to be wrong.
+  .notes Before explaining why, let me introduce one more puzzling finding.
   .words: .middle
     .container_12: .grid_12
-      p.center How are infants' and adults' categorical preception of colour related?
+      p.center How are infants’ and adults’ categorical preception of colour related?
 
+// *repeated!
 section.slide
-  .notes.handout There is evidence that the infant mode of categorical perception of colour continues to operate in adults, although it is often inhibited or overshadowed by the adult mode \citep{Gilbert:2006yb}. 
-  .words: .middle
-    .container_12: .grid_12
-    p.center Adult and infant categorical perception co-exists.
-    p.right.grey-text (Gilbert et al 2006; Gilbert et al 2008)
-
-section.slide
-  .notes The adult mode of categorical perception of colour differs from the infant-and-toddler mode in at least four respects: it disappears in the face of predictable verbal interference but not non-verbal interference (Roberson, Davies and Davidoff 2000: 985; Pilling, Wiggett, et al. 2003: 549-50; Wiggett and Davies 2008), it can be affected by short-term perceptual learning (Ozgen and Davies 2002), it depends on parts of the brain other than those on which infants' categorical perception of colour depends (Franklin, Drivonikou, et al. 2008), and the boundaries of adults' perceptual categories do not match the boundaries of infant and toddler perceptual categories.
   .words
     .container_12
       .grid_6
-        div(style='padding-right:20px;')
-          ul
-            li culture
-            li training colour terms (2 days)
-            li
-              span.highlight1 verbal interference
-            li right visual field (RVF) only
-            li training affects RVF only
-            li neural correlates
-      mixin words-bkg('.highlight1','pink')
-      .slide
+        div(style='padding-right:20px;padding-left:20px;')
+          p In adults, categorical perception of colour disappears in the face of predictable verbal interference but not non-verbal interference 
+          p.right (Roberson, Davies and Davidoff 2000: 985; Pilling, Wiggett, et al. 2003: 549-50; Wiggett and Davies 2008)
+
+section.slide
+  .notes Let me show you how this works (roughly following Wiggett and Davies 2008)
+  .notes Recall from earlier how speed and accuracy were tested using a two-alternative forced-choice task.
+  img.bkg(src='/img/slide_cp_25.jpg')
+  +slides_from_img(['slide_cp_26.jpg','slide_cp_27.jpg'])
+
+section.slide
+  .notes Now Wiggett and Davies 2008 adapted this very slightly.
+  .notes They put a word on the target (or, in Experiment 2, on the test stimuli --- that had no effect, showing that the word is important for priming and categorical perception is not a matter of matching label to label).
+  .note (They are using the Stroop effect, which I won't explain here but is worth looking up.)
+  img.bkg(src='/img/slide_cp_interfere.jpg')
+  +slides_from_img(['slide_cp_26.jpg'])
+
+section.slide
+  .notes And here are the results from Experiment 1B.  The vertical axis is mean accuracy.
+  .words
+    .container_12: .grid_12
+      img(src='/img/wiggett_2008_fig2B.png')
+      p.right source: Wiggett and Davies 2008, Experiment 1B
+
+section.slide
+  .words
+    .container_12
+      .grid_6
+        div(style='padding-right:20px;padding-left:20px;')
+          p.handout.show In adults, categorical perception of colour disappears in the face of predictable verbal interference but not non-verbal interference 
+          .handout.ctd \citep{Roberson:2000ge,Pilling:2003bi,Wiggett:2008xt}.
+          p.right (Roberson, Davies and Davidoff 2000: 985; Pilling, Wiggett, et al. 2003: 549-50; Wiggett and Davies 2008)
+      .slide.right-half-white
         .notes Why say that impact of verbal interference plus shaping of perceptual categories by extensions of words gives an interesting sense in which we have expeirences as of red because we label perceived objects 'red'?  Two points: long-term, the extentions of perceptual category is influenced by the extension of the word; short-term, covert labelling primes the perceptual category and without this priming you do not have CP (Wiggett and Davies 2008).  
-        .right-half-white
-          .words
-            .grid_6
-              div(style='padding-right:20px;padding-left:20px;')
-                  p.handout.show ‘surprising it would be indeed if I have a perceptual experience as of red because I call the perceived object ‘red’’ 
-                  .handout.ctd \citep[pp.\ 324--5]{Stokes:2006fd}
-                  p.right.grey-text (Stokes 2006: 324-5).
-              .slide
-                div(style='padding-right:20px;padding-left:20px;')
-                  p.em-above.handout.show conscious attention ‘is more primitive than ... conceptual thought, and ... explains your capacity for conceptual thought by providing you with knowledge of reference’
-                  .handout.ctd \citep[p.\ 3]{Campbell:2002ge}
-                  p.right.grey-text (Campbell 2002, p. 3)
+        .words
+          .grid_6
+            div(style='padding-right:20px;padding-left:20px;')
+                p.handout.show ‘surprising it would be indeed if I have a perceptual experience as of red because I call the perceived object ‘red’’ 
+                .handout.ctd \citep[pp.\ 324--5]{Stokes:2006fd}
+                p.right.grey-text (Stokes 2006: 324-5).
+
 
 
 section.slide
-  .notes Our question was ***
-  .notes Categorical perception made attractive the idea that ... buildling blocks ...
+  .notes These findings leave us with a puzzle.
+  .notes In adults, categorical perception of colour depends on the availability of linguistic labels for colour.
+  .notes But infants lack such labels yet still manifest categorical perception.
+  .notes How is this possible?
+  .notes I think we have to resolve the puzzle by recognising that infant and adult categorical perception are different processes.
   .words: .middle
-    p.center conclusion
-
-
-section.slide
-  .notes ***todo adapt these slides (replace the man with a ball coming out of a barrier and changing colour
-  .notes from London CP talk
-  img.bkg(src='/img/slide_cp_london_158.jpg')
-  mixin slides_from_img(['slide_cp_london_159.jpg','slide_cp_london_160.jpg','slide_cp_london_161.jpg','slide_cp_london_162.jpg','slide_cp_london_163.jpg','slide_cp_london_164.jpg'])
-
-
-section.slide
-  .notes ***todo move these to Object
-  .notes from London CP talk
-  img.bkg(src='/img/slide_cp_london_151.jpg')
-  mixin slides_from_img(['slide_cp_london_152.jpg','slide_cp_london_153.jpg','slide_cp_london_154.jpg','slide_cp_london_155.jpg','slide_cp_london_156.jpg','slide_cp_london_157.jpg'])
-
-section.slide
-  .notes ***todo move these to Object section
-  .notes from London CP talk
-  img.bkg(src='/img/slide_cp_london_180.jpg')
-  mixin slides_from_img(['slide_cp_london_181.jpg'])
-
-section.slide
-  .notes ***todo move these to Goals or Actions section
-  .notes from London CP talk
-  img.bkg(src='/img/slide_cp_london_178.jpg')
+    .container_12: .grid_12
+      p.center puzzle
   
 section.slide
-  .notes ***todo move
-  .notes from London CP talk
-  img.bkg(src='/img/slide_cp_london_143.jpg')
-  mixin slides_from_img(['slide_cp_london_144.jpg','slide_cp_london_145.jpg','slide_cp_london_146.jpg','slide_cp_london_147.jpg','slide_cp_london_148.jpg','slide_cp_london_149.jpg','slide_cp_london_150.jpg',])
+  .notes The adult mode of categorical perception of colour differs from the infant-and-toddler mode in at least four respects: it disappears in the face of predictable verbal interference but not non-verbal interference (Roberson, Davies and Davidoff 2000: 985; Pilling, Wiggett, et al. 2003: 549-50; Wiggett and Davies 2008), it can be affected by short-term perceptual learning (Ozgen and Davies 2002), it depends on parts of the brain other than those on which infants' categorical perception of colour depends (Franklin, Drivonikou, et al. 2008), and the boundaries of adults' perceptual categories do not match the boundaries of infant and toddler perceptual categories.
+  .words: .container_12: .grid_12
+    ul
+      li cultural product
+      li training colour terms (2 days)
+      li verbal interference
+      li right visual field (RVF) only
+      li training affects RVF only
+      li neural correlates
+    .slide
+      .notes.handout There is evidence that the infant mode of categorical perception of colour continues to operate in adults, although it is often inhibited or overshadowed by the adult mode \citep{Gilbert:2006yb}. 
+      p.center Adult and infant categorical perception co-exists.
+      p.right.grey-text (Gilbert et al 2006; Gilbert et al 2008)
+
+
+
+// ***todo***  
   
+  section.slide
+    .notes Our question was ***
+    .notes Categorical perception made attractive the idea that ... buildling blocks ...
+    .words: .middle
+      p.center conclusion
+  
+  
+  section.slide
+    .notes ***todo adapt these slides (replace the man with a ball coming out of a barrier and changing colour
+    .notes from London CP talk
+    img.bkg(src='/img/slide_cp_london_158.jpg')
+    mixin slides_from_img(['slide_cp_london_159.jpg','slide_cp_london_160.jpg','slide_cp_london_161.jpg','slide_cp_london_162.jpg','slide_cp_london_163.jpg','slide_cp_london_164.jpg'])
+  
+  
+  section.slide
+    .notes ***todo move these to Object
+    .notes from London CP talk
+    img.bkg(src='/img/slide_cp_london_151.jpg')
+    mixin slides_from_img(['slide_cp_london_152.jpg','slide_cp_london_153.jpg','slide_cp_london_154.jpg','slide_cp_london_155.jpg','slide_cp_london_156.jpg','slide_cp_london_157.jpg'])
+  
+  section.slide
+    .notes ***todo move these to Object section
+    .notes from London CP talk
+    img.bkg(src='/img/slide_cp_london_180.jpg')
+    mixin slides_from_img(['slide_cp_london_181.jpg'])
+  
+  section.slide
+    .notes ***todo move these to Goals or Actions section
+    .notes from London CP talk
+    img.bkg(src='/img/slide_cp_london_178.jpg')
+    
+  section.slide
+    .notes ***todo move
+    .notes from London CP talk
+    img.bkg(src='/img/slide_cp_london_143.jpg')
+    mixin slides_from_img(['slide_cp_london_144.jpg','slide_cp_london_145.jpg','slide_cp_london_146.jpg','slide_cp_london_147.jpg','slide_cp_london_148.jpg','slide_cp_london_149.jpg','slide_cp_london_150.jpg',])
+    
 
