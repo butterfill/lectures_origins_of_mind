@@ -11,23 +11,29 @@ include ../../fragments/slide_mixins
 
 mixin title_slide({document:document, images:images})
 
+//- 
+  should every lecture have something on core knowledge and something on social interaction?
+  Just a quick skit on this or that finding, e.g. Baldwin?
+  Would seem to lack coherence!
+  
+
 
 section.slide
   .notes The question for this course is ...
-  .notes We are going to approach this question by examining the evidence from developmental science,
-    span exploring how it bears on philosophical positions like nativism and empiricsm,
+  .notes We are going to approach this question by examining the evidence from developmental science, 
+    span exploring how it bears on philosophical positions like nativism and empiricsm, 
     span and identifying philosophical problems created by the evidence.
   .notes Our focus is on two breakthrough sets of findings.
   .notes One concerns core knowledge, the other social interaction.
-  .notes One problem for us is that these two sets of findings are typically considered in isolation,
-    span although I think there are strong reasons to suppose that understanding the origins of knowledge
+  .notes One problem for us is that these two sets of findings are typically considered in isolation, 
+    span although I think there are strong reasons to suppose that understanding the origins of knowledge 
     span will require thinking about both core knowledge and social interaction.
   .words: .container_12: .grid_12
     .middle
       p.center recap
 
 section.slide
-  .notes My working hypothesis is that we can't understand early forms of social interaction without core knowledge;
+  .notes My working hypothesis is that we can't understand early forms of social interaction without core knowledge;  
     span and that we can't understand how core knowledge leads to knowledge proper without social interaction.
   .notes The challenge is to understand how core knowledge and social interaction conspire in the emergence of knowledge.
   .words: .container_12: .grid_12
@@ -43,7 +49,7 @@ section.slide
       p plan
     .slide
       .notes The topics are these.
-      .notes I'm not intending to do one lecture per topic.  
+      .notes I'm not always intending to do one lecture per topic.  
       .notes Rather, in most of these lectures I'm planning to talk about two or more topics.
       .notes This risks making things seem fractured.
       .notes But I hope it will make the material easier to absorb and the lectures more interesting.
@@ -56,8 +62,15 @@ section.slide
           p words and other communicative tools
           p actions: teleology and motor awareness
           p minds
-        mixin blur_('.topics :not(.today)')
-        mixin row-bkg('.today', 'white')
+        +blur_('.topics :not(.today)')
+        +row-bkg('.today', 'white')
+        .notes Today's topic is colour.
+        .notes In some ways this is an odd topic to do first, or at all.
+        .notes I've chosen to do colour for three reasons.
+          ul
+            li It's fun
+            li It's a relatively simple case, and one that provides a model for other cases.
+            li It challenges almost any prior assumption you might make about the emergence of knowledge.
 
 
 //- knowledge of colour: the question
@@ -76,33 +89,5 @@ mixin insert_unit({unit:'131', title_slide:true, images:images})
 //- categorical perception in infants and adults --- how related?
 mixin insert_unit({unit:'141', title_slide:true, images:images})
 
-//- extras 
-
-//- what is core knowledge (skipped from section 1)
-mixin insert_unit({unit:'071', title_slide:true, images:images})
-
-//- core knowledge and categorical perception --- how related?
-mixin insert_unit({unit:'151', title_slide:true, images:images})n
-
-//- 
-  should every lecture have something on core knowledge and something on social interaction?
-  Just a quick skit on this or that finding, e.g. Baldwin?
-  
-//-
-  on core knowledge:
-    - first talk about knowledge of syntax
-    - principles and parameters
-    - poverty of stimulus (quote from Chomsky on Skinner?)
-    - not linked to consciousness, not available for introspection, ...
-    - Searle's objection
-    - defence: respectable notions of representation?  (Shea ideas)
-    - how is this a model: it invovles a set of principles being used in an inference-like process
-    - compare Spelke on principles of object perception
-  
-  
-
-//-
-  // more on object permanence
-  mixin insert_unit({unit:'101', title_slide:true, images:images})
-
+//- might have gone on to do relation between categorical perception and core knowledge, unit 151 (not yet finished)
 

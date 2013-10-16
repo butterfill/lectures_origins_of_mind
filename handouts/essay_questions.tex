@@ -25,6 +25,9 @@
 %no indent, space between paragraphs
 \usepackage{parskip}
 
+%beautiful contents
+\usepackage{tocloft}
+
 %comment these out if not anonymous:
 %\author{}
 %\date{}
@@ -66,9 +69,12 @@
 \setlength\footnotesep{1em}
 
 
-
 \maketitle
-%\tableofcontents
+
+\renewcommand{\cftsecfont}{\normalsize}
+\setcounter{tocdepth}{1}
+\tableofcontents
+\clearpage
 
 %
 %\section{Guidelines}
@@ -80,15 +86,14 @@
 %
 
 
-
-\section{Warning}
+\section*{Warning}
 This document may be updated during the course.
 Tasks might change.
 Please always check you have the latest version from \url{http://origins-of-mind.butterfill.com} before completing a task.
 This version was last edited \today.
 
 
-\section{Formal requirement}
+\section*{Formal requirement}
 All students are required to submit a 1500 word unassessed essay by 12 noon on Thursday of week 7.
 
 I will provide essay questions and reading lists in Week 4 for this unassessed essay.
@@ -99,7 +104,7 @@ I will return unassessed essays with comments and we will discuss them in weeks 
 All other tasks are optional.
 
 
-\section{About the seminars}
+\section*{About the seminars}
 Seminars focus on the tasks described below.
 Some tasks need to be completed by the Monday or Tuesday before the seminar (at least if you want feedback).
 Which task should be completed before which seminar?  See the table below.
@@ -204,11 +209,11 @@ In this essay you might:
 \item attempt to resolve the conflict.
 \end{enumerate}
 %
-And, if ambitious, you could further:
-%
-\begin{enumerate}[resume]
-\item link your discussion to the conflict between empiricists  and nativists.
-\end{enumerate}
+%And, if ambitious, you could further:
+%%
+%\begin{enumerate}[resume]
+%\item link your discussion to the conflict between empiricists  and nativists.
+%\end{enumerate}
 
 
 \subsection{Peer review}
@@ -278,7 +283,7 @@ Shorter is better, all things being equal.
 A student will send you a short essay by 6pm on the Monday before your seminar.
 Your task is to write a review of the essay and send the review to the student by 6pm the day before your seminar.
 
-\subsection{Hints}
+\subsection{Hints} 
 Your review should start by stating the essay’s aim and briefly outlining what it achieves.
 
 You should discuss one or more of the main claims defended in the essay.  
@@ -289,6 +294,84 @@ But make sure that adverse criticism is carefully justified.
 
 If you can, suggest how the essay could be improved.
 
+\clearpage
+
+
+\section{Alternative Essay Question for Task 2}
+
+\subsection{Suggested question}
+
+What do 6-month-olds know about physical objects’ causal interactions?
+
+\subsection{Aim}
+The aim of this first essay is just to get you reading scientific papers and to practice writing about evidence.
+Later essays will demand more analysis.
+But for this essay it’s enough to provide a review of some scientific research.
+
+\subsection{Peer review}
+Your review essay will be subject to peer review (see Task 3). 
+Another student in your seminar group will be assigned as your reviewer.
+You should send the essay to your reviewer by 6pm on the Monday before your seminar.
+
+
+
+\subsection{Hint}
+In this essay you might:
+\begin{enumerate}
+\item review some of the evidence that infants can track causal interactions (see readings, \citealp{spelke:1992_origins} or \citealp{Leslie:1987nr});
+\item consider findings that are hard to reconcile with the claim that infants’ simply know that barriers stop objects (see \citealp{Hood:2000bf,Hood:2003yg})
+\item attempt to resolve the conflict (potentially useful sources include \citealp{Haith:1998aq,Keen:2003xz})
+\end{enumerate}
+
+\subsection{Reading}
+
+\bibentry{Spelke:1993no}
+
+\bibentry{Hood:2000bf}
+
+
+
+\subsection{Further reading}
+
+\bibentry{spelke_1992:origins}
+
+\bibentry{Leslie:1987nr}
+
+\bibentry{Hood:2003yg}
+
+\bibentry{Haith:1998aq}
+
+\bibentry{Keen:2003xz}
+
+
+\subsection{Where to find the readings}
+
+All the readings are available online unless otherwise noted.
+
+One fast way to find a paper is to copy its title into google scholar and search.  
+To download the paper from the journal website, you may need to select ‘log in’ or ‘institutional log in’.
+
+If you have trouble locating a resource, check the list of journals available here: \url{http://fs6jr8lx8q.search.serialssolutions.com/}
+
+
+\subsection{Citations}
+When citing articles in your essay, use the same system that my handouts and nearly all the readings use.
+That is, put author-year in the main text (e.g.\ ‘Spelke et al have argued that ... (Spelke et al 1993, p.\ 22).’) and include the full citation in a list of references at the end.
+
+A bibliography manager like Zotero can save you a lot of time.
+
+
+\subsection{Length}
+Your review may not exceed 2000 words.
+Reviews longer than this words may be rejected without review.
+
+Shorter is better, all things being equal.
+
+
+
+
+
+\clearpage
 
 
 \section{Task 4: Plan an essay}
@@ -297,6 +380,126 @@ In this task you identify a question for your unassessed essay, do some backgrou
 You can take one of the suggested questions from the list provided.  Or, if you prefer, you can propose your own question (which will need to be approved before you can submit the essay).
 
 Send your essay plan to your seminar leader by 6pm on the Monday before your seminar.
+
+
+
+\section{Pre-approved essay questions}
+
+\textit{For any of these questions, your answer may focus on a particular domain, such as core knowledge of objects or of number.  You are not required to provide a comprehensive survey.}
+
+\emph{The readings suggested here are for general guidance.  You’re welcome to see me to discuss readings in relation to your plans for the essay.}
+
+
+\subsection{Mindreading}
+What is the puzzle about when humans can first represent others’ beliefs?
+How might the puzzle be resolved?
+
+\subsubsection{---Reading}
+\bibentry{Onishi:2005hm}
+
+\bibentry{kovacs_social_2010}
+
+\bibentry{Baillargeon:gx}
+
+\bibentry{butterfill_minimal}
+
+\bibentry{carruthers:2013_mindreading}
+
+
+
+\subsection{Core knowledge}
+What is core knowledge and what role, if any, could it play in explaining the transition from being unable to know things to being able to know things?
+
+
+\subsubsection{---Reading}
+
+\bibentry{Carey:1996hl}
+
+\bibentry{spelke_1992:origins}
+
+\bibentry{Spelke:2007hb}
+
+\bibentry{carey:2009_origin}
+
+\subsection{Innateness}
+What if anything is innate in humans?
+
+Hint: You should be careful to examine the notion of innateness  (see \bibentry{Samuels:2004ho}).
+
+%\subsubsection{---Reading}
+
+
+
+\subsection{Knowledge of colour}
+At birth humans do not know this lime fruit is green whereas that tomato is red.
+How could some humans come to be in a position to know this?
+
+Hint: you should discuss categorical perception of colour and its relation to knowledge.  There was a lecture on this topic; the handout includes many references.
+
+\subsubsection{---Reading}
+
+\bibentry{Kowalski:2006hk}
+
+\bibentry{Franklin:2005hp}
+
+\bibentry{Franklin:2005xk}
+
+%\bibentry{franklin:2010_hemispheric}
+
+\bibentry{Wiggett:2008xt}
+
+
+
+
+\subsection{Social interaction}
+If humans were incapable of social interaction and could only observe each other from behind one-way mirrors (if such a thing existed), how if at all would this affect the processes by which they get to know things?
+
+\subsubsection{---Reading}
+
+
+\bibentry{tomasello:2008origins}
+
+\bibentry{Tomasello:2005wx} [Read the commentaries.]
+
+\bibentry{butterfill:2012_interacting}
+
+
+
+\subsection{Joint action}
+
+Could there be a role for joint action in explaining how humans come to know things about other minds?
+
+\subsubsection{---Reading}
+
+\bibentry{Moll:2007gu}
+
+\bibentry{carpenter:2009_howjoint}
+
+\bibentry{Tollefsen:2005vh}
+
+\bibentry{Butterfill:2011fk}
+
+
+
+\subsection{Language}
+‘Children learn words through the exercise of reason’ (BLOOM).  Discuss.
+
+Note: the reading for this is one-sided, which makes this question difficult.
+
+
+\subsubsection{---Reading}
+
+\bibentry{Bloom:2000qz}
+
+\bibentry{Baldwin:2000qq}
+
+\bibentry{Sabbagh:2001sp}
+
+\bibentry{Matthews:2008yi}
+
+\bibentry{Dummett:1993xn}
+
+\subsection{}
 
 
 

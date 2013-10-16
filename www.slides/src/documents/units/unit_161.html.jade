@@ -1,0 +1,99 @@
+---
+layout: 'deck_unit'
+title: "Objects vs Features"
+tags: []
+description: "Knowledge of objects requires abilities to (i) segment objects, (ii) represent them as persisting and (iii) track their interactions.  What this involves can be illustrated by contrasting objects with features."
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/slide_mixins
+
++slide_middle
+  .notes The question for this lecture concerns knowledge of physical objects.
+  .notes We'll examine how three requirements on having knowledge of physical objects are met.
+  .notes (And I'll drop the 'physical' qualifier since this is all about physical objects as opposed to, say, abstract objects like numbers or forms.)
+  p.center knowledge of objects
+
+
+section.slide#segment_persist_interact
+  .notes Knowledge of objects depends on abilities to (i) segment objects, (ii) represent them as persisting and (iii) track their interactions.
+  .notes Let's look at each of these in turn.
+  .words: container_12: grid_12
+    p Three requirements
+    ul
+      li segment objects
+      li represent objects as persisting
+      li track objects’ interactions
+    +blur_('li:eq(1), li:eq(2)')
+    +row-bkg('li:eq(0)', 'grey')
+    .notes How do infants or adults discern where one object begins and another ends?
+  
++slide_img('DSC_1028.JPG')
+  .notes The way objects are ordinarily arranged in space, so that one occludes parts of another, prevents us from doing this in any simple way.
+
++slide_img('PB042123.JPG')
+  .notes Imagine a world of moving features.  In this world there is no principled way of saying where one object ends and another begins.
+  .notes Features differ from genuine objects in not allowing us to make sense of the question of whether we are carving them at their joints.
+  
+
+section.slide#segment_persist_interact2
+  .slide-clone(data-which='#segment_persist_interact')
+  +unblur_('li:eq(1), li:eq(2)')
+  +row-bkg-remove('li:eq(0)', 'grey')
+  +blur_('li:eq(0),li:eq(2)')
+  +row-bkg('li:eq(1)','grey')
+
++slide_img('DSC_AB_1822.JPG')
+  .notes When Hannah hides behind the logs and a girl later pops up, we can ask whether it is Hannah again or another girl.
+  .notes That is, we know that objects can persist despite disappering from view---and despite becoming entirely imperceptible.
+
++slide_img('PB042123.JPG')
+  .notes Contrast features again.  You might see this red feature moving across the scene. 
+    span But suppose it disappears and then, later a similar looking feature appears. 
+    span There is no fact of the matter about whether this is the same feature or a different one.
+  .notes So in the case of features we can't make sense of them as persisting over time, or as there being interruptions in their presence.
+
+
+section.slide#segment_persist_interact3
+  .slide-clone(data-which='#segment_persist_interact2')
+  +unblur_('li:eq(0),li:eq(2)')
+  +row-bkg-remove('li:eq(1)', 'grey')
+  +blur_('li:eq(0),li:eq(1)')
+  +row-bkg('li:eq(2)','grey')
+
++slide_img('PC183258.JPG')
+  .notes Objects causally interact with each other; one pan supports another, two people collide and bounce off each other.
+
++slide_img('PB042123.JPG')
+  .notes Again, we can contrast features.  These do not causally interact with each other.
+  .notes Relatedly, they do not have counterfactual lives either.
+  .notes You might say, if that barrier had not been there, the car would be at the bottom of the valley now.
+  .notes But you can't say how things might have been with features: they are counterfactually and causally inert.
+
+section.slide
+  .slide-clone(data-which='#segment_persist_interact3')
+  +unblur_('li:eq(0),li:eq(1)')
+  +row-bkg-remove('li:eq(2)', 'grey')
+  .notes I've been contrasting knowledge of objects with knowledge of features.
+  .notes Having knowledge of objects, unlike knowledge of features, requires abilities to segment objects, to represent them as persisting, and to track at least some of their interactions.
+
+
++slide_middle
+  .notes Imagine there was a time you lived in a world of features.  In your world there was only features, no objects.
+  .notes So nothing persisted and there were no causal interactions.
+  .notes It would be fabulous to be able to explain how you could make the transition from inhabiting this feature world to living in a world of objects.
+  .notes But that's not a project I want to pursue today, although some of what we're going to do bears on this project.
+  .notes Why not?  Partly because it would be too hard.  And partly because it's unclear whether there is any point in their cognitive development where humans inhabit a world only of features.
+  .notes So what is the question? ...
+  p.center not the question
+  
++slide_middle
+  .notes The question for this lecture is, How do humans come to meet the three requirements on knowledge of objects?
+  .notes (So we're not trying to explain how humans come to know things about objects and their interactions; we're only trying to explain how they come to meet some requirements on knowing such things.)
+  p.center the question
+  

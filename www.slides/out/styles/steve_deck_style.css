@@ -288,6 +288,34 @@ div.container_12 {
   -ms-animation-delay: 20s;
   animation-delay: 20s;
 }
+.scale120 {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.scale130 {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.scale140 {
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
+.scale150 {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
 .scale-2 {
   -webkit-transform: scale(2);
   -moz-transform: scale(2);
@@ -336,6 +364,18 @@ div.container_12 {
 .deck-container div.words .bottom {
   position: absolute;
   bottom: 0px;
+}
+.deck-container div.words .source {
+  text-align: right;
+  font-size: 66%;
+  position: absolute;
+  float: right;
+  top: 480px;
+  width: 720px;
+}
+.deck-container div.words .source:before {
+  content: 'source: ';
+  font-style: italic;
 }
 .deck-container div.words .indent {
   padding-left: 1em;
@@ -606,38 +646,52 @@ table.fitch-proof td.last-premise {
   -webkit-box-shadow: 0px -8px 8px 0 rgba(255,255,255,0.5);
   box-shadow: 0px -8px 8px 0 rgba(255,255,255,0.5);
 }
-.deck-container .bottom-black {
-  background-color: #000;
+.deck-container .slide .bottom-black {
   float: left;
   position: absolute;
   top: 375px;
   height: 225px;
   width: 800px;
   left: 0px;
+  background-color: #000;
   -webkit-box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5);
   box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5);
 }
-.deck-container .bottom-half-black {
-  background-color: #000;
+.deck-container .slide .bottom-half-black {
   float: left;
   position: absolute;
   top: 300px;
   height: 300px;
   width: 800px;
   left: 0px;
+  background-color: #000;
   -webkit-box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5);
   box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5);
 }
-.deck-container .bottom-third-black {
-  background-color: #000;
+.deck-container .slide .bottom-third-black {
   float: left;
   position: absolute;
   top: 400px;
   height: 200px;
   width: 800px;
   left: 0px;
+  background-color: #000;
   -webkit-box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5);
   box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5);
+}
+.deck-container .slide .top-half-black {
+  float: left;
+  position: absolute;
+  top: 0;
+  height: 300px;
+  width: 800px;
+  left: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000), color-stop(0.8, #000), color-stop(1, rgba(0,0,0,0)));
+  background: -webkit-linear-gradient(top, #000 0, #000 80%, rgba(0,0,0,0) 100%);
+  background: -moz-linear-gradient(top, #000 0, #000 80%, rgba(0,0,0,0) 100%);
+  background: -o-linear-gradient(top, #000 0, #000 80%, rgba(0,0,0,0) 100%);
+  background: -ms-linear-gradient(top, #000 0, #000 80%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(top, #000 0, #000 80%, rgba(0,0,0,0) 100%);
 }
 .deck-container .right-half-white {
   background-color: #fff;

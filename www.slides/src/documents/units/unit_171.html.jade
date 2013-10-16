@@ -1,0 +1,193 @@
+---
+layout: 'deck_unit'
+title: "Segmentation and the Principles of Object Perception"
+tags: []
+description: "Humans, adult and infant, segment objects in accordance with four principles: cohension, boundedness, rigidity and no action at a distance (Spelke 1990)."
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/slide_mixins
+
++slide_middle
+  .notes How do humans segment objects?
+  p.center segmentation
+
++slide_img('DSC_1028.JPG')
+  .notes Recall that the way objects are ordinarily arranged in space, so that one occludes parts of another, prevents us from doing this in any simple way.
+
+// ------------------
+// the principle of cohension
+
++slide
+  .notes One possible way to segment objects invokes a principle of cohension.
+  p cohesion:
+  p ‘two surface points lie on the same object only if the points are linked by a path of connected surface points’
+  p.right (Spelke 1990)
+  .step1.hide
+    img(src='/img/spelke_1990_fig4ab.png')
+  .step2.hide
+    img(src='/img/spelke_1990_fig4ij.png')
+  p.source Spelke (1990, figure 4)
+  +show('.step1')
+  .notes For example, objects arranged as on your left were percevied by 3-month-olds as two objects, whereas infants treated the displays like that on your right as if they were one object.
+  .notes (This was measured using a habituation paradigm \citep{kestenbaum:1987_perception}.  Infants were habituated to the display.  Then either one object's position changed, or both objects' positions changed but in such a way as to preserve the overall configuration of the two objects.  Infants could show that they perceived the configuration as a single object by looking longer when just one object's position changed.)
+  +showremove('.step2','.step1')
+  .notes Here's a second example.
+  .notes In this case \citep[Experiment 2]{spelke:1989_reaching}, the researchers tested 5-month-old infants using a reaching paradigm.
+  .notes The smaller of the two objects was always closer to the infants.  Infants should reach more often for the smaller, nearer object when they represent the simuli as a single object than when they represent it as two objects.
+  .notes Exploiting this fact, \citet[Experiment 2]{spelke:1989_reaching} showed that infants perceive the stimlui on your left as two objects but the stimlui on your right as a single object.
+  .notes &nbsp;
+  .notes But how does the principle of cohension apply to this moving display? 
+    span ‘When two surfaces are separated by a spatial gap (as in Figure 4a) or undergo relative motions that alter the adjacency relations among points at their border (as in Figure 4i), the surfaces lie on distinct objects.’
+  
+
+// ------------------
+// features
+
++slide_middle
+  .notes Infants from 4.5 months of age can use featural information to segment objects.
+  p.center using featural information
+
++slide
+  .notes In Amy Needham's 1998 study, infants were shown a display like this.
+  .notes Featural information---the difference in textures of the objects---suggests that these are two separate objects.
+  .notes But can infants use this information to detect that there are two objects?
+  +img_clip('needham_1998_fig3.png', 'rect(0px, 220px, 190px, 0px)')
+  p.source Needham (1998)
+  +clip('img','rect(0px, 652px, 190px, 0px)')
+  .notes Some infants were then shown the object being moved like this, so that it is clearly two separate objects.
+  +clip('img','rect(0px, 652px, 381px, 0px)')
+  .notes Other infants where shown the object being moved like this.
+  .notes If infants think there is one object, they should expect the second kind of movement.
+  .notes But if infants think there are two objects---if, that is, they can use the featural information to segment objects---then they should expect the former kind of movement.
+  .notes What were the results?  ...
+  
++slide
+  .notes Needham showed that infants from 4.5 months of age can use featural information to segment objects.
+  img(src='/img/needham_1998_fig4.png')
+  p.source Needham (1998, figure 4)
+
++slide
+  .notes Interestingly, 4.5 month old infants were able to succeed even when the point of contact between the two objects was occluded, as in this diagram.
+  img(src='/img/needham_1998_fig6b.png')
+  p.source Needham (1998, figure 6)
++slide
+  .notes These are the results for 4.5 month old infants.
+  img(src='/img/needham_1998_fig7b.png')
+  p.source  Needham (1998, figure 7)
+
+
+// ------------------
+// common motion
+// *couldn't it all be features? no.
+// \citep{kellman:1983_perception}: 'infants perceive the boundaries of a partly hidden object by analyzing the movements of its surfaces: infants perceived a connected object when its ends moved in a common translation behind the occluder. Infants do not appear to perceive a connected object by analyzing the colors and forms of surfaces: they did not perceive a connected object when its visible parts were stationary, its color was homogeneous, its edges were aligned, and its shape was simple and regular.' 
+
++slide_middle
+  .notes To see why it couldn't be just features that we use to segment objects, consider some more cases ...
+  p.center Couldn't it all be features?
+
++slide
+  .notes Can we fully explain segmentation by appeal to features, at least in infants if not adults too?
+  .notes No, consider the case of an occluded object---a stick behind a box.
+  .notes The movement is enough to convince 4-month-old infants that there is just one stick even though they never see its middle \citep{kellman:1983_perception}.
+  //img width is 635px
+  +img_clip('spelke_1990_fig2ab.png','rect(0px,320px,214px,0px)')
+  p.source Spelke (1990, figure 2)
+  
++slide
+  .notes After being habituated to this this, 3-month-old infants were shown one of two displays.
+  img(src='/img/kellman_1983_fig3b.png')
+  p.source Kellman & Spelke (1983, figure 3)
+
++slide
+  .notes And here are the results (subjects were 3-month-old infants).
+  img.scale130(src='/img/kellman_1983_fig4a.png')
+  p.source Kellman & Spelke (1983, figure 4)
+
++slide
+  .notes The fact that infants can correctly segment partially occluded objects based on their movements already indicates that they can't be thinking about features only.
+  .notes For more evidence, consider this display.
+  .notes The two parts of the moving object are featurally different.
+  .notes Despite this, infants expect to see a single connected object behind the block (\citealp{kellman:1983_perception}, Experiment 6; \citealp{Spelke:1990jn}).
+  img(src='/img/kellman_1983_fig13a.png')
+  p.source Kellman & Spelke (1983, figure 13)
+
++slide
+  .notes Here are the test stimuli (each groups is shown one or the other).
+  img(src='/img/kellman_1983_fig13b.png')
+  p.source Kellman & Spelke (1983, figure 13)
+  
++slide
+  .notes And here are the results.  Subjects in this experiment were 4-month-old infants.
+  img.scale120(src='/img/kellman_1983_fig14a.png')
+  p.source Kellman & Spelke (1983, figure 14)
+
+
+
+
+// ------------------
+// the principles
+
+
++slide
+  .notes Spelke proposes that our ability to identify objects depends on some principles (Spelke 1990).
+  p Principles of Object Perception
+  .handout \subsection{Principles of Object Perception \citep{Spelke:1990jn}}
+  ul.handout.show 
+    li cohesion
+      span.step2.hide —‘two surface points lie on the same object only if the points are linked by a path of connected surface points’
+      .handout &nbsp;
+    li boundedness
+      span.step3.hide —‘two surface points lie on distinct objects only if no path of connected surface points links them’
+      // … the boundedness principle implies that … two distinct objects cannot interpenetrate.’
+      .handout &nbsp;
+    li rigidity
+      span.step4.hide —‘objects are interpreted as moving rigidly if such an interpretation exists’
+      .handout &nbsp;
+    li no action at a distance
+      span.step5.hide —‘separated objects are interpreted as moving independently of one another if such an interpretation exists’
+      .handout &nbsp;
+  p.right (Spelke 1990)
+  +steps(2,5)
+  .notes What is the status of these principles?
+  .notes Spelke’s position might be put like this:
+  .notes \begin{enumerate}
+  .notes \item We (as perceivers) start with a cross-modal representation of three-dimensional perceptual features which includes their locations and trajectories.
+  .notes \item Our task is to get from these representations of features to representations of objects.
+  .notes \item \emph{Descriptive component} We do this in accordance with certain principles (cohesion, boundedness, rigidity, and no action at a distance).
+  .notes \item \emph{Explanatory component}  We acquire representations of objects because we apply the principles to representations of features and draw appropriate inferences.
+  .notes \end{enumerate}
+  .notes The key point for our purposes is the explanatory component.
+  .notes The principles are not supposed to be merely heuristics for describing and predicting infants’ performance on preferential looking tasks.
+  .notes Rather, these principles are supposed to explain why infants look longer at some things than at others.
+  .notes This what motivates the hypothesis that infants know these principles and use them in reasoning about objects: unless this hypothesis is true, it’s hard to understand how the principles could have explanatory relevance.   
+
++slide_middle
+  .notes Inspiration for Spelke’s view comes from Marr and Chomsky.
+  .notes Marr showed that many visual processes can be modelled as inferences.
+  .notes And Chomsky pioneered the idea that our knowledge of language depends on knowledge of principles of syntax.
+  .notes What unites these three cases, Spelke on object segmentation, Marr on vision and Chomsky on syntax?
+  .notes It’s that they are straightforwardly cognitivist in appeal to knowledge and inference.
+  .notes Principles are known, and they are used via a process of inference.
+  .notes (There’s a nice quote from Fodor on your handout underlining this point.)
+  .handout ‘Chomsky’s nativism is primarily a thesis about knowledge and belief; it aligns problems in the theory of language with those in the theory of knowledge.  Indeed, as often as not, the vocabulary in which Chomsky frames linguistic issues is explicitly epistemological.  Thus, the grammar of a language specifies what its speaker/hearers have to know qua speakers and hearers; and the goal of the child’s language acquisition process is to construct a theory of the language that correctly expresses this grammatical knowledge.  Likewise, the central problem of language acquisition arises from the poverty of the “primary linguistic data” from which the child effects this construction; and the proposed solution of the problem is that much of the knowledge that linguistic competence depends on is available to the child a priori (i.e., prior to learning).’
+  .handout.ctd \citep[p.\ 11]{Fodor:2000cj}
+  p.center Marr & Chomsky
+
++slide_middle
+  .notes So what is the status of Spelke’s principles of object perception?
+  .notes The simple view is that the Spelke principles are just known in whatever sense anything is known.
+  .notes The simple view isn’t exactly Spelke’s, but it’s a useful starting point for discussion.
+  .notes &nbsp;
+  .notes Now you might think that the case for these principles is not yet very strong.
+  .notes In which case, asking hard questions about their status is not necessary.
+  .notes So let’s consider further evidence for these principles.
+  .notes We can do this by turning from segmentation (which was our first requirement on knowledge of objects) 
+    span to representing objects as permanent.
+  p.center the simple view
+

@@ -27,7 +27,7 @@ section.slide
   .words
     .step2.hide
       .middle
-        p.center.invert(style='font-size:250px;margin-top:75px;') ?
+        p.center.invert(style='font-size:250px;margin-top:-150px;') ?
     .middle
       .container_12: .grid_12
         p.center.handout.show Categorical perception provides ‘the 
@@ -35,6 +35,14 @@ section.slide
           span —the elementary units—for higher-order categories’ 
         .handout.ctd \citep[p.\ 3]{Harnad:1987ej}.
         p.right (Harnad 1987, p. 3).
+        .slide
+          .notes Incidentally, Spelke also uses the building blocks metaphor.
+          .notes But of course Spelke is talking about core knowledge rather than categorical perception.  (I think the two might be related, but I suspect she would strongly disagree.)
+          .blur1
+            p.em-above.center.handout.show ‘The building blocks of all our complex representations are the representations that are constructed from individual core knowledge systems.’
+            .handout.ctd \citep[p.\ 307]{Spelke:2003fc}
+            p.right (Spelke 2003: 307)
+          +blur('.blur1')
     mixin step(2)
     .notes But is it true?
     mixin invert('.highlight1')
@@ -294,5 +302,7 @@ section.slide
   .words: .middle
     .container_12: .grid_12
       p.center conclusion
-      p.center building blocks: no; rediscovery: maybe
+      p.center
+        span.slide building blocks: no
+        span.slide ; rediscovery: maybe
 

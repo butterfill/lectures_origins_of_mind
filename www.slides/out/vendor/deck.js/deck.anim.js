@@ -226,24 +226,24 @@
         classical(o.selectors.animAttribute, {
             init: function(c) {
                 c.previousElement = [];
-                c.all().css(c.attribute(), '') // for the jquery anim to work the css attribute should not be defined in the element (in the html) so we suppose it is empty by default (and thus, if it is not empty, it means it has been set by jquery)
+                //steve: removed this 2013-10-15 because it screws up expanding an image by clipping
+                //c.all().css(c.attribute(), '') // for the jquery anim to work the css attribute should not be defined in the element (in the html) so we suppose it is empty by default (and thus, if it is not empty, it means it has been set by jquery)
             },
             undo: function(c) {
-                var k = c.attribute()
+                var key = c.attribute()
                 for (i in c.previousElement) { // use the saved list of elements and values
-                    var whatTo = {}
-                    whatTo[k] = c.previousCss[i]
-                    $(c.previousElement[i]).css(whatTo)
+                    var whatTo = {};
+                    whatTo[key] = c.previousCss[i];
+                    $(c.previousElement[i]).css(whatTo);
                 }
             },
             doit: function(c, factor) {
-                if (factor === undefined) factor = 1
-                var k = c.attribute()
-                c.previousCss = []
-                c.previousElement = []
-                c.all().each( function(){c.previousElement.push(this); c.previousCss.push($(this).css(k))}) // save a list of elements and values
+                var key = c.attribute();
+                c.previousCss = [];
+                c.previousElement = [];
+                c.all().each( function(){c.previousElement.push(this); c.previousCss.push($(this).css(key))}) // save a list of elements and values
                 var whatTo = {}
-                whatTo[c.attribute()] = c.value()
+                whatTo[key] = c.value()
                 c.all().css(whatTo)
             },
             fast: function(c) {this.doit(c,0)}

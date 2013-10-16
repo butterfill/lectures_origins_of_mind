@@ -115,7 +115,46 @@ mixin handout(p)
     .handout &nbsp;
     .handout \section{#{p.unit ? p.unit.title : p.title}}
 
+
+
 //- -------------
+//- mixins to create standard types of slide
+//- -------------
+
+mixin slide()
+  section.slide
+    .words
+      .container_12: .grid_12
+        block
+
+mixin slide_middle()
+  section.slide
+    .container_12: .grid_12
+      .words: .middle
+        block
+
+mixin slide_img(filename)
+  section.slide
+    img.bkg(src='/img/#{filename}')
+    block
+
+
+
+
+
+//- -------------
+//- mixins to create elements
+//- -------------
+
+mixin img_clip(filename, theClip)
+  div(style='position:relative;')
+    img(src='/img/#{filename}', style="clip: #{theClip}; position: absolute;")
+
+
+
+
+//- -------------
+//- use the new slide-clone plugin instead!!!!
 //- recall slides (can also preview)
 //- parameter should be a selector for the slide, e.g. #categorical_perception_slide
 //- -------------
@@ -124,6 +163,9 @@ mixin recall(selector)
 
 mixin unrecall(selector)
   .slide.anim-removeclass(data-what="#{selector}",data-class="recall",data-scope=".deck-container")
+
+
+
 
 
 
@@ -137,6 +179,15 @@ mixin anim_end()
   .slide.anim-addclass(data-what="#notanelement", data-class="")
 
 
+//- clip an image
+mixin clip(what, theClip)
+  if typeof(what)==='string'
+    - what = [what]
+  each thing in what
+    .slide.anim-continue.anim-attribute(data-what="#{thing}", data-attr="clip:#{theClip}")
+  mixin anim_end()
+
+
 //- draw a connector between elements
 mixin connect(p)
   .slide.anim-connect(data-from='#{p.from}', data-to='#{p.to}', data-from-anchor="#{p.fromAnchor||'LeftMiddle'}",data-to-anchor='#{p.toAnchor || "RightMiddle"}',data-color="#{p.color || 'hotpink'}")
@@ -148,15 +199,18 @@ mixin blur_(what)
     .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="blur-text")
 
 mixin blur(what)
-  mixin blur_(what)
-  mixin anim_end()
+  +blur_(what)
+  +anim_end()
 
-mixin unblur(what)
+mixin unblur_(what)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="blur-text")
-  mixin anim_end()
+
+mixin unblur(what)
+  +unblur_(what)
+  +anim_end()
 
 
 mixin line-through(what)

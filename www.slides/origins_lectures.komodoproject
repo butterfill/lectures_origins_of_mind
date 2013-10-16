@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Komodo Project File - DO NOT EDIT -->
 <project id="cec2126b-e649-664d-9522-1b481a6723f0" kpf_version="5" name="MyProject.komodoproject">
+<preference-set idref="cec2126b-e649-664d-9522-1b481a6723f0">
+  <boolean id="dedentOnColon">0</boolean>
+  <string id="editAutoIndentStyle">smart</string>
+  <boolean id="editBackspaceDedents">1</boolean>
+  <boolean id="editElectricBrace">1</boolean>
+  <boolean id="indentStringsAfterParens">0</boolean>
+  <long id="indentWidth">2</long>
+  <boolean id="showIndentationGuides">1</boolean>
+  <long id="tabWidth">2</long>
+  <boolean id="useSmartTabs">1</boolean>
+  <boolean id="useTabs">0</boolean>
+</preference-set>
 </project>
