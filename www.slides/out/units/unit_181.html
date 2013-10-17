@@ -108,6 +108,7 @@ var inject = function(){
 <!-- create title slide for a lecture-->
 <!-- param p contains document and images (an array of images to use)-->
 <!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
 <!-- ------------>
 <!-- draw things-->
 <!-- ------------>
@@ -124,7 +125,8 @@ var inject = function(){
             because movement is a clue to segmentation and movement sometimes invovles occlusion.
           </div>
           <div class="notes">This becomes evident if we think about one more principle of object perception, the principle of continuity.</div>
-          <p class="center">principle of continuity---an object traces exactly one connected path over space and time</p>
+          <p>principle of continuity---</p>
+          <p>an object traces exactly one connected path over space and time</p>
           <div class="handout">\emph{Principle of continuity}  An object traces exactly one connected path over space and time \citep[p.\ 113]{spelke:1995_spatiotemporal}.  </div>
         </div>
       </div>
@@ -134,8 +136,21 @@ var inject = function(){
 <section class="slide">
   <div class="words">
     <div class="container_12">
-      <div class="grid_12"><img src="/img/spelke_1995_fig1.png"/>
+      <div class="grid_12">
+        <div class="notes">We easily understand this principle by considering cases that accord with, and violate, it.</div>
+        <div class="notes">Here is motion in accord with it.</div>
+        <div style="position:relative;"><img src="/img/spelke_1995_fig1.png" style="clip: rect(0px, 824px, 200px, 0px); position: absolute;"/></div>
+        <div class="handout">\begin{center}</div>
+        <div class="handout">\includegraphics[scale=0.3]{../www.slides/src/files/img/spelke_1995_fig1.neg.png}</div>
+        <div class="handout">\end{center}</div>
         <p class="source">Spelke et al (1995, figure 1)</p>
+        <div class="slide">
+          <div class="notes">Here is one violation of continuity.</div>
+          <div style="position:relative;"><img src="/img/spelke_1995_fig1.png" style="clip: rect(250px, 350px, 627px, 0px); position: absolute;"/></div>
+          <div class="notes">And here is another violation of continuity.</div>
+          <div data-what="img:eq(1)" data-attr="clip:rect(250px, 824px, 627px, 0px)" class="slide anim-continue anim-attribute"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -144,12 +159,25 @@ var inject = function(){
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <!-- *todo* reveal in quarters-->
         <div class="notes">\citet{spelke:1995_spatiotemporal} tested sensitivity to the principle of continuity in 4-month-old infants.</div>
-        <div class="notes">The infants were habituated to one of two displays.</div><img src="/img/spelke_1995_fig2.png"/>
+        <div class="notes">The infants were habituated to one of two displays.</div>
+        <div style="position:relative;"><img src="/img/spelke_1995_fig2.png" style="clip: rect(0px,300px,250px,0px); position: absolute;"/></div>
         <p class="source">Spelke et al (1995, figure 2)</p>
-        <div class="notes">They were then shown one of two test stimuli.</div>
-        <div class="notes">The measure was the degree of dishabituation as measured by looking time.</div>
+        <div data-what="img:eq(0)" data-attr="clip:rect(0px,800px,250px,0px)" class="slide anim-continue anim-attribute"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">Now in the continuous event we should perceive one object whereas in the discontinous event we should perceive two objects.</div>
+        <div class="notes">But is this about segmentation or persistence?</div>
+        <div class="notes">
+          Segmentation since it's about distinguishing one object from another; 
+           and persistence since it's about representing temporarily unperceived objects.
+        </div>
+        <div class="slide">
+          <div style="position:relative;"><img src="/img/spelke_1995_fig2.png" style="clip: rect(300px,300px,600px,0px); position: absolute;"/></div>
+          <div class="notes">They were then shown one of two test stimuli.</div>
+          <div data-what="img:eq(1)" data-attr="clip:rect(300px,800px,600px,0px)" class="slide anim-continue anim-attribute"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">The measure was the degree of dishabituation as measured by looking time.</div>
+        </div>
       </div>
     </div>
   </div>
@@ -158,9 +186,28 @@ var inject = function(){
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <!-- *todo* reveal in halves-->
-        <div class="notes">What's beautiful about these results is that the two groups show opposite patterns of dishabituation.</div><img src="/img/spelke_1995_fig3.png" height="500px"/>
+        <div class="scale080">
+          <div style="position:relative;"><img src="/img/spelke_1995_fig3.png" style="clip: rect(0px,800px,350px,0px); position: absolute;"/></div>
+        </div>
         <p class="source">Spelke et al (1995, figure 3)</p>
+        <div data-what="img:eq(0)" data-attr="clip:auto" class="slide anim-continue anim-attribute"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">What's beautiful about these results is that the two groups show opposite patterns of dishabituation.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">The principles of object perception are not just about infant perception; they are also supposed to explain how adults segment objects too.</div>
+          <div class="notes">How is this tested with adults?</div>
+          <div class="notes">It's really neat but I don't have time to tell you about it.</div>
+          <div class="notes">There's something called the object-specific preview effect which can give us a measure of when adult humans' perceptions treat two presentations as the same object.</div>
+          <p class="center">object-specific preview effect</p>
+        </div>
       </div>
     </div>
   </div>
@@ -177,8 +224,8 @@ var inject = function(){
           <div class="notes">We still want to know about the status of the principles of object perception.</div>
           <div class="notes">But we now the question is more pressing.</div>
           <div class="notes">Because the claim that these principles of object perception explain infants' (and adults', and other primates') performance is now harder to reject.</div>
-          <div class="notes">It's harder to reject because we have converging evidence for the psychological reality of the principles from both segmentation and persistence.</div>
-          <div class="notes">Before we go any further, let me say a little more about persistence ...</div>
+          <div class="notes">It's harder to reject because we have converging evidence for the psychological reality of the principles from both segmentation and permanence.</div>
+          <div class="notes">Before we go any further, let me say a little more about permanence (even though we've already considered it) ...</div>
           <div class="container_12">
             <div class="grid_6">
               <p>principles of object perception</p>

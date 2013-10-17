@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <title>Causal Interactions | Origins of Mind</title>
-    <meta name="description" content="***"/>
+    <meta name="description" content="Knowledge of objects requires being able to track their causal interactions.  How do humans achieve this?"/>
     <meta name="keywords" content="philosophy, psychology, development, thought"/>
     <meta name="author" content=""/><meta name="generator" content="DocPad v6.53.1" />
     <meta name="viewport" content="width=device-width"/>
@@ -108,6 +108,7 @@ var inject = function(){
 <!-- create title slide for a lecture-->
 <!-- param p contains document and images (an array of images to use)-->
 <!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
 <!-- ------------>
 <!-- draw things-->
 <!-- ------------>
@@ -116,47 +117,355 @@ var inject = function(){
 <!-- *what is it like to be an infant*-->
 <!-- *TODO* belongs later!!!-->
 <section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">The third requirement on knowledge of objects is an ability to track objects through causal interactions.</div>
+          <div class="notes">Here we're interested in very simple causal interactions, such as the collision of two balls or the interaction of a ball with a barrier.</div><img src="/img/fig_colliding_balls.png"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <div class="notes">How do these principles enable us to discern when one object ends and another begins?</div>
-        <p>Perception of objects rests on knowledge of ‘four principles—cohesion, boundedness, rigidity, and no action at a distance—that reflect basic constraints on the motions of physical bodies’  (Spelke 1990: 30-1)</p>
-        <p>We acquire representations of unperceived objects by applying the principles to what we see and drawing inferences about which objects there are. </p>
+        <div class="notes">Consider this case where a ball falls and lands on a bench.</div>
+        <div class="notes">Suppose that there was a barrier in front of the bench, like the dotted line.</div>
+        <div class="notes">Because the bench protrudes from the barrier, you could easily see where the ball will land.</div>
+        <div class="notes">But of course you can only see this if you know that barriers stop solid balls.</div>
+        <div class="notes">Spelke used this observation to provide evidence that 4-month-old infants can track objects' causal interactions.</div>
+        <div style="position:relative;"><img src="/img/spelke_1992_fig2a.png" style="clip: rect(0px,480px,434px,240px); position: absolute;"/></div>
+        <p class="source">Spelke et al 1992, figure 2</p>
+        <div data-what="img:eq(0)" data-attr="clip:rect(0px,240px,434px,0px)" class="slide anim-continue anim-attribute"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">Infants were habituated to a display in which a ball fell behind a screen, the screen came forwards and the ball was revealed to be on the ground, just where you'd expect it to be.</div>
+        <div class="notes">After habituation infants were shown one of two displays.</div>
+        <div class="notes">Infants in the 'consistent group' were shown this.</div>
+        <div data-what="img:eq(0)" data-attr="clip:rect(0px,480px,434px,0px)" class="slide anim-continue anim-attribute"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">Whereas infants in the 'inconsistent group' were shown this.</div>
+        <div data-what="img:eq(0)" data-attr="clip:rect(0px,720px,434px,0px)" class="slide anim-continue anim-attribute"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">What should we predict?</div>
+        <div class="notes">If infants were only paying attention to the shapes and ignoring properties like solid, they should have dishabituated more to the consistent than to the inconsistent stimlus.</div>
+        <div class="notes">After all, that stimlus is more different from the habituation stimulus in terms of the surfaces.</div>
+        <div class="notes">But if infants were are to track some simple causal interactions, then they might dishabituate to the 'inconsistent' stimulus more than to the 'consistent' stimulus because that one involves an apparent violation of a physical laws.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Here are the results.</div>
+        <div class="notes">(Recall that the subjects are 4-month-old infants.)</div><img src="/img/spelke_1992_fig3a.png"/>
+        <p class="source">Spelke et al 1992, figure 3</p>
+        <div class="notes">This is evidence that infants can track causal interactions among objects, even when those causal interactions are occluded.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Chimpanzees also understand something of phyiscal interactions insofar as their looking times show sensitivity to support relations \citep{cacchione:2004_recognizing}.</div><img src="/img/cacchione_2004_fig2.png"/>
+        <p class="source">Cacchione & Krist 2004, figure 2</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Here are the results.</div><img src="/img/cacchione_2004_fig3.png"/>
+        <p class="source">Cacchione & Krist 2004, figure 3</p>
+        <div class="notes">Lots of studies like this have been done with infants in their first six months of life.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Dogs can do this too.</div>
+        <div class="notes">This experiment used a search measure rather than a looking time measure.</div>
+        <div class="notes">Dogs had to retrieve a treat.  The right location to search depended on whether the barrier was present or absent.</div><img src="/img/kundey_2010_fig1.png"/>
+        <p class="source">Kundey et al 2010, figure 1</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">The results show brilliant performance.</div>
+        <div class="notes">'Dogs correctly searched the near location when the barrier was present and the far location when the barrier was absent. They displayed this behavior from the first trial' \citep{kundey:2010_domesticated} (from the abstract).</div><img src="/img/kundey_2010_fig2.png"/>
+        <p class="source">Kundey et al 2010, figure 2</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">How do infants, adult humans and nonhumans track causal interactions among objects (including causal relations like support)?</div>
+          <div class="notes">Spelke suggests that the principles of object perception can explain this.</div>
+          <p class="center">how?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">For example, the position of an object falling onto a bench is predicted by the principle of continuity mentioned earlier.</div>
+        <div class="notes">\emph{Principle of continuity} An object traces exactly one connected path over space and time \citep[p.\ 113]{spelke:1995_spatiotemporal}.</div><img src="/img/spelke_1995_fig1.png"/>
+        <p class="source">Spelke et al (1995, figure 1)</p>
+        <div class="notes">(The other principles of object perception are on your handout.)</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/spelke_1992_fig2a.png" style="clip: auto; position: absolute;"/></div>
+        <p class="source">Spelke et al 1992, figure 2</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12"><img src="/img/spelke_1995_fig1.png"/>
+        <p class="source">Spelke et al (1995, figure 1)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="blur1">
+          <div class="notes">This is Spelke's brilliant insight.</div>
+          <p class="handout show">‘object perception reflects basic constraints on the motions of physical bodies …’</p>
+          <p class="right">(Spelke 1990: 51)</p>
+          <div class="handout ctd">\citep[p.\ 51]{Spelke:1990jn}</div>
+          <p class="handout show">‘A single system of knowledge … appears to underlie object perception and physical reasoning’</p>
+          <div class="handout ctd">\citep[p.\ 175]{Carey:1994bh}</div>
+          <p class="right">(Carey and Spelke 1994: 175)</p>
+          <div class="notes">I think there's something here that should be uncontroversial, and something that's more controversial.</div>
+        </div>
+        <div data-what=".blur1" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         <div class="slide">
-          <p>So infants who pass violation-of-expectation tasks can:</p>
+          <div class="notes">Let's suppose that Spelke is right that the principles are \emph{formally adequate}.</div>
+          <div class="notes">That is, someone who knew the principles and had unlimited cognitive resources could use the principles to infer the track physical objects through simple causal interactions like those we've been considering.</div>
+          <div class="notes">(So formal adequacy is a question of what is possible in principle.)</div>
+          <div class="notes">I don't think we should question this.</div>
+          <p class="em-above">Spelke's principles of object perception</p>
           <ul>
-            <li>formulate hypotheses;</li>
-            <li>revise and elaborate these hypotheses; and</li>
-            <li>regard events as anomalous or surprising.</li>
+            <li>formal adequacy</li>
+            <li class="slide">descriptive adequacy
+              <div class="notes">I also want to allow that Spelke's principles are \emph{descriptively adeqaute}.</div>
+              <div class="notes">That is, they successfully describe how infants, adults and nonhumans deal with various situations.</div>
+              <div class="notes">We can think of this in terms of \emph{as if}: it is as if these individuals are using the principles.</div>
+              <div class="notes">But we have yet to come to what really matters to Spelke and to us.</div>
+              <div class="notes">For accepting formal and descriptive adequacy is consistent with denying that Carey and Spelke's claim that ‘A single system of knowledge … appears to [does] underlie object perception and physical reasoning’ \citep[p.\ 175]{Carey:1994bh}.</div>
+              <div data-what=".blur1" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
+              <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+              <div class="notes">That's because formal and descriptive adequacy leave open the question of what mechanisms are involved in tracking physical objects' causal interactions.</div>
+              <div data-what=".blur1" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+              <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+            </li>
+            <li class="slide">teleology
+              <div class="notes">We might claim, further, that the principles of object perception describe the teleological function of the cogntive systems that track physical interactions.</div>
+            </li>
+            <li class="slide">mechansim 
+              <div class="notes">Finally, we might claim that these principles are realised in the cognitive mechansisms invovled in object tracking.</div><span class="slide">(e.g. the simple view)
+                <div class="notes">In particular, following the simple view, we might claim that the principles are known, and that we detect physically impossible event by making inferences from these principles.</div></span>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- -------------------->
-<!-- perceptual expectations-->
-<!-- *what is it like to be an infant*-->
-<!-- *TODO* belongs later!!!-->
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">We've already seen some objections to the simple view.</div>
+          <div class="notes">Thinking about causal interactions allows us to make those objections more forcefully.</div>
+          <p class="center">against the simple view  </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="notes">*todo</div><img src="/img/slide_lecture04_010.jpg" class="bkg"/>
+</section>
+<section class="slide">
+  <div class="notes">*todo</div><img src="/img/slide_lecture04_011.jpg" class="bkg"/>
+</section>
+<section class="slide">
+  <div class="notes">*todo</div><img src="/img/slide_lecture04_012.jpg" class="bkg"/>
+</section>
+<section class="slide">
+  <div class="notes">Here are the looking time results.</div><img src="/img/slide_lecture04_013.jpg" class="bkg"/>
+</section>
+<section class="slide">
+  <div class="notes">You can even do looking time and reaching experiments with the same subjects and apparatus \citep{Hood:2003yg}.</div>
+  <div class="notes">2.5-year-olds look longer when experimenter removes the ball from behind the wrong door, but don't reach to the correct door </div><img src="/img/slide_lecture04_014.jpg" class="bkg"/>
+</section>
 <section class="slide">
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <div style="position:relative;"><img src="/img/kellman_1983_fig2.png" style="clip: rect(0px,530px,186px,265px); position: absolute;"/></div>
-        <p class="source">Michotte et al (1964) via Kellman & Spelke (1983, figure 2)</p>
-        <div class="notes">There are perceptual expectations.</div>
-        <div class="notes">Suppose you saw this image.</div>
-        <div class="notes">The triangle behind the thumb is in some sense perceptually present, even though you can't see it.</div>
-        <div data-what="img" data-attr="clip:auto" class="slide anim-continue anim-attribute"></div>
+        <p>search</p>
+        <div class="notes">here are the search results (shocking).</div><img src="/img/hood_2003_fig4.png"/>
+        <p class="source">Hood et al 2003, figure 4</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="notes">*todo</div><img src="/img/slide_lecture04_015.jpg" class="bkg"/>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Similar discrepancies between looking and reaching are also found in some nonhuman primates,</div>
+        <div class="notes">both apes and monkeys (chimpanzees, cotton-top tamarins and marmosets).</div>
+        <div class="notes">(Some of this is based on the gravity tube task and concerns gravity bias.)</div>
+        <div class="step1-and-2">
+          <p class="handout show">
+            ‘A similar permanent dissociation in understanding object support relations  
+            might exist in chimpanzees. They identify impossible support relations in looking tasks, 
+            but fail to do so in active problem solving.’
+          </p>
+          <div class="handout ctd">\citep{gomez:2005_species}</div>
+          <p class="right">(Gomez 2005)</p>
+          <div class="slide">
+            <p class="em-above">Likewise for cotton-top tamarins (Santos et al 2006) and marmosets (Cacchione et al 2012).</p>
+          </div>
+        </div>
+        <div data-what=".step1-and-2" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div class="notes">But now the thumb comes away and what you see is not the triangle you were expecting.</div>
-        <div class="notes">Could these perceptual expectations be just a matter of knowledge?</div>
-        <div class="notes">No, because perceptual expectations are judgement-independent.</div>
-        <div class="notes">As \citep{kellman:1983_perception} report, Michotte, Thines and Crabbe found that subjects report seeing a single large triangle behind the thumb even when they know that there isn't one there.</div>
-        <div class="notes">You can cover and reveal the triangles repeatedly, but the expectation will hold firm.</div>
-        <div class="notes">&nbsp;</div>
-        <div class="notes">The experience you have when the thumb is removed is like that of infants' in violation-of-expectation tasks.</div>
-        <div class="notes">This is what it is like to be an infant.</div>
+        <div class="slide">
+          <div class="notes">Note that this research is evidence of dissociations between looking and search in adult primates, not infants.</div>
+          <div class="notes">This is important because it indicates that the failures to search are a feature of the core knowledge system rather than a deficit in human infants.</div>
+          <div class="notes handout">
+            ‘to date, adult primates’ failures on search tasks appear to 
+            exactly mirror the cases in which human toddlers perform poorly.’
+          </div>
+          <p class="em-above">
+            ‘to date, adult primates’ failures on search tasks appear to 
+            exactly mirror the cases in which human toddlers perform poorly.’
+          </p>
+          <div class="notes handout ctd">\citep[p.\ 17]{santos:2009_object}</div>
+          <p class="right">(Santos & Hood 2009, p. 17)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">What about the dogs?</p>
+          <div class="notes">This isn't straightforward.</div>
+          <div class="notes">As I mentioned earlier, \citep{kundey:2010_domesticated} show that domestic dogs are good at solidity on a search measure.</div>
+          <div class="notes">And for many of the other animals I mentioned, object permanence is measured in search tasks, not with looking times.</div>
+          <div class="notes">But let's focus on the fact that you get the looking/search in any adult animals at all.</div>
+          <div class="notes">This is evidence that the dissociation is a consequence of something fundamental about cognition rather than just a side-effect of some capacity limit.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">So far we can draw two conclusions about infants' and adults abilities to track interactions.</div>
+          <div class="notes">My first conclusion from this section is that infants from around 4 months of age or younger and nonhuman animals are able to track simple causal interactions.</div>
+          <p class="center">conclusion so far: three things</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">
+            I started by identifying three requirements for knowledge of physical objects: 
+            abilities to segment objects, to represent them as persisting, and to track their causal interactions.
+          </div>
+          <div class="notes">My second conclusion is that a single set of principles likely underlies these abilities.</div>
+          <div class="notes">
+            The ability to segment objects is bound up with the ability 
+            to represent them as persisting and with the ability to track their interactions.
+          </div>
+          <div class="container_12">
+            <div class="grid_6">
+              <p>principles of object perception</p>
+            </div>
+            <div class="grid_2">
+              <p class="stretch-5"> {</p>
+            </div>
+            <div class="grid_4">
+              <div style="margin-top:-30px;margin-left:-50px;" class="kludge">
+                <p>segmentation</p>
+                <p>permanence</p>
+                <p>causal interaction</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">My third conclusion is that we have a problem.</div>
+          <div class="notes">The problem is that we have to reject the simple view.</div>
+          <div class="notes">Recall that the simple says that the principles of object perception are things that we know.</div>
+          <div class="notes">We must reject this view because it makes systematically incorrect predictions about actions like searching for objects.</div>
+          <p class="center">the simple view</p>
+          <div data-what="p" data-attr="text-decoration:line-through" class="slide anim-continue anim-attribute"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">But why is this a problem?</div>
+          <div class="notes">Because, as we'll see, it is hard to identify an alternative.</div>
+        </div>
       </div>
     </div>
   </div>

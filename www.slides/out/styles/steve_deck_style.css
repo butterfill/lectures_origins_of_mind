@@ -83,6 +83,9 @@ html {
 .deck-container .grey-text {
   color: #808080;
 }
+.deck-container .line-through {
+  text-decoration: line-through;
+}
 /**
  * Allow slides to be recalled by adding a class
  * the .slide sub-part makes sub-slides visisble
@@ -287,6 +290,13 @@ div.container_12 {
   -o-animation-delay: 20s;
   -ms-animation-delay: 20s;
   animation-delay: 20s;
+}
+.scale080 {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
 }
 .scale120 {
   -webkit-transform: scale(1.2);

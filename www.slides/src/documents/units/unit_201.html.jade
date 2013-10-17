@@ -2,7 +2,7 @@
 layout: 'deck_unit'
 title: "Causal Interactions"
 tags: []
-description: "***"
+description: "Knowledge of objects requires being able to track their causal interactions.  How do humans achieve this?"
 depends: ['']
 source: ['']
 duration: 5
@@ -20,39 +20,223 @@ include ../../../fragments/slide_mixins
 // *what is it like to be an infant*
 // *TODO* belongs later!!!
 
+
++slide_middle
+  .notes The third requirement on knowledge of objects is an ability to track objects through causal interactions.
+  .notes Here we're interested in very simple causal interactions, such as the collision of two balls or the interaction of a ball with a barrier.
+  img(src='/img/fig_colliding_balls.png')
+
 +slide
-  .notes How do these principles enable us to discern when one object ends and another begins?
-  p Perception of objects rests on knowledge of ‘four principles—cohesion, boundedness, rigidity, and no action at a distance—that reflect basic constraints on the motions of physical bodies’  (Spelke 1990: 30-1)
-  p We acquire representations of unperceived objects by applying the principles to what we see and drawing inferences about which objects there are. 
+  .notes Consider this case where a ball falls and lands on a bench.
+  .notes Suppose that there was a barrier in front of the bench, like the dotted line.
+  .notes Because the bench protrudes from the barrier, you could easily see where the ball will land.
+  .notes But of course you can only see this if you know that barriers stop solid balls.
+  .notes Spelke used this observation to provide evidence that 4-month-old infants can track objects' causal interactions.
+  +img_clip('spelke_1992_fig2a.png', 'rect(0px,480px,434px,240px)')
+  p.source Spelke et al 1992, figure 2
+  +clip('img:eq(0)', 'rect(0px,240px,434px,0px)')
+  .notes Infants were habituated to a display in which a ball fell behind a screen, the screen came forwards and the ball was revealed to be on the ground, just where you'd expect it to be.
+  .notes After habituation infants were shown one of two displays.
+  .notes Infants in the 'consistent group' were shown this.
+  +clip('img:eq(0)', 'rect(0px,480px,434px,0px)')
+  .notes Whereas infants in the 'inconsistent group' were shown this.
+  +clip('img:eq(0)', 'rect(0px,720px,434px,0px)')
+  .notes What should we predict?
+  .notes If infants were only paying attention to the shapes and ignoring properties like solid, they should have dishabituated more to the consistent than to the inconsistent stimlus.
+  .notes After all, that stimlus is more different from the habituation stimulus in terms of the surfaces.
+  .notes But if infants were are to track some simple causal interactions, then they might dishabituate to the 'inconsistent' stimulus more than to the 'consistent' stimulus because that one involves an apparent violation of a physical laws.
+  
++slide
+  .notes Here are the results.
+  .notes (Recall that the subjects are 4-month-old infants.)
+  img(src='/img/spelke_1992_fig3a.png')
+  p.source Spelke et al 1992, figure 3
+  .notes This is evidence that infants can track causal interactions among objects, even when those causal interactions are occluded.
+
++slide
+  .notes Chimpanzees also understand something of phyiscal interactions insofar as their looking times show sensitivity to support relations \citep{cacchione:2004_recognizing}.
+  img(src='/img/cacchione_2004_fig2.png')
+  p.source Cacchione & Krist 2004, figure 2
+
++slide
+  .notes Here are the results.
+  img(src='/img/cacchione_2004_fig3.png')
+  p.source Cacchione & Krist 2004, figure 3
+  .notes Lots of studies like this have been done with infants in their first six months of life.
+
+
++slide
+  .notes Dogs can do this too.
+  .notes This experiment used a search measure rather than a looking time measure.
+  .notes Dogs had to retrieve a treat.  The right location to search depended on whether the barrier was present or absent.
+  img(src='/img/kundey_2010_fig1.png')
+  p.source Kundey et al 2010, figure 1
+  
++slide
+  .notes The results show brilliant performance.
+  .notes 'Dogs correctly searched the near location when the barrier was present and the far location when the barrier was absent. They displayed this behavior from the first trial' \citep{kundey:2010_domesticated} (from the abstract).
+  img(src='/img/kundey_2010_fig2.png')
+  p.source Kundey et al 2010, figure 2
+
++slide_middle
+  .notes How do infants, adult humans and nonhumans track causal interactions among objects (including causal relations like support)?
+  .notes Spelke suggests that the principles of object perception can explain this.
+  p.center how?
++slide
+  .notes For example, the position of an object falling onto a bench is predicted by the principle of continuity mentioned earlier.
+  .notes \emph{Principle of continuity} An object traces exactly one connected path over space and time \citep[p.\ 113]{spelke:1995_spatiotemporal}.
+  img(src='/img/spelke_1995_fig1.png')
+  p.source Spelke et al (1995, figure 1)
+  .notes (The other principles of object perception are on your handout.)
++slide
+  +img_clip('spelke_1992_fig2a.png', 'auto')
+  p.source Spelke et al 1992, figure 2
++slide
+  img(src='/img/spelke_1995_fig1.png')
+  p.source Spelke et al (1995, figure 1)
+
+
++slide
+  .blur1
+    .notes This is Spelke's brilliant insight.
+    p.handout.show ‘object perception reflects basic constraints on the motions of physical bodies …’
+    p.right (Spelke 1990: 51)
+    .handout.ctd \citep[p.\ 51]{Spelke:1990jn}
+    p.handout.show ‘A single system of knowledge … appears to underlie object perception and physical reasoning’
+    .handout.ctd \citep[p.\ 175]{Carey:1994bh}
+    p.right (Carey and Spelke 1994: 175)
+    .notes I think there's something here that should be uncontroversial, and something that's more controversial.
+  +blur('.blur1')
   .slide
-    p So infants who pass violation-of-expectation tasks can:
+    .notes Let's suppose that Spelke is right that the principles are \emph{formally adequate}.
+    .notes That is, someone who knew the principles and had unlimited cognitive resources could use the principles to infer the track physical objects through simple causal interactions like those we've been considering.
+    .notes (So formal adequacy is a question of what is possible in principle.)
+    .notes I don't think we should question this.
+    p.em-above Spelke's principles of object perception
     ul
-      li formulate hypotheses;
-      li revise and elaborate these hypotheses; and
-      li regard events as anomalous or surprising.
+      li formal adequacy
+      li.slide descriptive adequacy
+        .notes I also want to allow that Spelke's principles are \emph{descriptively adeqaute}.
+        .notes That is, they successfully describe how infants, adults and nonhumans deal with various situations.
+        .notes We can think of this in terms of \emph{as if}: it is as if these individuals are using the principles.
+        .notes But we have yet to come to what really matters to Spelke and to us.
+        .notes For accepting formal and descriptive adequacy is consistent with denying that Carey and Spelke's claim that ‘A single system of knowledge … appears to [does] underlie object perception and physical reasoning’ \citep[p.\ 175]{Carey:1994bh}.
+        +unblur('.blur1')
+        .notes That's because formal and descriptive adequacy leave open the question of what mechanisms are involved in tracking physical objects' causal interactions.
+        +blur('.blur1')
+      li.slide teleology
+        .notes We might claim, further, that the principles of object perception describe the teleological function of the cogntive systems that track physical interactions.
+      li.slide mechansim 
+        .notes Finally, we might claim that these principles are realised in the cognitive mechansisms invovled in object tracking.
+        span.slide (e.g. the simple view)
+          .notes In particular, following the simple view, we might claim that the principles are known, and that we detect physically impossible event by making inferences from these principles.
 
++slide_middle
+  .notes We've already seen some objections to the simple view.
+  .notes Thinking about causal interactions allows us to make those objections more forcefully.
+  p.center against the simple view  
 
+section.slide
+  .notes *todo
+  img.bkg(src='/img/slide_lecture04_010.jpg')
+section.slide
+  .notes *todo
+  img.bkg(src='/img/slide_lecture04_011.jpg')
+section.slide
+  .notes *todo
+  img.bkg(src='/img/slide_lecture04_012.jpg')
+section.slide
+  .notes Here are the looking time results.
+  img.bkg(src='/img/slide_lecture04_013.jpg')
 
+section.slide
+  .notes You can even do looking time and reaching experiments with the same subjects and apparatus \citep{Hood:2003yg}.
+  .notes 2.5-year-olds look longer when experimenter removes the ball from behind the wrong door, but don't reach to the correct door 
+  img.bkg(src='/img/slide_lecture04_014.jpg')
++slide
+  p search
+  .notes here are the search results (shocking).
+  img(src='/img/hood_2003_fig4.png')
+  p.source Hood et al 2003, figure 4
+section.slide
+  .notes *todo
+  img.bkg(src='/img/slide_lecture04_015.jpg')
+  
 
-// ------------------
-// perceptual expectations
-// *what is it like to be an infant*
-// *TODO* belongs later!!!
 
 +slide
-  +img_clip('kellman_1983_fig2.png', 'rect(0px,530px,186px,265px)')
-  p.source Michotte et al (1964) via Kellman & Spelke (1983, figure 2)
-  .notes There are perceptual expectations.
-  .notes Suppose you saw this image.
-  .notes The triangle behind the thumb is in some sense perceptually present, even though you can't see it.
-  +clip('img','auto')
-  .notes But now the thumb comes away and what you see is not the triangle you were expecting.
-  .notes Could these perceptual expectations be just a matter of knowledge?
-  .notes No, because perceptual expectations are judgement-independent.
-  .notes As \citep{kellman:1983_perception} report, Michotte, Thines and Crabbe found that subjects report seeing a single large triangle behind the thumb even when they know that there isn't one there.
-  .notes You can cover and reveal the triangles repeatedly, but the expectation will hold firm.
-  .notes &nbsp;
-  .notes The experience you have when the thumb is removed is like that of infants' in violation-of-expectation tasks.
-  .notes This is what it is like to be an infant.
+  .notes Similar discrepancies between looking and reaching are also found in some nonhuman primates,
+  .notes both apes and monkeys (chimpanzees, cotton-top tamarins and marmosets).
+  .notes (Some of this is based on the gravity tube task and concerns gravity bias.)
+  .step1-and-2
+    p.handout.show ‘A similar permanent dissociation in understanding object support relations  
+      | might exist in chimpanzees. They identify impossible support relations in looking tasks, 
+      | but fail to do so in active problem solving.’
+    .handout.ctd \citep{gomez:2005_species}
+    p.right (Gomez 2005)
+    .slide
+      p.em-above Likewise for cotton-top tamarins (Santos et al 2006) and marmosets (Cacchione et al 2012).
+  +blur('.step1-and-2')
+  .slide
+    .notes Note that this research is evidence of dissociations between looking and search in adult primates, not infants.
+    .notes This is important because it indicates that the failures to search are a feature of the core knowledge system rather than a deficit in human infants.
+    .notes.handout ‘to date, adult primates’ failures on search tasks appear to 
+      | exactly mirror the cases in which human toddlers perform poorly.’
+    p.em-above ‘to date, adult primates’ failures on search tasks appear to 
+      | exactly mirror the cases in which human toddlers perform poorly.’
+    .notes.handout.ctd \citep[p.\ 17]{santos:2009_object}
+    p.right (Santos & Hood 2009, p. 17)
+
++slide_middle
+    p.center What about the dogs?
+    .notes This isn't straightforward.
+    .notes As I mentioned earlier, \citep{kundey:2010_domesticated} show that domestic dogs are good at solidity on a search measure.
+    .notes And for many of the other animals I mentioned, object permanence is measured in search tasks, not with looking times.
+    .notes But let's focus on the fact that you get the looking/search in any adult animals at all.
+    .notes This is evidence that the dissociation is a consequence of something fundamental about cognition rather than just a side-effect of some capacity limit.
+
++slide_middle
+  .notes So far we can draw two conclusions about infants' and adults abilities to track interactions.
+  .notes My first conclusion from this section is that infants from around 4 months of age or younger and nonhuman animals are able to track simple causal interactions.
+  p.center conclusion so far: three things
+
++slide_middle
+  .notes I started by identifying three requirements for knowledge of physical objects: 
+    | abilities to segment objects, to represent them as persisting, and to track their causal interactions.
+  .notes My second conclusion is that a single set of principles likely underlies these abilities.
+  .notes The ability to segment objects is bound up with the ability 
+    | to represent them as persisting and with the ability to track their interactions.
+  .container_12
+    .grid_6
+      p principles of object perception
+    .grid_2
+      p.stretch-5  {
+    .grid_4
+      .kludge(style='margin-top:-30px;margin-left:-50px;')
+        p segmentation
+        p permanence
+        p causal interaction
++slide_middle
+  .notes My third conclusion is that we have a problem.
+  .notes The problem is that we have to reject the simple view.
+  .notes Recall that the simple says that the principles of object perception are things that we know.
+  .notes We must reject this view because it makes systematically incorrect predictions about actions like searching for objects.
+  p.center the simple view
+  +line-through('p')
+  .notes But why is this a problem?
+  .notes Because, as we'll see, it is hard to identify an alternative.
+  
+//-
+  +slide
+    .notes How do these principles enable us to discern when one object ends and another begins?
+    p Perception of objects rests on knowledge of ‘four principles—cohesion, boundedness, rigidity, and no action at a distance—that reflect basic constraints on the motions of physical bodies’  (Spelke 1990: 30-1)
+    p We acquire representations of unperceived objects by applying the principles to what we see and drawing inferences about which objects there are. 
+    .slide
+      p So infants who pass violation-of-expectation tasks can:
+      ul
+        li formulate hypotheses;
+        li revise and elaborate these hypotheses; and
+        li regard events as anomalous or surprising.
 
   
+
