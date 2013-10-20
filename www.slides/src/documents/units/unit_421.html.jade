@@ -1,0 +1,31 @@
+---
+layout: 'deck_unit'
+title: "Mindreading: Second Puzzle"
+tags: []
+description: "The second puzzle concerns apparently conflicting findings about whether ascriptions of belief to others is automatic or not."
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/slide_mixins
+
+
+
+// sequence of slides from Cambridge how do mindreaders model minds talk, 2013
+// *todo move notes from those lectures
+
++slide({bkg:'unit_421/slide_cambridge_model_003.jpg'})
+  .handout Are human adults’ abilities to represent beliefs automatic?
+  .handout There is evidence for\citep{kovacs_social_2010,Schneider:2011fk} and against.\citep{apperly:2008_back,apperly_why_2010} 
+
+
+- var img_nos = range(4,19)
+each img_no in img_nos
+  - var filename = 'unit_421/slide_cambridge_model_0'+(img_no<10 ? '0' : '')+img_no+'.jpg'
+  +slide({bkg:filename})
+
+

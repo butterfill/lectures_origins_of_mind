@@ -1,0 +1,55 @@
+---
+layout: 'deck_unit'
+title: "Signature Limits Generate Predictions"
+tags: []
+description: "In response to the two puzzles, we have made a conjecture.  This puzzle implies that infant and automatic reasoning is modular and involves minimal theory of mind.  But minimal theory of mind has signature limits.  These allow us to generate predictions to test the conjecture."
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/slide_mixins
+
+
+// *todo*
+// summary of the two puzzles and the proposed conjecture 
+
+
+//[Cambridge slides 45--65] Signature limits; Prediction; Experiments 
+
++slide({bkg:'unit_451/slide_cambridge_model_045.jpg'})
+  // *todo* remove first figure, replace with something more informative
+  .handout \begin{center}
+  .handout \includegraphics[width=0.25\textwidth]{fig/signature_limits_table.png}
+  .handout \end{center}
+  .handout \begin{center}
+  .handout   \includegraphics[width=0.3\textwidth]{fig/low_2012_fig.png}
+  .handout \end{center}
+
+  
+- var img_nos = range(46,65)
+each img_no in img_nos
+  - var filename = 'unit_451/slide_cambridge_model_0'+(img_no<10 ? '0' : '')+img_no+'.jpg'
+  +slide({bkg:filename})
+
+
++slide
+  p conclusions
+  .notes *todo*
+  .notes - theme B : the puzzles about development (A- & B-tasks) and automaticity.  We've earned the right to solve them by appeal to modularity.  (NB: it's modularity rather than mTm that explains the discrepancy; mTm is important because (i) it explains efficiency; and (ii) it generates predictions via signature limits)
+  .notes - theme B-1 : relation between infant and adult competence --- infant competence retained in adults (matching signature limits from Low & Watts), as in the cases of colour (and probably physical objects too); 
+  .notes - theme A: explain the origins of knowledge of others minds : development as rediscovery.  There is a modular capacity ( = core knowledge). 
+    | But this doesn't lead to adult-like understanding for years, and the acquisition of adult-like understanding hinges on language; may involve completely different model of mental states.
+  .notes *todo* especially illustrate the two views about relation between infant and adult capacity (use All Souls' slides!)
+  //- old
+  //-
+    p How could mindreading be both automatic and not automatic?
+    p --> modularity
+    p.em-above How could mindreading sometimes be efficient?
+    p --> minimal theory of mind
+    p How can we test how mindreaders model minds?
+    p --> signature limits
+

@@ -1,0 +1,44 @@
+---
+layout: 'deck_unit'
+title: "Minimal Theory of Mind"
+tags: []
+description: "The construction of a minimal theory of mind enables us to understand how mindreading could be automatic in a limited but useful range of cases."
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/slide_mixins
+
+
+// short version
+// *todo: create longer version (see Edinburgh 2013-02 How do mindreaders model minds? talk)
+
+
++slide({bkg:'unit_441/slide_cambridge_model_030.jpg'})
+  .handout An agent’s \emph{field} is a set of objects related to the agent by proximity, orientation and other factors.
+  .handout First approximation: an agent \emph{encounters} an object just if it is in her field.
+  .handout A \emph{goal} is an outcome to which one or more actions are, or might be, directed.  
+  .handout %(Not to be confused with a \emph{goal-state}, which is an intention or other state of an agent linking an action to a particular goal to which it is directed.)
+  .handout \textbf{Principle 1}: one can’t goal-directedly act on an object unless one has encountered it.
+  .handout Applications: subordinate chimps retrieve food when a dominant is not informed of its 
+    | location \citep{Hare:2001ph}; when observed scrub-jays prefer to cache in shady, distant and 
+    | occluded locations \citep{Dally:2004xf,Clayton:2007fh}.
+  .handout First approximation: an agent \emph{registers} an object at a location just if she most recently encountered the object at that location.
+  .handout A registration is \emph{correct} just if the object is at the location it is registered at.
+  .handout \textbf{Principle 2}: correct registration is a condition of successful action.
+  .handout Applications: 12-month-olds point to inform depending on their informants’ goals and ignorance \citep{Liszkowski:2008al}; 
+    | chimps retrieve food when a dominant is misinformed about its location \citep{Hare:2001ph}; 
+    | scrub-jays observed caching food by a competitor later re-cache in private \citep{Clayton:2007fh,Emery:2007ze}.
+  .handout \textbf{Principle 3}: when an agent performs a goal-directed action and the goal specifies an object, the agent will act as if the object were actually in the location she registers it at.
+  .handout Applications: some false belief tasks \citep{Onishi:2005hm,Southgate:2007js,Buttelmann:2009gy}.
+
+- var img_nos = range(31,43)
+each img_no in img_nos
+  - var filename = 'unit_441/slide_cambridge_model_0'+(img_no<10 ? '0' : '')+img_no+'.jpg'
+  +slide({bkg:filename})
+
+

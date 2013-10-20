@@ -278,6 +278,12 @@ div.container_12
  */
 /* use div.words to wrap the text of every slide (but don't wrap background images) */
 .deck-container
+  .vspace-em
+    padding-top 1em
+  .vspace-em:before
+    content ''
+
+.deck-container
  div.words
   padding-top: 40px
 
@@ -812,7 +818,6 @@ make-bkg-words('faint-orange', rgba(255,165,0,0.3))
   text-shadow: 0 0 40px white, 0 0 20px white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white
   -webkit-text-shadow: 0 0 40px white, 0 0 20px white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white
   -moz-text-shadow: 0 0 40px white, 0 0 20px white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white
-  padding-right: 10%
 
 .deck-container .under-huge-glow
   padding-top: 0

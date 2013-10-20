@@ -1,0 +1,315 @@
+
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Knowledge of Mind | Origins of Mind</title>
+    <meta name="description" content="The challenge is to explain the emergence of awareness of others' mental states; here we focus on awareness of others' beliefs."/>
+    <meta name="keywords" content="philosophy, psychology, development, thought"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.53.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script async="async" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/normalize.css" /><link  rel="stylesheet" href="/vendor/deck.js/style.neon.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.core.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.menu.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.hash.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.notes.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/log.js"></script><script defer="defer"  src="/vendor/modernizr.min.js"></script><script defer="defer"  src="/vendor/deck.js/deck.core.js"></script><script defer="defer"  src="/vendor/deck.js/deck.menu.js"></script><script defer="defer"  src="/vendor/deck.js/deck.hash.js"></script><script defer="defer"  src="/vendor/deck.js/deck.notes.js"></script><script defer="defer"  src="/vendor/deck.js/deck.slide-clone.js"></script><script defer="defer"  src="/vendor/deck.js/deck.fit.js"></script><script defer="defer"  src="/vendor/deck.js/deck.step.js"></script><script defer="defer"  src="/vendor/deck.js/deck.events.js"></script><script defer="defer"  src="/vendor/deck.js/deck.anim.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script>
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!--.notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (no equivalent if you don't have a keyboard)</p>
+              <p>Press m or double tap to see a menu of slides</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="unit_401" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">Knowledge of Mind</h2>
+          </div>
+        </div>
+      </section>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<!-- -------------------->
+<!-- intro to mindreading-->
+<section class="slide"><img src="/img/bkg_twins.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.</div>
+        <div class="notes">Let me explain.</div>
+        <div style="margin-left:200px;">
+          <div class="vspace-em"></div>
+          <div class="vspace-em"></div>
+          <div class="huge-glow right">challenge</div>
+          <div class="under-huge-glow right">Explain the emergence, in evolution or development, of <span class="highlight1">mindreading.</span></div>
+          <div data-what=" .highlight1" data-class="invert" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" .highlight1" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes handout">
+            \textit{Mindreading} is 
+            the process of 
+            identifying mental states and purposive actions 
+            as the mental states and purposive actions of a particular subject.
+          </div>
+          <div class="vspace-em"></div>
+          <div class="slide premack-quote">
+            <div class="notes">Researchers sometimes use the term ‘theory of mind’.</div>
+            <div class="handout notes show">
+              ‘In saying that an individual has a theory of mind, 
+              we mean that the individual imputes mental states to himself and to others’ 
+            </div>
+            <div class="handout notes ctd">\citep[p.\ 515]{premack_does_1978}</div>
+            <p class="right">(Premack & Woodruff 1978: 515)</p>
+          </div>
+          <div data-what=".premack-quote" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">So the challenge is to explain the emergence of mindreading.</div>
+          <div class="notes">You know (let's say) that Ayesha belives Beatrice is in the library.</div>
+          <div class="notes">Humans are not born knowing individuating facts about others' beliefs.</div>
+          <div class="notes">How do they come to be in a position to know such facts?</div>
+          <div class="notes">Meeting this challenge initially seems simple.</div>
+          <div class="notes">But, as you'll see, we quickly end up with a puzzle.</div>
+          <div class="notes">I think this puzzle requires us to rethink what is involved in having a conception of the mental.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">belief</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p>‘Maxi puts his chocolate in the BLUE box and leaves the room to play.  While he is away (and cannot see), his mother moves the chocolate from the BLUE box to the GREEN box.  Later Maxi returns.  He wants his chocolate.’</p>
+        <div class="handout">
+          In a standard \textit{false belief task}, `[t]he subject is aware that he/she and another person [Maxi] witness a certain state of affairs x.  Then, in the absence of the other  
+          person the subject witnesses an unexpected change in the state of affairs from x to y' \citep[p.\ 106]{Wimmer:1983dz}. 
+          The task is designed to measure the subject's sensitivity to the probability that Maxi will falsely believe x to obtain. 
+        </div>
+        <div class="vspace-em"></div>
+        <div class="container_12">
+          <div class="grid_6">
+            <div style="background-color:blue;width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
+              <p>blue box</p>
+            </div>
+          </div>
+          <div class="grid_6">
+            <div style="background-color:green;width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
+              <p>green box</p>
+            </div>
+          </div>
+        </div>
+        <p class="em-above">‘Where will Maxi look for his chocolate?’</p>
+        <p class="source">Wimmer & Perner 1983</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12"><img src="/img/wimmer_1983_fig.png"/>
+        <p class="source">Wimmer & Perner 1983</p>
+        <div class="notes">(NB: The figure is not Wimmer & Perner's but drawn from their data.)</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">There's been some stuff in the press recently about bad science, mainly some dodgy methods and failures to replicate.</div><img src="/img/economist_science_wrong.jpg"/>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">So you'll be pleased to know that a meta-study of 178 papers confirmed Wimmer & Perner's findings.</div><img src="/img/wellman_2001_fig2a.png" style="max-height:500px;"/>
+        <p class="source">Wellman et al 2001, figure 2A</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">This meta-study also brings together some nice findings.</div>
+        <div class="notes">One is that you get essentially the same results whether you ask children about others' beliefs or their own beliefs.</div>
+        <div class="notes">Children literally do not know their own minds.</div><img src="/img/wellman_2001_fig5.png" style="max-height:500px;"/>
+        <p class="source">Wellman et al 2001, figure 5</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">What happens if we involve the child by having her interact with the protagonist?</div>
+        <div class="notes">
+          The task becomes easier for children of all ages, but the transition is essentially the same 
+          (participation does not interact with age \citealp[pp.\ 665-7]{Wellman:2001lz}).
+        </div><img src="/img/wellman_2001_fig6b.png" style="max-height:500px;"/>
+        <p class="source">Wellman et al 2001, figure 6</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Finally, although there are some cultural differences, you get the same transition in seven diferent countries.</div><img src="/img/wellman_2001_fig7.png" style="max-height:500px;"/>
+        <p class="source">Wellman et al 2001, figure 7</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/bkg_twins.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.</div>
+        <div class="notes">Let me explain.</div>
+        <div style="margin-left:200px;">
+          <div class="vspace-em"></div>
+          <div class="vspace-em"></div>
+          <div class="huge-glow right">challenge</div>
+          <div class="under-huge-glow right">Explain the emergence, in evolution or development, of <span class="highlight1">mindreading.</span></div>
+          <div class="notes">So our challenge was to explain the emergence of mindreading.</div>
+          <div class="notes">At this point, up until around, it seemed quite straightforward to most researchers.</div>
+          <div class="notes">We seemed to know that children are unaware of mental states until around four years.</div>
+          <div class="notes">And a lot of studies looked at which factors affect their acquiring this awareness.</div>
+          <div class="notes">These studies showed that executive function, language and rich forms of social interaction are all important.</div>
+          <div class="notes">All of this supported something like the story that Sellars tells in his famous Myth of Jones.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">Sellars' Myth of Jones</p>
+          <div class="notes">*todo*: describe Sellars' myth</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">but ...</p>
+          <div class="notes">But there was a big surprise in store for us.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

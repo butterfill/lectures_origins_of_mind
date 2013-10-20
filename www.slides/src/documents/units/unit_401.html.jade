@@ -1,0 +1,123 @@
+---
+layout: 'deck_unit'
+title: "Knowledge of Mind"
+tags: []
+description: "The challenge is to explain the emergence of awareness of others' mental states; here we focus on awareness of others' beliefs."
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/slide_mixins
+
+
+
+// ------------------
+// intro to mindreading
+
+
+mixin slide_theChallenge()
+  +slide({bkg:'bkg_twins.jpg'})
+    .notes The challenge is to explain the emergence, in evolution or development, of mindreading.
+    .notes Let me explain.
+    div(style='margin-left:200px;')
+      .vspace-em
+      .vspace-em
+      .huge-glow.right challenge
+      .under-huge-glow.right Explain the emergence, in evolution or development, of 
+        span.highlight1 mindreading.
+      block
+    
++slide_theChallenge
+  +invert('.highlight1')
+  .notes.handout \textit{Mindreading} is 
+    | the process of 
+    | identifying mental states and purposive actions 
+    | as the mental states and purposive actions of a particular subject.
+  .vspace-em
+  .slide.premack-quote
+    .notes Researchers sometimes use the term ‘theory of mind’.
+    .handout.notes.show ‘In saying that an individual has a theory of mind, 
+      | we mean that the individual imputes mental states to himself and to others’ 
+    .handout.notes.ctd \citep[p.\ 515]{premack_does_1978}
+    p.right (Premack & Woodruff 1978: 515)
+  +blur('.premack-quote')
+  .notes So the challenge is to explain the emergence of mindreading.
+  .notes You know (let's say) that Ayesha belives Beatrice is in the library.
+  .notes Humans are not born knowing individuating facts about others' beliefs.
+  .notes How do they come to be in a position to know such facts?
+  .notes Meeting this challenge initially seems simple.
+  .notes But, as you'll see, we quickly end up with a puzzle.
+  .notes I think this puzzle requires us to rethink what is involved in having a conception of the mental.
+
++slide_middle
+  p.center belief
+
++slide
+  p ‘Maxi puts his chocolate in the BLUE box and leaves the room to play.  While he is away (and cannot see), his mother moves the chocolate from the BLUE box to the GREEN box.  Later Maxi returns.  He wants his chocolate.’
+  .handout In a standard \textit{false belief task}, `[t]he subject is aware that he/she and another person [Maxi] witness a certain state of affairs x.  Then, in the absence of the other  
+    | person the subject witnesses an unexpected change in the state of affairs from x to y' \citep[p.\ 106]{Wimmer:1983dz}. 
+    | The task is designed to measure the subject's sensitivity to the probability that Maxi will falsely believe x to obtain. 
+  .vspace-em
+  .container_12
+    .grid_6
+      +colour-box('blue', '100')
+        p blue box
+    .grid_6
+      +colour-box('green', '100')
+        p green box
+  p.em-above ‘Where will Maxi look for his chocolate?’
+  p.source Wimmer & Perner 1983
+
++slide
+  img(src='/img/wimmer_1983_fig.png')
+  p.source Wimmer & Perner 1983
+  .notes (NB: The figure is not Wimmer & Perner's but drawn from their data.)
+
++slide
+  .notes There's been some stuff in the press recently about bad science, mainly some dodgy methods and failures to replicate.
+  img(src='/img/economist_science_wrong.jpg')
+
++slide
+  .notes So you'll be pleased to know that a meta-study of 178 papers confirmed Wimmer & Perner's findings.
+  img(src='/img/wellman_2001_fig2a.png', style='max-height:500px;')
+  p.source Wellman et al 2001, figure 2A
+  
++slide
+  .notes This meta-study also brings together some nice findings.
+  .notes One is that you get essentially the same results whether you ask children about others' beliefs or their own beliefs.
+  .notes Children literally do not know their own minds.
+  img(src='/img/wellman_2001_fig5.png', style='max-height:500px;')
+  p.source Wellman et al 2001, figure 5
+
++slide
+  .notes What happens if we involve the child by having her interact with the protagonist?
+  .notes The task becomes easier for children of all ages, but the transition is essentially the same 
+    | (participation does not interact with age \citealp[pp.\ 665-7]{Wellman:2001lz}).
+  img(src='/img/wellman_2001_fig6b.png', style='max-height:500px;')
+  p.source Wellman et al 2001, figure 6
+
++slide
+  .notes Finally, although there are some cultural differences, you get the same transition in seven diferent countries.
+  img(src='/img/wellman_2001_fig7.png', style='max-height:500px;')
+  p.source Wellman et al 2001, figure 7
+
++slide_theChallenge
+  .notes So our challenge was to explain the emergence of mindreading.
+  .notes At this point, up until around, it seemed quite straightforward to most researchers.
+  .notes We seemed to know that children are unaware of mental states until around four years.
+  .notes And a lot of studies looked at which factors affect their acquiring this awareness.
+  .notes These studies showed that executive function, language and rich forms of social interaction are all important.
+  .notes All of this supported something like the story that Sellars tells in his famous Myth of Jones.
+
++slide_middle
+  p.center Sellars' Myth of Jones
+  .notes *todo*: describe Sellars' myth
+
++slide_middle
+  p.center but ...
+  .notes But there was a big surprise in store for us.
+  

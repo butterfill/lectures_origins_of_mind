@@ -1,0 +1,1523 @@
+
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Lecture 05 | Origins of Mind</title>
+    <meta name="description" content="Origins of Mind: Lectures."/>
+    <meta name="keywords" content="philosophy, psychology, development, thought"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.53.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script async="async" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/normalize.css" /><link  rel="stylesheet" href="/vendor/deck.js/style.neon.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.core.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.menu.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.hash.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.notes.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/log.js"></script><script defer="defer"  src="/vendor/modernizr.min.js"></script><script defer="defer"  src="/vendor/deck.js/deck.core.js"></script><script defer="defer"  src="/vendor/deck.js/deck.menu.js"></script><script defer="defer"  src="/vendor/deck.js/deck.hash.js"></script><script defer="defer"  src="/vendor/deck.js/deck.notes.js"></script><script defer="defer"  src="/vendor/deck.js/deck.slide-clone.js"></script><script defer="defer"  src="/vendor/deck.js/deck.fit.js"></script><script defer="defer"  src="/vendor/deck.js/deck.step.js"></script><script defer="defer"  src="/vendor/deck.js/deck.events.js"></script><script defer="defer"  src="/vendor/deck.js/deck.anim.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script>
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (no equivalent if you don't have a keyboard)</p>
+              <p>Press m or double tap to see a menu of slides</p>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<div class="notes notes-header-tex">\title {Origins of Mind: Lecture Notes \\ Lecture 05}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\maketitle</div>
+<div id="title-slide" class="slide"><img src="/img/bkg/bees/ADSC_0172_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div class="fade-in">
+    <div style="" class="title-block">
+      <div class="title-container">
+        <h1 class="title1 fade-in">Origins of Mind</h1>
+        <h1 class="title2 fade-in">Lecture 05</h1>
+        <h3 class="email fade-in">s.butterfill@warwick.ac.uk</h3>
+      </div>
+    </div>
+  </div>
+  <div class="handout">\def \ititle {Origins of Mind}</div>
+  <div class="handout">\def \isubtitle {Lecture 05}</div>
+  <div class="handout">&nbsp;</div>
+  <div class="handout">\</div>
+  <div class="handout">&nbsp;</div>
+  <div class="handout">\begin{center}</div>
+  <div class="handout">{\Large</div>
+  <div class="handout">\textbf{\ititle}: \isubtitle</div>
+  <div class="handout">}</div>
+  <div class="handout">&nbsp;</div>
+  <div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div>
+  <div class="handout">\end{center}</div>
+</div>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Knowledge of Mind}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Knowledge of Mind}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<!-- -------------------->
+<!-- intro to mindreading-->
+<section class="slide"><img src="/img/bkg_twins.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.</div>
+        <div class="notes">Let me explain.</div>
+        <div style="margin-left:200px;">
+          <div class="vspace-em"></div>
+          <div class="vspace-em"></div>
+          <div class="huge-glow right">challenge</div>
+          <div class="under-huge-glow right">Explain the emergence, in evolution or development, of <span class="highlight1">mindreading.</span></div>
+          <div data-what=" .highlight1" data-class="invert" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" .highlight1" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes handout">
+            \textit{Mindreading} is 
+            the process of 
+            identifying mental states and purposive actions 
+            as the mental states and purposive actions of a particular subject.
+          </div>
+          <div class="vspace-em"></div>
+          <div class="slide premack-quote">
+            <div class="notes">Researchers sometimes use the term ‘theory of mind’.</div>
+            <div class="handout notes show">
+              ‘In saying that an individual has a theory of mind, 
+              we mean that the individual imputes mental states to himself and to others’ 
+            </div>
+            <div class="handout notes ctd">\citep[p.\ 515]{premack_does_1978}</div>
+            <p class="right">(Premack & Woodruff 1978: 515)</p>
+          </div>
+          <div data-what=".premack-quote" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">So the challenge is to explain the emergence of mindreading.</div>
+          <div class="notes">You know (let's say) that Ayesha belives Beatrice is in the library.</div>
+          <div class="notes">Humans are not born knowing individuating facts about others' beliefs.</div>
+          <div class="notes">How do they come to be in a position to know such facts?</div>
+          <div class="notes">Meeting this challenge initially seems simple.</div>
+          <div class="notes">But, as you'll see, we quickly end up with a puzzle.</div>
+          <div class="notes">I think this puzzle requires us to rethink what is involved in having a conception of the mental.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">belief</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p>‘Maxi puts his chocolate in the BLUE box and leaves the room to play.  While he is away (and cannot see), his mother moves the chocolate from the BLUE box to the GREEN box.  Later Maxi returns.  He wants his chocolate.’</p>
+        <div class="handout">
+          In a standard \textit{false belief task}, `[t]he subject is aware that he/she and another person [Maxi] witness a certain state of affairs x.  Then, in the absence of the other  
+          person the subject witnesses an unexpected change in the state of affairs from x to y' \citep[p.\ 106]{Wimmer:1983dz}. 
+          The task is designed to measure the subject's sensitivity to the probability that Maxi will falsely believe x to obtain. 
+        </div>
+        <div class="vspace-em"></div>
+        <div class="container_12">
+          <div class="grid_6">
+            <div style="background-color:blue;width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
+              <p>blue box</p>
+            </div>
+          </div>
+          <div class="grid_6">
+            <div style="background-color:green;width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
+              <p>green box</p>
+            </div>
+          </div>
+        </div>
+        <p class="em-above">‘Where will Maxi look for his chocolate?’</p>
+        <p class="source">Wimmer & Perner 1983</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12"><img src="/img/wimmer_1983_fig.png"/>
+        <p class="source">Wimmer & Perner 1983</p>
+        <div class="notes">(NB: The figure is not Wimmer & Perner's but drawn from their data.)</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">There's been some stuff in the press recently about bad science, mainly some dodgy methods and failures to replicate.</div><img src="/img/economist_science_wrong.jpg"/>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">So you'll be pleased to know that a meta-study of 178 papers confirmed Wimmer & Perner's findings.</div><img src="/img/wellman_2001_fig2a.png" style="max-height:500px;"/>
+        <p class="source">Wellman et al 2001, figure 2A</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">This meta-study also brings together some nice findings.</div>
+        <div class="notes">One is that you get essentially the same results whether you ask children about others' beliefs or their own beliefs.</div>
+        <div class="notes">Children literally do not know their own minds.</div><img src="/img/wellman_2001_fig5.png" style="max-height:500px;"/>
+        <p class="source">Wellman et al 2001, figure 5</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">What happens if we involve the child by having her interact with the protagonist?</div>
+        <div class="notes">
+          The task becomes easier for children of all ages, but the transition is essentially the same 
+          (participation does not interact with age \citealp[pp.\ 665-7]{Wellman:2001lz}).
+        </div><img src="/img/wellman_2001_fig6b.png" style="max-height:500px;"/>
+        <p class="source">Wellman et al 2001, figure 6</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Finally, although there are some cultural differences, you get the same transition in seven diferent countries.</div><img src="/img/wellman_2001_fig7.png" style="max-height:500px;"/>
+        <p class="source">Wellman et al 2001, figure 7</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/bkg_twins.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.</div>
+        <div class="notes">Let me explain.</div>
+        <div style="margin-left:200px;">
+          <div class="vspace-em"></div>
+          <div class="vspace-em"></div>
+          <div class="huge-glow right">challenge</div>
+          <div class="under-huge-glow right">Explain the emergence, in evolution or development, of <span class="highlight1">mindreading.</span></div>
+          <div class="notes">So our challenge was to explain the emergence of mindreading.</div>
+          <div class="notes">At this point, up until around, it seemed quite straightforward to most researchers.</div>
+          <div class="notes">We seemed to know that children are unaware of mental states until around four years.</div>
+          <div class="notes">And a lot of studies looked at which factors affect their acquiring this awareness.</div>
+          <div class="notes">These studies showed that executive function, language and rich forms of social interaction are all important.</div>
+          <div class="notes">All of this supported something like the story that Sellars tells in his famous Myth of Jones.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">Sellars' Myth of Jones</p>
+          <div class="notes">*todo*: describe Sellars' myth</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">but ...</p>
+          <div class="notes">But there was a big surprise in store for us.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="unit_411" class="slide"><img src="/img/bkg/bees/DSC_0157_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Mindreading: First Puzzle</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Mindreading: First Puzzle}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Mindreading: First Puzzle}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">There is a puzzle about when humans can first know individuating facts about others' beliefs.</div>
+          <div class="notes">To understand the origins of this knowledge we need to understand the puzzle.</div>
+          <div class="notes">So I'm going to reveal the puzzle to you.  But let me start with a bit of background.</div>
+          <p class="center">a puzzle</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">
+          What got me hooked philosophical psychology, 
+          and on philosophical issues in the development of mindreading in particular 
+          was a brilliant finding by Wendy Clements who was Josef Perner's phd student.
+        </div><img src="/img/clements_1994_fig1.png" style="max-height:550px;"/>
+        <p class="source">Clements & Perner 1994 figure 1</p>
+        <div class="notes">These findings were carefully confirmed \citep{Clements:2000nc,Garnham:2001ql,Ruffman:2001ng}. </div>
+        <div class="notes">Around 2000 there were a variety of findings pointing in the direction of a confict between different measures. </div>
+        <div class="notes">These included studies on word learning \citep{Carpenter:2002gc,Happe:2002sr} and false denials \citep{Polak:1999xr}. </div>
+        <div class="notes">But relatively few people were interested until ...</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- sequence of slides from budapest CEU 2011-2 lectures on mindreading and joint action, lecture 01-->
+<!-- *todo move notes from those lectures-->
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_23.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="handout">\subsection{Theory of mind cognition is hard}</div>
+        <div class="handout">Conceptually demanding:</div>
+        <div class="handout">\begin{itemize}\itemsep0pt</div>
+        <div class="handout">\item Acquisition takes several years\citep{Wimmer:1983dz,Wellman:2001lz}</div>
+        <div class="handout">\item Tied to the development of executive function\citep{Perner:1999yr,Sabbagh:2006ke} and language\citep{Astington2005ot}</div>
+        <div class="handout">\item Development facilitated by explicit training\citep{Slaughter:1996fv} and siblings\citep{Clements:2000nc,Hughes:2004zj}</div>
+        <div class="handout">\end{itemize}</div>
+        <div class="handout">Cognitively demanding: </div>
+        <div class="handout">\begin{itemize}</div>
+        <div class="handout">\item Requires attention and working memory in fully competent adults\citep{Apperly:2008jv,McKinnon:2007rr}</div>
+        <div class="handout">\end{itemize}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_24.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_25.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_26.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_27.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_28.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_29.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_30.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_31.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_32.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_33.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_34.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_35.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_36.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_37.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_38.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_39.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_40.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_41.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_42.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_43.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_44.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_45.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_46.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_47.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_48.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_49.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_50.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_51.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_52.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_53.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_54.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_55.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_56.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_57.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_58.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_59.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_60.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_61.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_62.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_63.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_64.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_65.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_66.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_67.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_68.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_69.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_70.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_71.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_72.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_73.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.</div>
+          <div class="notes">Initially it looked like this was going to be relatively straightforward and involve just language, social interaction and executive function.</div>
+          <div class="notes">So a Myth of Jones style story seemed viable.</div>
+          <div class="notes">But the findings of competence in infants of around one year of age changes this.</div>
+          <div class="notes">These findings tell us that not all abilities to represent others' mental states can depend on things like language.</div>
+          <div class="notes">Further, we have a puzzle.</div>
+          <div class="notes">The puzzle is how to reconcile infants' competence with three-year-olds' failure.</div>
+          <!-- *todo* this slide should state the challenge.-->
+          <p class="center">where now?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_lecture04_013.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">The puzzle is a little bit like the puzzle we had in the case of knowledge of physical objects.</div>
+        <div class="notes">But it's also different.</div>
+        <div class="notes">In the case of physical objects, the conflict was between measures involving looking and measures involving searching.</div>
+        <div class="notes">In this case it's different, because on the infant side there is not just looking but also acting (e.g. helping) and even communicating.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">Is core knowledge (modularity) the solution?</p>
+          <div class="notes">Can we solve the puzzle by appeal to core knowledge (or 'modularity')?</div>
+          <div class="notes">The difference in measures is a hopeful sign that we can.</div>
+          <div class="notes">But the fact that representations of others' minds influence 1-year-olds' actions (e.g. in communicating and helping) complicates things because we imagine modules as inferentially isolated from practical reasoning.</div>
+          <div class="notes">Looking at a further puzzle will help us.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_73.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Here's the first puzzle one more time.</div>
+        <!-- *todo* cut?-->
+      </div>
+    </div>
+  </div>
+</section>
+<section id="unit_421" class="slide"><img src="/img/bkg/bees/DSC_0165_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Mindreading: Second Puzzle</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Mindreading: Second Puzzle}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Mindreading: Second Puzzle}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<!-- sequence of slides from Cambridge how do mindreaders model minds talk, 2013-->
+<!-- *todo move notes from those lectures-->
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_003.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="handout">Are human adults’ abilities to represent beliefs automatic?</div>
+        <div class="handout">There is evidence for\citep{kovacs_social_2010,Schneider:2011fk} and against.\citep{apperly:2008_back,apperly_why_2010} </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_004.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_005.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_006.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_007.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_008.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_009.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_010.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_011.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_012.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_013.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_014.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_015.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_016.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_017.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_018.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_421/slide_cambridge_model_019.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="unit_431" class="slide"><img src="/img/bkg/bees/DSC_0169_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Modules and Efficiency</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Modules and Efficiency}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Modules and Efficiency}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">We can resolve both puzzles by appeal to the idea that there are modular & non-modular mindreading processes.  (Cf. physical objects).</div>
+          <p class="center">modularity</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_431/slide_cambridge_model_084.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Explain how this works in the case of each puzzle.</div>
+        <div class="notes">*todo* modify the slide to illustrate the solution</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">modularity requires efficiency</p>
+          <div class="notes">To invoke modularity, we need to understand how mindreading could be (i) automatic and (ii) present in pre-linguistic infants with limited working memory & executive function; both (i) and (ii) mean we need to understand how it could be cognitively efficient.  (The situation is a bit like this: we want to say you can perceive others mental states; but on the face of it, mental states are exactly the sort of things that are not available to perception.)</div>
+          <div class="handout">How could mindreading ever (but not always) be automatic?</div>
+          <div class="handout">Representing perceptions and beliefs as such---and even merely holding in mind what another believes, where no inference is required---involves a measurable processing cost\citep{apperly:2008_back,apperly:2010_limits}, consumes attention and working memory in fully competent adults,\citealp{Apperly:2009cc, lin:2010_reflexively, McKinnon:2007rr} may require inhibition\citep{bull:2008_role} and makes demands on executive function.\citep{apperly:2004_frontal,samson:2005_seeing}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">We saw earlier that mindreading in four year olds and adults is cognitively demanding.</div>
+          <div class="notes">And there's good reason to think that it should be.</div>
+          <div class="notes">If anything should consume scarce cognitive resources ...</div>
+          <p>propositional contents</p>
+          <p>arbitrarily nestable contents</p>
+          <p>uncodifiably complex causal interactions</p>
+          <p>attitudes contituted in part by norms</p>
+          <div class="notes">Now appeal to modularity doesn't explain how mindreading might somehow be efficient.</div>
+          <div class="notes">Suppose someone could find prime factors incredibly quickly.</div>
+          <div class="notes">It wouldn't be a satisfying explanation to just say that she had a module for finding prime factors.</div>
+          <div class="notes">We'd also need an algorithm that her module could be implementing consistently with her performance.</div>
+          <div class="notes">So (a) efficiency points to modularity but (b) efficiency requires explanation and (c) gesturing at modularity doesn't explain efficiency.</div>
+          <div class="notes">To see how mindreading could be cognitively efficient, we need to reject a dogma.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_431/slide_cambridge_model_024.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_431/slide_cambridge_model_025.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_431/slide_cambridge_model_026.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_431/slide_cambridge_model_027.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_431/slide_cambridge_model_028.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="unit_441" class="slide"><img src="/img/bkg/bees/DSC_0170_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Minimal Theory of Mind</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Minimal Theory of Mind}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Minimal Theory of Mind}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<!-- short version-->
+<!-- *todo: create longer version (see Edinburgh 2013-02 How do mindreaders model minds? talk)-->
+<section class="slide"><img src="/img/unit_441/slide_cambridge_model_030.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="handout">An agent’s \emph{field} is a set of objects related to the agent by proximity, orientation and other factors.</div>
+        <div class="handout">First approximation: an agent \emph{encounters} an object just if it is in her field.</div>
+        <div class="handout">A \emph{goal} is an outcome to which one or more actions are, or might be, directed.  </div>
+        <div class="handout">%(Not to be confused with a \emph{goal-state}, which is an intention or other state of an agent linking an action to a particular goal to which it is directed.)</div>
+        <div class="handout">\textbf{Principle 1}: one can’t goal-directedly act on an object unless one has encountered it.</div>
+        <div class="handout">
+          Applications: subordinate chimps retrieve food when a dominant is not informed of its 
+          location \citep{Hare:2001ph}; when observed scrub-jays prefer to cache in shady, distant and 
+          occluded locations \citep{Dally:2004xf,Clayton:2007fh}.
+        </div>
+        <div class="handout">First approximation: an agent \emph{registers} an object at a location just if she most recently encountered the object at that location.</div>
+        <div class="handout">A registration is \emph{correct} just if the object is at the location it is registered at.</div>
+        <div class="handout">\textbf{Principle 2}: correct registration is a condition of successful action.</div>
+        <div class="handout">
+          Applications: 12-month-olds point to inform depending on their informants’ goals and ignorance \citep{Liszkowski:2008al}; 
+          chimps retrieve food when a dominant is misinformed about its location \citep{Hare:2001ph}; 
+          scrub-jays observed caching food by a competitor later re-cache in private \citep{Clayton:2007fh,Emery:2007ze}.
+        </div>
+        <div class="handout">\textbf{Principle 3}: when an agent performs a goal-directed action and the goal specifies an object, the agent will act as if the object were actually in the location she registers it at.</div>
+        <div class="handout">Applications: some false belief tasks \citep{Onishi:2005hm,Southgate:2007js,Buttelmann:2009gy}.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_441/slide_cambridge_model_031.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_441/slide_cambridge_model_032.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_441/slide_cambridge_model_033.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_441/slide_cambridge_model_034.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_441/slide_cambridge_model_035.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_441/slide_cambridge_model_036.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_441/slide_cambridge_model_037.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_441/slide_cambridge_model_038.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_441/slide_cambridge_model_039.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_441/slide_cambridge_model_040.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_441/slide_cambridge_model_041.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_441/slide_cambridge_model_042.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_441/slide_cambridge_model_043.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="unit_451" class="slide"><img src="/img/bkg/bees/DSC_0200_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Signature Limits Generate Predictions</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Signature Limits Generate Predictions}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Signature Limits Generate Predictions}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<!-- *todo*-->
+<!-- summary of the two puzzles and the proposed conjecture -->
+<!--[Cambridge slides 45--65] Signature limits; Prediction; Experiments -->
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_045.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <!-- *todo* remove first figure, replace with something more informative-->
+        <div class="handout">\begin{center}</div>
+        <div class="handout">\includegraphics[width=0.25\textwidth]{fig/signature_limits_table.png}</div>
+        <div class="handout">\end{center}</div>
+        <div class="handout">\begin{center}</div>
+        <div class="handout">  \includegraphics[width=0.3\textwidth]{fig/low_2012_fig.png}</div>
+        <div class="handout">\end{center}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_046.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_047.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_048.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_049.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_050.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_051.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_052.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_053.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_054.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_055.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_056.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_057.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_058.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_059.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_060.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_061.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_062.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_063.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_064.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/unit_451/slide_cambridge_model_065.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p>conclusions</p>
+        <div class="notes">*todo*</div>
+        <div class="notes">- theme B : the puzzles about development (A- & B-tasks) and automaticity.  We've earned the right to solve them by appeal to modularity.  (NB: it's modularity rather than mTm that explains the discrepancy; mTm is important because (i) it explains efficiency; and (ii) it generates predictions via signature limits)</div>
+        <div class="notes">- theme B-1 : relation between infant and adult competence --- infant competence retained in adults (matching signature limits from Low & Watts), as in the cases of colour (and probably physical objects too); </div>
+        <div class="notes">
+          - theme A: explain the origins of knowledge of others minds : development as rediscovery.  There is a modular capacity ( = core knowledge). 
+          But this doesn't lead to adult-like understanding for years, and the acquisition of adult-like understanding hinges on language; may involve completely different model of mental states.
+        </div>
+        <div class="notes">*todo* especially illustrate the two views about relation between infant and adult capacity (use All Souls' slides!)</div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

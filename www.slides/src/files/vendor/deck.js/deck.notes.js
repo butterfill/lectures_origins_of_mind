@@ -15,6 +15,17 @@ Create a section for the notes before the .deck-container thus (jade syntax):
 	.deck-notes
 	  .deck-notes-container
 
+Add notes to slides like this:
+  section.slide
+    p whatever
+    .notes This is a note
+    .handout This will appear on the handout
+
+By default, .notes and .handout don't appear on slide.  But if you want them to appear, do:
+  p whatever
+    .notes.show This is a note that will appear on the slide
+    .handout.show This will appear on the handout and on the slide
+
 Using the shift modifier produces a page of notes for export.
 
 Also create a section for the handout export before the .deck-container thus (jade syntax):
@@ -28,53 +39,51 @@ clone a deck presentation and displays into a popup window. That way you can
 only toggle the notes panel for this cloned window.
 */
 (function($, deck, undefined) {
-    var $d = $(document);
-    var $notesContainer;
+  var $d = $(document);
+  var $notesContainer;
     
-    /*
-	Extends defaults/options.
+  /*
+    Extends defaults/options.
 	
         options.classes.notes
 		This class is added to the deck container when showing the slide
                 notes.
 	
-	options.keys.notes
+      options.keys.notes
 		The numeric keycode used to toggle between showing and hiding 
                 the slide notes.
 	*/
-    $.extend(true, $[deck].defaults, {
-        classes: {
-            notes: 'deck-notes',
-			handout: 'deck-handout',
-            notesContainer: 'deck-notes-container',
-			handoutContainer: 'deck-handout-container'
-        },
-		
-        keys: {
-            notes: 78, // n
-			handout: 72 //h
-        },
-                
-        selectors: {
-            // no selector
-        }
-    });
+  $.extend(true, $[deck].defaults, {
+    classes: {
+      notes: 'deck-notes',
+      handout: 'deck-handout',
+      notesContainer: 'deck-notes-container',
+      handoutContainer: 'deck-handout-container'
+    },
+    keys: {
+      notes: 78, // n
+      handout: 72 //h
+    },
+    selectors: {
+      // no selector
+    }
+  });
 
-    /*
-	jQuery.deck('showNotes')
-	
-	Shows the slide notes by adding the class specified by the toc class option
-	to the deck container.
-	*/
-    $[deck]('extend', 'showNotes', function() {
-        $notesEl = $("."+$[deck]('getOptions').classes.notes);
-		$notesEl.show();
-		$('.notes-header-tex', $notesEl).hide();
-		$('.deck-container').css({transform:'translate(150px)'});
-    });
+  /*
+    jQuery.deck('showNotes')
     
-    $[deck]('extend', 'showNotesExport', function() {
-        $notesEl = $("."+$[deck]('getOptions').classes.notes);
+    Shows the slide notes by adding the class specified by the toc class option
+    to the deck container.
+	*/
+  $[deck]('extend', 'showNotes', function() {
+    $notesEl = $("."+$[deck]('getOptions').classes.notes);
+    $notesEl.show();
+    $('.notes-header-tex', $notesEl).hide();
+    $('.deck-container').css({transform:'translate(150px)'});
+  });
+    
+  $[deck]('extend', 'showNotesExport', function() {
+    $notesEl = $("."+$[deck]('getOptions').classes.notes);
 		$notesEl.show();
 		$notesEl.addClass('notes-export');
 		//show all notes
@@ -90,86 +99,85 @@ only toggle the notes panel for this cloned window.
 			var esc=$(el).text().replace(/&/g,'\\&');
 			$(el).text(esc);
 		});
-    });
+  });
 
-    $[deck]('extend', 'showHandoutExport', function() {
-        $handoutEl = $("."+$[deck]('getOptions').classes.handout);
-		$handoutEl.show();
-		//hide the slides completely
-		$('.deck-container').hide();
-    });
+  $[deck]('extend', 'showHandoutExport', function() {
+    $handoutEl = $("."+$[deck]('getOptions').classes.handout);
+    $handoutEl.show();
+    //hide the slides completely
+    $('.deck-container').hide();
+  });
 
-    /*
-	jQuery.deck('hideNotes')
-	
-	Hides the slide notes by removing the class specified by the toc class
-	option from the deck container.
+  /*
+    jQuery.deck('hideNotes')
+    
+    Hides the slide notes by removing the class specified by the toc class
+    option from the deck container.
 	*/
-    $[deck]('extend', 'hideNotes', function() {
-        $("."+$[deck]('getOptions').classes.notes).hide();
-		$('.deck-container').css({transform:'translate(0)'});
-    });
+  $[deck]('extend', 'hideNotes', function() {
+    $("."+$[deck]('getOptions').classes.notes).hide();
+    $('.deck-container').css({transform:'translate(0)'});
+  });
 
-    $[deck]('extend', 'hideNotesExport', function() {
-        $notesEl = $("."+$[deck]('getOptions').classes.notes);
-		$notesEl.hide();
-		$notesEl.removeClass('notes-export');
-		$('.deck-container').show();
-		//unescape the notes for tex
-		//nb: destructive - removes inner html elements!
-		$('.notes').each(function(idx,el){
-			var esc=$(el).text().replace(/\\&/g,'&');
-			$(el).text(esc);
-		});
-		
+  $[deck]('extend', 'hideNotesExport', function() {
+    $notesEl = $("."+$[deck]('getOptions').classes.notes);
+    $notesEl.hide();
+    $notesEl.removeClass('notes-export');
+    $('.deck-container').show();
+    //unescape the notes for tex
+    //nb: destructive - removes inner html elements!
+    $('.notes').each(function(idx,el){
+      var esc=$(el).text().replace(/\\&/g,'&');
+      $(el).text(esc);
     });
+  });
 
-    $[deck]('extend', 'hideHandoutExport', function() {
-        $handoutEl = $("."+$[deck]('getOptions').classes.handout);
-		$handoutEl.hide();
-		$('.deck-container').show();
-    });
-    /*
-	jQuery.deck('toggleNotes')
-	
-	Toggles between showing and hiding the notes.
+  $[deck]('extend', 'hideHandoutExport', function() {
+    $handoutEl = $("."+$[deck]('getOptions').classes.handout);
+    $handoutEl.hide();
+    $('.deck-container').show();
+  });
+  /*
+    jQuery.deck('toggleNotes')
+    
+    Toggles between showing and hiding the notes.
 	*/
-    $[deck]('extend', 'toggleNotes', function() {
-        $("."+$[deck]('getOptions').classes.notes).is(":visible") ? $[deck]('hideNotes') : $[deck]('showNotes');
-    });
+  $[deck]('extend', 'toggleNotes', function() {
+    $("."+$[deck]('getOptions').classes.notes).is(":visible") ? $[deck]('hideNotes') : $[deck]('showNotes');
+  });
 
 	$[deck]('extend', 'toggleNotesExport', function() {
-        $("."+$[deck]('getOptions').classes.notes).hasClass("notes-export") ? $[deck]('hideNotesExport') : $[deck]('showNotesExport');
-    });
+    $("."+$[deck]('getOptions').classes.notes).hasClass("notes-export") ? $[deck]('hideNotesExport') : $[deck]('showNotesExport');
+  });
 
 	$[deck]('extend', 'toggleHandoutExport', function() {
-        $("."+$[deck]('getOptions').classes.handout).is(":visible") ? $[deck]('hideHandoutExport') : $[deck]('showHandoutExport');
+    $("."+$[deck]('getOptions').classes.handout).is(":visible") ? $[deck]('hideHandoutExport') : $[deck]('showHandoutExport');
+  });
+
+
+  /*
+      jQuery.deck('Init')
+  */
+  $d.bind('deck.init', function() {
+    var opts = $[deck]('getOptions');
+    var container = $[deck]('getContainer');
+      
+    /* Bind key events */
+    $d.unbind('keydown.decknotes').bind('keydown.decknotes', function(e) {
+      if (e.which === opts.keys.notes || $.inArray(e.which, opts.keys.notes) > -1) {
+        if (e.shiftKey) {
+          $[deck]('toggleNotesExport');
+        } else {
+          $[deck]('toggleNotes');
+        }
+        e.preventDefault();
+      }
+      if (e.which === opts.keys.handout || $.inArray(e.which, opts.keys.handout) > -1) {
+        $[deck]('toggleHandoutExport');
+        e.preventDefault();
+      }
     });
-
-
-    /*
-        jQuery.deck('Init')
-    */
-    $d.bind('deck.init', function() {
-        var opts = $[deck]('getOptions');
-        var container = $[deck]('getContainer');
-        
-        /* Bind key events */
-        $d.unbind('keydown.decknotes').bind('keydown.decknotes', function(e) {
-            if (e.which === opts.keys.notes || $.inArray(e.which, opts.keys.notes) > -1) {
-				if (e.shiftKey) {
-					$[deck]('toggleNotesExport');
-				} else {
-					$[deck]('toggleNotes');
-				}
-                e.preventDefault();
-            }
-            if (e.which === opts.keys.handout || $.inArray(e.which, opts.keys.handout) > -1) {
-				$[deck]('toggleHandoutExport');
-                e.preventDefault();
-            }
-        });
-		
+  
 		/* copy the notes into the special notes element */
 		var $notesContainer = $("."+$[deck]('getOptions').classes.notesContainer);
 		var $notes = $('.deck-container .notes');

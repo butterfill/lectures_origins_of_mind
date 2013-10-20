@@ -34,6 +34,14 @@
 -   return wrap_list(images)
 - };
 
+// make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833
+- function range(start, end) {
+-     var foo = [];
+-     for (var i = start; i <= end; i++) {
+-         foo.push(i);
+-     }
+-     return foo;
+- }
 
 
 //- ----------------
@@ -121,8 +129,11 @@ mixin handout(p)
 //- mixins to create standard types of slide
 //- -------------
 
-mixin slide()
+
+mixin slide(p)
   section.slide
+    if p && p.bkg
+      img.bkg(src='/img/#{p.bkg}')
     .words
       .container_12: .grid_12
         block
@@ -591,10 +602,11 @@ mixin unhighlight_cited_sentence(row_num)
 // ----------
 mixin colour-box(colour, size)
   .box(style="background-color:#{colour};width:#{size}px;height:#{size}px;margin-left:auto;margin-right:auto;border:#{size/5}px solid grey;")
+    block
 
 mixin colour-ball(colour, size)
   .box(style="background-color:#{colour};width:#{size}px;height:#{size}px;margin-left:auto;margin-right:auto;border:#{size/5}px solid grey;border-radius:50%;")
-
+    block
 
 
 

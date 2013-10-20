@@ -1,4 +1,4 @@
-.deck-container .notes {
+.deck-container .notes:not(.show) {
   display: none;
 }
 

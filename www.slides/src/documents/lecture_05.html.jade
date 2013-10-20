@@ -1,0 +1,31 @@
+---
+layout: 'default2'
+title: 'Lecture 05'
+weburl: ''
+units: []
+---
+
+include ../../fragments/slide_mixins
+
+- var images = get_images('bees')
+
+mixin title_slide({document:document, images:images})
+
+
+//- Knowledge of Mind
++insert_unit({unit:'401', title_slide:false, images:images})
+
+//- First Puzzle (infants vs 4 year olds)
++insert_unit({unit:'411', title_slide:true, images:images})
+
+//- Second Puzzle (automaticity)
++insert_unit({unit:'421', title_slide:true, images:images})
+
+//- modularity & efficiency
++insert_unit({unit:'431', title_slide:true, images:images})
+
+//- minimal theory of mind
++insert_unit({unit:'441', title_slide:true, images:images})
+
+//- Signature Limits Generate Predictions
++insert_unit({unit:'451', title_slide:true, images:images})

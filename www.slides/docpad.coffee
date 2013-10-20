@@ -2,6 +2,16 @@
 # It is simply a CoffeeScript Object which is parsed by CSON
 docpadConfig = {
 
+plugins:
+  raw:
+    commands:
+      # rsync
+      # -r recursive
+      # -u skip file if the destination file is newer
+      # -l copy any links over as well
+      raw  : ['rsync', '-rul', 'src/raw/', 'out/' ]
+
+
 	#renderPasses : 1
 
 	# =================================
