@@ -1,0 +1,32 @@
+Lecture 05:
+Mindreading 
+
+[sources: 
+	- Warwick joint action & the emergence of mindreading series
+	- CEU mindreading & joint action series
+	- Cambridge how do mindreaders model minds talk
+
+0. The challenge: Explain the origins of knowledge of others' minds; in particular beliefs.  First thing we need to know is when humans typically acquire this awareness.
+	
+1. standard story about false belief --- Wimmer & Perner 1984
+(So we can meet the challenge by talking about mastery of language &c; a Sellars type myth.)
+
+2. [CEU lecture01 slides 22 - 73 = /img/unit_411] A-tasks and B-tasks; the puzzle
+(So things are not so straightforward; certainly the Sellars type myth doesn't look so promising.)
+
+3. [Cambridge slides 3--19] adults - automatic & not automatic 
+
+4. We can resolve both puzzles by appeal to the idea that there are modular & non-modular mindreading processes.  (Cf. physical objects).
+
+5. But to invoke modularity, we need to understand how mindreading could be (i) automatic and (ii) present in pre-linguistic infants with limited working memory & executive function; both (i) and (ii) mean we need to understand how it could be cognitively efficient.  (The situation is a bit like this: we want to say you can perceive others mental states; but on the face of it, mental states are exactly the sort of things that are not available to perception.)
+
+6. Standard model of the attitudes is incompatible with cognitive efficiency; alternative model is needed 
+
+7. [Cambridge slides 30--43; add 86-94!!!]  Minimal theory of mind to the rescue
+
+8. [Cambridge slides 45--65] Signature limits; Prediction; Experiments 
+
+9. Conclusions
+	--- theme B : the puzzles about development (A- & B-tasks) and automaticity.  We've earned the right to solve them by appeal to modularity.  (NB: it's modularity rather than mTm that explains the discrepancy; mTm is important because (i) it explains efficiency; and (ii) it generates predictions via signature limits)
+	--- theme B-1 : relation between infant and adult competence --- infant competence retained in adults (matching signature limits from Low & Watts), as in the cases of colour (and probably physical objects too); 
+	--- theme A: explain the origins of knowledge of others minds : development as rediscovery.  There is a modular capacity (=core knowledge).  But this doesn't lead to adult-like understanding for years, and the acquisition of adult-like understanding hinges on language; may involve completely different model of mental states.

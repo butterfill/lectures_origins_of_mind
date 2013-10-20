@@ -93,10 +93,27 @@ The key point for our purposes is the explanatory component.  The principles are
 		- the specification needs to (i) fit what we know about the limits of core knowledge; (ii) make testable predictions about new limits
 
 
+* link to (I) perceptual expectations, and (ii) to adults : the michotte et al triangle illusion (showing judgement-independence in adults)
+* further supported by:
+\citep{kozhevnikov:2001_impetus} on representational momentum**
+--- adults, including trained physicists who make correct verbal predictions about the effects of mass on motion, show representational momentum (a perceptual effect) consistent with impetus and inconsistent with Newtonian mechanics.  So again we have (i) judgement-independence and (ii) adults.  ('both physics experts and novices possess the same set of implicit beliefs about motion.' \citep[p.\ 451]{kozhevnikov:2001_impetus})
+--- limits of infants' systems found in adults shows that we can identify the system as persisting 
+--- What questions does this bear on?  (1) perceptual & modular nature of infants' understanding of objects and their interactions; (2) relation between infant competence and adults' (do the thing about system being transformed or discarded versus two systems persisting through development : this is different from issues about innateness, which looks from infants' competence backwards --- here we go in the other direction, looking forwards); and (3) trade-offs between flexibility and efficiency (see below; worth talking about this in some detail here)
+--- Kozhevnikov & Hegarty discuss ascending motion but you also get RM effects for curved tube exit: 'In Freyd and Jones’ study [(1994)], greater RM was observed for the impetus (spiral) than for the Newtonian (straight) path.'* (p. 449)
+--- note that other studies also show judgement-independence, but in the other way (implicit knowledge of physical interactions more accurate than judgement: 'a number of previous studies suggesting a dissociation between explicit and implicit knowledge of the principles of physics. For instance, Hubbard suggests that implicit knowledge reflects internalization of invariant physical principles, whereas explicit knowledge about motion may be less accurate. Similarly, Krist et al. (1993) suggested that perceptually based knowledge is more accurate than verbal concepts of motion.' \citep[p.\ 450]{kozhevnikov:2001_impetus}
+--- on cognitive efficiency:  	'To extrapolate objects’ motion on the basis of physical principles, one should have assessed and evaluated the presence and magnitude of such imperceptible forces as friction and air resistance operating in the real world.  This would require a time-consuming analysis that is not always possible. In order to have a survival advantage, the process of extrapolation should be fast and effortless, without much conscious deliberation. Impetus theory allows us to extrapolate objects’ motion quickly and without large demands on attentional resources.' \citep[p.\ 450]{kozhevnikov:2001_impetus}
+
+* \citep{freyd:1994_representational}  ('The results are also consistent with a claim of relative cognitive impenetrability (Finke & Freyd, 1989; Kelly & Freyd, 1987) in that subjects showed a memory shift for a path that the majority of subjects did not consciously consider correct.' \citep[p.\ 975]{freyd:1994_representational})
+
+**caution (basically fine, but need to be careful): 'The extent to which displacement reflects physical principles per se has been widely debated in the literature; theories of displacement suggest a variety of potential effects of physical principles ranging from an incorporation of the principle of momentum into mental representation (e.g., Finke et al., 1986) to a rejection of any internalization of physical principles (e.g., Kerzel, 2000, 2003a). The empirical evidence is clear that (1) displacement does not always correspond to predictions based on physical principles and (2) variables unrelated to physical principles (e.g., the presence of landmarks, target identity, or expectations regarding a change in target direction) can influence displacement. ... information based on a naive understanding of physical principles or on subjec- tive consequences of physical principles appears to be just one of many types of information that could potentially contribute to the displacement of any given target' \citep[p.\ 842]{hubbard:2005_representational}
+
++On the link between children and adults:
+Discussing the Hood et al, use representational momentum: 'the dynamic representations that often govern adult judgments of spatio-temporal events also govern those of young children.' \citep[p.\ F22]{perry:2008_representational}.  BUT this is less promising than it seems: they are measuring search (which door is opened) rather than looking.
+
+
 *discuss Scholl & Leslie (1999)?  Santos & Hood put a lot of emphasis on this (in their 2009 intro to book):
 	- first when talking about persistence 
 	- second, when talking about individuation (p. 12: 'These similarities have led to the view that adult attentional mechanisms may underlie infants’ performance on object individuation tasks (Carey & Xu, 2001; Chiang & Wynn, 2000; Leslie et al., 1998; Scholl, 2001; Scholl & Leslie, 1999; Simon, 1997; Wynn & Chiang, 1998).')
-
 
 
 [*problem: minimal producer-consumer notion of representation --- don't all the problems go away here?  (Just specify producer and consumer?)]
@@ -111,7 +128,7 @@ The key point for our purposes is the explanatory component.  The principles are
   - paradigms from perceptual and motor processes (these involve representations that are unlike knowledge and differ in format and with respect to process).
   - modularity?
 
-Core systems are ‘structures … just as specific as those that underlie animal cognition, human perception, and human action.  Just as humans are endowed with multiple, specialized perceptual systems, so we are endowed with multiple systems for representing and reasoning about entities of different kinds.’ 
+Core systems are ‘structures … just as specific as those that underlie animal cognition, human perception, and human action.  'Just as humans are endowed with multiple, specialized perceptual systems, so we are endowed with multiple systems for representing and reasoning about entities of different kinds.’ 
 (Carey and Spelke 1996: 517)
 
 ’core systems are conceptual and provide a foundation for the growth of knowledge.  … core systems are largely innate, encapsulated, and unchanging, arising from phylogenetically old systems built upon the output of innate perceptual analyzers.’ 

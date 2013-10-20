@@ -1,0 +1,825 @@
+ %!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%\def \papersize {a5paper}
+\def \papersize {a4paper}
+%\def \papersize {letterpaper}
+
+%\documentclass[14pt,\papersize]{extarticle}
+\documentclass[12pt,\papersize]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Origins of Mind: Lecture Notes}
+\def \isubtitle {Lecture 02}
+%comment some of the following out depending on whether anonymous
+\def \iauthor {Stephen A.\ Butterfill}
+\def \iemail{s.butterfill@warwick.ac.uk% \& corrado.sinigaglia@unimi.it
+}
+%\def \iauthor {}
+%\def \iemail{}
+%\date{}
+
+%\input{$HOME/Documents/submissions/preamble_steve_paper3}
+\input{$HOME/Documents/submissions/preamble_steve_report2}
+
+%no indent, space between paragraphs
+\usepackage{parskip}
+
+%comment these out if not anonymous:
+%\author{}
+%\date{}
+
+%for e reader version: small margins
+% (remove all for paper!)
+%\geometry{headsep=2em} %keep running header away from text
+%\geometry{footskip=1.5cm} %keep page numbers away from text
+%\geometry{top=1cm} %increase to 3.5 if use header
+%\geometry{bottom=2cm} %increase to 3.5 if use header
+%\geometry{left=1cm} %increase to 3.5 if use header
+%\geometry{right=1cm} %increase to 3.5 if use header
+
+% disables chapter, section and subsection numbering
+\setcounter{secnumdepth}{-1} 
+
+%avoid overhang
+\tolerance=5000
+
+%\setromanfont[Mapping=tex-text]{Sabon LT Std} 
+
+
+%for putting citations into main text (for reading):
+% use bibentry command
+% nb this doesn’t work with mynewapa style; use apalike for \bibliographystyle
+% nb2: use \nobibliography to introduce the readings 
+\usepackage{bibentry}
+
+%screws up word count for some reason:
+%\bibliographystyle{$HOME/Documents/submissions/mynewapa} 
+\bibliographystyle{apalike} 
+
+
+\begin{document}
+
+
+
+\setlength\footnotesep{1em}
+
+
+
+
+
+
+%--------------- 
+%--- start paste
+\title {Origins of Mind: Lecture Notes \\ Lecture 03}
+ 
+\maketitle
+ 
+ 
+\subsection{title-slide}
+ 
+\section{Objects vs Features}
+--------
+ 
+ 
+\subsection{slide-3}
+The question for this lecture concerns knowledge of physical objects.
+We'll examine how three requirements on having knowledge of physical objects are met.
+(And I'll drop the 'physical' qualifier since this is all about physical objects as opposed to, say, abstract objects like numbers or forms.)
+ 
+ 
+\subsection{segment\_persist\_interact}
+Knowledge of objects depends on abilities to (i) segment objects, (ii) represent them as persisting and (iii) track their interactions.
+Let's look at each of these in turn.
+ 
+ 
+\subsection{slide-7}
+How do infants and adults discern where one object begins and another ends?
+ 
+ 
+\subsection{slide-8}
+The way objects are ordinarily arranged in space, so that one occludes parts of another, prevents us from doing this in any simple way.
+ 
+ 
+\subsection{slide-9}
+Imagine a world of moving features. In this world there is no principled way of saying where one object ends and another begins.
+Features differ from genuine objects in not allowing us to make sense of the question of whether we are carving them at their joints.
+ 
+ 
+\subsection{slide-17}
+When Hannah hides behind the logs and a girl later pops up, we can ask whether it is Hannah again or another girl.
+That is, we know that objects can persist despite disappering from view---and despite becoming entirely imperceptible.
+ 
+ 
+\subsection{slide-18}
+Contrast features again. You might see this red feature moving across the scene. But suppose it disappears and then, later a similar looking feature appears. There is no fact of the matter about whether this is the same feature or a different one.
+So in the case of features we can't make sense of them as persisting over time, or as there being interruptions in their presence.
+ 
+ 
+\subsection{slide-26}
+Objects causally interact with each other; one pan supports another, two people collide and bounce off each other.
+ 
+ 
+\subsection{slide-27}
+Again, we can contrast features. These do not causally interact with each other.
+Relatedly, they do not have counterfactual lives either.
+You might say, if that barrier had not been there, the car would be at the bottom of the valley now.
+But you can't say how things might have been with features: they are counterfactually and causally inert.
+ 
+ 
+\subsection{slide-31}
+I've been contrasting knowledge of objects with knowledge of features.
+Having knowledge of objects, unlike knowledge of features, requires abilities to segment objects, to represent them as persisting, and to track at least some of their interactions.
+ 
+ 
+\subsection{slide-32}
+Imagine there was a time you lived in a world of features. In your world there was only features, no objects.
+So nothing persisted and there were no causal interactions.
+It would be fabulous to be able to explain how you could make the transition from inhabiting this feature world to living in a world of objects.
+But that's not a project I want to pursue today, although some of what we're going to do bears on this project.
+Why not? Partly because it would be too hard. And partly because it's unclear whether there is any point in their cognitive development where humans inhabit a world only of features.
+So what is the question? ...
+ 
+ 
+\subsection{slide-33}
+The question for this lecture is, How do humans come to meet the three requirements on knowledge of objects?
+(So we're not trying to explain how humans come to know things about objects and their interactions; we're only trying to explain how they come to meet some requirements on knowing such things.)
+ 
+ 
+\subsection{unit\_171}
+ 
+\section{Segmentation and the Principles of Object Perception}
+ 
+ 
+\subsection{slide-35}
+How do humans segment objects?
+ 
+ 
+\subsection{slide-36}
+Recall that the way objects are ordinarily arranged in space, so that one occludes parts of another, prevents us from doing this in any simple way.
+ 
+ 
+\subsection{slide-37}
+One possible way to segment objects invokes a principle of cohension.
+ 
+ 
+\subsection{slide-39}
+For example, objects arranged as on your left were percevied by 3-month-olds as two objects, whereas infants treated the displays like that on your right as if they were one object.
+(This was measured using a habituation paradigm \citep{kestenbaum:1987_perception}. Infants were habituated to the display. Then either one object's position changed, or both objects' positions changed but in such a way as to preserve the overall configuration of the two objects. Infants could show that they perceived the configuration as a single object by looking longer when just one object's position changed.)
+ 
+ 
+\subsection{slide-42}
+Here's a second example.
+In this case \citep[Experiment 2]{spelke:1989_reaching}, the researchers tested 5-month-old infants using a reaching paradigm.
+The smaller of the two objects was always closer to the infants. Infants should reach more often for the smaller, nearer object when they represent the simuli as a single object than when they represent it as two objects.
+Exploiting this fact, \citet[Experiment 2]{spelke:1989_reaching} showed that infants perceive the stimlui on your left as two objects but the stimlui on your right as a single object.
+ 
+But how does the principle of cohension apply to this moving display? ‘When two surfaces are separated by a spatial gap (as in Figure 4a) or undergo relative motions that alter the adjacency relations among points at their border (as in Figure 4i), the surfaces lie on distinct objects.’
+ 
+ 
+\subsection{slide-43}
+Infants from 4.5 months of age can use featural information to segment objects.
+ 
+ 
+\subsection{slide-44}
+In Amy Needham's 1998 study, infants were shown a display like this.
+Featural information---the difference in textures of the objects---suggests that these are two separate objects.
+But can infants use this information to detect that there are two objects?
+ 
+ 
+\subsection{slide-46}
+Some infants were then shown the object being moved like this, so that it is clearly two separate objects.
+ 
+ 
+\subsection{slide-48}
+Other infants where shown the object being moved like this.
+If infants think there is one object, they should expect the second kind of movement.
+But if infants think there are two objects---if, that is, they can use the featural information to segment objects---then they should expect the former kind of movement.
+What were the results? ...
+ 
+ 
+\subsection{slide-49}
+Needham showed that infants from 4.5 months of age can use featural information to segment objects.
+ 
+ 
+\subsection{slide-50}
+Interestingly, 4.5 month old infants were able to succeed even when the point of contact between the two objects was occluded, as in this diagram.
+ 
+ 
+\subsection{slide-51}
+These are the results for 4.5 month old infants.
+ 
+ 
+\subsection{slide-52}
+To see why it couldn't be just features that we use to segment objects, consider some more cases ...
+ 
+ 
+\subsection{slide-53}
+Can we fully explain segmentation by appeal to features, at least in infants if not adults too?
+No, consider the case of an occluded object---a stick behind a box.
+The movement is enough to convince 4-month-old infants that there is just one stick even though they never see its middle \citep{kellman:1983_perception}.
+ 
+ 
+\subsection{slide-54}
+After being habituated to this this, 3-month-old infants were shown one of two displays.
+ 
+ 
+\subsection{slide-55}
+And here are the results (subjects were 3-month-old infants).
+ 
+ 
+\subsection{slide-56}
+The fact that infants can correctly segment partially occluded objects based on their movements already indicates that they can't be thinking about features only.
+For more evidence, consider this display.
+The two parts of the moving object are featurally different.
+Despite this, infants expect to see a single connected object behind the block (\citealp{kellman:1983_perception}, Experiment 6; \citealp{Spelke:1990jn}).
+ 
+ 
+\subsection{slide-57}
+Here are the test stimuli (each groups is shown one or the other).
+ 
+ 
+\subsection{slide-58}
+And here are the results.
+Subjects in this experiment were 4-month-old infants.
+So we saw that infants can use featural information to segment objects, but the principle of cohension can trump featural indicators of difference.
+So infants' abilities to segment objects are not based entirely on recognising features.
+ 
+ 
+\subsection{slide-59}
+Spelke proposes that our ability to identify objects depends on some principles (Spelke 1990).
+ 
+ 
+\subsection{slide-63}
+What is the status of these principles?
+Spelke’s position might be put like this:
+\begin{enumerate} \item We (as perceivers) start with a cross-modal representation of three-dimensional perceptual features which includes their locations and trajectories. \item Our task is to get from these representations of features to representations of objects. \item \emph{Descriptive component} We do this as if in accordance with certain principles (cohesion, boundedness, rigidity, and no action at a distance). \item \emph{Explanatory component} We acquire representations of objects because we apply the principles to representations of features and draw appropriate inferences. \end{enumerate}
+The key point for our purposes is the explanatory component.
+The principles are not supposed to be merely heuristics for describing and predicting infants’ performance on preferential looking tasks.
+Rather, these principles are supposed to explain why infants look longer at some things than at others.
+This what motivates the hypothesis that infants know these principles and use them in reasoning about objects: unless this hypothesis is true, it’s hard to understand how the principles could have explanatory relevance.
+ 
+ 
+\subsection{slide-64}
+Inspiration for Spelke’s view comes from Marr and Chomsky.
+Marr showed that many visual processes can be modelled as inferences.
+And Chomsky pioneered the idea that our knowledge of language depends on knowledge of principles of syntax.
+What unites these three cases, Spelke on object segmentation, Marr on vision and Chomsky on syntax?
+It’s that they are straightforwardly cognitivist in appeal to knowledge and inference.
+Principles are known, and they are used via a process of inference.
+(There’s a nice quote from Fodor on your handout underlining this point.)
+ 
+ 
+\subsection{slide-65}
+So what is the status of Spelke’s principles of object perception?
+The simple view is that the Spelke principles are just known in whatever sense anything is known.
+The simple view isn’t exactly Spelke’s, but it’s a useful starting point for discussion.
+ 
+Now you might think that the case for these principles is not yet very strong.
+In which case, asking hard questions about their status is not necessary.
+So let’s consider further evidence for these principles.
+We can do this by turning from segmentation (which was our first requirement on knowledge of objects) to representing objects as permanent.
+ 
+ 
+\subsection{unit\_181}
+ 
+\section{From Segmentation to Permanence}
+ 
+ 
+\subsection{slide-67}
+Although segmentation and permanence are conceptually distinct, they are closely related because movement is a clue to segmentation and movement sometimes invovles occlusion.
+This becomes evident if we think about one more principle of object perception, the principle of continuity.
+ 
+ 
+\subsection{slide-68}
+We easily understand this principle by considering cases that accord with, and violate, it.
+Here is motion in accord with it.
+ 
+ 
+\subsection{slide-69}
+Here is one violation of continuity.
+And here is another violation of continuity.
+ 
+ 
+\subsection{slide-72}
+\citet{spelke:1995_spatiotemporal} tested sensitivity to the principle of continuity in 4-month-old infants.
+The infants were habituated to one of two displays.
+ 
+ 
+\subsection{slide-74}
+Now in the continuous event we should perceive one object whereas in the discontinous event we should perceive two objects.
+But is this about segmentation or persistence?
+Segmentation since it's about distinguishing one object from another; and persistence since it's about representing temporarily unperceived objects.
+ 
+ 
+\subsection{slide-75}
+They were then shown one of two test stimuli.
+ 
+ 
+\subsection{slide-77}
+The measure was the degree of dishabituation as measured by looking time.
+ 
+ 
+\subsection{slide-80}
+What's beautiful about these results is that the two groups show opposite patterns of dishabituation.
+ 
+ 
+\subsection{slide-81}
+The principles of object perception are not just about infant perception; they are also supposed to explain how adults segment objects too.
+How is this tested with adults?
+It's really neat but I don't have time to tell you about it.
+There's something called the object-specific preview effect which can give us a measure of when adult humans' perceptions treat two presentations as the same object.
+ 
+ 
+\subsection{slide-82}
+So the abilities to segment objects and to represent them as persisting are conceptually distinct.
+However it may be that knowledge of a single set of principles underlies both abilities.
+This is one of Spelke's brilliant insights.
+Where does this leave us?
+We still want to know about the status of the principles of object perception.
+But we now the question is more pressing.
+Because the claim that these principles of object perception explain infants' (and adults', and other primates') performance is now harder to reject.
+It's harder to reject because we have converging evidence for the psychological reality of the principles from both segmentation and permanence.
+Before we go any further, let me say a little more about permanence (even though we've already considered it) ...
+ 
+ 
+\subsection{unit\_191}
+ 
+\section{Permanence}
+ 
+ 
+\subsection{slide-84}
+Permanence is a matter of living in a world where things don't go out of existence when unperceived.
+You may not be perceiving your keys now, but there is a fact of the matter about where they are and you know this. (If not where they are, then at least you know that there is a fact about where they are.)
+ 
+ 
+\subsection{slide-86}
+Object permanence is found in nonhuman animals including
+\begin{enumerate}
+\item monkeys \citep{santos:2006_cotton-top}
+\item lemurs \citep{deppe:2009_object}
+\item crows \citep{hoffmann:2011_ontogeny}
+\item dogs and wolves \citep{fiset:2013_object}
+\item cats \citep{triana:1981_object}
+\item chicks \citep{chiandetti:2011_chicks_op}
+\item dolphins \citep{jaakkola:2010_what}
+\item ...
+\end{enumerate}
+(Wolves matter because their performing similarly to dogs that show dogs' performance probably isn't a consequence of domestication, as \citet{fiset:2013_object} argue.)
+Most of these animals have been tested using search as the measure, rather than looking times. (This will be important later.)
+ 
+Note also that many of these studies contrast visible with invisible displacements, or talk about Piaget's stages of object permanence. For simplicity, that's not something I'm covering.
+ 
+ 
+\subsection{slide-87}
+[Aside] Comparative research is hard.
+ 
+ 
+\subsection{slide-88}
+Earlier I explained that there is evidence that infants represent unperceived objects from around four months.
+At that point I mentioned just one experiment, Baillargeon's drawbridge study.
+This is now very familiar to most of us.
+'The habituation event was exactly the same as the impossible event, except that the yellow box was absent.' (Baillargeon et al 1985, 200)
+ 
+ 
+\subsection{slide-94}
+But not everything hangs on this experiment.
+Some have been critical of its methods.
+Fortunately there are at least a hundred further experiments which provide evidence pointing in the same direction.
+Here we'll look at just one more experiment.
+ 
+ 
+\subsection{slide-95}
+Here is another way of demonstrating object permanence.
+The subjects were 4 month old infants.
+They were shown a large object disappearing inside a small conatiner, or behind a narrow screen.
+ 
+ 
+\subsection{slide-98}
+The experiment was very simple.
+All the experimenters did was measure how long infants looked in at the two events.
+Infants looked longer at the narrow-occulder event.
+ 
+ 
+\subsection{slide-99}
+There was also a control condition.
+In the control condition, infants saw a small rather than a large object.
+ 
+ 
+\subsection{slide-100}
+Here’s the experimental condition again for comparison.
+ 
+ 
+\subsection{slide-101}
+And here's the control condition again.
+ 
+ 
+\subsection{slide-102}
+As you can see, there was a difference in looking times only in the experimental condition.
+This experiment is interesting because it doesn't use habituation, as Baillargeon's earlier drawbridge experiment did.
+ 
+ 
+\subsection{slide-103}
+How should we interpret these results?
+ 
+ 
+\subsection{slide-110}
+Note that we are talking about expectations.
+This raises two questions: How do we arrive at these expectations? and What is an expectation?
+Spelke's claim is that we arrive at these expectations by inference from the Principles of Object Perception, including the principle of contintuity.
+So what is an expectation?
+On the simple view we are adopting for now, an expectation is just a belief.
+The attraction of this simple view is it allows us to take literally the claim that we know the principles of object perception and arrive at expectations by a process of inference.
+ 
+ 
+\subsection{slide-111}
+*todo*
+ 
+ 
+\subsection{slide-116}
+The simple view is that the principles of object perception that Spelke and others have identified are things that we know,
+and that we generate expectations from these principles by a process of inference.
+Is this plausible?
+It is perhaps hard to accept that four-month-old infants are in the business of formulating and revising hypotheses.
+(Come to think of it, it’s quite hard to accept that adults typically acquire representations of unperceived objects by formulating and revising hypotheses.)
+Also we might think of inference as something that a detective does. It is not obvious that the same process is occurring in infants.
+But these considerations are narrowly intuitive.
+Science sometimes indicates that intuitions are wrong, even intuitions about very fundamental things like space and time.
+And, most importantly, if infants aren’t making inferences on the basis of knowlegde, what are they doing that enables them to pass violation-of-expectation tasks?
+ 
+ 
+\subsection{slide-118}
+I think we shouldn't try to challenge the simple view on the basis of intution.
+ 
+ 
+\subsection{slide-120}
+And we don't need to because there are also scientific reasons for rejecting the simple view.
+One set of reasons concerns the apparent discrepancy between looking times and manual search ...
+ 
+ 
+\subsection{slide-121}
+You've explored this topic in detail in essays and seminars, so I'll be quick here.
+Very crudely, the position is this.
+The attraction of the simple view is that it explains the looking.
+The problem for the simple view is that it makes exactly the wrong prediction about the reaching.
+A lot of experiments have attempts to pin the discrepancy on extraneous factors like task demands.
+But none of these attempts have succeeded.
+ 
+ 
+\subsection{slide-122}
+As Jeanne Shinskey, one of the researchers most dedicated to this issue says,
+ 
+ 
+\subsection{slide-123}
+Commenting on discrepancies between preferential looking and visual search, this is an early view (contrast \citealp{Spelke:2001pg}).
+ 
+ 
+\subsection{slide-126}
+But what is a system of knowlegde? What is this notion of system?
+What Spelke goes on to say offers a clue.
+ 
+ 
+\subsection{slide-129}
+So at this point it seems Spelke is suggesting that knowledge of the principles of object perception may be modular.
+What is modularity? We'll consider this notion later.
+For now I want us to take two things.
+First, the discrepancy between looking and searching as measures of object representations makes trouble for the simple view (according to which the principles of object perception are simply known).
+Second, the solution may be something called 'modularity' which we don't yet understand.
+ 
+ 
+\subsection{unit\_201}
+ 
+\section{Causal Interactions}
+ 
+ 
+\subsection{slide-131}
+The third requirement on knowledge of objects is an ability to track objects through causal interactions.
+Here we're interested in very simple causal interactions, such as the collision of two balls or the interaction of a ball with a barrier.
+ 
+ 
+\subsection{slide-132}
+Consider this case where a ball falls and lands on a bench.
+Suppose that there was a barrier in front of the bench, like the dotted line.
+Because the bench protrudes from the barrier, you could easily see where the ball will land.
+But of course you can only see this if you know that barriers stop solid balls.
+Spelke used this observation to provide evidence that 4-month-old infants can track objects' causal interactions.
+ 
+ 
+\subsection{slide-134}
+Infants were habituated to a display in which a ball fell behind a screen, the screen came forwards and the ball was revealed to be on the ground, just where you'd expect it to be.
+After habituation infants were shown one of two displays.
+Infants in the 'consistent group' were shown this.
+ 
+ 
+\subsection{slide-136}
+Whereas infants in the 'inconsistent group' were shown this.
+ 
+ 
+\subsection{slide-138}
+What should we predict?
+If infants were only paying attention to the shapes and ignoring properties like solid, they should have dishabituated more to the consistent than to the inconsistent stimlus.
+After all, that stimlus is more different from the habituation stimulus in terms of the surfaces.
+But if infants were are to track some simple causal interactions, then they might dishabituate to the 'inconsistent' stimulus more than to the 'consistent' stimulus because that one involves an apparent violation of a physical laws.
+ 
+ 
+\subsection{slide-139}
+Here are the results.
+(Recall that the subjects are 4-month-old infants.)
+This is evidence that infants can track causal interactions among objects, even when those causal interactions are occluded.
+ 
+ 
+\subsection{slide-140}
+Chimpanzees also understand something of phyiscal interactions insofar as their looking times show sensitivity to support relations \citep{cacchione:2004_recognizing}.
+ 
+ 
+\subsection{slide-141}
+Here are the results.
+Lots of studies like this have been done with infants in their first six months of life.
+ 
+ 
+\subsection{slide-142}
+Dogs can do this too.
+This experiment used a search measure rather than a looking time measure.
+Dogs had to retrieve a treat. The right location to search depended on whether the barrier was present or absent.
+ 
+ 
+\subsection{slide-143}
+The results show brilliant performance.
+'Dogs correctly searched the near location when the barrier was present and the far location when the barrier was absent. They displayed this behavior from the first trial' \citep{kundey:2010_domesticated} (from the abstract).
+ 
+ 
+\subsection{slide-144}
+How do infants, adult humans and nonhumans track causal interactions among objects (including causal relations like support)?
+Spelke suggests that the principles of object perception can explain this.
+ 
+ 
+\subsection{slide-145}
+For example, the position of an object falling onto a bench is predicted by the principle of continuity mentioned earlier.
+\emph{Principle of continuity} An object traces exactly one connected path over space and time \citep[p.\ 113]{spelke:1995_spatiotemporal}.
+(The other principles of object perception are on your handout.)
+ 
+ 
+\subsection{slide-148}
+This is Spelke's brilliant insight.
+I think there's something here that should be uncontroversial, and something that's more controversial.
+ 
+ 
+\subsection{slide-151}
+Let's suppose that Spelke is right that the principles are \emph{formally adequate}.
+That is, someone who knew the principles and had unlimited cognitive resources could use the principles to infer the track physical objects through simple causal interactions like those we've been considering.
+(So formal adequacy is a question of what is possible in principle.)
+I don't think we should question this.
+ 
+ 
+\subsection{slide-152}
+I also want to allow that Spelke's principles are \emph{descriptively adeqaute}.
+That is, they successfully describe how infants, adults and nonhumans deal with various situations.
+We can think of this in terms of \emph{as if}: it is as if these individuals are using the principles.
+But we have yet to come to what really matters to Spelke and to us.
+For accepting formal and descriptive adequacy is consistent with denying that Carey and Spelke's claim that ‘A single system of knowledge … appears to [does] underlie object perception and physical reasoning’ \citep[p.\ 175]{Carey:1994bh}.
+ 
+ 
+\subsection{slide-154}
+That's because formal and descriptive adequacy leave open the question of what mechanisms are involved in tracking physical objects' causal interactions.
+ 
+ 
+\subsection{slide-157}
+We might claim, further, that the principles of object perception describe the teleological function of the cogntive systems that track physical interactions.
+ 
+ 
+\subsection{slide-158}
+Finally, we might claim that these principles are realised in the cognitive mechansisms invovled in object tracking.
+ 
+ 
+\subsection{slide-159}
+In particular, following the simple view, we might claim that the principles are known, and that we detect physically impossible event by making inferences from these principles.
+ 
+ 
+\subsection{slide-160}
+We've already seen some objections to the simple view.
+Thinking about causal interactions allows us to make those objections more forcefully.
+ 
+ 
+\subsection{slide-161}
+*todo
+ 
+ 
+\subsection{slide-162}
+*todo
+ 
+ 
+\subsection{slide-163}
+*todo
+ 
+ 
+\subsection{slide-164}
+Here are the looking time results.
+ 
+ 
+\subsection{slide-165}
+You can even do looking time and reaching experiments with the same subjects and apparatus \citep{Hood:2003yg}.
+2.5-year-olds look longer when experimenter removes the ball from behind the wrong door, but don't reach to the correct door
+ 
+ 
+\subsection{slide-166}
+here are the search results (shocking).
+ 
+ 
+\subsection{slide-167}
+*todo
+ 
+ 
+\subsection{slide-168}
+Similar discrepancies between looking and reaching are also found in some nonhuman primates,
+both apes and monkeys (chimpanzees, cotton-top tamarins and marmosets).
+(Some of this is based on the gravity tube task and concerns gravity bias.)
+ 
+ 
+\subsection{slide-172}
+Note that this research is evidence of dissociations between looking and search in adult primates, not infants.
+This is important because it indicates that the failures to search are a feature of the core knowledge system rather than a deficit in human infants.
+‘to date, adult primates’ failures on search tasks appear to exactly mirror the cases in which human toddlers perform poorly.’
+\citep[p.\ 17]{santos:2009_object}
+ 
+ 
+\subsection{slide-173}
+This isn't straightforward.
+As I mentioned earlier, \citep{kundey:2010_domesticated} show that domestic dogs are good at solidity on a search measure.
+And for many of the other animals I mentioned, object permanence is measured in search tasks, not with looking times.
+But let's focus on the fact that you get the looking/search in any adult animals at all.
+This is evidence that the dissociation is a consequence of something fundamental about cognition rather than just a side-effect of some capacity limit.
+ 
+ 
+\subsection{slide-174}
+So far we can draw two conclusions about infants' and adults abilities to track interactions.
+My first conclusion from this section is that infants from around 4 months of age or younger and nonhuman animals are able to track simple causal interactions.
+ 
+ 
+\subsection{slide-175}
+I started by identifying three requirements for knowledge of physical objects: abilities to segment objects, to represent them as persisting, and to track their causal interactions.
+My second conclusion is that a single set of principles likely underlies these abilities.
+The ability to segment objects is bound up with the ability to represent them as persisting and with the ability to track their interactions.
+ 
+ 
+\subsection{slide-176}
+My third conclusion is that we have a problem.
+The problem is that we have to reject the simple view.
+Recall that the simple says that the principles of object perception are things that we know.
+We must reject this view because it makes systematically incorrect predictions about actions like searching for objects.
+ 
+ 
+\subsection{slide-178}
+But why is this a problem?
+Because, as we'll see, it is hard to identify an alternative.
+ 
+ 
+\subsection{unit\_211}
+ 
+\section{Like Knowledge and Like Not Knowledge}
+ 
+ 
+\subsection{slide-180}
+There are principles of object perception that explain abilities to segment objects, to represent them while temporarily unperceived and to track their interactions.
+These principles are not known. What is their status?
+ 
+ 
+\subsection{slide-181}
+We'll see later that the problem is quite general.
+It doesn't arise only in the case of knowledge of objects but also in other domains (like knowledge of number and knowledge of mind).
+And it doesn't arise only from evidence about infants or nonhuman primates; it would also arise if our focus were exclusively on human adults.
+More on this later.
+For now, our aim is to consider proposed solutions to the problem.
+ 
+ 
+\subsection{slide-182}
+One hopeful alternative is to shift from talk about knowlegde to talk about representation.
+Will this help?
+Only as a way of describing the problem.
+ 
+ 
+\subsection{slide-183}
+We need to say what we mean by representation.
+The term is used in a wide variety of ways.
+Here's what I mean ...
+ 
+ 
+\subsection{slide-184}
+Take a paradigm case of representation.
+ 
+ 
+\subsection{slide-186}
+The subject might not be the agent but some part of it.
+That is, we can imagine that some component of an agent, like her perceptual system or motor system, represents things that she herself does not.
+(Of course, to make sense of this idea we need to invoke some notion of system.)
+ 
+ 
+\subsection{slide-188}
+The content is what distinguishes one belief from all others, or one desire from all others.
+The content is also what determines whether a belief is true or false, and whether a desire is satisfied or unsatisfied.
+There are two main tasks in constructing a theory of mental states.
+The first task is to characterise the different attitudes.
+This typically involves specifying their distinctive functional and normative roles.
+The second task is to find a scheme for specifying the contents of mental states.
+ 
+ 
+\subsection{slide-190}
+The second task is to find a scheme for specifying the contents of mental states.
+Usually this is done with propositions.
+But what are propositions?
+Propositions are abstract objects like numbers.
+They have more mystique than numbers, but, like numbers, they are abstract objects that can be constructed using sets plus a few other basic ingredients such as objects, properties and possible worlds.
+ 
+ 
+\subsection{slide-191}
+So that was some quick background on representation.
+Note that the issue of representation comes up twice for us.
+There is a question about whether the principles of object perception are represented.
+And there is a question about whether objects, their locations, properties, and interactions are represented.
+The problem raised by the discrepancy between looking and acting is a problem for two claims: (i) the simple view (the principles of object perception are knowledge \&c); and also (ii) the claim that the representations of objects which derive from the principles of object perception are knowledge states.
+ 
+ 
+\subsection{slide-192}
+So merely switching from talk about knowledge to talk about representation won't make the problem go away.
+But this is a step in the right direction.
+We need to characterise a form of representation that is like knowledge but not like knowledge.
+ 
+ 
+\subsection{slide-193}
+\citet{Munakata:2001ch} suggests that there are 'graded representations', that is knowlegde can be stronger or weaker.
+Presupposes we have an account of subject, attitude and content. Let's grant that.
+What is strength? Some additional component, over and above subject, attitude and content.
+The idea is quite intuitive but difficult to make systematic sense of.
+The idea might well make sense if we were talking about neural representations.
+But here we aren't. Let's not introduce radically new ideas about representation unless we really have to.
+(By the way, \citet{Munakata:2001ch} is a nice review of dissociations, not only developmental dissociations.)
+ 
+ 
+\subsection{slide-194}
+Core knowledge is a label for what we need.
+I'm going to adopt the label.
+But this only amounts to labelling the problem, not to solving it.
+ 
+ 
+\subsection{slide-196}
+Several features distinguish core knowledge from adult-like understanding: its content is unknowable by introspection and judgement-independent; it is specific to quite narrow categories of event and does not grow by means of generalization; it is best understood as a collection of rules rather than a coherent theory; and it has limited application being usually manifest in the control of attention (as measured by dishabituation, gaze, and looking times) and rarely or never manifest in purposive actions such as reaching.
+ 
+ 
+\subsection{slide-201}
+Modules are widely held to play a central role in explaining mental development and in accounts of the mind generally.
+Jerry Fodor makes three claims about modules:
+ 
+ 
+\subsection{slide-202}
+What are these properties? They'll be on your handout next week.
+ 
+ 
+\subsection{slide-204}
+Not all researchers agree about the properties of modules. That they are informationally encapsulated is denied by Dan Sperber and Deirdre Wilson (2002: 9), Simon Baron-Cohen (1995) and some evolutionary psychologists (Buller and Hardcastle 2000: 309), whereas Scholl and Leslie claim that information encapsulation is the essence of modularity and that any other properties modules have follow from this one (1999b: 133; this also seems to fit what David Marr had in mind, e.g. Marr 1982: 100-1). According to Max Coltheart, the key to modularity is not information encapsulation but domain specificity; he suggests Fodor should have defined a module simply as 'a cognitive system whose application is domain specific' (1999: 118). Peter Carruthers, on the other hand, denies that domain specificity is a feature of all modules (2006: 6). Fodor stipulated that modules are 'innately specified' (1983: 37, 119), and some theorists assume that modules, if they exist, must be innate in the sense of being implemented by neural regions whose structures are genetically specified (e.g. de Haan, Humphreys and Johnson 2002: 207; Tanaka and Gauthier 1997: 85); others hold that innateness is 'orthogonal' to modularity (Karmiloff-Smith 2006: 568). There is also debate over how to understand individual properties modules might have (e.g. Hirschfeld and Gelman 1994 on the meanings of domain specificity; Samuels 2004 on innateness).
+ 
+ 
+\subsection{slide-207}
+In short, then, theorists invoke many different notions of modularity, each barely different from others. You might think this is just a terminological issue. I want to argue that there is a substantial problem: we currently lack any theoretically viable account of what modules are. The problem is not that 'module' is used to mean different things-after all, there might be different kinds of module. The problem is that none of its various meanings have been characterised rigorously enough. All of the theorists mentioned above except Fodor characterise notions of modularity by stipulating one or more properties their kind of module is supposed to have. This way of explicating notions of modularity fails to support principled ways of resolving controversy.
+ 
+No key explanatory notion can be adequately characterised by listing properties because the explanatory power of any notion depends in part on there being something which unifies its properties and merely listing properties says nothing about why they cluster together.
+ 
+Interestingly, Fodor doesn't define modules by specifying a cluster of properties (pace Sperber 2001: 51); he mentions the properties only as a way of gesturing towards the phenomenon (Fodor 1983: 37) and he also says that modules constitute a natural kind (see Fodor 1983: 101 quoted above).
+ 
+ 
+\subsection{slide-208}
+It is tempting to appeal to spatial metaphors in thinking about modularity. Just as academics tend to work at high-speed on domain-specific problems when they can cut themselves off from administrative centres, so we might attempt to explain the special properties of modules by saying that they are cut off from the central system. But it isn't clear how to turn this metaphor into an explanation. The spatial metaphor only gives us the illusion that we understand modularity.
+ 
+ 
+\subsection{slide-211}
+remember formal, descriptive, teleological and mechanical adequacy
+ 
+ 
+\subsection{slide-220}
+There are perceptual expectations.
+Suppose you saw this image.
+The triangle behind the thumb is in some sense perceptually present, even though you can't see it.
+ 
+ 
+\subsection{slide-222}
+But now the thumb comes away and what you see is not the triangle you were expecting.
+Could these perceptual expectations be just a matter of knowledge?
+No, because perceptual expectations are judgement-independent.
+As \citep{kellman:1983_perception} report, Michotte, Thines and Crabbe found that subjects report seeing a single large triangle behind the thumb even when they know that there isn't one there.
+You can cover and reveal the triangles repeatedly, but the expectation will hold firm.
+ 
+The experience you have when the thumb is removed is like that of infants' in violation-of-expectation tasks.
+This is what it is like to be an infant.
+ 
+
+%--- end paste
+%--------------- 
+ 
+
+
+
+
+
+\bibliography{$HOME/endnote/phd_biblio}
+
+
+
+\end{document}

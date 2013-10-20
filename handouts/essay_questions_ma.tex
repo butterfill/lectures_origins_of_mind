@@ -1,0 +1,171 @@
+ %!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%\def \papersize {a5paper}
+\def \papersize {a4paper}
+%\def \papersize {letterpaper}
+
+%\documentclass[14pt,\papersize]{extarticle}
+\documentclass[12pt,\papersize]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Origins of Mind}
+\def \isubtitle {Seminar Tasks: MA/MPhil Version}
+%comment some of the following out depending on whether anonymous
+\def \iauthor {Stephen A.\ Butterfill}
+\def \iemail{s.butterfill@warwick.ac.uk% \& corrado.sinigaglia@unimi.it
+}
+%\def \iauthor {}
+%\def \iemail{}
+%\date{}
+
+%\input{$HOME/Documents/submissions/preamble_steve_paper3}
+\input{$HOME/Documents/submissions/preamble_steve_report2}
+
+%no indent, space between paragraphs
+\usepackage{parskip}
+
+%beautiful contents
+\usepackage{tocloft}
+
+%comment these out if not anonymous:
+%\author{}
+%\date{}
+
+%for e reader version: small margins
+% (remove all for paper!)
+%\geometry{headsep=2em} %keep running header away from text
+%\geometry{footskip=1.5cm} %keep page numbers away from text
+%\geometry{top=1cm} %increase to 3.5 if use header
+%\geometry{bottom=2cm} %increase to 3.5 if use header
+%\geometry{left=1cm} %increase to 3.5 if use header
+%\geometry{right=1cm} %increase to 3.5 if use header
+
+% disables chapter, section and subsection numbering
+\setcounter{secnumdepth}{-1} 
+
+%avoid overhang
+\tolerance=5000
+
+%\setromanfont[Mapping=tex-text]{Sabon LT Std} 
+
+
+%for putting citations into main text (for reading):
+% use bibentry command
+% nb this doesn’t work with mynewapa style; use apalike for \bibliographystyle
+% nb2: use \nobibliography to introduce the readings 
+\usepackage{bibentry}
+
+%screws up word count for some reason:
+%\bibliographystyle{$HOME/Documents/submissions/mynewapa} 
+\bibliographystyle{apalike} 
+
+
+\begin{document}
+
+\nobibliography{$HOME/endnote/phd_biblio}
+
+
+\setlength\footnotesep{1em}
+
+
+\maketitle
+
+%\renewcommand{\cftsecfont}{\normalsize}
+%\setcounter{tocdepth}{1}
+%\tableofcontents
+%\clearpage
+
+%
+%\section{Guidelines}
+%
+%\subsection{Deadline}
+%Essays are due 6pm on the Tuesday before your tutorial.
+%
+%I will not normally read late essays.
+%
+
+
+\section*{Warning}
+This document may be updated during the course.
+Tasks might change.
+Please always check you have the latest version from \url{http://origins-of-mind.butterfill.com} before completing a task.
+This version was last edited \today.
+
+\section{Essay 1}
+
+\subsection{Suggested question}
+
+What is puzzling about  6-month-olds’ abilities to track physical objects’ causal interactions?  How might the puzzle be resolved?
+
+
+\subsection{Peer review}
+This essay will be subject to peer review. 
+Another student in your seminar group will be assigned as your reviewer.
+You should send the essay to your reviewer by 6pm two days before your seminar.
+
+
+
+\subsection{Hint}
+In this essay you might:
+\begin{enumerate}
+\item review some of the evidence that infants can track causal interactions (see readings, \citealp{spelke:1992_origins} or \citealp{Leslie:1987nr});
+\item consider findings that are hard to reconcile with the claim that infants’ simply know that barriers stop objects (see \citealp{Hood:2000bf,Hood:2003yg})
+\item attempt to resolve the conflict (potentially useful sources include \citealp{Haith:1998aq,Keen:2003xz})
+\end{enumerate}
+
+\subsection{Reading}
+
+\bibentry{Spelke:1993no}
+
+\bibentry{Hood:2000bf}
+
+
+
+\subsection{Further reading}
+
+\bibentry{spelke_1992:origins}
+
+\bibentry{Leslie:1987nr}
+
+\bibentry{Hood:2003yg}
+
+\bibentry{santos:2006_cotton-top}
+
+\bibentry{Haith:1998aq}
+
+\bibentry{Keen:2003xz}
+
+\bibentry{Fodor:1983dg}
+
+\bibentry{Butterfill:2007pe}
+
+
+\subsection{Where to find the readings}
+
+All the readings are available online unless otherwise noted.
+
+One fast way to find a paper is to copy its title into google scholar and search.  
+To download the paper from the journal website, you may need to select ‘log in’ or ‘institutional log in’.
+
+If you have trouble locating a resource, check the list of journals available here: \url{http://fs6jr8lx8q.search.serialssolutions.com/}
+
+
+\subsection{Citations}
+When citing articles in your essay, use the same system that my handouts and nearly all the readings use.
+That is, put author-year in the main text (e.g.\ ‘Spelke et al have argued that ... (Spelke et al 1993, p.\ 22).’) and include the full citation in a list of references at the end.
+
+A bibliography manager like Zotero can save you a lot of time.
+
+
+\subsection{Length}
+Your essay may not exceed 2500 words.
+Essays longer than this words may be rejected without review.
+
+Shorter is better, all things being equal.
+
+
+
+
+
+\end{document}
