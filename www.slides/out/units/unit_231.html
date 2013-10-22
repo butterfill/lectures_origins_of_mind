@@ -1,0 +1,454 @@
+
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Core Knowledge and Modularity | Origins of Mind</title>
+    <meta name="description" content="There are principles of object perception that explain abilities to segment objects, to represent them while temporarily unperceived and to track their interactions.  These principles are not known.  What is their status?"/>
+    <meta name="keywords" content="philosophy, psychology, development, thought"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.53.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script async="async" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/normalize.css" /><link  rel="stylesheet" href="/vendor/deck.js/style.neon.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.core.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.menu.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.hash.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.notes.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/log.js"></script><script defer="defer"  src="/vendor/modernizr.min.js"></script><script defer="defer"  src="/vendor/deck.js/deck.core.js"></script><script defer="defer"  src="/vendor/deck.js/deck.menu.js"></script><script defer="defer"  src="/vendor/deck.js/deck.hash.js"></script><script defer="defer"  src="/vendor/deck.js/deck.notes.js"></script><script defer="defer"  src="/vendor/deck.js/deck.slide-clone.js"></script><script defer="defer"  src="/vendor/deck.js/deck.fit.js"></script><script defer="defer"  src="/vendor/deck.js/deck.step.js"></script><script defer="defer"  src="/vendor/deck.js/deck.events.js"></script><script defer="defer"  src="/vendor/deck.js/deck.anim.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script>
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!--.notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (no equivalent if you don't have a keyboard)</p>
+              <p>Press m or double tap to see a menu of slides</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="unit_231" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">Core Knowledge and Modularity</h2>
+          </div>
+        </div>
+      </section>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<!-- -------------------->
+<!-- nb *todo* This duplicates  some of unit_211-->
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">There are principles of object perception that explain abilities to segment objects, to represent them while temporarily unperceived and to track their interactions. </div>
+          <div class="notes">These principles are not known.  What is their status?</div>
+          <p class="center">the question</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Core knowledge is a label for what we need.</div>
+        <div class="notes">I'm going to adopt the label.</div>
+        <div class="notes">But this only amounts to labelling the problem, not to solving it.</div>
+        <p>core knowledge</p>
+        <div class="slide step1">
+          <p class="em-above handout show"><span>‘Just as humans are endowed with multiple, </span><span class="noblur1">specialized perceptual systems</span><span>, so we are endowed with multiple systems for representing and reasoning about entities of different kinds.’</span></p>
+          <div class="handout ctd">\citep[p.\ 517]{Carey:1996hl}</div>
+          <p class="right"><span>(Carey and Spelke 1996: 517)</span></p>
+          <div data-what="p :not(.noblur1)" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">So talk of core knowledge is somehow supposed to latch onto the idea of a system.</div>
+          <div class="notes">What do these authors mean by talking about 'specialized perceptual systems'?</div>
+          <div class="notes">They talk about things like perceiving colour, depth or melodies.</div>
+          <div class="notes">Now, as we saw when talking about categorical perception of colour, we can think of the 'system' underlying categorical perception as largely separate from other cognitive systems--- we saw that they could be knocked out by verbal interference, for example.</div>
+          <div class="notes">So the idea is that core knowledge somehow involves a system that is separable from other cognitive mechanisms.</div>
+          <div class="notes">As Carey rather grandly puts it, understanding core knowledge will involve understanding something about 'the architecture of the mind'.</div>
+          <div data-what="p :not(.noblur1)" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=".step1" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+          <div class="slide step2">
+            <p class="em-above handout show">
+              <!-- ‘core systems are conceptual and provide a foundation for the growth of knowledge.  …--><span>‘core systems are </span><span class="q1">largely innate</span><span>, </span><span class="q2">encapsulated</span><span>, and </span><span class="q3">unchanging</span><span>, </span><span class="q4">arising from phylogenetically old systems </span><span class="q5">built upon the output of innate perceptual analyzers</span><span class="q6">.’ </span>
+            </p>
+            <div class="handout ctd">\citep[p.\ 520]{Carey:1996hl}</div>
+            <p class="right">(Carey and Spelke 1996: 520)</p>
+            <div data-what=".step2 p :not(.q1)" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+            <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+            <div data-what=".step2 p :not(.q1)" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
+            <div data-what=".step2 p :not(.q2)" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+            <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+            <div data-what=".step2 p :not(.q2)" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
+            <div data-what=".step2 p :not(.q3)" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+            <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+            <div data-what=".step2 p :not(.q3)" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
+            <div data-what=".step2 p :not(.q4)" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+            <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+            <div data-what=".step2 p :not(.q4)" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
+            <div data-what=".step2 p :not(.q5)" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+            <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+            <div data-what=".step2 p :not(.q5)" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
+            <div data-what=".step2" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+          </div>
+          <div class="slide step3">
+            <p class="em-above">representational format: iconic (Carey 2009)</p>
+            <div class="notes">To say that a represenation is iconic means, roughly, that parts of the representation represent parts of the thing represented.</div>
+            <div class="notes">Pictures are paradigm examples of representations with iconic formats.</div>
+            <div class="notes">For example, you might have a picture of a flower where some parts of the picture represent the petals and others the stem.</div>
+          </div>
+          <div data-what=".step2" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">Suppose we accept that there are core systems with this combination of features.</div>
+          <div class="notes">Then we can use the term 'core knowledge' to mean the representations in these core systems.</div>
+          <div class="handout">A piece of \emph{core knowledge} is a representation in a core system.</div>
+          <div class="notes">The hope is that this will help us with the second question.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Consider this hypothesis.</div>
+          <div class="notes">The principles of object perception, and maybe also the expectations they give rise to, are not knowledge.</div>
+          <div class="notes">But they are core knowledge.</div>
+          <div class="notes">But look at those features again --- innate, encapsulated, unchanging and the rest.</div>
+          <div class="notes">None of these straightforwardly enable us to predict that core knowledge of objects will guide looking but not reaching.</div>
+          <div class="notes">So the \emph{first problem} is that (at this stage) it's unclear what we gain by shifting from knowledge to core knowledge.</div>
+          <p class="center"><span class="line-through">knowledge</span><span> core knowledge</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">There is also a \emph{second problem}.</div>
+        <div class="notes">This problem concerns with the way we have introduced the notion of core knowledge.</div>
+        <div class="notes">We have introduced it by providing a list of features.</div>
+        <div class="notes">But why suppose that this particular list of features constitutes a natural kind?</div>
+        <div class="notes">This worry has been brought into sharp focus by criticisms of 'two systems' approaches.</div>
+        <div class="notes">(These criticisms are not directed specifically at claims about core knowledge, but the criticisms apply.)</div>
+        <div class="handout">\subsection{Objection}</div>
+        <p class="handout notes show">‘there is a paucity of … data to suggest that they are the only or the best way of carving up the processing,</p>
+        <p class="handout notes show">‘and it seems doubtful that the often long lists of correlated attributes should come as a package’</p>
+        <div class="handout notes ctd">\citep[p.\ 759]{adolphs_conceptual_2010}</div>
+        <p class="right">Adolphs (2010 p. 759)</p>
+        <div class="slide">
+          <p class="handout notes show em-above">
+            ‘we wonder whether the dichotomous characteristics used to define the two-system models
+            are … perfectly correlated …
+          </p>
+          <p class="handout ctd notes">[and] whether a hybrid system that combines characteristics from both systems could not be … viable’</p>
+          <div class="handout notes ctd">\citep[p.\ 537]{keren_two_2009}</div>
+          <p class="right">Keren and Schul (2009, p. 537)</p>
+        </div>
+        <div class="slide">
+          <p class="handout notes show em-above">‘the process architecture of social cognition is still very much in need of a detailed theory’</p>
+          <div class="handout notes ctd">\citep[p.\ 759]{adolphs_conceptual_2010}</div>
+          <p class="right">Adolphs (2010 p. 759)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="step1">
+          <div class="notes">So what am I saying?</div>
+          <div class="notes">Our question is, Given that the simple view is wrong, what is the relation between the principles of object perception and infants’ competence in segmenting objects, object permanence and tracking causal interactions?</div>
+          <div class="notes">We are considering this (partial) answer: the principles are not knowledge but core knowledge.</div>
+          <p>We have core knowledge of the principles of object perception.</p>
+          <div class="notes">Let me remind you how we  defined core knowledge.</div>
+          <div class="notes">First, we explained core knowledge in terms of core systems: a piece of core knowledge is a representation in a core system.</div>
+          <div class="notes">Second, we characterised core systems by appeal to a list of characteristics: they are innate, encapsulated, unchainging etc.</div>
+        </div>
+        <div class="slide step2">
+          <div class="notes">There are two problems for this answer as it stands.</div>
+          <p class="em-above">two problems</p>
+          <ul class="notes show">
+            <div class="notes">\begin{itemize}</div>
+            <li><span class="notes">\item </span><span>How does this explain the looking/searching discrepancy?</span></li>
+            <li><span class="notes">\item </span><span>Can appeal to core knowledge be explanatory at all?</span></li>
+            <div class="notes">\end{itemize}</div>
+          </ul>
+        </div>
+        <div data-what=".step1, .step2" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">This looks like the sort of problem a philospoher might be able to help with.</div>
+        <div class="slide step3">
+          <div class="notes">Jerry Fodor has written a book called 'Modularity of Mind' about what he calls modules.</div>
+          <div class="notes">And modules look a bit like core systems, as I'll explain.</div>
+          <div class="notes">Further, Spelke herself has at one point made a connection.</div>
+          <div class="notes">So let's have a look at the notion of modularity and see if that will help us.</div>
+          <p>core system = module?</p>
+          <p class="em-above handout notes show">‘In Fodor’s (1983) terms, visual tracking and preferential looking each may depend on <span class="highlight2">modular mechanisms</span><span>.’</span></p>
+          <div class="handout notes ctd">\citep[p.\ 137]{spelke:1995_spatiotemporal}</div>
+          <p class="right">Spelke et al (1995, p. 137)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- modularity-->
+<section class="slide">
+  <div class="notes">Modules are widely held to play a central role in explaining mental development and in accounts of the mind generally.</div>
+  <div class="notes">Jerry Fodor makes three claims about modules:</div>
+  <div class="handout">\subsection{Modularity}</div>
+  <div class="handout notes">Fodor’s three claims about modules:</div>
+  <div class="handout notes">\begin{enumerate}</div>
+  <div class="handout notes">\item they are ‘the psychological systems whose operations present the world to thought’;</div>
+  <div class="handout notes">\item they ‘constitute a natural kind’; and</div>
+  <div class="handout notes">\item there is ‘a cluster of properties that they have in common’ \citep[p.\ 101]{Fodor:1983dg}.</div>
+  <div class="handout notes">\end{enumerate}</div><img src="/img/slide_emergence_warwick_027.jpg" class="bkg"/>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">What are these properties?</div>
+        <div class="handout notes">These properties include: </div>
+        <div class="handout notes">\begin{itemize}</div>
+        <div class="handout notes">\item domain specificity (modules deal with ‘eccentric’ bodies of knowledge)</div>
+        <div class="handout notes">\item limited accessibility (representations in modules are not usually inferentially integrated with knowledge)</div>
+        <div class="handout notes">\item information encapsulation (modules are unaffected by general knowledge or representations in other modules)</div>
+        <div class="handout notes">\item innateness (roughly, the information and operations of a module not straightforwardly consequences of learning; but see \citet{Samuels:2004ho}).</div>
+        <div class="handout notes">\end{itemize}</div>
+        <ul>
+          <li><strong>domain specificity</strong>
+            <p>modules deal with 'eccentric' bodies of knowledge</p>
+          </li>
+          <li class="limited-accessibility"><strong style="z-index:3">limited accessibility</strong>
+            <p style="z-index:3"> representations in modules are not usually inferentially integrated with knowledge</p>
+          </li>
+          <li><strong>information encapsulation</strong>
+            <p>modules are unaffected by general knowledge or representations in other modules</p>
+          </li>
+          <li><strong>innateness </strong>
+            <p>roughly, the information and operations of a module not straightforwardly consequences of learning</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_emergence_warwick_027.jpg" class="bkg"/></section>
+<section class="slide">
+  <div class="notes">Not all researchers agree about the properties of modules.  That they are informationally encapsulated is denied by Dan Sperber and Deirdre Wilson (2002: 9), Simon Baron-Cohen (1995) and some evolutionary psychologists (Buller and Hardcastle 2000: 309), whereas Scholl and Leslie claim that information encapsulation is the essence of modularity and that any other properties modules have follow from this one (1999b: 133; this also seems to fit what David Marr had in mind, e.g. Marr 1982: 100-1).  According to Max Coltheart, the key to modularity is not information encapsulation but domain specificity; he suggests Fodor should have defined a module simply as 'a cognitive system whose application is domain specific' (1999: 118).  Peter Carruthers, on the other hand, denies that domain specificity is a feature of all modules (2006: 6).  Fodor stipulated that modules are 'innately specified' (1983: 37, 119), and some theorists assume that modules, if they exist, must be innate in the sense of being implemented by neural regions whose structures are genetically specified (e.g. de Haan, Humphreys and Johnson 2002: 207; Tanaka and Gauthier 1997: 85); others hold that innateness is 'orthogonal' to modularity (Karmiloff-Smith 2006: 568).  There is also debate over how to understand individual properties modules might have (e.g. Hirschfeld and Gelman 1994 on the meanings of domain specificity; Samuels 2004 on innateness).</div><img src="/img/slide_emergence_warwick_028.jpg" class="bkg"/>
+</section>
+<section class="slide"><img src="/img/slide_emergence_warwick_029.jpg" class="bkg"/></section>
+<section class="slide"><img src="/img/slide_emergence_warwick_030.jpg" class="bkg"/></section>
+<section class="slide">
+  <div class="notes">In short, then, theorists invoke many different notions of modularity, each barely different from others.  You might think this is just a terminological issue.  I want to argue that there is a substantial problem: we currently lack any theoretically viable account of what modules are.  The problem is not that 'module' is used to mean different things-after all, there might be different kinds of module.  The problem is that none of its various meanings have been characterised rigorously enough.  All of the theorists mentioned above except Fodor characterise notions of modularity by stipulating one or more properties their kind of module is supposed to have.  This way of explicating notions of modularity fails to support principled ways of resolving controversy.</div>
+  <div class="notes">&nbsp;</div>
+  <div class="notes">No key explanatory notion can be adequately characterised by listing properties because the explanatory power of any notion depends in part on there being something which unifies its properties and merely listing properties says nothing about why they cluster together.</div>
+  <div class="notes">&nbsp;</div>
+  <div class="notes">Interestingly, Fodor doesn't define modules by specifying a cluster of properties (pace Sperber 2001: 51); he mentions the properties only as a way of gesturing towards the phenomenon (Fodor 1983: 37) and he also says that modules constitute a natural kind (see Fodor 1983: 101 quoted above). </div><img src="/img/slide_emergence_warwick_031.jpg" class="bkg"/>
+</section>
+<section class="slide">
+  <div class="notes">It is tempting to appeal to spatial metaphors in thinking about modularity.  Just as academics tend to work at high-speed on domain-specific problems when they can cut themselves off from administrative centres, so we might attempt to explain the special properties of modules by saying that they are cut off from the central system.  But it isn't clear how to turn this metaphor into an explanation.  The spatial metaphor only gives us the illusion that we understand modularity.</div><img src="/img/slide_emergence_warwick_032.jpg" class="bkg"/>
+</section>
+<section class="slide"><img src="/img/slide_emergence_warwick_033.jpg" class="bkg"/></section>
+<!-- back to the problems-->
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="step1">
+          <div class="notes">So what aim I suggesting.</div>
+          <div class="notes">First that we treat core knowledge and modularity as terms for a single thing, whatever it is.</div>
+          <div class="notes">This has the advantage that we can draw on Fodor's more detailed theorising about modularity.</div>
+          <p>core knowledge = modularity</p>
+        </div>
+        <div class="slide step2">
+          <div class="notes">So the view we are considering is that</div>
+          <p class="em-above notes show">We have core knowledge (= modular representations) of the principles of object perception.</p>
+        </div>
+        <div class="slide step3">
+          <div class="notes">Does this help us with the two problems I mentioned earlier?</div>
+          <p class="em-above">two problems</p>
+          <ul class="notes show">
+            <div class="notes">\begin{itemize}</div>
+            <li><span class="notes">\item </span>How does this explain the looking/searching discrepancy?</li>
+            <li><span class="notes">\item </span>Can appeal to core knowledge (/ modularity) be explanatory at all?</li>
+            <div class="notes">\end{itemize}</div>
+          </ul>
+          <div data-what=" li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">Here we have the same problem as before.  If anything, invoking modularity makes it worse.</div>
+          <div data-what=" li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=" li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">But here our situation is better.  To see why, recall the properties of modules.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <ul>
+          <li><strong>domain specificity</strong>
+            <p>modules deal with 'eccentric' bodies of knowledge</p>
+          </li>
+          <li class="limited-accessibility"><strong style="z-index:3">limited accessibility</strong>
+            <p style="z-index:3"> representations in modules are not usually inferentially integrated with knowledge</p>
+          </li>
+          <li><strong>information encapsulation</strong>
+            <p>modules are unaffected by general knowledge or representations in other modules</p>
+          </li>
+          <li><strong>innateness </strong>
+            <p>roughly, the information and operations of a module not straightforwardly consequences of learning</p>
+          </li>
+        </ul>
+        <div data-what=" .limited-accessibility" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">Limited accessibility explains why the representations might drive looking but not reaching.</div>
+        <div class="notes">But doesn't the bare appeal to limited accessibility leave open why the looking and not the searching (rather than conversely)?</div>
+        <div class="notes">I think not, given the assumption that searching is purposive in a way that looking is not.  (Searching depends on practical reasoning.)</div>
+        <div class="notes">We'll come back to this later (if core knowledge of objects involves object files, it's easier to see why it affects looking but not actions like reaching.)</div>
+        <div class="notes">&nbsp;</div>
+        <div class="notes">Except, of course, calling this an explanation is too much.</div>
+        <div class="notes">After all, limited accessibility is more or less what we're trying to explain.</div>
+        <div class="notes">But this is the first problem --- the problem with the standard way of characterising modularity and core systems merely by listing features.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">summary so far</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--*todo* this slide is duplicated from above-->
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="step1">
+          <p>core knowledge = modularity</p>
+        </div>
+        <div class="step2">
+          <p class="em-above notes show">We have core knowledge (= modular representations) of the principles of object perception.</p>
+        </div>
+        <div class="step3">
+          <p class="em-above">two problems</p>
+          <ul class="notes show">
+            <div class="notes">\begin{itemize}</div>
+            <li><span class="notes">\item </span>How does this explain the looking/searching discrepancy?</li>
+            <li><span class="notes">\item </span>Can appeal to core knowledge (/ modularity) be explanatory at all?</li>
+            <div class="notes">\end{itemize}</div>
+          </ul>
+          <div data-what=" li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what="li:eq(0)" data-attr="text-decoration:line-through" class="slide anim-continue anim-attribute"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=" li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=" li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

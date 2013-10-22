@@ -105,7 +105,7 @@ The key point for our purposes is the explanatory component.  The principles are
 
 * \citep{freyd:1994_representational}  ('The results are also consistent with a claim of relative cognitive impenetrability (Finke & Freyd, 1989; Kelly & Freyd, 1987) in that subjects showed a memory shift for a path that the majority of subjects did not consciously consider correct.' \citep[p.\ 975]{freyd:1994_representational})
 
-**caution (basically fine, but need to be careful): 'The extent to which displacement reflects physical principles per se has been widely debated in the literature; theories of displacement suggest a variety of potential effects of physical principles ranging from an incorporation of the principle of momentum into mental representation (e.g., Finke et al., 1986) to a rejection of any internalization of physical principles (e.g., Kerzel, 2000, 2003a). The empirical evidence is clear that (1) displacement does not always correspond to predictions based on physical principles and (2) variables unrelated to physical principles (e.g., the presence of landmarks, target identity, or expectations regarding a change in target direction) can influence displacement. ... information based on a naive understanding of physical principles or on subjec- tive consequences of physical principles appears to be just one of many types of information that could potentially contribute to the displacement of any given target' \citep[p.\ 842]{hubbard:2005_representational}
+**caution (basically fine, but need to be careful): 'The extent to which displacement reflects physical principles per se has been widely debated in the literature; theories of displacement suggest a variety of potential effects of physical principles ranging from an incorporation of the principle of momentum into mental representation (e.g., Finke et al., 1986) to a rejection of any internalization of physical principles (e.g., Kerzel, 2000, 2003a). The empirical evidence is clear that (1) displacement does not always correspond to predictions based on physical principles and (2) variables unrelated to physical principles (e.g., the presence of landmarks, target identity, or expectations regarding a change in target direction) can influence displacement. ... information based on a naive understanding of physical principles or on subjective consequences of physical principles appears to be just one of many types of information that could potentially contribute to the displacement of any given target' \citep[p.\ 842]{hubbard:2005_representational}
 
 +On the link between children and adults:
 Discussing the Hood et al, use representational momentum: 'the dynamic representations that often govern adult judgments of spatio-temporal events also govern those of young children.' \citep[p.\ F22]{perry:2008_representational}.  BUT this is less promising than it seems: they are measuring search (which door is opened) rather than looking.
@@ -113,7 +113,7 @@ Discussing the Hood et al, use representational momentum: 'the dynamic represent
 
 *discuss Scholl & Leslie (1999)?  Santos & Hood put a lot of emphasis on this (in their 2009 intro to book):
 	- first when talking about persistence 
-	- second, when talking about individuation (p. 12: 'These similarities have led to the view that adult attentional mechanisms may underlie infants’ performance on object individuation tasks (Carey & Xu, 2001; Chiang & Wynn, 2000; Leslie et al., 1998; Scholl, 2001; Scholl & Leslie, 1999; Simon, 1997; Wynn & Chiang, 1998).')
+	- second, when talking about individuation (Santos & Hood  p. 12: 'These similarities have led to the view that adult attentional mechanisms may underlie infants’ performance on object individuation tasks (Carey & Xu, 2001; Chiang & Wynn, 2000; Leslie et al., 1998; Scholl, 2001; Scholl & Leslie, 1999; Simon, 1997; Wynn & Chiang, 1998).')
 
 
 [*problem: minimal producer-consumer notion of representation --- don't all the problems go away here?  (Just specify producer and consumer?)]
@@ -128,10 +128,10 @@ Discussing the Hood et al, use representational momentum: 'the dynamic represent
   - paradigms from perceptual and motor processes (these involve representations that are unlike knowledge and differ in format and with respect to process).
   - modularity?
 
-Core systems are ‘structures … just as specific as those that underlie animal cognition, human perception, and human action.  'Just as humans are endowed with multiple, specialized perceptual systems, so we are endowed with multiple systems for representing and reasoning about entities of different kinds.’ 
+Core systems are ‘structures … just as specific as those that underlie animal cognition, human perception, and human action.  ‘Just as humans are endowed with multiple, specialized perceptual systems, so we are endowed with multiple systems for representing and reasoning about entities of different kinds.’ 
 (Carey and Spelke 1996: 517)
 
-’core systems are conceptual and provide a foundation for the growth of knowledge.  … core systems are largely innate, encapsulated, and unchanging, arising from phylogenetically old systems built upon the output of innate perceptual analyzers.’ 
+‘core systems are conceptual and provide a foundation for the growth of knowledge.  … core systems are largely innate, encapsulated, and unchanging, arising from phylogenetically old systems built upon the output of innate perceptual analyzers.’ 
 (Carey and Spelke 1996: 520) 	
 	
 	

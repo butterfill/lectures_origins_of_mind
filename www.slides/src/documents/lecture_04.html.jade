@@ -1,0 +1,73 @@
+---
+layout: 'default2'
+title: 'Lecture 04'
+weburl: ''
+units: []
+lecture_date: '2013/10/24'
+---
+
+include ../../fragments/slide_mixins
+
+- var images = get_images('bees')
+
+mixin title_slide({document:document, images:images})
+
+
+
++slide
+  .notes In this lecture I want to consider two interlocking themes simultaneously.
+  .notes These are (i) knowledge of physical objects; and (ii) knowledge/representation/modularity.
+  p two interlocking themes:
+    ul
+      li knowledge of physical objects
+      li knowledge/representation/modularity
+
++slide
+  .notes I got some feedback.
+  p feedback
+  p ‘a more coherent structure to the lectures would be helpful — we seem to bounce around from one question to another and, especially because it is a 
+    span.highlight1 two hour lecture
+    span , it is very easy to get lost,
+  p ‘maybe a clearer conclusion or summary would help.’
+  +invert('.highlight1')
+  .notes I'm very curious to know whether the two hour lecture is better than two one hour lectures on different days.
+  .notes I'm also tempted to add an hour of lectures.
+  +uninvert('.highlight1')
+  .notes But that isn't the main issue raised in the feedback.
+  .notes In response to this feedback I propose to (i) provide a recap from last lecture; (ii) outline this lecture; (iii) try to signppost more clearly as I go (there is a coherent structure, I'm maybe just not explaining it clearly enough); and (iv) try to be clearer in the summary & conclusion at the end.
+  .slide
+    p.em-above ‘sometimes the jargon can be overwhelming’
+    .notes I aim at some point to provide a glossary.
+    .notes To that end it would be helpful if you would stop me whenever I use a term you don't understand.
+  
+// recap : three questions
+mixin insert_unit({unit:'221', title_slide:true, images:images})
+
+// core knowledge / modularity
+mixin insert_unit({unit:'231', title_slide:true, images:images})
+
+// core knowledge / modular representation : paradigm cases
+mixin insert_unit({unit:'241', title_slide:true, images:images})
+  
+  
+  
+//*todo* see prepare.txt --- use the Hood et al apparatus image again
+
+
+//- core knowledge and categorical perception --- how related?
+//- *todo* lots of useful material here
+  mixin insert_unit({unit:'151', title_slide:true, images:images})
+
+//-
+  on core knowledge:
+    - first talk about knowledge of syntax?
+    - principles and parameters
+    - poverty of stimulus (quote from Chomsky on Skinner?)
+    - not linked to consciousness, not available for introspection, ...
+    - Searle's objection
+    - defence: respectable notions of representation?  (Shea ideas)
+    - how is this a model: it invovles a set of principles being used in an inference-like process
+    - compare Spelke on principles of object perception
+  
+  
+

@@ -23,11 +23,11 @@ plugins:
 
 		moment:
 			require('moment')
-			
+
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://website.com"
+			url: "http://origins-of-mind.butterfill.com"
 
 			# The default title of our website
 			title: "Origins of Mind"

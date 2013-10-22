@@ -160,7 +160,7 @@ mixin slide_img(filename)
 // see also +clip to modify the clip as an animation
 mixin img_clip(filename, theClip)
   div(style='position:relative;')
-    img(src='/img/#{filename}', style="clip: #{theClip}; position: absolute;")
+    img(src='/img/#{filename}', style="clip: #{theClip}; position: absolute; max-width:720px;")
 
 
 

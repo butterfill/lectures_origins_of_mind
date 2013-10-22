@@ -1,0 +1,143 @@
+Lecture 04
+
+nb: lecture_03.prepare.txt has material for this lecture too!
+
+[sources:
+	-- London seeing causes presentation (institute of education)
+	-- Seeings causings paper 
+]
+
+outline
+=====
+0. the problem is hard
+	- mere talk about representation
+	- not strength
+	- not action-perception (Milner & Goodale vs Rossetti)
+		-- optic ataxia vs 
+		-- initially seems plausible
+		-- but Rossetti \citep{pisella:2006_no} use tables
+		-- and the idea of looking for relations to adults is good
+		-- and it is significant that the looking/acting dissociation is found in adult nonhuman primates
+		-- (don't do representational momentum in adults here --- it does show a similar discrepancy but it's best to hold off until we come to perceptual expectations)
+		-- so we're right to be thinking about cognitive architecture, we just have to be careful to avoid false claims about it.
+
+1. what is core knowledge? (modularity)
+	- list of characteristics
+	- what helps us is one feature: limited accessibility
+	- identification with modules, systems
+	- opposition from Adolphs, Keren
+	
+2. how to reply to the opposition? step 1 
+	- paradigm examples: (i) vision--edge detection; (ii) action--maximum grip aperture in anticipation of the object \citep{jeannerod:2009_study} use jeannerod_2009_fig10-1.png
+	- use the example of weight-size illusion affecting judgement but not action ('the brain maintains two independent representations of object weight: a perceptual representation that is influenced by the size of objects (as revealed by the size–weight illusion) and a sensorimotor representation that is not.' \citep[p.\ 173]{flanagan:2009_predictive}
+	- actually really need a visual illusion that affects neither judgement nor action (this is what we're saying about core knowledge of unseen objects!)  Maybe should use §4.5 on perceptual expectations here?
+	
+3. how to reply to the opposition? step 2
+	- computational process
+	- representational format (?)
+
+4. Summary so far
+	- can make systematic sense of the idea of core knowledge
+	- process: computational not inference
+	- but lack details of the content & attitude
+
+4.5 interim hint: perceptual expectations
+	- illustrate using Thienes, Michotte et al (already have slides)
+	- \citep{kozhevnikov:2001_impetus} on representational momentum
+	- nb the judgement independence stuff
+	- see lecture_03.prepare.txt
+
+5. Scholl & Leslie's brilliant idea [can also use Carey, Origins]
+	- perceptual system tracks objects
+	[London slides 51--]
+	- in order to track objects, has to be sensitive to be causal interactions
+	- why is this true?
+	- a clue: when you have a causal interaction, there's a conflict between principles of object perception e.g. distinct surfaces=>two objects, vs good continuity of motion=>one object
+	- perceptual system needs to know when conflicts should be reconciled and when they should be written off
+	- get perceptual effects of causal interactions when there are conflicts among cues of object identity
+	- [nb london talk confuses two issues: segmentation = interaction; and object tracking integrates causal interaction]
+	- But what's the evidence?  See 'Seeing Causings paper':
+	At least three pieces of evidence suggest that perception of objects is closely linked to causal perception.  First, Michotte argued for such a link on the basis of his finding that launching occurs when there is a conflict between cues to object identity: good continuity of movement suggests a single object whereas the existence of two distinct surfaces indicates two objects.   It is plausible that other types of causal interaction also involve conflicts between cues to object identity.  Second, as we saw above Scholl and Nakayama (2004) have shown that when a sequence involving complete overlap between two objects is perceived as a launching event, subjects perceive an illusory crescent as if the overlap were only partial.  They conclude that “the perception of causality can also affect other types of visual processing—in this case the perception of spatial relations among moving objects” (2004: 467).  Third, Krushke and Fragassi (1996) have shown that the object-specific preview effect vanishes in launching but not in various spatio-temporally similar sequences.  Since the object-specific preview effect is regarded as diagnostic of feature binding, this is evidence that in launching sequences, features of the second object (such as motion) remain bound to the first object for a short time after the second object starts to move. 
+	These three pieces of evidence indicate that causal perception interacts with object perception.  \textbf{It is not that we first see sequences of events involving objects and then assign them causal significance.  Rather, the perception of something as a causal interaction appears to influence what we perceive as objects in the first place.}
+	- see also Santos & Hood  p. 12: 'These similarities have led to the view that adult attentional mechanisms may underlie infants’ performance on object individuation tasks (Carey & Xu, 2001; Chiang & Wynn, 2000; Leslie et al., 1998; Scholl, 2001; Scholl & Leslie, 1999; Simon, 1997; Wynn & Chiang, 1998).'
+	
+
+6. Perception of causation
+	- Michotte, Scholl
+	- Can be explained in terms of object tracking
+	- The perceptual system tracks causal interactions but this information is used internally --- it is like information about luminance contrasts or 
+	- nb Carey origins argues that causation is not modular (Representations involving causation play a special role in The Origin of Concepts, grounding Carey's view that there are “central representational systems with innate conceptual content that is distinct from that of core cognition” (p. 246). For infants' causal representations are held to be innate but not grounded in core cognition, unlike representations of objects, numbers and agents which do involve core cognition.)	
+
+7. Conclusions
+	- (return to the questions)
+	- Q4. What is the relation between infants' and adults' capacities?  Nonhuman adult primates plus representational momentum plus causal interaction : cautiously go for continuity (as in the case of categorical perception of colour)
+	- Q3. Given that the simple view is wrong, what is the right view of the relation between the principles of object perception and infants' competence in segmenting objects, object permanence and tracking causal interactions? The principles describe how perceptual systems track objects
+	- Q3.b. The principles of object perception result in 'expectations' in infants.  What is the nature of these expectations?  They are perceptual expectations and the result of modular, computational processes
+	- [repeats above] Q2. What is the relation between the principles of object perception and infants' looking behaviours?  The principles describe how perceptual systems track objects; the resulting expectations are perceptual expectations and the result of modular, computational processes
+	- Q1 How do humans meet the three requirements on object perception? because of the nature of our perceptual systems
+	- origins of knowledge of physical objects: not evidenced in the first six months of life; may well depend on sensorimotor skills, culture, tool use* or something else
+	- two discrepancies (op and causal interactions)
+		-- second (Hood) discrepancy is well explained --- interactions are internal to the module
+		-- first (ob reaching) discrepancy is not well explained --- the job of the module is to deliver representations of objects; the only thing we might suggest is that it's job is to reveal representations of *perceptible* objects, so it tracks imperceptible objects only internally
+
+Btw, I think too use is quite plausible:
+Basic forms of tool use may not require understanding how objects interact (Barrett, Davis, & Needham; Lockman, 2000), and may depend on core cognition of contact-mechanics (Goldenberg & Hagmann, 1998; Johnson-Frey, 2004). Experience of tool use may in turn assist children in understanding notions of manipulation, a key causal notion (Menzies & Price, 1993; Woodward, 2003). Perhaps non-core capacities for causal representation are not innate but originate with experiences of tool use.	
+
+
+For another time:
+	- causal perception is categorical (London slides 41--50) [audio recording v3 around 30min]
+	
+
+
+
+topic
+=====
+(i) knowledge of physical objects; (ii) knowledge/representation/modularity
+
+questions
+======
+Three prerequisites for knowledge of objects are abilities to (i) segment objects, (ii) represent them as persisting through occlusion, and (iii) track causal interactions involving them.  
+    Q1. How do humans meet these three requirements?
+	
+Until quite recently it was held, following Piaget and others, that these three abilities appeared relatively late in development.  
+However, as we saw last week, more recent investigations provide strong evidence that all three abilities are present in humans from around four months of age or earlier.  
+Infants' looking behaviours indicate that they have expectations concerning segmentation, persistence and causal interactions.  
+Further, we can describe these expectations by appeal to a single set of principles of object perception (the principles of boundedness, continuity &c).  
+Spelke suggests, further, that these principles explain infants' looking behaviours.
+	D1. Although abilities to segment objects, to represent them as persisting through occlusion and  to track their causal interactions are conceptually distinct, they may all be consequences of a single mechanism.
+    Q2. What is the relation between the principles of object perception and infants' looking behaviours?
+
+In answer to Q2, I suggested that we start with the simple view.  
+The simple view is that the principles of object perception that Spelke and others have identified are things that we know, and that we generate expectations from these principles by a process of inference.
+The attraction of the simple view is that it explains the looking. 
+The problem for the simple view is that it makes exactly the wrong prediction about the reaching.    
+We must therefore reject the simple view.
+	Q3. Given that the simple view is wrong, what is the right view of the relation between the principles of object perception and infants' competence in segmenting objects, object permanence and tracking causal interactions?
+	Q3.b. The principles of object perception result in 'expectations' in infants.  What is the nature of these expectations?  On the simple view, these expectations are knowledge states or beliefs.  But the systematic discrepancies between looking and searching provides compelling evidence that they are not.  So what are these expectations?
+[Q3 is not really distinct from Q2]	
+[Q3b is there to show that the issue of representation comes up twice for us.]
+
+Q4 What is the relation between adults' and infants' abilities concerning physical objects and their causal interactions?
+[Illustrate two possibilities with diagram]
+
+Why is this important?
+The discovery of infant abilities presents us with a dilemma.
+If we follow researchers like Michael Tomasello in dismissing infants' abilities to focus on social interactions, culture and language, we miss something important about the origins of knowledge.  We will miss the fact that coming to know things about physical objects (and colours, and mind and more besides) involves multiple layers of representation.
+But if we follow researchers like Spelke and Baillargeon is discussing infants' abilities as if they were based on knowledge, belief and inference, we will also miss something important about the origins of knowledge.  We will miss the fact that infants' abilities, although essential for later developments, are only indirectly related to the knowledge of physical objects that adult humans enjoy.
+The challenge is to avoid this dilemma, to provide a theoretical framework that will allow us to understand how infants' abilities support the emergence of knowledge without themselves amounting to knowledge.
+
+	
+The first move in answering this question is to step back from knowledge to representation.  
+We shouldn't claim that infants know the principles; at most we should claim that they represent them.
+But what is representation?
+The term is used in lots of different ways, so it is important to explain how we understand it.
+As I use it, representation is just a generic term covering knowledge, belief and much else besides.
+So to say that we don't know the principles of object perception but only represent them doesn't tell us much.
+Basically, it tells us that we represent them without knowing them.
+But what we need if we're to have an explanatory answer to Q1 is to know positively how we do represent the principles of object perception --- subject, attitude and content.
+
+In shifting from knowledge to representation we are also shifting from inference to some process that is not inference but in some way like it.
+
+The parable of the wrock.
+(A wrock is just like a rock except that it lacks shape.  Compare: this representation is just like knowledge except that it doesn't guide action; this process is just like inference except that it lacks the normative aspects of inference.)
+

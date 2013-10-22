@@ -5,6 +5,14 @@
  */
 @import nib
 
+filter(what)
+  filter what
+  -webkit-filter what
+  -moz-filter what
+  -o-filter what
+  -ms-filter what
+  
+
 html
   overflow: hidden
 
@@ -87,15 +95,37 @@ blur()
     display: none
 */
 
+
+/**
+ * classes that map directly to css styles
+ */
+.italic
+  font-style: italic
+.grey-text
+  color grey
+.line-through
+  text-decoration line-through
+.brightness-150
+  filter brightness(150%)
+.display-none
+  display none
+
+.center
+  text-align: center
+.right
+  text-align: right
+
+.indent
+  padding-left: 1em
+
 .deck-container
-  .italic
-    font-style: italic
-  .grey-text
-    color grey
-  .line-through
-    text-decoration line-through
-
-
+  .hem-above
+    padding-top: 0.5em
+  .em-above
+    padding-top: 1em
+  .em-above-each-td td
+    padding-top: 1em
+  
 /**
  * Allow slides to be recalled by adding a class
  * the .slide sub-part makes sub-slides visisble
@@ -287,12 +317,6 @@ div.container_12
  div.words
   padding-top: 40px
 
-  .center
-    text-align: center
-  
-  .right
-    text-align: right
-  
   .middle
     position: absolute
     left: 0
@@ -315,18 +339,7 @@ div.container_12
     content 'source: '
     font-style italic
 
-  .indent
-    padding-left: 1em
-  
-  .hem-above
-    padding-top: 0.5em
-  
-  .em-above
-    padding-top: 1em
-  
-  .em-above-each-td td
-    padding-top: 1em
-  
+
   .half-above
     padding-top: 0.5em
    

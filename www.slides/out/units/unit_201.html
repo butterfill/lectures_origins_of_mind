@@ -105,6 +105,7 @@ var inject = function(){
           </div>
         </div>
       </section>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
 <!-- create title slide for a lecture-->
 <!-- param p contains document and images (an array of images to use)-->
 <!-- param p contains p.unit and p.images (an array of images)-->
@@ -137,7 +138,7 @@ var inject = function(){
         <div class="notes">Because the bench protrudes from the barrier, you could easily see where the ball will land.</div>
         <div class="notes">But of course you can only see this if you know that barriers stop solid balls.</div>
         <div class="notes">Spelke used this observation to provide evidence that 4-month-old infants can track objects' causal interactions.</div>
-        <div style="position:relative;"><img src="/img/spelke_1992_fig2a.png" style="clip: rect(0px,480px,434px,240px); position: absolute;"/></div>
+        <div style="position:relative;"><img src="/img/spelke_1992_fig2a.png" style="clip: rect(0px,480px,434px,240px); position: absolute; max-width:720px;"/></div>
         <p class="source">Spelke et al 1992, figure 2</p>
         <div data-what="img:eq(0)" data-attr="clip:rect(0px,240px,434px,0px)" class="slide anim-continue anim-attribute"></div>
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
@@ -242,7 +243,7 @@ var inject = function(){
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <div style="position:relative;"><img src="/img/spelke_1992_fig2a.png" style="clip: auto; position: absolute;"/></div>
+        <div style="position:relative;"><img src="/img/spelke_1992_fig2a.png" style="clip: auto; position: absolute; max-width:720px;"/></div>
         <p class="source">Spelke et al 1992, figure 2</p>
       </div>
     </div>
@@ -257,6 +258,12 @@ var inject = function(){
     </div>
   </div>
 </section>
+<!--alternative-->
+<!--+slide({bkg:'slide_causal_london_53.jpg'})-->
+<!--    .notes The principles of object perception already describe physical behaviours of objects.-->
+<!--    .notes For instance, the boundedness principle implies that objects cannot interpentrate.-->
+<!--    // .notes And the principle of no action at a distance tells us that objects move independently where they can.-->
+<!--    .notes This principle already tells us that the ball can't fall through the bench.-->
 <section class="slide">
   <div class="words">
     <div class="container_12">

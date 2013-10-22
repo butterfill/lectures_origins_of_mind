@@ -1,0 +1,285 @@
+---
+layout: 'deck_unit'
+title: "Core Knowledge and Modularity"
+tags: []
+?description: "What Is Core Knowledge?  How Is It Related to Modularity"
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/slide_mixins
+
+
+
+// ------------------
+// nb *todo* This duplicates  some of unit_211
+
++slide_middle
+  .notes There are principles of object perception that explain abilities to segment objects, to represent them while temporarily unperceived and to track their interactions. 
+  .notes These principles are not known.  What is their status?
+  p.center the question
+
++slide
+  .notes Core knowledge is a label for what we need.
+  .notes I'm going to adopt the label.
+  .notes But this only amounts to labelling the problem, not to solving it.
+  p core knowledge
+  .slide.step1
+    p.em-above.handout.show
+      span ‘Just as humans are endowed with multiple, 
+      span.noblur1 specialized perceptual systems
+      span, so we are endowed with multiple systems for representing and reasoning about entities of different kinds.’
+    .handout.ctd \citep[p.\ 517]{Carey:1996hl}
+    p.right
+      span (Carey and Spelke 1996: 517)
+    +blur('p :not(.noblur1)')
+    .notes So talk of core knowledge is somehow supposed to latch onto the idea of a system.
+    .notes What do these authors mean by talking about 'specialized perceptual systems'?
+    .notes They talk about things like perceiving colour, depth or melodies.
+    .notes Now, as we saw when talking about categorical perception of colour, we can think of the 'system' underlying categorical perception as largely separate from other cognitive systems--- we saw that they could be knocked out by verbal interference, for example.
+    .notes So the idea is that core knowledge somehow involves a system that is separable from other cognitive mechanisms.
+    .notes As Carey rather grandly puts it, understanding core knowledge will involve understanding something about 'the architecture of the mind'.
+    +unblur_('p :not(.noblur1)')
+    +blur_('.step1')
+    .slide.step2
+      p.em-above.handout.show
+        // ‘core systems are conceptual and provide a foundation for the growth of knowledge.  …
+        span ‘core systems are 
+        span.q1 largely innate
+        span , 
+        span.q2 encapsulated
+        span , and 
+        span.q3 unchanging
+        span , 
+        span.q4 arising from phylogenetically old systems 
+        span.q5 built upon the output of innate perceptual analyzers
+        span.q6 .’ 
+      .handout.ctd \citep[p.\ 520]{Carey:1996hl}
+      p.right (Carey and Spelke 1996: 520)
+      +blur('.step2 p :not(.q1)')
+      +unblur_('.step2 p :not(.q1)')
+      +blur('.step2 p :not(.q2)')
+      +unblur_('.step2 p :not(.q2)')
+      +blur('.step2 p :not(.q3)')
+      +unblur_('.step2 p :not(.q3)')
+      +blur('.step2 p :not(.q4)')
+      +unblur_('.step2 p :not(.q4)')
+      +blur('.step2 p :not(.q5)')
+      +unblur_('.step2 p :not(.q5)')
+      +blur_('.step2')
+    .slide.step3
+      p.em-above representational format: iconic (Carey 2009)
+      .notes To say that a represenation is iconic means, roughly, that parts of the representation represent parts of the thing represented.
+      .notes Pictures are paradigm examples of representations with iconic formats.
+      .notes For example, you might have a picture of a flower where some parts of the picture represent the petals and others the stem.
+    +unblur('.step2')
+    .notes Suppose we accept that there are core systems with this combination of features.
+    .notes Then we can use the term 'core knowledge' to mean the representations in these core systems.
+    .handout A piece of \emph{core knowledge} is a representation in a core system.
+    .notes The hope is that this will help us with the second question.
+
++slide_middle
+  .notes Consider this hypothesis.
+  .notes The principles of object perception, and maybe also the expectations they give rise to, are not knowledge.
+  .notes But they are core knowledge.
+  .notes But look at those features again --- innate, encapsulated, unchanging and the rest.
+  .notes None of these straightforwardly enable us to predict that core knowledge of objects will guide looking but not reaching.
+  .notes So the \emph{first problem} is that (at this stage) it's unclear what we gain by shifting from knowledge to core knowledge.
+  p.center
+    span.line-through knowledge
+    span  core knowledge
+
++slide
+  .notes There is also a \emph{second problem}.
+  .notes This problem concerns with the way we have introduced the notion of core knowledge.
+  .notes We have introduced it by providing a list of features.
+  .notes But why suppose that this particular list of features constitutes a natural kind?
+  .notes This worry has been brought into sharp focus by criticisms of 'two systems' approaches.
+  .notes (These criticisms are not directed specifically at claims about core knowledge, but the criticisms apply.)
+  .handout \subsection{Objection}
+  p.handout.notes.show ‘there is a paucity of … data to suggest that they are the only or the best way of carving up the processing,
+  p.handout.notes.show ‘and it seems doubtful that the often long lists of correlated attributes should come as a package’
+  .handout.notes.ctd \citep[p.\ 759]{adolphs_conceptual_2010}
+  p.right Adolphs (2010 p. 759)
+  .slide
+    p.handout.notes.show.em-above ‘we wonder whether the dichotomous characteristics used to define the two-system models
+      | are … perfectly correlated …
+    p.handout.ctd.notes [and] whether a hybrid system that combines characteristics from both systems could not be … viable’
+    .handout.notes.ctd \citep[p.\ 537]{keren_two_2009}
+    p.right Keren and Schul (2009, p. 537)
+  .slide
+    p.handout.notes.show.em-above
+      | ‘the process architecture of social cognition is still very much in need of a detailed theory’
+    .handout.notes.ctd \citep[p.\ 759]{adolphs_conceptual_2010}
+    p.right Adolphs (2010 p. 759)
+
++slide
+  .step1
+    .notes So what am I saying?
+    .notes Our question is, Given that the simple view is wrong, what is the relation between the principles of object perception and infants’ competence in segmenting objects, object permanence and tracking causal interactions?
+    .notes We are considering this (partial) answer: the principles are not knowledge but core knowledge.
+    p We have core knowledge of the principles of object perception.
+    .notes Let me remind you how we  defined core knowledge.
+    .notes First, we explained core knowledge in terms of core systems: a piece of core knowledge is a representation in a core system.
+    .notes Second, we characterised core systems by appeal to a list of characteristics: they are innate, encapsulated, unchainging etc.
+  .slide.step2
+    .notes There are two problems for this answer as it stands.
+    p.em-above two problems
+    ul.notes.show
+      .notes \begin{itemize}
+      li
+        span.notes \item 
+        span How does this explain the looking/searching discrepancy?
+      li
+        span.notes \item 
+        span Can appeal to core knowledge be explanatory at all?
+      .notes \end{itemize}
+  +blur('.step1, .step2')
+  .notes This looks like the sort of problem a philospoher might be able to help with.
+  .slide.step3
+    .notes Jerry Fodor has written a book called 'Modularity of Mind' about what he calls modules.
+    .notes And modules look a bit like core systems, as I'll explain.
+    .notes Further, Spelke herself has at one point made a connection.
+    .notes So let's have a look at the notion of modularity and see if that will help us.
+    p core system = module?
+    p.em-above.handout.notes.show ‘In Fodor’s (1983) terms, visual tracking and preferential looking each may depend on 
+      span.highlight2 modular mechanisms
+      span .’
+    .handout.notes.ctd \citep[p.\ 137]{spelke:1995_spatiotemporal}
+    p.right Spelke et al (1995, p. 137)
+
+// modularity
+
+section.slide
+  .notes Modules are widely held to play a central role in explaining mental development and in accounts of the mind generally.
+  .notes Jerry Fodor makes three claims about modules:
+  .handout \subsection{Modularity}
+  .handout.notes Fodor’s three claims about modules:
+  .handout.notes \begin{enumerate}
+  .handout.notes \item they are ‘the psychological systems whose operations present the world to thought’;
+  .handout.notes \item they ‘constitute a natural kind’; and
+  .handout.notes \item there is ‘a cluster of properties that they have in common’ \citep[p.\ 101]{Fodor:1983dg}.
+  .handout.notes \end{enumerate}
+  img.bkg(src='/img/slide_emergence_warwick_027.jpg')
+
+mixin properties_of_modules()
+  ul
+    li
+      strong domain specificity
+      p modules deal with 'eccentric' bodies of knowledge
+    li.limited-accessibility
+      strong(style='z-index:3') limited accessibility
+      p(style='z-index:3')  representations in modules are not usually inferentially integrated with knowledge
+    li
+      strong information encapsulation
+      p modules are unaffected by general knowledge or representations in other modules
+    li
+      strong innateness 
+      p roughly, the information and operations of a module not straightforwardly consequences of learning
+  block
+
++slide
+  .notes What are these properties?
+  .handout.notes These properties include: 
+  .handout.notes \begin{itemize}
+  .handout.notes \item domain specificity (modules deal with ‘eccentric’ bodies of knowledge)
+  .handout.notes \item limited accessibility (representations in modules are not usually inferentially integrated with knowledge)
+  .handout.notes \item information encapsulation (modules are unaffected by general knowledge or representations in other modules)
+  .handout.notes \item innateness (roughly, the information and operations of a module not straightforwardly consequences of learning; but see \citet{Samuels:2004ho}).
+  .handout.notes \end{itemize}
+  +properties_of_modules
+
+section.slide
+  img.bkg(src='/img/slide_emergence_warwick_027.jpg')
+section.slide
+  .notes Not all researchers agree about the properties of modules.  That they are informationally encapsulated is denied by Dan Sperber and Deirdre Wilson (2002: 9), Simon Baron-Cohen (1995) and some evolutionary psychologists (Buller and Hardcastle 2000: 309), whereas Scholl and Leslie claim that information encapsulation is the essence of modularity and that any other properties modules have follow from this one (1999b: 133; this also seems to fit what David Marr had in mind, e.g. Marr 1982: 100-1).  According to Max Coltheart, the key to modularity is not information encapsulation but domain specificity; he suggests Fodor should have defined a module simply as 'a cognitive system whose application is domain specific' (1999: 118).  Peter Carruthers, on the other hand, denies that domain specificity is a feature of all modules (2006: 6).  Fodor stipulated that modules are 'innately specified' (1983: 37, 119), and some theorists assume that modules, if they exist, must be innate in the sense of being implemented by neural regions whose structures are genetically specified (e.g. de Haan, Humphreys and Johnson 2002: 207; Tanaka and Gauthier 1997: 85); others hold that innateness is 'orthogonal' to modularity (Karmiloff-Smith 2006: 568).  There is also debate over how to understand individual properties modules might have (e.g. Hirschfeld and Gelman 1994 on the meanings of domain specificity; Samuels 2004 on innateness).
+  img.bkg(src='/img/slide_emergence_warwick_028.jpg')
+section.slide
+  img.bkg(src='/img/slide_emergence_warwick_029.jpg')
+section.slide
+  img.bkg(src='/img/slide_emergence_warwick_030.jpg')
+section.slide
+  .notes In short, then, theorists invoke many different notions of modularity, each barely different from others.  You might think this is just a terminological issue.  I want to argue that there is a substantial problem: we currently lack any theoretically viable account of what modules are.  The problem is not that 'module' is used to mean different things-after all, there might be different kinds of module.  The problem is that none of its various meanings have been characterised rigorously enough.  All of the theorists mentioned above except Fodor characterise notions of modularity by stipulating one or more properties their kind of module is supposed to have.  This way of explicating notions of modularity fails to support principled ways of resolving controversy.
+  .notes &nbsp;
+  .notes No key explanatory notion can be adequately characterised by listing properties because the explanatory power of any notion depends in part on there being something which unifies its properties and merely listing properties says nothing about why they cluster together.
+  .notes &nbsp;
+  .notes Interestingly, Fodor doesn't define modules by specifying a cluster of properties (pace Sperber 2001: 51); he mentions the properties only as a way of gesturing towards the phenomenon (Fodor 1983: 37) and he also says that modules constitute a natural kind (see Fodor 1983: 101 quoted above). 
+  img.bkg(src='/img/slide_emergence_warwick_031.jpg')
+section.slide
+  .notes It is tempting to appeal to spatial metaphors in thinking about modularity.  Just as academics tend to work at high-speed on domain-specific problems when they can cut themselves off from administrative centres, so we might attempt to explain the special properties of modules by saying that they are cut off from the central system.  But it isn't clear how to turn this metaphor into an explanation.  The spatial metaphor only gives us the illusion that we understand modularity.
+  img.bkg(src='/img/slide_emergence_warwick_032.jpg')
+section.slide
+  img.bkg(src='/img/slide_emergence_warwick_033.jpg')
+
+
+// back to the problems
+
++slide
+  .step1
+    .notes So what aim I suggesting.
+    .notes First that we treat core knowledge and modularity as terms for a single thing, whatever it is.
+    .notes This has the advantage that we can draw on Fodor's more detailed theorising about modularity.
+    p core knowledge = modularity
+  .slide.step2
+    .notes So the view we are considering is that
+    p.em-above.notes.show We have core knowledge (= modular representations) of the principles of object perception.
+  .slide.step3
+    .notes Does this help us with the two problems I mentioned earlier?
+    p.em-above two problems
+    ul.notes.show
+      .notes \begin{itemize}
+      li
+        span.notes \item 
+        | How does this explain the looking/searching discrepancy?
+      li
+        span.notes \item 
+        | Can appeal to core knowledge (/ modularity) be explanatory at all?
+      .notes \end{itemize}
+    +row-bkg('li:eq(1)','grey')
+    .notes Here we have the same problem as before.  If anything, invoking modularity makes it worse.
+    +row-bkg-remove_('li:eq(1)','grey')
+    +row-bkg('li:eq(0)','grey')
+    .notes But here our situation is better.  To see why, recall the properties of modules.
+
++slide
+  +properties_of_modules
+  +row-bkg('.limited-accessibility','grey')
+  .notes Limited accessibility explains why the representations might drive looking but not reaching.
+  .notes But doesn't the bare appeal to limited accessibility leave open why the looking and not the searching (rather than conversely)?
+  .notes I think not, given the assumption that searching is purposive in a way that looking is not.  (Searching depends on practical reasoning.)
+  .notes We'll come back to this later (if core knowledge of objects involves object files, it's easier to see why it affects looking but not actions like reaching.)
+  .notes &nbsp;
+  .notes Except, of course, calling this an explanation is too much.
+  .notes After all, limited accessibility is more or less what we're trying to explain.
+  .notes But this is the first problem --- the problem with the standard way of characterising modularity and core systems merely by listing features.
+
++slide_middle
+  p.center summary so far
+
+
+//*todo* this slide is duplicated from above
++slide
+  .step1
+    p core knowledge = modularity
+  .step2
+    p.em-above.notes.show We have core knowledge (= modular representations) of the principles of object perception.
+  .step3
+    p.em-above two problems
+    ul.notes.show
+      .notes \begin{itemize}
+      li
+        span.notes \item 
+        | How does this explain the looking/searching discrepancy?
+      li
+        span.notes \item 
+        | Can appeal to core knowledge (/ modularity) be explanatory at all?
+      .notes \end{itemize}
+    +row-bkg('li:eq(0)','grey')
+    +line-through('li:eq(0)')
+    +row-bkg-remove_('li:eq(0)','grey')
+    +row-bkg('li:eq(1)','grey')
+  
