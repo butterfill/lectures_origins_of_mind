@@ -1,0 +1,222 @@
+---
+layout: 'deck_unit'
+title: "Computation is the Real Essence of Core Knowledge"
+tags: []
+description: "What is core knowledge (= modular representation)?  We have seen (§231) that we cannot characterise an expalantory notion of core knowledge merely by listing features.  A better way of characterising core knowledge requires idenityfing the kind of process in which core knowledge occurs."
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/slide_mixins
+
+// *todo* duplicated!
+- qq = {}
+- qq.q1 = 'How do humans come to meet the three requirements on knowledge of objects?'
+- qq.q2 = 'What is the relation between the principles of object perception and infants’ looking behaviours?'
+- qq.q2a = 'Given that the simple view is wrong, what is the relation between the principles of object perception and infants’ competence in segmenting objects, object permanence and tracking causal interactions?'
+- qq.q2b = 'The principles of object perception result in ‘expectations’ in infants.  What is the nature of these expectations?'
+- qq.q3 = 'What is the relation between adults’ and infants’ abilities concerning physical objects and their causal interactions?'
+
+
+
++slide_middle
+  .notes Spelke and Carey characterise core knowledge by giving a list of features.
+  .notes This seems dubious.
+  .notes We then equated core knowledge with modular representation, following a suggested Spelke made at one point.
+  .notes This equation of core knowledge and modularity is useful in one respect.
+  .notes It is useful because Fodor has written a subtle philosophical book about modularity, so we can be confident that our notion is theoretically grounded.
+  .notes However, the problem remains that Fodor, like Spelke and Carey, introduces modularity merely by listing features.
+  .notes The key features for us are information encapsulation and limited accessibility.
+  .notes But in saying that infants' representations of objects have these features, we are really only saying what they are not.
+  .notes We haven't got very far past the problem I highlighted with the parable of the wrock.
+  .notes The question, then, is whether we can come up with a better way of characterising core knowledge (or modularity).
+  p.center the question
+ 
++slide_middle
+  .notes I want to approach this question indirectly, by appeal to Fodor's ideas about thinking generally.
+  .notes It will seem at first that I am going off topic.
+  p.center indirect approach
+ 
++slide
+  img(src='/img/fodor.jpg',style='-webkit-filter:contrast(150%);float:left')
+  p.notes.handout.show ‘modern philosophers … have no theory of thought to speak of.  I do think this is appalling; how can you seriously hope for a good account of belief if you have no account of belief fixation?’
+  p.right.grey-text (Fodor 1987: 147)
+  .handout.notes.ctd \citep[p.\ 147]{Fodor:1987rt}
+  .slide.step2
+    p.em-above.handout.notes.show ‘Thinking is computation’
+    p.right.grey-text (Fodor 1998: 9)
+    .handout.notes.ctd \citep[p.\ 9]{Fodor:1998ap}
+    .handout The Computational Theory of Mind: 
+    .handout.ctd \begin{enumerate}
+    .handout \item ‘Thoughts have their causal roles in virtue of, inter alia, their logical form.
+    .handout \item ‘The logical form of a thought supervenes on the syntac¬tic form of the corresponding mental representation.
+    .handout \item ‘Mental processes (including, paradigmatically, think¬ing) are computations, that is, they are operations defined on the syntax of mental representations, and they are reliably truth preserving in indefinitely many cases’
+    .handout.ctd \citep[pp.\ 18--19]{Fodor:2000cj}
+    .handout \end{enumerate}
+  .slide.step3
+    p.em-above three points of comparison
+    ul
+      li performance (patterns of success and failure)
+      li hardware
+      li program (symbols and operations vs. knowledge states and inferences)
+    +row-bkg('.step3 li:eq(2)')
+  +collapse('.step3')
+  .slide.step4
+    img(src='/img/fig_fodor_ctm.png')
+
++slide_middle
+  p.center thinking isn’t computation 
+    span.slide … Fodor’s own argument
+
+section.slide
+  .container_12
+    .grid_6
+      .words
+        p 1. Computational processes are not sensitive to context-dependent relations among representations.
+  .clear
+  .slide.container_12
+    .grid_6
+      .words
+        p 2. Thinking sometimes involves being sensitive to context-dependent relations among representations as such.
+    .grid_6
+      .words
+        p (e.g. the relation 
+          span.italic … is adequate evidence for me to accept that … 
+          span )
+  .clear
+  .slide.container_12
+    .grid_6
+      .words
+        p 3. Therefore, thinking isn’t computation.
+
+
+
++slide
+  p.handout.notes.show ‘the Computational Theory is probably true at most 
+    span.highlight1 of only the mind’s modular parts.  
+    span …  a cognitive science that provides some insight into the part of the mind that isn’t modular may well have to be different, root and branch’
+  p.right.grey-text (Fodor 2000: 99)
+  .handout.notes.ctd \citep[p.\ 99]{Fodor:2000cj}
+  +invert('.highlight1')
+
+
+// *todo* duplicates above
+section.slide
+  .container_12
+    .grid_5.step3.hide
+      .words
+        p 1. Computational processes are not sensitive to context-dependent relations among representations.
+        p.em-above 2. Thinking sometimes involves being sensitive to context-dependent relations among representations as such.
+        p.em-above 3. Therefore, thinking isn’t computation.
+        .handout Thinking isn't computation because:
+        .handout \begin{enumerate}
+        .handout \item Computational processes are not sensitive to context-dependent relations among representations.
+        .handout \item Thinking sometimes involves being sensitive to context-dependent relations among representations as such.
+        .handout \item Therefore, thinking isn’t computation \citep{Fodor:2000cj}.
+        .handout \end{enumerate}
+    .right-half-white
+      .grid_5.prefix_1
+        .words
+          .handout.notes.show
+            p If a process is not sensitive to context-dependent relations, it will exhibit:
+            ul
+              li
+                span.information-encapsulation information encapsulation;
+              li limited accessibility; and
+              li domain specificity.
+          p.right (Butterfill 2007)
+          .handout.notes.ctd \citep{Butterfill:2007pe}
+          .notes Why accept this?
+          +words-bkg('.information-encapsulation', 'blue')
+          .notes Consider information encapsulation
+          .notes Approximating evidential and relevance relations with relations that are not context dependent will require restricting the type of input the module is able to process.  (Contrast the question, What in general counts as evidence that this is the same face as that? with the question, Which featural information counts as evidence that this is the same face as that?)  This contributes to explaining why a Computational process is likely to be informationally encapsulated (to some extent): insensitivity to context dependent relations limits the range of inputs it can usefully accept.
+          +words-bkg-remove('.information-encapsulation', 'blue')
+          .slide ... but maybe not other properties 
+    +show('.step3')
+
++slide_middle
+  p.center computation is the real essence of core knowledge (/modularity)
+
++slide
+  .notes This answers some of the objections we considered earlier.
+  .step1
+    p.notes.show ‘there is a 
+      span.highlight1 paucity of … data
+      span  to suggest that they are the only or the best way of carving up the processing,
+    p.notes.show ‘and it 
+      span.highlight1 seems doubtful
+      span  that the often long lists of correlated attributes should come as a package’
+    .notes.ctd \citep[p.\ 759]{adolphs_conceptual_2010}
+    p.right Adolphs (2010 p. 759)
+  .slide.step2
+    p.notes.show.em-above ‘
+      span.highlight1 we wonder
+      span  whether the dichotomous characteristics used to define the two-system models 
+      | are … perfectly correlated …
+    p.ctd.notes [and] whether a hybrid system that combines characteristics from both systems could not be … viable’
+    .notes.ctd \citep[p.\ 537]{keren_two_2009}
+    p.right Keren and Schul (2009, p. 537)
+  .slide
+    .notes Even so, there is a problem here.
+    p.notes.show.em-above
+      | ‘the process architecture of social cognition is still very much in need of a detailed theory’
+    .notes.ctd \citep[p.\ 759]{adolphs_conceptual_2010}
+    p.right Adolphs (2010 p. 759)
+
+section.slide
+  .notes This proposal departs from Fodor's overall strategy.  Fodor starts by asking what thinking is, and answers that it's a special kind of Computational process.  He then runs into the awkward problem that such Computation only happens in modules, if at all.  Instead of taking this line, we started by asking what modularity is.  The answer I'm suggesting is that modular cognition is a Computational process.  On this way of looking at things, that such Computation only happens in modules is a useful result because enables us to identify what is distinctive of modular cognition.
+  .container_12
+    .left-half-white
+      .grid_5.prefix_1: .words
+        p.center Fodor
+        p.em-above Q: What is thinking?
+        p.em-above A: Computation
+        p.em-above Awkward Problem: Fodor’s Computational Theory only works for modules
+    // *todo* shoudln't work like this
+    .grid_5.prefix_7: .words
+      p.center(style='-webkit-transform:rotate(180deg)') Fodor
+      p.em-above Q: What is modularity?
+      p.em-above A: Computation
+      p.em-above Useful Consequence: Fodor’s Computational Theory describes a process like thinking
+
+  
+//*todo* this slide is duplicated from previous section
++slide
+  .notes Here's where we were at the end of the previous section.
+  .notes The question was, Can appeal to core knowledge (/ modularity) explain anything?
+  .notes Have we made any progress?
+  .step1
+    p core knowledge = modularity
+  .step2
+    p.em-above.notes.show We have core knowledge (= modular representations) of the principles of object perception.
+  .step3
+    p.em-above two problems
+    ul
+      li.line-through How does this explain the looking/searching discrepancy?
+      li.bkg-grey-row Can appeal to core knowledge (/ modularity) explain anything?
+  
+
++slide
+  .notes So how far have we got with respect to the three questions?
+  p questions
+  .notes.show 
+    p.em-above.step4.hide 1. #{qq.q1}
+    p.em-above.step2.hide 2a. #{qq.q2a}
+    p.em-above.step3.hide 2b. #{qq.q2b}
+    p.em-above.step1 3. #{qq.q3}
+    .notes With respect to the third question, we have made no progress unless we assume that modules are continuous throughout development.  But our little theory of modularity doesn't tell us this.
+    +blur_('.step1')
+    +show('.step2')
+    .notes With respect to question 2a, our claim is that the principles are not knowledge but core knowledge, or modular representations; or else that they describe the operations of a module.
+    .notes Note that we have yet to say which module they describe.
+    .notes At this point, we suppose they are part of a sui generis module that is concerned with physical objects and their causal interactions.
+    +blur_('.step2')
+    +show('.step3')
+    .notes With respect to question 2b, again the idea is that the expectations are modular representations.
+    +blur_('.step3')
+    +show('.step4')
+    .notes And with respect to question 1, our current answer is that humans meet the three requirements (abilities to segment, &c) by virtue of a module or core knowledge system that is in place from around six months of age or earlier.

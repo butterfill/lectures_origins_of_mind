@@ -1,0 +1,83 @@
+---
+layout: 'deck_unit'
+title: "Object Indexes and Causal Interactions"
+tags: []
+description: "Core knowledge of objects is a consequence of object indexes."
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/slide_mixins
+
++slide_middle
+  p.center Attention to Objects
+  
++slide
+  .notes (from figure caption): ' A number (here eight) of identical objects are shown (at t = 1), and a subset (the `targets') is selected by, say,  ̄ashing them (at t 􏰈 2), after which the objects move in unpredictable ways (with or without self-occlusion) for about 10 s. At the end of the trial the observer has to either pick out all the targets using a pointing device or judge whether one that is selected by the experimenter (e.g. by  ̄ashing it, as shown at t 􏰈 4) is a target.' \citep[p.\ 142]{Pylyshyn:2001hl}
+  .notes Highlight the case where subject is asked whether this is one of the objects identified.
+  .notes (If a target disappears, subjects can also say where it was and which direction it was moving in.)
+  .notes Limit of 3, maybe 4, objects will be important later.
+  +img_clip('pylyshyn_2001_fig6.png','rect(0, 200px, 300px, 0)')
+  +clip('img:eq(0)','rect(0, 370px, 300px, 0)')
+  +clip('img:eq(0)','rect(0, 530px, 300px, 0)')
+  +clip('img:eq(0)','auto')
+  p.source Pylyshyn 2001, figure 6
+  .notes What does this tell us?
+  .notes If attention is organised around objects, the perceptual system must be capable of identifying and tracking objects.
+  .slide
+    p.center object index (/ FINST)
+    .notes Leslie et al say an object index is 'a mental token that functions as a pointer to an object' \citep[p.\ 11]{Leslie:1998zk}
+    .notes 'Pylyshyn's FINST model: you have four or five indexes which can be attached to objects; it's a bit like having your fingers on an object: you might not know anything about the object, but you can say where it is relative to the other objects you're fingering. (ms. 19-20)' \citep{Scholl:1999mi}
+    
++slide
+  p object indexes require segmentation
+  p.slide.em-above  object indexes can survive occlusion
+  p.slide.em-above object indexes require tracking some causal interactions ...
+
++slide({bkg:'slide_causal_london_52.jpg'})
+  .notes Object indexes are linked to causation.
+  .notes - in order to track objects, has to be sensitive to be causal interactions
+  .notes - why is this true?
+  .notes - a clue: when you have a causal interaction, there's a conflict between principles of object perception e.g. distinct surfaces=>two objects, vs good continuity of motion=>one object
+  .notes - perceptual system needs to know when conflicts should be reconciled and when they should be written off
+  .notes - get perceptual effects of causal interactions when there are conflicts among cues of object identity
+  .notes There is a range of evidence that perception of objects is closely linked to causal perception.
+  .notes First, Michotte argued for such a link on the basis of his finding that launching occurs when there is a conflict between cues to object identity: good continuity of movement suggests a single object whereas the existence of two distinct surfaces indicates two objects.
+  .notes It is plausible that other types of causal interaction also involve conflicts between cues to object identity.
+  .notes Second, as we saw above Scholl and Nakayama (2004) have shown that when a sequence involving complete overlap between two objects is perceived as a launching event, subjects perceive an illusory crescent as if the overlap were only partial.  They conclude that “the perception of causality can also affect other types of visual processing—in this case the perception of spatial relations among moving objects” (2004: 467).
+  .notes Third, as we're about to see, Krushke and Fragassi (1996) have shown that the object-specific preview effect vanishes in launching but not in various spatio-temporally similar sequences.  Since the object-specific preview effect is regarded as diagnostic of feature binding, this is evidence that in launching sequences, features of the second object (such as motion) remain bound to the first object for a short time after the second object starts to move. 
+  
++slide
+  .notes Background: object-specific preview effect
+  .notes We can measure object indexes using the object-specific preview effect.
+  .notes.handout  The \emph{object-specific preview effect}: ‘observers can identify target letters that matched the preview letter from the same object faster than they can identify target letters that matched the preview letter from the other object.’ 
+  .notes.handout.ctd \citep[p.\ 2]{Krushke:1996ge}
+  +img_clip('kahneman_1992_fig3.png','rect(5px,175px, 600px, 0)')
+  +clip('img:eq(0)','rect(5px,315px, 600px, 0)')
+  +clip('img:eq(0)','auto')
+  p.source Kahneman et al 1992, figure 3
+  
++slide({bkg:'slide_krushke.jpg'})
+  .notes Krushke and Fragassi (1996) have shown that the object-specific preview effect vanishes in launching but not in various spatio-temporally similar sequences.  Since the object-specific preview effect is regarded as diagnostic of feature binding, this is evidence that in launching sequences, features of the second object (such as motion) remain bound to the first object for a short time after the second object starts to move.
+
++slide
+  p.handout.notes.show ‘objects are conceived: Humans come to know about an object’s unity, boundaries, and persistence in ways like those by which we come to know about its material composition or its market value.’ 
+  .notes.handout.ctd \citep[p.\ 198]{Spelke:1988xc}.
+  p.right Spelke et al 1988, p. 198
+
++slide_middle
+  .notes Human adults are able to attend to multiple moving objects simultaneously.
+  .notes They are able to do this thanks to a modular perceptual process.
+  .notes This process segments objects, represents them when occluded, and tracks some causal interactions.
+  .notes So plausibly core knowledge of objects is an epiphenomenon this perceptual process.
+  p.center.handout.notes.show core knowledge of objects is a consequence of object indexes
+  .handout.notes.ctd \citep{Leslie:1998zk,Carey:2001ue}
+  p.right Leslie et al (1998)
+
+  
++slide({bkg:'slide_causation_development.jpg'})
+  

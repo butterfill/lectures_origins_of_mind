@@ -2,7 +2,7 @@
 layout: 'deck_unit'
 title: "Core Knowledge and Modularity"
 tags: []
-?description: "What Is Core Knowledge?  How Is It Related to Modularity"
+description: "What Is Core Knowledge?  How Is It Related to Modularity"
 depends: ['']
 source: ['']
 duration: 5
@@ -24,6 +24,20 @@ include ../../../fragments/slide_mixins
   p.center the question
 
 +slide
+  .notes I noted earlier that Hood suggests that answering this question requires that we 
+    | recognize separable systems of mental representation and different kinds of knowledge. 
+  .notes Now I'm going to try to make good on this idea.
+  p.handout.notes.show
+    span.blur1 ‘there are 
+    span.noblur many separable systems of mental representations 
+    span.blur1 ... and 
+    span.noblur thus many different kinds of 
+      span.highlight2 knowledge. 
+    span.blur1 ... the task ... is to contribute to the enterprise of finding the distinct systems of mental representation and to understand their development and integration’
+    span.handout.notes \citep[p.\ 1522]{Hood:2000bf}.
+  p.right.blur1 (Hood et al 2000, p.\ 1522)
+
++slide
   .notes Core knowledge is a label for what we need.
   .notes I'm going to adopt the label.
   .notes But this only amounts to labelling the problem, not to solving it.
@@ -36,56 +50,59 @@ include ../../../fragments/slide_mixins
     .handout.ctd \citep[p.\ 517]{Carey:1996hl}
     p.right
       span (Carey and Spelke 1996: 517)
-    +blur('p :not(.noblur1)')
+    +blur('.step1 p :not(.noblur1)')
     .notes So talk of core knowledge is somehow supposed to latch onto the idea of a system.
     .notes What do these authors mean by talking about 'specialized perceptual systems'?
     .notes They talk about things like perceiving colour, depth or melodies.
     .notes Now, as we saw when talking about categorical perception of colour, we can think of the 'system' underlying categorical perception as largely separate from other cognitive systems--- we saw that they could be knocked out by verbal interference, for example.
     .notes So the idea is that core knowledge somehow involves a system that is separable from other cognitive mechanisms.
     .notes As Carey rather grandly puts it, understanding core knowledge will involve understanding something about 'the architecture of the mind'.
-    +unblur_('p :not(.noblur1)')
+    +unblur_('.step1 p :not(.noblur1)')
     +blur_('.step1')
-    .slide.step2
-      p.em-above.handout.show
-        // ‘core systems are conceptual and provide a foundation for the growth of knowledge.  …
-        span ‘core systems are 
-        span.q1 largely innate
-        span , 
-        span.q2 encapsulated
-        span , and 
-        span.q3 unchanging
-        span , 
-        span.q4 arising from phylogenetically old systems 
-        span.q5 built upon the output of innate perceptual analyzers
-        span.q6 .’ 
-      .handout.ctd \citep[p.\ 520]{Carey:1996hl}
-      p.right (Carey and Spelke 1996: 520)
-      +blur('.step2 p :not(.q1)')
-      +unblur_('.step2 p :not(.q1)')
-      +blur('.step2 p :not(.q2)')
-      +unblur_('.step2 p :not(.q2)')
-      +blur('.step2 p :not(.q3)')
-      +unblur_('.step2 p :not(.q3)')
-      +blur('.step2 p :not(.q4)')
-      +unblur_('.step2 p :not(.q4)')
-      +blur('.step2 p :not(.q5)')
-      +unblur_('.step2 p :not(.q5)')
-      +blur_('.step2')
-    .slide.step3
-      p.em-above representational format: iconic (Carey 2009)
-      .notes To say that a represenation is iconic means, roughly, that parts of the representation represent parts of the thing represented.
-      .notes Pictures are paradigm examples of representations with iconic formats.
-      .notes For example, you might have a picture of a flower where some parts of the picture represent the petals and others the stem.
-    +unblur('.step2')
-    .notes Suppose we accept that there are core systems with this combination of features.
-    .notes Then we can use the term 'core knowledge' to mean the representations in these core systems.
-    .handout A piece of \emph{core knowledge} is a representation in a core system.
-    .notes The hope is that this will help us with the second question.
+  .slide.step2
+    p.em-above.handout.show
+      // ‘core systems are conceptual and provide a foundation for the growth of knowledge.  …
+      span ‘core systems are 
+      span.q1 largely innate
+      span , 
+      span.q2 encapsulated
+      span , and 
+      span.q3 unchanging
+      span , 
+      span.q4 arising from phylogenetically old systems 
+      span.q5 built upon the output of innate perceptual analyzers
+      span.q6 .’ 
+    .handout.ctd \citep[p.\ 520]{Carey:1996hl}
+    p.right
+      span (Carey and Spelke 1996: 520)
+    +blur('.step2 p :not(.q1)')
+    +unblur_('.step2 p :not(.q1)')
+    +blur('.step2 p :not(.q2)')
+    .notes For something to be informationally encapsulated is for its operation to be unaffected by the mere existence of general knowledge or representations stored in other modules (Fodor 1998b: 127)
+    +unblur_('.step2 p :not(.q2)')
+    +blur('.step2 p :not(.q3)')
+    +unblur_('.step2 p :not(.q3)')
+    +blur('.step2 p :not(.q4)')
+    +unblur_('.step2 p :not(.q4)')
+    +blur('.step2 p :not(.q5)')
+    +unblur_('.step2 p :not(.q5)')
+    +blur_('.step2')
+  .slide.step3
+    p.em-above representational format: iconic (Carey 2009)
+    .notes To say that a represenation is iconic means, roughly, that parts of the representation represent parts of the thing represented.
+    .notes Pictures are paradigm examples of representations with iconic formats.
+    .notes For example, you might have a picture of a flower where some parts of the picture represent the petals and others the stem.
+  +unblur('.step2')
+  .notes Suppose we accept that there are core systems with this combination of features.
+  .notes Then we can use the term 'core knowledge' to mean the representations in these core systems.
+  .handout A piece of \emph{core knowledge} is a representation in a core system.
+  .notes The hope is that this will help us with the second question.
 
 +slide_middle
   .notes Consider this hypothesis.
   .notes The principles of object perception, and maybe also the expectations they give rise to, are not knowledge.
   .notes But they are core knowledge.
+  .handout The \emph{revised view}: the principles of object perception are not knowledge, but they are core knowledge.
   .notes But look at those features again --- innate, encapsulated, unchanging and the rest.
   .notes None of these straightforwardly enable us to predict that core knowledge of objects will guide looking but not reaching.
   .notes So the \emph{first problem} is that (at this stage) it's unclear what we gain by shifting from knowledge to core knowledge.
@@ -100,18 +117,31 @@ include ../../../fragments/slide_mixins
   .notes But why suppose that this particular list of features constitutes a natural kind?
   .notes This worry has been brought into sharp focus by criticisms of 'two systems' approaches.
   .notes (These criticisms are not directed specifically at claims about core knowledge, but the criticisms apply.)
-  .handout \subsection{Objection}
-  p.handout.notes.show ‘there is a paucity of … data to suggest that they are the only or the best way of carving up the processing,
-  p.handout.notes.show ‘and it seems doubtful that the often long lists of correlated attributes should come as a package’
-  .handout.notes.ctd \citep[p.\ 759]{adolphs_conceptual_2010}
-  p.right Adolphs (2010 p. 759)
-  .slide
-    p.handout.notes.show.em-above ‘we wonder whether the dichotomous characteristics used to define the two-system models
+  .step1
+    .handout \subsection{Objection}
+    p.handout.notes.show ‘there is a 
+      span.highlight1 paucity of … data
+      span  to suggest that they are the only or the best way of carving up the processing,
+    p.handout.notes.show ‘and it 
+      span.highlight1 seems doubtful
+      span  that the often long lists of correlated attributes should come as a package’
+    .handout.notes.ctd \citep[p.\ 759]{adolphs_conceptual_2010}
+    p.right Adolphs (2010 p. 759)
+  .slide.step2
+    p.handout.notes.show.em-above ‘
+      span.highlight1 we wonder
+      span  whether the dichotomous characteristics used to define the two-system models 
       | are … perfectly correlated …
     p.handout.ctd.notes [and] whether a hybrid system that combines characteristics from both systems could not be … viable’
     .handout.notes.ctd \citep[p.\ 537]{keren_two_2009}
     p.right Keren and Schul (2009, p. 537)
+  +words-bkg('.highlight1','pink')
+  .notes This is weak.
+  .notes Remember that criticism is easy, especially if you don't have to prove someone is wrong.
+  .notes Construction is hard, and worth more.
+  +blur('.step1, .step2')
   .slide
+    .notes Even so, there is a problem here.
     p.handout.notes.show.em-above
       | ‘the process architecture of social cognition is still very much in need of a detailed theory’
     .handout.notes.ctd \citep[p.\ 759]{adolphs_conceptual_2010}
@@ -136,7 +166,7 @@ include ../../../fragments/slide_mixins
         span How does this explain the looking/searching discrepancy?
       li
         span.notes \item 
-        span Can appeal to core knowledge be explanatory at all?
+        span Can appeal to core knowledge explain anything?
       .notes \end{itemize}
   +blur('.step1, .step2')
   .notes This looks like the sort of problem a philospoher might be able to help with.
@@ -177,6 +207,7 @@ mixin properties_of_modules()
     li
       strong information encapsulation
       p modules are unaffected by general knowledge or representations in other modules
+      .notes For something to be informationally encapsulated is for its operation to be unaffected by the mere existence of general knowledge or representations stored in other modules (Fodor 1998b: 127)
     li
       strong innateness 
       p roughly, the information and operations of a module not straightforwardly consequences of learning
@@ -237,7 +268,7 @@ section.slide
         | How does this explain the looking/searching discrepancy?
       li
         span.notes \item 
-        | Can appeal to core knowledge (/ modularity) be explanatory at all?
+        | Can appeal to core knowledge (/ modularity) explain anything?
       .notes \end{itemize}
     +row-bkg('li:eq(1)','grey')
     .notes Here we have the same problem as before.  If anything, invoking modularity makes it worse.
@@ -276,7 +307,7 @@ section.slide
         | How does this explain the looking/searching discrepancy?
       li
         span.notes \item 
-        | Can appeal to core knowledge (/ modularity) be explanatory at all?
+        | Can appeal to core knowledge (/ modularity) explain anything?
       .notes \end{itemize}
     +row-bkg('li:eq(0)','grey')
     +line-through('li:eq(0)')

@@ -160,7 +160,7 @@ mixin slide_img(filename)
 // see also +clip to modify the clip as an animation
 mixin img_clip(filename, theClip)
   div(style='position:relative;')
-    img(src='/img/#{filename}', style="clip: #{theClip}; position: absolute; max-width:720px;")
+    img(src='/img/#{filename}', style="clip: #{theClip}; position: absolute; max-width:720px; max-height:550px;")
 
 
 
@@ -373,6 +373,8 @@ mixin words-bkg-remove-all(what, container)
 mixin row-bkg(what, color, container)
   if typeof(what)==='string'
     - what = [what]
+  if !color
+    color = 'grey'
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-#{color}-row")
     if color=='white'
@@ -382,6 +384,8 @@ mixin row-bkg(what, color, container)
 mixin row-bkg-remove_(what, color, container)
   if typeof(what)==='string'
     - what = [what]
+  if !color
+    color = 'grey'
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-#{color}-row")
     if color=='white'

@@ -674,6 +674,14 @@ table.fitch-proof td.last-premise {
   height: 150px;
   width: 150px;
 }
+.deck-container .photobox-bottom-left {
+  float: left;
+  position: absolute;
+  top: 400px;
+  left: 0px;
+  height: 150px;
+  width: 150px;
+}
 /**
  * used by btm-white, btm-black
  */

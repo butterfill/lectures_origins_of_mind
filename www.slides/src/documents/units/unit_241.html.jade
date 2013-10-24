@@ -13,6 +13,94 @@ exercises_fast: []
 
 include ../../../fragments/slide_mixins
 
+// * incomplete
+// * abandoned
+
++slide_middle
+  p.center edge detection
+
++slide({bkg:'edge_detection.jpg'})  
+  .notes We don't know intuitively how it works (limited accessibility)
+  .notes It is subject to illusions (eg paintings) (information encapsulation)
+  .notes It is a separable problem (domain specificity)
+
+section.slide
+  .notes Maximum grip aperture shows anticipation of the object.
+  .notes As before, it has the features of limited accessibility, information encapsulation and domain specificity.
+  .container_12
+    .grid_4
+      .words
+        p maximum grip aperture
+        p.right (source: Jeannerod 2009, figure 10.1)
+    .grid_8
+      img(src='/img/jeannerod_2009_fig10-1.png', style='max-height:600px;')
+
+
++slide
+  .notes It's not only that vision and action are not directly influenced by judgement.
+  .notes They also seem to be partially separable from each other.
+  p illusions
+  p Roelofs effect (Bridgeman 1999, 2002); size-weight illusion (Flanagan et al 2009)---
+  p.indent affect vision but not action
+  p.em-above Titchner illusion---
+  .notes on Titchner see \citep{glover:2002_dynamic}; on the need to distinguish planning from online control, see \citep{glover:2002_visual}
+  p.indent affects vision but not action
+  
++slide_middle
+  p.center two systems of object representation?
+  p.right (Milner & Goodale 1995)
+
++slide
+  p The standard view
+  table
+    tr
+      td
+      td visual ataxia
+      td optic ataxia
+    tr
+      td perception
+      td impaired
+      td intact
+    tr
+      td action
+      td spared
+      td intact
+  p.source Rossetti et al 2010
+
++slide
+  table
+    tr
+      td
+      td visual ataxia
+      td optic ataxia
+    tr
+      td object recognition in perhipheral vision
+      td ???
+      td impaired
+    tr
+      td object recognition in central vision
+      td impaired
+      td spared
+    tr
+      td grasping in perhipheral vision
+      td ???
+      td impaired
+    tr
+      td grasping in central vision
+      td spared
+      td spared
+  p.source Rossetti et al 2010
+
++slide
+  p.center summary
+  ol
+    li Illusions provide evidence for information encapsulation and limited accessibility
+    li ... so do patterns of deficit;
+    li but we need to avoid too simple conclusions
+    li because the underlying brain networks are diverse.
+    li Appeal to perceptual and motor systems can provide a model.
+  .notes So what am I saying?
+
 
 
 // structure: (1) modularity --- general solution to the problem
@@ -27,26 +115,3 @@ include ../../../fragments/slide_mixins
 // - (b) reflect on categorical perception: maybe it's development as rediscovery
 // *also want to work in Michotte -- second take on physical interactions
 
-
-// ------------------
-// perceptual expectations
-// *what is it like to be an infant*
-// *TODO* belongs later!!!
-
-+slide
-  +img_clip('kellman_1983_fig2.png', 'rect(0px,530px,186px,265px)')
-  p.source Michotte et al (1964) via Kellman & Spelke (1983, figure 2)
-  .notes There are perceptual expectations.
-  .notes Suppose you saw this image.
-  .notes The triangle behind the thumb is in some sense perceptually present, even though you can't see it.
-  +clip('img','auto')
-  .notes But now the thumb comes away and what you see is not the triangle you were expecting.
-  .notes Could these perceptual expectations be just a matter of knowledge?
-  .notes No, because perceptual expectations are judgement-independent.
-  .notes As \citep{kellman:1983_perception} report, Michotte, Thines and Crabbe found that subjects report seeing a single large triangle behind the thumb even when they know that there isn't one there.
-  .notes You can cover and reveal the triangles repeatedly, but the expectation will hold firm.
-  .notes &nbsp;
-  .notes The experience you have when the thumb is removed is like that of infants' in violation-of-expectation tasks.
-  .notes This is what it is like to be an infant.
-
-  

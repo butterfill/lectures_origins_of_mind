@@ -1,0 +1,813 @@
+ %!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%\def \papersize {a5paper}
+\def \papersize {a4paper}
+%\def \papersize {letterpaper}
+
+%\documentclass[14pt,\papersize]{extarticle}
+\documentclass[12pt,\papersize]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Origins of Mind: Lecture Notes}
+\def \isubtitle {Lecture 02}
+%comment some of the following out depending on whether anonymous
+\def \iauthor {Stephen A.\ Butterfill}
+\def \iemail{s.butterfill@warwick.ac.uk% \& corrado.sinigaglia@unimi.it
+}
+%\def \iauthor {}
+%\def \iemail{}
+%\date{}
+
+%\input{$HOME/Documents/submissions/preamble_steve_paper3}
+\input{$HOME/Documents/submissions/preamble_steve_report2}
+
+%no indent, space between paragraphs
+\usepackage{parskip}
+
+%comment these out if not anonymous:
+%\author{}
+%\date{}
+
+%for e reader version: small margins
+% (remove all for paper!)
+%\geometry{headsep=2em} %keep running header away from text
+%\geometry{footskip=1.5cm} %keep page numbers away from text
+%\geometry{top=1cm} %increase to 3.5 if use header
+%\geometry{bottom=2cm} %increase to 3.5 if use header
+%\geometry{left=1cm} %increase to 3.5 if use header
+%\geometry{right=1cm} %increase to 3.5 if use header
+
+% disables chapter, section and subsection numbering
+\setcounter{secnumdepth}{-1} 
+
+%avoid overhang
+\tolerance=5000
+
+%\setromanfont[Mapping=tex-text]{Sabon LT Std} 
+
+
+%for putting citations into main text (for reading):
+% use bibentry command
+% nb this doesn’t work with mynewapa style; use apalike for \bibliographystyle
+% nb2: use \nobibliography to introduce the readings 
+\usepackage{bibentry}
+
+%screws up word count for some reason:
+%\bibliographystyle{$HOME/Documents/submissions/mynewapa} 
+\bibliographystyle{apalike} 
+
+
+\begin{document}
+
+
+
+\setlength\footnotesep{1em}
+
+
+
+
+
+
+%--------------- 
+%--- start paste
+
+
+
+\title {Origins of Mind: Lecture Notes \\ Lecture 04}
+ 
+\maketitle
+ 
+ 
+\subsection{slide-3}
+In this lecture I want to consider two interlocking themes simultaneously.
+These are (i) knowledge of physical objects; and (ii) knowledge/representation/modularity.
+ 
+ 
+\subsection{slide-4}
+I got some feedback.
+ 
+ 
+\subsection{slide-7}
+I'm very curious to know whether the two hour lecture is better than two one hour lectures on different days.
+I'm also tempted to add an hour of lectures.
+ 
+ 
+\subsection{slide-10}
+But that isn't the main issue raised in the feedback.
+In response to this feedback I propose to (i) provide a recap from last lecture; (ii) outline this lecture; (iii) try to signppost more clearly as I go (there is a coherent structure, I'm maybe just not explaining it clearly enough); and (iv) try to be clearer in the summary \& conclusion at the end.
+ 
+ 
+\subsection{slide-11}
+I aim at some point to provide a glossary.
+To that end it would be helpful if you would stop me whenever I use a term you don't understand.
+ 
+ 
+\subsection{unit\_221}
+ 
+\section{Recap: Three Questions}
+ 
+ 
+\subsection{slide-13}
+As today's lecture builds directly last weeks' lecture on knowledge of physical objects, let me start with a recap.
+ 
+ 
+\subsection{slide-14}
+Knowledge of objects depends on abilities to (i) segment objects, (ii) represent them as persisting and (iii) track their interactions.
+\emph{Question 1} How do humans come to meet the three requirements on knowledge of objects?
+Until quite recently it was held, following Piaget and others, that these three abilities appeared relatively late in development.
+However, as we saw last week, more recent investigations provide strong evidence that all three abilities are present in humans from around four months of age or earlier.
+Infants' looking behaviours indicate that they have expectations concerning segmentation, persistence and causal interactions.
+\emph{Discovery 1} Infants manfiest all three abilities from around four months of age or earlier.
+ 
+ 
+\subsection{slide-15}
+We also saw that infants' abilities to segement objects, represent them as persisting and track their causal interactions can be described by appeal to a single set of principles, the principles of cohension, boundedness, rigidity and no action at a distance.
+This suggests that \emph{Discovery 2} Although abilities to segment objects, to represent them as persisting through occlusion and to track their causal interactions are conceptually distinct, they may all be consequences of a single mechanism (in humans and perhaps in other animals).
+Spelke suggests, further, that these principles of object perception explain infants' looking behaviours.
+This means we must ask \emph{Question 2} What is the relation between the principles of object perception and infants’ looking behaviours?
+ 
+ 
+\subsection{slide-16}
+In answer to Q2, I suggested that we start with the simple view.
+The \emph{simple view} is the view that the principles of object perception are things that we know, and we generate expectations from these principles by a process of inference.
+The attraction of the simple view is that it promises to explain infants' sensitivity to objects' boundaries, their persistence and their causal interactions as manifested in a variety of looking behaviours.
+ 
+ 
+\subsection{slide-17}
+The problem for the simple view is that it makes exactly the wrong prediction about infants' reaching behaviours.
+This problem arises twice, once for object permanence and again for causal interactions.
+In the case of object permanence, the problem is that four and five month old infants appear to be surprised when a solid object is placed behind a drawbridge and then the drawbridge rotates back 180 degrees as if the object wasn't there. But if you put a desirable object behind a screen, these infants won't ever search behind the screen for the object. So if we measure their looking behaviours, they seem to know that an object is behind the screen; but if we measure their searching behaviours they seem not to know this.
+ 
+ 
+\subsection{slide-18}
+The problem for the simple view is that it correctly predicts looking behaviours but not searching behaviours.
+This problem arises a second time in the case of infants' abilities to track causal interactions.
+Suppose you roll a ball down this ramp and remove it from behind one of the doors.
+You can predict where the ball will stop because you can see this barrier sticking up here.
+2 and 2.5 year olds will look longer if you remove it from any door other than the right one.
+These children and infants can also predict the location of the object (not just identify a violation, but look forward to where the object is) \citep{mash:2006_what}.
+But if you ask them to remove the ball (and offer them a reward for doing so), the two year olds will typically choose a favourite door to open every time regardless of where the barrier is (incidentally this is not random but seems to be based on momentum \citep{perry:2008_representational}), and the 2.5 year olds will choose a door adjacent to the barrier but do not prefer the door on the correct side of the barrier.
+The failure to reach is a problem for the simple view because it predicts that children will correctly retrieve the ball.
+ 
+ 
+\subsection{slide-19}
+\emph{Discovery 3} The simple view generates systematically false predictions (about reaching).
+So we have to reject it.
+We were led to the simple view by Question 2, What is the relation between the principles of object perception and infants' looking behaviours?
+\emph{Question 2a} Given that the simple view is wrong, what is the relation between the principles of object perception and infants’ competence in segmenting objects, object permanence and tracking causal interactions?
+Infants abilities to segment objects, represent them as persisting and to track their causal interactions involve what many researchers call 'expectations'.
+What is the nature of these expectations? On the simple view, these expectations are knowledge states or beliefs. But the systematic discrepancies between looking and searching provides compelling evidence that they are not.
+So what are these expectations?
+\emph{Question 2b} The principles of object perception result in ‘expectations’ in infants. What is the nature of these expectations?
+ 
+ 
+\subsection{slide-20}
+We'll see later that the problem is quite general.
+It doesn't arise only in the case of knowledge of objects but also in other domains (like knowledge of number and knowledge of mind).
+And it doesn't arise only from evidence about infants or nonhuman primates; it would also arise if our focus were exclusively on human adults.
+More on this later.
+For now, our aim is to consider proposed solutions to the problem.
+ 
+ 
+\subsection{slide-21}
+Why is this important?
+The discovery of infant abilities presents us with a dilemma.
+If we follow researchers like Michael Tomasello in dismissing infants' abilities to focus on social interactions, culture and language, we miss something important about the origins of knowledge. We will miss the fact that coming to know things about physical objects (and colours, and mind and more besides) involves multiple layers of representation.
+But if we follow researchers like Spelke and Baillargeon is discussing infants' abilities as if they were based on knowledge, belief and inference, we will also miss something important about the origins of knowledge. We will miss the fact that infants' abilities, although essential for later developments, are only indirectly related to the knowledge of physical objects that adult humans enjoy.
+The challenge is to avoid this dilemma, to provide a theoretical framework that will allow us to understand how infants' abilities support the emergence of knowledge without themselves amounting to knowledge.
+ 
+ 
+\subsection{slide-22}
+Before attempting to answer these questions, I want to throw in a new one.
+\emph{Question 3} What is the relation between adults’ and infants’ abilities concerning physical objects and their causal interactions?
+ 
+ 
+\subsection{slide-28}
+So we have the three questions on your handout that we are trying to answer.
+ 
+ 
+\subsection{slide-30}
+I'll start by focussing on this question; it's the key to answering the others.
+ 
+ 
+\subsection{slide-31}
+In outline, this is what we'll do.
+Non-solutions matter because they give us a better understanding of the questions.
+ 
+ 
+\subsection{unit\_230}
+ 
+\section{The Parable of the Wrock}
+ 
+ 
+\subsection{slide-41}
+There are principles of object perception that explain abilities to segment objects, to represent them while temporarily unperceived and to track their interactions.
+These principles are not known. What is their status?
+ 
+ 
+\subsection{slide-42}
+One hopeful alternative is to shift from talk about knowlegde to talk about representation.
+Will this help?
+Only as a way of describing the problem.
+We need to say what we mean by representation.
+The term is used in a wide variety of ways.
+As I use it, representation is just a generic term covering knowledge, belief and much else besides.
+ 
+ 
+\subsection{slide-43}
+subject - attitude - content
+ 
+ 
+\subsection{slide-44}
+So to say that we don't know the principles of object perception but only represent them doesn't tell us much.
+This is a step in the right direction.
+But it tells us that we represent them without knowing them.
+But what we need if we're to have an explanatory answer to Q2a is to know positively how we do represent the principles of object perception --- subject, attitude and content.
+We need to characterise a form of representation that is like knowledge but not like knowledge.
+ 
+ 
+\subsection{slide-45}
+Your handbag is bluging, and when you swing it at me something really hard hits me.
+It must be full of rocks.
+Except it can't be because you are not strong enough to lift such a big bag full of rocks.
+In that case, it must be wrocks not rocks.
+A wrock is just like a rock except that it lacks mass.
+Compare: this representation is just like knowledge except that it doesn't guide action; this process is just like inference except that it lacks the normative aspects of inference.
+ 
+ 
+\subsection{slide-46}
+Here's another bad move. It's not introducing wrock; .notes instead it is adding a new parameter to the account that is perfect for solving the problem.
+\citet{Munakata:2001ch} suggests that there are 'graded representations', that is knowlegde can be stronger or weaker.
+Presupposes we have an account of subject, attitude and content. Let's grant that.
+What is strength? Some additional component, over and above subject, attitude and content.
+The idea is quite intuitive but difficult to make systematic sense of.
+The idea might well make sense if we were talking about neural representations.
+But here we aren't. Let's not introduce radically new ideas about representation unless we really have to.
+(By the way, \citet{Munakata:2001ch} is a nice review of dissociations, not only developmental dissociations.)
+ 
+ 
+\subsection{unit\_231}
+ 
+\section{Core Knowledge and Modularity}
+ 
+ 
+\subsection{slide-48}
+There are principles of object perception that explain abilities to segment objects, to represent them while temporarily unperceived and to track their interactions.
+These principles are not known. What is their status?
+ 
+ 
+\subsection{slide-49}
+I noted earlier that Hood suggests that answering this question requires that we recognize separable systems of mental representation and different kinds of knowledge.
+Now I'm going to try to make good on this idea.
+‘there are many separable systems of mental representations ... and thus many different kinds of knowledge. ... the task ... is to contribute to the enterprise of finding the distinct systems of mental representation and to understand their development and integration’\citep[p.\ 1522]{Hood:2000bf}.
+\citep[p.\ 1522]{Hood:2000bf}.
+ 
+ 
+\subsection{slide-50}
+Core knowledge is a label for what we need.
+I'm going to adopt the label.
+But this only amounts to labelling the problem, not to solving it.
+ 
+ 
+\subsection{slide-53}
+So talk of core knowledge is somehow supposed to latch onto the idea of a system.
+What do these authors mean by talking about 'specialized perceptual systems'?
+They talk about things like perceiving colour, depth or melodies.
+Now, as we saw when talking about categorical perception of colour, we can think of the 'system' underlying categorical perception as largely separate from other cognitive systems--- we saw that they could be knocked out by verbal interference, for example.
+So the idea is that core knowledge somehow involves a system that is separable from other cognitive mechanisms.
+As Carey rather grandly puts it, understanding core knowledge will involve understanding something about 'the architecture of the mind'.
+ 
+ 
+\subsection{slide-61}
+For something to be informationally encapsulated is for its operation to be unaffected by the mere existence of general knowledge or representations stored in other modules (Fodor 1998b: 127)
+ 
+ 
+\subsection{slide-73}
+To say that a represenation is iconic means, roughly, that parts of the representation represent parts of the thing represented.
+Pictures are paradigm examples of representations with iconic formats.
+For example, you might have a picture of a flower where some parts of the picture represent the petals and others the stem.
+ 
+ 
+\subsection{slide-75}
+Suppose we accept that there are core systems with this combination of features.
+Then we can use the term 'core knowledge' to mean the representations in these core systems.
+The hope is that this will help us with the second question.
+ 
+ 
+\subsection{slide-76}
+Consider this hypothesis.
+The principles of object perception, and maybe also the expectations they give rise to, are not knowledge.
+But they are core knowledge.
+But look at those features again --- innate, encapsulated, unchanging and the rest.
+None of these straightforwardly enable us to predict that core knowledge of objects will guide looking but not reaching.
+So the \emph{first problem} is that (at this stage) it's unclear what we gain by shifting from knowledge to core knowledge.
+ 
+ 
+\subsection{slide-77}
+There is also a \emph{second problem}.
+This problem concerns with the way we have introduced the notion of core knowledge.
+We have introduced it by providing a list of features.
+But why suppose that this particular list of features constitutes a natural kind?
+This worry has been brought into sharp focus by criticisms of 'two systems' approaches.
+(These criticisms are not directed specifically at claims about core knowledge, but the criticisms apply.)
+‘there is a paucity of … data to suggest that they are the only or the best way of carving up the processing,
+‘and it seems doubtful that the often long lists of correlated attributes should come as a package’
+\citep[p.\ 759]{adolphs_conceptual_2010}
+ 
+ 
+\subsection{slide-78}
+‘we wonder whether the dichotomous characteristics used to define the two-system models are … perfectly correlated …
+[and] whether a hybrid system that combines characteristics from both systems could not be … viable’
+\citep[p.\ 537]{keren_two_2009}
+ 
+ 
+\subsection{slide-80}
+This is weak.
+Remember that criticism is easy, especially if you don't have to prove someone is wrong.
+Construction is hard, and worth more.
+ 
+ 
+\subsection{slide-83}
+Even so, there is a problem here.
+‘the process architecture of social cognition is still very much in need of a detailed theory’
+\citep[p.\ 759]{adolphs_conceptual_2010}
+ 
+ 
+\subsection{slide-84}
+So what am I saying?
+Our question is, Given that the simple view is wrong, what is the relation between the principles of object perception and infants’ competence in segmenting objects, object permanence and tracking causal interactions?
+We are considering this (partial) answer: the principles are not knowledge but core knowledge.
+Let me remind you how we defined core knowledge.
+First, we explained core knowledge in terms of core systems: a piece of core knowledge is a representation in a core system.
+Second, we characterised core systems by appeal to a list of characteristics: they are innate, encapsulated, unchainging etc.
+ 
+ 
+\subsection{slide-85}
+There are two problems for this answer as it stands.
+\begin{itemize} \item How does this explain the looking/searching discrepancy? \item Can appeal to core knowledge explain anything? \end{itemize}
+\begin{itemize}
+\item
+\item
+\end{itemize}
+ 
+ 
+\subsection{slide-87}
+This looks like the sort of problem a philospoher might be able to help with.
+ 
+ 
+\subsection{slide-88}
+Jerry Fodor has written a book called 'Modularity of Mind' about what he calls modules.
+And modules look a bit like core systems, as I'll explain.
+Further, Spelke herself has at one point made a connection.
+So let's have a look at the notion of modularity and see if that will help us.
+‘In Fodor’s (1983) terms, visual tracking and preferential looking each may depend on modular mechanisms.’
+\citep[p.\ 137]{spelke:1995_spatiotemporal}
+ 
+ 
+\subsection{slide-89}
+Modules are widely held to play a central role in explaining mental development and in accounts of the mind generally.
+Jerry Fodor makes three claims about modules:
+Fodor’s three claims about modules:
+\begin{enumerate}
+\item they are ‘the psychological systems whose operations present the world to thought’;
+\item they ‘constitute a natural kind’; and
+\item there is ‘a cluster of properties that they have in common’ \citep[p.\ 101]{Fodor:1983dg}.
+\end{enumerate}
+ 
+ 
+\subsection{slide-90}
+What are these properties?
+These properties include:
+\begin{itemize}
+\item domain specificity (modules deal with ‘eccentric’ bodies of knowledge)
+\item limited accessibility (representations in modules are not usually inferentially integrated with knowledge)
+\item information encapsulation (modules are unaffected by general knowledge or representations in other modules)
+\item innateness (roughly, the information and operations of a module not straightforwardly consequences of learning; but see \citet{Samuels:2004ho}).
+\end{itemize}
+For something to be informationally encapsulated is for its operation to be unaffected by the mere existence of general knowledge or representations stored in other modules (Fodor 1998b: 127)
+ 
+ 
+\subsection{slide-92}
+Not all researchers agree about the properties of modules. That they are informationally encapsulated is denied by Dan Sperber and Deirdre Wilson (2002: 9), Simon Baron-Cohen (1995) and some evolutionary psychologists (Buller and Hardcastle 2000: 309), whereas Scholl and Leslie claim that information encapsulation is the essence of modularity and that any other properties modules have follow from this one (1999b: 133; this also seems to fit what David Marr had in mind, e.g. Marr 1982: 100-1). According to Max Coltheart, the key to modularity is not information encapsulation but domain specificity; he suggests Fodor should have defined a module simply as 'a cognitive system whose application is domain specific' (1999: 118). Peter Carruthers, on the other hand, denies that domain specificity is a feature of all modules (2006: 6). Fodor stipulated that modules are 'innately specified' (1983: 37, 119), and some theorists assume that modules, if they exist, must be innate in the sense of being implemented by neural regions whose structures are genetically specified (e.g. de Haan, Humphreys and Johnson 2002: 207; Tanaka and Gauthier 1997: 85); others hold that innateness is 'orthogonal' to modularity (Karmiloff-Smith 2006: 568). There is also debate over how to understand individual properties modules might have (e.g. Hirschfeld and Gelman 1994 on the meanings of domain specificity; Samuels 2004 on innateness).
+ 
+ 
+\subsection{slide-95}
+In short, then, theorists invoke many different notions of modularity, each barely different from others. You might think this is just a terminological issue. I want to argue that there is a substantial problem: we currently lack any theoretically viable account of what modules are. The problem is not that 'module' is used to mean different things-after all, there might be different kinds of module. The problem is that none of its various meanings have been characterised rigorously enough. All of the theorists mentioned above except Fodor characterise notions of modularity by stipulating one or more properties their kind of module is supposed to have. This way of explicating notions of modularity fails to support principled ways of resolving controversy.
+ 
+No key explanatory notion can be adequately characterised by listing properties because the explanatory power of any notion depends in part on there being something which unifies its properties and merely listing properties says nothing about why they cluster together.
+ 
+Interestingly, Fodor doesn't define modules by specifying a cluster of properties (pace Sperber 2001: 51); he mentions the properties only as a way of gesturing towards the phenomenon (Fodor 1983: 37) and he also says that modules constitute a natural kind (see Fodor 1983: 101 quoted above).
+ 
+ 
+\subsection{slide-96}
+It is tempting to appeal to spatial metaphors in thinking about modularity. Just as academics tend to work at high-speed on domain-specific problems when they can cut themselves off from administrative centres, so we might attempt to explain the special properties of modules by saying that they are cut off from the central system. But it isn't clear how to turn this metaphor into an explanation. The spatial metaphor only gives us the illusion that we understand modularity.
+ 
+ 
+\subsection{slide-98}
+So what aim I suggesting.
+First that we treat core knowledge and modularity as terms for a single thing, whatever it is.
+This has the advantage that we can draw on Fodor's more detailed theorising about modularity.
+ 
+ 
+\subsection{slide-99}
+So the view we are considering is that
+We have core knowledge (= modular representations) of the principles of object perception.
+ 
+ 
+\subsection{slide-100}
+Does this help us with the two problems I mentioned earlier?
+\begin{itemize} \item How does this explain the looking/searching discrepancy? \item Can appeal to core knowledge (/ modularity) explain anything? \end{itemize}
+\begin{itemize}
+\item
+\item
+\end{itemize}
+ 
+ 
+\subsection{slide-102}
+Here we have the same problem as before. If anything, invoking modularity makes it worse.
+ 
+ 
+\subsection{slide-105}
+But here our situation is better. To see why, recall the properties of modules.
+ 
+ 
+\subsection{slide-106}
+For something to be informationally encapsulated is for its operation to be unaffected by the mere existence of general knowledge or representations stored in other modules (Fodor 1998b: 127)
+ 
+ 
+\subsection{slide-108}
+Limited accessibility explains why the representations might drive looking but not reaching.
+But doesn't the bare appeal to limited accessibility leave open why the looking and not the searching (rather than conversely)?
+I think not, given the assumption that searching is purposive in a way that looking is not. (Searching depends on practical reasoning.)
+We'll come back to this later (if core knowledge of objects involves object files, it's easier to see why it affects looking but not actions like reaching.)
+ 
+Except, of course, calling this an explanation is too much.
+After all, limited accessibility is more or less what we're trying to explain.
+But this is the first problem --- the problem with the standard way of characterising modularity and core systems merely by listing features.
+ 
+ 
+\subsection{slide-110}
+We have core knowledge (= modular representations) of the principles of object perception.
+\begin{itemize} \item How does this explain the looking/searching discrepancy? \item Can appeal to core knowledge (/ modularity) explain anything? \end{itemize}
+\begin{itemize}
+\item
+\item
+\end{itemize}
+ 
+ 
+\subsection{unit\_291}
+ 
+\section{Computation is the Real Essence of Core Knowledge}
+ 
+ 
+\subsection{slide-120}
+Spelke and Carey characterise core knowledge by giving a list of features.
+This seems dubious.
+We then equated core knowledge with modular representation, following a suggested Spelke made at one point.
+This equation of core knowledge and modularity is useful in one respect.
+It is useful because Fodor has written a subtle philosophical book about modularity, so we can be confident that our notion is theoretically grounded.
+However, the problem remains that Fodor, like Spelke and Carey, introduces modularity merely by listing features.
+The key features for us are information encapsulation and limited accessibility.
+But in saying that infants' representations of objects have these features, we are really only saying what they are not.
+We haven't got very far past the problem I highlighted with the parable of the wrock.
+The question, then, is whether we can come up with a better way of characterising core knowledge (or modularity).
+ 
+ 
+\subsection{slide-121}
+I want to approach this question indirectly, by appeal to Fodor's ideas about thinking generally.
+It will seem at first that I am going off topic.
+ 
+ 
+\subsection{slide-122}
+‘modern philosophers … have no theory of thought to speak of. I do think this is appalling; how can you seriously hope for a good account of belief if you have no account of belief fixation?’
+\citep[p.\ 147]{Fodor:1987rt}
+ 
+ 
+\subsection{slide-123}
+‘Thinking is computation’
+\citep[p.\ 9]{Fodor:1998ap}
+ 
+ 
+\subsection{slide-135}
+‘the Computational Theory is probably true at most of only the mind’s modular parts. … a cognitive science that provides some insight into the part of the mind that isn’t modular may well have to be different, root and branch’
+\citep[p.\ 99]{Fodor:2000cj}
+ 
+ 
+\subsection{slide-139}
+If a process is not sensitive to context-dependent relations, it will exhibit: information encapsulation; limited accessibility; and domain specificity.
+\citep{Butterfill:2007pe}
+Why accept this?
+ 
+ 
+\subsection{slide-141}
+Consider information encapsulation
+Approximating evidential and relevance relations with relations that are not context dependent will require restricting the type of input the module is able to process. (Contrast the question, What in general counts as evidence that this is the same face as that? with the question, Which featural information counts as evidence that this is the same face as that?) This contributes to explaining why a Computational process is likely to be informationally encapsulated (to some extent): insensitivity to context dependent relations limits the range of inputs it can usefully accept.
+ 
+ 
+\subsection{slide-148}
+This answers some of the objections we considered earlier.
+‘there is a paucity of … data to suggest that they are the only or the best way of carving up the processing,
+‘and it seems doubtful that the often long lists of correlated attributes should come as a package’
+\citep[p.\ 759]{adolphs_conceptual_2010}
+ 
+ 
+\subsection{slide-149}
+‘we wonder whether the dichotomous characteristics used to define the two-system models are … perfectly correlated …
+[and] whether a hybrid system that combines characteristics from both systems could not be … viable’
+\citep[p.\ 537]{keren_two_2009}
+ 
+ 
+\subsection{slide-150}
+Even so, there is a problem here.
+‘the process architecture of social cognition is still very much in need of a detailed theory’
+\citep[p.\ 759]{adolphs_conceptual_2010}
+ 
+ 
+\subsection{slide-151}
+This proposal departs from Fodor's overall strategy. Fodor starts by asking what thinking is, and answers that it's a special kind of Computational process. He then runs into the awkward problem that such Computation only happens in modules, if at all. Instead of taking this line, we started by asking what modularity is. The answer I'm suggesting is that modular cognition is a Computational process. On this way of looking at things, that such Computation only happens in modules is a useful result because enables us to identify what is distinctive of modular cognition.
+ 
+ 
+\subsection{slide-152}
+Here's where we were at the end of the previous section.
+The question was, Can appeal to core knowledge (/ modularity) explain anything?
+Have we made any progress?
+We have core knowledge (= modular representations) of the principles of object perception.
+ 
+ 
+\subsection{slide-153}
+So how far have we got with respect to the three questions?
+1. How do humans come to meet the three requirements on knowledge of objects? 2a. Given that the simple view is wrong, what is the relation between the principles of object perception and infants’ competence in segmenting objects, object permanence and tracking causal interactions? 2b. The principles of object perception result in ‘expectations’ in infants. What is the nature of these expectations? 3. What is the relation between adults’ and infants’ abilities concerning physical objects and their causal interactions? With respect to the third question, we have made no progress unless we assume that modules are continuous throughout development. But our little theory of modularity doesn't tell us this. With respect to question 2a, our claim is that the principles are not knowledge but core knowledge, or modular representations; or else that they describe the operations of a module. Note that we have yet to say which module they describe. At this point, we suppose they are part of a sui generis module that is concerned with physical objects and their causal interactions. With respect to question 2b, again the idea is that the expectations are modular representations. And with respect to question 1, our current answer is that humans meet the three requirements (abilities to segment, \&c) by virtue of a module or core knowledge system that is in place from around six months of age or earlier.
+With respect to the third question, we have made no progress unless we assume that modules are continuous throughout development. But our little theory of modularity doesn't tell us this.
+ 
+ 
+\subsection{slide-156}
+With respect to question 2a, our claim is that the principles are not knowledge but core knowledge, or modular representations; or else that they describe the operations of a module.
+Note that we have yet to say which module they describe.
+At this point, we suppose they are part of a sui generis module that is concerned with physical objects and their causal interactions.
+ 
+ 
+\subsection{slide-159}
+With respect to question 2b, again the idea is that the expectations are modular representations.
+--------
+ 
+ 
+\subsection{slide-162}
+And with respect to question 1, our current answer is that humans meet the three requirements (abilities to segment, \&c) by virtue of a module or core knowledge system that is in place from around six months of age or earlier.
+ 
+ 
+\subsection{unit\_251}
+ 
+\section{Perception of Causation}
+ 
+ 
+\subsection{slide-164}
+I'm going to explain something that seems like it doesn't fit.
+It does fit, but I can't explain how for a while.
+ 
+ 
+\subsection{slide-165}
+The question for this section is,
+Can humans perceive causal interactions?
+ 
+ 
+\subsection{slide-166}
+adults: (a) verbal reports. So what?
+ 
+ 
+\subsection{slide-167}
+adults: (b) they can discriminate between short gaps and long gaps.
+That is, the can discriminate gaps of around 50ms.
+ 
+ 
+\subsection{slide-168}
+Maybe this is clearer as a figure.
+ 
+ 
+\subsection{slide-170}
+Infants seem also to distinguish launching from other sequences, much as adults do \citep{Leslie:1987nr}.
+Several people have discussed this in seminars so I won't discuss it here (the reference is on your handout).
+ 
+ 
+\subsection{slide-171}
+First guess at how this works. First you perceive objects. Then you identify causal interactions based on contiguity etc.
+ 
+ 
+\subsection{slide-172}
+illusory causal cresecents.
+This depends on causal capture \citep{Scholl:2002eb}.
+Normally, if the two balls overlap completely, subjects report seeing a single object changing colour.
+ 
+ 
+\subsection{slide-174}
+But if we show subjects a sequence like the launching effect but where the first square overlaps the second's position before it moves. When this event is shown is isolation almost all subjects see it as a single object changing colour. But when the event is shown with an unambiguous launching effect nearby, almost all subjects now see the 'overlap' event as a launching.
+Causal capture means that we can show subjects a sequence with complete overlap and still have the report a causal effect.
+‘when there is a launching event beneath the overlap (or underlap event) timed such that the launch occurs at the point of maximum overlap, observers inaccurately report that the overlap is incomplete, suggesting that they see an illusory crescent.’
+\citep[p.\ 461]{Scholl:2004dx}
+Why does the illusory causal crescent appear? Scholl and Nakayama suggest a
+‘a simple categorical explanation for the Causal Crescents illusion: the visual system, when led by other means to perceive an event as a causal collision, effectively ‘refuses’ to see the two objects as fully overlapped, because of an internalized constraint to the effect that such a spatial arrangement is not physically possible. As a result, a thin crescent of one object remains uncovered by the other one-as would in fact be the case in a straight-on billiard-ball collision where the motion occurs at an angle close to the line of sight.’
+\citep[p.\ 466]{Scholl:2004dx}
+*here or later?
+Contrast Spelke’s view.
+‘objects are conceived: Humans come to know about an object’s unity, boundaries, and persistence in ways like those by which we come to know about its material composition or its market value.’
+\citep[p.\ 198]{Spelke:1988xc}.
+ 
+ 
+\subsection{slide-175}
+(*This just shows when the overlap event was perceived as causal; not essential.)
+ 
+ 
+\subsection{slide-176}
+One last thing about the impression of launching. It is judgement-independent.
+ 
+ 
+\subsection{slide-177}
+So it's not that we first perceive objects and surfaces, and then identify causal interactions.
+These experiments hint that identifying causal interactions is part of perceiving surfaces and objects. (More on this later.)
+So causal interactions may be perceived.
+But in that case, perhaps the core knowledge system responsible for infants' abilities to track causal interactions is a perceptual system.
+This is the first step towards a startling discovery ...
+ 
+ 
+\subsection{unit\_261}
+ 
+\section{Object Indexes and Causal Interactions}
+ 
+ 
+\subsection{slide-180}
+(from figure caption): ' A number (here eight) of identical objects are shown (at t = 1), and a subset (the `targets') is selected by, say, ̄ashing them (at t 􏰈 2), after which the objects move in unpredictable ways (with or without self-occlusion) for about 10 s. At the end of the trial the observer has to either pick out all the targets using a pointing device or judge whether one that is selected by the experimenter (e.g. by ̄ashing it, as shown at t 􏰈 4) is a target.' \citep[p.\ 142]{Pylyshyn:2001hl}
+Highlight the case where subject is asked whether this is one of the objects identified.
+(If a target disappears, subjects can also say where it was and which direction it was moving in.)
+Limit of 3, maybe 4, objects will be important later.
+ 
+ 
+\subsection{slide-186}
+What does this tell us?
+If attention is organised around objects, the perceptual system must be capable of identifying and tracking objects.
+ 
+ 
+\subsection{slide-187}
+Leslie et al say an object index is 'a mental token that functions as a pointer to an object' \citep[p.\ 11]{Leslie:1998zk}
+'Pylyshyn's FINST model: you have four or five indexes which can be attached to objects; it's a bit like having your fingers on an object: you might not know anything about the object, but you can say where it is relative to the other objects you're fingering. (ms. 19-20)' \citep{Scholl:1999mi}
+ 
+ 
+\subsection{slide-191}
+Object indexes are linked to causation.
+- in order to track objects, has to be sensitive to be causal interactions
+- why is this true?
+- a clue: when you have a causal interaction, there's a conflict between principles of object perception e.g. distinct surfaces=>two objects, vs good continuity of motion=>one object
+- perceptual system needs to know when conflicts should be reconciled and when they should be written off
+- get perceptual effects of causal interactions when there are conflicts among cues of object identity
+There is a range of evidence that perception of objects is closely linked to causal perception.
+First, Michotte argued for such a link on the basis of his finding that launching occurs when there is a conflict between cues to object identity: good continuity of movement suggests a single object whereas the existence of two distinct surfaces indicates two objects.
+It is plausible that other types of causal interaction also involve conflicts between cues to object identity.
+Second, as we saw above Scholl and Nakayama (2004) have shown that when a sequence involving complete overlap between two objects is perceived as a launching event, subjects perceive an illusory crescent as if the overlap were only partial. They conclude that “the perception of causality can also affect other types of visual processing—in this case the perception of spatial relations among moving objects” (2004: 467).
+Third, as we're about to see, Krushke and Fragassi (1996) have shown that the object-specific preview effect vanishes in launching but not in various spatio-temporally similar sequences. Since the object-specific preview effect is regarded as diagnostic of feature binding, this is evidence that in launching sequences, features of the second object (such as motion) remain bound to the first object for a short time after the second object starts to move.
+ 
+ 
+\subsection{slide-192}
+Background: object-specific preview effect
+We can measure object indexes using the object-specific preview effect.
+The \emph{object-specific preview effect}: ‘observers can identify target letters that matched the preview letter from the same object faster than they can identify target letters that matched the preview letter from the other object.’
+\citep[p.\ 2]{Krushke:1996ge}
+ 
+ 
+\subsection{slide-197}
+Krushke and Fragassi (1996) have shown that the object-specific preview effect vanishes in launching but not in various spatio-temporally similar sequences. Since the object-specific preview effect is regarded as diagnostic of feature binding, this is evidence that in launching sequences, features of the second object (such as motion) remain bound to the first object for a short time after the second object starts to move.
+ 
+ 
+\subsection{slide-198}
+‘objects are conceived: Humans come to know about an object’s unity, boundaries, and persistence in ways like those by which we come to know about its material composition or its market value.’
+\citep[p.\ 198]{Spelke:1988xc}.
+ 
+ 
+\subsection{slide-199}
+Human adults are able to attend to multiple moving objects simultaneously.
+They are able to do this thanks to a modular perceptual process.
+This process segments objects, represents them when occluded, and tracks some causal interactions.
+So plausibly core knowledge of objects is an epiphenomenon this perceptual process.
+core knowledge of objects is a consequence of object indexes
+\citep{Leslie:1998zk,Carey:2001ue}
+ 
+ 
+\subsection{unit\_271}
+ 
+\section{Perceptual Expectations}
+ 
+ 
+\subsection{slide-202}
+There are perceptual expectations.
+Suppose you saw this image.
+The triangle behind the thumb is in some sense perceptually present, even though you can't see it.
+ 
+ 
+\subsection{slide-204}
+But now the thumb comes away and what you see is not the triangle you were expecting.
+Could these perceptual expectations be just a matter of knowledge?
+No, because perceptual expectations are judgement-independent.
+As \citep{kellman:1983_perception} report, Michotte, Thines and Crabbe found that subjects report seeing a single large triangle behind the thumb even when they know that there isn't one there.
+You can cover and reveal the triangles repeatedly, but the expectation will hold firm.
+ 
+The experience you have when the thumb is removed is like that of infants' in violation-of-expectation tasks.
+This is what it is like to be an infant.
+ 
+ 
+\subsection{slide-205}
+You see an object move on a screen in some way.
+The screen goes blank and you are asked to say where the object was last.
+Subjects typically locate the object just a bit further on, as if it had continued moving after the screen went blank.
+This is called representational momentum as a sort of joke; the idea is that the representation keeps moving if the object stop abruptly enough.
+It's not interesting in itself, but it's useful for us.
+Why is it useful? Because it can tell us about the paths that the perceptual system expects objects to travel on.
+ 
+ 
+\subsection{slide-206}
+\citep{freyd:1994_representational} ('The results are also consistent with a claim of relative cognitive impenetrability (Finke \& Freyd, 1989; Kelly \& Freyd, 1987) in that subjects showed a memory shift for a path that the majority of subjects did not consciously consider correct.' \citep[p.\ 975]{freyd:1994_representational})
+'In Freyd and Jones’ study [(1994)], greater RM was observed for the impetus (spiral) than for the Newtonian (straight) path.'* (p. 449)
+ 
+ 
+\subsection{slide-207}
+The effect of mass on the rate of ascending motion: impetus and Newtonian theories come apart.
+Important because it shows limits (people know better than their perceptual systems)
+- \citep{kozhevnikov:2001_impetus} on representational momentum
+adults, including trained physicists who make correct verbal predictions about the effects of mass on motion, show representational momentum (a perceptual effect) consistent with impetus and inconsistent with Newtonian mechanics. So again we have (i) judgement-independence and (ii) adults. ('both physics experts and novices possess the same set of implicit beliefs about motion.' \citep[p.\ 451]{kozhevnikov:2001_impetus})
+--- limits of infants' systems found in adults shows that we can identify the system as persisting
+--- note that other studies also show judgement-independence, but in the other way (implicit knowledge of physical interactions more accurate than judgement: 'a number of previous studies suggesting a dissociation between explicit and implicit knowledge of the principles of physics. For instance, Hubbard suggests that implicit knowledge reflects internalization of invariant physical principles, whereas explicit knowledge about motion may be less accurate. Similarly, Krist et al. (1993) suggested that perceptually based knowledge is more accurate than verbal concepts of motion.' \citep[p.\ 450]{kozhevnikov:2001_impetus}
+--- What questions does this bear on? (1) perceptual \& modular nature of infants' understanding of objects and their interactions; (2) relation between infant competence and adults' (do the thing about system being transformed or discarded versus two systems persisting through development : this is different from issues about innateness, which looks from infants' competence backwards --- here we go in the other direction, looking forwards); and (3) trade-offs between flexibility and efficiency (see below; worth talking about this in some detail here)
+--- on cognitive efficiency: 'To extrapolate objects’ motion on the basis of physical principles, one should have assessed and evaluated the presence and magnitude of such imperceptible forces as friction and air resistance operating in the real world. This would require a time-consuming analysis that is not always possible. In order to have a survival advantage, the process of extrapolation should be fast and effortless, without much conscious deliberation. Impetus theory allows us to extrapolate objects’ motion quickly and without large demands on attentional resources.' \citep[p.\ 450]{kozhevnikov:2001_impetus}
+**caution (basically fine, but need to be careful): 'The extent to which displacement reflects physical principles per se has been widely debated in the literature; theories of displacement suggest a variety of potential effects of physical principles ranging from an incorporation of the principle of momentum into mental representation (e.g., Finke et al., 1986) to a rejection of any internalization of physical principles (e.g., Kerzel, 2000, 2003a). The empirical evidence is clear that (1) displacement does not always correspond to predictions based on physical principles and (2) variables unrelated to physical principles (e.g., the presence of landmarks, target identity, or expectations regarding a change in target direction) can influence displacement. ... information based on a naive understanding of physical principles or on subjective consequences of physical principles appears to be just one of many types of information that could potentially contribute to the displacement of any given target' \citep[p.\ 842]{hubbard:2005_representational}
+ 
+ 
+\subsection{slide-208}
+To have a perceptual expectation about the location of an object (say) is distcint from (i) knowing its location; (ii) seeing it
+Infants' expectations about objects are perceptual expectations.
+These expectations are a consequence of core knowledge of objects, i.e. the mechanism underwriting object indexes.
+This explains why the expectations guide the eyes but do not influence planned actions (such as searches).
+ 
+ 
+\subsection{unit\_281}
+ 
+\section{Knowledge of Objects: Conclusions}
+ 
+ 
+\subsection{slide-210}
+In this lecture I have been considering two interlocking themes simultaneously.
+These are (i) knowledge of physical objects; and (ii) knowledge/representation/modularity.
+ 
+ 
+\subsection{slide-212}
+Concerning knowledge of physical objects, there were three questions ...
+ 
+ 
+\subsection{slide-213}
+Concerning knowledge of physical objects, there were three questions ...
+1. How do humans come to meet the three requirements on knowledge of objects? First, because of core knowledge (= modular cognition) of prinicples of object perception like boundedness and no action at a distance Second, this core knowledge is a consequence of object indexes. So we meet the three requirements because the way our perceptual systems work. 2a. Given that the simple view is wrong, what is the relation between the principles of object perception and infants’ competence in segmenting objects, object permanence and tracking causal interactions? Given that the simple view is wrong, what is the right view of the relation between the principles of object perception and infants' competence in segmenting objects, object permanence and tracking causal interactions? These principles describe the operation of a module whose function concerns objects. The principles describe the operations of the system of object indexes. (So the principles are not necessarily represented at all.) 2b. The principles of object perception result in ‘expectations’ in infants. What is the nature of these expectations? The expectations are perceptual expectations and the result of modular, computational processes. The expectations are neither knowledge nor perceptions. They are rather representations internal to the system of object indexes. (This is why we get the two discrepancies between spontaneous looking and purposive actions like searching.) 3. What is the relation between adults’ and infants’ abilities concerning physical objects and their causal interactions? What is the relation between infants' and adults' capacities? Nonhuman adult primates plus representational momentum plus causal interaction : cautiously go for continuity (as in the case of categorical perception of colour)
+First, because of core knowledge (= modular cognition) of prinicples of object perception like boundedness and no action at a distance
+Second, this core knowledge is a consequence of object indexes.
+So we meet the three requirements because the way our perceptual systems work.
+ 
+ 
+\subsection{slide-214}
+Given that the simple view is wrong, what is the right view of the relation between the principles of object perception and infants' competence in segmenting objects, object permanence and tracking causal interactions?
+These principles describe the operation of a module whose function concerns objects.
+The principles describe the operations of the system of object indexes.
+(So the principles are not necessarily represented at all.)
+ 
+ 
+\subsection{slide-215}
+The expectations are perceptual expectations and the result of modular, computational processes.
+The expectations are neither knowledge nor perceptions.
+They are rather representations internal to the system of object indexes.
+(This is why we get the two discrepancies between spontaneous looking and purposive actions like searching.)
+ 
+ 
+\subsection{slide-216}
+What is the relation between infants' and adults' capacities? Nonhuman adult primates plus representational momentum plus causal interaction : cautiously go for continuity (as in the case of categorical perception of colour)
+ 
+ 
+\subsection{slide-217}
+So earlier I contrasted these two views.
+I think on balance the second is right.
+Why? *Nonhuman adult primates plus representational momentum plus causal interaction
+ 
+ 
+\subsection{slide-222}
+One last thing
+There is a question how you get from core knowledge of objects to knowledge of objects.
+We won't discuss this, but I think tool use is quite plausible.
+Basic forms of tool use may not require understanding how objects interact (Barrett, Davis, \& Needham; Lockman, 2000), and may depend on core cognition of contact-mechanics (Goldenberg \& Hagmann, 1998; Johnson-Frey, 2004). Experience of tool use may in turn assist children in understanding notions of manipulation, a key causal notion (Menzies \& Price, 1993; Woodward, 2003). Perhaps non-core capacities for causal representation are not innate but originate with experiences of tool use.
+
+
+%--- end paste
+%--------------- 
+ 
+
+
+
+
+
+\bibliography{$HOME/endnote/phd_biblio}
+
+
+
+\end{document}
