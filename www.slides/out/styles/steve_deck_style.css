@@ -108,6 +108,20 @@ html {
   -o-filter: brightness(150%);
   -ms-filter: brightness(150%);
 }
+.bw {
+  filter: saturate(0);
+  -webkit-filter: saturate(0);
+  -moz-filter: saturate(0);
+  -o-filter: saturate(0);
+  -ms-filter: saturate(0);
+}
+.contrast-150 {
+  filter: contrast(1.5);
+  -webkit-filter: contrast(1.5);
+  -moz-filter: contrast(1.5);
+  -o-filter: contrast(1.5);
+  -ms-filter: contrast(1.5);
+}
 .display-none {
   display: none;
 }

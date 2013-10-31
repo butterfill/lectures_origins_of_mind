@@ -119,13 +119,13 @@ var inject = function(){
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.</div>
-        <div class="notes">Let me explain.</div>
         <div style="margin-left:200px;">
           <div class="vspace-em"></div>
           <div class="vspace-em"></div>
           <div class="huge-glow right">challenge</div>
           <div class="under-huge-glow right">Explain the emergence, in evolution or development, of <span class="highlight1">mindreading.</span></div>
+          <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.</div>
+          <div class="notes">Let me explain.</div>
           <div data-what=" .highlight1" data-class="invert" class="slide anim-continue anim-addclass"></div>
           <div data-what=" .highlight1" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
@@ -138,14 +138,21 @@ var inject = function(){
           <div class="vspace-em"></div>
           <div class="slide premack-quote">
             <div class="notes">Researchers sometimes use the term ‘theory of mind’.</div>
-            <div class="handout notes show">
-              ‘In saying that an individual has a theory of mind, 
-              we mean that the individual imputes mental states to himself and to others’ 
-            </div>
+            <div class="handout notes show"><span>‘In saying that an individual has a </span><span class="theory-of-mind">theory of mind,</span><span> we mean that the individual imputes mental states to himself and to others’ </span></div>
             <div class="handout notes ctd">\citep[p.\ 515]{premack_does_1978}</div>
             <p class="right">(Premack & Woodruff 1978: 515)</p>
           </div>
+          <div data-what=" .theory-of-mind" data-class="invert" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" .theory-of-mind" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">
+            So, to be clear about the terminology, to have a theory of mind is just to be able to to mindread, 
+            that is, to identify mental states and purposive actions  
+            as the mental states and purposive actions of a particular subject.
+          </div>
           <div data-what=".premack-quote" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" .highlight1" data-class="invert" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=" .highlight1" data-class="bkg-words-highlight-white" class="slide anim-continue anim-removeclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
           <div class="notes">So the challenge is to explain the emergence of mindreading.</div>
           <div class="notes">You know (let's say) that Ayesha belives Beatrice is in the library.</div>
@@ -164,17 +171,24 @@ var inject = function(){
     <div class="grid_12">
       <div class="words">
         <div class="middle">
+          <div class="notes">I shall focus on awareness of others' beliefs to the exclusion of other mental states.</div>
+          <div class="notes">There's no theoretical reason for this; it's just a practical thing.</div>
+          <div class="notes">And what we learn about belief will generalise to other mental states.</div>
           <p class="center">belief</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="slide">
+<section id="maxi_story" class="slide">
+  <div class="notes">How can we test whether someone is able to ascribe beliefs to others? </div>
+  <div class="notes">Here is one quite famous way to test this, perhaps some of you are even aware of it already.</div>
+  <div class="notes">Let's suppose I am the experimenter and you are the subjects.</div>
+  <div class="notes">First I tell you a story ...</div>
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <p>‘Maxi puts his chocolate in the BLUE box and leaves the room to play.  While he is away (and cannot see), his mother moves the chocolate from the BLUE box to the GREEN box.  Later Maxi returns.  He wants his chocolate.’</p>
+        <p>‘Maxi puts his chocolate in the BLUE box and leaves the room to play.  <span class="step2 hide">While he is away (and cannot see), his mother moves the chocolate from the BLUE box to the GREEN box.  </span><span class="step3 hide">Later Maxi returns.  He wants his chocolate.’</span></p>
         <div class="handout">
           In a standard \textit{false belief task}, `[t]he subject is aware that he/she and another person [Maxi] witness a certain state of affairs x.  Then, in the absence of the other  
           person the subject witnesses an unexpected change in the state of affairs from x to y' \citep[p.\ 106]{Wimmer:1983dz}. 
@@ -184,17 +198,23 @@ var inject = function(){
         <div class="container_12">
           <div class="grid_6">
             <div style="background-color:blue;width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
-              <p>blue box</p>
+              <p class="center">blue<br/>box</p>
             </div>
           </div>
-          <div class="grid_6">
+          <div class="grid_6 step2 hide"> 
             <div style="background-color:green;width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
-              <p>green box</p>
+              <p class="center">green box</p>
             </div>
           </div>
         </div>
-        <p class="em-above">‘Where will Maxi look for his chocolate?’</p>
+        <p>&nbsp;</p>
+        <!-- this bit gets shown only later-->
+        <p class="em-above"><span class="hide anticipationPrompt">I wonder where Maxi will look for his chocolate</span></p>
+        <p class="em-above step4 testQuestion hide">‘Where will Maxi look for his chocolate?’</p>
         <p class="source">Wimmer & Perner 1983</p>
+        <div data-what=" .step2" data-class="hide" class="slide anim-removeclass"></div>
+        <div data-what=" .step3" data-class="hide" class="slide anim-removeclass"></div>
+        <div data-what=" .step4" data-class="hide" class="slide anim-removeclass"></div>
       </div>
     </div>
   </div>
@@ -202,7 +222,11 @@ var inject = function(){
 <section class="slide">
   <div class="words">
     <div class="container_12">
-      <div class="grid_12"><img src="/img/wimmer_1983_fig.png"/>
+      <div class="grid_12">
+        <div class="notes">Here's the really surprising thing.</div>
+        <div class="notes">Children do really badly on this until they are around four years of age.</div>
+        <div class="notes">And they seem to develop the ability to pass this task only gradually, over months or years.</div>
+        <div class="notes">(There's something else that isn't surprising to most people but should be: adult humans not only nearly always provide the answer we're calling 'correct': they also believe that there is an obviously correct answer and that it would be a mistake to give any other answer.  I'll return to this point later.)</div><img src="/img/wimmer_1983_fig.png" class="bw"/>
         <p class="source">Wimmer & Perner 1983</p>
         <div class="notes">(NB: The figure is not Wimmer & Perner's but drawn from their data.)</div>
       </div>
@@ -224,6 +248,9 @@ var inject = function(){
       <div class="grid_12">
         <div class="notes">So you'll be pleased to know that a meta-study of 178 papers confirmed Wimmer & Perner's findings.</div><img src="/img/wellman_2001_fig2a.png" style="max-height:500px;"/>
         <p class="source">Wellman et al 2001, figure 2A</p>
+        <div class="notes">Now there is clearly some variation here.</div>
+        <div class="notes">That's because different researchers implemented different versions of the original task.</div>
+        <div class="notes">We can use the meta-analysis of these experiments as a shortcut to finding out what sorts of factors affect children's performance.</div>
       </div>
     </div>
   </div>
@@ -232,8 +259,8 @@ var inject = function(){
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <div class="notes">This meta-study also brings together some nice findings.</div>
-        <div class="notes">One is that you get essentially the same results whether you ask children about others' beliefs or their own beliefs.</div>
+        <div class="notes">One factor that seems to make hardly any difference is whether you ask children about others' beliefs or their own beliefs.</div>
+        <div class="notes">To repeat, you get essentially the same results whether you ask children about others' beliefs or their own beliefs.</div>
         <div class="notes">Children literally do not know their own minds.</div><img src="/img/wellman_2001_fig5.png" style="max-height:500px;"/>
         <p class="source">Wellman et al 2001, figure 5</p>
       </div>
@@ -268,8 +295,6 @@ var inject = function(){
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.</div>
-        <div class="notes">Let me explain.</div>
         <div style="margin-left:200px;">
           <div class="vspace-em"></div>
           <div class="vspace-em"></div>
@@ -292,7 +317,7 @@ var inject = function(){
       <div class="words">
         <div class="middle">
           <p class="center">Sellars' Myth of Jones</p>
-          <div class="notes">*todo*: describe Sellars' myth</div>
+          <div class="notes">*todo*: describe Sellars' myth; link to Gopnik theory theory idea.</div>
         </div>
       </div>
     </div>

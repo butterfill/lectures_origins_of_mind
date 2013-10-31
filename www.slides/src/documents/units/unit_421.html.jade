@@ -20,7 +20,7 @@ include ../../../fragments/slide_mixins
 
 +slide({bkg:'unit_421/slide_cambridge_model_003.jpg'})
   .handout Are human adults’ abilities to represent beliefs automatic?
-  .handout There is evidence for\citep{kovacs_social_2010,Schneider:2011fk} and against.\citep{apperly:2008_back,apperly_why_2010} 
+  .handout There is evidence for \citep{kovacs_social_2010,Schneider:2011fk} and against \citep{apperly:2008_back,apperly_why_2010}. 
 
 
 - var img_nos = range(4,19)
@@ -29,3 +29,35 @@ each img_no in img_nos
   +slide({bkg:filename})
 
 
+// *todo* duplicated!
+mixin slide_theChallenge()
+  +slide({bkg:'bkg_twins.jpg'})
+    div(style='margin-left:200px;')
+      .vspace-em
+      .vspace-em
+      .huge-glow.right challenge
+      .under-huge-glow.right Explain the emergence, in evolution or development, of 
+        span.highlight1 mindreading.
+      block
+
+
+
++slide_theChallenge
+  .notes So how does this second puzzle bear on our overall objective?
+  .notes The challenge is to explain the emergence, in evolution or development, of mindreading.
+  .notes The fact that mindreading is sometimes automatic and sometimes not is good evidence that mindreading is not a single thing.
+  .notes Rather there are multiple kinds of process or system involved in mindreading.
+  .notes From this we can conclude two things.
+  .notes First, in this respect, the cases of mindreading is much like the cases of colour and physical objects.
+  .notes These also involved multiple systems; this took the form of a distinction between core knowledge and knowledge proper.
+  .notes Second, we have further grounds for thinking that some forms of mindreading are modular.
+
++slide({bkg:'slide_bcccd_ian_1.jpg'})
+  .notes [These slides are from a joint presentation with Ian Apperly (BCCCD)]
+  .notes What is the relation between infant and adult capacities for mindreading?
+  .notes It's important at this point to recognise that there are two quite different possibilties.
++slide({bkg:'slide_bcccd_ian_2.jpg'})
++slide({bkg:'slide_bcccd_ian_3.jpg'})
++slide({bkg:'slide_bcccd_ian_4.jpg'})
++slide({bkg:'slide_bcccd_ian_5.jpg'})
++slide({bkg:'slide_bcccd_ian_6.jpg'})

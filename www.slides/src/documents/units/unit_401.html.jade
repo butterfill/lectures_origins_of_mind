@@ -21,8 +21,6 @@ include ../../../fragments/slide_mixins
 
 mixin slide_theChallenge()
   +slide({bkg:'bkg_twins.jpg'})
-    .notes The challenge is to explain the emergence, in evolution or development, of mindreading.
-    .notes Let me explain.
     div(style='margin-left:200px;')
       .vspace-em
       .vspace-em
@@ -32,6 +30,8 @@ mixin slide_theChallenge()
       block
     
 +slide_theChallenge
+  .notes The challenge is to explain the emergence, in evolution or development, of mindreading.
+  .notes Let me explain.
   +invert('.highlight1')
   .notes.handout \textit{Mindreading} is 
     | the process of 
@@ -40,11 +40,18 @@ mixin slide_theChallenge()
   .vspace-em
   .slide.premack-quote
     .notes Researchers sometimes use the term ‘theory of mind’.
-    .handout.notes.show ‘In saying that an individual has a theory of mind, 
-      | we mean that the individual imputes mental states to himself and to others’ 
+    .handout.notes.show
+      span ‘In saying that an individual has a 
+      span.theory-of-mind theory of mind,
+      span  we mean that the individual imputes mental states to himself and to others’ 
     .handout.notes.ctd \citep[p.\ 515]{premack_does_1978}
     p.right (Premack & Woodruff 1978: 515)
-  +blur('.premack-quote')
+  +invert('.theory-of-mind')
+  .notes So, to be clear about the terminology, to have a theory of mind is just to be able to to mindread, 
+    | that is, to identify mental states and purposive actions  
+    | as the mental states and purposive actions of a particular subject.
+  +blur_('.premack-quote')
+  +uninvert('.highlight1')
   .notes So the challenge is to explain the emergence of mindreading.
   .notes You know (let's say) that Ayesha belives Beatrice is in the library.
   .notes Humans are not born knowing individuating facts about others' beliefs.
@@ -54,26 +61,47 @@ mixin slide_theChallenge()
   .notes I think this puzzle requires us to rethink what is involved in having a conception of the mental.
 
 +slide_middle
+  .notes I shall focus on awareness of others' beliefs to the exclusion of other mental states.
+  .notes There's no theoretical reason for this; it's just a practical thing.
+  .notes And what we learn about belief will generalise to other mental states.
   p.center belief
 
-+slide
-  p ‘Maxi puts his chocolate in the BLUE box and leaves the room to play.  While he is away (and cannot see), his mother moves the chocolate from the BLUE box to the GREEN box.  Later Maxi returns.  He wants his chocolate.’
-  .handout In a standard \textit{false belief task}, `[t]he subject is aware that he/she and another person [Maxi] witness a certain state of affairs x.  Then, in the absence of the other  
-    | person the subject witnesses an unexpected change in the state of affairs from x to y' \citep[p.\ 106]{Wimmer:1983dz}. 
-    | The task is designed to measure the subject's sensitivity to the probability that Maxi will falsely believe x to obtain. 
-  .vspace-em
-  .container_12
-    .grid_6
-      +colour-box('blue', '100')
-        p blue box
-    .grid_6
-      +colour-box('green', '100')
-        p green box
-  p.em-above ‘Where will Maxi look for his chocolate?’
-  p.source Wimmer & Perner 1983
+section.slide#maxi_story
+  .notes How can we test whether someone is able to ascribe beliefs to others? 
+  .notes Here is one quite famous way to test this, perhaps some of you are even aware of it already.
+  .notes Let's suppose I am the experimenter and you are the subjects.
+  .notes First I tell you a story ...
+  .words: .container_12: .grid_12
+    p ‘Maxi puts his chocolate in the BLUE box and leaves the room to play.  
+      span.step2.hide While he is away (and cannot see), his mother moves the chocolate from the BLUE box to the GREEN box.  
+      span.step3.hide Later Maxi returns.  He wants his chocolate.’
+    .handout In a standard \textit{false belief task}, `[t]he subject is aware that he/she and another person [Maxi] witness a certain state of affairs x.  Then, in the absence of the other  
+      | person the subject witnesses an unexpected change in the state of affairs from x to y' \citep[p.\ 106]{Wimmer:1983dz}. 
+      | The task is designed to measure the subject's sensitivity to the probability that Maxi will falsely believe x to obtain. 
+    .vspace-em
+    .container_12
+      .grid_6
+        +colour-box('blue', '100')
+          p.center blue
+            br 
+            | box
+      .grid_6.step2.hide 
+        +colour-box('green', '100')
+          p.center green box
+    p &nbsp;
+    // this bit gets shown only later
+    p.em-above
+      span.hide.anticipationPrompt I wonder where Maxi will look for his chocolate
+    p.em-above.step4.testQuestion.hide ‘Where will Maxi look for his chocolate?’
+    p.source Wimmer & Perner 1983
+    +steps(4)
 
 +slide
-  img(src='/img/wimmer_1983_fig.png')
+  .notes Here's the really surprising thing.
+  .notes Children do really badly on this until they are around four years of age.
+  .notes And they seem to develop the ability to pass this task only gradually, over months or years.
+  .notes (There's something else that isn't surprising to most people but should be: adult humans not only nearly always provide the answer we're calling 'correct': they also believe that there is an obviously correct answer and that it would be a mistake to give any other answer.  I'll return to this point later.)
+  img.bw(src='/img/wimmer_1983_fig.png')
   p.source Wimmer & Perner 1983
   .notes (NB: The figure is not Wimmer & Perner's but drawn from their data.)
 
@@ -85,10 +113,13 @@ mixin slide_theChallenge()
   .notes So you'll be pleased to know that a meta-study of 178 papers confirmed Wimmer & Perner's findings.
   img(src='/img/wellman_2001_fig2a.png', style='max-height:500px;')
   p.source Wellman et al 2001, figure 2A
+  .notes Now there is clearly some variation here.
+  .notes That's because different researchers implemented different versions of the original task.
+  .notes We can use the meta-analysis of these experiments as a shortcut to finding out what sorts of factors affect children's performance.
   
 +slide
-  .notes This meta-study also brings together some nice findings.
-  .notes One is that you get essentially the same results whether you ask children about others' beliefs or their own beliefs.
+  .notes One factor that seems to make hardly any difference is whether you ask children about others' beliefs or their own beliefs.
+  .notes To repeat, you get essentially the same results whether you ask children about others' beliefs or their own beliefs.
   .notes Children literally do not know their own minds.
   img(src='/img/wellman_2001_fig5.png', style='max-height:500px;')
   p.source Wellman et al 2001, figure 5
@@ -115,7 +146,7 @@ mixin slide_theChallenge()
 
 +slide_middle
   p.center Sellars' Myth of Jones
-  .notes *todo*: describe Sellars' myth
+  .notes *todo*: describe Sellars' myth; link to Gopnik theory theory idea.
 
 +slide_middle
   p.center but ...

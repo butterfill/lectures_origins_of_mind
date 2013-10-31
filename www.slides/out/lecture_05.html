@@ -150,13 +150,13 @@ var inject = function(){
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.</div>
-        <div class="notes">Let me explain.</div>
         <div style="margin-left:200px;">
           <div class="vspace-em"></div>
           <div class="vspace-em"></div>
           <div class="huge-glow right">challenge</div>
           <div class="under-huge-glow right">Explain the emergence, in evolution or development, of <span class="highlight1">mindreading.</span></div>
+          <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.</div>
+          <div class="notes">Let me explain.</div>
           <div data-what=" .highlight1" data-class="invert" class="slide anim-continue anim-addclass"></div>
           <div data-what=" .highlight1" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
@@ -169,14 +169,21 @@ var inject = function(){
           <div class="vspace-em"></div>
           <div class="slide premack-quote">
             <div class="notes">Researchers sometimes use the term ‘theory of mind’.</div>
-            <div class="handout notes show">
-              ‘In saying that an individual has a theory of mind, 
-              we mean that the individual imputes mental states to himself and to others’ 
-            </div>
+            <div class="handout notes show"><span>‘In saying that an individual has a </span><span class="theory-of-mind">theory of mind,</span><span> we mean that the individual imputes mental states to himself and to others’ </span></div>
             <div class="handout notes ctd">\citep[p.\ 515]{premack_does_1978}</div>
             <p class="right">(Premack & Woodruff 1978: 515)</p>
           </div>
+          <div data-what=" .theory-of-mind" data-class="invert" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" .theory-of-mind" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">
+            So, to be clear about the terminology, to have a theory of mind is just to be able to to mindread, 
+            that is, to identify mental states and purposive actions  
+            as the mental states and purposive actions of a particular subject.
+          </div>
           <div data-what=".premack-quote" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" .highlight1" data-class="invert" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=" .highlight1" data-class="bkg-words-highlight-white" class="slide anim-continue anim-removeclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
           <div class="notes">So the challenge is to explain the emergence of mindreading.</div>
           <div class="notes">You know (let's say) that Ayesha belives Beatrice is in the library.</div>
@@ -195,17 +202,24 @@ var inject = function(){
     <div class="grid_12">
       <div class="words">
         <div class="middle">
+          <div class="notes">I shall focus on awareness of others' beliefs to the exclusion of other mental states.</div>
+          <div class="notes">There's no theoretical reason for this; it's just a practical thing.</div>
+          <div class="notes">And what we learn about belief will generalise to other mental states.</div>
           <p class="center">belief</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="slide">
+<section id="maxi_story" class="slide">
+  <div class="notes">How can we test whether someone is able to ascribe beliefs to others? </div>
+  <div class="notes">Here is one quite famous way to test this, perhaps some of you are even aware of it already.</div>
+  <div class="notes">Let's suppose I am the experimenter and you are the subjects.</div>
+  <div class="notes">First I tell you a story ...</div>
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <p>‘Maxi puts his chocolate in the BLUE box and leaves the room to play.  While he is away (and cannot see), his mother moves the chocolate from the BLUE box to the GREEN box.  Later Maxi returns.  He wants his chocolate.’</p>
+        <p>‘Maxi puts his chocolate in the BLUE box and leaves the room to play.  <span class="step2 hide">While he is away (and cannot see), his mother moves the chocolate from the BLUE box to the GREEN box.  </span><span class="step3 hide">Later Maxi returns.  He wants his chocolate.’</span></p>
         <div class="handout">
           In a standard \textit{false belief task}, `[t]he subject is aware that he/she and another person [Maxi] witness a certain state of affairs x.  Then, in the absence of the other  
           person the subject witnesses an unexpected change in the state of affairs from x to y' \citep[p.\ 106]{Wimmer:1983dz}. 
@@ -215,17 +229,23 @@ var inject = function(){
         <div class="container_12">
           <div class="grid_6">
             <div style="background-color:blue;width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
-              <p>blue box</p>
+              <p class="center">blue<br/>box</p>
             </div>
           </div>
-          <div class="grid_6">
+          <div class="grid_6 step2 hide"> 
             <div style="background-color:green;width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
-              <p>green box</p>
+              <p class="center">green box</p>
             </div>
           </div>
         </div>
-        <p class="em-above">‘Where will Maxi look for his chocolate?’</p>
+        <p>&nbsp;</p>
+        <!-- this bit gets shown only later-->
+        <p class="em-above"><span class="hide anticipationPrompt">I wonder where Maxi will look for his chocolate</span></p>
+        <p class="em-above step4 testQuestion hide">‘Where will Maxi look for his chocolate?’</p>
         <p class="source">Wimmer & Perner 1983</p>
+        <div data-what=" .step2" data-class="hide" class="slide anim-removeclass"></div>
+        <div data-what=" .step3" data-class="hide" class="slide anim-removeclass"></div>
+        <div data-what=" .step4" data-class="hide" class="slide anim-removeclass"></div>
       </div>
     </div>
   </div>
@@ -233,7 +253,11 @@ var inject = function(){
 <section class="slide">
   <div class="words">
     <div class="container_12">
-      <div class="grid_12"><img src="/img/wimmer_1983_fig.png"/>
+      <div class="grid_12">
+        <div class="notes">Here's the really surprising thing.</div>
+        <div class="notes">Children do really badly on this until they are around four years of age.</div>
+        <div class="notes">And they seem to develop the ability to pass this task only gradually, over months or years.</div>
+        <div class="notes">(There's something else that isn't surprising to most people but should be: adult humans not only nearly always provide the answer we're calling 'correct': they also believe that there is an obviously correct answer and that it would be a mistake to give any other answer.  I'll return to this point later.)</div><img src="/img/wimmer_1983_fig.png" class="bw"/>
         <p class="source">Wimmer & Perner 1983</p>
         <div class="notes">(NB: The figure is not Wimmer & Perner's but drawn from their data.)</div>
       </div>
@@ -255,6 +279,9 @@ var inject = function(){
       <div class="grid_12">
         <div class="notes">So you'll be pleased to know that a meta-study of 178 papers confirmed Wimmer & Perner's findings.</div><img src="/img/wellman_2001_fig2a.png" style="max-height:500px;"/>
         <p class="source">Wellman et al 2001, figure 2A</p>
+        <div class="notes">Now there is clearly some variation here.</div>
+        <div class="notes">That's because different researchers implemented different versions of the original task.</div>
+        <div class="notes">We can use the meta-analysis of these experiments as a shortcut to finding out what sorts of factors affect children's performance.</div>
       </div>
     </div>
   </div>
@@ -263,8 +290,8 @@ var inject = function(){
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <div class="notes">This meta-study also brings together some nice findings.</div>
-        <div class="notes">One is that you get essentially the same results whether you ask children about others' beliefs or their own beliefs.</div>
+        <div class="notes">One factor that seems to make hardly any difference is whether you ask children about others' beliefs or their own beliefs.</div>
+        <div class="notes">To repeat, you get essentially the same results whether you ask children about others' beliefs or their own beliefs.</div>
         <div class="notes">Children literally do not know their own minds.</div><img src="/img/wellman_2001_fig5.png" style="max-height:500px;"/>
         <p class="source">Wellman et al 2001, figure 5</p>
       </div>
@@ -299,8 +326,6 @@ var inject = function(){
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.</div>
-        <div class="notes">Let me explain.</div>
         <div style="margin-left:200px;">
           <div class="vspace-em"></div>
           <div class="vspace-em"></div>
@@ -323,7 +348,7 @@ var inject = function(){
       <div class="words">
         <div class="middle">
           <p class="center">Sellars' Myth of Jones</p>
-          <div class="notes">*todo*: describe Sellars' myth</div>
+          <div class="notes">*todo*: describe Sellars' myth; link to Gopnik theory theory idea.</div>
         </div>
       </div>
     </div>
@@ -376,6 +401,16 @@ var inject = function(){
   </div>
 </section>
 <section class="slide">
+  <div class="notes">Recall the experiment that got us started.</div>
+  <div class="notes">These experimenters added an anticipation prompt and measured to which box subjects looked first \citep{Clements:1994cw}.</div>
+  <div class="notes">(Actually they didn't use this story; theirs was about a mouse called Sam and some cheese, but the differences needn't concern us.)</div>
+  <div data-which="#maxi_story" class="slide-clone"></div>
+  <div data-what=".anticipationPrompt" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+  <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+  <div data-what=" .anticipationPrompt" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
+  <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+</section>
+<section class="slide">
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
@@ -395,6 +430,7 @@ var inject = function(){
 </section>
 <!-- sequence of slides from budapest CEU 2011-2 lectures on mindreading and joint action, lecture 01-->
 <!-- *todo move notes from those lectures-->
+<!-- *todo notes to slide 50: ss in Knudsen pointing are 18 months old-->
 <section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_23.jpg" class="bkg"/>
   <div class="words">
     <div class="container_12">
@@ -402,13 +438,13 @@ var inject = function(){
         <div class="handout">\subsection{Theory of mind cognition is hard}</div>
         <div class="handout">Conceptually demanding:</div>
         <div class="handout">\begin{itemize}\itemsep0pt</div>
-        <div class="handout">\item Acquisition takes several years\citep{Wimmer:1983dz,Wellman:2001lz}</div>
-        <div class="handout">\item Tied to the development of executive function\citep{Perner:1999yr,Sabbagh:2006ke} and language\citep{Astington2005ot}</div>
-        <div class="handout">\item Development facilitated by explicit training\citep{Slaughter:1996fv} and siblings\citep{Clements:2000nc,Hughes:2004zj}</div>
+        <div class="handout">\item Acquisition takes several years \citep{Wimmer:1983dz,Wellman:2001lz}</div>
+        <div class="handout">\item Tied to the development of executive function \citep{Perner:1999yr,Sabbagh:2006ke} and language \citep{Astington2005ot}</div>
+        <div class="handout">\item Development facilitated by explicit training \citep{Slaughter:1996fv} and siblings \citep{Clements:2000nc,Hughes:2004zj}</div>
         <div class="handout">\end{itemize}</div>
         <div class="handout">Cognitively demanding: </div>
         <div class="handout">\begin{itemize}</div>
-        <div class="handout">\item Requires attention and working memory in fully competent adults\citep{Apperly:2008jv,McKinnon:2007rr}</div>
+        <div class="handout">\item Requires attention and working memory in fully competent adults \citep{Apperly:2008jv,McKinnon:2007rr}</div>
         <div class="handout">\end{itemize}</div>
       </div>
     </div>
@@ -814,20 +850,23 @@ var inject = function(){
     </div>
   </div>
 </section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="words">
-        <div class="middle">
+<!-- *todo* duplicated!-->
+<section class="slide"><img src="/img/bkg_twins.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="margin-left:200px;">
+          <div class="vspace-em"></div>
+          <div class="vspace-em"></div>
+          <div class="huge-glow right">challenge</div>
+          <div class="under-huge-glow right">Explain the emergence, in evolution or development, of <span class="highlight1">mindreading.</span></div>
           <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.</div>
           <div class="notes">Initially it looked like this was going to be relatively straightforward and involve just language, social interaction and executive function.</div>
           <div class="notes">So a Myth of Jones style story seemed viable.</div>
           <div class="notes">But the findings of competence in infants of around one year of age changes this.</div>
           <div class="notes">These findings tell us that not all abilities to represent others' mental states can depend on things like language.</div>
-          <div class="notes">Further, we have a puzzle.</div>
-          <div class="notes">The puzzle is how to reconcile infants' competence with three-year-olds' failure.</div>
-          <!-- *todo* this slide should state the challenge.-->
-          <p class="center">where now?</p>
+          <div class="notes">And, as I've been stressing, these findings also create a puzzle.</div>
+          <div class="notes">The puzzle is, roughly, how to reconcile infants' competence with three-year-olds' failure.</div>
         </div>
       </div>
     </div>
@@ -860,16 +899,9 @@ var inject = function(){
     </div>
   </div>
 </section>
-<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_73.jpg" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Here's the first puzzle one more time.</div>
-        <!-- *todo* cut?-->
-      </div>
-    </div>
-  </div>
-</section>
+<!-- +slide({bkg:'unit_411/slide_budapest_lecture01_73.jpg'})-->
+<!--   .notes Here's the first puzzle one more time.-->
+<!--   // *todo* cut?-->
 <section id="unit_421" class="slide"><img src="/img/bkg/bees/DSC_0165_crop.jpg" class="bkg"/>
   <div class="spacer">&nbsp;</div>
   <div style="" class="title-block">
@@ -897,7 +929,7 @@ var inject = function(){
     <div class="container_12">
       <div class="grid_12">
         <div class="handout">Are human adults’ abilities to represent beliefs automatic?</div>
-        <div class="handout">There is evidence for\citep{kovacs_social_2010,Schneider:2011fk} and against.\citep{apperly:2008_back,apperly_why_2010} </div>
+        <div class="handout">There is evidence for \citep{kovacs_social_2010,Schneider:2011fk} and against \citep{apperly:2008_back,apperly_why_2010}. </div>
       </div>
     </div>
   </div>
@@ -1030,18 +1062,92 @@ var inject = function(){
     </div>
   </div>
 </section>
+<!-- *todo* duplicated!-->
+<section class="slide"><img src="/img/bkg_twins.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="margin-left:200px;">
+          <div class="vspace-em"></div>
+          <div class="vspace-em"></div>
+          <div class="huge-glow right">challenge</div>
+          <div class="under-huge-glow right">Explain the emergence, in evolution or development, of <span class="highlight1">mindreading.</span></div>
+          <div class="notes">So how does this second puzzle bear on our overall objective?</div>
+          <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.</div>
+          <div class="notes">The fact that mindreading is sometimes automatic and sometimes not is good evidence that mindreading is not a single thing.</div>
+          <div class="notes">Rather there are multiple kinds of process or system involved in mindreading.</div>
+          <div class="notes">From this we can conclude two things.</div>
+          <div class="notes">First, in this respect, the cases of mindreading is much like the cases of colour and physical objects.</div>
+          <div class="notes">These also involved multiple systems; this took the form of a distinction between core knowledge and knowledge proper.</div>
+          <div class="notes">Second, we have further grounds for thinking that some forms of mindreading are modular.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_bcccd_ian_1.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">[These slides are from a joint presentation with Ian Apperly (BCCCD)]</div>
+        <div class="notes">What is the relation between infant and adult capacities for mindreading?</div>
+        <div class="notes">It's important at this point to recognise that there are two quite different possibilties.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_bcccd_ian_2.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_bcccd_ian_3.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_bcccd_ian_4.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_bcccd_ian_5.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_bcccd_ian_6.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
 <section id="unit_431" class="slide"><img src="/img/bkg/bees/DSC_0169_crop.jpg" class="bkg"/>
   <div class="spacer">&nbsp;</div>
   <div style="" class="title-block">
     <div class="title-container">
-      <h2 class="title1">Modules and Efficiency</h2>
+      <h2 class="title1">Modules and Cognitive Efficiency</h2>
     </div>
   </div>
 </section>
 <div class="handout">&nbsp;</div>
-<div class="handout">\section{Modules and Efficiency}</div>
+<div class="handout">\section{Modules and Cognitive Efficiency}</div>
 <div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{Modules and Efficiency}</div>
+<div class="notes notes-header-tex">\section{Modules and Cognitive Efficiency}</div>
 <!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
 <!-- create title slide for a lecture-->
 <!-- param p contains document and images (an array of images to use)-->
@@ -1077,7 +1183,22 @@ var inject = function(){
     <div class="grid_12">
       <div class="words">
         <div class="middle">
-          <p class="center">modularity requires efficiency</p>
+          <p class="center">modularity requires <span class="cognitive-efficiency">cognitive efficiency</span></p>
+          <div data-what=" .cognitive-efficiency" data-class="invert" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" .cognitive-efficiency" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">First, what do I mean by cognitive efficiency.</div>
+          <div class="notes">Some tasks require mental effort.</div>
+          <div class="notes">For example, suppose I ask you to count from one to one hundred omitting each prime number.</div>
+          <div class="notes">This is not the kind of thing most people can do while washing up.</div>
+          <div class="notes">It requires attention, inhibitory control and working memory.</div>
+          <div class="notes">By contrast, many adults can count in the ordinary way from one to one hundred while washing up.</div>
+          <div class="notes">Counting has become routine, habitual.</div>
+          <div data-what=" .cognitive-efficiency" data-class="invert" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=" .cognitive-efficiency" data-class="bkg-words-highlight-white" class="slide anim-continue anim-removeclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">So much for cognitive efficiency.</div>
+          <div class="notes">Now why suppose that modularity (or core knowledge) requires cognitive efficiency?</div>
           <div class="notes">To invoke modularity, we need to understand how mindreading could be (i) automatic and (ii) present in pre-linguistic infants with limited working memory & executive function; both (i) and (ii) mean we need to understand how it could be cognitively efficient.  (The situation is a bit like this: we want to say you can perceive others mental states; but on the face of it, mental states are exactly the sort of things that are not available to perception.)</div>
           <div class="handout">How could mindreading ever (but not always) be automatic?</div>
           <div class="handout">Representing perceptions and beliefs as such---and even merely holding in mind what another believes, where no inference is required---involves a measurable processing cost\citep{apperly:2008_back,apperly:2010_limits}, consumes attention and working memory in fully competent adults,\citealp{Apperly:2009cc, lin:2010_reflexively, McKinnon:2007rr} may require inhibition\citep{bull:2008_role} and makes demands on executive function.\citep{apperly:2004_frontal,samson:2005_seeing}</div>
@@ -1501,19 +1622,58 @@ var inject = function(){
     </div>
   </div>
 </section>
-<section class="slide">
+<!-- *todo* duplicated!-->
+<!-- conclusion-->
+<section class="slide"><img src="/img/bkg_twins.jpg" class="bkg"/>
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <p>conclusions</p>
-        <div class="notes">*todo*</div>
-        <div class="notes">- theme B : the puzzles about development (A- & B-tasks) and automaticity.  We've earned the right to solve them by appeal to modularity.  (NB: it's modularity rather than mTm that explains the discrepancy; mTm is important because (i) it explains efficiency; and (ii) it generates predictions via signature limits)</div>
-        <div class="notes">- theme B-1 : relation between infant and adult competence --- infant competence retained in adults (matching signature limits from Low & Watts), as in the cases of colour (and probably physical objects too); </div>
+        <div style="margin-left:200px;">
+          <div class="vspace-em"></div>
+          <div class="vspace-em"></div>
+          <div class="huge-glow right">challenge</div>
+          <div class="under-huge-glow right">Explain the emergence, in evolution or development, of <span class="highlight1">mindreading.</span></div>
+          <div class="notes">So let me conclude.</div>
+          <div class="notes">The challenge we have been addressing was to understand the emergence of mindreading.</div>
+          <div class="notes">Initially this seemed straightforward: you learn this from social interaction using language as a tool (compare Gopnik's theory theory).</div>
+          <div class="notes">However, the discovery that abilities to track beilefs exist in infants from around 7 months or earlier initially suggested a different picture:</div>
+          <div class="notes">one on which mindreading was likely to involve core knowledge.</div>
+          <div class="notes">But, as always, things are not so straightforward.  The evidence is apparently conflicting.</div>
+          <div class="notes">There are actually  two conflicts, not one: developmentally (A- & B-tasks) and in adults, automaticity.</div>
+          <div class="notes">The existence of two puzzles gives us confidence that the conflict is not merely a methodological artefact.</div>
+          <div class="notes">The solution is to recognise that there are modules, but there was an obstacle to the hypothesis that mindreading could be modular (*cognitive efficiency)</div>
+          <div class="notes">In constructing minimal theory of mind we've earned the right to solve them by appeal to modularity.  (NB: it's modularity rather than mTm that explains the discrepancy; mTm is important because (i) it explains efficiency; and (ii) it generates predictions via signature limits)</div>
+          <div class="notes">Now the idea that there are both modular and non-modular mindreading enables us to solve the two puzzles (developmentally (A- & B-tasks) and in adults, automaticity.).</div>
+          <div class="notes">However, this resolution of the puzzles doesn't answer our overall challenge about the origins of knowledge of other minds.</div>
+          <div class="notes">In fact it complicates the account of the origins of knowledge of other minds, makes the challenge seem harder rather than easier to meet.</div>
+          <div class="notes">We can't give a theory theory / learning account; and we also can't give a straightforward core knowledge account.</div>
+          <div class="notes">Instead we need something a bit more complex.</div>
+          <div class="notes">I haven't tried to offer an account of what that thing is yet, and that isn't the point of this lecture.</div>
+          <div class="notes">But let me close by describing how I would approach it.</div>
+          <div class="notes">A key issue is the relation between infant and adult competence  ...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_bcccd_ian_6.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Infant competence retained in adults (matching signature limits from Low & Watts), as in the cases of colour (and probably physical objects too).</div>
+        <div class="notes">Now if we accept this, it is tempting to conjecture that the later developing mindreading abilities involve a process of rediscovery ...</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_rediscovery_mindreading.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12"> 
         <div class="notes">
           - theme A: explain the origins of knowledge of others minds : development as rediscovery.  There is a modular capacity ( = core knowledge). 
           But this doesn't lead to adult-like understanding for years, and the acquisition of adult-like understanding hinges on language; may involve completely different model of mental states.
         </div>
-        <div class="notes">*todo* especially illustrate the two views about relation between infant and adult capacity (use All Souls' slides!)</div>
       </div>
     </div>
   </div>

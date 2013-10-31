@@ -20,6 +20,16 @@ include ../../../fragments/slide_mixins
   .notes So I'm going to reveal the puzzle to you.  But let me start with a bit of background.
   p.center a puzzle
 
+
+section.slide
+  .notes Recall the experiment that got us started.
+  .notes These experimenters added an anticipation prompt and measured to which box subjects looked first \citep{Clements:1994cw}.
+  .notes (Actually they didn't use this story; theirs was about a mouse called Sam and some cheese, but the differences needn't concern us.)
+  .slide-clone(data-which='#maxi_story')
+  +show('.anticipationPrompt')
+  +words-bkg('.anticipationPrompt','pink')
+  
+
 +slide
   .notes What got me hooked philosophical psychology, 
     | and on philosophical issues in the development of mindreading in particular 
@@ -36,17 +46,18 @@ include ../../../fragments/slide_mixins
 // sequence of slides from budapest CEU 2011-2 lectures on mindreading and joint action, lecture 01
 // *todo move notes from those lectures
 
+// *todo notes to slide 50: ss in Knudsen pointing are 18 months old
 +slide({bkg:'unit_411/slide_budapest_lecture01_23.jpg'})
   .handout \subsection{Theory of mind cognition is hard}
   .handout Conceptually demanding:
   .handout \begin{itemize}\itemsep0pt
-  .handout \item Acquisition takes several years\citep{Wimmer:1983dz,Wellman:2001lz}
-  .handout \item Tied to the development of executive function\citep{Perner:1999yr,Sabbagh:2006ke} and language\citep{Astington2005ot}
-  .handout \item Development facilitated by explicit training\citep{Slaughter:1996fv} and siblings\citep{Clements:2000nc,Hughes:2004zj}
+  .handout \item Acquisition takes several years \citep{Wimmer:1983dz,Wellman:2001lz}
+  .handout \item Tied to the development of executive function \citep{Perner:1999yr,Sabbagh:2006ke} and language \citep{Astington2005ot}
+  .handout \item Development facilitated by explicit training \citep{Slaughter:1996fv} and siblings \citep{Clements:2000nc,Hughes:2004zj}
   .handout \end{itemize}
   .handout Cognitively demanding: 
   .handout \begin{itemize}
-  .handout \item Requires attention and working memory in fully competent adults\citep{Apperly:2008jv,McKinnon:2007rr}
+  .handout \item Requires attention and working memory in fully competent adults \citep{Apperly:2008jv,McKinnon:2007rr}
   .handout \end{itemize}
 
 - var img_nos = range(24,73)
@@ -55,17 +66,26 @@ each img_no in img_nos
   +slide({bkg:filename})
 
 
-  
-+slide_middle
+// *todo* duplicated!
+mixin slide_theChallenge()
+  +slide({bkg:'bkg_twins.jpg'})
+    div(style='margin-left:200px;')
+      .vspace-em
+      .vspace-em
+      .huge-glow.right challenge
+      .under-huge-glow.right Explain the emergence, in evolution or development, of 
+        span.highlight1 mindreading.
+      block
+
++slide_theChallenge
   .notes The challenge is to explain the emergence, in evolution or development, of mindreading.
   .notes Initially it looked like this was going to be relatively straightforward and involve just language, social interaction and executive function.
   .notes So a Myth of Jones style story seemed viable.
   .notes But the findings of competence in infants of around one year of age changes this.
   .notes These findings tell us that not all abilities to represent others' mental states can depend on things like language.
-  .notes Further, we have a puzzle.
-  .notes The puzzle is how to reconcile infants' competence with three-year-olds' failure.
-  // *todo* this slide should state the challenge.
-  p.center where now?
+  .notes And, as I've been stressing, these findings also create a puzzle.
+  .notes The puzzle is, roughly, how to reconcile infants' competence with three-year-olds' failure.
+  
 
 +slide({bkg:'slide_lecture04_013.jpg'})
   .notes The puzzle is a little bit like the puzzle we had in the case of knowledge of physical objects.
@@ -80,8 +100,8 @@ each img_no in img_nos
   .notes But the fact that representations of others' minds influence 1-year-olds' actions (e.g. in communicating and helping) complicates things because we imagine modules as inferentially isolated from practical reasoning.
   .notes Looking at a further puzzle will help us.
 
-+slide({bkg:'unit_411/slide_budapest_lecture01_73.jpg'})
-  .notes Here's the first puzzle one more time.
-  // *todo* cut?
+// +slide({bkg:'unit_411/slide_budapest_lecture01_73.jpg'})
+//   .notes Here's the first puzzle one more time.
+//   // *todo* cut?
   
   

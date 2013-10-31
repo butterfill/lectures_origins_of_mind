@@ -128,6 +128,16 @@ var inject = function(){
   </div>
 </section>
 <section class="slide">
+  <div class="notes">Recall the experiment that got us started.</div>
+  <div class="notes">These experimenters added an anticipation prompt and measured to which box subjects looked first \citep{Clements:1994cw}.</div>
+  <div class="notes">(Actually they didn't use this story; theirs was about a mouse called Sam and some cheese, but the differences needn't concern us.)</div>
+  <div data-which="#maxi_story" class="slide-clone"></div>
+  <div data-what=".anticipationPrompt" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+  <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+  <div data-what=" .anticipationPrompt" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
+  <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+</section>
+<section class="slide">
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
@@ -147,6 +157,7 @@ var inject = function(){
 </section>
 <!-- sequence of slides from budapest CEU 2011-2 lectures on mindreading and joint action, lecture 01-->
 <!-- *todo move notes from those lectures-->
+<!-- *todo notes to slide 50: ss in Knudsen pointing are 18 months old-->
 <section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_23.jpg" class="bkg"/>
   <div class="words">
     <div class="container_12">
@@ -154,13 +165,13 @@ var inject = function(){
         <div class="handout">\subsection{Theory of mind cognition is hard}</div>
         <div class="handout">Conceptually demanding:</div>
         <div class="handout">\begin{itemize}\itemsep0pt</div>
-        <div class="handout">\item Acquisition takes several years\citep{Wimmer:1983dz,Wellman:2001lz}</div>
-        <div class="handout">\item Tied to the development of executive function\citep{Perner:1999yr,Sabbagh:2006ke} and language\citep{Astington2005ot}</div>
-        <div class="handout">\item Development facilitated by explicit training\citep{Slaughter:1996fv} and siblings\citep{Clements:2000nc,Hughes:2004zj}</div>
+        <div class="handout">\item Acquisition takes several years \citep{Wimmer:1983dz,Wellman:2001lz}</div>
+        <div class="handout">\item Tied to the development of executive function \citep{Perner:1999yr,Sabbagh:2006ke} and language \citep{Astington2005ot}</div>
+        <div class="handout">\item Development facilitated by explicit training \citep{Slaughter:1996fv} and siblings \citep{Clements:2000nc,Hughes:2004zj}</div>
         <div class="handout">\end{itemize}</div>
         <div class="handout">Cognitively demanding: </div>
         <div class="handout">\begin{itemize}</div>
-        <div class="handout">\item Requires attention and working memory in fully competent adults\citep{Apperly:2008jv,McKinnon:2007rr}</div>
+        <div class="handout">\item Requires attention and working memory in fully competent adults \citep{Apperly:2008jv,McKinnon:2007rr}</div>
         <div class="handout">\end{itemize}</div>
       </div>
     </div>
@@ -566,20 +577,23 @@ var inject = function(){
     </div>
   </div>
 </section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="words">
-        <div class="middle">
+<!-- *todo* duplicated!-->
+<section class="slide"><img src="/img/bkg_twins.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="margin-left:200px;">
+          <div class="vspace-em"></div>
+          <div class="vspace-em"></div>
+          <div class="huge-glow right">challenge</div>
+          <div class="under-huge-glow right">Explain the emergence, in evolution or development, of <span class="highlight1">mindreading.</span></div>
           <div class="notes">The challenge is to explain the emergence, in evolution or development, of mindreading.</div>
           <div class="notes">Initially it looked like this was going to be relatively straightforward and involve just language, social interaction and executive function.</div>
           <div class="notes">So a Myth of Jones style story seemed viable.</div>
           <div class="notes">But the findings of competence in infants of around one year of age changes this.</div>
           <div class="notes">These findings tell us that not all abilities to represent others' mental states can depend on things like language.</div>
-          <div class="notes">Further, we have a puzzle.</div>
-          <div class="notes">The puzzle is how to reconcile infants' competence with three-year-olds' failure.</div>
-          <!-- *todo* this slide should state the challenge.-->
-          <p class="center">where now?</p>
+          <div class="notes">And, as I've been stressing, these findings also create a puzzle.</div>
+          <div class="notes">The puzzle is, roughly, how to reconcile infants' competence with three-year-olds' failure.</div>
         </div>
       </div>
     </div>
@@ -612,16 +626,9 @@ var inject = function(){
     </div>
   </div>
 </section>
-<section class="slide"><img src="/img/unit_411/slide_budapest_lecture01_73.jpg" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Here's the first puzzle one more time.</div>
-        <!-- *todo* cut?-->
-      </div>
-    </div>
-  </div>
-</section>
+<!-- +slide({bkg:'unit_411/slide_budapest_lecture01_73.jpg'})-->
+<!--   .notes Here's the first puzzle one more time.-->
+<!--   // *todo* cut?-->
     </div>
   </body>
 </html>

@@ -36,14 +36,48 @@ each img_no in img_nos
   +slide({bkg:filename})
 
 
-+slide
-  p conclusions
-  .notes *todo*
-  .notes - theme B : the puzzles about development (A- & B-tasks) and automaticity.  We've earned the right to solve them by appeal to modularity.  (NB: it's modularity rather than mTm that explains the discrepancy; mTm is important because (i) it explains efficiency; and (ii) it generates predictions via signature limits)
-  .notes - theme B-1 : relation between infant and adult competence --- infant competence retained in adults (matching signature limits from Low & Watts), as in the cases of colour (and probably physical objects too); 
+
+// *todo* duplicated!
+mixin slide_theChallenge()
+  +slide({bkg:'bkg_twins.jpg'})
+    div(style='margin-left:200px;')
+      .vspace-em
+      .vspace-em
+      .huge-glow.right challenge
+      .under-huge-glow.right Explain the emergence, in evolution or development, of 
+        span.highlight1 mindreading.
+      block
+
+
+// conclusion
+
++slide_theChallenge
+  .notes So let me conclude.
+  .notes The challenge we have been addressing was to understand the emergence of mindreading.
+  .notes Initially this seemed straightforward: you learn this from social interaction using language as a tool (compare Gopnik's theory theory).
+  .notes However, the discovery that abilities to track beilefs exist in infants from around 7 months or earlier initially suggested a different picture:
+  .notes one on which mindreading was likely to involve core knowledge.
+  .notes But, as always, things are not so straightforward.  The evidence is apparently conflicting.
+  .notes There are actually  two conflicts, not one: developmentally (A- & B-tasks) and in adults, automaticity.
+  .notes The existence of two puzzles gives us confidence that the conflict is not merely a methodological artefact.
+  .notes The solution is to recognise that there are modules, but there was an obstacle to the hypothesis that mindreading could be modular (*cognitive efficiency)
+  .notes In constructing minimal theory of mind we've earned the right to solve them by appeal to modularity.  (NB: it's modularity rather than mTm that explains the discrepancy; mTm is important because (i) it explains efficiency; and (ii) it generates predictions via signature limits)
+  .notes Now the idea that there are both modular and non-modular mindreading enables us to solve the two puzzles (developmentally (A- & B-tasks) and in adults, automaticity.).
+  .notes However, this resolution of the puzzles doesn't answer our overall challenge about the origins of knowledge of other minds.
+  .notes In fact it complicates the account of the origins of knowledge of other minds, makes the challenge seem harder rather than easier to meet.
+  .notes We can't give a theory theory / learning account; and we also can't give a straightforward core knowledge account.
+  .notes Instead we need something a bit more complex.
+  .notes I haven't tried to offer an account of what that thing is yet, and that isn't the point of this lecture.
+  .notes But let me close by describing how I would approach it.
+  .notes A key issue is the relation between infant and adult competence  ...
+  
++slide({bkg:'slide_bcccd_ian_6.jpg'})
+  .notes Infant competence retained in adults (matching signature limits from Low & Watts), as in the cases of colour (and probably physical objects too).
+  .notes Now if we accept this, it is tempting to conjecture that the later developing mindreading abilities involve a process of rediscovery ...
+  
+ +slide({bkg:'slide_rediscovery_mindreading.jpg'})  
   .notes - theme A: explain the origins of knowledge of others minds : development as rediscovery.  There is a modular capacity ( = core knowledge). 
     | But this doesn't lead to adult-like understanding for years, and the acquisition of adult-like understanding hinges on language; may involve completely different model of mental states.
-  .notes *todo* especially illustrate the two views about relation between infant and adult capacity (use All Souls' slides!)
   //- old
   //-
     p How could mindreading be both automatic and not automatic?
