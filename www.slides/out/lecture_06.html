@@ -1,0 +1,1597 @@
+
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Lecture 06 | Origins of Mind</title>
+    <meta name="description" content="Origins of Mind: Lectures."/>
+    <meta name="keywords" content="philosophy, psychology, development, thought"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.53.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script async="async" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/normalize.css" /><link  rel="stylesheet" href="/vendor/deck.js/style.neon.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.core.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.menu.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.hash.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.notes.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/log.js"></script><script defer="defer"  src="/vendor/modernizr.min.js"></script><script defer="defer"  src="/vendor/deck.js/deck.core.js"></script><script defer="defer"  src="/vendor/deck.js/deck.menu.js"></script><script defer="defer"  src="/vendor/deck.js/deck.hash.js"></script><script defer="defer"  src="/vendor/deck.js/deck.notes.js"></script><script defer="defer"  src="/vendor/deck.js/deck.slide-clone.js"></script><script defer="defer"  src="/vendor/deck.js/deck.fit.js"></script><script defer="defer"  src="/vendor/deck.js/deck.step.js"></script><script defer="defer"  src="/vendor/deck.js/deck.events.js"></script><script defer="defer"  src="/vendor/deck.js/deck.anim.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script>
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (no equivalent if you don't have a keyboard)</p>
+              <p>Press m or double tap to see a menu of slides</p>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<div class="notes notes-header-tex">\title {Origins of Mind: Lecture Notes \\ Lecture 06}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\maketitle</div>
+<div id="title-slide" class="slide"><img src="/img/bkg/bees/ADSC_0172_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div class="fade-in">
+    <div style="" class="title-block">
+      <div class="title-container">
+        <h1 class="title1 fade-in">Origins of Mind</h1>
+        <h1 class="title2 fade-in">Lecture 06</h1>
+        <h3 class="email fade-in">s.butterfill@warwick.ac.uk</h3>
+      </div>
+    </div>
+  </div>
+  <div class="handout">\def \ititle {Origins of Mind}</div>
+  <div class="handout">\def \isubtitle {Lecture 06}</div>
+  <div class="handout">&nbsp;</div>
+  <div class="handout">\</div>
+  <div class="handout">&nbsp;</div>
+  <div class="handout">\begin{center}</div>
+  <div class="handout">{\Large</div>
+  <div class="handout">\textbf{\ititle}: \isubtitle</div>
+  <div class="handout">}</div>
+  <div class="handout">&nbsp;</div>
+  <div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div>
+  <div class="handout">\end{center}</div>
+</div>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{An utterance}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{An utterance}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Linguistic communication is 'the indispensable instrument of fine-grained interpersonal understanding' (Davidson 1990: 326).</div>
+          <div class="notes">It enables us to pool knowledge and coordinate our actions.</div>
+          <div class="notes">Possessing language also allows us to share our lives in ways far more intimate than we could manage without it. </div>
+          <div class="notes">Today's question is, How could humans come to have abilities to communicate by language?</div>
+          <div class="handout">How could humans come to have abilities to communicate by language?</div>
+          <div class="notes">This question is complex because abilities to communicate involve both comprehension and production.</div>
+          <p class="center">language</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Today's question is also complex because we're starting at the far end of a chain.</div>
+        <div class="notes">You might thing, before we ask about communication by language we should ask about communicative actions, and before we ask about communicative actions we should ask about actions.</div>
+        <div class="notes">I wondered about aproaching it that way too, starting with action and working up.</div>
+        <div class="notes">But in the end I thought that right now you most of you are probably most interested in language, so most of you would probably find it most interesting to go backwards.</div><img src="/img/fig_action_communicative_linguistic.png"/>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Today's question is also complex because we don't actually know very much about the nature of communication by language.</div>
+        <div class="notes">This makes talking about the *acquisition* of abilities to communicate with words tricky.</div>
+        <div class="notes">We lack a clear understanding of the thing to be acquired.</div>
+        <div class="notes">Sperber and Wilson attempt to explain do human beings communicate with one another.</div>
+        <p>‘How do human beings communicate with one another?’ (Sperber and Wilson 1986/95: 1)</p>
+        <div class="notes">You might say, well let's not study acquisition at all, let's study the endpoint first.</div>
+        <div class="notes">But I don't think this is an option because understanding what the endpoint is and understanding how it is acquired are things we have to do simultaneously.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Chomsky holds that ‘the topic of successful communication in the actual world is far too complex and obscure’ to say anything systematic about (Chomsky 1992: 120). It’s a mistake, he thinks, to try to understand language by focussing on communication (compare Chomsky 2000: 30). I take Chomsky’s position seriously: we are going to have to question whether we’re asking the right question.</div>
+        <p>‘the topic of successful communication in the actual world is far too complex and obscure’</p>
+        <p class="right">(Chomsky 1992: 120)</p>
+        <div class="notes">If we are to make the topic of communiation with language tractcbale at all, we must start by breaking the question down.</div>
+        <div class="notes">To this end we need to ask ...</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ***todo put Jackendorf figure on handouts-->
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">As background we have to ask, What is language?</div>
+          <p class="center">What is language?</p>
+          <div class="notes">The truth is extremely complex.</div>
+          <div class="notes">But we need only a relatively simple picture ...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- *todo ? explain that we need syntax not just lexicon by illustrating with bhasa indonesia?-->
+<!-- **todo uncover image slowly, top to bottom-->
+<section class="slide"><img src="/img/slide_isabel_slept.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12"> 
+        <div class="notes">Consider an utterance of sentence like 'Isabel slept and Lily cried'.</div>
+        <div class="notes">What is the structure of this utterance?</div>
+        <div class="notes">First we can break the sentence down into two sentences and a connective.</div>
+        <div class="notes">Then we break these into words.</div>
+        <div class="notes">And the words break down into phonemes.</div>
+        <div class="notes">Which are eventually realised in continous bodily movements and the sounds these produce.</div>
+        <div class="notes">This is a very simplified picture.</div>
+        <div class="notes">But already we can see that comprehending an utterance will involve several steps.</div>
+        <div class="notes">Consider someone experiencing linguistic communication for the first time.</div>
+        <div class="notes">She is experiences continuous bodily movements and their acoustic consequences.</div>
+        <div class="notes">From these she has somehow to extract the phonetic gestures.</div>
+        <div class="notes">And then she has to group the phonetic gestures into words.</div>
+        <div class="notes">And finally she has to work out the syntactic structure of the words.</div>
+        <div class="notes">How does this help?</div>
+        <div class="notes">It turns out that the abilitues to make these different steps involves largely different mechanisms, and that the steps can be made independently of each other (not that there aren't bottom-up and top-down effects, just that these appear to be inessential in some cases).</div>
+        <div class="notes">Our question can be broken down accordingly.</div>
+        <div class="notes">Our question How do humans come to have abilities to communicate by language?</div>
+        <div class="notes">We can break the process of language comprehension into a series of transitions, from bodily movements and their acoustic effects to phonemes &c.</div>
+        <div class="notes">And we can think of language production as involving the same transitions, but in reverse.</div>
+        <div class="notes">And then our question can be broken down accordingly.</div>
+        <div class="notes">We don't have to ask how humans come to have abilities to communicate by language all in one go.</div>
+        <div class="notes">Instead we can ask how humans come to be able to identify phonemes in continous bodily movements and their acoustic effects, and how they come to identify words from uninterrupted sequences of phonemes, and so on.</div>
+        <div class="notes">In this way, our question becomes tractable.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">meaning</p>
+          <div class="notes">So far I haven't mentioned the one feature of communication by language that almost all philosophers focus on, meaning.</div>
+          <div class="notes">I think meaning is a problematic notion, and problematic in ways that will affect our attempt to understand how communication by language emerges.</div>
+          <div class="notes">But we haven't got all day, so I want to put this to one side for as long as possible.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--***todo *here* explain   sentence  utterance  proposition
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p>sentences:</p>
+        <ol>
+          <li>Utterances express propositions.</li>
+          <li>Which proposition expresses depends in part on which sentence it is an utterance of.</li>
+          <li>Sentences have meanings; the meaning of the sentence plus the context of utterance determines which proposition the utterance expresses.</li>
+          <li>Users of a language know the meanings of sentences in that language.</li>
+          <li>Knowing the meaning of a sentence someone utters enables one to know which proposition her utterance expresses.</li>
+        </ol>
+        <p>utterances:</p>
+        <ol>
+          <li>words have meanings</li>
+          <li>speakers know the meanings of words</li>
+          <li>the meanings of words, together with rules of composition, determine the meanings of sentences</li>
+          <li>speakers are thus able to know the meanings of sentences by virtue of knowing the meanings of words and rules of composition</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<!--      
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p>But what is meaning?</p>
+        <p>meaning of a sentence: whatever it is knowledge of which enables language users to understand utterances of that sentence (that is, to know which proposition the utterer expresses)</p>
+        <p>meaning of a word: whatever it is knowledge of which, together with knowledge of rules for composition, enables language users to know the meanings of sentences containing the word.</p>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<section id="unit_511" class="slide"><img src="/img/bkg/bees/DSC_0157_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Does being able to think depend on being able to communicate with language?</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Does being able to think depend on being able to communicate with language?}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Does being able to think depend on being able to communicate with language?}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<!-- start with Davidson's argument about thought interdependent with language.-->
+<!-- I haven't defended the premises of this argument (and, after years of reading his work, I don't think Davidson has either).-->
+<!-- But suppose the argument is right.-->
+<!-- We then face a puzzle.-->
+<!-- The puzzle is, how could abilities to communicate by language be acquired without the ability to think about words and their meanings?-->
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="words">
+          <container_12>
+            <grid_12>
+              <div class="notes">Our question is, How do humans come to have abilities to communicate using words?</div>
+              <div class="notes">I want to step back from this question to consider an argument about thought and language.</div>
+              <div class="notes">Here's an argument to show that being able to think depends on (or is interdependent with) being able to communicate by language.</div>
+              <div class="notes">I take this argument from Davidson.</div>
+              <ol class="the-argument">
+                <div class="handout">\begin{enumerate}</div>
+                <div class="handout">\item</div>
+                <li class="handout show"><span>If someone can </span><span class="think">think</span><span>, she must be capable of having a false belief.</span>
+                </li>
+                <div class="handout">\item</div>
+                <li class="handout show"> <span>To be capable of having a false belief it is necessary to understand the possibility of false belief.</span>
+                </li>
+                <div class="handout">\item</div>
+                <li class="handout show"><span>Understanding the possibility of false belief entails being able to communicate by language.</span>
+                </li>
+                <div class="handout">\end{enumerate}</div>
+              </ol>
+              <p>Conclusion:</p>
+              <p>If someone can think, she can communicate with language.</p>
+              <div data-what=".the-argument li:eq(1), .the-argument li:eq(2)" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+              <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+              <div class="notes">This premise seems straightforward to me.</div>
+              <div data-what=" .think" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
+              <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+              <div class="notes">Note that by think we mean desire, intend, wish, guess, believe ...</div>
+              <div class="notes">There's a quote on your handout in support of this.</div>
+              <div class="handout">'belief is central to all kinds of thought.  If someone is glad that, or notices that, or remembers that, or knows that, the gun is loaded, then he must believe that the gun is loaded.  Even to wonder whether the gun is loaded, or to speculate on the possibility that the gun is loaded, requires belief, for example, that a gun is a weapon, that it is a more or less enduring physical object, and so on.  …  it is necessary that there be endless interlocked beliefs'</div>
+              <div class="handout ctd">\citep[p.\ 157]{Davidson:1975eq}; cf. \citep[pp.\ 320--1]{Davidson:1982je}</div>
+              <div data-what=" .think" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-removeclass"></div>
+              <div data-what=".the-argument li:eq(1), .the-argument li:eq(2)" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
+              <div data-what=".the-argument li:eq(0), .the-argument li:eq(2)" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+              <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+              <div class="notes">Why accept the second premise of the argument?  Consider Davidson's reasoning:</div>
+            </grid_12>
+          </container_12>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Why accept the second premise of the argument, that to be capable of having a false belief it is necessary to understand the possibility of false belief?</div>
+        <div class="notes">Here is Davidson's reasoning ...</div>
+        <div class="handout show">
+          <p>‘We, observing and describing … a creature …, say that it discriminates certain shapes, objects, colors, and so forth, by which we mean that it reacts in ways we find similar to shapes, objects, and colors which we find similar.</p>
+          <p class="slide">But we would be making a mistake if we were to assume that because the creature discriminates and reacts in much the way we do, that it has the corresponding concepts.</p>
+          <p class="slide">The difference, as I keep emphasizing, lies in the fact that we, unlike the creature I am describing, can, from our point of view, make mistakes in classification.’</p>
+          <p class="right">Davidson (2001: 11)</p>
+        </div>
+        <div class="handout ctd">\citep[p.\ 11]{Davidson:2001np}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_yell_stamp.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Here's an analogy for Davidson's argument.</div>
+        <div class="notes">I think it would be appropriate to say the yellers and stampers are making a mistake only if they themselves can see things that way.</div>
+        <div class="notes">I suggest that Davidson's claim is based on a similar intuition.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Note that the analogy I've offered isn't an argument for Davidson's claim.</div>
+        <div class="notes">At most, it's a challenge to someone who rejects it.</div>
+        <div class="notes">If you reject the premise, then you have to explain what makes it appopriate to assign blame or apply correctness conditions.</div>
+        <p>‘We, observing and describing … a creature …, say that it discriminates certain shapes, objects, colors, and so forth, by which we mean that it reacts in ways we find similar to shapes, objects, and colors which we find similar.</p>
+        <p>But we would be making a mistake if we were to assume that because the creature discriminates and reacts in much the way we do, that it has the corresponding concepts.</p>
+        <p>The difference, as I keep emphasizing, lies in the fact that we, unlike the creature I am describing, can, from our point of view, make mistakes in classification.’</p>
+        <p class="right">Davidson (2001: 11)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">So here's the argument again.</div>
+        <ol class="the-argument">
+          <li><span>If someone can </span><span class="think">think</span><span>, she must be capable of having a false belief.</span>
+          </li>
+          <li><span>To be capable of having a false belief it is necessary to understand the possibility of false belief.</span>
+          </li>
+          <li><span>Understanding the possibility of false belief entails being able to communicate by language.</span>
+          </li>
+        </ol>
+        <p>Conclusion:</p>
+        <p>If someone can think, she can communicate with language.</p>
+        <div class="notes">So far we've considered the first two premises.</div>
+        <div data-what=".the-argument li:eq(0), .the-argument li:eq(1)" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">What about the third premise?</div>
+        <div class="notes">This is really difficult.</div>
+        <div class="notes">I'd happily spend a lecture on it, but that would take us too far from the question that occupies us today.</div>
+        <div class="notes">So let me, for now at least, just put the claim in Davidson's own words ...</div>
+        <div class="slide em-above step2">
+          <p class="handout show">‘we grasp the concept of truth only when we can communicate the contents---the propositional contents---of the shared experience, and this requires language’</p>
+          <p class="right">Davidson 1997, p. 27</p>
+          <div class="handout ctd">\citep[p.\ 27]{Davidson:1997wj}.</div>
+          <div data-what=".the-argument li, .step2" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">Now just focus on the conclusion.</div>
+          <div class="notes">Recall that our overall question is, How could humans come to have abilities to communicate by language?</div>
+          <div class="notes">The conclusion of this argument provides one answer: Not by means of thinking.</div>
+          <div class="notes">To see what this rules out, consider this view from Higginbotham ...</div>
+        </div>
+        <div class="em-above step3 hide">
+          <div data-what=".step2" data-class="remove-me" class="slide anim-continue anim-addclass"></div>
+          <div data-what=".step3" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <p class="handout show">‘the process of language acquisition [is] coming to know the meanings of words, where at a given stage the learner’s conception is an hypothesis about the meaning’</p>
+          <p class="right">Higginbotham 1998, p. 153</p>
+          <div class="handout ctd">\citep[p.\ 153]{Higginbotham:1998rm}</div>
+          <div class="notes">Higginbotham offers a beautifully simple answer to our question, How could humans come to have abilities to communicate by language?</div>
+          <div class="notes">The answer is that we figure out the meanings of words in just the way we figure other things out, like why Ayesha is so glum or who ate my breakfast.</div>
+          <div class="notes">But now recall Davidson's claim that If someone can think, she can communicate by language.</div>
+          <div class="notes">I take it that Davidson's claim is incompatible with the view that language acquisition involves forming hypotheses about the meanings of words at the outset.</div>
+          <div class="notes">Be careful about the incompatibility: it's not that forming hypotheses about the meanings of words can't be part of the process, at a later stage.</div>
+          <div class="notes">The problem is that this---forming hypotheses---can't happen before at least some linguistic competence is present.</div>
+          <div class="notes">So there is something essential missing from Higginbotham's picture, at least if Davidson is right.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="center">two directions</p>
+        <div class="notes">Let me be clear about what I'm saying.</div>
+        <div class="slide em-above">
+          <div class="notes">There are two claims ...</div>
+          <ol>
+            <li>
+              <p>If someone can think, she can communicate with language.</p>
+            </li>
+            <li>Acquiring language involves thinking from the start.</li>
+          </ol>
+        </div>
+        <div class="slide em-above">
+          <div class="notes">I am saying that if the first is true, the second is false.</div>
+          <p class="first-direction">If 1, then not 2.</p>
+          <div class="notes">So if Davidson is right, we know something about how langauges are not acquired.</div>
+          <div class="notes">But I'm not saying that Davidson is right.</div>
+          <div class="notes">Indeed, there is a remarkable lack of convincing argument for (1) and claims like it.</div>
+        </div>
+        <div class="slide em-above">
+          <div class="notes">I am  also saying that if the second is true, the first is false.</div>
+          <p class="second-direction">If 2, then not 1.</p>
+          <div class="notes">So one way to argue that Davidson's position must be wrong would be to argue that acquiring language involves thinking from the start.</div>
+        </div>
+        <div data-what=" .first-direction" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">I want to consider this direction first.</div>
+        <div class="notes">Suppose Davidson is right.  Can we give a plausible account of language acquisition?</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="unit_521" class="slide"><img src="/img/bkg/bees/DSC_0165_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Training</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Training}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Training}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">For now I'm assuming that Davidson is right that somoene who can think communicate with language.</div>
+        <div class="notes">What account of language acquisition is consistent with this assumption?</div>
+        <div class="notes">A clue is given by Davidson ...</div>
+        <p class="handout show the-quote"><span>‘The ability to discriminate, to act differentially in the face of clues to the presence of food, danger or safety, is present in all animals and does not require reason.  Nor does the learning, even of complex routines, require reason, for </span><span class="how-that">it is possible to learn how to act without learning that anything is the case</span><span>.’</span></p>
+        <div class="handout ctd">\citep[p.\ 326]{Davidson:1982je}</div>
+        <p class="right">Davidson (1982b, 326); cf. (1995c, 207)</p>
+        <div data-what=".the-quote span:not(.how-that), p.right" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">So we might suppose that acquiring a language involves learning how to act without learning that anything is the case.</div>
+        <div class="notes">This is the general idea.  How can we make it concrete?</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Our question is, How do humans come to have abilities to communicate using words?</div>
+        <div class="notes">Let's start with Bertrand Russell.</div>
+        <p class="handout show">‘A child learning to speak is learning <span class="highlight1">habits and associations</span><span> which are just as much </span><span class="highlight2">determined by the environment</span><span> as the habit of expecting dogs to bark and cocks to crow’</span></p>
+        <div class="handout ctd">\citep[p.\ 71]{Russell:1921ww}</div>
+        <p class="right">(Russell 1921, p. 71)</p>
+        <!-- Witt answers the question how determined; Quine answers the question what the habits are  -->
+        <div data-what=" .highlight2" data-class="invert" class="slide anim-continue anim-addclass"></div>
+        <div data-what=" .highlight2" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">But how does the environment determine habits and associations?</div>
+        <div class="slide em-above step2">
+          <div class="notes">Wittgenstein suggests that the habits are determined by training.</div>
+          <p class="handout show">‘[t]he child learns this language from the grown-ups by being trained to its use. I am using the word ‘trained’ in a way strictly analogous to that in which we talk of an animal being trained to do certain things. It is done by means of example, reward, punishment, and suchlike’</p>
+          <div class="handout ctd">\citep[p.\ 77]{Wittgenstein:1972lj}</div>
+          <p class="right">(Wittgenstein 1972, p. 77).</p>
+          <div class="notes">But how does this training work?</div>
+        </div>
+        <div data-what=".highlight2" class="slide anim-continue anim-fade"></div>
+        <div data-what=".step2" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div data-what=" .highlight1" data-class="invert" class="slide anim-continue anim-addclass"></div>
+        <div data-what=" .highlight1" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">But now what are these habits and associations?</div>
+        <div class="slide em-above step3">
+          <div class="notes">One answer is suggested by Quine.</div>
+          <p class="handout show">‘the child’s early learning of a verbal response depends on society's reinforcement of the response in association with the stimulations that merit the response’</p>
+          <div class="handout ctd">(\citep[p.\ 82]{Quine:1960fe}; compare \citep[pp.\ 28--9]{Quine:1974rd})</div>
+          <p class="right">(Quine 1960, p. 82)</p>
+          <div class="notes">So this is the picture.</div>
+          <div class="notes">For each word, there is a set of 'stimulations' in response to which an utterance of that word would be appropriate.</div>
+          <div class="notes">For instance, we might suppose there's a set of banana stimulations in response to which an utterance of the word 'banana' would be appropriate.</div>
+          <div class="notes">The child then comes to use the word 'banana' in response to the bananana-stimuluations by means of being trained.</div>
+          <div class="notes">She is rewarded for using 'banana' correctly or punished for using it incorrectly (or both) and so she gradually zeros in on the correct pattern of use.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_6">
+        <p class="center">infant</p>
+        <p>stimulations -> utter 'nana'</p>
+      </div>
+      <div class="grid_6">
+        <p class="center">rat</p>
+        <p>stimulations -> press lever</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">This seems to be approximately Davidson's own view.</div>
+        <div class="handout">‘Before we have an idea of truth or error, before the advent of concepts or propositional thought, </div>
+        <p>‘<span class="handout ctd show">there is a rudiment of communication in the simple discovery that sounds produce results. Crying is the first step toward language when crying is found to procure one or another form of relief or satisfaction. More specific sounds, imitated or not, are rapidly associated with more specific pleasures.</span></p>
+        <div class="handout ctd">Here use //p. 71// would be meaning, if anything like intention and meaning were in the picture.  </div>
+        <p class="slide">‘<span class="handout ctd show">A large further step has been taken when the child notices that others also make distinctive sounds at the same time the child is having the experiences that provoke its own volunteered sounds. </span><span class="handout ctd">For the adult, these sounds have a meaning, perhaps as one word sentences. The adult sees herself as doing a little ostensive teaching: “Eat,” “Red,” “Ball,” “Mamma,” “Milk,” “No.” </span><span class="slide handout show">There is now room for what the adult views as error: the child says “Block” when it is a slab. This move fails to be rewarded, and the conditioning becomes more complex’ </span></p>
+        <p class="right">(Davidson 2000: 70-1; see also Davidson 1999: 11).</p>
+        <div class="handout ctd">\citep[pp.\ 70--1]{Davidson:2000mt}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="unit_531" class="slide"><img src="/img/bkg/bees/DSC_0169_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Understanding</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Understanding}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Understanding}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">For now I'm assuming that Davidson is right that anyone who can think communicate with language.</div>
+          <div class="notes">I've just been asking, What account of language acquisition is consistent with this assumption?</div>
+          <div class="notes">The answer was: some kind of training.</div>
+          <div class="notes">One problem for this view is that training does not seem sufficient.</div>
+          <div class="notes">To see why, let's ask paraphrase a famous question of Michael Dummett's (What do I know when I know a language?) and ask:</div>
+          <p class="center notes show">What do I know or understand when I can communicate with language?</p>
+          <div class="notes">What training gets you is just an ability to use words in certain circumstances.</div>
+          <div class="notes">But communicating with language seems to involve more than this.</div>
+          <div class="notes">It seems to involve understanding.</div>
+          <div class="notes">This, anyway, seems to be Davidson's view:</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="handout show">‘You can deceive yourself into thinking that the child is talking if it makes sounds which, if made by a genuine language-user, would have a definite meaning. </p>
+        <p>’<span class="handout ctd show">
+            …  If a mouse had vocal cords of the right sort, you could train it to say “Cheese”. 
+            But that word would not have a meaning when uttered by the mouse, </span><span class="handout ctd show highlight1">nor would the mouse understand what it “said”</span><span class="handout ctd show">.’</span></p>
+        <p class="right">Davidson 1999: 11</p>
+        <div class="handout ctd">\citep[p.\ 11]{Davidson:1999ju}</div>
+        <div data-what=" .highlight1" data-class="bkg-words-highlight-yellow" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">This is just a hint, but I take it that Davidson is suggesting that communicating with language involves being able to understand what you've said.</div>
+        <div class="notes">And merely being trained in the ways Russel, Wittgenstein, Quine and Davidson envisage clearly doesn't provide any understanding at all.</div>
+        <div class="notes">I think this point is nicely made but Dummett.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">I want to outline Dummett's view in three quotes.</div>
+        <div class="notes">There's no argument here.  I just think Dummett has hit on a datum about communication with language.</div>
+        <p class="handout show">'to attribute to a speaker no more than knowledge of how to play … interlocking language games is to make him a participant in an activity he cannot survey (‘cannot see what is going on’).' </p>
+        <p class="right">Dummett (1979: 224)</p>
+        <div class="photobox-bottom-right"><img src="/img/dummett.jpg"/></div>
+        <div class="handout ctd">\citep[p.\ 224]{Dummett:1979fb}</div>
+        <div class="slide em-above">
+          <p class="handout show">Understanding a word can’t be purely a practical ability because this would ‘render mysterious our capacity to know whether we are understanding.’ </p>
+          <p class="right">Dummett (1991: 93)</p>
+          <div class="handout ctd">\citep[p.\ 93]{Dummett:1991yj}</div>
+        </div>
+        <div data-what=".photobox-bottom-right" class="slide anim-continue anim-collapse"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="slide em-above">
+          <p class="handout show">
+            Language is ‘a rational activity on the part of creatures to whom can be ascribed intention and purpose’.
+            So we need to distinguish ‘those regularities of which a language speaker, acting as a rational agent engaged in conscious, voluntary action, makes use from those that may be hidden from him.’
+          </p>
+          <p class="right">Dummett (1978: 104)</p>
+          <div class="handout ctd">\citep[p.\ 104]{Dummett:1978zv}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">I'll probably skip this, but it's a good example of the magic moment view.</div>
+        <div class="notes">It's also an interesting case where a serious philosopher says something which is empirically testable and where there no evidence for it but quite good evidence against it.</div>
+        <p class="handout show">‘A child at this stage has no linguistic knowledge but merely a training in certain linguistic practices.  When he has reached a stage at which it is possible for him to lie, his utterances will have ceased to be merely responses to features of his environment or to experienced needs.  They will have become purposive actions based upon a knowledge of their significance to others.’</p>
+        <p class="right">Dummett (1991:95)</p>
+        <div class="handout ctd">\citep[p.\ 95]{Dummett:1991ug}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">So what am I saying?</div>
+        <ol>
+          <li>Communicating with language involves being able to understand what you've said.</li>
+          <li>Being trained in how words are used does not enable one to understand what would be said in uttering those words.</li>
+        </ol>
+        <p class="em-above">Conclusion:</p>
+        <p>We cannot fully explain how humans become able to communicate with language by appeal to training.</p>
+        <div class="notes">Note that this is a point about suffiency.  It's not an objection, but it is a lacuna.</div>
+        <div class="notes">And it's a lacuna that's hard to fill</div>
+        <div class="notes">It seems like, on this view, there has to be a magic moment when all that training somehow turns into the expression of thought.</div>
+        <div class="notes">Let me put this another way.</div>
+        <div class="notes">On this view, there is a gap between rat-like abilities to use words and thoughtful expression.</div>
+        <div class="notes">And no good account of how the gap could be crossed.</div>
+        <div class="notes">But this isn't the worst problem for the view.  Creativing is a far worse problem ...</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p>‘Whenever I think I understand what he [Davidson] is trying to say, I am told by the Davidson scholars that it is all much more subtle and interesting than that, though very difficult to articulate except by quoting more Davidson.’</p>
+        <p class="right">Gopnik, “How to understand beliefs” (1995: 399)</p><img src="/img/gopnik_davidson.jpg" height="150px" style="float:right; margin-top:200px;"/>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="unit_541" class="slide"><img src="/img/bkg/bees/DSC_0170_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Creativity</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Creativity}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Creativity}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<!-- **todo** duplicated-->
+<section class="slide">
+  <div class="notes">I'm assuming that Davidson is right that anyone who can think communicate with language.</div>
+  <div class="words">
+    <p class="center">recap</p>
+    <div class="container_12">
+      <div class="grid_6">
+        <p>Assumption:</p>
+        <p>If someone can communicate with language, she can think.</p>
+        <div class="slide">
+          <p class="em-above">Consequence:</p>
+          <p>Acquiring language cannot involve thinking at the outset.</p>
+        </div>
+        <div class="slide">
+          <p class="em-above">Question:</p>
+          <p>How <span class="could">could</span><span> someone begin to acquire words without being able to think?</span></p>
+        </div>
+      </div>
+      <div style="border-left: 1px dashed white; margin-left:-1px" class="grid_6">
+        <div style="padding-left:15px;">
+          <div class="slide">
+            <p>Answer:</p>
+            <p>By being trained to utter a particular word in response to certain simulations!</p>
+          </div>
+          <div class="slide">
+            <p class="em-above">Observation:</p>
+            <p>There is a gap between what training achieves (use) and what language acquisition requires (understanding).</p>
+          </div>
+          <div class="slide"> 
+            <p class="em-above">Now:</p>
+            <p>How <span class="do">do</span><span> children actually acquire language?</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-what=" .do, .could" data-class="bkg-words-highlight-blue" class="slide anim-continue anim-addclass"></div>
+    <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">homesigns</p>
+          <div class="notes">Try to imagine you have never communicated linguistically with anyone.  You realise that other people interact much more easily that you can.  You're sitting here and everyone else is concentrating or making notes and obviously getting something out of being here that you aren't.  But what?  What is it that they are doing and how are they doing it?  </div>
+          <div class="notes">Some deaf children in North America are brought up in purely oral environments without any sign language and therefore don't experience language at all.  These children invent their own sign languages, which are called homesigns.  Their invented languages are not as rich as those of children who experience other people's languages, but they have many of the same features (Goldin-Meadow 2002, 2003).  These deaf children have somehow worked out for themselves what linguistic communication is and they have found a way of doing it.  They have invented languages with no prior experience of language, and they have invented languages in a modality that people around them barely use in linguistic communication.  These linguistically isolated deaf children have answered in practice the questions that these lectures are about.</div>
+          <div class="notes">What are their languages like?  Here are some examples ...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">“Pointing at the Present to Refer to the Non-Present.  David points at the chair at the head of the dining room table in his home and then produces a “sleep” gesture to tell us that his father (who typically sits in that chair) is asleep in another room.  He is pointing at one object to mean another and, in this way, manages to use a gesture that is grounded in the present to refer to someone who is not in the room at all” (Goldin-Meadow 2003: 74, figure 1)</div><img src="/img/goldin-meadow_2003_fig1.png"/>
+        <p class="source">Goldin-Meadow (2003, figure 1)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">“Examples of Conventional Emblems Whose Meanings Are Not as Transparent as They Seem.  In panel A, David is shown producing a “break” gesture.  Although this gesture looks like it should be used only to describe snapping long thin objects into two pieces with the hands, all of the children used the gesture to refer to objects of a variety of sizes and shapes, many of which had not been broken by the hands.  In panel B, Marvin is shown producing a “give” gesture.  This gesture looks like it should mean “put something small in my hand,” but all of the children used it to request the transfer of an object, big or small, to a place that was not necessarily the child's hand.  Thus, many of the gestures that the deaf children used were not as transparent in meaning as a quick glance would suggest” (Goldin-Meadow 2003: 76, figure 2).</div><img src="/img/goldin-meadow_2003_fig2.png"/>
+        <p class="source">Goldin-Meadow (2003, figure 2)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12"><img src="/img/goldin-meadow_2003_fig11.png"/>
+        <p class="source">Goldin-Meadow (2003, figure 11)</p>
+        <div class="notes">“David is holding a toy and uses it to point at a tray of snacks that his mother is carrying = snack (the tray is not shown in the drawing). Without dropping the toy, he jabs it several times at his mouth = eat.  Finally, he points with the toy at me sprawled on the floor in front of him (not shown) = Susan” (Goldin-Meadow 2003: 110, figure 1).</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/goldin-meadow_2003_fig22.bkg.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">“With this long string of gestures, all produced before she relaxed her hands, Qing is indicating that swordfish can poke a person (proposition 1) so that the person becomes dead (proposition 2), that they have long, straight noses (proposition 3), and that they swim (proposition 4)” (Goldin-Meadow 2003: 170).</div>
+        <div class="notes">In more detail: “Complex Gesture Sentences.  Qing [Chinese child] produces five distinct gestures that she combines into a single complex gesture sentence (that is, she produces the string of gestures without breaking her flow of movement). The five gestures are illustrated in this figure: Qing points at a picture of a swordfish (= swordfish). She jabs at her own chest as though piercing her heart (= poke-in-chest). She crooks her index finger and holds it in the air (this is an emblem in Taiwan that hearing speakers use to mean dead). She holds her index finger on her nose and extends it outward (= long-straight-nose). She wiggles her palm back and forth (= swim).” (Goldin-Meadow 2003: 171, figure 22)</div>
+        <!-- img(src='/img/goldin-meadow_2003_fig22.png')-->
+        <p class="source">Goldin-Meadow (2003, figure 22)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="notes">Can we say something about the general features of homesigns?</div>
+  <div class="left-half-white"></div>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_6 invert">
+        <p>Gesture forms are:</p>
+        <ul>
+          <li>stable</li>
+          <div class="notes">'gesture forms do not change capriciously with changing situations'</div>
+          <div class="notes">i.	‘The gestures are stable in form, although they needn’t be. It would be easy for the children to make up a new gesture to fit every new situation (and, indeed, that appears to be what hearing speakers do when they gesture along with their speech, cf. McNeill, 1992). But that’s not what the deaf children do.  They develop a stable store of forms which they use in a range of situations-they develop a lexicon, an essential component of all languages (Goldin-Meadow, Butcher, Mylander, & Dodge, 1994).’ \citep[p.\ 1389]{Goldin-Meadow:2002dq}</div>
+          <li class="slide">arbitrary</li>
+          <div class="notes">'gesture--meaning pairs have arbitrary aspects within an iconic framework'</div>
+          <li class="slide">systematic</li>
+          <div class="notes">'the gestures the children develop are composed of parts that form paradigms, or systems of contrasts. When the children invent a gesture form, they do so with two goals in mind-the form must not only capture the meaning they intend (a gesture-world relation), but it must also contrast in a systematic way with other forms in their repertoire (a gesture-gesture relation).' \citep[p.\ 1389]{Goldin-Meadow:2002dq}</div>
+        </ul>
+      </div>
+      <div class="grid_6">
+        <div class="slide">
+          <p>Gesture forms are used:</p>
+          <ul>
+            <li>with different forces (to ask questions, make comments, request things, ...)</li>
+            <li class="slide">to talk about past, future and hypothetical things</li>
+            <li class="slide"> to tell stories</li>
+            <li class="slide"> to communicate with oneself</li>
+            <li class="slide"> to talk about gestures (metalanguage)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="source">Goldin-Meadow 2002</p>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Children can create their own first languages.</div>
+          <div class="notes">I haven't explained the evidence for this claim here, but children in ordinary linguistic environments are also extremely creative from the beginning of  their attempts to communicate.</div>
+          <div class="notes">What children do with words is, from the very beginning, purposively directed at sharing with others conscious attention to objects and events in their environment.</div>
+          <div class="notes">This means that there's no prospect at all of describing characteristically human antics without mentioning psychological notions like purpose, understanding, consciousness and attention.</div>
+          <div class="notes">The basic features of our mental lives can't be factored out of discussions by waffle about “forms of life” or “social practices” or “deontic scorekeeping”.</div>
+          <p class="center">Children can create their own first languages.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="notes">How does this bear on our position?  Recall ...</div>
+  <div class="words">
+    <p class="center">recap</p>
+    <div class="container_12">
+      <div class="grid_6">
+        <p>Assumption:</p>
+        <p class="assumption">If someone can communicate with language, she can think.
+          <p class="em-above">Consequence:</p>
+          <p>Acquiring language cannot involve thinking at the outset.</p>
+          <p class="em-above">Question:</p>
+          <p class="how-could">How <span class="could">could</span><span> someone begin to </span><span class="acquire">acquire</span><span>  </span><span class="create remove-me">create</span><span> words without being able to think?</span></p>
+        </p>
+      </div>
+      <div style="border-left: 1px dashed white; margin-left:-1px" class="grid_6">
+        <div style="padding-left:15px;">
+          <p>Answer:</p>
+          <p><span class="answer">By being trained to utter a particular word in response to certain simulations!</span></p>
+          <div class="blur-text">
+            <p class="em-above">Observation:</p>
+            <p>There is a gap between what training achieves (use) and what language acquisition requires (understanding).</p>
+            <p class="em-above">Now:</p>
+            <p>How <span class="do">do</span><span> children actually acquire language?</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-what=" .how-could" data-class="bkg-words-highlight-yellow" class="slide anim-continue anim-addclass"></div>
+    <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+    <div data-what=".acquire" data-attr="text-decoration:line-through" class="slide anim-continue anim-attribute"></div>
+    <div data-what=".create" data-class="remove-me" class="slide anim-continue anim-removeclass"></div>
+    <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+    <div class="notes">So here's my challenge to Davidson and others who hold that anyone can communicate with language can think:</div>
+    <div class="notes">explain how someone could begin to create words without already being able to think.</div>
+    <div class="notes">As I've been explaining, the challenge arises because children who have no language and no significant experience of language can create languages of their own.</div>
+    <div data-what=" .answer" data-class="bkg-words-highlight-yellow" class="slide anim-continue anim-addclass"></div>
+    <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+    <div data-what=".answer" data-attr="text-decoration:line-through" class="slide anim-continue anim-attribute"></div>
+    <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+    <div class="notes">So we have to reject this answer.</div>
+    <div data-what=".how-could, .answer" class="slide anim-continue anim-fade"></div>
+    <div data-what=" .assumption" data-class="bkg-words-highlight-red" class="slide anim-continue anim-addclass"></div>
+    <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+    <div class="notes">For my part, I think it's probably time to drop the assumption.</div>
+    <div class="notes">Not because we've shown it's wrong, but because there's no good argument for it an a significant obstactle to accepting it.</div>
+    <div class="notes">So let's return to our overall question without that assumption.</div>
+    <div class="notes">(Recall that the question was, How could humans come to have abilities to communicate by language?)</div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">This is an aside.  Take a break, don't listen.  But things are worse for Davidson and others than you imagine.</div>
+          <p class="center">aside</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Recall Davidson's argument.</div>
+        <ol class="the-argument">
+          <li><span>If someone can </span><span class="think">think</span><span>, she must be capable of having a false belief.</span>
+          </li>
+          <li><span>To be capable of having a false belief it is necessary to understand the possibility of false belief.</span>
+          </li>
+          <li><span>Understanding the possibility of false belief entails being able to communicate by language.</span>
+          </li>
+        </ol>
+        <p>Conclusion:</p>
+        <p>If someone can think, she can communicate with language.</p>
+        <div class="slide em-above">
+          <p class="handout show">‘Intentional action cannot emerge before belief and desire, for an intentional action is one explained by beliefs and desires that caused it.’</p>
+          <p class="right"> Davidson 1999, p. 10</p>
+          <div class="handout ctd">\citep[p.\ 10]{Davidson:1999ju}</div>
+        </div>
+        <div class="notes">So Davidson's view is that intentional action is impossible without language.</div>
+        <div class="notes">I think it's right to link intentional action to intention, and intention to thought.</div>
+        <div class="notes">So I think Davidson is right to this extent: if anyone who can think can communicate with language, then anyone who can act intentionally can communicate with language.</div>
+        <div class="notes">This underlines the difficulty of meeting that challange, of explaining how language creation gets going.</div>
+        <div class="notes">If Davidson is right, it must get going without either thinking or acting intentionally.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="unit_551" class="slide"><img src="/img/bkg/bees/DSC_0200_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Mapping words to concepts</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Mapping words to concepts}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Mapping words to concepts}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">fresh start</p>
+          <div class="notes">Our question is, How do humans come to have abilities to communicate using words?</div>
+          <div class="notes">Let's make a fresh start and consider another approach.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_5">
+        <p class="handout show">‘children learn words through the exercise of reason’ <span class="handout">(\citealp[p.\ 1103]{Bloom:2001ka}; see \citealp{Bloom:2000qz})</span></p>
+        <p class="right">Bloom 2001, p. 1103</p>
+        <div class="slide em-above">
+          <p class="handout show">‘much of what goes on in word learning is establishing a correspondence between the symbols of a natural language and concepts that exist prior to, and independently of, the acquisition of that language’</p>
+          <p class="right">Bloom 2000, p. 242</p>
+          <div class="handout right">\citep[p.\ 242]{Bloom:2000qz}</div>
+        </div>
+      </div>
+      <div class="slide step2">
+        <div class="grid_5 prefix_1">
+          <div class="handout show">
+            <p>‘to know the meaning of a word is to have: </p>
+            <p>1. a certain mental representation or concept </p>
+            <p>2.	that is associated with a certain form’</p>
+          </div>
+          <p class="right">Bloom 2000, p. 17</p>
+          <div class="handout ctd">\citep[p.\ 17]{Bloom:2000qz}</div>
+        </div>
+      </div>
+      <div class="step3 remove-me">
+        <div class="right-half-white">
+          <div class="grid_5 prefix_1">
+            <div class="words">
+              <p class="handout show">‘Augustine describes the learning of human language as if the child came into a strange country and did not understand the language of the country; that is, as if it already had a language, only not this one.  Or again: as if the child could already think, only not yet speak.’</p>
+              <div class="handout ctd">\citep[15--16, §32]{Wittgenstein:1953mm}</div>
+              <p class="right">(Wittgenstein 1953, p. 15--16, §32)</p>
+              <div class="notes">Does the view Wittgenstein is attacking sound like a mere caricature?  Bloom explicitly endorses it, noting that
+                <div class="handout">‘Augustine’s proposal is no longer seen as the goofy idea that it once was’ \citep[p.\ 61]{Bloom:2000qz}.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-what=".step2" data-class="remove-me" class="slide anim-continue anim-addclass"></div>
+      <div data-what=".step3" data-class="remove-me" class="slide anim-continue anim-removeclass"></div>
+      <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">This view on language acquisition is not new.</div>
+        <div class="notes">Eve Clark quotes a book from 1958 which apparently suggests that children learn words by formulating and testing hypotheses about their meanings:</div>
+        <p class="handout show">'The tutor names things in accordance with the semantic customs of the community.  The player forms hypotheses about the categorical nature of the things named.  He tests his hypotheses by trying to name new things correctly.  The tutor compares the player's utterances with his own anticipations of such utterances and, in this way, checks the accuracy of fit between his own categories and those of the player.  He improves the fit by correction.'</p>
+        <p class="right">Brown (1958, p. 194) as quoted by Clark (1993, p. 19)</p>
+        <div class="handout ctd">(Brown 1958, p. 194 as quoted by \citep[p.\ 19]{Clark:1993bv})</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">One consequence of this view ...</div>
+        <p>Assumption:</p>
+        <p>If someone is in a position to learn a word, she already has the corresponding concept</p>
+        <div class="slide em-above">
+          <p>Consequence:</p>
+          <p>Learning words cannot ever be a route to acquiring concepts.</p>
+        </div>
+        <div class="slide em-above">
+          <p>Case study:</p>
+          <p>Kowalski and Zimilies on colour terms and concepts.</p>
+        </div>
+        <div class="notes">The problem is ...</div>
+        <div class="notes">This is not enough for us to reject the Assumption.  But it shows at least that the advocates of the Assumption have to explain how this case is possible and why they think there are no other such cases.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Recall this idea:</div>
+        <p>‘much of what goes on in word learning is establishing a correspondence between the symbols of a natural language and concepts that exist prior to, and independently of, the acquisition of that language’</p>
+        <p class="right">Bloom 2000, p. 242</p>
+        <div class="slide em-above">
+          <div class="notes">Incidentally, this isn't only Bloom's view, it's incredibly widespread.</div>
+          <div class="notes">Here's another example:</div>
+          <p class="handout show">‘One of the first problems children take on is the MAPPING of meanings onto forms …  They must identify possible meanings, isolate possible forms, and then map the meanings onto the relevant forms.’ </p>
+          <p class="right">Clark 1993, p. 14</p>
+          <div class="handout ctd">\citep[p.\ 14]{Clark:1993bv}</div>
+        </div>
+        <div class="slide em-above">
+          <div class="notes">I want to suggest that this idea is wrong because acquiring language is in significant part a creative process, as Eve Clark herself emphasises \citep[in][]{Clark:1993bv} .</div>
+          <div class="notes">Let me show you a particular case ...</div>
+          <p>‘puttaputta’</p>
+          <p class="right">June, age 1;3.0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Is mapping illuminating?</div>
+        <div class="notes">Thanks to Roy Higginson's CHILDES data (1985) we can trace June's use of the novel word puttaputta over six months in fourteen conversations with her mother.</div>
+        <div class="notes">June's first recorded use of puttaputta occurs when she was fifteen months (1;3.0).</div>
+        <div class="notes">At first, her mother mistakenly takes  “puttaputta” to mean Peter Piper and uses it as a noun:</div>
+        <p>JUNE:	puttaputta.</p>
+        <p>MOTHER:	puttaputta … ok.</p>
+        <p>MOTHER:	this puttaputta?</p>
+        <p>MOTHER:	Peter Piper picked a peck of pickle peppers […]</p>
+        <p>[…]</p>
+        <p>JUNE:	puttaputta.</p>
+        <p>MOTHER:	puttaputta?</p>
+        <p>MOTHER:	where's puttaputta?</p>
+        <p>MOTHER:	can you show me puttaputta?</p>
+        <p class="italic">June turns the page.</p>[…]
+        <p>JUNE:	puttaputta.</p>
+        <p><span class="correction">MOTHER:	that's not puttaputta.</span></p>
+        <div data-what=" .correction" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">Note that the mother corrects June because at this point she mistakenly takes  “puttaputta” to mean Peter Piper.</div>
+        <div class="notes">But that isn't what June has in mind, and she persists in using the term differently.</div>
+        <div class="notes">June persists in using “puttaputta” to mean something like tell me about this or read me this one and her mum quickly gets the hang of it (within the same conversation):</div>
+        <p class="source">Roy Higginson's CHILDES data (1985)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p>JUNE:	puttaputta.</p>
+        <p>MOTHER:	puttaputta?</p>
+        <p>JUNE:	puttaputta.</p>
+        <p>MOTHER:	ok … Doctor .</p>
+        <p>June takes the book, looks at it and the hands it back to her mother.</p>
+        <p>MOTHER:	Foster went to Gloucester in a shower of rain … he stepped into a puddle right up to his middle and never went there again.</p>
+        <p>JUNE:	puttaputta.</p>
+        <p>MOTHER:	ok … the late Madame Fry wore shoes a mile high and when she walked by me I thought I should die.</p>
+        <!-- p June takes the book again, looks at it again and then hands it back again.-->
+        <!-- p JUNE:	puttaputta.-->
+        <!-- p MOTHER:	this one?-->
+        <!-- p MOTHER:	Old Farmer Giles he went seven miles with his faithful dog old Rover … and Old Farmer Giles when he came to the stiles took a run and jumped clean over.-->
+        <div class="notes">In this first conversation, June uses “puttaputta” 20 times (3 of these are just “putta”).  Most the other 15 words she uses appear only once and none appear more than twice.</div>
+        <div class="notes">So not only do infants coin new words, they will also persist in using them despite initial misunderstandings (even despite being 'corrected' by an adult) and they may rely heavily on their own words.</div>
+        <p class="source">Roy Higginson's CHILDES data (1985)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">In a later session (June is now seventeen months (1;5.0)) June continues to use “puttaputta” and to be understood as she intends:</div>
+        <p>JUNE:	putta .</p>
+        <p>JUNE:	puttaputta .</p>
+        <p>MOTHER:	am I supposed to read that ?</p>
+        <p>MOTHER:	you have to come over here then .</p>
+        <p>JUNE:	puttaputta .</p>
+        <p> <span class="mother-uses-putta">MOTHER:	what do you want me to puttaputta ?</span></p>
+        <p>MOTHER:	what's this ?</p>
+        <p>JUNE:	car ?</p>
+        <div data-what=" .mother-uses-putta" data-class="bkg-words-highlight-blue" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">In this same session, June's mum uses “puttaputta” as a verb herself.</div>
+        <div class="notes">June continues to use “puttaputta” frequently in until around eighteen months (“puttaputta” occurs 45 times in a conversation recorded when June was 1;6.0) and then drops it abruptly (“puttaputta” doesn't appear in any of the seven conversations recorded over the next three months).</div>
+        <p class="source">Roy Higginson's CHILDES data (1985)</p>
+        <div data-what="*" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">Why am I telling you about June's use of puttaputta.</div>
+        <div class="notes">One thing to note, of course, is that June isn't learning to map a concept to a word.</div>
+        <div class="notes">If she is doing anything with a word-concept mapping, she is inventing and teaching it rather than learning it.</div>
+        <div class="notes">This is one ammendment to the claim that acquiring language depends on coming to know word-concept mappings.</div>
+        <div class="notes">But there is a second point I  want to draw from 'puttaputta'.</div>
+        <div class="notes">June uses puttaputta purposively, to a particular end, to get others to read or interact with her in certain contexts.</div>
+        <div class="notes">But I'm not sure that this involves mapping the word to a concept. </div>
+        <div class="notes">Is mapping the word to the concept is the key to understanding what June is doing?</div>
+        <div class="notes">I'm not saying it's not; I'm just saying that there's a challenge to Bloom here.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- *todo. Don't think this is right.  Ultimately need meanings; children are just getting them at the 1-word stage on Bloom's view
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">We can deepen this criticism of the mapping idea with an exercursion into philosophy of language.</div>
+        <div class="notes">Recall this quesiton, which we asked earlier.</div>
+        <p class="notes show">What do I know or understand when I can communicate with language?</p>
+        <div class="notes">I take it that proponents of mapping think the answer is a word-concept mapping, where the concept is the meaning of the word.</div>
+        <div class="notes">But here we should step back and ask how this knowledge is supposed to explain</div>
+        <div class="notes">The key is to start with a mildly sceptical attitude towards notions like meaning and concept.</div>
+        <div class="notes">They should only be introduced if we can say clearly why they are necessary.</div>
+        <div class="notes">On one way of thinking about what word meanings are for, they are necessary only to explain systematicity and productivity.</div>
+        <div class="slide">
+          <p class="handout show">‘entities such as meanings … are not of independent interest’</p>
+          <p class="right">(Davidson 1974: 154)</p>
+          <div class="handout ctd">\citep[p.\ 154]{Davidson:1974gh}</div>
+          <div class="notes">(To develop this point we would need quite a bit of philosophy of language; so consider it just as a pointer.)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<!--
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">objection</p>
+          <div class="notes">I've focussed on “puttaputta” because it illustrates how even children with normal experiences of language sometimes coin their own words as soon as they start using words.</div>
+          <div class="notes">You might object that “puttaputta” is a very primitive use of language, somewhere between a word and a sentence.</div>
+          <div class="notes">But children also coin proper words such as “fire-dog” for a stray dog found near a fire (Clark 1998: 14) and “darking” for the action of colouring.</div>
+          <div class="notes">Here's an example:</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">This exeample shows Shem inventing the word “smashit.”  This is a nice complex example involving a noun probably derived from a verb (to smash) where Shem simultaneously explains what the word means and refines its pronunciation:</div>
+        <div class="notes">Shem is age 2;3.21</div>
+        <p>CINDY:	yeah … an(d) who's this?</p>
+        <p>SHEM:	s ma uh  uh at uh uh uh ma farmer farmingk [: farming] an(d) (h)as (s)maz(ik) uh where the key an uh go home the hose.</p>
+        <p>CINDY:	he carries uh what?</p>
+        <p>SHEM:	is um uh farmers (s)mazik an(d) a hose an own uh get in uh home … the hose.</p>
+        <p>['smazik' or 'smashit' refers to an axe] </p>
+        <p>CINDY:	right … he carries a hose and what else?</p>
+        <p>SHEM:	uh smashit</p>
+        <p>CINDY:	a smasher?</p>
+        <p>CINDY:	this thing?</p>
+        <p>SHEM:	yeah.</p>
+        <p>CINDY:	yeah … he needs a smasher so he can smash through doors to get to the fire if he has to … and he takes those home with him?</p>
+        <p>SHEM:	yeah.</p>
+        <p>CINDY:	what does he do with the smasher at home?</p>
+        <p>SHEM:	uh uh uh uh an(d) smash de the window an(d) water in the window.</p>
+        <p>CINDY:	smash the window and water in the window?</p>
+        <p>SHEM:	yeah.</p>
+        <p>CINDY:	do you have another book that you wanna see?</p>
+        <p class="source">Eve Clark's CHILDES data (1982)</p>
+        <div data-what="p:lt(5)" class="slide anim-continue anim-collapse"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<!-- *todo duplicated!-->
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_5 reason">
+        <p>‘children learn words through the exercise of reason’ </p>
+        <p class="right">Bloom 2001, p. 1103</p>
+        <div class="em-above">
+          <p><span class="mapping">‘much of what goes on in word learning is establishing a correspondence between the symbols of a natural language and concepts that exist prior to, and independently of, the acquisition of that language’</span></p>
+          <p class="right">Bloom 2000, p. 242</p>
+        </div>
+      </div>
+      <div class="step2">
+        <div class="grid_5 prefix_1">
+          <p><span class="meaning">‘to know the meaning of a word is to have: </span></p>
+          <p><span class="meaning">1. a certain mental representation or concept </span></p>
+          <p><span class="meaning">2.	that is associated with a certain form’</span></p>
+          <p class="right">Bloom 2000, p. 17</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes">So what am I saying?</div>
+  <div data-what=" .mapping" data-class="bkg-words-highlight-blue" class="slide anim-continue anim-addclass"></div>
+  <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+  <div class="notes">I've been considering the mapping idea, the idea that children have to establish a correspondence between words and concepts.</div>
+  <div class="notes">I agree that this the right way to think about some language learning; in particular, learning colour words like 'red' is well modelled in this way.</div>
+  <div class="notes">But I've offered two qualifications.</div>
+  <div class="notes">First, in at least some of these cases it may be that the concept comes after the word.</div>
+  <div class="notes">Second, while it's appropriate to think of abilities to use language as requiring word-concept mappings in some cases, like the case of 'red',</div>
+  <div class="notes">I used the example of 'puttaputta' to suggest that there are at least some cases of communiation with words which don't seem to involve learning or inventing word-concept mappings.</div>
+  <div class="notes">I'm not claiming to have shown that the mapping idea is wrong.</div>
+  <div class="notes">I merely want to offer you an open challenge: can we make sense of the mapping idea and do we need it?</div>
+  <div data-what=" .mapping" data-class="bkg-words-highlight-blue" class="slide anim-continue anim-removeclass"></div>
+  <div data-what=" .meaning" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
+  <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+  <div class="notes">Note that the mapping idea depends on a philosophical claim about what it is to know the meaning of a word.</div>
+  <div class="notes">This is something we should question, I think.  (But not now.)</div>
+</section>
+<!--
+<p class="center">further issue</p>
+<div class="notes">We need to explain not just mapping but understanding of words as communicative device.</div>
+<div class="notes">I</div>
+-->
+<section id="unit_561" class="slide"><img src="/img/bkg/bees/ADSC_0172_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Summary</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Summary}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Summary}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p>How do humans come to acquire abilities to communicate with language?</p>
+        <div class="step1">
+          <div class="slide em-above">
+            <p>Assumption:</p>
+            <p>If someone can think, she can communicate with language</p>
+          </div>
+          <div class="slide em-above">
+            <p>Consequence:</p>
+            <p><span class="consequence">Acquiring a language cannot involve thinking at the outset.</span></p>
+          </div>
+          <div class="slide em-above">
+            <p>Problem:</p>
+            <p>Humans can make the transition from to communicating with language by creating their own language.</p>
+            <div class="notes">So there is a challenge for anyone who holds the Assumption.</div>
+            <div class="notes">The challenge is to explain how someone can start creating a language without being able to think</div>
+          </div>
+          <div class="slide em-above">
+            <p>Aside:</p>
+            <p>Becoming able to communicate with language does not always involve being trained or shown.</p>
+          </div>
+        </div>
+        <div data-what=" .consequence" data-class="bkg-words-highlight-red" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">So the first part was about trying to meet this constraint.</div>
+        <div class="notes">In the second part we made a fresh start and examined how you might answer the question if you dropped the constraint.</div>
+        <div data-what=".step1" class="slide anim-continue anim-collapse"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="step2">
+          <div class="slide em-above">
+            <p>What do I know when I can communicate with words?</p>
+            <p>word-concept mappings</p>
+          </div>
+          <div class="slide em-above">
+            <p>How do I come to know word-concept mappings?</p>
+            <p>‘through the exercise of reason’ (Bloom 2001, p. 1103)</p>
+          </div>
+          <div class="slide em-above">
+            <p>Consequence:</p>
+            <p>Learning words cannot be a route to acquiring concepts.</p>
+          </div>
+          <div class="slide em-above">
+            <p>Question:</p>
+            <p>Is coming to communicate with language essentially a matter of learning or inventing word-concept mappings?</p>
+          </div>
+        </div>
+        <div data-what=".step2" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">So how do humans come to acquire abilities to communicate with language?</div>
+        <div class="notes">We've seen that there are challenges and objections to two prominent views.</div>
+        <div class="notes">Do I have to end with the conclusion that we don't know the first thing about it?</div>
+        <div class="notes">Or is there anything positive to say?</div>
+        <div class="notes">Maybe just a hint ...</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">So are we merely saying this, or can we go further:</div>
+        <p>‘What a strange phenomenon that a child can actually learn human language!  That a child who knows nothing can start out and learn by a sure path this enormously complicated technique.’</p>
+        <p class="right">Wittgenstein 1980: 2.24 [§128]</p>
+        <div class="notes">The quote is from Wittgenstein, … Philosophy of Psychology (1980: 2.24 [§128])</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="unit_571" class="slide"><img src="/img/bkg/bees/DSC_0157_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Grice/Tomasello</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Grice/Tomasello}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Grice/Tomasello}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Is there an alternative picture of communication by language, one without mapping or training?</div>
+        <p class="center">communication by language without mapping or training</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">In thinking about the alternative picture, I'm guided by two thoughts.</div>
+          <div class="notes">The first concerns social interaction.</div>
+          <p class="center">social interaction</p>
+          <div class="notes">So far we've considered two pictures of how children learn to communicate with words: training and reasoning to word-concept mappings.</div>
+          <div class="notes">Both pictures miss social interaction.</div>
+          <div class="notes">On one picture the infant is an outsider who might as well be observing those around her through a telescope.</div>
+          <div class="notes">On the other picture the child is a blank to be shaped by those around her.</div>
+          <div class="notes">There is no meaningful interaction between the infant and adults around her; or, if there is, it makes no difference to her development.</div>
+          <div class="notes">But could there be a role for social interaction in learning the meanings of words?</div>
+          <div class="notes">If you think about the examples of creativity --- homesigns and puttaputta --- this seems plausible.</div>
+          <div class="notes">Communication with words happens in the context of joint action, and it is a tool for joint action.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">The alternative picture is based on the ideas of Michael Tomasello and his colleagues.</div>
+        <p class="handout show">‘children acquire linguistic symbols as a kind of by-product of social interaction with adults’</p>
+        <p class="right">Tomasello 2003, p. 90</p>
+        <div class="handout ctd">\citep[p.\ 90]{Tomasello:2003fk}</div>
+        <div class="em-above"> </div>
+        <p class="handout show">Infants ‘begin to comprehend and use … linguistic symbols on the basis of their skills of social cognition and cultural learning’ </p>
+        <p class="right">Tomasello, Striano & Rochat 1999, p. 582</p>
+        <div class="handout ctd">\citep[p.\ 582]{Tomasello:1999en}</div>
+        <div class="em-above"></div>
+        <p class="handout show">‘language is itself one type-albeit a very special type-of joint attentional skill’ </p>
+        <p class="right">Tomasello 2001, p. 1120</p>
+        <div class="handout ctd">\citep[p.\ 1120]{Tomasello:2001ic}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="handout show">‘the kind of rational activity which the use of language involves is a form of rational cooperation’ </p>
+        <p class="right">Grice 1989, p. 341</p>
+        <div class="handout ctd">\citep[p.\ 341]{Grice:1989ha}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">The second guiding thought in creating the alternative picture concens creativity.</div>
+          <p class="center">language creation</p>
+          <div class="notes">It's standard to suppose that creativity is a side-issue and that learning from those around us is the norm.</div>
+          <div class="notes">This view is encouraged by the idea that language is fundamentally a system of conventions, and that coming to communicate with words is a matter of getting into those conventions.</div>
+          <div class="notes">Nothing could be further from the truth.</div>
+          <div class="notes">Acquiring the ability to communicate with words is an essentially creative process.</div>
+          <div class="notes">Conventions in the surrounding culture can be useful, but they are no more than useful accessories.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <!-- ***todo *** add Grice quote!-->
+        <div class="quote1">
+          <p><span class="handout show">‘it is an error to suppose we have seen deeply into the heart of linguistic communication when we have noticed how society bends linguistic habits to a public norm.</span><span>’</span></p>
+          <div class="handout ctd"> …  But in indicating this element of the conventional, or of the conditioning process that makes speakers rough linguistic facsimiles of their friends and parents, we explain no more than the convergence; we throw no light on the essential nature of the skills that are thus made to converge.’</div>
+          <p class="right">Davidson 1984 [1982]: 278</p>
+          <div class="handout ctd">\citep[p.\ 278]{Davidson:1982uu}</div>
+        </div>
+        <div class="em-above"></div>
+        <div class="quote2">
+          <p class="handout show">‘convention does not help explain what is basic to linguistic communication, though it may describe a usual, though contingent feature.’</p>
+          <p class="right">Davidson 1984 [1982]: 280</p>
+          <div class="handout ctd">\citep[p.\ 280]{Davidson:1982uu}</div>
+        </div>
+        <div class="em-above"></div>
+        <div class="quote3">
+          <p><span class="handout show">‘An utterance has certain truth conditions only if the speaker intends it to be interpreted as having those truth conditions.</span><span>’</span>
+            <div class="handout ctd"> Moral, social or legal considerations may sometimes invite us to deny this, but I do not think the reasons for such exceptions reveal anything of importance about what is basic to communication’</div>
+          </p>
+          <p class="right">Davidson 1990: 310</p>
+        </div>
+        <div class="handout ctd">\citep[p.\ 310]{Davidson:1990du}</div>
+        <div data-what=".quote1, .quote3" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">So these are my two themes.</div>
+          <div class="notes">I'm going to create a view out of them.</div>
+          <p class="center">social interaction</p>
+          <p class="center">language creation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p>Grice on meaning</p>
+        <p class="em-above">'A speaker S non-naturally means something by an utterance x if and only if, for some hearer (or audience) H, S utters x intending:</p>
+        <p>(1)	H to produce a particular response r, and</p>
+        <p>(2)	H to recognise that S intends (1).</p>
+        <p class="right">Grice 1957</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12"><img src="/img/fig_lexical_innovation.png"/>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

@@ -225,11 +225,13 @@ mixin unblur(what)
   +anim_end()
 
 
-mixin line-through(what)
+mixin line-through_(what)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-attribute(data-what="#{thing}", data-attr="text-decoration:line-through")
+mixin line-through(what)
+  +line-through_(what)
   mixin anim_end()
 
 //- show something(s)
@@ -249,7 +251,7 @@ mixin hide(what)
     .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="hide")
   mixin anim_end()
 
-mixin collapse(what, speed)
+mixin collapse_(what, speed)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
@@ -257,14 +259,20 @@ mixin collapse(what, speed)
       .slide.anim-continue.anim-collapse(data-what="#{thing}",data-dur="#{speed}")
     else
       .slide.anim-continue.anim-collapse(data-what="#{thing}")
+mixin collapse(what, speed)
+  +collapse_(what, speed)
   mixin anim_end()
 
-mixin remove(what)
+
+mixin remove_(what)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="remove-me")
+mixin remove(what)
+  +remove_(what)
   mixin anim_end()
+
 
 mixin unremove(what)
   if typeof(what)==='string'
@@ -317,7 +325,7 @@ mixin nodim(what)
   mixin anim_end()
 
 
-mixin fade(what, dur)
+mixin fade_(what, dur)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
@@ -325,6 +333,8 @@ mixin fade(what, dur)
       .slide.anim-continue.anim-fade(data-what="#{thing}", data-dur="#{dur}")
     else
       .slide.anim-continue.anim-fade(data-what="#{thing}")
+mixin fade(what, dur)
+  +fade_(what, dur)
   mixin anim_end()
 
 mixin unfade(what, dur)
@@ -352,11 +362,14 @@ mixin words-bkg-faint(what, color, container)
     .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-faint-#{color}")
   mixin anim_end()
 
-mixin words-bkg-remove(what, color, container)
+mixin words-bkg-remove_(what, color, container)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-#{color}")
+
+mixin words-bkg-remove(what, color, container)
+  +words-bkg-remove_(what, color, container)
   mixin anim_end()
 
 

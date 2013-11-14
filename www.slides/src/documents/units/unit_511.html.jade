@@ -1,0 +1,163 @@
+---
+layout: 'deck_unit'
+title: "Does being able to think depend on being able to communicate with language?"
+tags: []
+description: "Some philosophers including Donald Davidson claims that if someone can think, she can communicate by language.  What are the consequences of this claim for an account of how humans come to be able to communicate with language?"
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/slide_mixins
+
+// start with Davidson's argument about thought interdependent with language.
+// I haven't defended the premises of this argument (and, after years of reading his work, I don't think Davidson has either).
+// But suppose the argument is right.
+// We then face a puzzle.
+// The puzzle is, how could abilities to communicate by language be acquired without the ability to think about words and their meanings?
+
+mixin fragment_davidsons_argument_premise1()
+  span If someone can 
+  span.think think
+  span, she must be capable of having a false belief.
+
+mixin fragment_davidsons_argument_premise2()
+  span To be capable of having a false belief it is necessary to understand the possibility of false belief.
+  
+mixin fragment_davidsons_argument_premise3()
+  span Understanding the possibility of false belief entails being able to communicate by language.
+
+mixin fragment_davidsons_argument_conclusion_only()
+  p If someone can think, she can communicate with language.
+
+mixin fragment_davidsons_argument_conclusion()
+  p Conclusion:
+  +fragment_davidsons_argument_conclusion_only
+  
+mixin fragment_davidsons_argument()
+  ol.the-argument
+    li
+      +fragment_davidsons_argument_premise1
+    li
+      +fragment_davidsons_argument_premise2
+    li
+      +fragment_davidsons_argument_premise3
+  +fragment_davidsons_argument_conclusion
+
+  
++slide
+  .words: container_12: grid_12
+    .notes Our question is, How do humans come to have abilities to communicate using words?
+    .notes I want to step back from this question to consider an argument about thought and language.
+    .notes Here's an argument to show that being able to think depends on (or is interdependent with) being able to communicate by language.
+    .notes I take this argument from Davidson.
+    ol.the-argument
+      .handout \begin{enumerate}
+      .handout \item
+      li.handout.show
+        +fragment_davidsons_argument_premise1
+      .handout \item
+      li.handout.show 
+        +fragment_davidsons_argument_premise2
+      .handout \item
+      li.handout.show
+        +fragment_davidsons_argument_premise3
+      .handout \end{enumerate}
+    +fragment_davidsons_argument_conclusion
+    +blur('.the-argument li:eq(1), .the-argument li:eq(2)')
+    .notes This premise seems straightforward to me.
+    +words-bkg('.think', 'pink')
+    .notes Note that by think we mean desire, intend, wish, guess, believe ...
+    .notes There's a quote on your handout in support of this.
+    .handout 'belief is central to all kinds of thought.  If someone is glad that, or notices that, or remembers that, or knows that, the gun is loaded, then he must believe that the gun is loaded.  Even to wonder whether the gun is loaded, or to speculate on the possibility that the gun is loaded, requires belief, for example, that a gun is a weapon, that it is a more or less enduring physical object, and so on.  …  it is necessary that there be endless interlocked beliefs'
+    .handout.ctd \citep[p.\ 157]{Davidson:1975eq}; cf. \citep[pp.\ 320--1]{Davidson:1982je}
+    +words-bkg-remove_('.think', 'pink')
+    +unblur_('.the-argument li:eq(1), .the-argument li:eq(2)')
+    +blur('.the-argument li:eq(0), .the-argument li:eq(2)')
+    .notes Why accept the second premise of the argument?  Consider Davidson's reasoning:
+  
+  
+mixin fragment_davidson_false_belief(p)
+  if !p
+    p = {steps: true}
+  p ‘We, observing and describing … a creature …, say that it discriminates certain shapes, objects, colors, and so forth, by which we mean that it reacts in ways we find similar to shapes, objects, and colors which we find similar.
+  p(class="#{p.steps ? 'slide' : ''}") But we would be making a mistake if we were to assume that because the creature discriminates and reacts in much the way we do, that it has the corresponding concepts.
+  p(class="#{p.steps ? 'slide' : ''}") The difference, as I keep emphasizing, lies in the fact that we, unlike the creature I am describing, can, from our point of view, make mistakes in classification.’
+  p.right Davidson (2001: 11)
+
++slide
+  .notes Why accept the second premise of the argument, that to be capable of having a false belief it is necessary to understand the possibility of false belief?
+  .notes Here is Davidson's reasoning ...
+  .handout.show
+    +fragment_davidson_false_belief
+  .handout.ctd \citep[p.\ 11]{Davidson:2001np}
+
++slide({bkg:'slide_yell_stamp.jpg'})
+  .notes Here's an analogy for Davidson's argument.
+  .notes I think it would be appropriate to say the yellers and stampers are making a mistake only if they themselves can see things that way.
+  .notes I suggest that Davidson's claim is based on a similar intuition.
+
++slide
+  .notes Note that the analogy I've offered isn't an argument for Davidson's claim.
+  .notes At most, it's a challenge to someone who rejects it.
+  .notes If you reject the premise, then you have to explain what makes it appopriate to assign blame or apply correctness conditions.
+  +fragment_davidson_false_belief({steps:false})
+
++slide
+  .notes So here's the argument again.
+  +fragment_davidsons_argument
+  .notes So far we've considered the first two premises.
+  +blur('.the-argument li:eq(0), .the-argument li:eq(1)')
+  .notes What about the third premise?
+  .notes This is really difficult.
+  .notes I'd happily spend a lecture on it, but that would take us too far from the question that occupies us today.
+  .notes So let me, for now at least, just put the claim in Davidson's own words ...
+  .slide.em-above.step2
+    p.handout.show ‘we grasp the concept of truth only when we can communicate the contents---the propositional contents---of the shared experience, and this requires language’
+    p.right Davidson 1997, p. 27
+    .handout.ctd \citep[p.\ 27]{Davidson:1997wj}.
+    +blur('.the-argument li, .step2')
+    .notes Now just focus on the conclusion.
+    .notes Recall that our overall question is, How could humans come to have abilities to communicate by language?
+    .notes The conclusion of this argument provides one answer: Not by means of thinking.
+    .notes To see what this rules out, consider this view from Higginbotham ...
+  .em-above.step3.hide
+    +remove_('.step2')
+    +show('.step3')
+    p.handout.show ‘the process of language acquisition [is] coming to know the meanings of words, where at a given stage the learner’s conception is an hypothesis about the meaning’
+    p.right Higginbotham 1998, p. 153
+    .handout.ctd \citep[p.\ 153]{Higginbotham:1998rm}
+    .notes Higginbotham offers a beautifully simple answer to our question, How could humans come to have abilities to communicate by language?
+    .notes The answer is that we figure out the meanings of words in just the way we figure other things out, like why Ayesha is so glum or who ate my breakfast.
+    .notes But now recall Davidson's claim that If someone can think, she can communicate by language.
+    .notes I take it that Davidson's claim is incompatible with the view that language acquisition involves forming hypotheses about the meanings of words at the outset.
+    .notes Be careful about the incompatibility: it's not that forming hypotheses about the meanings of words can't be part of the process, at a later stage.
+    .notes The problem is that this---forming hypotheses---can't happen before at least some linguistic competence is present.
+    .notes So there is something essential missing from Higginbotham's picture, at least if Davidson is right.
+
++slide
+  p.center two directions
+  .notes Let me be clear about what I'm saying.
+  .slide.em-above
+    .notes There are two claims ...
+    ol
+      li
+        +fragment_davidsons_argument_conclusion_only
+      li Acquiring language involves thinking from the start.
+  .slide.em-above
+    .notes I am saying that if the first is true, the second is false.
+    p.first-direction If 1, then not 2.
+    .notes So if Davidson is right, we know something about how langauges are not acquired.
+    .notes But I'm not saying that Davidson is right.
+    .notes Indeed, there is a remarkable lack of convincing argument for (1) and claims like it.
+  .slide.em-above
+    .notes I am  also saying that if the second is true, the first is false.
+    p.second-direction If 2, then not 1.
+    .notes So one way to argue that Davidson's position must be wrong would be to argue that acquiring language involves thinking from the start.
+  +row-bkg('.first-direction', 'grey')
+  .notes I want to consider this direction first.
+  .notes Suppose Davidson is right.  Can we give a plausible account of language acquisition?
+

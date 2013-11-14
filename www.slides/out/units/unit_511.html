@@ -1,0 +1,300 @@
+
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Does being able to think depend on being able to communicate with language? | Origins of Mind</title>
+    <meta name="description" content="Some philosophers including Donald Davidson claims that if someone can think, she can communicate by language.  What are the consequences of this claim for an account of how humans come to be able to communicate with language?"/>
+    <meta name="keywords" content="philosophy, psychology, development, thought"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.53.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script async="async" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/normalize.css" /><link  rel="stylesheet" href="/vendor/deck.js/style.neon.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.core.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.menu.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.hash.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.notes.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/log.js"></script><script defer="defer"  src="/vendor/modernizr.min.js"></script><script defer="defer"  src="/vendor/deck.js/deck.core.js"></script><script defer="defer"  src="/vendor/deck.js/deck.menu.js"></script><script defer="defer"  src="/vendor/deck.js/deck.hash.js"></script><script defer="defer"  src="/vendor/deck.js/deck.notes.js"></script><script defer="defer"  src="/vendor/deck.js/deck.slide-clone.js"></script><script defer="defer"  src="/vendor/deck.js/deck.fit.js"></script><script defer="defer"  src="/vendor/deck.js/deck.step.js"></script><script defer="defer"  src="/vendor/deck.js/deck.events.js"></script><script defer="defer"  src="/vendor/deck.js/deck.anim.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script>
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!--.notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (no equivalent if you don't have a keyboard)</p>
+              <p>Press m or double tap to see a menu of slides</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="unit_511" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">Does being able to think depend on being able to communicate with language?</h2>
+          </div>
+        </div>
+      </section>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<!-- start with Davidson's argument about thought interdependent with language.-->
+<!-- I haven't defended the premises of this argument (and, after years of reading his work, I don't think Davidson has either).-->
+<!-- But suppose the argument is right.-->
+<!-- We then face a puzzle.-->
+<!-- The puzzle is, how could abilities to communicate by language be acquired without the ability to think about words and their meanings?-->
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="words">
+          <container_12>
+            <grid_12>
+              <div class="notes">Our question is, How do humans come to have abilities to communicate using words?</div>
+              <div class="notes">I want to step back from this question to consider an argument about thought and language.</div>
+              <div class="notes">Here's an argument to show that being able to think depends on (or is interdependent with) being able to communicate by language.</div>
+              <div class="notes">I take this argument from Davidson.</div>
+              <ol class="the-argument">
+                <div class="handout">\begin{enumerate}</div>
+                <div class="handout">\item</div>
+                <li class="handout show"><span>If someone can </span><span class="think">think</span><span>, she must be capable of having a false belief.</span>
+                </li>
+                <div class="handout">\item</div>
+                <li class="handout show"> <span>To be capable of having a false belief it is necessary to understand the possibility of false belief.</span>
+                </li>
+                <div class="handout">\item</div>
+                <li class="handout show"><span>Understanding the possibility of false belief entails being able to communicate by language.</span>
+                </li>
+                <div class="handout">\end{enumerate}</div>
+              </ol>
+              <p>Conclusion:</p>
+              <p>If someone can think, she can communicate with language.</p>
+              <div data-what=".the-argument li:eq(1), .the-argument li:eq(2)" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+              <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+              <div class="notes">This premise seems straightforward to me.</div>
+              <div data-what=" .think" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
+              <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+              <div class="notes">Note that by think we mean desire, intend, wish, guess, believe ...</div>
+              <div class="notes">There's a quote on your handout in support of this.</div>
+              <div class="handout">'belief is central to all kinds of thought.  If someone is glad that, or notices that, or remembers that, or knows that, the gun is loaded, then he must believe that the gun is loaded.  Even to wonder whether the gun is loaded, or to speculate on the possibility that the gun is loaded, requires belief, for example, that a gun is a weapon, that it is a more or less enduring physical object, and so on.  …  it is necessary that there be endless interlocked beliefs'</div>
+              <div class="handout ctd">\citep[p.\ 157]{Davidson:1975eq}; cf. \citep[pp.\ 320--1]{Davidson:1982je}</div>
+              <div data-what=" .think" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-removeclass"></div>
+              <div data-what=".the-argument li:eq(1), .the-argument li:eq(2)" data-class="blur-text" class="slide anim-continue anim-removeclass"></div>
+              <div data-what=".the-argument li:eq(0), .the-argument li:eq(2)" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+              <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+              <div class="notes">Why accept the second premise of the argument?  Consider Davidson's reasoning:</div>
+            </grid_12>
+          </container_12>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Why accept the second premise of the argument, that to be capable of having a false belief it is necessary to understand the possibility of false belief?</div>
+        <div class="notes">Here is Davidson's reasoning ...</div>
+        <div class="handout show">
+          <p>‘We, observing and describing … a creature …, say that it discriminates certain shapes, objects, colors, and so forth, by which we mean that it reacts in ways we find similar to shapes, objects, and colors which we find similar.</p>
+          <p class="slide">But we would be making a mistake if we were to assume that because the creature discriminates and reacts in much the way we do, that it has the corresponding concepts.</p>
+          <p class="slide">The difference, as I keep emphasizing, lies in the fact that we, unlike the creature I am describing, can, from our point of view, make mistakes in classification.’</p>
+          <p class="right">Davidson (2001: 11)</p>
+        </div>
+        <div class="handout ctd">\citep[p.\ 11]{Davidson:2001np}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_yell_stamp.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Here's an analogy for Davidson's argument.</div>
+        <div class="notes">I think it would be appropriate to say the yellers and stampers are making a mistake only if they themselves can see things that way.</div>
+        <div class="notes">I suggest that Davidson's claim is based on a similar intuition.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Note that the analogy I've offered isn't an argument for Davidson's claim.</div>
+        <div class="notes">At most, it's a challenge to someone who rejects it.</div>
+        <div class="notes">If you reject the premise, then you have to explain what makes it appopriate to assign blame or apply correctness conditions.</div>
+        <p>‘We, observing and describing … a creature …, say that it discriminates certain shapes, objects, colors, and so forth, by which we mean that it reacts in ways we find similar to shapes, objects, and colors which we find similar.</p>
+        <p>But we would be making a mistake if we were to assume that because the creature discriminates and reacts in much the way we do, that it has the corresponding concepts.</p>
+        <p>The difference, as I keep emphasizing, lies in the fact that we, unlike the creature I am describing, can, from our point of view, make mistakes in classification.’</p>
+        <p class="right">Davidson (2001: 11)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">So here's the argument again.</div>
+        <ol class="the-argument">
+          <li><span>If someone can </span><span class="think">think</span><span>, she must be capable of having a false belief.</span>
+          </li>
+          <li><span>To be capable of having a false belief it is necessary to understand the possibility of false belief.</span>
+          </li>
+          <li><span>Understanding the possibility of false belief entails being able to communicate by language.</span>
+          </li>
+        </ol>
+        <p>Conclusion:</p>
+        <p>If someone can think, she can communicate with language.</p>
+        <div class="notes">So far we've considered the first two premises.</div>
+        <div data-what=".the-argument li:eq(0), .the-argument li:eq(1)" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">What about the third premise?</div>
+        <div class="notes">This is really difficult.</div>
+        <div class="notes">I'd happily spend a lecture on it, but that would take us too far from the question that occupies us today.</div>
+        <div class="notes">So let me, for now at least, just put the claim in Davidson's own words ...</div>
+        <div class="slide em-above step2">
+          <p class="handout show">‘we grasp the concept of truth only when we can communicate the contents---the propositional contents---of the shared experience, and this requires language’</p>
+          <p class="right">Davidson 1997, p. 27</p>
+          <div class="handout ctd">\citep[p.\ 27]{Davidson:1997wj}.</div>
+          <div data-what=".the-argument li, .step2" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">Now just focus on the conclusion.</div>
+          <div class="notes">Recall that our overall question is, How could humans come to have abilities to communicate by language?</div>
+          <div class="notes">The conclusion of this argument provides one answer: Not by means of thinking.</div>
+          <div class="notes">To see what this rules out, consider this view from Higginbotham ...</div>
+        </div>
+        <div class="em-above step3 hide">
+          <div data-what=".step2" data-class="remove-me" class="slide anim-continue anim-addclass"></div>
+          <div data-what=".step3" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <p class="handout show">‘the process of language acquisition [is] coming to know the meanings of words, where at a given stage the learner’s conception is an hypothesis about the meaning’</p>
+          <p class="right">Higginbotham 1998, p. 153</p>
+          <div class="handout ctd">\citep[p.\ 153]{Higginbotham:1998rm}</div>
+          <div class="notes">Higginbotham offers a beautifully simple answer to our question, How could humans come to have abilities to communicate by language?</div>
+          <div class="notes">The answer is that we figure out the meanings of words in just the way we figure other things out, like why Ayesha is so glum or who ate my breakfast.</div>
+          <div class="notes">But now recall Davidson's claim that If someone can think, she can communicate by language.</div>
+          <div class="notes">I take it that Davidson's claim is incompatible with the view that language acquisition involves forming hypotheses about the meanings of words at the outset.</div>
+          <div class="notes">Be careful about the incompatibility: it's not that forming hypotheses about the meanings of words can't be part of the process, at a later stage.</div>
+          <div class="notes">The problem is that this---forming hypotheses---can't happen before at least some linguistic competence is present.</div>
+          <div class="notes">So there is something essential missing from Higginbotham's picture, at least if Davidson is right.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="center">two directions</p>
+        <div class="notes">Let me be clear about what I'm saying.</div>
+        <div class="slide em-above">
+          <div class="notes">There are two claims ...</div>
+          <ol>
+            <li>
+              <p>If someone can think, she can communicate with language.</p>
+            </li>
+            <li>Acquiring language involves thinking from the start.</li>
+          </ol>
+        </div>
+        <div class="slide em-above">
+          <div class="notes">I am saying that if the first is true, the second is false.</div>
+          <p class="first-direction">If 1, then not 2.</p>
+          <div class="notes">So if Davidson is right, we know something about how langauges are not acquired.</div>
+          <div class="notes">But I'm not saying that Davidson is right.</div>
+          <div class="notes">Indeed, there is a remarkable lack of convincing argument for (1) and claims like it.</div>
+        </div>
+        <div class="slide em-above">
+          <div class="notes">I am  also saying that if the second is true, the first is false.</div>
+          <p class="second-direction">If 2, then not 1.</p>
+          <div class="notes">So one way to argue that Davidson's position must be wrong would be to argue that acquiring language involves thinking from the start.</div>
+        </div>
+        <div data-what=" .first-direction" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">I want to consider this direction first.</div>
+        <div class="notes">Suppose Davidson is right.  Can we give a plausible account of language acquisition?</div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

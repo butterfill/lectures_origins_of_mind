@@ -1,0 +1,85 @@
+---
+layout: 'deck_unit'
+title: "Training"
+tags: []
+description: "Many philosophers of language (Russell, Wittgenstein, Quine, Dummett and Davidson among them) hold that humans are able to communicate with words because they are trained in the use of words."
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/slide_mixins
+
++slide
+  .notes For now I'm assuming that Davidson is right that somoene who can think communicate with language.
+  .notes What account of language acquisition is consistent with this assumption?
+  .notes A clue is given by Davidson ...
+  p.handout.show.the-quote
+    span ‘The ability to discriminate, to act differentially in the face of clues to the presence of food, danger or safety, is present in all animals and does not require reason.  Nor does the learning, even of complex routines, require reason, for 
+    span.how-that it is possible to learn how to act without learning that anything is the case
+    span .’
+  .handout.ctd \citep[p.\ 326]{Davidson:1982je}
+  p.right Davidson (1982b, 326); cf. (1995c, 207)
+  +blur('.the-quote span:not(.how-that), p.right')
+  .notes So we might suppose that acquiring a language involves learning how to act without learning that anything is the case.
+  .notes This is the general idea.  How can we make it concrete?
+
++slide
+  .notes Our question is, How do humans come to have abilities to communicate using words?
+  .notes Let's start with Bertrand Russell.
+  p.handout.show ‘A child learning to speak is learning 
+    span.highlight1 habits and associations
+    span  which are just as much 
+    span.highlight2 determined by the environment
+    span  as the habit of expecting dogs to bark and cocks to crow’
+  .handout.ctd \citep[p.\ 71]{Russell:1921ww}
+  p.right (Russell 1921, p. 71)
+  // Witt answers the question how determined; Quine answers the question what the habits are  
+  +invert('.highlight2')
+  .notes But how does the environment determine habits and associations?
+  .slide.em-above.step2
+    .notes Wittgenstein suggests that the habits are determined by training.
+    p.handout.show ‘[t]he child learns this language from the grown-ups by being trained to its use. I am using the word ‘trained’ in a way strictly analogous to that in which we talk of an animal being trained to do certain things. It is done by means of example, reward, punishment, and suchlike’
+    .handout.ctd \citep[p.\ 77]{Wittgenstein:1972lj}
+    p.right (Wittgenstein 1972, p. 77).
+    .notes But how does this training work?
+  +fade_('.highlight2')
+  +blur('.step2')
+  +invert('.highlight1')
+  .notes But now what are these habits and associations?
+  .slide.em-above.step3
+    .notes One answer is suggested by Quine.
+    p.handout.show ‘the child’s early learning of a verbal response depends on society's reinforcement of the response in association with the stimulations that merit the response’
+    .handout.ctd (\citep[p.\ 82]{Quine:1960fe}; compare \citep[pp.\ 28--9]{Quine:1974rd})
+    p.right (Quine 1960, p. 82)
+    .notes So this is the picture.
+    .notes For each word, there is a set of 'stimulations' in response to which an utterance of that word would be appropriate.
+    .notes For instance, we might suppose there's a set of banana stimulations in response to which an utterance of the word 'banana' would be appropriate.
+    .notes The child then comes to use the word 'banana' in response to the bananana-stimuluations by means of being trained.
+    .notes She is rewarded for using 'banana' correctly or punished for using it incorrectly (or both) and so she gradually zeros in on the correct pattern of use.
+  
+section.slide
+  .words: .container_12
+    .grid_6
+      p.center infant
+      p stimulations -> utter 'nana'
+    .grid_6
+      p.center rat
+      p stimulations -> press lever
+
++slide
+  .notes This seems to be approximately Davidson's own view.
+  .handout ‘Before we have an idea of truth or error, before the advent of concepts or propositional thought, 
+  p ‘
+    span.handout.ctd.show there is a rudiment of communication in the simple discovery that sounds produce results. Crying is the first step toward language when crying is found to procure one or another form of relief or satisfaction. More specific sounds, imitated or not, are rapidly associated with more specific pleasures.
+  .handout.ctd Here use //p. 71// would be meaning, if anything like intention and meaning were in the picture.  
+  p.slide ‘
+    span.handout.ctd.show A large further step has been taken when the child notices that others also make distinctive sounds at the same time the child is having the experiences that provoke its own volunteered sounds. 
+    span.handout.ctd For the adult, these sounds have a meaning, perhaps as one word sentences. The adult sees herself as doing a little ostensive teaching: “Eat,” “Red,” “Ball,” “Mamma,” “Milk,” “No.” 
+    span.slide.handout.show There is now room for what the adult views as error: the child says “Block” when it is a slab. This move fails to be rewarded, and the conditioning becomes more complex’ 
+  p.right (Davidson 2000: 70-1; see also Davidson 1999: 11).
+  .handout.ctd \citep[pp.\ 70--1]{Davidson:2000mt}
+

@@ -1,0 +1,204 @@
+---
+layout: 'deck_unit'
+title: "Creativity"
+tags: []
+description: "Some children acquire language without training, and any significant linguistic experience.  And children in mundane linguistic environments use words creatively from the outset.  What does this tell us about the view that humans come to use words through being trained in their use?"
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/slide_mixins
+
+// **todo** duplicated
+mixin fragment_davidsons_argument_premise1()
+  span If someone can 
+  span.think think
+  span, she must be capable of having a false belief.
+
+mixin fragment_davidsons_argument_premise2()
+  span To be capable of having a false belief it is necessary to understand the possibility of false belief.
+  
+mixin fragment_davidsons_argument_premise3()
+  span Understanding the possibility of false belief entails being able to communicate by language.
+
+mixin fragment_davidsons_argument_conclusion_only()
+  p If someone can think, she can communicate with language.
+
+mixin fragment_davidsons_argument_conclusion()
+  p Conclusion:
+  +fragment_davidsons_argument_conclusion_only
+  
+mixin fragment_davidsons_argument()
+  ol.the-argument
+    li
+      +fragment_davidsons_argument_premise1
+    li
+      +fragment_davidsons_argument_premise2
+    li
+      +fragment_davidsons_argument_premise3
+  +fragment_davidsons_argument_conclusion
+
+
+
+section.slide
+  .notes I'm assuming that Davidson is right that anyone who can think communicate with language.
+  .words
+    p.center recap
+    .container_12
+      .grid_6
+        p Assumption:
+        p If someone can communicate with language, she can think.
+        .slide
+          p.em-above Consequence:
+          p Acquiring language cannot involve thinking at the outset.
+        .slide
+          p.em-above Question:
+          p How 
+            span.could could
+            span  someone begin to acquire words without being able to think?
+      .grid_6(style='border-left: 1px dashed white; margin-left:-1px')
+        div(style='padding-left:15px;')
+          .slide
+            p Answer:
+            p By being trained to utter a particular word in response to certain simulations!
+          .slide
+            p.em-above Observation:
+            p There is a gap between what training achieves (use) and what language acquisition requires (understanding).
+          .slide 
+            p.em-above Now:
+            p How 
+              span.do do
+              span  children actually acquire language?
+    +words-bkg('.do, .could', 'blue')
+
++slide_middle
+  p.center homesigns
+  .notes Try to imagine you have never communicated linguistically with anyone.  You realise that other people interact much more easily that you can.  You're sitting here and everyone else is concentrating or making notes and obviously getting something out of being here that you aren't.  But what?  What is it that they are doing and how are they doing it?  
+  .notes Some deaf children in North America are brought up in purely oral environments without any sign language and therefore don't experience language at all.  These children invent their own sign languages, which are called homesigns.  Their invented languages are not as rich as those of children who experience other people's languages, but they have many of the same features (Goldin-Meadow 2002, 2003).  These deaf children have somehow worked out for themselves what linguistic communication is and they have found a way of doing it.  They have invented languages with no prior experience of language, and they have invented languages in a modality that people around them barely use in linguistic communication.  These linguistically isolated deaf children have answered in practice the questions that these lectures are about.
+  .notes What are their languages like?  Here are some examples ...
+
++slide
+  .notes “Pointing at the Present to Refer to the Non-Present.  David points at the chair at the head of the dining room table in his home and then produces a “sleep” gesture to tell us that his father (who typically sits in that chair) is asleep in another room.  He is pointing at one object to mean another and, in this way, manages to use a gesture that is grounded in the present to refer to someone who is not in the room at all” (Goldin-Meadow 2003: 74, figure 1)
+  img(src='/img/goldin-meadow_2003_fig1.png')
+  p.source Goldin-Meadow (2003, figure 1)
+
++slide
+  .notes “Examples of Conventional Emblems Whose Meanings Are Not as Transparent as They Seem.  In panel A, David is shown producing a “break” gesture.  Although this gesture looks like it should be used only to describe snapping long thin objects into two pieces with the hands, all of the children used the gesture to refer to objects of a variety of sizes and shapes, many of which had not been broken by the hands.  In panel B, Marvin is shown producing a “give” gesture.  This gesture looks like it should mean “put something small in my hand,” but all of the children used it to request the transfer of an object, big or small, to a place that was not necessarily the child's hand.  Thus, many of the gestures that the deaf children used were not as transparent in meaning as a quick glance would suggest” (Goldin-Meadow 2003: 76, figure 2).
+  img(src='/img/goldin-meadow_2003_fig2.png')
+  p.source Goldin-Meadow (2003, figure 2)
+
++slide
+  img(src='/img/goldin-meadow_2003_fig11.png')
+  p.source Goldin-Meadow (2003, figure 11)
+  .notes “David is holding a toy and uses it to point at a tray of snacks that his mother is carrying = snack (the tray is not shown in the drawing). Without dropping the toy, he jabs it several times at his mouth = eat.  Finally, he points with the toy at me sprawled on the floor in front of him (not shown) = Susan” (Goldin-Meadow 2003: 110, figure 1).
+
++slide({bkg:'goldin-meadow_2003_fig22.bkg.jpg'})
+  .notes “With this long string of gestures, all produced before she relaxed her hands, Qing is indicating that swordfish can poke a person (proposition 1) so that the person becomes dead (proposition 2), that they have long, straight noses (proposition 3), and that they swim (proposition 4)” (Goldin-Meadow 2003: 170).
+  .notes In more detail: “Complex Gesture Sentences.  Qing [Chinese child] produces five distinct gestures that she combines into a single complex gesture sentence (that is, she produces the string of gestures without breaking her flow of movement). The five gestures are illustrated in this figure: Qing points at a picture of a swordfish (= swordfish). She jabs at her own chest as though piercing her heart (= poke-in-chest). She crooks her index finger and holds it in the air (this is an emblem in Taiwan that hearing speakers use to mean dead). She holds her index finger on her nose and extends it outward (= long-straight-nose). She wiggles her palm back and forth (= swim).” (Goldin-Meadow 2003: 171, figure 22)
+  // img(src='/img/goldin-meadow_2003_fig22.png')
+  p.source Goldin-Meadow (2003, figure 22)
+
+section.slide
+  .notes Can we say something about the general features of homesigns?
+  .left-half-white
+  .words
+    .container_12
+      .grid_6.invert
+        p Gesture forms are:
+        ul
+          li stable
+          .notes 'gesture forms do not change capriciously with changing situations'
+          .notes i.	‘The gestures are stable in form, although they needn’t be. It would be easy for the children to make up a new gesture to fit every new situation (and, indeed, that appears to be what hearing speakers do when they gesture along with their speech, cf. McNeill, 1992). But that’s not what the deaf children do.  They develop a stable store of forms which they use in a range of situations-they develop a lexicon, an essential component of all languages (Goldin-Meadow, Butcher, Mylander, & Dodge, 1994).’ \citep[p.\ 1389]{Goldin-Meadow:2002dq}
+          li.slide arbitrary
+          .notes 'gesture--meaning pairs have arbitrary aspects within an iconic framework'
+          li.slide systematic
+          .notes 'the gestures the children develop are composed of parts that form paradigms, or systems of contrasts. When the children invent a gesture form, they do so with two goals in mind-the form must not only capture the meaning they intend (a gesture-world relation), but it must also contrast in a systematic way with other forms in their repertoire (a gesture-gesture relation).' \citep[p.\ 1389]{Goldin-Meadow:2002dq}
+      .grid_6
+        .slide
+          p Gesture forms are used:
+          ul
+            li with different forces (to ask questions, make comments, request things, ...)
+            li.slide to talk about past, future and hypothetical things
+            li.slide  to tell stories
+            li.slide  to communicate with oneself
+            li.slide  to talk about gestures (metalanguage)
+    p.source Goldin-Meadow 2002
+
++slide_middle
+  .notes Children can create their own first languages.
+  .notes I haven't explained the evidence for this claim here, but children in ordinary linguistic environments are also extremely creative from the beginning of  their attempts to communicate.
+  .notes What children do with words is, from the very beginning, purposively directed at sharing with others conscious attention to objects and events in their environment.
+  .notes This means that there's no prospect at all of describing characteristically human antics without mentioning psychological notions like purpose, understanding, consciousness and attention.
+  .notes The basic features of our mental lives can't be factored out of discussions by waffle about “forms of life” or “social practices” or “deontic scorekeeping”.
+  p.center Children can create their own first languages.
+  
+section.slide
+  .notes How does this bear on our position?  Recall ...
+  .words
+    p.center recap
+    .container_12
+      .grid_6
+        p Assumption:
+        p.assumption If someone can communicate with language, she can think.
+          p.em-above Consequence:
+          p Acquiring language cannot involve thinking at the outset.
+          p.em-above Question:
+          p.how-could How 
+            span.could could
+            span  someone begin to 
+            span.acquire acquire
+            span   
+            span.create.remove-me create
+            span  words without being able to think?
+      .grid_6(style='border-left: 1px dashed white; margin-left:-1px')
+        div(style='padding-left:15px;')
+            p Answer:
+            p
+              span.answer By being trained to utter a particular word in response to certain simulations!
+            .blur-text
+              p.em-above Observation:
+              p There is a gap between what training achieves (use) and what language acquisition requires (understanding).
+              p.em-above Now:
+              p How 
+                span.do do
+                span  children actually acquire language?
+    +words-bkg('.how-could', 'yellow')
+    +line-through_('.acquire')
+    +unremove('.create')
+    .notes So here's my challenge to Davidson and others who hold that anyone can communicate with language can think:
+    .notes explain how someone could begin to create words without already being able to think.
+    .notes As I've been explaining, the challenge arises because children who have no language and no significant experience of language can create languages of their own.
+    +words-bkg('.answer', 'yellow')
+    +line-through('.answer')
+    .notes So we have to reject this answer.
+    +fade_('.how-could, .answer')
+    +words-bkg('.assumption','red')
+    .notes For my part, I think it's probably time to drop the assumption.
+    .notes Not because we've shown it's wrong, but because there's no good argument for it an a significant obstactle to accepting it.
+    .notes So let's return to our overall question without that assumption.
+    .notes (Recall that the question was, How could humans come to have abilities to communicate by language?)
+
+
+
++slide_middle
+  .notes This is an aside.  Take a break, don't listen.  But things are worse for Davidson and others than you imagine.
+  p.center aside
+  
++slide
+  .notes Recall Davidson's argument.
+  +fragment_davidsons_argument
+  .slide.em-above
+    p.handout.show ‘Intentional action cannot emerge before belief and desire, for an intentional action is one explained by beliefs and desires that caused it.’
+    p.right  Davidson 1999, p. 10
+    .handout.ctd \citep[p.\ 10]{Davidson:1999ju}
+  .notes So Davidson's view is that intentional action is impossible without language.
+  .notes I think it's right to link intentional action to intention, and intention to thought.
+  .notes So I think Davidson is right to this extent: if anyone who can think can communicate with language, then anyone who can act intentionally can communicate with language.
+  .notes This underlines the difficulty of meeting that challange, of explaining how language creation gets going.
+  .notes If Davidson is right, it must get going without either thinking or acting intentionally.
+  
+  
