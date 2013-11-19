@@ -641,6 +641,24 @@ table.fitch-proof td.last-premise {
 .compress table.fitch-proof tr td {
   padding: 0;
 }
+table.data td {
+  padding: 5px 20px 5px 20px;
+}
+table.data thead td {
+  border-top: 3px solid #fff;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+table.data tbody td {
+  vertical-align: top;
+}
+table.data tbody tr:last-child td {
+  border-bottom: 3px solid #fff;
+}
+table.data tbody tr.even td {
+  background-color: rgba(255,255,255,0.1);
+}
 /**
  * dim, invisible
  */

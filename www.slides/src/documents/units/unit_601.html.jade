@@ -1,6 +1,6 @@
 ---
 layout: 'deck_unit'
-title: "***"
+title: "Core Knowledge"
 tags: []
 description: "***"
 depends: ['']
@@ -13,3 +13,129 @@ exercises_fast: []
 
 include ../../../fragments/slide_mixins
 
++slide_middle
+  .notes I wanted to try to start drawing things together before the end of the last lecture.
+  .notes This will mean a bit of repetition, but it will also help us in thinking through the issues together.
+  p.center The Beginning of the End
+
++slide_middle
+  .notes This isn't a new question, but I think it's worth spending more time on it as a way of organising much of what we've been learning.
+  p.center
+    span What is core knowledge?  
+    span.two-approaches.hide Two approaches
+  +show('.two-approaches')
+  .notes There are two approaches.
+  .notes One involves finding out what people who use the term say it is.
+
++slide
+  .step1
+    p.handout.show
+      span ‘Just as humans are endowed with multiple, 
+      span.noblur1 specialized perceptual systems
+      span, so we are endowed with multiple systems for representing and reasoning about entities of different kinds.’
+    .handout.ctd \citep[p.\ 517]{Carey:1996hl}
+    p.right
+      span (Carey and Spelke 1996: 517)
+  +blur('.step1 p :not(.noblur1)')
+  .notes So talk of core knowledge is somehow supposed to latch onto the idea of a system.
+  .notes What do these authors mean by talking about 'specialized perceptual systems'?
+  .notes They talk about things like perceiving colour, depth or melodies.
+  .notes Now, as we saw when talking about categorical perception of colour, we can think of the 'system' underlying categorical perception as largely separate from other cognitive systems--- we saw that they could be knocked out by verbal interference, for example.
+  .notes So the idea is that core knowledge somehow involves a system that is separable from other cognitive mechanisms.
+  .notes As Carey rather grandly puts it, understanding core knowledge will involve understanding something about 'the architecture of the mind'.
+  +blur_('.step1')
+  .slide.step2
+    p.em-above.handout.show
+      // ‘core systems are conceptual and provide a foundation for the growth of knowledge.  …
+      span ‘core systems are
+      ol
+        li largely innate, 
+        li encapsulated, and 
+        li unchanging, 
+        li arising from phylogenetically old systems 
+        li built upon the output of innate perceptual analyzers.’ 
+    .handout.ctd \citep[p.\ 520]{Carey:1996hl}
+    p.right (Carey and Spelke 1996: 520)
+  .notes This is helpful for getting started.
+  .notes But we quickly run into the problem that different researchers say different things, and it isn't obvious which differences matter.
+  .notes We also run into the problem that the definitions on offer aren't obviously correct: they list features that maybe aren't all necessary.
+  
+  
++slide_middle
+  .notes I said there were two approaches to answering the question, What is core knowledge?
+  .notes The second approach is inspired by the notion of radical interpretation.
+  p.notes.show ‘All understanding of the speech of another involves radical interpretation’
+  p.right Davidson 1973, p. 125
+  .notes.ctd \citep[p.\ 125]{Davidson:1973jx}
+  .notes (It's not just core knowledge; I think we have too approach science as radical interpreters ...)
+  .notes How does radical interpretation work?
+  .notes Interpretation is hard because there are two factors: truth and meaning.
+  .notes The proposal Davidson makes is that we assume truth and infer meaning.
+  .notes I'm recommending a similar strategy for core knowledge.
+  .notes Very roughly, we take for granted that the evidence establishes various hypotheses.  We then ask what core knowledge could be given these are true.
+  .notes But more carefully, we first have to ask what motivates talk about core knowledge at all.
+
+
+mixin discrepancy_table(p)
+  if !p
+    - p = {step:true}
+  table.data
+    thead
+      tr
+        td domain
+        td evidence for knowledge in infancy
+        td evidence against knowledge
+    tbody
+      tr.odd.case-colour(class="#{p.step ? 'slide' : ''}")
+        td colour
+        td categories used in learning labels & functions
+        td failure to use colour as a dimension in ‘same as’ judgements
+      tr.even.case-objects(class="#{p.step ? 'slide' : ''}")
+        td physical objects
+        td patterns of dishabituation and anticipatory looking
+        td unreflected in planned action (may influence online control)
+      tr.odd.case-minds(class="#{p.step ? 'slide' : ''}")
+        td minds
+        td reflected in anticipatory looking, communication, &c
+        td not reflected in judgements about action, desire, ...
+      tr.even.case-syntax(class="#{p.step ? 'slide' : ''}")
+        td syntax
+        td [to follow]
+        td [to follow]
+      tr.odd.case-number(class="#{p.step ? 'slide' : ''}")
+        td number
+        td [to follow]
+        td [to follow]
+
+
++slide
+  .notes So why do we need the notion of core knowledge?
+  .notes Think about these domains.
+  .notes In each case, we're push towards postulating that infants know things, but also pushed against this.
+  .notes Resolving the apparent contradiction is what core knowledge is for.
+  +discrepancy_table
+  .notes Key question: What features do we have to assign to core knowledge if it's to describe these discrepancies?
+  .notes I think the fundamental feature is inaccessibility.
+
++slide
+  .notes Core knowledge is like knowledge in some ways, and unlike knowledge in others.
+  p *** todo: two sides, like and unlike
+
++slide({bkg:'slide_core_knowledge_innate_transitions.jpg'})
+  .notes This picture is significantly different from some competitors (but not Carey on number):
+  .notes (1) because it shows we aren't done when we've explained the acquisition of core knowledge (contra e.g. Leslie, Baillargeon), and
+  .notes (2) because it shows we can't hope to explain the acquisition of knowledge if we ignore core knowledge (contra e.g. Tomasello)
+
+
+
++slide
+  .notes ***todo*** say something about what we've learnt from each case.
+  .notes Or maybe identify themes and point out which cases they're 
+  .notes e.g. colour shows (i) that perceptual mechanisms are important and (ii) that infants' core knowledge persists into adulthood
+  +discrepancy_table({step:false})
+
+
++slide_middle
+  .notes ***todo : evalaute the picture I offered in lecture 1 in the light of what we've learnt so far
+  p.center
+    img(src='/img/fig_rediscovery.png')

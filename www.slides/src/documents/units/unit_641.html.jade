@@ -1,8 +1,8 @@
 ---
 layout: 'deck_unit'
-title: "Syntax"
+title: "Syntax / Innateness"
 tags: []
-description: "Infants' abilties to detect syntactic structure are surprisingly sophisticated (relative to their performance in producing utterances).  Here we consider a case study.  We also use this case study to examine how poverty of stimulus arguments work.  Some argue that infants have innate abilties to detect syntactic structure."
+description: "Infants' abilties to detect syntactic structure are surprisingly sophisticated (relative to their performance in producing utterances).  Here we consider a case study.  We also use this case study to examine how poverty of stimulus arguments work.  Some argue that infants have innate abilties to learn about syntax."
 depends: ['']
 source: ['']
 duration: 5
@@ -162,18 +162,137 @@ include ../../../fragments/slide_mixins
     
 +slide_middle
   .notes Aside: we have too approach science as radical interpreters ...
+  .notes How does radical interpretation work?
+  .notes Interpretation is hard because there are two factors: truth and meaning.
+  .notes The proposal Davidson makes is that we assume truth and infer meaning.
+  .notes I'm recommending a similar strategy.
+  .notes We take for granted that this argument establishes that X is innate; we then ask what innateness could be given that this is so.
   p.notes.show ‘All understanding of the speech of another involves radical interpretation’
   p.right Davidson 1973, p. 125
   .notes.ctd \citep[p.\ 125]{Davidson:1973jx}
 
++slide
+  .notes The best argument for innateness is the poverty of stimulus argument.
+  .notes We need to step back and understand how poverty of stimulus arguments work.
+  .notes Here I'm following \citet{pullum:2002_empirical}, but I'm simplifying their presentation.
+  .handout.notes How do poverty of stimulus arguments work? See \citet{pullum:2002_empirical}.
+  .notes First think of them in schematic terms ...
+  p Poverty of stimulus argument
+  ol
+    li.slide
+      span Human infants acquire 
+        span.X(style='z-index:1;') X
+        span . 
+    li.slide
+      span To acquire X by data-driven learning you'd need this  
+        span.crucial-evidence(style='z-index:1;') Crucial Evidence
+        span . 
+    li.slide
+      span But infants lack this Crucial Evidence for X.
+    li.slide
+      span So human infants do not acquire X by data-driven learning.
+    li.slide
+      span But all acquisition is either data-driven or innately-primed learning.
+    li.slide
+      span So human infants acquire X by 
+      span.innate innately-primed learning
+      span  .
+  p.right compare Pullum & Scholz 2002, p. 18
+  .notes This is a good structure; you can use it in all sorts of cases, including the one about chicks' object permanence.
+  .notes Now fill in the details ...
+  +words-bkg('.X', 'pink')
+  .notes In our case, X is knowledge of the syntactic structure of noun phrases.  (Caution: this is a simplification; see\citet[p,\ 158]{lidz:2004_reaffirming}).)
+  +words-bkg('li:eq(0) span','blue')
+  .notes This is what the Lidz et al experiment showed.
+  .notes Note that no one takes this to be evidence for innateness by itself.
+  +words-bkg('.crucial-evidence','forestgreen')
+  .notes What is the crucial evidence infants would need to learn the syntactic structure of noun phrases?
+  .notes This is actually really hard to determine, and an on-going source of debate I think.
+  .notes But roughly speaking it's utterances where the structure matters for the meaning, utterances like 'You play with this red ball and I'll play with that one'.
+  +words-bkg('li:eq(2) span', 'orange')
+  .notes \citet{lidz:2003_what} establish this by analysing a large corpus (collection) of conversation involving infants.
+  +invert('.innate')
+  .notes What can we infer about innateness from this argument?
+  .notes First, think about what is innate.  The fact that knowledge of X is acquired other than by data-driven learning doesn't mean that X is not innate; it just means that something which enables you to learn this is.
+  .notes Second, think about the function assigned to innateness.  That which is innate is supposed to stand in for having the crucial evidence.
+  .notes This, I think, is the key to thinking about what we *ought* to mean by innateness.
+  .notes So attributes like being genetically specified are extraneous---they may be typical features of innate things, but they aren't central to the notion.
+  .notes By contrast, that what is innate is not learned must be constitutive (otherwise that which is innate couldn't stand in for having the crucial evidence)
+
+//
+  p Poverty of stimulus ingredients
+  .slide
+    ol
+      li Specify an Acquirendum --- what is alledgedly known?
+      li Identify some Crucial Evidence --- what is indispensible to the learner if the Acquirendum is to be learnt?
+      li Give evidence of inaccessibility --- why think that actual learners do not get the Indispensible Input?
+      li Evidence of acquisition --- why think that actual learners come to know the Acquirendum?
+
 +slide_middle
+  .notes Contrary to what many philosophers (including Stich and Fodor) will tell you ...
   p.center.handout.show ‘the APS [argument from the poverty of stimulus] still awaits even a single good supporting example’
   p.right Pullum & Scholz 2002, p. 47
   .handout.ctd \citep[p.\ 47]{pullum:2002_empirical}
 
-+slide
-  .notes We need to step back and understand how poverty of stimulus arguments work.
-  .handout How do poverty of stimulus arguments work? See \citet{pullum:2002_empirical}.
-  
 
- 
++slide
+  p What is innate in humans?
+  .notes I asked you this question, but what do I think?
+  .notes I'd approach it by distinguishing two sub-questions (the second of which has two sub-sub-questions)
+  .slide.em-above
+    ol
+      li What evidence is there?
+      li What does the evidence show is innate?
+      ol(style='list-style-type:lower-greek').slide
+        li Type: knowledge, core knowledge, modules, concepts, abilities, dispositions ...
+        li Content: e.g. universal grammar, principles of object perception, minimal theory of mind ...
+      +row-bkg('ol:eq(0) ul:eq(0)')
+      .notes Arguments from the poverty of stimulus are the best way to establish innateness.
+      .notes The argument concerning syntax we've just been discussing is quite convincing, although if you follow up on the references given in the handout you'll see it's not decisive (as always).
+      .notes For things other than knowlegde of syntax, the evidence concerning humans is far less clear.
+      .notes There are, however, quite good cases in nonhuman animals, as many of you know.
+      .notes So it's not unreasonable to conjecture that learning in the several domains where infants appear to know things early in their first year is innately-primed rather than entirely data-driven.
+      .notes But, one or two cases aside, there's enough evidence to rule out the converse conjecture.
+      +row-bkg-remove_('ol:eq(0) li:eq(0)')
+      +row-bkg('ol:eq(1) li:eq(0)')
+      .notes I don't think what is innate is knowledge, nor do I think it's concepts.
+      .notes But I think there's a good chance that modules are innate (and therefore core knowledge if I'm right to suppose that 'core knowledge' is a term for the fundamental principles describing the operation of a module).
+      +row-bkg-remove_('ol:eq(1) li:eq(0)')
+      +row-bkg('ol:eq(1) li:eq(1)')
+      .notes On content: I think quite a lot is known about the modules thanks to detailed tests that have little to do directly with controversy about inateness.
+  
++slide_middle
+  .notes Why care about whether something is innate?  (This isn't suppose to be dismissive.)
+  p.center so what?
+
+
++slide({bkg:'slide_core_knowledge_innate_transitions.jpg'})
+  .notes Here are two reasons why I think we shouldn't worry too much about innateness in trying to understand the origins of mind.  
+  .notes (1) The question about innateness concerns the first transition, whereas I think the second should be our focus (for pragmatic reasons: there's more research).
+  .notes (2) Discoveries about innately-primed learning make only a relatively modest contribution to understanding the emergence of core knowledge in development. 
+    | So even when we consider the first transition, it's not obvious that discoveries about innateness are very illuminating, for all their pop-science appeal.  
+  .notes Metaphor: we find a cake in the ruins of Pompeii preserved for a couple of thousand years.  We're trying to reconstruct its manufacture.
+  .notes Its good if someone obsesses about where the eggs came from.  Did the baker have her own chickens or did she get them from a friend?
+  .notes But knowing where the eggs came from is unlikely to be critical to understanding how the cake was manufactured.
+  .notes We're not finished when we know where the eggs came from, and we're not doomed to fail if we don't know.
+
++slide
+  .notes So let me put the innateness issue aside and get back to what I think matters most ...
+  p Conclusion
+  ol
+    li Adults have inaccessible, domain-specific representations concerning the syntax of natural languages.
+    li So do infants (from 18 months of age or earlier, well before they can use the syntax in production).
+    li
+      span These representations plausibly enable understanding and play a key role in the development of abilities to communicate with language.
+    li These representations are a paradigm case of core knowledge.
+    +words-bkg('li:eq(2) span', 'limegreen')
+    .notes This paradigm allows me to highlight something about core knowledge.
+    .notes I would be a mistake to suppose that there is some core knowledge which later becomes knowledge proper --- e.g. the fact that barriers stop solid objects is first core knowledge then later knowledge.
+    .notes The content of the core knowledge is a theory of syntax (let's say).
+    .notes Or, in another case, the content of core knowledge is some principles of object perception.
+    .notes These are things that human adults do not typically know at all, at least not in the sense that they could state the principles.
+    .notes So core knowledge enables us to do things, like anticipate where unseen objects will re-appear or communicate with words.
+    .notes It doesn't seem to be linked directly to the acquisition of concepts.
+
+
+

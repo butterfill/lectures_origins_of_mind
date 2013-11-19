@@ -355,6 +355,8 @@ mixin unfade(what, dur)
 mixin words-bkg(what, color, container)
   if typeof(what)==='string'
     - what = [what]
+  if !color
+    - color = 'pink'
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-#{color}")
   mixin anim_end()
@@ -362,6 +364,8 @@ mixin words-bkg(what, color, container)
 mixin words-bkg-faint(what, color, container)
   if typeof(what)==='string'
     - what = [what]
+  if !color
+    - color = 'pink'
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-faint-#{color}")
   mixin anim_end()
@@ -369,6 +373,8 @@ mixin words-bkg-faint(what, color, container)
 mixin words-bkg-remove_(what, color, container)
   if typeof(what)==='string'
     - what = [what]
+  if !color
+    - color = 'pink'
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-#{color}")
 
