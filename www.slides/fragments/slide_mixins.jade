@@ -237,12 +237,16 @@ mixin line-through(what)
 //- show something(s)
 //- param what is a string or an array of jquery identifiers
 //- param scope (optional) is a seclector that specifies where to look for the what
-mixin show(what,scope)
+mixin show_(what,scope)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="hide",data-scope="#{scope ? scope : ''}")
+
+mixin show(what,scope)
+  +show_(what,scope)
   mixin anim_end()
+  
   
 mixin hide(what)
   if typeof(what)==='string'
@@ -408,20 +412,24 @@ mixin row-bkg-remove(what, color, container)
   +row-bkg-remove_(what, color, container)
   +anim_end()
 
-mixin invert(what, container)
+mixin invert_(what, container)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}", data-class="invert")
     .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-white")
+mixin invert(what, container)
+  +invert_(what, container)
   mixin anim_end()
 
-mixin uninvert(what, container)
+mixin uninvert_(what, container)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}", data-class="invert")
     .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-white")
+mixin uninvert(what, container)
+  +uninvert_(what, container)
   mixin anim_end()
 
 

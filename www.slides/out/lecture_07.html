@@ -1,0 +1,419 @@
+
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Lecture 07 | Origins of Mind</title>
+    <meta name="description" content="Origins of Mind: Lectures."/>
+    <meta name="keywords" content="philosophy, psychology, development, thought"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.53.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script async="async" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/normalize.css" /><link  rel="stylesheet" href="/vendor/deck.js/style.neon.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.core.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.menu.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.hash.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.notes.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/log.js"></script><script defer="defer"  src="/vendor/modernizr.min.js"></script><script defer="defer"  src="/vendor/deck.js/deck.core.js"></script><script defer="defer"  src="/vendor/deck.js/deck.menu.js"></script><script defer="defer"  src="/vendor/deck.js/deck.hash.js"></script><script defer="defer"  src="/vendor/deck.js/deck.notes.js"></script><script defer="defer"  src="/vendor/deck.js/deck.slide-clone.js"></script><script defer="defer"  src="/vendor/deck.js/deck.fit.js"></script><script defer="defer"  src="/vendor/deck.js/deck.step.js"></script><script defer="defer"  src="/vendor/deck.js/deck.events.js"></script><script defer="defer"  src="/vendor/deck.js/deck.anim.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script>
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (no equivalent if you don't have a keyboard)</p>
+              <p>Press m or double tap to see a menu of slides</p>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<div class="notes notes-header-tex">\title {Origins of Mind: Lecture Notes \\ Lecture 07}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\maketitle</div>
+<div id="title-slide" class="slide"><img src="/img/bkg/bees/ADSC_0172_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div class="fade-in">
+    <div style="" class="title-block">
+      <div class="title-container">
+        <h1 class="title1 fade-in">Origins of Mind</h1>
+        <h1 class="title2 fade-in">Lecture 07</h1>
+        <h3 class="email fade-in">s.butterfill@warwick.ac.uk</h3>
+      </div>
+    </div>
+  </div>
+  <div class="handout">\def \ititle {Origins of Mind}</div>
+  <div class="handout">\def \isubtitle {Lecture 07}</div>
+  <div class="handout">&nbsp;</div>
+  <div class="handout">\</div>
+  <div class="handout">&nbsp;</div>
+  <div class="handout">\begin{center}</div>
+  <div class="handout">{\Large</div>
+  <div class="handout">\textbf{\ititle}: \isubtitle</div>
+  <div class="handout">}</div>
+  <div class="handout">&nbsp;</div>
+  <div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div>
+  <div class="handout">\end{center}</div>
+</div>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{***}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{***}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<section class="slide"><img src="/img/slide_cumberland_lodge_2014.jpg" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Syntax}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Syntax}</div>
+<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
+<!-- create title slide for a lecture-->
+<!-- param p contains document and images (an array of images to use)-->
+<!-- param p contains p.unit and p.images (an array of images)-->
+<!-- see also +clip to modify the clip as an animation-->
+<!-- ------------>
+<!-- draw things-->
+<!-- ------------>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">
+            So far we have considered examples of core knowledge.  But we have ignored a paradigm case, 
+            one which has inspired much work on this topic ...
+          </div>
+          <p>core knowledge of</p>
+          <ul>
+            <li>physical objects</li>
+            <li>[colour]</li>
+            <li>mental states</li>
+            <li>action</li>
+            <li>number</li>
+            <li>...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--* say what core knowledge is again (mention properties)-->
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">
+            Human adults have extensive knowledge of the syntax of their languages,  
+            as illustrated by, for example, their abilities to detect grammatical and ungramatical sentences which they have never heard before, independently of their meanings. 
+            To adapt a famous example from Chomsky, ...
+          </div>
+          <ol>
+            <li>The turnip of shapely knowing isn't yet buttressed by death.</li>
+            <li>*The buttressed turnip shapely knowing yet isn't of by death.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">We need to task two questions.</div>
+          <p class="center"><span class="hide step2 core">core   </span><span class="knowledge">knowledge</span><span> of </span><span class="syntax">syntax</span><span> </span><span class="hide step3">is innate (?) </span></p>
+          <div data-what=" .syntax" data-class="invert" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" .syntax" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">First, what is this thing, syntax, which is known?</div>
+          <div class="notes">This thing they know, the syntax, isn't plausibly just a list of which sentences are grammatical.</div>
+          <div class="notes">Because people can make judgements about arbitrarily long, entirely novel sentences.</div>
+          <div class="notes">Rather, the thing known must be something that enables people to make judgements about sentences.</div>
+          <div class="notes">We might think of it roughly as a theory of syntax.</div>
+          <div class="notes">It's like a theory in this sense: knowledge of it enables you to make judgements about the grammaticality of arbitrary sentences.</div>
+          <div data-what=" .syntax" data-class="invert" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=" .syntax" data-class="bkg-words-highlight-white" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=" .knowledge" data-class="invert" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" .knowledge" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">The second question is, Is it *knowledge* we have syntax or something else?</div>
+          <div class="notes">There's something interesting.</div>
+          <div class="notes">The knowledge can be revealed indirectly, by asking people about whether particular sentences are grammatical.</div>
+          <div class="notes">But people can't say anything about how they know the sentence is grammatical.</div>
+          <div class="notes">It's like perceiving the shape of something: there isn't much to say about how you know.</div>
+          <div class="notes">So the theory of syntax isn't something we can discover by introspection:</div>
+          <div class="notes">we have to *rediscover* it from scratch by investigating people's linguistic abilities.</div>
+          <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=" .core" data-class="invert" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" .core" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">Knowledge of syntax therefore seems to have some of the features associated with core knowledge.</div>
+          <div class="notes">First, it is domain-specific.</div>
+          <div class="notes">Second, it is inaccessible.  That is, it can't guide arbitrary actions.</div>
+          <div class="notes">In what follows I want to suggest that syntax provides a paradigm case for thinking about core knowledge.</div>
+          <div data-what=" .core, .knowledge" data-class="invert" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=" .core, .knowledge" data-class="bkg-words-highlight-white" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=" .step3" data-class="invert" class="slide anim-continue anim-addclass"></div>
+          <div data-what=" .step3" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+          <div data-what=".step3" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div class="notes">In addition, I want to use the case of syntax for thinking about the question, What is innate in humans?</div>
+          <div class="notes">I was astonished how many people considered this question in the unassessed essay, some people seem really fascinated by it.</div>
+          <div class="notes">But almost no one discussed the case of syntax in depth.  If you're going to talk about innateness, you really need to know a little bit about syntax.</div>
+          <div class="notes">So I'm also going to provide you with that understanding.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Consider a phrase like 'the red ball'.</div>
+        <div class="notes">What is the syntactic structure of this noun phrase?</div>
+        <div class="notes">In principle there are two possibilities.</div>
+        <p>the red ball</p>
+        <p class="step3 hide">‘I’ll play with this red ball and you can play with that <span class="one">one</span><span>.’</span></p>
+        <div class="slide">
+          <div style="position:relative;"><img src="/img/lidz_2003_fig0.png" style="clip: rect(0,327,522,0); position: absolute; max-width:720px; max-height:550px;"/></div>
+          <div data-what="img:eq(0)" data-attr="clip:auto" class="slide anim-continue anim-attribute"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <p class="source">Lidz et al (2003)</p>
+        </div>
+        <div data-what=".step3" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">How can we decide between these?</div>
+        <div class="handout">Is the syntactic structure of 'the red ball' flat or hierachical?</div>
+        <div class="notes handout">\begin{enumerate}
+          <ol>
+            <li>\item 'red ball' is a constituent on (b) but not on (a)</li>
+            <li>\item anaphoric pronouns can only refer to constituents</li>
+            <li>
+              \item In the sentence 'I’ll play with this red ball and you can play with that one.', the word 'one' is an anaphoric prononun that refers to 'red ball' (not just ball).
+              \citep{lidz:2003_what,lidz:2004_reaffirming}.
+            </li>
+          </ol>
+        </div>
+        <div class="notes handout">\end{enumerate}</div>
+        <div data-what=" .one" data-class="bkg-words-highlight-red" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">What I've just shown you is, in effect, how we can decide whihc way an adult human understands a phrase like 'the red ball'.</div>
+          <div class="notes">We can discover this by finding out how they understand a sentence like 'I’ll play with this red ball and you can play with that one.'.</div>
+          <div class="notes">But how could we do this with infants who are incapable of discussing sentences with us? </div>
+          <p class="center">infants?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Here's how the experiment works (see \citealp{lidz:2003_what}) ...</div>
+        <div class="notes">The experiment starts with a background assumption:</div>
+        <div class="notes handout">‘The assumption in the preferential looking task is that infants prefer to look at an image that matches the linguistic stimulus, if one is available’ \citep{lidz:2003_what}.</div>
+        <table>
+          <tr>
+            <td align="center" width="300px" style="background-color:grey;"> Look, a yellow bottle!</td>
+            <td align="center" colspan="2" class="hide step2"><span class="control hide">control: What do you see now?</span><br/><span>test: Do you see another one?</span><br/><span>&nbsp;</span></td>
+            <tr>
+              <td align="center" style="background-color:grey;">[yellow bottle]</td>
+              <td align="left" class="hide step2">[yellow bottle]</td>
+              <td align="right" class="hide step2">[blue bottle]</td>
+            </tr>
+            <div data-what=".step2" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+            <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+            <div class="notes">So the key question was whether infants would look more at the yellow bottle (which is familiar) or the blue bottle (which is novel).</div>
+            <div class="notes">If they think 'one' refers to 'bottle', we'd expect them to look longer at the blue bottle;</div>
+            <div class="notes">and conversely if they think one refers to 'yellow bottle', then they're being asked whether they see another yellow bottle.</div>
+            <div data-what=".control" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+            <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+            <div class="notes">And, as always, we need a control condition to check that infants aren't looking in the ways predicted irrespective of the manipulation.</div>
+            <p class="source">Lidz et al (2003)</p>
+            <div class="slide">
+              <div class="notes">And here's what they found ...</div><img src="/img/lidz_2003_fig1.png"/>
+              <p class="source">Lidz et al (2003, figure 1)</p>
+            </div>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">What can we conclude so far?</div>
+          <p class="center">From 18 months of  age or earlier, infants represent the syntax of noun phrases in much the way adults do.</p>
+          <div class="notes">So there is core knowledge of syntax ... or is there?</div>
+          <div class="slide">
+            <div class="notes">Core knowledge is often characterised as innate.</div>
+            <div class="notes">I think this is a mistake (more about this later), but many of you do not.</div>
+            <p class="center em-above">But are these representations <span class="innate">innate</span><span>?</span></p>
+            <div class="notes">How could we tell whether these representations are innate?</div>
+            <div data-what=" .innate" data-class="invert" class="slide anim-continue anim-addclass"></div>
+            <div data-what=" .innate" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+            <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+            <div class="notes">What do we mean by innate here?</div>
+            <div class="notes">The easy answer is: not learned.</div>
+            <div class="notes">But I think there's a more interesting way to approach understanding what 'innate' means.</div>
+            <div class="notes">Quite a few people pointed out that there isn't agreement on what innateness is.</div>
+            <div class="notes">But this is not very interesting by itself because there's disagreement about most things and potential causes of disagreement include ignorance and stupidity.</div>
+            <div class="notes">It's also important that the mere fact that a single term is used with multiple meanings isn't an objection to anyone.</div>
+            <div class="notes">As philosophers, some of you are tempted to catalogue different possible notions of innateness.</div>
+            <div class="notes">I encourage you to resist this temptation; if you want to collect something, pick something useful like banknotes.</div>
+            <div class="notes">There's a much better way to approach things.</div>
+            <div class="notes">Let's see what kind of findings are, or would be, taken to show that something is innate.</div>
+            <div class="notes">We can use these to constrain our thinking about innateness.</div>
+            <div class="notes">We will say: assuming that this is a valid argument that X is innate, what could innateness be?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Aside: we have too approach science as radical interpreters ...</div>
+          <p class="notes show">‘All understanding of the speech of another involves radical interpretation’</p>
+          <p class="right">Davidson 1973, p. 125</p>
+          <div class="notes ctd">\citep[p.\ 125]{Davidson:1973jx}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center handout show">‘the APS [argument from the poverty of stimulus] still awaits even a single good supporting example’</p>
+          <p class="right">Pullum & Scholz 2002, p. 47</p>
+          <div class="handout ctd">\citep[p.\ 47]{pullum:2002_empirical}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">We need to step back and understand how poverty of stimulus arguments work.</div>
+        <div class="handout">How do poverty of stimulus arguments work? See \citet{pullum:2002_empirical}.</div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

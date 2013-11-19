@@ -1,0 +1,178 @@
+---
+layout: 'deck_unit'
+title: "Syntax"
+tags: []
+description: "Infants' abilties to detect syntactic structure are surprisingly sophisticated (relative to their performance in producing utterances).  Here we consider a case study.  We also use this case study to examine how poverty of stimulus arguments work.  Some argue that infants have innate abilties to detect syntactic structure."
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/slide_mixins
+
++slide_middle
+  .notes So far we have considered examples of core knowledge.  But we have ignored a paradigm case, 
+    | one which has inspired much work on this topic ...
+  p core knowledge of
+  ul
+    li physical objects
+    li [colour]
+    li mental states
+    li action
+    li number
+    li ...
+
+//* say what core knowledge is again (mention properties)
+
++slide_middle
+  .notes Human adults have extensive knowledge of the syntax of their languages,  
+    | as illustrated by, for example, their abilities to detect grammatical and ungramatical sentences which they have never heard before, independently of their meanings. 
+    | To adapt a famous example from Chomsky, ...
+  ol
+    li The turnip of shapely knowing isn't yet buttressed by death.
+    li *The buttressed turnip shapely knowing yet isn't of by death.
+
++slide_middle
+  .notes We need to task two questions.
+  p.center
+    span.hide.step2.core core   
+    span.knowledge knowledge
+    span  of 
+    span.syntax syntax
+    span  
+    span.hide.step3 is innate (?) 
+  +invert('.syntax')
+  .notes First, what is this thing, syntax, which is known?
+  .notes This thing they know, the syntax, isn't plausibly just a list of which sentences are grammatical.
+  .notes Because people can make judgements about arbitrarily long, entirely novel sentences.
+  .notes Rather, the thing known must be something that enables people to make judgements about sentences.
+  .notes We might think of it roughly as a theory of syntax.
+  .notes It's like a theory in this sense: knowledge of it enables you to make judgements about the grammaticality of arbitrary sentences.
+  +uninvert_('.syntax')
+  +invert('.knowledge')
+  .notes The second question is, Is it *knowledge* we have syntax or something else?
+  .notes There's something interesting.
+  .notes The knowledge can be revealed indirectly, by asking people about whether particular sentences are grammatical.
+  .notes But people can't say anything about how they know the sentence is grammatical.
+  .notes It's like perceiving the shape of something: there isn't much to say about how you know.
+  .notes So the theory of syntax isn't something we can discover by introspection:
+  .notes we have to *rediscover* it from scratch by investigating people's linguistic abilities.
+  +show_('.step2')
+  +invert('.core')
+  .notes Knowledge of syntax therefore seems to have some of the features associated with core knowledge.
+  .notes First, it is domain-specific.
+  .notes Second, it is inaccessible.  That is, it can't guide arbitrary actions.
+  .notes In what follows I want to suggest that syntax provides a paradigm case for thinking about core knowledge.
+  +uninvert_('.core, .knowledge')
+  +invert_('.step3')
+  +show('.step3')
+  .notes In addition, I want to use the case of syntax for thinking about the question, What is innate in humans?
+  .notes I was astonished how many people considered this question in the unassessed essay, some people seem really fascinated by it.
+  .notes But almost no one discussed the case of syntax in depth.  If you're going to talk about innateness, you really need to know a little bit about syntax.
+  .notes So I'm also going to provide you with that understanding.
+
+
++slide
+  .notes Consider a phrase like 'the red ball'.
+  .notes What is the syntactic structure of this noun phrase?
+  .notes In principle there are two possibilities.
+  p the red ball
+  p.step3.hide ‘I’ll play with this red ball and you can play with that 
+    span.one one
+    span .’
+  .slide
+    +img_clip('lidz_2003_fig0.png','rect(0,327,522,0)')
+    +clip('img:eq(0)', 'auto')
+    p.source Lidz et al (2003)
+  +show('.step3')
+  .notes How can we decide between these?
+  .handout Is the syntactic structure of 'the red ball' flat or hierachical?
+  .notes.handout \begin{enumerate}
+    ol
+      li \item 'red ball' is a constituent on (b) but not on (a)
+      li \item anaphoric pronouns can only refer to constituents
+      li \item In the sentence 'I’ll play with this red ball and you can play with that one.', the word 'one' is an anaphoric prononun that refers to 'red ball' (not just ball).
+        | \citep{lidz:2003_what,lidz:2004_reaffirming}.
+  .notes.handout \end{enumerate}
+  +words-bkg('.one','red')
+
++slide_middle
+  .notes What I've just shown you is, in effect, how we can decide whihc way an adult human understands a phrase like 'the red ball'.
+  .notes We can discover this by finding out how they understand a sentence like 'I’ll play with this red ball and you can play with that one.'.
+  .notes But how could we do this with infants who are incapable of discussing sentences with us? 
+  p.center infants?
+  
+  
++slide
+  .notes Here's how the experiment works (see \citealp{lidz:2003_what}) ...
+  .notes The experiment starts with a background assumption:
+  .notes.handout ‘The assumption in the preferential looking task is that infants prefer to look at an image that matches the linguistic stimulus, if one is available’ \citep{lidz:2003_what}.
+  table
+   tr
+    td(align='center', width='300px',style='background-color:grey;')  Look, a yellow bottle!
+    td(align='center',colspan=2).hide.step2
+      span.control.hide control: What do you see now?
+      br
+      span test: Do you see another one?
+      br
+      span &nbsp;
+    tr
+      td(align='center', style='background-color:grey;') [yellow bottle]
+      td(align='left').hide.step2 [yellow bottle]
+      td(align='right').hide.step2 [blue bottle]
+    +show('.step2')
+    .notes So the key question was whether infants would look more at the yellow bottle (which is familiar) or the blue bottle (which is novel).
+    .notes If they think 'one' refers to 'bottle', we'd expect them to look longer at the blue bottle;
+    .notes and conversely if they think one refers to 'yellow bottle', then they're being asked whether they see another yellow bottle.
+    +show('.control')
+    .notes And, as always, we need a control condition to check that infants aren't looking in the ways predicted irrespective of the manipulation.
+    p.source Lidz et al (2003)
+    .slide
+      .notes And here's what they found ...
+      img(src='/img/lidz_2003_fig1.png')
+      p.source Lidz et al (2003, figure 1)
+  
++slide_middle
+  .notes What can we conclude so far?
+  p.center From 18 months of  age or earlier, infants represent the syntax of noun phrases in much the way adults do.
+  .notes So there is core knowledge of syntax ... or is there?
+  .slide
+    .notes Core knowledge is often characterised as innate.
+    .notes I think this is a mistake (more about this later), but many of you do not.
+    p.center.em-above But are these representations 
+      span.innate innate
+      span ?
+    .notes How could we tell whether these representations are innate?
+    +invert('.innate')
+    .notes What do we mean by innate here?
+    .notes The easy answer is: not learned.
+    .notes But I think there's a more interesting way to approach understanding what 'innate' means.
+    .notes Quite a few people pointed out that there isn't agreement on what innateness is.
+    .notes But this is not very interesting by itself because there's disagreement about most things and potential causes of disagreement include ignorance and stupidity.
+    .notes It's also important that the mere fact that a single term is used with multiple meanings isn't an objection to anyone.
+    .notes As philosophers, some of you are tempted to catalogue different possible notions of innateness.
+    .notes I encourage you to resist this temptation; if you want to collect something, pick something useful like banknotes.
+    .notes There's a much better way to approach things.
+    .notes Let's see what kind of findings are, or would be, taken to show that something is innate.
+    .notes We can use these to constrain our thinking about innateness.
+    .notes We will say: assuming that this is a valid argument that X is innate, what could innateness be?
+    
++slide_middle
+  .notes Aside: we have too approach science as radical interpreters ...
+  p.notes.show ‘All understanding of the speech of another involves radical interpretation’
+  p.right Davidson 1973, p. 125
+  .notes.ctd \citep[p.\ 125]{Davidson:1973jx}
+
++slide_middle
+  p.center.handout.show ‘the APS [argument from the poverty of stimulus] still awaits even a single good supporting example’
+  p.right Pullum & Scholz 2002, p. 47
+  .handout.ctd \citep[p.\ 47]{pullum:2002_empirical}
+
++slide
+  .notes We need to step back and understand how poverty of stimulus arguments work.
+  .handout How do poverty of stimulus arguments work? See \citet{pullum:2002_empirical}.
+  
+

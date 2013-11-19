@@ -1,0 +1,25 @@
+---
+layout: 'default2'
+title: 'Lecture 07'
+weburl: ''
+units: []
+lecture_date: '2013/11/13'
+---
+
+include ../../fragments/slide_mixins
+
+- var images = get_images('bees')
+
+mixin title_slide({document:document, images:images})
+
+
+
+//- 
++insert_unit({unit:'601', title_slide:false, images:images})
+
+
+//- advertise cumberland lodge
++slide({bkg:'slide_cumberland_lodge_2014.jpg'})
+
+//- syntax
++insert_unit({unit:'641', title_slide:false, images:images})
