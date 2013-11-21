@@ -1,0 +1,213 @@
+---
+layout: 'deck_unit'
+title: "What is a communicative action?"
+tags: []
+description: "To understand what follows from infants' abilities to comprehend and produce pointing gestures, we need to ask what a communicative action is?  One view hinges on shared intentionality, which is related to Grice's attempts to analyse meaning.  Here we consider implications of that view and contrast it with two alternatives."
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/slide_mixins
+
+
++slide_middle
+  p.center  What is a communicative action?
+  .notes What is a communicative action?
+  .notes Why are we asking this question?
+  .notes Let me try to explain it like this ...
+  
++slide
+  .notes Why do we want to consider what communicative actions are?
+  .notes Here's what I take to be the view of Tomasello and colleagues.
+  p Theory of communicative action (Tomasello et al?):
+  .handout Theory of communicative action \citep[compare][]{Tomasello:2007fi}:
+  .handout \begin{enumerate}
+  ol
+    .handout \item
+    li.handout.show  Producing and understanding declarative pointing gestures constitutively involves embodying (?) 
+      span.shared-intentionality shared intentionality.
+    .handout \item
+    li.handout.show Embodying shared intentionality involves having knowledge about knowledge of your intentions about my intentions.
+  .handout \end{enumerate}
+  +invert('.shared-intentionality')
+  .notes No, I don't know what that is either.  I've asked you to find out in the last essay for this course.
+  +uninvert_('.shared-intentionality')
+  .slide
+    p.em-above Claims about development:
+    ol(style='list-style-type:lower-greek')
+      li 11- or 12-month-old infants produce and understand declarative pointing gestures.
+      li.slide Abilities to communicate play a role in explaning the emergence of knowledge of minds (among other things).
+      .notes If the theory of communicative action is correct, then the claims about development are incompatible.
+  .slide
+    p (Also, α rules out a conjecture about minimal theory of mind.)
+  .notes So, apparently, if Tomasello et al are right, I'm wrong about two things:
+  .notes First, I'm wrong that knowlegde of others' minds first emerges around three or four years of age and that one-year-old infants have only core knowledge of mental states.
+  .notes And, seccond, I'm probably also wrong to think that abilities to communicate (whether by language or not) could explain the emergence of knowledge of others' minds.
+  .notes This is one reason for asking, What is a communicative action?
+
++slide
+  .notes Let’s start with some simple examples of non-communicative actions.  
+  ol
+    li Ayesha hits Ben intending to bruise him.
+    .notes Purely physical interaction.
+    li.hide Ayesha fakes a yawn intending to cause Ben to yawn.  
+    li.hide Ayesha lays a trail of false footprints intended to deceive Ben.
+    li.hide Ayesha waves at Ben with the intention that he will recognise that she intends him to come over.
+  +blur_('li:eq(0)')
+  +show('li:eq(1)')
+  .notes Why are these actions non-communicative?  Ayesha intends her fake yawn to have an effect on Ben, but the effect is a physiological one.  The response she wants from him is mechanical.
+  .notes But there are also non-communicative actions which require a rational response from the people they’re directed at.  For example:
+  +blur_('li:eq(1)')
+  +show('li:eq(2)')
+  .notes Note here that although Ayesha intends to provide Ben with misinformation, her action isn’t communicative.
+  .notes Intuitively, there’s a difference between deliberately providing information or misinformation to someone and communicating with her (Grice 1989: 218).  
+  .notes So what makes an action communicative?
+  .notes Paul Grice has a neat answer to this question.
+  .notes He notes that we sometimes achieve things merely by letting other people know that we intend to achieve them.
+  .notes Waving is one of the simplest examples:
+  +blur_('li:eq(2)')
+  +show('li:eq(3)')
+  .notes In this example, Ayesha’s goal is to get Ben to come over.  Her means of achieving this is to get Ben to recognise that this is what she intends.  So when she waves, her intention is that waving will let Ben know that she intends him to come over.
+  .slide.em-above
+    p Goal: get Ben to come over
+    p Means: get Ben to recognise that I intend to get Ben to come over
+    p
+      span.intention Intention
+      span : to get Ben to come over by means of getting Ben to recognise that I 
+      span.intention intend
+      span  to get Ben to come over.
+    .notes You can achieve some things just by letting people know that you intend to achieve them.  To achieve things in this way is to perform an act of communication.
+    +words-bkg('.intention','pink')
+    .notes Note that, on this Gricean view, communicating involves having intentions about intentions.m
+
++slide
+  .handout \subsection{A Gricean view}
+  p
+    span.notes.handout.show First approximation: To communicate is to provide someone with evidence of an intention with the further intention of thereby fulfilling that intention
+    span .
+  p.right   (compare Grice 1989: chapter 14)
+  .handout.ctd \citep[compare][chapter 14]{Grice:1989ha}.
+  .notes To communicate, then, is to attempt to fulfil an intention by making it manifest to someone else that you have this intention.  If you’ve studied Grice you’ll know that his analysis of meaning led to a long and boring series of counterexamples and refinements, most of which shed no light on the nature of linguistic communication (Schiffer 1987).  But what’s really important about Grice isn’t the attempt to analyse meaning: it’s his insight
+  .slide.em-above
+    p Should we accept that pointing (and linguistic communication) involves intentions about intentions?
+    .notes What are the alternatives?
+    .notes I want to mention two alternatives ...
+
++slide_middle
+  p.center first alternative
+
++slide
+  .handout \subsection{First alternative view}
+  .notes One alternative is inspired by opponents of the claim, inspired by Grice, that communication by language involves identifying utterer's intentions.
+  .notes Inspired by Grice, you might think that this is fundamental to linguistic communication.
+  .notes But philosophers like Dummett and (for different reasons) Millikan reject this view.
+  p Convention
+  p.em-above.handout.show ‘No speaker needs to form any express intention … in order to mean by a word what it means in the language’
+  p.right Dummett 1986, 473
+  .handout.ctd \citep[p.\ 473]{Dummett:1986mq}
+  p.em-above.handout.show ‘Interpreting speech does not require making any inferences or having any beliefs about words, let alone about speaker intentions’
+  p.right Millikan 1984, p. 62
+  .handout.ctd \citep[p.\ 62]{Millikan:1984ib}
+  .notes We might try to provide an account of pointing in which it's not fundamentally a matter of intention at all.
+  .notes This would be a radical departure from the Gricean view about pointing.  But there is another alternative, one which is less radical.
+
++slide_middle
+  p.center second alternative
+
++slide
+  .handout \subsection{Davidsonian view}
+  .notes Like Grice:
+  p.handout.show ‘meaning of whatever sort ultimately rests on intention’
+  p.right Davidson 1992, p. 298
+  .handout.ctd \citep[p.\ 298]{Davidson:1992pl}
+  .slide
+    .notes We need to distinguish ulterior intentions from semantic intentions.
+    ul
+      li ulterior intentions
+      .notes.handout ulterior intentions: ‘intentions which lie as it were beyond the production of words … [such as] the intention of being elected mayor, of amusing a child, of warning a pilot of ice on the wings’ \citep[p.\ 298]{Davidson:1992pl}.
+      li semantic intentions
+      .notes.handout semantic intentions: intentions concerning the meaning of one’s utterance.
+    .notes Why does this distinction matter?
+    .notes Grice’s explicates meaning and communication in terms of ulterior intentions.
+    .notes His project is to give a reductive analysis of these notions, meaning and communication.
+    .notes Ulterior intentions are precisely what is needed for such an analysis of meaning.
+    .notes This is because ulterior intentions ‘do not involve language, in the sense that their description does not have to mention language’ or any semantic concepts like meaning \citep[p.\ 298]{Davidson:1992pl}.
+    .notes But, Davidson points out, we don’t have to attempt an analysis of meaning and communication.
+    .notes After all, Grice’s analysis has been subject to plenty of counterexamples and objections \citep{Schiffer:1987zb}.
+    .notes (Davidson objects that ‘it is not clear that these principles [Grice’s] are designed to handle the gamut of examples we find in literature’ \citep[p.\ 300]{Davidson:1992pl}.
+    .notes \citet{Davidson:1991ic} discusses one literary example at length.  He argues that ‘Joyce takes us back to the foundations and origins of communication; he puts us in the situation of the jungle linguist trying to get the hand of a new language and a novel culture, to assume the perspective of someone who is an alien or an exile’ \citep[p.\ 11]{Davidson:1991ic}.)
+  .slide.em-above
+    p.handout.show ‘The intention to be taken to mean what one wants to be taken to mean is, it seems to me, so clearly the only aim that is common to all verbal behaviour that it is hard for me to see how anyone can deny it.’
+    p.right Davidson 1994, p. 11
+    .handout.ctd \citep[p.\ 11]{Davidson:1994ol}
+    .notes This aim ‘assumes the notion of meaning’, but it is important because ‘it provides a purpose which any speaker must have in speaking, and thus constitutes a norm against which speakers and others can measure the success of their verbal behavior.’ \citep[p.\ 11]{Davidson:1994ol}
+    .notes *todo: this is linked to how Davidson distinguishes first meaning from pragmatic bits; see 'meaning is a psychological concept v2' (for Martin Davies)
+    .notes But how does this idea translate into a claim about what a pointing action is?
+    .notes First consider the wave from earlier ...
+
+
+section.slide
+  .notes An example contrasting Grice and Davidson on the wave.
+  .words: .container_12: .grid_5
+    p Grice
+    p.em-above Goal: get Ben to come over
+    p.em-above Means: get Ben to recognise that I intend to get Ben to come over
+    p.em-above
+      span.intention Intention
+      span : to get Ben to come over by means of getting Ben to recognise that I 
+      span.intention intend
+      span  to get Ben to come over.
+  .right-half-white
+    .words: .container_12: .grid_6
+      p Davidson
+      p.em-above Goal: get Ben to come over
+      p.em-above Intention: that Ben take this wave to mean that he should come over.
+      p.em-above Ulterior intention: that Ben come over.
+      .notes These intentions have a means-end ordering; the ulterior intention is further down the means-end chain.
+      .notes Strictly speaking, that Ben should come over might not be the first meaning of the wave (so there are other options here).
+
+section.slide
+  .notes Now contrast Grice and Davidson on the pointing action from the Hare et al study, where you're supposed to take one of two containers.
+  .words: .container_12: .grid_5
+    p Grice
+    p.em-above Goal: get Ayesha to select the left container
+    p.em-above Means: get Ayesha to recognise that I intend Ayesha to select the left container
+    p.em-above
+      span.intention Intention
+      span : to get Ayesha to selet the left container by means of getting Ayesha to recognise that I am pointing to the left container with the intention that she select the left container.
+  .right-half-white
+    .words: .container_12: .grid_6
+      p Davidson
+      p.em-above Goal: get Ayesha to select the left container
+      p.em-above Semantic Intention: that Ayesha take this pointing gesture to refer to the left container
+      p.em-above Ulterior Intention: that Ayesha select the left container
+      .notes Strictly speaking, that Ben should come over might not be the first meaning of the wave (so there are other options here).
+
++slide
+  p Conclusion for What is a communicative action?
+  .notes The question was, Should we accept that pointing (and linguistic communication) involves intentions about intentions?
+  p.em-above Should we accept that pointing (and linguistic communication) involves intentions about intentions?
+  ol
+    li If Grice (and Tomasello et al) are right about communication, then infant pointing involves sophisticated insights into others’ minds.
+    li But there are alternatives to the Gricean story.
+    li If Davidson’s* alternative is right, communication requires understanding intentions about how to be understood but not necessraily sophisticated insights into others’ minds.
+    .notes (*Davidson himself thinks all communication involves sophisticated insights into others’ minds …)
+    .notes Is this enough to save the view about development I wanted to offer.  Maybe, maybe not …
+
+
++slide
+  p Conclusion for Pointing
+  ol
+    li 11- and 12-month-old infants can point to (i) request, (ii) inform and (iii) initiate joint engagement.
+    li.slide ... and they can understand these kinds of pointing gesture.
+    li.slide Understanding pointing requires more than understanding goal-directed action (see: why don't apes & 6-month-olds point)
+    li.slide But what more is required?
+      p.slide Is it shared intentionality?
+      p.slide And what is that anyway, is that something borrowed from Grice?   
+
++slide_middle
+  p.center To be continued ...

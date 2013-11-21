@@ -3,7 +3,7 @@
 - motivation: in these cases we saw that there's a gap between core knowledge (or something like it) and knowledge proper: (i) colour; (ii) physical objects; (iii) minds
 - re-explain what core knowledge is
 - theory of core knowledge implies that there should be a gap: core knowledge is domain-specific
-- state the assembling idea 
+- state the assembling idea 	
 - hard to make systematic sense of the idea about assembling
 - maybe rediscovery is a better model --- core knowledge helps you do thinks with words, which helps you understand things
 - illustrate the rediscovery idea by syntax: core knowledge of syntax is innate, but if we want to understand the syntax of our language we have to rediscover it.
@@ -27,5 +27,11 @@ What, if anything, is the role of language & social interaction in rediscovery?
 [This will lead to understanding of action.  If its motoric, the answer will be no.]
 
 
+
+
+
 4. Understanding of action
 - 
+
+
+

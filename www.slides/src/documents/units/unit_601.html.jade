@@ -15,12 +15,12 @@ include ../../../fragments/slide_mixins
 
 +slide
   .notes In the last lecture, we considered communication with language.
-  .notes My overall plan now is to work backwards to consider communication generally, and then back again to action understanding.
+  .notes My overall plan now is to work backwards: the next item to consider is communicative action generally, and then its action generally.
   .notes I suggested that acquiring an ability to commmunicate with language typically involves (a) social interaction and (b) creating words.
   .notes I think looking at communication generally will help bring this into clearer focus.
   .notes But before I get into this, I want to take a huge detour.
   .notes The huge detour will allow me (i) to connect up the different things we've done; and (ii) pick up on some themes from your assessed essays.
-  .notes (The detour means that this lecture, unlike the others, doesn't have a single overall theme.)
+  .notes (The detour means that this lecture, unlike the others, doesn't have a single unifying theme.)
   img(src='/img/fig_action_communicative_linguistic.png')
 
 
@@ -30,17 +30,68 @@ include ../../../fragments/slide_mixins
   p.center The Beginning of the End
 
 +slide_middle
-  .notes This isn't a new question, but I think it's worth spending more time on it as a way of organising much of what we've been learning.
+  .notes This isn't a new question, but I think it's worth spending more time on it, partly because someone said in a seminar that we don't know what it is and partly because thinking about this is a way of organising much of what we've been learning.
   p.center
     span What is core knowledge?  
-    span.two-approaches.hide Two approaches
-  +show('.two-approaches')
-  .notes There are two approaches.
-  .notes One involves finding out what people who use the term say it is.
+    span.systems.hide What are core systems (≈ modules)? 
+  +show('.systems')
+  .notes The first, very minor thing is to realise that there are two closely related notions, core knowledge and core system.
+  .notes The notion of a core system and that of a module are barely different; it's safe to treat these as interchangeable until you have a reason to distinguish them.
+  .notes These are related this: roughly, core knowledge states are the states of core systems.  More carefully:
+  .handout.notes For someone to have \textit{core knowledge of a particular principle or fact} is for her to have a core system where 
+    | either the core system includes a representation of that principle or else the principle plays a special role in describing the core system.
+  .notes So we can define core knowlegde in terms of core system.
+  .slide
+    .notes The next step is to realise that there is a good reason why you don't know what core systems are.
+    p.center Why don’t I know the answers?
+
++slide
+  .notes Core systems are usually introduced implicitly, in explaining an idea.
+  .handout \subsection{The idea}
+  p.handout.show ‘We hypothesize that uniquely human cognitive achievements build on systems that humans share with other animals: core systems that evolved before the emergence of our species. 
+  p
+    span ‘
+    span.handout.ctd.show The internal functioning of these systems depends on principles and processes that are distinctly non-intuitive. 
+  p
+    span ‘
+    span.handout.ctd.show Nevertheless, human intuitions about space, number, morality and other abstract concepts emerge from the use of symbols, especially language, to combine productively the representations that core systems deliver’
+  p.right Spelke & Lee 2012, pp. 2784-5
+  .handout.ctd \citep[pp.\ 2784-5]{spelke:2012_core}.
+  .notes So to properly understand what they are we would need  (i) to have a deep understanding of the picture; (ii) and of the hypotheses it inspires; (iii) and of the evidence for these hypotheses, and then we would work back from this to say what core systems are.
+  .notes Now you might say that this is terrible, how can scientists use terms without defining them.
+  .notes But (a) it's not obvious that definitions are necessary for good science, or even that useful; and (b) compare the notion of knowledge: philosophers have made some informative observations about knowledge, but they've had no success at all in defining it.
+  .notes (That said, I do think there's a particular problem with core knowledge.)
+  
+
+  
++slide_middle
+  .notes In answering the question, What is core knowledge? I think we should be inspired by the notion of radical interpretation.
+  p.notes.show ‘All understanding of the speech of another involves radical interpretation’
+  p.right Davidson 1973, p. 125
+  .notes.ctd \citep[p.\ 125]{Davidson:1973jx}
+  .notes (It's not just core knowledge; I think we have too approach science as radical interpreters ...)
+  .notes How does radical interpretation work?
+  .notes Interpretation is hard because there are two factors: truth and meaning.
+  .notes The proposal Davidson makes is that we assume truth and infer meaning.
+  .notes I'm recommending a similar strategy for core knowledge.
+  .notes Very roughly, we take for granted that the evidence establishes various hypotheses.  We then ask what core knowledge could be given these are true.
+  .notes But more carefully, we first have to ask what motivates talk about core knowledge at all.
+
+  
+  
++slide_middle
+  .notes Fine, but this doesn't help us in practical terms.  How are we to get a handle on the notion without doing lots of research?
+  .notes The simple approach is to find out what people who use the term say it is.
+  p.center
+    span But what is core knowledge?  
+
 
 
 
 +slide
+  .notes What do people say core knowledge is?
+  .handout \subsection{Two-part definition}
+  .notes There are two parts to a good definition.  The first is an analogy that helps us get a fix on what we is meant by 'system' generally.  (The second part tells us which systems are core systems by listing their characteristic features.)
   .step1
     p.handout.show
       span ‘Just as humans are endowed with multiple, 
@@ -58,40 +109,78 @@ include ../../../fragments/slide_mixins
   .notes As Carey rather grandly puts it, understanding core knowledge will involve understanding something about 'the architecture of the mind'.
   .slide
     img.bkg(src='/img/edge_detection.jpg')
+    .notes Illustration: edge detection.
   +fade_('img.bkg')
   +blur_('.step1')
   .slide.step2
+    .notes 
     p.em-above.handout.show
       // ‘core systems are conceptual and provide a foundation for the growth of knowledge.  …
-      span ‘core systems are
-      ol
+      span ‘core systems are 
+      ol.handout.ctd.show
         li largely innate, 
         li encapsulated, and 
         li unchanging, 
         li arising from phylogenetically old systems 
-        li built upon the output of innate perceptual analyzers.’ 
-    .handout.ctd \citep[p.\ 520]{Carey:1996hl}
+        li built upon the output of innate perceptual analyzers’ 
+    .handout.ctd \citep[p.\ 520]{Carey:1996hl}.
     p.right (Carey and Spelke 1996: 520)
-  .notes This is helpful for getting started.
-  .notes But we quickly run into the problem that different researchers say different things, and it isn't obvious which differences matter.
-  .notes We also run into the problem that the definitions on offer aren't obviously correct: they list features that maybe aren't all necessary.
+    .handout \textit{Note} There are other, slightly different statements \citep[e.g.][]{carey:2009_origin}.  
+    .notes This is helpful for getting started.
+    .notes But we quickly run into the problem that different researchers say different things, and it isn't obvious which differences matter.
+    .notes We also run into the problem that the definitions on offer aren't obviously correct: they list features that maybe aren't all necessary.
   
+  
+  
+section.slide
+  .notes Aside: compare the notion of a core system with the notion of a module
+  .notes The two definitions are different, but the differences are subtle enough that we don't want both.
+  .notes My recommendation: if you want a better definition of core system, adopt core system = module as a working assumption and then look to research on modularity because there's more of it.
+  .notes An example contrasting Grice and Davidson on the wave.
+  .handout \subsection{Compare modularity}
+  .handout Modules are ‘the psychological systems whose operations present the world to thought’; 
+    | they ‘constitute a natural kind’; and 
+    | there is ‘a cluster of properties that they have in common’ \citep[p.\ 101]{Fodor:1983dg}.
+  .handout These properties include:
+  .handout \begin{itemize}
+  .handout \item domain specificity (modules deal with ‘eccentric’ bodies of knowledge)
+  .handout \item limited accessibility (representations in modules are not usually inferentially integrated with knowledge)
+  .handout \item information encapsulation (modules are unaffected by general knowledge or representations in other modules)
+  .handout \item innateness (roughly, the information and operations of a module not straightforwardly consequences of learning; but see \citet{Samuels:2004ho}).
+  .handout \end{itemize}
+  .words: .container_12: .grid_5
+    p ‘core systems are 
+      ol
+        li: span largely innate, 
+        li: span  encapsulated, and 
+        li: span  unchanging, 
+        li: span  arising from phylogenetically old systems 
+        li: span  built upon the output of innate perceptual analyzers’ 
+    p.right (Carey and Spelke 1996: 520)
+  .slide
+    .right-half-white
+      .words: .container_12: .grid_6
+        div(style='padding-right:1em;')
+          p Modules are ‘the psychological 
+            span.present-the-world systems whose operations present the world to thought
+            span ’; 
+            | they ‘constitute a natural kind’; and 
+            | there is ‘a cluster of properties that they have in common’
+          ol
+            li: span  innateness 
+            li: span  information encapsulation 
+            li: span  domain specificity 
+            li: span  limited accessibility 
+            li: span  ...
+  +words-bkg('ol li:eq(0) span', 'pink')
+  +words-bkg('ol li:eq(1) span', 'blue')
+  +words-bkg('ol:eq(0) li:eq(4) span, .present-the-world', 'forestgreen')
   
 +slide_middle
-  .notes I said there were two approaches to answering the question, What is core knowledge?
-  .notes The second approach is inspired by the notion of radical interpretation.
-  p.notes.show ‘All understanding of the speech of another involves radical interpretation’
-  p.right Davidson 1973, p. 125
-  .notes.ctd \citep[p.\ 125]{Davidson:1973jx}
-  .notes (It's not just core knowledge; I think we have too approach science as radical interpreters ...)
-  .notes How does radical interpretation work?
-  .notes Interpretation is hard because there are two factors: truth and meaning.
-  .notes The proposal Davidson makes is that we assume truth and infer meaning.
-  .notes I'm recommending a similar strategy for core knowledge.
-  .notes Very roughly, we take for granted that the evidence establishes various hypotheses.  We then ask what core knowledge could be given these are true.
-  .notes But more carefully, we first have to ask what motivates talk about core knowledge at all.
+  .notes So now we have a rough, starting fix on the notion we can ask a deeper question.
+  p.center Why do we need a notion like core knowledge?
 
-
+// *todo : reveal first column from start ; add block for notes
 mixin discrepancy_table(p)
   if !p
     - p = {step:true}
@@ -125,18 +214,26 @@ mixin discrepancy_table(p)
 
 
 +slide
-  .notes So why do we need the notion of core knowledge?
+  .notes So why do we need a notion like core knowledge?
   .notes Think about these domains.
-  .notes In each case, we're push towards postulating that infants know things, but also pushed against this.
+  .notes In each case, we're pushed towards postulating that infants know things, but also pushed against this.
   .notes Resolving the apparent contradiction is what core knowledge is for.
   +discrepancy_table
+  // **todo: these notes belong after the table is achieved
   .notes Key question: What features do we have to assign to core knowledge if it's to describe these discrepancies?
   .notes I think the fundamental feature is inaccessibility.
 
+
+
+
+
 +slide_middle
-  .notes To say that a system or module exhibits limited accessibility is to say that the representations in the system are not usually inferentially integrated with knowledge.
-  .notes I think this is the key feature we need to assign to core knowledge in order to explain the apparent discrepancies in the findings about when knowledge emerges in development.
-  p.center limited accessibility to knowledge
+  .notes If this is what core knowledge is for, what features must core knowledge have?
+  p.center If this is what core knowledge is for, what features must core knowledge have?
+  .slide
+    p.em-above.center limited accessibility to knowledge
+    .notes To say that a system or module exhibits limited accessibility is to say that the representations in the system are not usually inferentially integrated with knowledge.
+    .notes I think this is the key feature we need to assign to core knowledge in order to explain the apparent discrepancies in the findings about when knowledge emerges in development.
 
 section.slide
   .notes Limited accessbility is a familar feature of many cognitive systems.
@@ -158,14 +255,6 @@ section.slide
 
 
 
-
-+slide
-  .notes Core knowledge is like knowledge in some ways, and unlike knowledge in others.
-  p *** todo: two sides, like and unlike
-
-+slide
-  p *** todo: modularity and core knowledge (say what I'm suggesting)
-
 +slide({bkg:'slide_core_knowledge_innate_transitions.jpg'})
   .notes This picture is significantly different from some competitors (but not Carey on number):
   .notes (1) because it shows we aren't done when we've explained the acquisition of core knowledge (contra e.g. Leslie, Baillargeon), and
@@ -175,6 +264,7 @@ section.slide
 
 +slide
   .notes ***todo*** say something about what we've learnt from each case.
+  .notes Syntax is important because it pushes us away from the idea of 'systems that humans share with animals' \citep[p.\ 2784]{spelke:2012_core}
   .notes Or maybe identify themes and point out which cases they're 
   .notes e.g. colour shows (i) that perceptual mechanisms are important and (ii) that infants' core knowledge persists into adulthood
   +discrepancy_table({step:false})

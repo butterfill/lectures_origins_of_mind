@@ -625,6 +625,44 @@ top-black(height)
 /**
  * highlight blocks
  */
+make-row-bkg(name,color)
+  .deck-container
+    .bkg-{name}-row
+      background-color color
+      margin-left: -80em
+      border-left: solid 80em color
+      margin-right: -80em
+      border-right: solid 80em color
+      text-outline: 1px 2px red
+      box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33)
+      :not(.truth-table)
+        position relative
+        z-index -20
+
+make-row-bkg('blue', rgba(0, 128, 255,1))
+make-row-bkg('pink', rgba(255, 111, 207,1))
+// make-row-bkg('white', rgba(255, 255, 255, 1))
+make-row-bkg('faint-white', rgba(255, 255, 255, 0.3))
+make-row-bkg('faint-blue', rgba(0, 128, 255, 0.3))
+make-row-bkg('faint-pink', rgba(255, 111, 207,0.3))
+make-row-bkg('yellow', rgba(255, 255, 0, 1))
+make-row-bkg('faint-yellow', rgba(255, 255, 0, 0.3))
+make-row-bkg('red', rgba(255, 0, 0, 1))
+make-row-bkg('faint-red', rgba(255, 0, 0, 0.3))
+make-row-bkg('forestgreen', rgba(34,139,34,1))
+make-row-bkg('faint-forestgreen', rgba(34,139,34,0.3))
+make-row-bkg('olive', rgba(128,128,0,1))
+make-row-bkg('faint-olive', rgba(128,128,0,0.3))
+make-row-bkg('teal', rgba(0,128,128,1))
+make-row-bkg('faint-teal', rgba(0,128,128,0.3))
+make-row-bkg('lime', rgba(0,255,0,1))
+make-row-bkg('faint-lime', rgba(0,255,0,0.3))
+make-row-bkg('limegreen', rgba(50,205,50,1))
+make-row-bkg('faint-limegreen', rgba(50,205,50,0.3))
+make-row-bkg('orange', rgba(255,165,0,1))
+make-row-bkg('faint-orange', rgba(255,165,0,0.3))
+
+
 .deck-container
   .bkg-highlight-yellow
     background-color: rgba(255,248,61,0.5)
@@ -651,8 +689,8 @@ top-black(height)
     text-outline: 1px 2px red
     box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33)
     :not(.truth-table)
-     position relative
-     z-index -20
+      position relative
+      z-index -20
 
   .invert .bkg-grey-row
     background-color: rgba(125,125,125,1)
