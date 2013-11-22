@@ -269,6 +269,17 @@ var inject = function(){
   </div>
 </section>
 <section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">core system vs module</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
   <div class="notes">Aside: compare the notion of a core system with the notion of a module</div>
   <div class="notes">The two definitions are different, but the differences are subtle enough that we don't want both.</div>
   <div class="notes">My recommendation: if you want a better definition of core system, adopt core system = module as a working assumption and then look to research on modularity because there's more of it.</div>
@@ -291,8 +302,8 @@ var inject = function(){
       <div class="grid_5">
         <p>‘core systems are 
           <ol>
-            <li><span>largely innate, </span></li>
-            <li><span> encapsulated, and </span></li>
+            <li><span class="innate">largely innate, </span></li>
+            <li><span class="encapsulated"> encapsulated</span><span>, and </span></li>
             <li><span> unchanging, </span></li>
             <li><span> arising from phylogenetically old systems </span></li>
             <li><span> built upon the output of innate perceptual analyzers’ </span></li>
@@ -308,12 +319,12 @@ var inject = function(){
         <div class="container_12">
           <div class="grid_6">
             <div style="padding-right:1em;">
-              <p>Modules are ‘the psychological <span class="present-the-world">systems whose operations present the world to thought</span><span>’; </span>they ‘constitute a natural kind’; and 
+              <p>Modules are ‘the psychological <span style="z-index:0;" class="present-the-world">systems whose operations present the world to thought</span><span>’; </span>they ‘constitute a natural kind’; and 
                 there is ‘a cluster of properties that they have in common’
               </p>
               <ol>
-                <li><span> innateness </span></li>
-                <li><span> information encapsulation </span></li>
+                <li><span style="z-index:0;" class="innate"> innateness </span></li>
+                <li><span style="z-index:0;" class="encapsulated"> information encapsulation </span></li>
                 <li><span> domain specificity </span></li>
                 <li><span> limited accessibility </span></li>
                 <li><span> ...</span></li>
@@ -323,13 +334,13 @@ var inject = function(){
         </div>
       </div>
     </div>
+    <div data-what=" .innate" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
+    <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+    <div data-what=" .encapsulated" data-class="bkg-words-highlight-blue" class="slide anim-continue anim-addclass"></div>
+    <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+    <div data-what=" ol:eq(0) li:eq(4) span, .present-the-world" data-class="bkg-words-highlight-forestgreen" class="slide anim-continue anim-addclass"></div>
+    <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
   </div>
-  <div data-what=" ol li:eq(0) span" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
-  <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-  <div data-what=" ol li:eq(1) span" data-class="bkg-words-highlight-blue" class="slide anim-continue anim-addclass"></div>
-  <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-  <div data-what=" ol:eq(0) li:eq(4) span, .present-the-world" data-class="bkg-words-highlight-forestgreen" class="slide anim-continue anim-addclass"></div>
-  <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
 </section>
 <section class="slide">
   <div class="container_12">

@@ -130,7 +130,8 @@ include ../../../fragments/slide_mixins
     .notes But we quickly run into the problem that different researchers say different things, and it isn't obvious which differences matter.
     .notes We also run into the problem that the definitions on offer aren't obviously correct: they list features that maybe aren't all necessary.
   
-  
++slide_middle
+  p.center core system vs module
   
 section.slide
   .notes Aside: compare the notion of a core system with the notion of a module
@@ -151,8 +152,10 @@ section.slide
   .words: .container_12: .grid_5
     p ‘core systems are 
       ol
-        li: span largely innate, 
-        li: span  encapsulated, and 
+        li: span.innate largely innate, 
+        li
+          span.encapsulated  encapsulated
+          span, and 
         li: span  unchanging, 
         li: span  arising from phylogenetically old systems 
         li: span  built upon the output of innate perceptual analyzers’ 
@@ -162,19 +165,19 @@ section.slide
       .words: .container_12: .grid_6
         div(style='padding-right:1em;')
           p Modules are ‘the psychological 
-            span.present-the-world systems whose operations present the world to thought
+            span.present-the-world(style='z-index:0;') systems whose operations present the world to thought
             span ’; 
             | they ‘constitute a natural kind’; and 
             | there is ‘a cluster of properties that they have in common’
           ol
-            li: span  innateness 
-            li: span  information encapsulation 
+            li: span.innate(style='z-index:0;')  innateness 
+            li: span.encapsulated(style='z-index:0;')  information encapsulation 
             li: span  domain specificity 
             li: span  limited accessibility 
             li: span  ...
-  +words-bkg('ol li:eq(0) span', 'pink')
-  +words-bkg('ol li:eq(1) span', 'blue')
-  +words-bkg('ol:eq(0) li:eq(4) span, .present-the-world', 'forestgreen')
+    +words-bkg('.innate', 'pink')
+    +words-bkg('.encapsulated', 'blue')
+    +words-bkg('ol:eq(0) li:eq(4) span, .present-the-world', 'forestgreen')
   
 +slide_middle
   .notes So now we have a rough, starting fix on the notion we can ask a deeper question.

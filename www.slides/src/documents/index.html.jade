@@ -25,24 +25,25 @@ html
       p A course at the University of Warwick about how humans come to know about objects, causes, words, numbers, colours, actions and minds.
     
     .row
-      .span9
-        h2 Before deciding whether to take the module
-        ul
-          li
-            a(href='/pdf/origins_of_mind.handout.pdf', target="_blank") About this course (a handout)
-          li
-            a(href='/pdf/origins_of_mind.outline.pdf', target="_blank") Detailed outline
+      .span4
+        #before_taking(style="padding-right:1em;")
+          h2 Before deciding whether to take the module
+          ul
+            li
+              a(href='/pdf/origins_of_mind.handout.pdf', target="_blank") About this course (a handout)
+            li
+              a(href='/pdf/origins_of_mind.outline.pdf', target="_blank") Detailed outline
         
-      .span9
-        #essays
+      .span4(style='border-left: 1px dotted grey; border-right: 1px dotted grey;margin-right: -1px;margin-left: -1px;')
+        #essays(style="padding-right:1em;padding-left:1em")
           h2 Essays, readings and tasks for seminars
-          li
-            a(href='/handouts/essay_questions.pdf', target="_blank") Essays, readings and tasks for seminars --- undergraduates
-          li
-            a(href='/handouts/essay_questions_ma.pdf', target="_blank") Essays, readings and tasks for seminars --- MA and MPhil students
+          ul
+            li
+              a(href='/handouts/essay_questions.pdf', target="_blank") Essays, readings and tasks for seminars --- undergraduates
+            li
+              a(href='/handouts/essay_questions_ma.pdf', target="_blank") Essays, readings and tasks for seminars --- MA and MPhil students
 
-      //- main content: lecture outlines &c
-      .span9
+      .span4
         #practical_info
           h2 Practical Info
           p For timings, past exam papers, permission to the take module as an unusual option and everything else, please see:
@@ -52,33 +53,36 @@ html
             li
               a(target='_blank',href="http://www2.warwick.ac.uk/fac/soc/philosophy/postgraduate/modules/ph9f0/") for PH9F0
         
-
+ 
+    .row
+      //- main content: lecture outlines &c
       .span9
         #slides_and_handouts
           h2 Slides and Handouts
           p You can find slides and handout below, together with an outline of each lecture.
-          p Please note that these are continuously revised.
+          p Please note that these may be continuously revised.
 
         //- now do a section for each lecture
         each lecture in getCollection("lectures").toJSON()
           div(id='#{lecture.basename}')
             h2 #{lecture.title}
+            if lecture.lecture_date
+              p Date given: #{moment(lecture.lecture_date).format('dddd Do MMMM YYYY')}
+            // slides and handout links
+            p
+              ul
+                li
+                  a(href='#{lecture.url}',target='_blank') slides
+                li
+                  a(href='/handouts/#{lecture.basename}.handout.pdf',target='_blank') handout [pdf]
+            // section headings (as links) plus descriptions &c
             div(style="padding-left:2em;")
-              if lecture.lecture_date
-                p Date given: #{moment(lecture.lecture_date).format('dddd Do MMMM YYYY')}
-              p
-                ul
-                  li
-                    a(href='#{lecture.url}',target='_blank') slides
-                  li
-                    a(href='/handouts/#{lecture.basename}.handout.pdf',target='_blank') handout [pdf]
-  
               if lecture.units
                 - each unit_num in lecture.units
                   - unit = get_unit(unit_num)
                   h3
                     a(href="#{unit.url}") #{unit.title}
-                    |  (#{unit_num})
+                    span(style="font-size:50%;color:grey;")  (#{unit_num})
                   if unit.tags
                     p(style="text-align:right;margin:0;padding:0;margin-top:-1.5em;") 
                       each t in unit.tags

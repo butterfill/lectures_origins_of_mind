@@ -1,0 +1,20 @@
+---
+layout: 'default2'
+title: 'Lecture 08'
+weburl: ''
+units: []
+lecture_date: '2013/11/28'
+---
+
+include ../../fragments/slide_mixins
+
+- var images = get_images('bees')
+
+mixin title_slide({document:document, images:images})
+
+
+//- a puzzle about pointing
++insert_unit({unit:'663', title_slide:false, images:images})
+
+//- What is a communicative action?
++insert_unit({unit:'671', title_slide:true, images:images})
