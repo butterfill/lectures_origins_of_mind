@@ -29,16 +29,21 @@ html
 }
 
 
+default_text_shadow()
+  text-shadow: 0 0 2px black, 1px 1px 2px black, 1px -1px 2px black, -1px 1px 2px black, -1px -1px 2px black, 0 0 5px black, 0 0 5px black
+default_text_shadow_invert()
+  text-shadow: 0 0 2px white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white, 0 0 5px white, 0 0 5px white
+
 /**
  * overwrite core defaults
  */
 noinvert_text()
   color: white
-  text-shadow: 0 0 2px black, 1px 1px 2px black, 1px -1px 2px black, -1px 1px 2px black, -1px -1px 2px black, 0 0 5px black, 0 0 5px black
+  default_text_shadow()
 
 invert_text()
   color: black
-  text-shadow: 0 0 2px white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white, 0 0 5px white, 0 0 5px white
+  default_text_shadow_invert()
 
 .deck-container
   font-size: 19pt
@@ -72,10 +77,13 @@ blur()
     text-shadow: 0 0 5px rgba(0,0,0,1);
   span[class*='bkg-words-']
     opacity 0.4
-
+  .blur-except
+    animation-name anim_unblur
+    color: rgba(255,255,255,1)
+    default_text_shadow()
 
 .deck-container
-  .blur-text
+  .blur-text 
     //color: rgba(255,255,255,0.2)
     //text-shadow: 0 0 5px rgba(255,255,255,1);
     blur()
@@ -88,6 +96,15 @@ blur()
   100%
     color: rgba(255,255,255,0.2)
     text-shadow: 0 0 5px rgba(255,255,255,1);
+
+
+@keyframes anim_unblur
+  0%
+    color: rgba(255,255,255,0.2)
+    text-shadow: 0 0 5px rgba(255,255,255,1);
+  100%
+    color: rgba(255,255,255,1)
+    text-shadow: 0 0 0px rgba(255,255,255,1);
 
 /*
 .deck-container
@@ -271,7 +288,6 @@ div.container_12
   100%
     color white
     opacity: 1;
-    //text-shadow: 0 0 2px black, 1px 1px 2px black, 1px -1px 2px black, -1px 1px 2px black, -1px -1px 2px black
     text-shadow: 0 0 50px white, 0 0 5px black, 0 0 5px black
 
 .scale080
@@ -635,9 +651,11 @@ make-row-bkg(name,color)
       border-right: solid 80em color
       text-outline: 1px 2px red
       box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33)
-      :not(.truth-table)
-        position relative
-        z-index -20
+      position relative
+      z-index -20
+    .invert
+      .bkg-{name}-row
+        box-shadow: 0 0 1px white, 0 0 0.5em black
 
 make-row-bkg('blue', rgba(0, 128, 255,1))
 make-row-bkg('pink', rgba(255, 111, 207,1))
@@ -661,6 +679,8 @@ make-row-bkg('limegreen', rgba(50,205,50,1))
 make-row-bkg('faint-limegreen', rgba(50,205,50,0.3))
 make-row-bkg('orange', rgba(255,165,0,1))
 make-row-bkg('faint-orange', rgba(255,165,0,0.3))
+make-row-bkg('grey', rgba(125,125,125,1))
+make-row-bkg('white', rgba(255,255,255,1))
 
 
 .deck-container
@@ -668,38 +688,7 @@ make-row-bkg('faint-orange', rgba(255,165,0,0.3))
     background-color: rgba(255,248,61,0.5)
     box-shadow: 0 0 20px 15px rgba(255,248,61,0.5)
 
-  .bkg-white-row
-    background-color: white
-    box-shadow: 0 0 1px black, 0 0 1.5em white
-    margin-left: -40em
-    border-left: solid 40em white
-    margin-right: -40em
-    border-right: solid 40em white
-    text-outline: 1px 2px red
-    position relative
-    z-index -20
 
-  .bkg-grey-row
-    background-color: rgba(125,125,125,1)
-    box-shadow: 0 0 1px black, 0 0 0.5em white
-    margin-left: -80em
-    border-left: solid 80em rgba(125,125,125,1)
-    margin-right: -80em
-    border-right: solid 80em rgba(125,125,125,1)
-    text-outline: 1px 2px red
-    box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33)
-    :not(.truth-table)
-      position relative
-      z-index -20
-
-  .invert .bkg-grey-row
-    background-color: rgba(125,125,125,1)
-    box-shadow: 0 0 1px white, 0 0 0.5em black
-    margin-left: -80em
-    border-left: solid 80em rgba(125,125,125,1)
-    margin-right: -80em
-    border-right: solid 80em rgba(125,125,125,1)
-    text-outline: 1px 2px red
 
 
 
@@ -713,50 +702,61 @@ make-row-bkg('faint-orange', rgba(255,165,0,0.3))
   
 
 
-/**
- * highlight words -- just for one slide
- * (configured so that highlights disappear if not current slide)
- */
- 
-.deck-container .deck-current .words-highlight-red
-  background-color: rgba(255,0,0,0.8)
-  box-shadow: 0 0 15px 8px rgba(255,0,0,0.8)
-  -webkit-box-shadow: 0 0 15px 8px rgba(255,0,0,0.8)
-  -moz-box-shadow: 0 0 15px 8px rgba(255,0,0,0.8)
-  border-radius: 5px
-
 
 /**
  * highlight words -- permanent
  */
 
-/**
- * highlight words -- permanent
- */
+.deck-container
+  span.bkg-words-highlight-invert
+    position relative
+    z-index -1
+  .bkg-words-highlight-invert
+    invert_text()
+    background-color white
+    box-shadow 0 0 8px 8px white
+    border-radius 5px
+    span.bkg-words-highlight-invert
+      position relative
+      z-index -2
+    p.bkg-words-highlight-invert
+      position relative
+      top 0
+      left 0
+      z-index -3
+  .invert
+    .bkg-words-highlight-invert
+      noinvert_text()
+      background-color black
+      box-shadow 0 0 8px 8px black
 
 make-bkg-words(name,color)
- .deck-container
-  .bkg-words-highlight-{name}
-  .bkg-{name}
-   background-color color
-   box-shadow 0 0 8px 8px color
-   border-radius 5px
-   //marging-right doesn't work in firefox  (margin-left does!)
-   //margin-left: -10px
-   //border-left: solid 10px  rgba(255,0,0,0.8)
-   //margin-right: -10px
-   //border-right: solid 10px  rgba(255,0,0,0.8)
-   //outline: 5px solid rgba(255,0,0,0.8)
-  span.bkg-words-highlight-{name}
-  span.bkg-{name}
-   position relative
-   z-index -1
-  p.bkg-words-highlight-{name}
-  p.bkg-{name}
-   position relative
-   top 0
-   left 0
-   z-index -2
+  .deck-container
+    span.bkg-words-highlight-{name}
+    span.bkg-{name}
+      position relative
+      z-index -1
+    .bkg-words-highlight-{name}
+    .bkg-{name}
+      background-color color
+      box-shadow 0 0 8px 8px color
+      border-radius 5px
+      //marging-right doesn't work in firefox  (margin-left does!)
+      //margin-left: -10px
+      //border-left: solid 10px  rgba(255,0,0,0.8)
+      //margin-right: -10px
+      //border-right: solid 10px  rgba(255,0,0,0.8)
+      //outline: 5px solid rgba(255,0,0,0.8)
+    span.bkg-words-highlight-{name}
+    span.bkg-{name}
+      position relative
+      z-index -2
+    p.bkg-words-highlight-{name}
+    p.bkg-{name}
+      position relative
+      top 0
+      left 0
+      z-index -3
 
 make-bkg-words('blue', rgba(0, 128, 255,1))
 make-bkg-words('pink', rgba(255, 111, 207,1))
@@ -789,9 +789,8 @@ make-bkg-words('faint-orange', rgba(255,165,0,0.3))
  */
 .white-box
   background-color: white
-  color: black
+  invert_text()
   padding: .25em !important
-  text-shadow 0 0 2px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff, 0 0 5px #fff, 0 0 5px #fff
   border-radius: 5px
   box-shadow 0 0 4px 4px black
 
@@ -851,7 +850,7 @@ make-bkg-words('faint-orange', rgba(255,165,0,0.3))
   -o-transform: none
   transform: none
   padding: 0
-  text-shadow: 0 0 2px black, 1px 1px 2px black, 1px -1px 2px black, -1px 1px 2px black, -1px -1px 2px black
+  default_text_shadow()
 
 .csstransforms .deck-container h2
   font-size: 30pt
@@ -859,7 +858,7 @@ make-bkg-words('faint-orange', rgba(255,165,0,0.3))
   border-bottom: none
   margin-bottom: 0
   margin-right: 30pt
-  text-shadow: 0 0 2px black, 1px 1px 2px black, 1px -1px 2px black, -1px 1px 2px black, -1px -1px 2px black
+  default_text_shadow()
   
 .deck-container  .title-block
   background: linear-gradient(left, black, transparent)
@@ -871,17 +870,17 @@ make-bkg-words('faint-orange', rgba(255,165,0,0.3))
   padding-bottom: 0.25em
 
 .csstransforms .deck-container .title1
-  text-shadow: 0 0 2px black, 1px 1px 2px black, 1px -1px 2px black, -1px 1px 2px black, -1px -1px 2px black
+  default_text_shadow()
 
 .csstransforms .deck-container .title2
   margin-top: -0.5em
-  text-shadow: 0 0 2px black, 1px 1px 2px black, 1px -1px 2px black, -1px 1px 2px black, -1px -1px 2px black
+  default_text_shadow()
 
 .deck-container .email, .deck-container .slide h3
   margin-top: -0.3em
   font-size: 30pt
   font-weight 300
-  text-shadow: 0 0 2px black, 1px 1px 2px black, 1px -1px 2px black, -1px 1px 2px black, -1px -1px 2px black
+  default_text_shadow()
 
 /**
  * big layout

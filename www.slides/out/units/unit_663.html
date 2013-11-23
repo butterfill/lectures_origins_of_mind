@@ -105,14 +105,6 @@ var inject = function(){
           </div>
         </div>
       </section>
-<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
-<!-- create title slide for a lecture-->
-<!-- param p contains document and images (an array of images to use)-->
-<!-- param p contains p.unit and p.images (an array of images)-->
-<!-- see also +clip to modify the clip as an animation-->
-<!-- ------------>
-<!-- draw things-->
-<!-- ------------>
 <section class="slide">
   <div class="words">
     <div class="container_12">
@@ -149,10 +141,12 @@ var inject = function(){
       <div class="grid_12">
         <div class="notes">By the way, this is related to the essay topic on shared intentionality.</div>
         <div class="notes">Tomasello takes infants' pointing to be based on what he calls shared intentionality.</div>
-        <p>shared intentionality</p>
-        <p class="em-above handout show">‘infant pointing is best understood---on many levels and in many ways---as depending on uniquely human skills and motivations for <span class="cooperation">cooperation</span><span> and </span><span class="shared-intentionality">shared intentionality</span><span>, which enable such things as joint intentions and joint attention in truly collaborative interactions with others (Bratman, 1992; Searle, 1995).’</span></p>
-        <p class="right">Tomasello et al (2007, p. 706)</p>
-        <div class="handout ctd">\citep[p.\ 706]{Tomasello:2007fi}</div>
+        <div class="step1">
+          <p>shared intentionality</p>
+          <p class="em-above handout show"><span class="blur-except">‘infant pointing is best understood</span><span>---on many levels and in many ways---</span><span class="blur-except">as depending on </span><span>uniquely human skills and motivations for </span><span class="cooperation">cooperation</span><span> and </span><span class="shared-intentionality blur-except">shared intentionality</span><span>, which enable such things as joint intentions and joint attention in truly collaborative interactions with others (Bratman, 1992; Searle, 1995).’</span></p>
+          <p class="right">Tomasello et al (2007, p. 706)</p>
+          <div class="handout ctd">\citep[p.\ 706]{Tomasello:2007fi}</div>
+        </div>
         <div class="notes">I don't want to pursue this here; I'm just mentioning it because you might want to draw on pointing in your seminar essays.</div>
         <div class="notes">Instead I want to ask in a simpler way, how should we understand pointing as other non-linguistic forms of communication?</div>
         <div class="notes">To approach this question, it's helpful to compare and contrast humans with other, nonhuman apes.</div>
@@ -167,6 +161,15 @@ var inject = function(){
         <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
         <div class="notes">There is this additional element, shared intentionality.  I don't understand what it is, but Tomasello and his colleagues are extraordinay scientsits so I think it's worth exploring.</div>
         <div class="notes">That's it for now: all I want to do is highlight that our thinking about pointing is going to connect with questions about shared intentionality.</div>
+        <div data-what=" .shared-intentionality" data-class="invert" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" .shared-intentionality" data-class="bkg-words-highlight-white" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=".step1" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="slide">
+          <div class="notes">But why suppose that ‘infant pointing is best understood … is best understood … as depending on … shared intentionality’?</div>
+          <div class="notes">It's goingt to take a while to answer this question ...</div>
+          <p class="em-above">Why suppose this?</p>
+        </div>
       </div>
     </div>
   </div>
@@ -176,8 +179,9 @@ var inject = function(){
     <div class="grid_12">
       <div class="words">
         <div class="middle">
-          <p class="center">a puzzle about pointing</p>
           <div class="notes">So far it's been all very straightforward, but we're about to run into a puzzle.</div>
+          <div class="notes">The puzzle will help us to understand why someone might think that ‘infant pointing is best understood … is best understood … as depending on … shared intentionality’</div>
+          <p class="center">a puzzle about pointing</p>
         </div>
       </div>
     </div>
@@ -217,13 +221,16 @@ var inject = function(){
   <div class="words">
     <div class="container_12">
       <div class="grid_12">
-        <p>Why don't apes point?  (Tomasello's question)</p>
+        <p>Why don’t apes point?  (Tomasello’s question)</p>
         <p class="em-above">motor issues?</p>
         <p class="right slide">But they do gesture</p>
         <p class="em-above slide">understanding action?</p>
         <p class="right slide">But they are sensitive to facts about<br/>the goals of others' actions.</p>
         <div class="notes">So the discrepancy is not easily explained.</div>
         <div class="notes">Comprehension is also missing ...</div>
+        <div data-what="p:gt(0)" data-class="blur-text" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">This question is the puzzle.  Or, rather, it's half of the puzzle.  (The other half is about why infants don't point until they're around 11 months old.)</div>
       </div>
     </div>
   </div>
@@ -276,10 +283,62 @@ var inject = function(){
     <div class="grid_12">
       <div class="words">
         <div class="middle">
-          <p class="center">Why don't 3-month-olds point?</p>
+          <p class="center">Why don’t apes <span class="line-through">point</span><span> comprehend pointing gestures?</span></p>
+          <div class="notes">What we've said is about comprehending pointing.</div>
+          <div class="notes">But our question was, Why don't apes point?</div>
+          <div class="notes">I think we can answer both questions, the one about production and comprehension together.</div>
+          <div class="notes">I've taken the detour via comprehension only because I it's easier to see the answer in the case of comprehension.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white hide"></div>
+  <div class="container_12">
+    <div class="notes">Here's what we already have about comprehending pointing gestures.</div>
+    <div class="notes">This explains why apes don't comprehend pointing gestures --- they don't know (2) or (3) or both.</div>
+    <div class="notes">But what can we say about why they don't point?  Think about what would be involved in producing a pointing gesture.</div>
+    <div class="clear"></div>
+    <div class="words">
+      <p class="center">Informative pointing</p>
+    </div>
+    <div class="container_12"></div>
+    <div class="grid_6 words left-half">
+      <p>To comprehend:</p>
+      <ol>
+        <li>know that this person is pointing to location L;</li>
+        <li>know that by so pointing she is attempting to communicate; and </li>
+        <li>know that what she is attempting to communicate is that object X it at L.</li>
+      </ol>
+    </div>
+    <div class="grid_6 words invert right-half hide">
+      <div style="padding-left:1em;">
+        <div data-what=".right-half-white, .right-half" data-class="hide" data-scope="" class="slide anim-continue anim-removeclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">Here's parallel view about production.</div>
+        <p>To produce:</p>
+        <ol>
+          <li>know how to point to location L;</li>
+          <li>know that by pointing to location L you can communicate with this audience;</li>
+          <li>know that what you can communicate is that object X is at L.</li>
+        </ol>
+        <div class="notes">So why don't apes point?</div>
+        <div class="notes">Because they don't know (2) or (3) or both.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">Why don’t 3-month-olds point?</p>
           <div class="notes">Tomasello also asks this question.</div>
           <div class="notes handout">'the specific behavioral form---distinctive hand shape with extended index finger---actually emerges reliably in infants as young as 3 months of age (Hannan \& Fogel, 1987). [...] why do infants not learn to use the extended index finger for these social functions at 3 – 6 months of age, but only at 12 months of age?' \citep[p.\ 716]{Tomasello:2007fi}</div>
-          <div class="notes">Again his answer involves shared intentionality: it's because they don't understand shared intentionality until around their first birthdays.</div>
+          <div class="notes">(Again Tomasello's answer involves shared intentionality: it's because they don't understand shared intentionality until around their first birthdays.)</div>
+          <div class="notes">We can answer this in the same way --- they don't understand communication.</div>
         </div>
       </div>
     </div>
@@ -353,7 +412,7 @@ var inject = function(){
         <div class="notes">This makes sense of why chimpanzees don't point --- they don't understand communicative intention.</div>
         <p>Why don’t apes point?</p>
         <p>(And why don’t they understand declarative pointing?)</p>
-        <p class="em-above">Because they fail to ‘understand that by pointing towards a location, the other attempts to communicate to her where a desired object is located’ (Moll & Tomasello 2007)</p>
+        <p class="em-above">Because they fail to ‘understand that by pointing towards a location, the other attempts <span class="to-communicate">to communicate</span><span> to her where a desired object is located’ (Moll & Tomasello 2007)</span></p>
         <div class="notes">Note that this is an explanation which doesn't mention shared intentionality.</div>
         <div class="notes">That's deliberate; sometimes Tomasello and colleagues answer this question by appeal to shared intentionality; I wanted to consider a simpler answer first and postpone thinking about shared intentionality for as long as possible.</div>
         <div class="notes">Compare \citep[p.\ 516]{Tomasello:2010dy}: ‘they do not understand communicative intentions’</div>
@@ -361,6 +420,9 @@ var inject = function(){
           <p class="em-above">But
             <ul>
               <li>What is it to understand this?</li>
+              <div data-what=" .to-communicate" data-class="invert" class="slide anim-continue anim-addclass"></div>
+              <div data-what=" .to-communicate" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
+              <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
               <li class="slide">Do 12-month-old humans understand it?</li>
             </ul>
           </p>

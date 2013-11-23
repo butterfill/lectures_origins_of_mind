@@ -105,21 +105,13 @@ var inject = function(){
           </div>
         </div>
       </section>
-<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
-<!-- create title slide for a lecture-->
-<!-- param p contains document and images (an array of images to use)-->
-<!-- param p contains p.unit and p.images (an array of images)-->
-<!-- see also +clip to modify the clip as an animation-->
-<!-- ------------>
-<!-- draw things-->
-<!-- ------------>
 <section class="slide">
   <div class="container_12">
     <div class="grid_12">
       <div class="words">
         <div class="middle">
           <p class="center"> What is a communicative action?</p>
-          <div class="notes">What is a communicative action?</div>
+          <div class="notes">What is a communicative action? </div>
           <div class="notes">Why are we asking this question?</div>
           <div class="notes">Let me try to explain it like this ...</div>
         </div>
@@ -128,42 +120,48 @@ var inject = function(){
   </div>
 </section>
 <section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Why do we want to consider what communicative actions are?</div>
-        <div class="notes">Here's what I take to be the view of Tomasello and colleagues.</div>
-        <p>Theory of communicative action (Tomasello et al?):</p>
-        <div class="handout">Theory of communicative action \citep[compare][]{Tomasello:2007fi}:</div>
-        <div class="handout">\begin{enumerate}</div>
+  <div style="z-index:-22;" class="right-half-white"></div>
+  <div class="container_12">
+    <div class="notes">Recall what we said about comprehending and producing pointing gestures ...</div>
+    <div class="clear"></div>
+    <div class="words">
+      <p class="center">Informative pointing</p>
+    </div>
+    <div class="container_12"></div>
+    <div class="grid_6 words left-half">
+      <p>To comprehend:</p>
+      <ol>
+        <li><span>know that this person is pointing to location L;</span></li>
+        <li><span class="know blur-except">know</span><span> that by so pointing she is attempting to </span><span class="communicate blur-except">communicate</span><span>; and </span></li>
+        <li><span>know that what she is attempting to communicate is that object X it at L.</span></li>
+      </ol>
+    </div>
+    <div class="grid_6 words invert right-half">
+      <div style="padding-left:1em;">
+        <p>To produce:</p>
         <ol>
-          <div class="handout">\item</div>
-          <li class="handout show"> Producing and understanding declarative pointing gestures constitutively involves embodying (?) <span class="shared-intentionality">shared intentionality.</span></li>
-          <div class="handout">\item</div>
-          <li class="handout show">Embodying shared intentionality involves having knowledge about knowledge of your intentions about my intentions.</li>
+          <li><span>know how to point to location L;</span></li>
+          <li><span class="know blur-except">know</span><span> that by pointing to location L you can </span><span class="communicate blur-except">communicate</span><span> with this audience;</span></li>
+          <li><span>know that what you can communicate is that object X is at L.</span></li>
         </ol>
-        <div class="handout">\end{enumerate}</div>
-        <div data-what=" .shared-intentionality" data-class="invert" class="slide anim-continue anim-addclass"></div>
-        <div data-what=" .shared-intentionality" data-class="bkg-words-highlight-white" class="slide anim-continue anim-addclass"></div>
-        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
-        <div class="notes">No, I don't know what that is either.  I've asked you to find out in the last essay for this course.</div>
-        <div data-what=" .shared-intentionality" data-class="invert" class="slide anim-continue anim-removeclass"></div>
-        <div data-what=" .shared-intentionality" data-class="bkg-words-highlight-white" class="slide anim-continue anim-removeclass"></div>
-        <div class="slide">
-          <p class="em-above">Claims about development:</p>
-          <ol style="list-style-type:lower-greek">
-            <li>11- or 12-month-old infants produce and understand declarative pointing gestures.</li>
-            <li class="slide">Abilities to communicate play a role in explaning the emergence of knowledge of minds (among other things).</li>
-            <div class="notes">If the theory of communicative action is correct, then the claims about development are incompatible.</div>
-          </ol>
+      </div>
+    </div>
+    <div data-what=" .know, .communicate" data-class="bkg-words-highlight-invert" class="slide anim-continue anim-addclass"></div>
+    <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+    <div class="notes">Both comprehending and producing require knowing things about communication.</div>
+    <div class="notes">To know something about communication you have to understand something about what it is, I suppose.</div>
+    <div class="notes">So to know what is involved in being able to produce and comprehend pointing gestures, we have to know something about what it is to communicate.</div>
+    <div class="notes">(This will also tell us what apes 6-month-old humans lack that prevents them from communicating with pointing gestures.)</div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Reminder of the question.</div>
+          <p class="center"> What is a communicative action?</p>
         </div>
-        <div class="slide">
-          <p>(Also, α rules out a conjecture about minimal theory of mind.)</p>
-        </div>
-        <div class="notes">So, apparently, if Tomasello et al are right, I'm wrong about two things:</div>
-        <div class="notes">First, I'm wrong that knowlegde of others' minds first emerges around three or four years of age and that one-year-old infants have only core knowledge of mental states.</div>
-        <div class="notes">And, seccond, I'm probably also wrong to think that abilities to communicate (whether by language or not) could explain the emergence of knowledge of others' minds.</div>
-        <div class="notes">This is one reason for asking, What is a communicative action?</div>
       </div>
     </div>
   </div>
@@ -220,8 +218,29 @@ var inject = function(){
         <p class="right">  (compare Grice 1989: chapter 14)</p>
         <div class="handout ctd">\citep[compare][chapter 14]{Grice:1989ha}.</div>
         <div class="notes">To communicate, then, is to attempt to fulfil an intention by making it manifest to someone else that you have this intention.  If you’ve studied Grice you’ll know that his analysis of meaning led to a long and boring series of counterexamples and refinements, most of which shed no light on the nature of linguistic communication (Schiffer 1987).  But what’s really important about Grice isn’t the attempt to analyse meaning: it’s his insight</div>
-        <div class="slide em-above">
-          <p>Should we accept that pointing (and linguistic communication) involves intentions about intentions?</p>
+        <div class="slide">
+          <div class="notes">Recall the comprehension of pointing case; what is the confederate doing if she's pointing to inform?</div>
+          <p class="em-above handout show">The confederate means something in pointing at the left box if she intends:</p>
+          <div class="handout">\begin{enumerate}</div>
+          <ol>
+            <li><span class="handout">\item  </span><span class="handout show">that you open the left box;</span></li>
+            <li> <span class="handout">\item  </span><span class="handout show">that you recognize that she intends (1), that you open the left box; and </span></li>
+            <li> <span class="handout">\item  </span><span class="handout show">that your recognition that she intends (1) will be among your reasons for opening the left box.</span></li>
+          </ol>
+          <p class="right">(Compare Grice 1967 p. 151; Neale 1992 p. 544)</p>
+          <div class="handout">\end{enumerate}</div>
+          <div class="handout">(compare \citealp[p.\ 151]{Grice:1969pv}; \citealp[p.\ 544]{Neale:1992uw})</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="words">
+        <div class="middle">
+          <p class="center">Does pointing (and non-linguistic communication) involve intentions about intentions?</p>
           <div class="notes">What are the alternatives?</div>
           <div class="notes">I want to mention two alternatives ...</div>
         </div>
@@ -402,12 +421,41 @@ var inject = function(){
   </div>
 </section>
 <section class="slide">
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="words">
-        <div class="middle">
-          <p class="center">To be continued ...</p>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Why do we want to consider what communicative actions are?</div>
+        <div class="notes">Here's what I take to be the view of Tomasello and colleagues.</div>
+        <p>Theory of communicative action (Tomasello et al?):</p>
+        <div class="handout">Theory of communicative action \citep[compare][]{Tomasello:2007fi}:</div>
+        <div class="handout">\begin{enumerate}</div>
+        <ol>
+          <div class="handout">\item</div>
+          <li class="handout show"> Producing and understanding declarative pointing gestures constitutively involves embodying (?) <span class="shared-intentionality">shared intentionality.</span></li>
+          <div class="handout">\item</div>
+          <li class="handout show">Embodying shared intentionality involves having knowledge about knowledge of your intentions about my intentions.</li>
+        </ol>
+        <div class="handout">\end{enumerate}</div>
+        <div data-what=" .shared-intentionality" data-class="bkg-words-highlight-invert" class="slide anim-continue anim-addclass"></div>
+        <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        <div class="notes">No, I don't know what that is either.  I've asked you to find out in the last essay for this course.</div>
+        <div data-what=" .shared-intentionality" data-class="invert" class="slide anim-continue anim-removeclass"></div>
+        <div data-what=" .shared-intentionality" data-class="bkg-words-highlight-white" class="slide anim-continue anim-removeclass"></div>
+        <div class="slide">
+          <p class="em-above">Claims about development:</p>
+          <ol style="list-style-type:lower-greek">
+            <li>11- or 12-month-old infants produce and understand declarative pointing gestures.</li>
+            <li class="slide">Abilities to communicate play a role in explaning the emergence of knowledge of minds (among other things).</li>
+            <div class="notes">If the theory of communicative action is correct, then the claims about development are incompatible.</div>
+          </ol>
         </div>
+        <div class="slide">
+          <p>(Also, α rules out a conjecture about minimal theory of mind.)</p>
+        </div>
+        <div class="notes">So, apparently, if Tomasello et al are right, I'm wrong about two things:</div>
+        <div class="notes">First, I'm wrong that knowlegde of others' minds first emerges around three or four years of age and that one-year-old infants have only core knowledge of mental states.</div>
+        <div class="notes">And, seccond, I'm probably also wrong to think that abilities to communicate (whether by language or not) could explain the emergence of knowledge of others' minds.</div>
+        <div class="notes">This is one reason for asking, What is a communicative action?</div>
       </div>
     </div>
   </div>

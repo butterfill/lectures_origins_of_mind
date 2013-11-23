@@ -34,7 +34,7 @@
 -   return wrap_list(images)
 - };
 
-// make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833
+//- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833
 - function range(start, end) {
 -     var foo = [];
 -     for (var i = start; i <= end; i++) {
@@ -45,14 +45,8 @@
 
 
 //- ----------------
-//- rendering
+//- for lecture files
 //- ----------------
-
-//- render images associated with a unit as slides
-mixin display_images_as_slides(unit)
-  each f in getFilesAtPath('img/'+unit.basename+'/',[{basename:1}]).toJSON()
-    section.slide
-      img(src=f.url)
 
 //- render a unit as part of a larger slideshow document
 mixin render_unit(unit)
@@ -63,12 +57,8 @@ mixin render_unit(unit)
     != unit.contentRenderedWithoutLayouts
 
 
-//- -------------
-//- title slides
-//- -------------
-
-// create title slide for a lecture
-// param p contains document and images (an array of images to use)
+//- create title slide for a lecture
+//- param p contains document and images (an array of images to use)
 mixin title_slide(p)
   .notes.notes-header-tex \title {Origins of Mind: Lecture Notes \\ #{p.document.title}}
   .notes.notes-header-tex &nbsp;
@@ -103,10 +93,8 @@ mixin title_slide(p)
     .handout \end{center}
 
 
-
-
 //- title slides for subsections
-// param p contains p.unit and p.images (an array of images)
+//- param p contains p.unit and p.images (an array of images)
 mixin section(p)
   section(id="#{p.unit ? p.unit.basename : ''}").slide
     - var low = false
@@ -119,9 +107,21 @@ mixin section(p)
     .title-block(style="#{low ? 'position:relative; top:425px' : ''}"): .title-container
         h2.title1 #{p.unit ? p.unit.title : p.title}
 
+
 mixin handout(p)
     .handout &nbsp;
     .handout \section{#{p.unit ? p.unit.title : p.title}}
+
+
+mixin insert_unit(p)
+  - d = get_unit(p.unit)
+    if p.title_slide
+        +section({unit:d, images:p.images})
+    if p.handout !== false
+        +handout({unit:d})
+    .notes.notes-header-tex &nbsp;
+    .notes.notes-header-tex \section{#{d.title}}
+    +render_unit(d)
 
 
 
@@ -149,6 +149,43 @@ mixin slide_img(filename)
     img.bkg(src='/img/#{filename}')
     block
 
+mixin left_half()
+  .grid_6.words.left-half
+    block
+mixin right_half(p)
+  - p = p || {step:false}
+  .grid_6.words.invert.right-half(class="#{ p.step ? 'hide' : '' }")
+    div(style='padding-left:1em;')
+      if p.step
+        +show('.right-half-white, .right-half')
+      block
+    
+mixin run_across()
+  .clear
+  //- .container_12: .grid_12: .words
+  .words
+    block
+  .container_12
+  
+mixin slide_rh_white(p)
+  - p = p || {step:false}
+  section.slide
+    .right-half-white(style="z-index:-22;", class="#{ p.step ? 'hide' : '' }")
+    .container_12
+      block
+
+//- create a sequence of slides from a list of images
+mixin slides_from_img(filenames)
+  each filename in filenames
+    .slide.nodim
+      img.bkg.nodim(src="/img/#{filename}")
+
+//- render images associated with a unit as slides
+mixin display_images_as_slides(unit)
+  each f in getFilesAtPath('img/'+unit.basename+'/',[{basename:1}]).toJSON()
+    section.slide
+      img(src=f.url)
+
 
 
 
@@ -157,7 +194,7 @@ mixin slide_img(filename)
 //- mixins to create elements
 //- -------------
 
-// see also +clip to modify the clip as an animation
+//- see also +clip to modify the clip as an animation
 mixin img_clip(filename, theClip)
   div(style='position:relative;')
     img(src='/img/#{filename}', style="clip: #{theClip}; position: absolute; max-width:720px; max-height:550px;")
@@ -509,7 +546,7 @@ mixin truth-table(sentences, values)
   if values[0].length > 8
     - cols.push('D')
   table.truth-table
-    // header row
+    //- header row
     tr
       each letter, i in cols
         td
@@ -520,7 +557,7 @@ mixin truth-table(sentences, values)
     each val, i in values[0]
       tr(class="row-#{i+1}")
         - var structure = i.toString(2)
-        // pad
+        //- pad
         - while( structure.length < cols.length)  structure = "0" + structure
         each letter, i2 in cols
           td
@@ -628,9 +665,9 @@ mixin unhighlight_cited_sentence(row_num)
 
 
 
-// ----------
-// draw things
-// ----------
+//- ----------
+//- draw things
+//- ----------
 mixin colour-box(colour, size)
   .box(style="background-color:#{colour};width:#{size}px;height:#{size}px;margin-left:auto;margin-right:auto;border:#{size/5}px solid grey;")
     block
@@ -641,20 +678,3 @@ mixin colour-ball(colour, size)
 
 
 
-
-mixin insert_unit(p)
-  - d = get_unit(p.unit)
-    if p.title_slide
-        mixin section({unit:d, images:p.images})
-    if p.handout !== false
-        mixin handout({unit:d})
-    .notes.notes-header-tex &nbsp;
-    .notes.notes-header-tex \section{#{d.title}}
-    mixin render_unit(d)
-
-
-
-mixin slides_from_img(filenames)
-  each filename in filenames
-    .slide.nodim
-      img.bkg.nodim(src="/img/#{filename}")

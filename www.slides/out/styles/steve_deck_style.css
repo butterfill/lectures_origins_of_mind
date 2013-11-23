@@ -84,6 +84,15 @@ html {
   -o-filter: alpha(opacity=40);
   -ms-filter: alpha(opacity=40);
 }
+.deck-container .blur-text .blur-except {
+  -webkit-animation-name: anim_unblur;
+  -moz-animation-name: anim_unblur;
+  -o-animation-name: anim_unblur;
+  -ms-animation-name: anim_unblur;
+  animation-name: anim_unblur;
+  color: #fff;
+  text-shadow: 0 0 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000, 0 0 5px #000, 0 0 5px #000;
+}
 /*
 .deck-container
   .notes
@@ -270,6 +279,16 @@ div.container_12 {
   -moz-filter: alpha(opacity=40);
   -o-filter: alpha(opacity=40);
   -ms-filter: alpha(opacity=40);
+}
+.deck-before .blur-after:not(.deck-current) .blur-except,
+.deck-previous .blur-after:not(.deck-current) .blur-except {
+  -webkit-animation-name: anim_unblur;
+  -moz-animation-name: anim_unblur;
+  -o-animation-name: anim_unblur;
+  -ms-animation-name: anim_unblur;
+  animation-name: anim_unblur;
+  color: #fff;
+  text-shadow: 0 0 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000, 0 0 5px #000, 0 0 5px #000;
 }
 .deck-before .fade-after:not(.deck-current),
 .deck-previous .fade-after:not(.deck-current) {
@@ -839,10 +858,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-blue-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-blue-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-pink-row {
   background-color: #ff6fcf;
@@ -853,10 +874,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-pink-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-pink-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-faint-white-row {
   background-color: rgba(255,255,255,0.3);
@@ -867,10 +890,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-faint-white-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-faint-white-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-faint-blue-row {
   background-color: rgba(0,128,255,0.3);
@@ -881,10 +906,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-faint-blue-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-faint-blue-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-faint-pink-row {
   background-color: rgba(255,111,207,0.3);
@@ -895,10 +922,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-faint-pink-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-faint-pink-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-yellow-row {
   background-color: #ff0;
@@ -909,10 +938,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-yellow-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-yellow-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-faint-yellow-row {
   background-color: rgba(255,255,0,0.3);
@@ -923,10 +954,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-faint-yellow-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-faint-yellow-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-red-row {
   background-color: #f00;
@@ -937,10 +970,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-red-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-red-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-faint-red-row {
   background-color: rgba(255,0,0,0.3);
@@ -951,10 +986,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-faint-red-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-faint-red-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-forestgreen-row {
   background-color: #228b22;
@@ -965,10 +1002,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-forestgreen-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-forestgreen-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-faint-forestgreen-row {
   background-color: rgba(34,139,34,0.3);
@@ -979,10 +1018,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-faint-forestgreen-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-faint-forestgreen-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-olive-row {
   background-color: #808000;
@@ -993,10 +1034,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-olive-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-olive-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-faint-olive-row {
   background-color: rgba(128,128,0,0.3);
@@ -1007,10 +1050,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-faint-olive-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-faint-olive-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-teal-row {
   background-color: #008080;
@@ -1021,10 +1066,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-teal-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-teal-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-faint-teal-row {
   background-color: rgba(0,128,128,0.3);
@@ -1035,10 +1082,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-faint-teal-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-faint-teal-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-lime-row {
   background-color: #0f0;
@@ -1049,10 +1098,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-lime-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-lime-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-faint-lime-row {
   background-color: rgba(0,255,0,0.3);
@@ -1063,10 +1114,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-faint-lime-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-faint-lime-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-limegreen-row {
   background-color: #32cd32;
@@ -1077,10 +1130,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-limegreen-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-limegreen-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-faint-limegreen-row {
   background-color: rgba(50,205,50,0.3);
@@ -1091,10 +1146,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-faint-limegreen-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-faint-limegreen-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-orange-row {
   background-color: #ffa500;
@@ -1105,10 +1162,12 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-orange-row :not(.truth-table) {
   position: relative;
   z-index: -20;
+}
+.deck-container .invert .bkg-orange-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-faint-orange-row {
   background-color: rgba(255,165,0,0.3);
@@ -1119,32 +1178,15 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-faint-orange-row :not(.truth-table) {
   position: relative;
   z-index: -20;
 }
-.deck-container .bkg-highlight-yellow {
-  background-color: rgba(255,248,61,0.5);
-  -webkit-box-shadow: 0 0 20px 15px rgba(255,248,61,0.5);
-  box-shadow: 0 0 20px 15px rgba(255,248,61,0.5);
-}
-.deck-container .bkg-white-row {
-  background-color: #fff;
-  -webkit-box-shadow: 0 0 1px #000, 0 0 1.5em #fff;
-  box-shadow: 0 0 1px #000, 0 0 1.5em #fff;
-  margin-left: -40em;
-  border-left: solid 40em #fff;
-  margin-right: -40em;
-  border-right: solid 40em #fff;
-  text-outline: 1px 2px #f00;
-  position: relative;
-  z-index: -20;
+.deck-container .invert .bkg-faint-orange-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
 .deck-container .bkg-grey-row {
   background-color: #7d7d7d;
-  -webkit-box-shadow: 0 0 1px #000, 0 0 0.5em #fff;
-  box-shadow: 0 0 1px #000, 0 0 0.5em #fff;
   margin-left: -80em;
   border-left: solid 80em #7d7d7d;
   margin-right: -80em;
@@ -1152,20 +1194,33 @@ table.data tbody tr.even td {
   text-outline: 1px 2px #f00;
   -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
-}
-.deck-container .bkg-grey-row :not(.truth-table) {
   position: relative;
   z-index: -20;
 }
 .deck-container .invert .bkg-grey-row {
-  background-color: #7d7d7d;
   -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
   box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+}
+.deck-container .bkg-white-row {
+  background-color: #fff;
   margin-left: -80em;
-  border-left: solid 80em #7d7d7d;
+  border-left: solid 80em #fff;
   margin-right: -80em;
-  border-right: solid 80em #7d7d7d;
+  border-right: solid 80em #fff;
   text-outline: 1px 2px #f00;
+  -webkit-box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
+  box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33);
+  position: relative;
+  z-index: -20;
+}
+.deck-container .invert .bkg-white-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+}
+.deck-container .bkg-highlight-yellow {
+  background-color: rgba(255,248,61,0.5);
+  -webkit-box-shadow: 0 0 20px 15px rgba(255,248,61,0.5);
+  box-shadow: 0 0 20px 15px rgba(255,248,61,0.5);
 }
 /**
  * transparent backgrounds
@@ -1176,24 +1231,43 @@ table.data tbody tr.even td {
   box-shadow: 0 0 15px 64px rgba(0,0,0,0.33);
 }
 /**
- * highlight words -- just for one slide
- * (configured so that highlights disappear if not current slide)
+ * highlight words -- permanent
  */
-.deck-container .deck-current .words-highlight-red {
-  background-color: rgba(255,0,0,0.8);
-  -webkit-box-shadow: 0 0 15px 8px rgba(255,0,0,0.8);
-  box-shadow: 0 0 15px 8px rgba(255,0,0,0.8);
-  -webkit-box-shadow: 0 0 15px 8px rgba(255,0,0,0.8);
-  -moz-box-shadow: 0 0 15px 8px rgba(255,0,0,0.8);
+.deck-container span.bkg-words-highlight-invert {
+  position: relative;
+  z-index: -1;
+}
+.deck-container .bkg-words-highlight-invert {
+  color: #000;
+  text-shadow: 0 0 2px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff, 0 0 5px #fff, 0 0 5px #fff;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 8px 8px #fff;
+  box-shadow: 0 0 8px 8px #fff;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/**
- * highlight words -- permanent
- */
-/**
- * highlight words -- permanent
- */
+.deck-container .bkg-words-highlight-invert span.bkg-words-highlight-invert {
+  position: relative;
+  z-index: -2;
+}
+.deck-container .bkg-words-highlight-invert p.bkg-words-highlight-invert {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+.deck-container .invert .bkg-words-highlight-invert {
+  color: #fff;
+  text-shadow: 0 0 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000, 0 0 5px #000, 0 0 5px #000;
+  background-color: #000;
+  -webkit-box-shadow: 0 0 8px 8px #000;
+  box-shadow: 0 0 8px 8px #000;
+}
+.deck-container span.bkg-words-highlight-blue,
+.deck-container span.bkg-blue {
+  position: relative;
+  z-index: -1;
+}
 .deck-container .bkg-words-highlight-blue,
 .deck-container .bkg-blue {
   background-color: #0080ff;
@@ -1205,14 +1279,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-blue,
 .deck-container span.bkg-blue {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-blue,
 .deck-container p.bkg-blue {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-pink,
+.deck-container span.bkg-pink {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-pink,
 .deck-container .bkg-pink {
@@ -1225,14 +1304,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-pink,
 .deck-container span.bkg-pink {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-pink,
 .deck-container p.bkg-pink {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-white,
+.deck-container span.bkg-white {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-white,
 .deck-container .bkg-white {
@@ -1245,14 +1329,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-white,
 .deck-container span.bkg-white {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-white,
 .deck-container p.bkg-white {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-faint-white,
+.deck-container span.bkg-faint-white {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-faint-white,
 .deck-container .bkg-faint-white {
@@ -1265,14 +1354,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-faint-white,
 .deck-container span.bkg-faint-white {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-faint-white,
 .deck-container p.bkg-faint-white {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-faint-blue,
+.deck-container span.bkg-faint-blue {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-faint-blue,
 .deck-container .bkg-faint-blue {
@@ -1285,14 +1379,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-faint-blue,
 .deck-container span.bkg-faint-blue {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-faint-blue,
 .deck-container p.bkg-faint-blue {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-faint-pink,
+.deck-container span.bkg-faint-pink {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-faint-pink,
 .deck-container .bkg-faint-pink {
@@ -1305,14 +1404,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-faint-pink,
 .deck-container span.bkg-faint-pink {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-faint-pink,
 .deck-container p.bkg-faint-pink {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-yellow,
+.deck-container span.bkg-yellow {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-yellow,
 .deck-container .bkg-yellow {
@@ -1325,14 +1429,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-yellow,
 .deck-container span.bkg-yellow {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-yellow,
 .deck-container p.bkg-yellow {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-faint-yellow,
+.deck-container span.bkg-faint-yellow {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-faint-yellow,
 .deck-container .bkg-faint-yellow {
@@ -1345,14 +1454,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-faint-yellow,
 .deck-container span.bkg-faint-yellow {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-faint-yellow,
 .deck-container p.bkg-faint-yellow {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-red,
+.deck-container span.bkg-red {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-red,
 .deck-container .bkg-red {
@@ -1365,14 +1479,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-red,
 .deck-container span.bkg-red {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-red,
 .deck-container p.bkg-red {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-faint-red,
+.deck-container span.bkg-faint-red {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-faint-red,
 .deck-container .bkg-faint-red {
@@ -1385,14 +1504,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-faint-red,
 .deck-container span.bkg-faint-red {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-faint-red,
 .deck-container p.bkg-faint-red {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-forestgreen,
+.deck-container span.bkg-forestgreen {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-forestgreen,
 .deck-container .bkg-forestgreen {
@@ -1405,14 +1529,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-forestgreen,
 .deck-container span.bkg-forestgreen {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-forestgreen,
 .deck-container p.bkg-forestgreen {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-faint-forestgreen,
+.deck-container span.bkg-faint-forestgreen {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-faint-forestgreen,
 .deck-container .bkg-faint-forestgreen {
@@ -1425,14 +1554,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-faint-forestgreen,
 .deck-container span.bkg-faint-forestgreen {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-faint-forestgreen,
 .deck-container p.bkg-faint-forestgreen {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-olive,
+.deck-container span.bkg-olive {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-olive,
 .deck-container .bkg-olive {
@@ -1445,14 +1579,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-olive,
 .deck-container span.bkg-olive {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-olive,
 .deck-container p.bkg-olive {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-faint-olive,
+.deck-container span.bkg-faint-olive {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-faint-olive,
 .deck-container .bkg-faint-olive {
@@ -1465,14 +1604,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-faint-olive,
 .deck-container span.bkg-faint-olive {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-faint-olive,
 .deck-container p.bkg-faint-olive {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-teal,
+.deck-container span.bkg-teal {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-teal,
 .deck-container .bkg-teal {
@@ -1485,14 +1629,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-teal,
 .deck-container span.bkg-teal {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-teal,
 .deck-container p.bkg-teal {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-faint-teal,
+.deck-container span.bkg-faint-teal {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-faint-teal,
 .deck-container .bkg-faint-teal {
@@ -1505,14 +1654,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-faint-teal,
 .deck-container span.bkg-faint-teal {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-faint-teal,
 .deck-container p.bkg-faint-teal {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-lime,
+.deck-container span.bkg-lime {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-lime,
 .deck-container .bkg-lime {
@@ -1525,14 +1679,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-lime,
 .deck-container span.bkg-lime {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-lime,
 .deck-container p.bkg-lime {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-faint-lime,
+.deck-container span.bkg-faint-lime {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-faint-lime,
 .deck-container .bkg-faint-lime {
@@ -1545,14 +1704,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-faint-lime,
 .deck-container span.bkg-faint-lime {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-faint-lime,
 .deck-container p.bkg-faint-lime {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-limegreen,
+.deck-container span.bkg-limegreen {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-limegreen,
 .deck-container .bkg-limegreen {
@@ -1565,14 +1729,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-limegreen,
 .deck-container span.bkg-limegreen {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-limegreen,
 .deck-container p.bkg-limegreen {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-faint-limegreen,
+.deck-container span.bkg-faint-limegreen {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-faint-limegreen,
 .deck-container .bkg-faint-limegreen {
@@ -1585,14 +1754,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-faint-limegreen,
 .deck-container span.bkg-faint-limegreen {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-faint-limegreen,
 .deck-container p.bkg-faint-limegreen {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-orange,
+.deck-container span.bkg-orange {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-orange,
 .deck-container .bkg-orange {
@@ -1605,14 +1779,19 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-orange,
 .deck-container span.bkg-orange {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-orange,
 .deck-container p.bkg-orange {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
+}
+.deck-container span.bkg-words-highlight-faint-orange,
+.deck-container span.bkg-faint-orange {
+  position: relative;
+  z-index: -1;
 }
 .deck-container .bkg-words-highlight-faint-orange,
 .deck-container .bkg-faint-orange {
@@ -1625,14 +1804,14 @@ table.data tbody tr.even td {
 .deck-container span.bkg-words-highlight-faint-orange,
 .deck-container span.bkg-faint-orange {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 .deck-container p.bkg-words-highlight-faint-orange,
 .deck-container p.bkg-faint-orange {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -3;
 }
 /**
  * boxes
@@ -1640,8 +1819,8 @@ table.data tbody tr.even td {
 .white-box {
   background-color: #fff;
   color: #000;
-  padding: 0.25em !important;
   text-shadow: 0 0 2px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff, 0 0 5px #fff, 0 0 5px #fff;
+  padding: 0.25em !important;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 4px 4px #000;
@@ -1707,7 +1886,7 @@ table.data tbody tr.even td {
   -ms-transform: none;
   transform: none;
   padding: 0;
-  text-shadow: 0 0 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  text-shadow: 0 0 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000, 0 0 5px #000, 0 0 5px #000;
 }
 .csstransforms .deck-container h2 {
   font-size: 30pt;
@@ -1715,7 +1894,7 @@ table.data tbody tr.even td {
   border-bottom: none;
   margin-bottom: 0;
   margin-right: 30pt;
-  text-shadow: 0 0 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  text-shadow: 0 0 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000, 0 0 5px #000, 0 0 5px #000;
 }
 .deck-container  .title-block {
   background: -webkit-linear-gradient(left, #000, transparent);
@@ -1732,18 +1911,18 @@ table.data tbody tr.even td {
   padding-bottom: 0.25em;
 }
 .csstransforms .deck-container .title1 {
-  text-shadow: 0 0 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  text-shadow: 0 0 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000, 0 0 5px #000, 0 0 5px #000;
 }
 .csstransforms .deck-container .title2 {
   margin-top: -0.5em;
-  text-shadow: 0 0 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  text-shadow: 0 0 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000, 0 0 5px #000, 0 0 5px #000;
 }
 .deck-container .email,
 .deck-container .slide h3 {
   margin-top: -0.3em;
   font-size: 30pt;
   font-weight: 300;
-  text-shadow: 0 0 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  text-shadow: 0 0 2px #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000, 0 0 5px #000, 0 0 5px #000;
 }
 /**
  * big layout
@@ -1916,6 +2095,61 @@ p.speech-right:after {
   100% {
     color: rgba(255,255,255,0.2);
     text-shadow: 0 0 5px #fff;
+  }
+}
+@-moz-keyframes anim_unblur {
+  0% {
+    color: rgba(255,255,255,0.2);
+    text-shadow: 0 0 5px #fff;
+  }
+
+  100% {
+    color: #fff;
+    text-shadow: 0 0 0px #fff;
+  }
+}
+@-webkit-keyframes anim_unblur {
+  0% {
+    color: rgba(255,255,255,0.2);
+    text-shadow: 0 0 5px #fff;
+  }
+
+  100% {
+    color: #fff;
+    text-shadow: 0 0 0px #fff;
+  }
+}
+@-o-keyframes anim_unblur {
+  0% {
+    color: rgba(255,255,255,0.2);
+    text-shadow: 0 0 5px #fff;
+  }
+
+  100% {
+    color: #fff;
+    text-shadow: 0 0 0px #fff;
+  }
+}
+@-ms-keyframes anim_unblur {
+  0% {
+    color: rgba(255,255,255,0.2);
+    text-shadow: 0 0 5px #fff;
+  }
+
+  100% {
+    color: #fff;
+    text-shadow: 0 0 0px #fff;
+  }
+}
+@keyframes anim_unblur {
+  0% {
+    color: rgba(255,255,255,0.2);
+    text-shadow: 0 0 5px #fff;
+  }
+
+  100% {
+    color: #fff;
+    text-shadow: 0 0 0px #fff;
   }
 }
 @-moz-keyframes FadeOut {

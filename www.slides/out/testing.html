@@ -97,14 +97,6 @@ var inject = function(){
           </div>
         </div>
       </section>
-<!-- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833-->
-<!-- create title slide for a lecture-->
-<!-- param p contains document and images (an array of images to use)-->
-<!-- param p contains p.unit and p.images (an array of images)-->
-<!-- see also +clip to modify the clip as an animation-->
-<!-- ------------>
-<!-- draw things-->
-<!-- ------------>
 <div class="deck-container">
   <div id="title-slide" class="slide"><img src="" class="bkg"/>
     <div class="spacer">&nbsp;</div>
@@ -116,6 +108,112 @@ var inject = function(){
       </div>
     </div>
   </div>
+  <section class="slide">
+    <div class="words">
+      <div class="container_12">
+        <div class="grid_12">
+          <p>Some of this stuff is old, not the best way to do it.</p>
+          <p>I try to keep the newer (better) stuff at the start.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slide">
+    <div class="words">
+      <div class="container_12">
+        <div class="grid_12">
+          <p>test <span class="highlights1">highlights</span><span> in text</span></p>
+          <p>test <span class="highlights2">highlights</span><span> in text</span></p>
+          <p>test <span class="highlights3">highlights</span><span> in text</span></p>
+          <p>test <span class="highlights4">highlights</span><span>  </span><span class="in">in</span><span>  </span><span class="text">text</span></p>
+          <div data-what=" .highlights1" data-class="bkg-words-highlight-invert" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=" .highlights2" data-class="bkg-words-highlight-pink" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=" .highlights3" data-class="bkg-words-highlight-blue" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=" p:eq(2)" data-class="bkg-words-highlight-yellow" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=" .highlights4" data-class="bkg-words-highlight-forestgreen" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=" .in" data-class="bkg-words-highlight-lime" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=" .text" data-class="bkg-words-highlight-orange" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slide">
+    <div class="words">
+      <div class="container_12">
+        <div class="grid_12">
+          <p>test row bkg</p>
+          <ol>
+            <li>first line (no span)</li>
+            <li>second line (no span)</li>
+          </ol>
+          <p>test row bkg using span within li</p>
+          <ol>
+            <li><span>first line (in span)</span></li>
+            <li><span>second line</span></li>
+          </ol>
+          <div data-what=" ol:eq(0) li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=" ol:eq(0) li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=" ol:eq(0) li:eq(1)" data-class="bkg-pink-row" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=" ol:eq(0) li:eq(1)" data-class="bkg-pink-row" class="slide anim-continue anim-removeclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <!-- second list-->
+          <div data-what=" ol:eq(1) li:eq(0) span" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=" ol:eq(1) li:eq(0) span" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=" ol:eq(1) li:eq(1) span" data-class="bkg-pink-row" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slide">
+    <div style="z-index:-22;" class="right-half-white"></div>
+    <div class="container_12">
+      <div class="notes">Here's what we already have about comprehending pointing gestures.</div>
+      <div class="notes">This explains why apes don't comprehend pointing gestures --- they don't know (2) or (3) or both.</div>
+      <div class="notes">But what can we say about why they don't point?  Think about what would be involved in producing a pointing gesture.</div>
+      <div class="clear"></div>
+      <div class="words">
+        <p class="center">Two sides of a story</p>
+      </div>
+      <div class="container_12"></div>
+      <div class="grid_6 words left-half">
+        <p>To comprehend:</p>
+        <ol>
+          <li>know that this person is pointing to location L;</li>
+          <li>don't use row-bkg in rh_white</li>
+          <li>know that what she is attempting to communicate is that object X it at L.</li>
+        </ol>
+      </div>
+      <div class="grid_6 words invert right-half">
+        <div style="padding-left:1em;">
+          <div class="notes">Here's parallel view about production.</div>
+          <p>To produce:</p>
+          <ol>
+            <li>know how to point to location L;</li>
+            <li>really don't use row-bkg in rh_white</li>
+            <li>know that what you can communicate is that object X is at L.</li>
+          </ol>
+          <div class="notes">So why don't apes point?</div>
+          <div class="notes">Because they don't know (2) or (3) or both.</div>
+          <div data-what=" ol:eq(1) li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=" ol:eq(1) li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
+          <div data-what=" ol:eq(0) li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
+          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+        </div>
+      </div>
+    </div>
+  </section>
   <div id="test_blur" class="slide">
     <div class="words">
       <div class="container_12">
@@ -203,7 +301,6 @@ var inject = function(){
         <div class="grid_12">
           <p>test truth table mxin</p>
           <table class="truth-table">
-            <!-- header row-->
             <tr>
               <td><span class="col-1">A</span></td>
               <td><span class="col-2">B</span></td>
@@ -211,7 +308,6 @@ var inject = function(){
               <td class="result-col"><span class="result-col-2">¬A</span></td>
             </tr>
             <tr class="row-1">
-              <!-- pad-->
               <td><span class="highlight-hook">&#8203;</span><span>T</span>
               </td>
               <td><span>T</span>
@@ -220,7 +316,6 @@ var inject = function(){
               <td class="result-col"><span class="result-col-2">F</span></td>
             </tr>
             <tr class="row-2">
-              <!-- pad-->
               <td><span class="highlight-hook">&#8203;</span><span>T</span>
               </td>
               <td><span>F</span>
@@ -229,7 +324,6 @@ var inject = function(){
               <td class="result-col"><span class="result-col-2">F</span></td>
             </tr>
             <tr class="row-3">
-              <!-- pad-->
               <td><span class="highlight-hook">&#8203;</span><span>F</span>
               </td>
               <td><span>T</span>
@@ -238,7 +332,6 @@ var inject = function(){
               <td class="result-col"><span class="result-col-2">T</span></td>
             </tr>
             <tr class="row-4">
-              <!-- pad-->
               <td><span class="highlight-hook">&#8203;</span><span>F</span>
               </td>
               <td><span>F</span>
@@ -346,7 +439,13 @@ var inject = function(){
   </div>
   <div id="white-bottom-half" class="slide">
     <div class="bottom-third-white">
-      <div class="test">text in white bkg?</div>
+      <div class="container_12">
+        <div class="grid_12">
+          <div class="words">
+            <div class="test">text in white bkg?</div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="words">
       <div class="container_12">
@@ -363,13 +462,15 @@ var inject = function(){
         </div>
       </div>
     </div>
-    <div style="position:absolute; top:350px;" class="words invert">
-      <div class="container_12">
-        <div class="grid_6">
-          <p>test on white added later</p>
-        </div>
-        <div class="grid_6">
-          <p>seems to work even with columns</p>
+    <div class="slide">
+      <div style="position:absolute; top:450px;" class="words invert">
+        <div class="container_12">
+          <div class="grid_6">
+            <p>test on white added later</p>
+          </div>
+          <div class="grid_6">
+            <p>seems to work even with columns</p>
+          </div>
         </div>
       </div>
     </div>
@@ -760,7 +861,7 @@ var inject = function(){
           </table>
         </div>
       </div>
-    </div><a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+    </div>
   </div>
 </div>
     </div>

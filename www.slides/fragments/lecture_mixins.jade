@@ -1,0 +1,117 @@
+
+
+- get_unit = function(unit_num) {
+  - var extract = (unit_num+'').match(/^unit_([0-9]*)/);
+  - if(extract){
+    - unit_num = extract[1];
+  - };
+  - var d = getCollection("documents").findAll({url:'/units/unit_'+unit_num+'.html'},[{year:-1,sort_order:1}]).toJSON();
+  - if (document.units && document.units.indexOf(unit_num)==-1) {
+    - document.units.push(unit_num);
+  - }
+  - var unit = d[0]
+  - return unit;
+- };
+
+//- wrap a list so that it has a next() method that cycles through the elements
+- wrap_list = function(lst) {
+-   var res = { list:lst, counter:-1 };
+-   res.next = function() {
+-     res.counter += 1;
+-     if( res.counter >= res.list.length ) {
+-       res.counter = 0;
+-     }
+-     return res.list[res.counter];
+-   }
+-   res.first = function() { return res.list[0]; }
+-   return res;
+- };
+
+- get_images = function(folder) {
+-   var images = getFilesAtPath('img/bkg/'+folder+'/',[{basename:1}]).toJSON();
+-   var sorter = function(a,b) { return a.basename.localeCompare(b.basename) };
+-   images.sort(sorter);
+-   return wrap_list(images)
+- };
+
+
+//- ----------------
+//- for lecture files
+//- ----------------
+
+//- render a unit as part of a larger slideshow document
+mixin render_unit(unit)
+  //- first if the unit is coded as images, do a slide for each image
+  if unit.layout.replace('.html.jade','') == 'deck_slides_img'
+    mixin display_images_as_slides(unit)
+  else
+    != unit.contentRenderedWithoutLayouts
+
+
+//- create title slide for a lecture
+//- param p contains document and images (an array of images to use)
+mixin title_slide(p)
+  .notes.notes-header-tex \title {Origins of Mind: Lecture Notes \\ #{p.document.title}}
+  .notes.notes-header-tex &nbsp;
+  .notes.notes-header-tex \maketitle
+  #title-slide.slide
+    - var img = p.images.first()
+    - var _ = p.images.next(); //avoid re-using first image 
+    img.bkg(src='#{img.url}')
+    .spacer &nbsp;
+    - var low = false
+      if img.filename.indexOf('.low.') != -1
+        - low = true
+    .fade-in
+      .title-block(style="#{low ? 'position:relative; top:325px' : ''}"): .title-container
+          h1.title1.fade-in Origins of Mind
+          h1.title2.fade-in #{p.document.title}
+          h3.email.fade-in s.butterfill@warwick.ac.uk
+    if p.document.weburl
+      .words
+        span(style="position:relative;top:250px;left:450px;").white-box.big.center #{p.document.weburl}
+    .handout \def \ititle {Origins of Mind}
+    .handout \def \isubtitle {#{p.document.title}}
+    .handout &nbsp;
+    .handout \
+    .handout &nbsp;
+    .handout \begin{center}
+    .handout {\Large
+    .handout \textbf{\ititle}: \isubtitle
+    .handout }
+    .handout &nbsp;
+    .handout \iemail %<s.butterfill@warwick.ac.uk>
+    .handout \end{center}
+
+
+//- title slides for subsections
+//- param p contains p.unit and p.images (an array of images)
+mixin section(p)
+  section(id="#{p.unit ? p.unit.basename : ''}").slide
+    - var low = false
+    if p.images
+      - var img = p.images.next()
+      img.bkg(src='#{img.url}')
+      if img.filename.indexOf('.low.') != -1
+        - low = true
+    .spacer &nbsp;
+    .title-block(style="#{low ? 'position:relative; top:425px' : ''}"): .title-container
+        h2.title1 #{p.unit ? p.unit.title : p.title}
+
+
+mixin handout(p)
+    .handout &nbsp;
+    .handout \section{#{p.unit ? p.unit.title : p.title}}
+
+
+mixin insert_unit(p)
+  - d = get_unit(p.unit)
+    if p.title_slide
+        +section({unit:d, images:p.images})
+    if p.handout !== false
+        +handout({unit:d})
+    .notes.notes-header-tex &nbsp;
+    .notes.notes-header-tex \section{#{d.title}}
+    +render_unit(d)
+
+

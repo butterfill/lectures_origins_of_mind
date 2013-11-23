@@ -11,44 +11,36 @@ exercises: []
 exercises_fast: []
 ---
 
-include ../../../fragments/slide_mixins
+include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
 
 
 +slide_middle
   p.center  What is a communicative action?
-  .notes What is a communicative action?
+  .notes What is a communicative action? 
   .notes Why are we asking this question?
   .notes Let me try to explain it like this ...
-  
-+slide
-  .notes Why do we want to consider what communicative actions are?
-  .notes Here's what I take to be the view of Tomasello and colleagues.
-  p Theory of communicative action (Tomasello et al?):
-  .handout Theory of communicative action \citep[compare][]{Tomasello:2007fi}:
-  .handout \begin{enumerate}
-  ol
-    .handout \item
-    li.handout.show  Producing and understanding declarative pointing gestures constitutively involves embodying (?) 
-      span.shared-intentionality shared intentionality.
-    .handout \item
-    li.handout.show Embodying shared intentionality involves having knowledge about knowledge of your intentions about my intentions.
-  .handout \end{enumerate}
-  +invert('.shared-intentionality')
-  .notes No, I don't know what that is either.  I've asked you to find out in the last essay for this course.
-  +uninvert_('.shared-intentionality')
-  .slide
-    p.em-above Claims about development:
-    ol(style='list-style-type:lower-greek')
-      li 11- or 12-month-old infants produce and understand declarative pointing gestures.
-      li.slide Abilities to communicate play a role in explaning the emergence of knowledge of minds (among other things).
-      .notes If the theory of communicative action is correct, then the claims about development are incompatible.
-  .slide
-    p (Also, α rules out a conjecture about minimal theory of mind.)
-  .notes So, apparently, if Tomasello et al are right, I'm wrong about two things:
-  .notes First, I'm wrong that knowlegde of others' minds first emerges around three or four years of age and that one-year-old infants have only core knowledge of mental states.
-  .notes And, seccond, I'm probably also wrong to think that abilities to communicate (whether by language or not) could explain the emergence of knowledge of others' minds.
-  .notes This is one reason for asking, What is a communicative action?
 
+- step = false
++slide_rh_white({step:step})
+  .notes Recall what we said about comprehending and producing pointing gestures ...
+  +run_across
+    p.center Informative pointing
+  +left_half
+    +to_comprehend
+  +right_half({step:step})
+    +to_produce
+  +invert('.know, .communicate')
+  .notes Both comprehending and producing require knowing things about communication.
+  .notes To know something about communication you have to understand something about what it is, I suppose.
+  .notes So to know what is involved in being able to produce and comprehend pointing gestures, we have to know something about what it is to communicate.
+  .notes (This will also tell us what apes 6-month-old humans lack that prevents them from communicating with pointing gestures.)
+  
+
++slide_middle
+  .notes Reminder of the question.
+  p.center  What is a communicative action?
+  
 +slide
   .notes Let’s start with some simple examples of non-communicative actions.  
   ol
@@ -92,8 +84,27 @@ include ../../../fragments/slide_mixins
   p.right   (compare Grice 1989: chapter 14)
   .handout.ctd \citep[compare][chapter 14]{Grice:1989ha}.
   .notes To communicate, then, is to attempt to fulfil an intention by making it manifest to someone else that you have this intention.  If you’ve studied Grice you’ll know that his analysis of meaning led to a long and boring series of counterexamples and refinements, most of which shed no light on the nature of linguistic communication (Schiffer 1987).  But what’s really important about Grice isn’t the attempt to analyse meaning: it’s his insight
-  .slide.em-above
-    p Should we accept that pointing (and linguistic communication) involves intentions about intentions?
+  .slide
+    .notes Recall the comprehension of pointing case; what is the confederate doing if she's pointing to inform?
+    p.em-above.handout.show The confederate means something in pointing at the left box if she intends:
+    .handout \begin{enumerate}
+    ol
+      li
+        span.handout \item  
+        span.handout.show that you open the left box;
+      li 
+        span.handout \item  
+        span.handout.show that you recognize that she intends (1), that you open the left box; and 
+      li 
+        span.handout \item  
+        span.handout.show that your recognition that she intends (1) will be among your reasons for opening the left box.
+    p.right (Compare Grice 1967 p. 151; Neale 1992 p. 544)
+    .handout \end{enumerate}
+    .handout (compare \citealp[p.\ 151]{Grice:1969pv}; \citealp[p.\ 544]{Neale:1992uw})
+
+
++slide_middle
+    p.center Does pointing (and non-linguistic communication) involve intentions about intentions?
     .notes What are the alternatives?
     .notes I want to mention two alternatives ...
 
@@ -209,5 +220,37 @@ section.slide
       p.slide Is it shared intentionality?
       p.slide And what is that anyway, is that something borrowed from Grice?   
 
-+slide_middle
-  p.center To be continued ...
+
+
+
+
+
+
++slide
+  .notes Why do we want to consider what communicative actions are?
+  .notes Here's what I take to be the view of Tomasello and colleagues.
+  p Theory of communicative action (Tomasello et al?):
+  .handout Theory of communicative action \citep[compare][]{Tomasello:2007fi}:
+  .handout \begin{enumerate}
+  ol
+    .handout \item
+    li.handout.show  Producing and understanding declarative pointing gestures constitutively involves embodying (?) 
+      span.shared-intentionality shared intentionality.
+    .handout \item
+    li.handout.show Embodying shared intentionality involves having knowledge about knowledge of your intentions about my intentions.
+  .handout \end{enumerate}
+  +invert('.shared-intentionality')
+  .notes No, I don't know what that is either.  I've asked you to find out in the last essay for this course.
+  +uninvert_('.shared-intentionality')
+  .slide
+    p.em-above Claims about development:
+    ol(style='list-style-type:lower-greek')
+      li 11- or 12-month-old infants produce and understand declarative pointing gestures.
+      li.slide Abilities to communicate play a role in explaning the emergence of knowledge of minds (among other things).
+      .notes If the theory of communicative action is correct, then the claims about development are incompatible.
+  .slide
+    p (Also, α rules out a conjecture about minimal theory of mind.)
+  .notes So, apparently, if Tomasello et al are right, I'm wrong about two things:
+  .notes First, I'm wrong that knowlegde of others' minds first emerges around three or four years of age and that one-year-old infants have only core knowledge of mental states.
+  .notes And, seccond, I'm probably also wrong to think that abilities to communicate (whether by language or not) could explain the emergence of knowledge of others' minds.
+  .notes This is one reason for asking, What is a communicative action?

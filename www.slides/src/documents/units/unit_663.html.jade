@@ -11,7 +11,8 @@ exercises: []
 exercises_fast: []
 ---
 
-include ../../../fragments/slide_mixins
+include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
 
 +slide
   p Recap: From around 11 or 12 months of age, humans spontaneously use pointing to ...
@@ -34,14 +35,19 @@ include ../../../fragments/slide_mixins
 +slide
   .notes By the way, this is related to the essay topic on shared intentionality.
   .notes Tomasello takes infants' pointing to be based on what he calls shared intentionality.
-  p shared intentionality
-  p.em-above.handout.show ‘infant pointing is best understood---on many levels and in many ways---as depending on uniquely human skills and motivations for 
-    span.cooperation cooperation
-    span  and 
-    span.shared-intentionality shared intentionality
-    span , which enable such things as joint intentions and joint attention in truly collaborative interactions with others (Bratman, 1992; Searle, 1995).’
-  p.right Tomasello et al (2007, p. 706)
-  .handout.ctd \citep[p.\ 706]{Tomasello:2007fi}
+  .step1
+    p shared intentionality
+    p.em-above.handout.show
+      span.blur-except ‘infant pointing is best understood
+      span ---on many levels and in many ways---
+      span.blur-except as depending on 
+      span uniquely human skills and motivations for 
+      span.cooperation cooperation
+      span  and 
+      span.shared-intentionality.blur-except shared intentionality
+      span , which enable such things as joint intentions and joint attention in truly collaborative interactions with others (Bratman, 1992; Searle, 1995).’
+    p.right Tomasello et al (2007, p. 706)
+    .handout.ctd \citep[p.\ 706]{Tomasello:2007fi}
   .notes I don't want to pursue this here; I'm just mentioning it because you might want to draw on pointing in your seminar essays.
   .notes Instead I want to ask in a simpler way, how should we understand pointing as other non-linguistic forms of communication?
   .notes To approach this question, it's helpful to compare and contrast humans with other, nonhuman apes.
@@ -52,10 +58,17 @@ include ../../../fragments/slide_mixins
   +invert('.shared-intentionality')
   .notes There is this additional element, shared intentionality.  I don't understand what it is, but Tomasello and his colleagues are extraordinay scientsits so I think it's worth exploring.
   .notes That's it for now: all I want to do is highlight that our thinking about pointing is going to connect with questions about shared intentionality.
+  +uninvert_('.shared-intentionality')
+  +blur('.step1')
+  .slide
+    .notes But why suppose that ‘infant pointing is best understood … is best understood … as depending on … shared intentionality’?
+    .notes It's goingt to take a while to answer this question ...
+    p.em-above Why suppose this?
 
 +slide_middle
-  p.center a puzzle about pointing
   .notes So far it's been all very straightforward, but we're about to run into a puzzle.
+  .notes The puzzle will help us to understand why someone might think that ‘infant pointing is best understood … is best understood … as depending on … shared intentionality’
+  p.center a puzzle about pointing
   
 +slide
   .handout \subsection{Why don’t ape’s point?}
@@ -79,8 +92,9 @@ include ../../../fragments/slide_mixins
     +invert('.declaratively')
     .notes What does declaratively mean?  Liszkowski and Tomasello call pointing declarative when its done to initiate joint engagement.
 
+
 +slide
-  p Why don't apes point?  (Tomasello's question)
+  p Why don’t apes point?  (Tomasello’s question)
   p.em-above motor issues?
   p.right.slide But they do gesture
   p.em-above.slide understanding action?
@@ -89,7 +103,9 @@ include ../../../fragments/slide_mixins
     | the goals of others' actions.
   .notes So the discrepancy is not easily explained.
   .notes Comprehension is also missing ...
-
+  +blur('p:gt(0)')
+  .notes This question is the puzzle.  Or, rather, it's half of the puzzle.  (The other half is about why infants don't point until they're around 11 months old.)
+  
 +slide_middle
   p.center A clue: apes don't comprehend declarative pointing ...
 
@@ -122,10 +138,34 @@ include ../../../fragments/slide_mixins
     p.right Moll & Tomasello 2007
 
 +slide_middle
-  p.center Why don't 3-month-olds point?
+  p.center Why don’t apes 
+    span.line-through point
+    span  comprehend pointing gestures?
+  .notes What we've said is about comprehending pointing.
+  .notes But our question was, Why don't apes point?
+  .notes I think we can answer both questions, the one about production and comprehension together.
+  .notes I've taken the detour via comprehension only because I it's easier to see the answer in the case of comprehension.
+
++slide_rh_white({step:true})
+  .notes Here's what we already have about comprehending pointing gestures.
+  .notes This explains why apes don't comprehend pointing gestures --- they don't know (2) or (3) or both.
+  .notes But what can we say about why they don't point?  Think about what would be involved in producing a pointing gesture.
+  +run_across
+    p.center Informative pointing
+  +left_half
+    +to_comprehend
+  +right_half({step:true})
+    .notes Here's parallel view about production.
+    +to_produce
+    .notes So why don't apes point?
+    .notes Because they don't know (2) or (3) or both.
+
++slide_middle
+  p.center Why don’t 3-month-olds point?
   .notes Tomasello also asks this question.
   .notes.handout 'the specific behavioral form---distinctive hand shape with extended index finger---actually emerges reliably in infants as young as 3 months of age (Hannan \& Fogel, 1987). [...] why do infants not learn to use the extended index finger for these social functions at 3 – 6 months of age, but only at 12 months of age?' \citep[p.\ 716]{Tomasello:2007fi}
-  .notes Again his answer involves shared intentionality: it's because they don't understand shared intentionality until around their first birthdays.
+  .notes (Again Tomasello's answer involves shared intentionality: it's because they don't understand shared intentionality until around their first birthdays.)
+  .notes We can answer this in the same way --- they don't understand communication.
 
 +slide_middle
   // .notes \citet[p.\ 492]{Behne:2005qh}: 'the infant asks herself: Why did the adult do this for me? Why is this object to which he is gesturing relevant to our interaction?'
@@ -162,7 +202,9 @@ include ../../../fragments/slide_mixins
   .notes This makes sense of why chimpanzees don't point --- they don't understand communicative intention.
   p Why don’t apes point?
   p (And why don’t they understand declarative pointing?)
-  p.em-above Because they fail to ‘understand that by pointing towards a location, the other attempts to communicate to her where a desired object is located’ (Moll & Tomasello 2007)
+  p.em-above Because they fail to ‘understand that by pointing towards a location, the other attempts 
+    span.to-communicate to communicate
+    span  to her where a desired object is located’ (Moll & Tomasello 2007)
   .notes Note that this is an explanation which doesn't mention shared intentionality.
   .notes That's deliberate; sometimes Tomasello and colleagues answer this question by appeal to shared intentionality; I wanted to consider a simpler answer first and postpone thinking about shared intentionality for as long as possible.
   .notes Compare \citep[p.\ 516]{Tomasello:2010dy}: ‘they do not understand communicative intentions’
@@ -170,6 +212,7 @@ include ../../../fragments/slide_mixins
     p.em-above But
       ul
         li What is it to understand this?
+        +invert('.to-communicate')
         li.slide Do 12-month-old humans understand it?
   .notes But is this consistent with the findings that 12-month-old infants do point?
   .notes What is it to understand that by this pointing action another intends to communicate that?
