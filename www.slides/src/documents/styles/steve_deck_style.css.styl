@@ -77,7 +77,8 @@ blur()
     text-shadow: 0 0 5px rgba(0,0,0,1);
   span[class*='bkg-words-']
     opacity 0.4
-  .blur-except
+  .blur-except, span.blur-except
+    opacity 1
     animation-name anim_unblur
     color: rgba(255,255,255,1)
     default_text_shadow()
@@ -589,7 +590,7 @@ btm-white(height,top)
   btm-white 300px, 300px
 
 .deck-container .bottom-third-white
- btm-white 200px, 400px
+  btm-white 200px, 400px
 
 
 btm-black(height,top)
@@ -657,11 +658,13 @@ make-row-bkg(name,color)
       .bkg-{name}-row
         box-shadow: 0 0 1px white, 0 0 0.5em black
 
-make-row-bkg('blue', rgba(0, 128, 255,1))
-make-row-bkg('pink', rgba(255, 111, 207,1))
-// make-row-bkg('white', rgba(255, 255, 255, 1))
+make-row-bkg('grey', rgba(125,125,125,1))
+make-row-bkg('faint-grey', rgba(125,125,125,0.3))
+make-row-bkg('white', rgba(255,255,255,1))
 make-row-bkg('faint-white', rgba(255, 255, 255, 0.3))
+make-row-bkg('blue', rgba(0, 128, 255,1))
 make-row-bkg('faint-blue', rgba(0, 128, 255, 0.3))
+make-row-bkg('pink', rgba(255, 111, 207,1))
 make-row-bkg('faint-pink', rgba(255, 111, 207,0.3))
 make-row-bkg('yellow', rgba(255, 255, 0, 1))
 make-row-bkg('faint-yellow', rgba(255, 255, 0, 0.3))
@@ -679,8 +682,8 @@ make-row-bkg('limegreen', rgba(50,205,50,1))
 make-row-bkg('faint-limegreen', rgba(50,205,50,0.3))
 make-row-bkg('orange', rgba(255,165,0,1))
 make-row-bkg('faint-orange', rgba(255,165,0,0.3))
-make-row-bkg('grey', rgba(125,125,125,1))
-make-row-bkg('white', rgba(255,255,255,1))
+make-row-bkg('blueviolet', rgba(138,43,226,1))
+make-row-bkg('faint-blueviolet', rgba(138,43,226,0.3))
 
 
 .deck-container
@@ -758,11 +761,11 @@ make-bkg-words(name,color)
       left 0
       z-index -3
 
-make-bkg-words('blue', rgba(0, 128, 255,1))
-make-bkg-words('pink', rgba(255, 111, 207,1))
 make-bkg-words('white', rgba(255, 255, 255, 1))
 make-bkg-words('faint-white', rgba(255, 255, 255, 0.3))
+make-bkg-words('blue', rgba(0, 128, 255,1))
 make-bkg-words('faint-blue', rgba(0, 128, 255, 0.3))
+make-bkg-words('pink', rgba(255, 111, 207,1))
 make-bkg-words('faint-pink', rgba(255, 111, 207,0.3))
 make-bkg-words('yellow', rgba(255, 255, 0, 1))
 make-bkg-words('faint-yellow', rgba(255, 255, 0, 0.3))
@@ -780,6 +783,8 @@ make-bkg-words('limegreen', rgba(50,205,50,1))
 make-bkg-words('faint-limegreen', rgba(50,205,50,0.3))
 make-bkg-words('orange', rgba(255,165,0,1))
 make-bkg-words('faint-orange', rgba(255,165,0,0.3))
+make-bkg-words('blueviolet', rgba(138,43,226,1))
+make-bkg-words('faint-blueviolet', rgba(138,43,226,0.3))
 
 
 

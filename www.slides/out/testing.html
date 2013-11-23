@@ -119,6 +119,20 @@ var inject = function(){
     </div>
   </section>
   <section class="slide">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="words">
+          <div class="middle">
+            <div style="position:absolute;top:0px;left:0;z-index:-30;width:100%;margin-top:-150px;">
+              <p style="font-size:300px" class="center huge-glow"> ?</p>
+            </div>
+            <p class="center">nice big question mark behind some text</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slide">
     <div class="words">
       <div class="container_12">
         <div class="grid_12">
@@ -158,19 +172,15 @@ var inject = function(){
             <li><span>first line (in span)</span></li>
             <li><span>second line</span></li>
           </ol>
-          <div data-what=" ol:eq(0) li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
-          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=".fitch-proof .row-ol:eq(0) li:eq(0) .highlight-hook" data-class="bkg-grey-row" class="slide anim-addclass anim-continue"></div>
           <div data-what=" ol:eq(0) li:eq(0)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
-          <div data-what=" ol:eq(0) li:eq(1)" data-class="bkg-pink-row" class="slide anim-continue anim-addclass"></div>
-          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=".fitch-proof .row-ol:eq(0) li:eq(1) .highlight-hook" data-class="bkg-grey-row" class="slide anim-addclass anim-continue"></div>
           <div data-what=" ol:eq(0) li:eq(1)" data-class="bkg-pink-row" class="slide anim-continue anim-removeclass"></div>
           <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
           <!-- second list-->
-          <div data-what=" ol:eq(1) li:eq(0) span" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
-          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=".fitch-proof .row-ol:eq(1) li:eq(0) span .highlight-hook" data-class="bkg-grey-row" class="slide anim-addclass anim-continue"></div>
           <div data-what=" ol:eq(1) li:eq(0) span" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
-          <div data-what=" ol:eq(1) li:eq(1) span" data-class="bkg-pink-row" class="slide anim-continue anim-addclass"></div>
-          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=".fitch-proof .row-ol:eq(1) li:eq(1) span .highlight-hook" data-class="bkg-grey-row" class="slide anim-addclass anim-continue"></div>
         </div>
       </div>
     </div>
@@ -205,11 +215,9 @@ var inject = function(){
           </ol>
           <div class="notes">So why don't apes point?</div>
           <div class="notes">Because they don't know (2) or (3) or both.</div>
-          <div data-what=" ol:eq(1) li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
-          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=".fitch-proof .row-ol:eq(1) li:eq(1) .highlight-hook" data-class="bkg-grey-row" class="slide anim-addclass anim-continue"></div>
           <div data-what=" ol:eq(1) li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-removeclass"></div>
-          <div data-what=" ol:eq(0) li:eq(1)" data-class="bkg-grey-row" class="slide anim-continue anim-addclass"></div>
-          <div data-what="#notanelement" data-class="" class="slide anim-addclass"></div>
+          <div data-what=".fitch-proof .row-ol:eq(0) li:eq(1) .highlight-hook" data-class="bkg-grey-row" class="slide anim-addclass anim-continue"></div>
         </div>
       </div>
     </div>

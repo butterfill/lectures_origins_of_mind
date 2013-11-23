@@ -1,0 +1,68 @@
+//-
+//- compatibility_mixins.jade
+//- makes it easy to switch from slide_mixins to the newer unit_mixins for units
+//- upgrading from slide_mixins without compatibility_mixins requires that you:
+//-  - remove recall and unrecall (use the new slide-clone plugin instead)
+//-  - replace showhide and showremove with show_ hide_ etc
+//-  - replace row-bkg with highlight-row etc
+//-  - replace words-bkg with highlight
+
+
+
+//- ******************
+//- invert and highlight
+
+mixin words-bkg(what, color, container)
+  +highlight(what, color, container)
+mixin words-bkg-faint(what, color, container)
+  +highlight-faint(what, color, container)
+mixin words-bkg-remove_(what, color, container)
+  +highlight-remove_(what, color, container)
+mixin words-bkg-remove(what, color, container)
+  +highlight-remove(what, color, container)
+mixin words-bkg-remove-all(what, container)
+  +highlight-remove-all(what, container)
+
+mixin row-bkg(what, color, container)
+  +highlight-row(what, color, container)
+mixin row-bkg-remove_(what, color, container)
+  +highlight-row-remove_(what, color, container)
+mixin row-bkg-remove(what, color, container)
+  +highlight-row-remove(what, color, container)
+
+
+
+//- -------------
+//- use the new slide-clone plugin instead!!!!
+//- recall slides (can also preview)
+//- parameter should be a selector for the slide, e.g. #categorical_perception_slide
+//- -------------
+mixin recall(selector)
+  .slide.anim-addclass(data-what="#{selector}",data-class="recall",data-scope=".deck-container")
+
+mixin unrecall(selector)
+  .slide.anim-removeclass(data-what="#{selector}",data-class="recall",data-scope=".deck-container")
+
+
+mixin showhide(showwhat, hidewhat)
+  if typeof(showwhat)==='string'
+    - showwhat = [showwhat]
+  if typeof(hidewhat)==='string'
+    - hidewhat = [hidewhat]
+  each thing in showwhat
+    .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="hide")
+  each thing in hidewhat
+    .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="hide")
+  mixin anim_end()
+
+mixin showremove(showwhat, hidewhat)
+  if typeof(showwhat)==='string'
+    - showwhat = [showwhat]
+  if typeof(hidewhat)==='string'
+    - hidewhat = [hidewhat]
+  each thing in showwhat
+    .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="hide")
+  each thing in hidewhat
+    .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="remove-me")
+  mixin anim_end()
+
