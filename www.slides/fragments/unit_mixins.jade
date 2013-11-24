@@ -47,7 +47,8 @@ mixin slide_img(filename)
 //- This sequence creates rh_white slides
 mixin left_half()
   .grid_6.words.left-half
-    block
+    div(style='padding-right:1em;')
+      block
 mixin right_half(p)
   - p = p || {step:false}
   .grid_6.words.invert.right-half(class="#{ p.step ? 'hide' : '' }")
@@ -268,32 +269,24 @@ mixin uninvert(what, container)
   +uninvert_(what, container)
   +anim_end()
 
-//- compatibility with old versions
-mixin words-bkg(what, color, container)
-  +highlight(what, color, container)
-mixin words-bkg-faint(what, color, container)
-  +highlight-faint(what, color, container)
-mixin words-bkg-remove_(what, color, container)
-  +highlight-remove_(what, color, container)
-mixin words-bkg-remove(what, color, container)
-  +highlight-remove(what, color, container)
-mixin words-bkg-remove-all(what, container)
-  +highlight-remove-all(what, container)
-
-mixin highlight(what, color, container)
+mixin highlight_(what, color, container)
   if typeof(what)==='string'
     - what = [what]
   color = color || 'pink'
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-#{color}")
+mixin highlight(what, color, container)
+  +highlight_(what, color, container)
   +anim_end()
 
-mixin highlight-faint(what, color, container)
+mixin highlight-faint_(what, color, container)
   if typeof(what)==='string'
     - what = [what]
   color = color || 'pink'
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-faint-#{color}")
+mixin highlight-faint(what, color, container)
+  +highlight-faint_(what, color, container)
   +anim_end()
 
 mixin highlight-remove_(what, color, container)
@@ -302,16 +295,17 @@ mixin highlight-remove_(what, color, container)
   color = color || 'pink'
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-#{color}")
-
 mixin highlight-remove(what, color, container)
   +words-bkg-remove_(what, color, container)
   +anim_end()
 
-mixin highlight-remove-all(what, container)
+mixin highlight-remove-all_(what, container)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-*")
+mixin highlight-remove-all(what, container)
+  +highlight-remove-all_(what, container)
   +anim_end()
 
 
@@ -319,13 +313,6 @@ mixin highlight-remove-all(what, container)
 //- ********************
 //- row highlighting
 
-//- for compatibility
-mixin row-bkg(what, color, container)
-  +highlight-row(what, color, container)
-mixin row-bkg-remove_(what, color, container)
-  +highlight-row-remove_(what, color, container)
-mixin row-bkg-remove(what, color, container)
-  +highlight-row-remove(what, color, container)
 
 mixin highlight-row(what, color, container)
   if typeof(what)==='string'

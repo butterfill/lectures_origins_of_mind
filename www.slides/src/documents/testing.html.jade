@@ -5,6 +5,7 @@ weburl: ''
 ---
 
 include ../../fragments/unit_mixins
+include ../../fragments/compatibility_mixins
 include ../../fragments/logic_mixins
 
 
@@ -46,12 +47,12 @@ include ../../fragments/logic_mixins
       span   
       span.text text
     +invert('.highlights1')
-    +words-bkg('.highlights2')
-    +words-bkg('.highlights3','blue')
-    +words-bkg('p:eq(2)','yellow')
-    +words-bkg('.highlights4', 'forestgreen')
-    +words-bkg('.in', 'lime')
-    +words-bkg('.text', 'orange')
+    +highlight('.highlights2')
+    +highlight('.highlights3','blue')
+    +highlight('p:eq(2)','yellow')
+    +highlight('.highlights4', 'forestgreen')
+    +highlight('.in', 'lime')
+    +highlight('.text', 'orange')
 
   +slide
     p test row bkg
@@ -64,14 +65,14 @@ include ../../fragments/logic_mixins
         span first line (in span)
       li
         span second line
-    +row-bkg('ol:eq(0) li:eq(0)' ) 
-    +row-bkg-remove_('ol:eq(0) li:eq(0)' )
-    +row-bkg('ol:eq(0) li:eq(1)', 'pink')
-    +row-bkg-remove('ol:eq(0) li:eq(1)', 'pink')
+    +highlight-row('ol:eq(0) li:eq(0)' ) 
+    +highlight-row-remove_('ol:eq(0) li:eq(0)' )
+    +highlight-row('ol:eq(0) li:eq(1)', 'pink')
+    +highlight-row-remove('ol:eq(0) li:eq(1)', 'pink')
     // second list
-    +row-bkg('ol:eq(1) li:eq(0) span' )
-    +row-bkg-remove_('ol:eq(1) li:eq(0) span' )
-    +row-bkg('ol:eq(1) li:eq(1) span', 'pink')
+    +highlight-row('ol:eq(1) li:eq(0) span' )
+    +highlight-row-remove_('ol:eq(1) li:eq(0) span' )
+    +highlight-row('ol:eq(1) li:eq(1) span', 'pink')
 
 
   +slide_rh_white({step:false})
@@ -84,20 +85,20 @@ include ../../fragments/logic_mixins
       p To comprehend:
       ol
         li know that this person is pointing to location L;
-        li don't use row-bkg in rh_white
+        li don't use highlight-row in rh_white
         li know that what she is attempting to communicate is that object X it at L.
     +right_half({step:false})
       .notes Here's parallel view about production.
       p To produce:
       ol
         li know how to point to location L;
-        li really don't use row-bkg in rh_white
+        li really don't use highlight-row in rh_white
         li know that what you can communicate is that object X is at L.
       .notes So why don't apes point?
       .notes Because they don't know (2) or (3) or both.
-      +row-bkg('ol:eq(1) li:eq(1)')
-      +row-bkg-remove_('ol:eq(1) li:eq(1)')
-      +row-bkg('ol:eq(0) li:eq(1)')
+      +highlight-row('ol:eq(1) li:eq(1)')
+      +highlight-row-remove_('ol:eq(1) li:eq(1)')
+      +highlight-row('ol:eq(0) li:eq(1)')
 
 
 
@@ -107,7 +108,7 @@ include ../../fragments/logic_mixins
       p.blur1 this will be blurred
       p.highlight1 this will be highlighted
       mixin blur('.blur1')
-      mixin words-bkg('.highlight1','teal')
+      mixin highlight('.highlight1','teal')
 
 
   .slide#test_steps

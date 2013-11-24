@@ -234,64 +234,83 @@ mixin slide_the_question()
     .notes First consider the wave from earlier ...
 
 
-section.slide
++slide_rh_white
   .notes An example contrasting Grice and Davidson on the wave.
-  .words: .container_12: .grid_5
+  +left_half
     p Grice
     p.em-above Goal: get Ben to come over
     p.em-above Means: get Ben to recognise that I intend to get Ben to come over
     p.em-above
       span.intention Intention
-      span : to get Ben to come over by means of getting Ben to recognise that I 
+      span : to get Ben to come over by means of getting Ben to 
+      span.recognise recognise
+      span  that I 
       span.intention intend
       span  to get Ben to come over.
-  .right-half-white
-    .words: .container_12: .grid_6
-      p Davidson
-      p.em-above Goal: get Ben to come over
-      p.em-above Intention: that Ben take this wave to mean that he should come over.
-      p.em-above Ulterior intention: that Ben come over.
-      .notes These intentions have a means-end ordering; the ulterior intention is further down the means-end chain.
-      .notes Strictly speaking, that Ben should come over might not be the first meaning of the wave (so there are other options here).
-
-section.slide
+  +right-half
+    p Davidson
+    p.em-above Goal: get Ben to come over
+    p.em-above Semantic Intention: that Ben take this wave to 
+      span.mean mean
+      span  that he should come over.
+    p.em-above Ulterior intention: that Ben come over.
+    .notes These intentions have a means-end ordering; the ulterior intention is further down the means-end chain.
+    .notes Strictly speaking, that Ben should come over might not be the first meaning of the wave (so there are other options here).
+  +highlight('.intention, .recognise', 'blue')
+  .notes As mentioned before, Grice's view involves intentions about recognising intentions.
+  +highlight('.mean')
+  .notes By contrast, Davidson's view requires an intention about meaning.
+  .notes What this involves depends, of course, on how we understand meaning.
+  .notes But maybe there is a way of understanding meaning on which this is not too demanding. (I'm really not sure.)
+  
++slide_rh_white
   .notes Now contrast Grice and Davidson on the pointing action from the Hare et al study, where you're supposed to take one of two containers.
-  .words: .container_12: .grid_5
+  +left_half
     p Grice
     p.em-above Goal: get Ayesha to select the left container
     p.em-above Means: get Ayesha to recognise that I intend Ayesha to select the left container
     p.em-above
       span.intention Intention
-      span : to get Ayesha to selet the left container by means of getting Ayesha to recognise that I am pointing to the left container with the intention that she select the left container.
-  .right-half-white
-    .words: .container_12: .grid_6
-      p Davidson
-      p.em-above Goal: get Ayesha to select the left container
-      p.em-above Semantic Intention: that Ayesha take this pointing gesture to refer to the left container
-      p.em-above Ulterior Intention: that Ayesha select the left container
-      .notes Strictly speaking, that Ben should come over might not be the first meaning of the wave (so there are other options here).
+      span : to get Ayesha to selet the left container by means of getting Ayesha to 
+      span.recognise recognise
+      span that I am pointing to the left container with the 
+      span.intention intention
+      span  that she select the left container.
+  +right-half
+    p Davidson
+    p.em-above Goal: get Ayesha to select the left container
+    p.em-above Semantic Intention: that Ayesha take this pointing gesture to 
+      span.refer refer
+      span  to the left container
+    p.em-above Ulterior Intention: that Ayesha select the left container
+    .notes Strictly speaking, that Ben should come over might not be the first meaning of the wave (so there are other options here).
+  +highlight_('.intention, .recognise', 'blue')
+  +highlight('.refer')
+  .notes As before, there's a contrast in what must be intended and so what we're committing ourselves to in saying that infants can produce and comprehend informative pointing.
 
 +slide
   p Conclusion for What is a communicative action?
   .notes The question was, Should we accept that pointing (and linguistic communication) involves intentions about intentions?
   p.em-above Should we accept that pointing (and linguistic communication) involves intentions about intentions?
-  ol
+  ol.slide
     li If Grice (and Tomasello et al) are right about communication, then infant pointing involves sophisticated insights into others’ minds.
-    li But there are alternatives to the Gricean story.
-    li If Davidson’s* alternative is right, communication requires understanding intentions about how to be understood but not necessarily sophisticated insights into others’ minds.
-    .notes (*Davidson himself thinks all communication involves sophisticated insights into others’ minds …)
+    li.slide But there are alternatives to the Gricean story.
+    li.slide If Davidson’s
+      span.asterix *
+      span  alternative is right, communication requires understanding intentions about meaning or reference but not necessarily sophisticated insights into others’ minds.
     .notes Is this enough to save the view about development I wanted to offer.  Maybe, maybe not …
-
+    +invert('.asterix')
+    .notes (*Davidson himself thinks all communication involves sophisticated insights into others’ minds …)
 
 +slide
   p Conclusion for Pointing
   ol
     li 11- and 12-month-old infants can point to (i) request, (ii) inform and (iii) initiate joint engagement.
     li.slide ... and they can understand these kinds of pointing gesture.
-    li.slide Understanding pointing requires more than understanding goal-directed action (see: why don't apes & 6-month-olds point)
+    li.slide Understanding pointing requires more than understanding goal-directed action (see: why don’t apes & 6-month-olds point)
     li.slide But what more is required?
       p.slide Is it shared intentionality?
-      p.slide And what is that anyway, is that something borrowed from Grice?   
+      p.slide And what is that anyway, is that something inspired by, and adapted from, Grice?   
 
 
 
