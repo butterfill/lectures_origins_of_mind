@@ -1,4 +1,7 @@
-
+//- update if moving from slide_mixins.jade
+//-   rename:
+//-     highlight-row to highlight-proof-row_
+//-     unhighlight-row to unhighlight-proof-row_
 
 //- -------------
 //- logically valid df
@@ -146,10 +149,16 @@ mixin fitch_proof(prf,start_line)
 //- nb: after calling one or more of these highlights, use mixin anim_end
 
 //- highlight a row of a proof
-mixin highlight_row(row_num)
+mixin highlight-proof-row_(row_num)
   .slide.anim-addclass.anim-continue(data-what=".fitch-proof .row-#{row_num} .highlight-hook", data-class="bkg-grey-row")
-mixin unhighlight_row(row_num)
+mixin highlight-proof-row(row_num)
+  +highlight-proof-row_(row_num)
+  +anim_end
+mixin unhighlight-proof-row_(row_num)
   .slide.anim-removeclass.anim-continue(data-what=".fitch-proof .row-#{row_num} .highlight-hook", data-class="bkg-grey-row")
+mixin unhighlight-proof-row(row_num)
+  +unhighlight-proof-row_(row_num)
+  +anim_end
 
 //- highlights just one of the numbers in a rule of proof
 mixin highlight_citation(row_num, citation_num)

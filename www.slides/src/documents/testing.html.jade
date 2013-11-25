@@ -451,20 +451,18 @@ include ../../fragments/logic_mixins
         mixin fitch_proof(prf1)
       
       //- highlight bits of the proof
-      mixin highlight_row(3)
-      mixin anim_end()
+      mixin highlight-proof-row(3)
       
       //- highlight bits of the proof and draw a connector linking them
       #fitch1_high
-        mixin unhighlight_row(3)
+        mixin unhighlight-proof-row_(3)
         mixin highlight_citation(3,1)
         mixin highlight_cited_sentence(1)
         mixin connect({from:'#firstproof .fitch-proof .row-1 .sentence', to:'#firstproof .fitch-proof .row-3 .citation-1', color:'yellow'})
 
       mixin unhighlight_citation(3,1)
       mixin unhighlight_cited_sentence(1)
-      mixin highlight_row(4)
-      mixin anim_end()
+      mixin highlight-proof-row(4)
 
   // lots of proofs on a page, with subproofs
   .slide

@@ -9,11 +9,84 @@ duration: 5
 book: []
 exercises: []
 exercises_fast: []
+standalone: true
 ---
 
 include ../../../fragments/unit_mixins
-include ../../../fragments/origins_mixins
 
+mixin slide_pointing-vs-linguistic(p)
+  - p = p || {step:true}
+  +slide_rh_white({step:p.step})
+    +run_across
+      p.center  Pointing vs. linguistic communication
+    +left_half
+      p a point
+      - hideif= p.step ? "hide" : ""
+      ol
+        li(class=hideif)
+          span.referent associate gesture with referent
+        li(class=hideif)
+          span.utterer identify the agent of the gesture
+        li(class=hideif)
+          span.recepient identify the intended recepient of the gesture
+        li
+          span infer message 
+          span  (Why is  
+          span.utterer this agent
+          span   pointing at  
+          span.referent that thing
+          span    
+          span.recepient for her
+          span ?)
+        if p.step
+          +highlight('.referent', 'forestgreen')
+          +show('li.hide:has(.referent)')
+          +unhighlight('.referent', 'forestgreen')
+          +highlight('.utterer', 'yellow')
+          +show('li.hide:has(.utterer)')
+          +unhighlight('.utterer', 'yellow')
+          +highlight('.recepient', 'pink')
+          +show('li.hide:has(.recepient)')
+          +unhighlight('.recepient', 'pink')
+    +right_half({step:p.step})
+      p a one-word utterance
+      ol
+        li
+          span.associate-word  associate word with referent
+        li identify the utterer
+        li identify the intended audience
+        li infer message (Why is this utterer talking to her about that thing?)
+      if p.step
+        +invert('.associate-word')
+        .notes Last time we focussed on how children get to associate words with their referents (or meanings, whatever exactly those turn out to be).
+        .notes Here we discussed the idea that this comes about by training, and contrasted it with the idea that children identify the referents of words through the use of reason.
+        .notes What I want to stress now is that getting the word-referent relation is only a part of what's needed to communicate by language.
+        .notes This was brought out drammatically by the Hare and Tomasello task I mentioned earlier ...
+    block
 
-+slide_middle
-  p.center  ***todo
++slide_pointing-vs-linguistic
+
++slide
+  .notes Recall this experiment in which Hare and Call (\citeyear{hare_chimpanzees_2004}) contrast pointing with a failed reach as two ways of indicating which of two closed containers a reward is in.  Chimps can easily interpret a failed reach but are stumped by the point to a closed container.
+  .notes \textbf{Note that} chimpanzees do follow the point to a container \citep[see][p.\ 6]{Moll:2007gu}.
+  .notes Chimps do follow the point to the container, but they don't get the message.
+  img(src='/img/hare_2004_fig.png')
+  p.source Hare & Tomasello 2004  
+
++slide
+  .notes Tincoff and Jusczyk showed 6 month old infants two videos (not pictures: what you see here are stills from their videos) simultaneously.
+  .notes While the videos were playing, the infants heard a word spoken.  The word was either 'hand' or 'foot'.
+  .notes Which video did they look at more?
+  img(src='/img/tincoff_2011_fig1.png')
+  p.source Tincoff and Jusczyk 2011, figure 1
+
++slide
+  .notes Here are Tincoff and Jusczyk's results.
+  .notes They suggest that 6-month-olds can already associate some words with their referents.
+  .notes But 6-month-old infants don't communicate, neither with words nor by pointing.
+  img(src='/img/tincoff_2011_fig2.png')
+  p.source Tincoff and Jusczyk 2011, figure 1
+
++slide_pointing-vs-linguistic({step:false})
+  +invert('.referent:eq(0)')
+  +invert('.associate-word')

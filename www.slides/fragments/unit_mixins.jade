@@ -289,6 +289,12 @@ mixin highlight-faint(what, color, container)
   +highlight-faint_(what, color, container)
   +anim_end()
 
+//- should've named these better
+mixin unhighlight(what, color, container)
+  +highlight-remove(what, color, container)
+mixin unhighlight_(what, color, container)
+  +highlight-remove_(what, color, container)
+
 mixin highlight-remove_(what, color, container)
   if typeof(what)==='string'
     - what = [what]
@@ -296,7 +302,7 @@ mixin highlight-remove_(what, color, container)
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-#{color}")
 mixin highlight-remove(what, color, container)
-  +words-bkg-remove_(what, color, container)
+  +highlight-remove_(what, color, container)
   +anim_end()
 
 mixin highlight-remove-all_(what, container)
@@ -314,29 +320,28 @@ mixin highlight-remove-all(what, container)
 //- row highlighting
 
 
-mixin highlight-row(what, color, container)
+mixin highlight-row_(what, color, container)
   if typeof(what)==='string'
     - what = [what]
-  if !color
-    color = 'grey'
+  color = color || 'grey'
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-#{color}-row")
     if color=='white'
       .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}", data-class="invert")
+mixin highlight-row(what, color, container)
+  +highlight-row_(what, color, container)
   +anim_end()
 
 mixin highlight-row-remove_(what, color, container)
   if typeof(what)==='string'
     - what = [what]
-  if !color
-    color = 'grey'
+  color = color || 'grey'
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-#{color}-row")
     if color=='white'
       .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}", data-class="invert")
-
 mixin highlight-row-remove(what, color, container)
-  +row-bkg-remove_(what, color, container)
+  +highlight-row-remove_(what, color, container)
   +anim_end()
 
 
