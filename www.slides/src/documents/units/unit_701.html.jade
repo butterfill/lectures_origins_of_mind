@@ -2,31 +2,242 @@
 layout: 'deck_unit'
 title: "Action"
 tags: []
-description: "Understanding action."
+description: "When do human infants first track goal-directed actions and not just movements?  A variety of evidence suggests that the answer is, from around three months.  Is this competence is related to adults’ abilites to track goal-directed action?  Is it a manifestation of cor knowledge?"
 depends: ['']
 source: ['']
 duration: 5
 book: []
 exercises: []
 exercises_fast: []
-standalone: true
 ---
 
 include ../../../fragments/unit_mixins
 
+
+//- Gergeley et al 1995
+
++slide_middle
+  .notes Our first question is, When do human infants first track goal-directed actions and not just movements?
+  .notes In examining nonlinguistic communication, we've assumed that infants from around 11 months of age can produce and comprehend informative pointing.
+  .notes This commits us to saying that they have 
+  p.center When do human infants first track goal-directed actions
+    br
+    | rather than mere movements only?
+
 +slide
-  p ***todo: start with Gergely and Csibra 
+  //- sources
+  .notes #source 'research/teleological stance -- csibra and gergely.doc'
+  .notes #source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture05 actions intentions goals'
+  .notes #source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture06 goal ascription teleological motor'
+  //- notes for slide
+  .notes When do human infants first track goal-directed actions and not just movements?
+  .notes Here's a classic experiment from way back in 1995.
+  .notes The subjects were 12 month old infants.
+  .notes They were habituated to this sequence of events.
+  +img_clip('gergely_1995_fig1.png', 'rect(0,1000px,250px,0)')
+  +clip('img:eq(0)','auto')
+  p.source Gergely et al 1995, figure 1
+  .notes There was also a control group who were habituated to a display like this one but with the central barrier moved to the right, so that the action of the ball is 'non-rational'.
   
 +slide
+  .notes For the test condition, infants were divided into two groups.  One saw a new action, the other an old action.
+  .notes Now if infants were considering the movements only and ignoring information about the goal, the 'new action' (movement in a straight line) should be more interesting because it is most different.
+  .notes But if infants are taking goal-related information into acction, the 'old action' might be unexpected and so might generate greater dishabituation.
+  img(src='/img/gergely_1995_fig3.png')
+  p.source Gergely et al 1995, figure 3
+  .notes There was also a control group who were habituated to a display like this one but with the central barrier moved to the right, so that the action of the ball is 'non-rational'.
+
+
++slide
+  +img_clip('gergely_1995_fig5.png', 'rect(0,350px,1000px,0)')
+  p.source Gergely et al 1995, figure 5
+  +clip('img:eq(0)','auto')
+  .notes The nonrational control group were habituated to a display like this one but with the central barrier moved to the right, so that the action of the ball is 'non-rational'.
+  .handout ‘by the end of the first year infants are indeed capable of taking the intentional stance (Dennett, 1987) in interpreting the goal- directed behavior of rational agents.’
+  .handout.ctd \citep[p.\ 184]{Gergely:1995sq}
+  .handout ‘12-month-old babies could identify the agent’s goal and analyze its actions causally in relation to it’
+  .handout.ctd \citep[p.\ 190]{Gergely:1995sq}
+
+
+
++slide
+  .notes You might say, it's bizarre to have used balls in this study, that can't show us anything about infants' understanding of action.
+  .notes But adult humans naturally interpret the movements of even very simple shapes in terms of goals.
+  .notes So using even very simple stimuli doesn't undermine the interpretation of these results.
+  img(src='/img/heider_1946_fig1.png')
+  p.source Heider and Simmel, figure 1
+
+
+
++slide
+  .notes Consider a related study by Woodward and colleagues.
+  .notes (It's good that there is converging evidence from different labs, using quite different stimuli.)
   +img_clip('wodward_2001_fig1.png', 'rect(0,1000px,250px,0)')
   p.source Woodward et al 2001, figure 1
   +clip('img:eq(0)','auto')
   .notes.handout 'Six-month-olds and 9-month-olds showed a stronger novelty response (i.e., looked longer) on new-goal trials than on new-path trials (Woodward 1998). That is, like toddlers, young infants selectively attended to and remembered the features of the event that were relevant to the actor’s goal.'
   .notes.handout.ctd \citep[p.\ 153]{woodward:2001_making}
 
-+slide
-  .notes What do infants understand of action?  Intention
-  p.handout.show ‘to the extent that young infants are limited in this way, their understanding of intentions would be quite different from the mature concept of intentions as inde- pendent of particular actions.’
-  p.right Woodward et al 2001, p. 168
-  .handout.ctd \citep[p.\ 168]{woodward:2001_making}
+
+
+section.slide
+  .container_12
+    .grid_6: .words
+      .notes Consider a further experiment by \citet{Csibra:2003jv}.
+      .notes This is just like the first ball-jumping experiment except that here infants see the action but not the circumstances in which it occurs.
+      .notes Do they expect there to be an object in the way behind that barrier?
+      div(style='margin-top:100px')
+        +img_clip('csibra_2003_fig6.png', 'rect(0,1000px,175px,0)')
+    .slide.grid_6: .words
+      div(style='margin-top:-175px')
+        +img_clip('csibra_2003_fig6.png', 'rect(175px,1000px,1000px,0)')
+  .clear
+  .words
+    p.source Csibra et al 2003, figure 6
+
+
   
++slide_middle
+  p.center human adults
+  .notes Why think about adults when you want to know about the origins of knowledge?
+  .notes Because sometimes it's possible to identify adult abilities which are plausibly identical to infant abilities.
+  .notes We saw an example of this in thinking about knowledge of minds, and in thinking about knowledge of colour.
+  .notes In both cases, linking infants' competence to adults' competence allowed us to better understand the competence.
+  .notes Can we also make such a link in the case of action?
+
+section.slide
+  .words
+    .container_12: .grid_12
+      .notes I already mentioned this classic study by Heider and Simmel.
+      .notes This kind of study has been done with human adults quite a bit since then.
+      .notes It is quite tempting to suppose that what we see here is automatic ascription of goals in adults.
+      .step1 
+        img(src='/img/heider_1946_fig1.png')
+        p.source Heider and Simmel, figure 1
+      +fade('.step1')
+  .slide
+    div(style='position: absolute; top:0; left:0; width:100%; height:100%;')
+      .container_12: .grid_12
+        .words: .middle
+          p.center automatic? perceptual?
+          .notes But is it automatic?  Is it perceptual?  Is there any evidence?
+
++slide
+  .notes \citet{Premack:1990jl} and \citet{Scholl:2000eq} all draw a parallel between causation and action.
+  .notes (Premack's hypothesis that infants' understanding of intention is comparable to the understanding of causal interactions as shown by Michotte's launching stimuli (\citep{Premack:1990jl}; see also \citep{Premack:1997ek}).)
+  .notes We saw (back in lecture 4) that there is quite convincing evidence that causal interactions are represented in perceptual proceses.
+  .notes So if there is really a parallel, we could infer that relations between actions and goals are represented in perceptual processes too.
+  p.handout.show ‘just as the visual system works to recover the physical structure of the world by inferring properties such as 3-D shape, so too does it work to recover the  
+    span.causal-and-social causal and social
+    span   structure of the world by inferring properties such as causality’
+  p.right Scholl & Tremoulet 2000, p. 299
+  .handout.ctd \citep[p.\ 299]{Scholl:2000eq}
+  +invert('.causal-and-social')
+  
++slide({bkg:'slide_emergence_warwick_099.jpg'})
+  .notes Recall this habituation experiment.
+  .notes they suggets that both 
++slide({bkg:'slide_emergence_warwick_102.jpg'})
+  .notes The new Gergely et al experiment about action is based on the same habituation technique.
++slide({bkg:'slide_emergence_warwick_103.jpg'})
++slide({bkg:'slide_emergence_warwick_104.jpg'})
++slide({bkg:'slide_emergence_warwick_105.jpg'})
++slide({bkg:'slide_emergence_warwick_106.jpg'})
+  .notes If I had more time, I'd tell you a long story about speech and action.
+  .notes Maybe some of us will get together another time and I can tell you that story then.
+  .notes (*nb: \citep{zwickel:2010_interference} also argue for perceptual categories in perceiving actions, and do so by comparison with pop-out effects for orientations.)
+
+
+
++slide
+  .notes Subjects have to judge whether the dot is to the left or the right of the triangle (from their perspective).
+  .notes If you think this is just a triangle, then it doesn't have a left or right so there's no congruent or incongruent.
+  .notes But if you think the triangle performs goal directed actions, then in the figure on the top right, the dot is left of the triangle from your point of view but right of the triangle from its point of view.
+  .notes Could there be altercentric interference?
+  +img_clip('zwickel_2011_fig1.png', 'rect(0,1000px,225px,0)')
+  p.source Zwickel et al 2011, figure 1
+  +clip('img:eq(0)','auto')
+
++slide
+  .notes Here are the results.
+  .notes When the triangle makes random movements: there's no difference in RT between congruent and incongruent conditions.  (As you'd expect---this just shows that there's nothing wrong with the setup.)
+  .notes (The experiment involved comparing neurotypical (ordinary) subjects with AS subjects; that's interesting but too complex for us so we'll just focus on the neurotypical subjects' perforamnce.)
+  .notes Could there be altercentric interference?
+  +img_clip('zwickel_2011_fig2.png', 'rect(0,375px,1000px,0)')
+  p.source Zwickel et al 2011, figure 2
+  +clip('img:eq(0)','auto')
+
++slide_middle
+  .notes What can we conclude?
+  .notes For adults, tracking information about goals makes one susceptible to interference from other other's perspective---it makes one susceptible to evaluting left and right from another's point of view.
+  .notes This altercentric interference effect is a long way short of showing that the goal ascription is automatic or perceptual.
+  .notes After all, such interference might be a consequence of thinking reflectively about the goals of the objects.
+  .notes But it is at least a step in the direction in that it shows that, in adults, goal ascription can at least have effects on automatic processes.
+  .notes (If automatic processes are informationally encapsulated, then this is evidence that goal ascription is automatic.)
+  .notes (*Other evidence: \citep{Gao:2010,Teufel:2010})
+  p.center altercentric interference 
+
+
+
++slide_middle
+  .notes Would be nice to talk about this but we don't have time (could use some Brian Hare experiments; also Gomez?.)
+  p.center nonhuman primates
+
+
++slide_rh_white({step:true})
+  +left_half
+    p So far ...
+    ol
+      li Infants track the goals to which actions are directed from around three months of age.
+      li.slide Adults’ abilities to track goal-directed action may resemble their abilities to track causal interactions in being (i) automatic and perhape even (ii) perceptual.
+    .notes (The three months of age figure comes from \citet{Sommerville:2005te}.)m
+  +right_half({step:true})
+    .notes So it's maybe plausible there is core knowledge of action.
+    .notes What we haven't done here (and can't do, as far as I know) is to show that infants lack knowledge knowledge of action.
+    .notes So it's open to someone to deny that infants have core knowledge of action on the grounds that they have knowledge knowledge of it.
+    p core knowledge of
+    ol
+      li (colour)
+      li physical objects
+      li mental states 
+      li (syntax)
+      li: span.action action
+      li number
+      +highlight('.action')
+
++slide_middle
+  .notes Moving towards our next topic ...
+  .notes But, What do infants understand of actions and their goals?
+  .notes Or, as I like to put the quesiton, What model of action underpins infant cognition of action?
+  p.center What do six- or twelve-month-old infants understand of actions and their goals?
+
+
++slide
+  .notes What do infants understand of action?  Intention?
+  .notes \citet{Premack:1990jl} says yes.
+  p.handout.show ‘in perceiving one object as having the intention of affecting another, the infant attributes to the object [...] intentions’
+  p.right Premack 1990: 14
+  .handout.ctd \citep[p.\ 14]{Premack:1990jl}
+  .notes But Geregely et al and Woodward et al say no.
+  .slide.em-above
+    p.handout.show ‘by taking the intentional stance the infant can come to represent the agent’s action as intentional without actually attributing a mental representation of the future goal state’
+    p.right Gergely et al 1995, p. 188
+    .handout.ctd \citep[p.\ 188]{Gergely:1995sq}
+    .notes It isn't clear that this proposal can work (as introduced by Dennett, the intentional stance involves ascribing mental states), as these authors probably realised later, but the point about not representing mental states is good.
+  .slide.em-above
+    p.handout.show ‘to the extent that young infants are limited in this way, their understanding of intentions would be quite different from the mature concept of intentions’
+    p.right Woodward et al 2001, p. 168
+    .handout.ctd \citep[p.\ 168]{woodward:2001_making}
+
+
+
++slide_middle
+  .notes What we've seen so far is (i) just what scientists think and (ii) almost entirely negative.
+  .notes It's that infants don't represent intentions but do represent actions and their goals.
+  .notes So we should ask, What do infants understand of actions and their goals?
+  .notes Or, as I like to put the quesiton, What model of action underpins infant cognition of action?
+  p.center What do six- or twelve-month-old infants understand of actions and their goals?
+
+
+
+
