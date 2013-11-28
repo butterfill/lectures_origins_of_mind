@@ -26,9 +26,9 @@ include ../../../fragments/unit_mixins
 
 +slide
   //- sources
-  .notes #source 'research/teleological stance -- csibra and gergely.doc'
-  .notes #source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture05 actions intentions goals'
-  .notes #source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture06 goal ascription teleological motor'
+  .notes \#source 'research/teleological stance -- csibra and gergely.doc'
+  .notes \#source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture05 actions intentions goals'
+  .notes \#source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture06 goal ascription teleological motor'
   //- notes for slide
   .notes When do human infants first track goal-directed actions and not just movements?
   .notes Here's a classic experiment from way back in 1995.
@@ -133,6 +133,9 @@ section.slide
   p.right Scholl & Tremoulet 2000, p. 299
   .handout.ctd \citep[p.\ 299]{Scholl:2000eq}
   +invert('.causal-and-social')
+
++slide_middle
+  p.center evidence?
   
 +slide({bkg:'slide_emergence_warwick_099.jpg'})
   .notes Recall this habituation experiment.
@@ -167,15 +170,23 @@ section.slide
   p.source Zwickel et al 2011, figure 2
   +clip('img:eq(0)','auto')
 
-+slide_middle
-  .notes What can we conclude?
-  .notes For adults, tracking information about goals makes one susceptible to interference from other other's perspective---it makes one susceptible to evaluting left and right from another's point of view.
-  .notes This altercentric interference effect is a long way short of showing that the goal ascription is automatic or perceptual.
-  .notes After all, such interference might be a consequence of thinking reflectively about the goals of the objects.
-  .notes But it is at least a step in the direction in that it shows that, in adults, goal ascription can at least have effects on automatic processes.
-  .notes (If automatic processes are informationally encapsulated, then this is evidence that goal ascription is automatic.)
-  .notes (*Other evidence: \citep{Gao:2010,Teufel:2010})
-  p.center altercentric interference 
+section.slide
+  .container_12: .grid_12
+    .words
+      .notes What can we conclude?
+      .notes For adults, tracking information about goals makes one susceptible to interference from other other's perspective---it makes one susceptible to evaluting left and right from another's point of view.
+      .notes This altercentric interference effect is a long way short of showing that the goal ascription is automatic or perceptual.
+      .notes After all, such interference might be a consequence of thinking reflectively about the goals of the objects.
+      .notes But it is at least a step in the direction in that it shows that, in adults, goal ascription can at least have effects on automatic processes.
+      .notes (If automatic processes are informationally encapsulated, then this is evidence that goal ascription is automatic.)
+      .notes (*Other evidence: \citep{Gao:2010,Teufel:2010})
+      +img_clip('zwickel_2011_fig1.png', 'rect(0,1000px,225px,0)')
+      p.source Zwickel et al 2011, figure 1
+  //- *reset
+  div(style='position: absolute; top:0; left:0; width:100%; height:100%;')
+    .container_12: .grid_12
+      .words: .middle
+        p.center altercentric interference 
 
 
 
@@ -189,7 +200,7 @@ section.slide
     p So far ...
     ol
       li Infants track the goals to which actions are directed from around three months of age.
-      li.slide Adults’ abilities to track goal-directed action may resemble their abilities to track causal interactions in being (i) automatic and perhape even (ii) perceptual.
+      li.slide Adults’ abilities to track goal-directed action may resemble their abilities to track causal interactions in being (i) automatic and perhaps even (ii) perceptual.
     .notes (The three months of age figure comes from \citet{Sommerville:2005te}.)m
   +right_half({step:true})
     .notes So it's maybe plausible there is core knowledge of action.

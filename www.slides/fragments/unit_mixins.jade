@@ -122,12 +122,21 @@ mixin clip(what, theClip)
 mixin connect(p)
   .slide.anim-connect(data-from='#{p.from}', data-to='#{p.to}', data-from-anchor="#{p.fromAnchor||'LeftMiddle'}",data-to-anchor='#{p.toAnchor || "RightMiddle"}',data-color="#{p.color || 'hotpink'}")
 
+//- todo : temporary measure!
+mixin blur2_(what)
+  if typeof(what)==='string'
+    - what = [what]
+  each thing in what
+    .slide.anim-continue.anim-attribute(data-what="#{thing}",data-attr="-webkit-filter:blur(2px)")
+mixin blur2(what)
+  +blur2_(what)
+  +anim_end()
+
 mixin blur_(what)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="blur-text")
-
 mixin blur(what)
   +blur_(what)
   +anim_end()
@@ -137,7 +146,6 @@ mixin unblur_(what)
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="blur-text")
-
 mixin unblur(what)
   +unblur_(what)
   +anim_end()

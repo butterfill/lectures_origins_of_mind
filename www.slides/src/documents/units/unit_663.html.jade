@@ -14,19 +14,74 @@ exercises_fast: []
 include ../../../fragments/unit_mixins
 include ../../../fragments/origins_mixins
 
-+slide_middle
-  .notes I want to start with a question about non-linguistic communication.
-  .notes Our overall project is to understand something about the emergence of knowledge of minds, objects, colours and the rest in human development.
-  .notes I've been trying to suggest that we have to take two factors into account.  One is core knowledge, the other is social interaction.
-  .notes And important cases of social interaction are communication by language, which we looked at first, and non-linguistic communication which is our current topic.
-  .notes So we're interested in non-linguistic communication for its own sake, of course.
-  .notes But we also have a long term.
-  p.center Is there a role for abilities to communicate non-linguistically in explaining the origins of knowledge?
-  .notes We're not going to be in a position to answer this question for a while; it's where we're going not where we are.
+//- +slide_middle
+//-   .notes I want to start with a question about non-linguistic communication.
+//-   p.center.notes.show Is there a role for abilities to communicate non-linguistically in explaining the origins of knowledge?
 
-+slide_middle
-  p.center a puzzle about pointing
-  .notes In this section my aim is to introduce a puzzle about pointing ...
+
+section.slide
+  .container_12: .grid_12
+    .words: .middle
+      .notes Our overall project is to understand something about the emergence of knowledge of minds, objects, colours and the rest in human development.
+      .notes My proposal is that we have to take two factors into account.  One is core knowledge, the other is social interaction.
+      .notes Our current project is to understand where abilities to communicate fit into this picture---to understand, that is, what role they might play in explaining how humans come to know things.
+      p.center.diagram
+        svg(xmlns='http://www.w3.org/2000/svg', width='374px', height='314px', xmlns:xlink='http://www.w3.org/1999/xlink', version='1.1', style='background-color: rgb(0, 0, 0);')
+          g(transform='translate(0.5,0.5)')
+              rect(x='2', y='112', width='150', height='90', rx='14', ry='14', fill='none', stroke='#ffffff', pointer-events='none')
+              g(transform='translate(4,129)')
+                switch
+                  foreignobject(pointer-events='all', width='146', height='52', requiredfeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                    div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;')
+                      | core
+                      br
+                      | knowledge
+                  text(x='73', y='37', fill='#FFFFFF', text-anchor='middle', font-size='22px', font-family='Lato') [Object]
+              rect(x='222', y='112', width='150', height='90', rx='14', ry='14', fill='none', stroke='#ffffff', pointer-events='none')
+              g(transform='translate(224,129)')
+                switch
+                  foreignobject(pointer-events='all', width='146', height='52', requiredfeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                    div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;') knowledge knowledge
+                  text(x='73', y='37', fill='#FFFFFF', text-anchor='middle', font-size='22px', font-family='Lato') [Object]
+              path(d='M 162 162 L 162 152 L 182 152 L 182 142 L 212 157 L 182 172 L 182 162 Z', fill='#ffffff', stroke='#000000', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+              path(d='M 153 58 L 162 53 L 205 121 L 213 115 L 217 149 L 188 131 L 196 126 Z', fill='#ffffff', stroke='#000000', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+              rect(x='2', y='2', width='150', height='90', rx='14', ry='14', fill='none', stroke='#ffffff', pointer-events='none')
+              g(transform='translate(4,6)')
+                switch
+                  foreignobject(pointer-events='all', width='146', height='78', requiredfeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                    div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;')
+                      span.social-intelligence(style="z-index:1;") social intelligence
+                      br
+                      span (& motivation)
+                  text(x='73', y='50', fill='#FFFFFF', text-anchor='middle', font-size='22px', font-family='Lato') [Object]
+              rect(x='2', y='222', width='150', height='90', rx='14', ry='14', fill='none', stroke='#ffffff', pointer-events='none')
+              g(transform='translate(4,252)')
+                switch
+                  foreignobject(pointer-events='all', width='146', height='26', requiredfeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                    div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;')  ...
+                  text(x='73', y='24', fill='#FFFFFF', text-anchor='middle', font-size='22px', font-family='Lato') [Object]
+              path(d='M 162 261 L 153 256 L 196 188 L 188 183 L 217 165 L 213 199 L 205 193 Z', fill='#ffffff', stroke='#000000', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+  +invert('.social-intelligence')
+  .notes *todo explain social intelligence
+  +blur2_('.diagram')
+  .slide
+    div(style='position: absolute; top:0; left:0; width:100%; height:100%;')
+      .container_12: .grid_12
+        .words: .middle
+          p.center
+            span.bkg-words-highlight-invert non-linguistic communication
+          .notes Non-linguistic communication is special because it links to two of our ambitions.
+          .notes First, we want to better understand how humans acquire abilities to communicate by language, and these seem to be built on their non-linguistic abilities.
+          .notes Second, non-linguistic communication appears to be a paradigm manifestation of social intelligence, and perhaps one that doesn't already require any knowledge knowledge at all.
+          .notes So non-linguistic communication may be an aspect of social intelligence that can explain the origins of knowledge in development.
+
+
++slide
+  .notes As I mentioned before, my overall plan is to work backwards from communication by language through non-linguistic communication and so to understanding action.
+  img(src='/img/fig_action_communicative_linguistic.png')
+
+
+
 
 +slide
   p Recap: From around 11 or 12 months of age, humans spontaneously use pointing to ...
@@ -181,6 +236,40 @@ include ../../../fragments/origins_mixins
   .notes (Again Tomasello's answer involves shared intentionality: it's because they don't understand shared intentionality until around their first birthdays.)
   .notes We can answer this in the same way --- they don't understand communication.
 
++slide
+  .notes This makes sense of why chimpanzees don't point --- they don't understand communicative intention.
+  p Why don’t apes point?
+  p (And why don’t they understand declarative pointing?)
+  p.em-above Because they fail to ‘understand that by pointing towards a location, the other attempts 
+    span.to-communicate to communicate
+    span  to her where a desired object is located’ (Moll & Tomasello 2007)
+  .notes Note that this is an explanation which doesn't mention shared intentionality.
+  .notes That's deliberate; sometimes Tomasello and colleagues answer this question by appeal to shared intentionality; I wanted to consider a simpler answer first and postpone thinking about shared intentionality for as long as possible.
+  .notes Compare \citep[p.\ 516]{Tomasello:2010dy}: ‘they do not understand communicative intentions’
+  .slide
+    p.em-above But
+      ul
+        li What is it to understand this?
+        +invert('.to-communicate')
+        li.slide Do 12-month-old humans understand it?
+  .notes But is this consistent with the findings that 12-month-old infants do point?
+  .notes What is it to understand that by this pointing action another intends to communicate that?
+  // just wnat to get this onto the handout
+  .handout \subsection{pointing vs linguistic communication}
+  .handout ‘the most fundamental aspects of language that make it such a uniquely powerful form of human cognition and communication---joint attention, reference via perspectives, reference to absent entities, cooperative motives to help and to share, and other embodiments of shared intentionality---are already present in the humble act of infant pointing.’ \citep[p.\ 719]{Tomasello:2007fi}
+  .handout ‘cooperative communication does not depend on language, […] language depends on it.’ \citep[p.\ 720]{Tomasello:2007fi}
+  .handout ‘Pointing may […] represent a key transition, both phylogenetically and ontogenetically, from nonlinguistic to linguistic forms of human communication.’ \citep[p.\ 720]{Tomasello:2007fi}
+
+
+
+
+
+
++slide_middle
+  p.center appendix
+
+
+
 +slide_middle
   // .notes \citet[p.\ 492]{Behne:2005qh}: 'the infant asks herself: Why did the adult do this for me? Why is this object to which he is gesturing relevant to our interaction?'
   .notes I want to say a tiny bit more on what is involved in understanding a pointing gesture.
@@ -211,31 +300,4 @@ include ../../../fragments/origins_mixins
   p.source Liebal et al 2009, figure 4
   .handout.notes ‘Already by age 14 months, then, infants interpret communication cooperatively, from a shared rather than an egocentric perspective’ \citep[p.\ 269]{Liebal:2010lr}.
   .handout.notes ‘The fact that infants rely on shared experience even to interpret others’ nonverbal pointing gestures suggests that this ability is not specific to language but rather reflects a more general social-cognitive, pragmatic understanding of human cooperative communication’ \citep[p.\ 270]{Liebal:2010lr}.
-
-+slide
-  .notes This makes sense of why chimpanzees don't point --- they don't understand communicative intention.
-  p Why don’t apes point?
-  p (And why don’t they understand declarative pointing?)
-  p.em-above Because they fail to ‘understand that by pointing towards a location, the other attempts 
-    span.to-communicate to communicate
-    span  to her where a desired object is located’ (Moll & Tomasello 2007)
-  .notes Note that this is an explanation which doesn't mention shared intentionality.
-  .notes That's deliberate; sometimes Tomasello and colleagues answer this question by appeal to shared intentionality; I wanted to consider a simpler answer first and postpone thinking about shared intentionality for as long as possible.
-  .notes Compare \citep[p.\ 516]{Tomasello:2010dy}: ‘they do not understand communicative intentions’
-  .slide
-    p.em-above But
-      ul
-        li What is it to understand this?
-        +invert('.to-communicate')
-        li.slide Do 12-month-old humans understand it?
-  .notes But is this consistent with the findings that 12-month-old infants do point?
-  .notes What is it to understand that by this pointing action another intends to communicate that?
-  // just wnat to get this onto the handout
-  .handout \subsection{pointing vs linguistic communication}
-  .handout ‘the most fundamental aspects of language that make it such a uniquely powerful form of human cognition and communication---joint attention, reference via perspectives, reference to absent entities, cooperative motives to help and to share, and other embodiments of shared intentionality---are already present in the humble act of infant pointing.’ \citep[p.\ 719]{Tomasello:2007fi}
-  .handout ‘cooperative communication does not depend on language, […] language depends on it.’ \citep[p.\ 720]{Tomasello:2007fi}
-  .handout ‘Pointing may […] represent a key transition, both phylogenetically and ontogenetically, from nonlinguistic to linguistic forms of human communication.’ \citep[p.\ 720]{Tomasello:2007fi}
-
-
-
 
