@@ -21,8 +21,8 @@ plugins:
 
 	templateData:
 
-		moment:
-			require('moment')
+		# moment:
+		#	require('moment')
 
 		# Specify some site properties
 		site:
