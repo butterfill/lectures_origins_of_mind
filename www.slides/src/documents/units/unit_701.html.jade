@@ -19,7 +19,7 @@ include ../../../fragments/unit_mixins
 +slide_middle
   .notes Our first question is, When do human infants first track goal-directed actions and not just movements?
   .notes In examining nonlinguistic communication, we've assumed that infants from around 11 months of age can produce and comprehend informative pointing.
-  .notes This commits us to saying that they have 
+  .notes This commits us to saying that they have understood action.
   p.center When do human infants first track goal-directed actions
     br
     | rather than mere movements only?
@@ -40,19 +40,19 @@ include ../../../fragments/unit_mixins
   .notes There was also a control group who were habituated to a display like this one but with the central barrier moved to the right, so that the action of the ball is 'non-rational'.
   
 +slide
-  .notes For the test condition, infants were divided into two groups.  One saw a new action, the other an old action.
+  +img_clip('gergely_1995_fig3.png', 'rect(0,1000px,250px,0)')
+  .notes For the test condition, infants were divided into two groups.  One saw a new action, ...
+  +clip('img:eq(0)', 'auto')
+  .notes ... the other saw an old action.
   .notes Now if infants were considering the movements only and ignoring information about the goal, the 'new action' (movement in a straight line) should be more interesting because it is most different.
   .notes But if infants are taking goal-related information into acction, the 'old action' might be unexpected and so might generate greater dishabituation.
-  img(src='/img/gergely_1995_fig3.png')
   p.source Gergely et al 1995, figure 3
-  .notes There was also a control group who were habituated to a display like this one but with the central barrier moved to the right, so that the action of the ball is 'non-rational'.
 
 
 +slide
   +img_clip('gergely_1995_fig5.png', 'rect(0,350px,1000px,0)')
   p.source Gergely et al 1995, figure 5
   +clip('img:eq(0)','auto')
-  .notes The nonrational control group were habituated to a display like this one but with the central barrier moved to the right, so that the action of the ball is 'non-rational'.
   .handout ‘by the end of the first year infants are indeed capable of taking the intentional stance (Dennett, 1987) in interpreting the goal- directed behavior of rational agents.’
   .handout.ctd \citep[p.\ 184]{Gergely:1995sq}
   .handout ‘12-month-old babies could identify the agent’s goal and analyze its actions causally in relation to it’
@@ -114,7 +114,9 @@ section.slide
       .step1 
         img(src='/img/heider_1946_fig1.png')
         p.source Heider and Simmel, figure 1
-      +fade('.step1')
+      +fade_('.step1')
+      +blur_('.step1')
+      +blur2_('.step1')
   .slide
     div(style='position: absolute; top:0; left:0; width:100%; height:100%;')
       .container_12: .grid_12
@@ -134,10 +136,8 @@ section.slide
   .handout.ctd \citep[p.\ 299]{Scholl:2000eq}
   +invert('.causal-and-social')
 
-+slide_middle
-  p.center evidence?
-  
 +slide({bkg:'slide_emergence_warwick_099.jpg'})
+  .notes [Here I'm not trying to provide evidence, only to explain what the claim commits us to.]
   .notes Recall this habituation experiment.
   .notes they suggets that both 
 +slide({bkg:'slide_emergence_warwick_102.jpg'})
@@ -150,6 +150,9 @@ section.slide
   .notes Maybe some of us will get together another time and I can tell you that story then.
   .notes (*nb: \citep{zwickel:2010_interference} also argue for perceptual categories in perceiving actions, and do so by comparison with pop-out effects for orientations.)
 
++slide_middle
+  p.center evidence?
+  
 
 
 +slide
@@ -247,6 +250,11 @@ section.slide
   .notes It's that infants don't represent intentions but do represent actions and their goals.
   .notes So we should ask, What do infants understand of actions and their goals?
   .notes Or, as I like to put the quesiton, What model of action underpins infant cognition of action?
+  .notes &nbsp;
+  .notes It's essential to see that there's a question here.
+  .notes We've shown that infants from around six months of age can track differences that are in fact differences in the actions.
+  .notes But we haven't shown how infants understand these differences; we haven't said how actions appear from the point of view of the infant.
+  .notes [***Could do something on which model here by analogy with the physical case.  ]
   p.center What do six- or twelve-month-old infants understand of actions and their goals?
 
 
