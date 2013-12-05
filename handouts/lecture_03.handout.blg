@@ -1,0 +1,45 @@
+This is BibTeX, Version 0.99c (TeX Live 2009)
+The top-level auxiliary file: lecture_03.handout.aux
+The style file: newapa.bst
+Database file #1: $HOME/endnote/phd_biblio.bib
+You've used 16 entries,
+            2708 wiz_defined-function locations,
+            704 strings with 7499 characters,
+and the built_in function-call counts, 7512 in all, are:
+= -- 698
+> -- 323
+< -- 11
++ -- 117
+- -- 115
+* -- 745
+:= -- 1420
+add.period$ -- 52
+call.type$ -- 16
+change.case$ -- 132
+chr.to.int$ -- 16
+cite$ -- 16
+duplicate$ -- 264
+empty$ -- 497
+format.name$ -- 143
+if$ -- 1366
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 17
+newline$ -- 84
+num.names$ -- 68
+pop$ -- 82
+preamble$ -- 1
+purify$ -- 149
+quote$ -- 0
+skip$ -- 181
+stack$ -- 0
+substring$ -- 546
+swap$ -- 64
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 94
+warning$ -- 0
+while$ -- 77
+width$ -- 0
+write$ -- 216

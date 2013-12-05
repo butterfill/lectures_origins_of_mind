@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99c (TeX Live 2009)
+The top-level auxiliary file: course outline - origins of mind.aux
+The style file: newapa.bst
+Database file #1: $HOME/endnote/phd_biblio.bib
+Warning--empty publisher in fitch:2009_singular
+You can't pop an empty literal stack for entry kourtis:2010_favoritism
+while executing---line 1459 of file newapa.bst
+You can't pop an empty literal stack for entry malle:2001_distinction
+while executing---line 1459 of file newapa.bst
+You've used 37 entries,
+            2708 wiz_defined-function locations,
+            843 strings with 10453 characters,
+and the built_in function-call counts, 16710 in all, are:
+= -- 1555
+> -- 601
+< -- 36
++ -- 226
+- -- 203
+* -- 1528
+:= -- 3071
+add.period$ -- 127
+call.type$ -- 37
+change.case$ -- 283
+chr.to.int$ -- 36
+cite$ -- 38
+duplicate$ -- 661
+empty$ -- 1194
+format.name$ -- 254
+if$ -- 3174
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 40
+newline$ -- 194
+num.names$ -- 158
+pop$ -- 177
+preamble$ -- 1
+purify$ -- 323
+quote$ -- 0
+skip$ -- 486
+stack$ -- 0
+substring$ -- 1224
+swap$ -- 182
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 216
+warning$ -- 1
+while$ -- 165
+width$ -- 0
+write$ -- 510
+(There were 2 error messages)

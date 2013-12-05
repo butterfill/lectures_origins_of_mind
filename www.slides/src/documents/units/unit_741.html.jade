@@ -1,0 +1,130 @@
+---
+layout: 'deck_unit'
+title: 'From Action to Communication and Joint Action'
+tags: []
+description: "How does what we’ve learnt about how humans come to know truths about actions illuminate issues about social interaction and communication?"
+depends: ['']  
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+ 
+include ../../../fragments/unit_mixins
+
+
++slide
+  p Summary: How do humans come to know truths about actions?
+  ol
+    li.slide evidence
+    li.slide core knowledge?
+      .notes Note that Csibra & Gergely offer a continuity hypothesis.
+    li.slide How do infants understand actions?
+      ol(style="list-style-type:lower-alpha")
+        li.slide
+          span R
+          sub 1
+          span (a,G) =
+          sub df
+          span   the agent of a is acting with the intention to bring G about
+        li.slide
+          span R
+          sub 2
+          span (a,G) =
+          sub df
+          span   a is the most rational way for the agent of a to achieve G
+        li.slide 
+          span R
+          sub 3
+          span (a,G) =
+          sub df
+          span   ...
+
+//- action - communication - language
++slide
+  svg(xmlns='http://www.w3.org/2000/svg', width='395px', height='296px', xmlns:xlink='http://www.w3.org/1999/xlink', version='1.1', style='background-color: rgb(0, 0, 0);')
+    g(transform='translate(0.5,0.5)')
+      rect(x='2', y='204', width='150', height='90', rx='14', ry='14', fill='none', stroke='#ffffff', pointer-events='none')
+      g(transform='translate(4,234)')
+        switch
+          foreignobject(pointer-events='all', width='146', height='26', requiredfeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+            div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;') action
+          text(x='73', y='24', fill='#FFFFFF', text-anchor='middle', font-size='22px', font-family='Lato') [Object]
+      rect(x='122', y='104', width='150', height='90', rx='14', ry='14', fill='none', stroke='#ffffff', transform='rotate(-1,197,149)', pointer-events='none')
+      g(transform='translate(124,134)rotate(-1.1233027140754075,73,13)')
+        switch
+          foreignobject(pointer-events='all', width='146', height='26', requiredfeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+            div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;') communication
+          text(x='73', y='24', fill='#FFFFFF', text-anchor='middle', font-size='22px', font-family='Lato') [Object]
+      rect(x='242', y='4', width='150', height='90', rx='14', ry='14', fill='none', stroke='#ffffff', transform='rotate(1,317,49)', pointer-events='none')
+      g(transform='translate(244,21)rotate(1.0050860052541708,73,26)')
+        switch
+          foreignobject(pointer-events='all', width='146', height='52', requiredfeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+            div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 22px; font-family: Lato; color: rgb(255, 255, 255); line-height: 26px; vertical-align: top; width: 146px; white-space: normal; text-align: center;') communication by language
+          text(x='73', y='37', fill='#FFFFFF', text-anchor='middle', font-size='22px', font-family='Lato') [Object]
+
+  
++slide_rh_white
+  .notes recall from last lecture ...
+  .notes Now contrast Grice and Davidson on the pointing action from the Hare et al study, where you're supposed to take one of two containers.
+  +left_half
+    p Grice
+    p.em-above Goal: get Ayesha to select the left container
+    p.em-above Means: get Ayesha to recognise that I intend Ayesha to select the left container
+    p.em-above
+      span.intention Intention
+      span : to get Ayesha to selet the left container by means of getting Ayesha to 
+      span.recognise recognise
+      span that I am pointing to the left container with the 
+      span.intention intention
+      span  that she select the left container.
+  +right-half
+    p Davidson
+    p.em-above Goal: get Ayesha to select the left container
+    p.em-above Semantic Intention: that Ayesha take this pointing gesture to 
+      span.refer refer
+      span  to the left container
+    p.em-above Ulterior Intention: that Ayesha select the left container
+    .notes Strictly speaking, that Ben should come over might not be the first meaning of the wave (so there are other options here).
+  +highlight_('.intention, .recognise', 'blue')
+  +highlight('.refer')
+  .notes As before, there's a contrast in what must be intended and so what we're committing ourselves to in saying that infants can produce and comprehend informative pointing.
+
+
++slide_rh_white
+  +run_across
+    p.center understanding action
+  +left_half
+    p(style="margin-top:-1em;") R(a,G) defined with intention
+  +right_half
+    p(style="margin-top:-1em;") R(a,G) defined  non-psychologically
+  .slide
+    +run_across
+      p.center communication
+    +left_half
+      p(style="margin-top:-1em;") Refers(gesture,object) defined with communicative intention
+    +right_half
+      p(style="margin-top:-1em;") R(a,G) defined non-psychologically
+  .slide
+    +run_across
+      p.center cooperative interaction
+    +left_half
+      p(style="margin-top:-1em;") R(a
+        sub 1
+        span , a
+        sub 2
+        span , ..., G) defined with shared intention
+    +right_half
+      p(style="margin-top:-1em;") R(a
+        sub 1
+        span , a
+        sub 2
+        span , ..., G) defined with expectations about common goals
+
+  
+
+//- significance
++slide_img('slide_budapest_lecture06_005.jpg')
+

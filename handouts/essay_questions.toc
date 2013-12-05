@@ -1,0 +1,49 @@
+\contentsline {section}{Wildcard Task: Ask a Question}{2}{table.1}
+\contentsline {section}{Task 1: Introduce a scientific paper}{4}{table.1}
+\contentsline {section}{Task 2: Write a review of some scientific research}{5}{table.1}
+\contentsline {subsection}{Suggested question}{5}{table.1}
+\contentsline {subsection}{Aim}{5}{table.1}
+\contentsline {subsection}{Hint}{5}{table.1}
+\contentsline {subsection}{Peer review}{5}{table.1}
+\contentsline {subsection}{Reading: Essential}{5}{table.1}
+\contentsline {subsection}{Reading: Optional (*=hard)}{6}{table.1}
+\contentsline {subsection}{Where to find the readings}{6}{table.1}
+\contentsline {subsection}{Citations}{6}{table.1}
+\contentsline {subsection}{Length}{7}{table.1}
+\contentsline {section}{Task 3: Peer-review an essay}{8}{table.1}
+\contentsline {subsection}{Hints}{8}{table.1}
+\contentsline {section}{Alternative Essay Question for Task 2}{9}{table.1}
+\contentsline {subsection}{Suggested question}{9}{table.1}
+\contentsline {subsection}{Aim}{9}{table.1}
+\contentsline {subsection}{Peer review}{9}{table.1}
+\contentsline {subsection}{Hint}{9}{table.1}
+\contentsline {subsection}{Reading}{9}{table.1}
+\contentsline {subsection}{Further reading}{10}{table.1}
+\contentsline {subsection}{Where to find the readings}{10}{table.1}
+\contentsline {subsection}{Citations}{10}{table.1}
+\contentsline {subsection}{Length}{11}{table.1}
+\contentsline {section}{Task 4: Plan an essay}{12}{table.1}
+\contentsline {section}{Pre-approved essay questions}{13}{table.1}
+\contentsline {subsection}{Mindreading}{13}{table.1}
+\contentsline {subsubsection}{---Reading}{13}{table.1}
+\contentsline {subsection}{Core knowledge}{13}{table.1}
+\contentsline {subsubsection}{---Reading}{14}{table.1}
+\contentsline {subsection}{Innateness}{14}{table.1}
+\contentsline {subsubsection}{---Reading}{14}{table.1}
+\contentsline {subsubsection}{---Reading: comparative (cross-species)}{14}{table.1}
+\contentsline {subsubsection}{---Reading: syntax}{15}{table.1}
+\contentsline {subsubsection}{---Reading: replying to Fodor’s argument}{15}{table.1}
+\contentsline {subsection}{Knowledge of colour}{15}{table.1}
+\contentsline {subsubsection}{---Reading}{15}{table.1}
+\contentsline {subsection}{Social interaction}{16}{table.1}
+\contentsline {subsubsection}{---Reading}{16}{table.1}
+\contentsline {subsection}{Joint action}{16}{table.1}
+\contentsline {subsubsection}{---Reading}{16}{table.1}
+\contentsline {subsection}{Language}{17}{table.1}
+\contentsline {subsubsection}{---Reading}{17}{table.1}
+\contentsline {subsection}{}{17}{table.1}
+\contentsline {section}{Task 6: Write an essay}{18}{table.1}
+\contentsline {subsection}{Suggested question}{18}{table.1}
+\contentsline {subsubsection}{---Reading: theoretical}{18}{table.1}
+\contentsline {subsubsection}{---Reading: experimental (pick one or more)}{18}{table.1}
+\contentsline {subsubsection}{---Reading: background}{18}{table.1}

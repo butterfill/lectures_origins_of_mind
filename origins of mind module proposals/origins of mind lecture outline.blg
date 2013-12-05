@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99c (TeX Live 2009)
+The top-level auxiliary file: origins of mind lecture outline.aux
+The style file: newapa.bst
+Database file #1: $HOME/endnote/phd_biblio.bib
+You can't pop an empty literal stack for entry Knudsen:2011fk
+while executing---line 1459 of file newapa.bst
+You can't pop an empty literal stack for entry rafetseder:2012_submitted
+while executing---line 1459 of file newapa.bst
+You can't pop an empty literal stack for entry southgate:2010fb
+while executing---line 1459 of file newapa.bst
+You've used 119 entries,
+            2708 wiz_defined-function locations,
+            1313 strings with 24039 characters,
+and the built_in function-call counts, 53472 in all, are:
+= -- 4841
+> -- 2283
+< -- 78
++ -- 863
+- -- 819
+* -- 5314
+:= -- 10184
+add.period$ -- 373
+call.type$ -- 119
+change.case$ -- 971
+chr.to.int$ -- 119
+cite$ -- 119
+duplicate$ -- 1902
+empty$ -- 3563
+format.name$ -- 1024
+if$ -- 9724
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 132
+newline$ -- 602
+num.names$ -- 490
+pop$ -- 608
+preamble$ -- 1
+purify$ -- 1103
+quote$ -- 0
+skip$ -- 1300
+stack$ -- 0
+substring$ -- 3743
+swap$ -- 445
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 688
+warning$ -- 0
+while$ -- 493
+width$ -- 0
+write$ -- 1569
+(There were 3 error messages)

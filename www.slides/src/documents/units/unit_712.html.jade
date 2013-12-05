@@ -1,8 +1,8 @@
 ---
 layout: 'deck_unit'
-title: 'Pure Goal Ascription'
+title: 'Pure Goal Ascription: the Teleological Stance'
 tags: []
-description: 'Pure goal ascription is goal ascription which occurs independently of any knowledge of mental states.  Here we consider two accounts of pure goal ascription, one involving the teleological stance the other involving motor cognition.'
+description: 'Pure goal ascription is goal ascription which occurs independently of any knowledge of mental states.  Here we consider an account of pure goal ascription involving the teleological stance.'
 depends: ['']  
 source: ['']
 duration: 5
@@ -17,52 +17,171 @@ include ../../../fragments/unit_mixins
 
   
 //- pure goal ascription
-+slide_img('slide_budapest_lecture06_031.jpg')
-  .notes How could pure goal ascription work?
++slide_middle
+  p.center
+    span.hide.step2 How could 
+    span.hide.step1.italic pure 
+    span goal ascription 
+    span.hide.step2 work?
+  .notes \newcommand{\dfGoalAscription}{\emph{Goal ascription} is the process of identifying outcomes to which purposive actions are directed as outcomes to which those actions are directed.}
+  .notes \dfGoalAscription{}
+  +show('.step1')
+  .notes Pure goal ascription is goal ascription which occurs independently of any knowledge of mental states.  Here we consider two accounts of pure goal ascription, one involving the teleological stance the other involving motor cognition.
+  +show('.step2')
+  .notes In looking for an alternative model of action we are also asking, How could pure goal ascription work?
   .notes Could you maybe think about the goal and not the intention and that would be enough?
   .notes Well no because a goal is just an outcome.  Let me try to explain with an example ...
+
+//- dropping an egg
 +slide_img('slide_budapest_lecture06_019.jpg')
+  .notes Earlier I said that \dfGoalAscription{}
+  .notes Given this definition, goal ascription involves representing three things:
+  .notes \begin{enumerate}
+  .notes \item an action
+  .notes \item an outcome
+  .notes \end{enumerate}
+  .notes and
+  .notes \begin{enumerate}[resume]
+  .notes \item the directedness of the action to the outcome.
+  .notes \end{enumerate}
+  .notes &nbsp;
+  .notes It is important to see that the third item---representing the directedness---is necessary.
+  .notes This is quite simple but very important, so let me slowly explain why goal ascription requires representing the directedness of an action to an outcome.
+  .notes Imagine two people, Ayesha and Beatrice, who each intend to break an egg.
+  .notes Acting on her intention, Ayesha breaks her egg.
+  .notes But Beatrice accidentally drops her egg while carrying it to the kitchen.
 +slide_img('slide_budapest_lecture06_020.jpg')
+  .notes So Ayesha and Beatrice perform visually similar actions which result in the same type of outcome, the breaking of an egg; 
+  .notes 	but Beatrice's action is not directed to the outcome of her action whereas Ayesha's is.
 +slide_img('slide_budapest_lecture06_021.jpg')
+  .notes Goal ascription requires the ability to distinguish between Ayesha's action and Beatrice's action. 
+  .notes This requires representing not only actions and outcomes but also the directedness of actions to outcomes.
+  .notes &nbsp;
+  .notes This is why I say that goal ascription requires representing the directedness of an action to an outcome, and not just representing the action and the outcome.
 
-- var img_nos = range(31,50)
-each img_no in img_nos
-  - var filename = 'slide_budapest_lecture06_0'+(img_no<10 ? '0' : '')+img_no+'.jpg'
-  +slide_img(filename)
-  
++slide_middle
+  .notes So how could pure goal ascription work?
+  .notes How could we represent the directedness of an action to an outcome without representing an intention?
+  p.center
+    span.step2 How could 
+    span.step1.italic pure 
+    span goal ascription 
+    span.step2 work?
+
+
++slide({bkg:'unit_712/slide_conf_ceu_interacting_mindreaders_10.jpg'})
+  .notes Csibra and Gergely offer a 'principle of rationality' according to which ...
+  .notes.handout Csibra \& Gergely's principle of rational action: `an action can be explained by a goal state if, and only if, it is seen as the most justifiable action towards that goal state that is available within the constraints of reality.'\citep{Csibra:1998cx,Csibra:2003jv}
+  .handout.notes (Contrast a principle of efficiency:
+  .handout.notes.ctd `goal attribution requires that agents expend the least possible amount of energy within their motor constraints to achieve a certain end.' \citep%[p.\ 1061]
+  .handout.notes.ctd {Southgate:2008el})
+  .notes &nbsp;  
+  .notes This principle plays two distinct roles.
+  .notes One role is mechanistic: this principle forms part of an account of how infants (and others) actually ascribe goals.
+  .notes Another role is normative: this principle also identifies grounds on which it would be rational to ascribe a goal.
+  .notes &nbsp;  
+  .notes As Csibra and Gergely formulate it, the principle might seem simple.
+  .notes But actually their eloquence is hiding some complexity.
+
++slide({bkg:'unit_712/slide_conf_ceu_interacting_mindreaders_11.jpg'})
+  .notes How are we to understand 'justifiable action towards that goal state?'
+
++slide({bkg:'unit_712/slide_conf_ceu_interacting_mindreaders_12.jpg'})
+  .notes It is perhaps worth spelling out what might be involved in applying this principle.
+  .notes Let me try to spell it out as an inference with premises and a conclusion ...
++slide({bkg:'unit_712/slide_conf_ceu_interacting_mindreaders_13.jpg'})
++slide({bkg:'unit_712/slide_conf_ceu_interacting_mindreaders_14.jpg'})
++slide({bkg:'unit_712/slide_conf_ceu_interacting_mindreaders_15.jpg'})
++slide({bkg:'unit_712/slide_conf_ceu_interacting_mindreaders_16.jpg'})
+  .notes An action of type $a'$ is a better means of realising outcome $G$ in a given situation than an action of type $a$ if, for instance, actions of type $a'$ normally involve less effort than actions of type $a$ 
+  .notes in situations with the salient features of this situation 
+  .notes and everything else is equal; 
+  .notes or if, for example, actions of type $a'$ are normally more likely to realise outcome $G$ than actions of type $a$
+  .notes in situations with the salient features of this situation 
+  .notes and everything else is equal.
+  .notes &nbsp;
+  .notes A problem with what we have so far is side-effects, which can be highly reliable.
+  .notes Actions typically have side-effects which are not goals.  For example,
+  .notes suppose that I walk over here with the goal of being next to you.
+  .notes This action has lots of side-effects: 
+  .notes \begin{itemize}
+  .notes \item 	I will be at this location.
+  .notes \item	I will expend some energy.
+  .notes \item	I will be this much further away from the front
+  .notes \end{itemize}
+  .notes These  are not goals to which my action is directed.
+  .notes But they are things which my action would be a rational and efficient way of bring about.
+  .notes So there is a risk that these optimising versions of $R$ will over-generate goals.
++slide({bkg:'unit_712/slide_conf_ceu_interacting_mindreaders_17.jpg'})
+  .notes I think this first problem can be solved by adding a clause about desire.
+  .notes [*] We can substantially mitigate the problem of side-effects by requiring that $R(a,G)$ hold only where $G$ is the type of outcome which is typically desirable for agents like $a$.
++slide({bkg:'unit_712/slide_conf_ceu_interacting_mindreaders_18.jpg'})
++slide({bkg:'unit_712/slide_conf_ceu_interacting_mindreaders_19.jpg'})
+  .notes Now so far we've been considering this as an account of how someone could identify to which goal an action is directed without thinking about mental states.
+  .notes That is, this inference is the core component in an account of pure goal ascription.
++slide_middle
+  .notes But insofar as we think of this inference as an heuristic for identifying goals, we haven't answered the question I started with.
+  .notes Using the inference presupposes that you already understand what it is for an action to be directed to a goal.
+  p.center What do six- or twelve-month-old infants understand of actions and their goals?
+  .notes But we can also turn it around and use it to define a relation between an action and a goal.
++slide({bkg:'unit_712/slide_conf_ceu_interacting_mindreaders_19.jpg'})
+  .notes So let's define a relation between an action and a goal, R(a,G), which obtains just when conditions (1)--(5) are met.
+  .handout These facts:
+  .handout       \begin{enumerate}
+  .handout       \item action $a$ is directed to some goal;
+  .handout       \item actions of $a$'s type are normally capable of being means of realising outcomes of $G$'s type in situations with the salient (to any concerned) features of this situation;
+  .handout       \item no alternative type of action is both  typically available to agents of this type  and also  such that actions of this type would be normally be significantly better* means of realising outcome $G$ in situations with the salient features of this situation;
+  .handout       \item the occurrence of outcome $G$ is typically desirable for agents of this type;
+  .handout       \end{enumerate}
+  .handout       \begin{enumerate}[resume]
+  .handout       \item there is no other outcome, $G'$,  the occurrence of which would be at least comparably desirable for agents of this type  and where (2) and (3) both hold of $G'$ and $a$
+  .handout       \end{enumerate}
+  .handout       may jointly constitute defeasible evidence for the conclusion that:
+  .handout  \begin{enumerate}[resume]
+  .handout       \item $G$ is a goal to which action $a$ is directed.
+  .handout       \end{enumerate}
+  .handout       {
+  .handout       \footnotesize
+  .handout       *An action of type $a'$ is a better means of realising outcome $G$ in a given situation than an action of type $a$ if, for instance, actions of type $a'$ normally involve less effort than actions of type $a$ 
+  .handout       in situations with the salient features of this situation 
+  .handout       and everything else is equal; 
+  .handout       or if, for example, actions of type $a'$ are normally more likely to realise outcome $G$ than actions of type $a$ in situations with the salient features of this situation 
+  .handout       and everything else is equal.
+  .handout       }
++slide
+  .notes (Do you remember Dennett's ingeneous twist in The Intentional Stance?  We're making the same move here.)
+  p.handout.show ‘What it is to be a true believer is to be … a system whose behavior is reliably and voluminously predictable via the intentional strategy.’
+  .handout.ctd \citep[p.\ 15]{Dennett:1987sf}
+  p.right Dennett 1987, p. 15
+
 
 +slide
-  p ***Premack quote: evidence of motor efficiency
+  table
+    tr
+      td R(a,G) 
+      td(style='padding-left:.5em;padding-right:.5em;') =
+        sub df
+      td  (1)--(5) are true
+    tr.hide.step2
+      td
+      td(style='padding-left:.5em;padding-right:.5em;') ≈ 
+      td.em-above a is the most justifiable action towards G available within the constraints of reality
+  +show('.step2')
+  .slide
+    p.em-above Three requirements ...
+    ol
+      li reliably: R(a,G) when and only when a is directed to G
+        .notes This is what we've just shown in arguing about (1)-(5)
+      li.slide R(a,G) is detectable without any knowledge of mental states
+        .notes This seems to follow from the way it's defined.
+      li.slide R(a,G) is  readily detectable
+        .notes This is an issue I'll come back to later.
+        
 
-+slide
-  p *** explain the idea: mindreading is acting in reverse
-  p *** so, why not think of goal ascription as part of acting in reverse too?
-- var img_nos = range(7,15)
-each img_no in img_nos
-  - var filename = 'slide_budapest_lecture06_0'+(img_no<10 ? '0' : '')+img_no+'.jpg'
-  +slide_img(filename)
-  
 
-//- pure goal ascription
-- var img_nos = range(52,66)
-each img_no in img_nos
-  - var filename = 'slide_budapest_lecture06_0'+(img_no<10 ? '0' : '')+img_no+'.jpg'
-  +slide_img(filename)
++slide({bkg:'slide_budapest_lecture05_04.jpg'})
++slide({bkg:'slide_budapest_lecture05_05.jpg'})
++slide({bkg:'unit_712/slide_intention_or_r.jpg'})  
 
 
-//- significance
-+slide_img('slide_budapest_lecture06_005.jpg')
 
-+slide
-  p ***remaining questions
-
-+slide
-  p Todo:
-  p Describe what we've done for goals (specify R(a,G)); challenge them to do the same for reference (i.e. to provide a model of R(utterance,object))
-  p (This links to our unfinished business finding an alterantive to the Gricean view.)
-  p.em-above Stress that if infants aren't representing intentions then:
-  ol
-    li Grice on meaning is not the thing to appeal to to understand early communication
-    li Shared intentionality can't be understood in terms of nested intentions
-    li ... and this matters for joint action
-  

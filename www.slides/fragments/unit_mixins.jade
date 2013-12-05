@@ -29,6 +29,7 @@ mixin slide(p)
   section.slide
     if p && p.bkg
       img.bkg(src='/img/#{p.bkg}')
+      // .notes [*img: #{p.bkg}]
     .words
       .container_12: .grid_12
         block
@@ -42,6 +43,7 @@ mixin slide_middle()
 mixin slide_img(filename)
   section.slide
     img.bkg(src='/img/#{filename}')
+    // .notes [*img: #{filename}]
     block
 
 //- This sequence creates rh_white slides

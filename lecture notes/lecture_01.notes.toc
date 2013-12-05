@@ -1,0 +1,75 @@
+\contentsline {subsection}{title-slide}{1}{section*.1}
+\contentsline {section}{The Question}{4}{section*.1}
+\contentsline {subsection}{slide-3}{4}{section*.2}
+\contentsline {subsection}{slide-18}{4}{section*.2}
+\contentsline {subsection}{slide-24}{4}{section*.2}
+\contentsline {subsection}{slide-25}{5}{section*.2}
+\contentsline {subsection}{unit\_021}{5}{section*.2}
+\contentsline {section}{From Myths to Mechanisms}{5}{section*.2}
+\contentsline {subsection}{myths\_to\_mechanisms}{5}{section*.3}
+\contentsline {subsection}{slide-28}{5}{section*.3}
+\contentsline {subsection}{slide-29}{5}{section*.3}
+\contentsline {subsection}{slide-30}{5}{section*.3}
+\contentsline {subsection}{slide-31}{5}{section*.3}
+\contentsline {subsection}{slide-36}{6}{section*.3}
+\contentsline {subsection}{unit\_031}{6}{section*.3}
+\contentsline {section}{Inbetween mindless behaviour and thought}{6}{section*.3}
+\contentsline {subsection}{slide-38}{6}{section*.4}
+\contentsline {subsection}{object\_permanence}{6}{section*.4}
+\contentsline {subsection}{slide-47}{6}{section*.4}
+\contentsline {subsection}{slide-54}{6}{section*.4}
+\contentsline {subsection}{slide-57}{7}{section*.4}
+\contentsline {subsection}{slide-58}{7}{section*.4}
+\contentsline {subsection}{slide-61}{7}{section*.4}
+\contentsline {subsection}{slide-62}{7}{section*.4}
+\contentsline {subsection}{slide-64}{7}{section*.4}
+\contentsline {subsection}{slide-67}{7}{section*.4}
+\contentsline {subsection}{slide-70}{8}{section*.4}
+\contentsline {subsection}{slide-71}{8}{section*.4}
+\contentsline {subsection}{slide-73}{8}{section*.4}
+\contentsline {subsection}{iceberg}{8}{section*.4}
+\contentsline {subsection}{slide-76}{8}{section*.4}
+\contentsline {subsection}{slide-79}{8}{section*.4}
+\contentsline {subsection}{slide-80}{9}{section*.4}
+\contentsline {subsection}{slide-81}{9}{section*.4}
+\contentsline {subsection}{simple\_theory\_of\_the\_mind}{9}{section*.4}
+\contentsline {subsection}{slide-83}{10}{section*.4}
+\contentsline {subsection}{slide-84}{10}{section*.4}
+\contentsline {subsection}{slide-85}{10}{section*.4}
+\contentsline {subsection}{intentional\_stance}{10}{section*.4}
+\contentsline {subsection}{slide-87}{10}{section*.4}
+\contentsline {subsection}{slide-88}{10}{section*.4}
+\contentsline {subsection}{slide-92}{11}{section*.4}
+\contentsline {subsection}{slide-93}{11}{section*.4}
+\contentsline {subsection}{unit\_051}{11}{section*.4}
+\contentsline {section}{Two Breakthroughs}{11}{section*.4}
+\contentsline {subsection}{slide-102}{11}{section*.5}
+\contentsline {subsection}{unit\_061}{12}{section*.5}
+\contentsline {section}{Social Interaction}{12}{section*.5}
+\contentsline {subsection}{bold\_conjecture}{12}{section*.6}
+\contentsline {subsection}{vygostky\_hyp}{12}{section*.6}
+\contentsline {subsection}{slide-115}{12}{section*.6}
+\contentsline {subsection}{slide-125}{12}{section*.6}
+\contentsline {subsection}{slide-126}{13}{section*.6}
+\contentsline {subsection}{slide-132}{13}{section*.6}
+\contentsline {subsection}{slide-133}{13}{section*.6}
+\contentsline {subsection}{unit\_071}{14}{section*.6}
+\contentsline {section}{Core knowledge}{14}{section*.6}
+\contentsline {subsection}{slide-135}{14}{section*.7}
+\contentsline {subsection}{slide-137}{14}{section*.7}
+\contentsline {subsection}{slide-140}{14}{section*.7}
+\contentsline {subsection}{slide-141}{14}{section*.7}
+\contentsline {subsection}{slide-142}{14}{section*.7}
+\contentsline {subsection}{slide-143}{14}{section*.7}
+\contentsline {subsection}{slide-144}{15}{section*.7}
+\contentsline {subsection}{slide-145}{15}{section*.7}
+\contentsline {subsection}{slide-151}{15}{section*.7}
+\contentsline {subsection}{slide-152}{15}{section*.7}
+\contentsline {subsection}{slide-153}{15}{section*.7}
+\contentsline {subsection}{slide-158}{15}{section*.7}
+\contentsline {subsection}{slide-160}{15}{section*.7}
+\contentsline {subsection}{unit\_081}{16}{section*.7}
+\contentsline {section}{Linking Core Knowledge and Social Interaction}{16}{section*.7}
+\contentsline {subsection}{slide-162}{16}{section*.8}
+\contentsline {subsection}{slide-163}{16}{section*.8}
+\contentsline {subsection}{slide-164}{16}{section*.8}

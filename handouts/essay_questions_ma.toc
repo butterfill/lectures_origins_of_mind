@@ -1,0 +1,9 @@
+\contentsline {section}{Essay 1}{2}{section*.1}
+\contentsline {subsection}{Suggested question}{2}{section*.1}
+\contentsline {subsection}{Peer review}{2}{section*.1}
+\contentsline {subsection}{Hint}{2}{section*.1}
+\contentsline {subsection}{Reading}{3}{section*.1}
+\contentsline {subsection}{Further reading}{3}{section*.1}
+\contentsline {subsection}{Where to find the readings}{3}{section*.1}
+\contentsline {subsection}{Citations}{3}{section*.1}
+\contentsline {subsection}{Length}{3}{section*.1}
